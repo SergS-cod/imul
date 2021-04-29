@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Display_m</class>
+ <widget class="QWidget" name="Display_m">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>136</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8888888888888888888</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>241</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Presentation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bright</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cinema</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Film</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vivid </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Game</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sRGB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Reference</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DICOM SIM.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>User</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>User (3D)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISF Day</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISF Night</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ISF 3D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2D High Speed</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Blending</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sport</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HDR</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
