@@ -18,7 +18,7 @@
     <item row="0" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_22">
        <attribute name="title">
@@ -278,401 +278,1440 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
             <string>Image Settings</string>
            </attribute>
-           <widget class="QFrame" name="frame_3">
-            <property name="geometry">
-             <rect>
-              <x>100</x>
-              <y>330</y>
-              <width>172</width>
-              <height>42</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QLabel" name="label_3">
-               <property name="text">
-                <string>Brightness</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QSlider" name="horizontalSlider">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame_2">
-            <property name="geometry">
-             <rect>
-              <x>100</x>
-              <y>240</y>
-              <width>172</width>
-              <height>42</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_2">
-             <item>
-              <widget class="QLabel" name="label_2">
-               <property name="text">
-                <string>Wall Color</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBox_2">
-               <item>
-                <property name="text">
-                 <string>Off</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>BlackBoard</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Light Yellow</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Light Green</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Light Blue</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Pink</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Gray</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame_7">
-            <property name="geometry">
-             <rect>
-              <x>310</x>
-              <y>220</y>
-              <width>491</width>
-              <height>61</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
-             <item>
-              <widget class="QLabel" name="label_7">
-               <property name="text">
-                <string>TextLabel</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBox_7">
-               <item>
-                <property name="text">
-                 <string>Presentation</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Bright</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Cinema</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Film</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Vivid </string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Game</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>sRGB</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Reference</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>DICOM SIM.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>User</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3D</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>User (3D)</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF Day</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF Night</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF 3D</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2D High Speed</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Blending</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Sport</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>HDR</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame">
-            <property name="geometry">
-             <rect>
-              <x>110</x>
-              <y>390</y>
-              <width>172</width>
-              <height>42</height>
-             </rect>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout">
-             <item>
-              <widget class="QLabel" name="label">
-               <property name="text">
-                <string>Display Mode</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QComboBox" name="comboBox">
-               <item>
-                <property name="text">
-                 <string>Presentation</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Bright</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Cinema</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Film</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Vivid </string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Game</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>sRGB</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Reference</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>DICOM SIM.</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>User</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>3D</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>User (3D)</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF Day</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF Night</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>ISF 3D</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>2D High Speed</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Blending</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>Sport</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>HDR</string>
-                </property>
-               </item>
-              </widget>
-             </item>
-            </layout>
-           </widget>
           </widget>
           <widget class="QWidget" name="tab_5">
            <attribute name="title">
             <string>3D</string>
            </attribute>
+           <widget class="QFrame" name="frame_27">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>531</width>
+              <height>491</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="3" column="0">
+              <widget class="QFrame" name="frame_3D_sync_invert">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_39">
+                <item>
+                 <widget class="QLabel" name="label_3D_sync_invert">
+                  <property name="text">
+                   <string>3D sync invert:
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_3D_sync_invert">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>On</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QFrame" name="frame_3D_Mode">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_36">
+                <item>
+                 <widget class="QLabel" name="label_3D_Mode">
+                  <property name="text">
+                   <string>3D Mode:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_3D_Mode">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DLP-Link</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>IR / VESA</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QFrame" name="frame_3D_2D">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_37">
+                <item>
+                 <widget class="QLabel" name="label_Internal_3D_2D">
+                  <property name="text">
+                   <string>3D-2D:
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_3D_2D">
+                  <item>
+                   <property name="text">
+                    <string>3D</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>L</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>R</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QFrame" name="frame_3D_Format">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_38">
+                <item>
+                 <widget class="QLabel" name="label_3D_Format">
+                  <property name="text">
+                   <string>3D Format:
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_3D_Format">
+                  <item>
+                   <property name="text">
+                    <string>Auto</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>SBS</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Top and Bottom</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Frame Sequential</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Frame Packing</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QFrame" name="frame_2D_3D">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_40">
+                <item>
+                 <widget class="QLabel" name="label_2D_3D">
+                  <property name="text">
+                   <string>2D-3D:
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_2D_3D">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_6">
            <attribute name="title">
             <string>Aspect Ratio</string>
            </attribute>
+           <widget class="QFrame" name="frame_Aspect_Ratio">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>509</width>
+              <height>89</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_41">
+             <item>
+              <widget class="QLabel" name="label_Aspect_Ratio">
+               <property name="text">
+                <string>Aspect Ratio:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_Aspect_ratio">
+               <item>
+                <property name="text">
+                 <string>[None]</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>4:3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>16:9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>16:10</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>LBX</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Superwide</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Native</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Auto</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Auto235</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Auto235_Subtitle</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Auto 3D</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_7">
            <attribute name="title">
             <string>Edge Mask</string>
            </attribute>
+           <widget class="QFrame" name="frame_Edge_Mask">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>399</width>
+              <height>68</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_42">
+             <item>
+              <widget class="QLabel" name="label_Edge_Mask">
+               <property name="text">
+                <string>Edge Mask:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_Edge_Mask">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="value">
+                <number>5</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_Edge_Mask">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_8">
            <attribute name="title">
             <string>Zoom</string>
            </attribute>
+           <widget class="QFrame" name="frame_Edge_Zoom">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>399</width>
+              <height>68</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_43">
+             <item>
+              <widget class="QLabel" name="label_Edge_Zoom">
+               <property name="text">
+                <string>Zoom:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_Zoom">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>-5</number>
+               </property>
+               <property name="maximum">
+                <number>25</number>
+               </property>
+               <property name="value">
+                <number>10</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_Zoom">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Zoom_minus">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Zoom_plus">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>40</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_9">
            <attribute name="title">
             <string>Digital Zoom</string>
            </attribute>
+           <widget class="QFrame" name="frame_28">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>571</width>
+              <height>221</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QFrame" name="frame_Edge_H_Zoom">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_44">
+                <item>
+                 <widget class="QLabel" name="label_Edge_Zoom_H_Zoom">
+                  <property name="text">
+                   <string>H Zoom:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_H_Zoom">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="value">
+                   <number>50</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_H_Zoom">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Edge_V_Zoom">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_45">
+                <item>
+                 <widget class="QLabel" name="label_Edge_V_Zoom">
+                  <property name="text">
+                   <string>V Zoom:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_V_Zoom">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>100</number>
+                  </property>
+                  <property name="value">
+                   <number>50</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_V_Zoom">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_10">
            <attribute name="title">
             <string>Image shif</string>
            </attribute>
+           <widget class="QPushButton" name="pushButton_Image_shift_H_plus">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>40</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>H+</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Image_shift_H_minus">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>H-</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_Edge_Image_shift_H">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>20</y>
+              <width>399</width>
+              <height>68</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_60">
+             <item>
+              <widget class="QLabel" name="label_Edge_Image_shift_H">
+               <property name="text">
+                <string>H:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_Image_shift_H">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>-100</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_Image_shift_H">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Image_shift_V_plus">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>120</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>V+</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Image_shift_V_minus">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>120</y>
+              <width>41</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>V-</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_Edge_Image_shift_V">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>100</y>
+              <width>399</width>
+              <height>68</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_61">
+             <item>
+              <widget class="QLabel" name="label_Edge_Image_shift_V">
+               <property name="text">
+                <string>V:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_Image_shift_V">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>-100</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_Image_shift_V">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_11">
            <attribute name="title">
             <string>H Keystone</string>
            </attribute>
+           <widget class="QFrame" name="frame_H_Keystone">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>551</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_62">
+             <item>
+              <widget class="QLabel" name="label_H_Keystone">
+               <property name="text">
+                <string>H Keystone:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_H_Keystone">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>-40</number>
+               </property>
+               <property name="maximum">
+                <number>40</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_H_Keystone">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_12">
            <attribute name="title">
             <string>V Keystone</string>
            </attribute>
+           <widget class="QFrame" name="frame_V_Keystone">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>551</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_63">
+             <item>
+              <widget class="QLabel" name="label_V_Keystone">
+               <property name="text">
+                <string>V Keystone:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider_V_Keystone">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimum">
+                <number>-40</number>
+               </property>
+               <property name="maximum">
+                <number>40</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="label_var_V_Keystone">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_13">
            <attribute name="title">
             <string>Four Corners</string>
            </attribute>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>471</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>top-left</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_left_up">
+               <property name="text">
+                <string>up + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_left_right">
+               <property name="text">
+                <string>right + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_left_down">
+               <property name="text">
+                <string>down + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_left_left">
+               <property name="text">
+                <string>left + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_top_left_V">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_65">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_top_left_V">
+                  <property name="text">
+                   <string>V:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_top_left_V">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>80</number>
+                  </property>
+                  <property name="value">
+                   <number>40</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_top_left_V">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_top_left_H">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_64">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_top_left_H">
+                  <property name="text">
+                   <string>H:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_top_left_H">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>120</number>
+                  </property>
+                  <property name="value">
+                   <number>60</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_top_left_H">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="geometry">
+             <rect>
+              <x>510</x>
+              <y>20</y>
+              <width>471</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>top-right</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_right_up">
+               <property name="text">
+                <string>up + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_right_right">
+               <property name="text">
+                <string>right + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_right_down">
+               <property name="text">
+                <string>down + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="pushButton_Four_Corners_top_right_left">
+               <property name="text">
+                <string>left + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_top_right_V">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_66">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_top_right_V">
+                  <property name="text">
+                   <string>V:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_top_right_V">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>80</number>
+                  </property>
+                  <property name="value">
+                   <number>40</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_top_right_V">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_top_right_H">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_67">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_top_right_H">
+                  <property name="text">
+                   <string>H:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_top_right_H">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>120</number>
+                  </property>
+                  <property name="value">
+                   <number>60</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_top_right_H">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>370</y>
+              <width>471</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>buttom-left</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_left_up">
+               <property name="text">
+                <string>up + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_left_right">
+               <property name="text">
+                <string>right + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_left_down">
+               <property name="text">
+                <string>down + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_left_left">
+               <property name="text">
+                <string>left + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_buttom_left_V">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_68">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_buttom_left_V">
+                  <property name="text">
+                   <string>V:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_buttom_left_V">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>80</number>
+                  </property>
+                  <property name="value">
+                   <number>40</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_buttom_left_V">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_buttom_left_H">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_69">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_buttom_left_H">
+                  <property name="text">
+                   <string>H:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_buttom_left_H">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>120</number>
+                  </property>
+                  <property name="value">
+                   <number>60</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_buttom_left_H">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="geometry">
+             <rect>
+              <x>510</x>
+              <y>370</y>
+              <width>471</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>buttom-right</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="2" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_right_up">
+               <property name="text">
+                <string>up + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_right_right">
+               <property name="text">
+                <string>right + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_right_down">
+               <property name="text">
+                <string>down + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="pushButton_Four_Corners_buttom_right_left">
+               <property name="text">
+                <string>left + 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_buttom_right_V">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_70">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_buttom_right_V">
+                  <property name="text">
+                   <string>V:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_buttom_right_V">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>80</number>
+                  </property>
+                  <property name="value">
+                   <number>40</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_buttom_right_V">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="3">
+              <widget class="QFrame" name="frame_Four_Corners_buttom_right_H">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_71">
+                <item>
+                 <widget class="QLabel" name="label_Four_Corners_buttom_right_H">
+                  <property name="text">
+                   <string>H:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Four_Corners_buttom_right_H">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>0</number>
+                  </property>
+                  <property name="maximum">
+                   <number>120</number>
+                  </property>
+                  <property name="value">
+                   <number>60</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Four_Corners_buttom_right_H">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_14">
            <attribute name="title">
