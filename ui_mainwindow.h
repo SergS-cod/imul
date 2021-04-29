@@ -66,6 +66,58 @@ public:
     QWidget *tab_14;
     QWidget *tab_15;
     QWidget *tab_2;
+    QFrame *frame_26;
+    QGridLayout *gridLayout_4;
+    QFrame *frame_Volume;
+    QHBoxLayout *horizontalLayout_28;
+    QLabel *label_Volume;
+    QSlider *horizontalSlider_Volume;
+    QLabel *label_var_Volume;
+    QFrame *frame_Treble;
+    QHBoxLayout *horizontalLayout_34;
+    QLabel *label_Treble;
+    QSlider *horizontalSlider_Treble;
+    QLabel *label_var_Treble;
+    QFrame *frame_Mic_Volume;
+    QHBoxLayout *horizontalLayout_29;
+    QLabel *label_Mic_Volume;
+    QSlider *horizontalSlider_Mic_Volume;
+    QLabel *label_var_Mic_Volume;
+    QFrame *frame_Bass;
+    QHBoxLayout *horizontalLayout_35;
+    QLabel *label_Bass;
+    QSlider *horizontalSlider_Bass;
+    QLabel *label_var_Bass;
+    QFrame *frame_25;
+    QGridLayout *gridLayout_3;
+    QFrame *frame_Audio_Input;
+    QHBoxLayout *horizontalLayout_30;
+    QLabel *label_Audio_Input;
+    QComboBox *comboBox_Audio_Input;
+    QFrame *frame_Internal_speaker;
+    QHBoxLayout *horizontalLayout_25;
+    QLabel *label_Internal_speaker;
+    QComboBox *comboBox_Internal_speaker;
+    QFrame *frame_Audio_Out;
+    QHBoxLayout *horizontalLayout_32;
+    QLabel *label_Audio_Out;
+    QComboBox *comboBox_Audio_Out;
+    QFrame *frame_Mute;
+    QHBoxLayout *horizontalLayout_26;
+    QLabel *label_Mute;
+    QComboBox *comboBox_Mute;
+    QFrame *frame_Audio_Delay;
+    QHBoxLayout *horizontalLayout_31;
+    QLabel *label_Audio_Delay;
+    QComboBox *comboBox_Audio_Delay;
+    QFrame *frame_Mic;
+    QHBoxLayout *horizontalLayout_27;
+    QLabel *label_Mic;
+    QComboBox *comboBox_Mic;
+    QFrame *frame_SRS;
+    QHBoxLayout *horizontalLayout_33;
+    QLabel *label_SRS;
+    QComboBox *comboBox_SRS;
     QWidget *tab_3;
     QWidget *tab_16;
     QGroupBox *WLAN;
@@ -332,6 +384,296 @@ public:
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
+        frame_26 = new QFrame(tab_2);
+        frame_26->setObjectName(QStringLiteral("frame_26"));
+        frame_26->setGeometry(QRect(450, 10, 421, 311));
+        frame_26->setFrameShape(QFrame::Box);
+        frame_26->setFrameShadow(QFrame::Raised);
+        gridLayout_4 = new QGridLayout(frame_26);
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        frame_Volume = new QFrame(frame_26);
+        frame_Volume->setObjectName(QStringLiteral("frame_Volume"));
+        frame_Volume->setFrameShape(QFrame::Box);
+        frame_Volume->setFrameShadow(QFrame::Raised);
+        horizontalLayout_28 = new QHBoxLayout(frame_Volume);
+        horizontalLayout_28->setObjectName(QStringLiteral("horizontalLayout_28"));
+        label_Volume = new QLabel(frame_Volume);
+        label_Volume->setObjectName(QStringLiteral("label_Volume"));
+
+        horizontalLayout_28->addWidget(label_Volume);
+
+        horizontalSlider_Volume = new QSlider(frame_Volume);
+        horizontalSlider_Volume->setObjectName(QStringLiteral("horizontalSlider_Volume"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(horizontalSlider_Volume->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Volume->setSizePolicy(sizePolicy);
+        horizontalSlider_Volume->setMaximum(10);
+        horizontalSlider_Volume->setValue(5);
+        horizontalSlider_Volume->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_28->addWidget(horizontalSlider_Volume);
+
+        label_var_Volume = new QLabel(frame_Volume);
+        label_var_Volume->setObjectName(QStringLiteral("label_var_Volume"));
+
+        horizontalLayout_28->addWidget(label_var_Volume, 0, Qt::AlignHCenter);
+
+
+        gridLayout_4->addWidget(frame_Volume, 0, 0, 1, 1);
+
+        frame_Treble = new QFrame(frame_26);
+        frame_Treble->setObjectName(QStringLiteral("frame_Treble"));
+        frame_Treble->setFrameShape(QFrame::Box);
+        frame_Treble->setFrameShadow(QFrame::Raised);
+        horizontalLayout_34 = new QHBoxLayout(frame_Treble);
+        horizontalLayout_34->setObjectName(QStringLiteral("horizontalLayout_34"));
+        label_Treble = new QLabel(frame_Treble);
+        label_Treble->setObjectName(QStringLiteral("label_Treble"));
+
+        horizontalLayout_34->addWidget(label_Treble);
+
+        horizontalSlider_Treble = new QSlider(frame_Treble);
+        horizontalSlider_Treble->setObjectName(QStringLiteral("horizontalSlider_Treble"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Treble->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Treble->setSizePolicy(sizePolicy);
+        horizontalSlider_Treble->setMinimum(-10);
+        horizontalSlider_Treble->setMaximum(10);
+        horizontalSlider_Treble->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_34->addWidget(horizontalSlider_Treble);
+
+        label_var_Treble = new QLabel(frame_Treble);
+        label_var_Treble->setObjectName(QStringLiteral("label_var_Treble"));
+
+        horizontalLayout_34->addWidget(label_var_Treble, 0, Qt::AlignHCenter);
+
+
+        gridLayout_4->addWidget(frame_Treble, 2, 0, 1, 1);
+
+        frame_Mic_Volume = new QFrame(frame_26);
+        frame_Mic_Volume->setObjectName(QStringLiteral("frame_Mic_Volume"));
+        frame_Mic_Volume->setFrameShape(QFrame::Box);
+        frame_Mic_Volume->setFrameShadow(QFrame::Raised);
+        horizontalLayout_29 = new QHBoxLayout(frame_Mic_Volume);
+        horizontalLayout_29->setObjectName(QStringLiteral("horizontalLayout_29"));
+        label_Mic_Volume = new QLabel(frame_Mic_Volume);
+        label_Mic_Volume->setObjectName(QStringLiteral("label_Mic_Volume"));
+
+        horizontalLayout_29->addWidget(label_Mic_Volume);
+
+        horizontalSlider_Mic_Volume = new QSlider(frame_Mic_Volume);
+        horizontalSlider_Mic_Volume->setObjectName(QStringLiteral("horizontalSlider_Mic_Volume"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Mic_Volume->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Mic_Volume->setSizePolicy(sizePolicy);
+        horizontalSlider_Mic_Volume->setMaximum(10);
+        horizontalSlider_Mic_Volume->setValue(5);
+        horizontalSlider_Mic_Volume->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_29->addWidget(horizontalSlider_Mic_Volume);
+
+        label_var_Mic_Volume = new QLabel(frame_Mic_Volume);
+        label_var_Mic_Volume->setObjectName(QStringLiteral("label_var_Mic_Volume"));
+
+        horizontalLayout_29->addWidget(label_var_Mic_Volume, 0, Qt::AlignHCenter);
+
+
+        gridLayout_4->addWidget(frame_Mic_Volume, 1, 0, 1, 1);
+
+        frame_Bass = new QFrame(frame_26);
+        frame_Bass->setObjectName(QStringLiteral("frame_Bass"));
+        frame_Bass->setFrameShape(QFrame::Box);
+        frame_Bass->setFrameShadow(QFrame::Raised);
+        horizontalLayout_35 = new QHBoxLayout(frame_Bass);
+        horizontalLayout_35->setObjectName(QStringLiteral("horizontalLayout_35"));
+        label_Bass = new QLabel(frame_Bass);
+        label_Bass->setObjectName(QStringLiteral("label_Bass"));
+
+        horizontalLayout_35->addWidget(label_Bass);
+
+        horizontalSlider_Bass = new QSlider(frame_Bass);
+        horizontalSlider_Bass->setObjectName(QStringLiteral("horizontalSlider_Bass"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Bass->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Bass->setSizePolicy(sizePolicy);
+        horizontalSlider_Bass->setMinimum(-10);
+        horizontalSlider_Bass->setMaximum(10);
+        horizontalSlider_Bass->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_35->addWidget(horizontalSlider_Bass);
+
+        label_var_Bass = new QLabel(frame_Bass);
+        label_var_Bass->setObjectName(QStringLiteral("label_var_Bass"));
+
+        horizontalLayout_35->addWidget(label_var_Bass, 0, Qt::AlignHCenter);
+
+
+        gridLayout_4->addWidget(frame_Bass, 3, 0, 1, 1);
+
+        frame_25 = new QFrame(tab_2);
+        frame_25->setObjectName(QStringLiteral("frame_25"));
+        frame_25->setGeometry(QRect(10, 10, 411, 541));
+        frame_25->setFrameShape(QFrame::Box);
+        frame_25->setFrameShadow(QFrame::Raised);
+        gridLayout_3 = new QGridLayout(frame_25);
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        frame_Audio_Input = new QFrame(frame_25);
+        frame_Audio_Input->setObjectName(QStringLiteral("frame_Audio_Input"));
+        frame_Audio_Input->setFrameShape(QFrame::Box);
+        frame_Audio_Input->setFrameShadow(QFrame::Raised);
+        horizontalLayout_30 = new QHBoxLayout(frame_Audio_Input);
+        horizontalLayout_30->setObjectName(QStringLiteral("horizontalLayout_30"));
+        label_Audio_Input = new QLabel(frame_Audio_Input);
+        label_Audio_Input->setObjectName(QStringLiteral("label_Audio_Input"));
+
+        horizontalLayout_30->addWidget(label_Audio_Input);
+
+        comboBox_Audio_Input = new QComboBox(frame_Audio_Input);
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->addItem(QString());
+        comboBox_Audio_Input->setObjectName(QStringLiteral("comboBox_Audio_Input"));
+
+        horizontalLayout_30->addWidget(comboBox_Audio_Input);
+
+
+        gridLayout_3->addWidget(frame_Audio_Input, 3, 0, 1, 1);
+
+        frame_Internal_speaker = new QFrame(frame_25);
+        frame_Internal_speaker->setObjectName(QStringLiteral("frame_Internal_speaker"));
+        frame_Internal_speaker->setFrameShape(QFrame::Box);
+        frame_Internal_speaker->setFrameShadow(QFrame::Raised);
+        horizontalLayout_25 = new QHBoxLayout(frame_Internal_speaker);
+        horizontalLayout_25->setObjectName(QStringLiteral("horizontalLayout_25"));
+        label_Internal_speaker = new QLabel(frame_Internal_speaker);
+        label_Internal_speaker->setObjectName(QStringLiteral("label_Internal_speaker"));
+
+        horizontalLayout_25->addWidget(label_Internal_speaker);
+
+        comboBox_Internal_speaker = new QComboBox(frame_Internal_speaker);
+        comboBox_Internal_speaker->addItem(QString());
+        comboBox_Internal_speaker->addItem(QString());
+        comboBox_Internal_speaker->setObjectName(QStringLiteral("comboBox_Internal_speaker"));
+
+        horizontalLayout_25->addWidget(comboBox_Internal_speaker);
+
+
+        gridLayout_3->addWidget(frame_Internal_speaker, 0, 0, 1, 1);
+
+        frame_Audio_Out = new QFrame(frame_25);
+        frame_Audio_Out->setObjectName(QStringLiteral("frame_Audio_Out"));
+        frame_Audio_Out->setFrameShape(QFrame::Box);
+        frame_Audio_Out->setFrameShadow(QFrame::Raised);
+        horizontalLayout_32 = new QHBoxLayout(frame_Audio_Out);
+        horizontalLayout_32->setObjectName(QStringLiteral("horizontalLayout_32"));
+        label_Audio_Out = new QLabel(frame_Audio_Out);
+        label_Audio_Out->setObjectName(QStringLiteral("label_Audio_Out"));
+
+        horizontalLayout_32->addWidget(label_Audio_Out);
+
+        comboBox_Audio_Out = new QComboBox(frame_Audio_Out);
+        comboBox_Audio_Out->addItem(QString());
+        comboBox_Audio_Out->addItem(QString());
+        comboBox_Audio_Out->setObjectName(QStringLiteral("comboBox_Audio_Out"));
+
+        horizontalLayout_32->addWidget(comboBox_Audio_Out);
+
+
+        gridLayout_3->addWidget(frame_Audio_Out, 5, 0, 1, 1);
+
+        frame_Mute = new QFrame(frame_25);
+        frame_Mute->setObjectName(QStringLiteral("frame_Mute"));
+        frame_Mute->setFrameShape(QFrame::Box);
+        frame_Mute->setFrameShadow(QFrame::Raised);
+        horizontalLayout_26 = new QHBoxLayout(frame_Mute);
+        horizontalLayout_26->setObjectName(QStringLiteral("horizontalLayout_26"));
+        label_Mute = new QLabel(frame_Mute);
+        label_Mute->setObjectName(QStringLiteral("label_Mute"));
+
+        horizontalLayout_26->addWidget(label_Mute);
+
+        comboBox_Mute = new QComboBox(frame_Mute);
+        comboBox_Mute->addItem(QString());
+        comboBox_Mute->addItem(QString());
+        comboBox_Mute->setObjectName(QStringLiteral("comboBox_Mute"));
+
+        horizontalLayout_26->addWidget(comboBox_Mute);
+
+
+        gridLayout_3->addWidget(frame_Mute, 1, 0, 1, 1);
+
+        frame_Audio_Delay = new QFrame(frame_25);
+        frame_Audio_Delay->setObjectName(QStringLiteral("frame_Audio_Delay"));
+        frame_Audio_Delay->setFrameShape(QFrame::Box);
+        frame_Audio_Delay->setFrameShadow(QFrame::Raised);
+        horizontalLayout_31 = new QHBoxLayout(frame_Audio_Delay);
+        horizontalLayout_31->setObjectName(QStringLiteral("horizontalLayout_31"));
+        label_Audio_Delay = new QLabel(frame_Audio_Delay);
+        label_Audio_Delay->setObjectName(QStringLiteral("label_Audio_Delay"));
+
+        horizontalLayout_31->addWidget(label_Audio_Delay);
+
+        comboBox_Audio_Delay = new QComboBox(frame_Audio_Delay);
+        comboBox_Audio_Delay->addItem(QString());
+        comboBox_Audio_Delay->addItem(QString());
+        comboBox_Audio_Delay->addItem(QString());
+        comboBox_Audio_Delay->addItem(QString());
+        comboBox_Audio_Delay->setObjectName(QStringLiteral("comboBox_Audio_Delay"));
+
+        horizontalLayout_31->addWidget(comboBox_Audio_Delay);
+
+
+        gridLayout_3->addWidget(frame_Audio_Delay, 4, 0, 1, 1);
+
+        frame_Mic = new QFrame(frame_25);
+        frame_Mic->setObjectName(QStringLiteral("frame_Mic"));
+        frame_Mic->setFrameShape(QFrame::Box);
+        frame_Mic->setFrameShadow(QFrame::Raised);
+        horizontalLayout_27 = new QHBoxLayout(frame_Mic);
+        horizontalLayout_27->setObjectName(QStringLiteral("horizontalLayout_27"));
+        label_Mic = new QLabel(frame_Mic);
+        label_Mic->setObjectName(QStringLiteral("label_Mic"));
+
+        horizontalLayout_27->addWidget(label_Mic);
+
+        comboBox_Mic = new QComboBox(frame_Mic);
+        comboBox_Mic->addItem(QString());
+        comboBox_Mic->addItem(QString());
+        comboBox_Mic->setObjectName(QStringLiteral("comboBox_Mic"));
+
+        horizontalLayout_27->addWidget(comboBox_Mic);
+
+
+        gridLayout_3->addWidget(frame_Mic, 2, 0, 1, 1);
+
+        frame_SRS = new QFrame(frame_25);
+        frame_SRS->setObjectName(QStringLiteral("frame_SRS"));
+        frame_SRS->setFrameShape(QFrame::Box);
+        frame_SRS->setFrameShadow(QFrame::Raised);
+        horizontalLayout_33 = new QHBoxLayout(frame_SRS);
+        horizontalLayout_33->setObjectName(QStringLiteral("horizontalLayout_33"));
+        label_SRS = new QLabel(frame_SRS);
+        label_SRS->setObjectName(QStringLiteral("label_SRS"));
+
+        horizontalLayout_33->addWidget(label_SRS);
+
+        comboBox_SRS = new QComboBox(frame_SRS);
+        comboBox_SRS->addItem(QString());
+        comboBox_SRS->addItem(QString());
+        comboBox_SRS->setObjectName(QStringLiteral("comboBox_SRS"));
+
+        horizontalLayout_33->addWidget(comboBox_SRS);
+
+
+        gridLayout_3->addWidget(frame_SRS, 6, 0, 1, 1);
+
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
@@ -398,9 +740,6 @@ public:
 
         lineEdit = new QLineEdit(frame_14);
         lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(lineEdit->sizePolicy().hasHeightForWidth());
         lineEdit->setSizePolicy(sizePolicy);
 
@@ -797,7 +1136,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
 
 
@@ -872,6 +1211,52 @@ public:
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_14), QApplication::translate("MainWindow", "Geometric Correction", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_15), QApplication::translate("MainWindow", "PIP - PBP", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Display", nullptr));
+        label_Volume->setText(QApplication::translate("MainWindow", "Volume", nullptr));
+        label_var_Volume->setText(QString());
+        label_Treble->setText(QApplication::translate("MainWindow", "Treble", nullptr));
+        label_var_Treble->setText(QString());
+        label_Mic_Volume->setText(QApplication::translate("MainWindow", "Mic Volume", nullptr));
+        label_var_Mic_Volume->setText(QString());
+        label_Bass->setText(QApplication::translate("MainWindow", "Bass", nullptr));
+        label_var_Bass->setText(QString());
+        label_Audio_Input->setText(QApplication::translate("MainWindow", "Audio Input", nullptr));
+        comboBox_Audio_Input->setItemText(0, QApplication::translate("MainWindow", "Default", nullptr));
+        comboBox_Audio_Input->setItemText(1, QApplication::translate("MainWindow", "Audio 1(Mini-jack)", nullptr));
+        comboBox_Audio_Input->setItemText(2, QApplication::translate("MainWindow", "RCA", nullptr));
+        comboBox_Audio_Input->setItemText(3, QApplication::translate("MainWindow", "Audio 2", nullptr));
+        comboBox_Audio_Input->setItemText(4, QApplication::translate("MainWindow", "Audio 3", nullptr));
+        comboBox_Audio_Input->setItemText(5, QApplication::translate("MainWindow", "Audio 4", nullptr));
+        comboBox_Audio_Input->setItemText(6, QApplication::translate("MainWindow", "HDMI 1", nullptr));
+        comboBox_Audio_Input->setItemText(7, QApplication::translate("MainWindow", "HDMI 2", nullptr));
+        comboBox_Audio_Input->setItemText(8, QApplication::translate("MainWindow", "Audio 5/Displayport", nullptr));
+        comboBox_Audio_Input->setItemText(9, QApplication::translate("MainWindow", "Displayport", nullptr));
+
+        label_Internal_speaker->setText(QApplication::translate("MainWindow", "Internal Speaker", nullptr));
+        comboBox_Internal_speaker->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        comboBox_Internal_speaker->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+
+        label_Audio_Out->setText(QApplication::translate("MainWindow", "Audio Out (Standby)", nullptr));
+        comboBox_Audio_Out->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        comboBox_Audio_Out->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+
+        label_Mute->setText(QApplication::translate("MainWindow", "Mute", nullptr));
+        comboBox_Mute->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        comboBox_Mute->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+
+        label_Audio_Delay->setText(QApplication::translate("MainWindow", "Audio Delay", nullptr));
+        comboBox_Audio_Delay->setItemText(0, QApplication::translate("MainWindow", "0ms", nullptr));
+        comboBox_Audio_Delay->setItemText(1, QApplication::translate("MainWindow", "2ms", nullptr));
+        comboBox_Audio_Delay->setItemText(2, QApplication::translate("MainWindow", "4ms", nullptr));
+        comboBox_Audio_Delay->setItemText(3, QApplication::translate("MainWindow", "6ms", nullptr));
+
+        label_Mic->setText(QApplication::translate("MainWindow", "Mic", nullptr));
+        comboBox_Mic->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        comboBox_Mic->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+
+        label_SRS->setText(QApplication::translate("MainWindow", "SRS", nullptr));
+        comboBox_SRS->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        comboBox_SRS->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Audio", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Setup", nullptr));
         WLAN->setTitle(QApplication::translate("MainWindow", "WLAN", nullptr));
