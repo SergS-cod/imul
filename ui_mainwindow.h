@@ -20,6 +20,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
@@ -38,31 +39,153 @@ public:
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
     QWidget *tab_4;
-    QFrame *frame_3;
-    QHBoxLayout *horizontalLayout_3;
-    QLabel *label_3;
-    QSlider *horizontalSlider;
-    QFrame *frame_2;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *label_2;
-    QComboBox *comboBox_2;
-    QFrame *frame_7;
-    QHBoxLayout *horizontalLayout_7;
-    QLabel *label_7;
-    QComboBox *comboBox_7;
-    QFrame *frame;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QComboBox *comboBox;
     QWidget *tab_5;
+    QFrame *frame_27;
+    QGridLayout *gridLayout_5;
+    QFrame *frame_3D_sync_invert;
+    QHBoxLayout *horizontalLayout_39;
+    QLabel *label_3D_sync_invert;
+    QComboBox *comboBox_3D_sync_invert;
+    QFrame *frame_3D_Mode;
+    QHBoxLayout *horizontalLayout_36;
+    QLabel *label_3D_Mode;
+    QComboBox *comboBox_3D_Mode;
+    QFrame *frame_3D_2D;
+    QHBoxLayout *horizontalLayout_37;
+    QLabel *label_Internal_3D_2D;
+    QComboBox *comboBox_3D_2D;
+    QFrame *frame_3D_Format;
+    QHBoxLayout *horizontalLayout_38;
+    QLabel *label_3D_Format;
+    QComboBox *comboBox_3D_Format;
+    QFrame *frame_2D_3D;
+    QHBoxLayout *horizontalLayout_40;
+    QLabel *label_2D_3D;
+    QComboBox *comboBox_2D_3D;
     QWidget *tab_6;
+    QFrame *frame_Aspect_Ratio;
+    QHBoxLayout *horizontalLayout_41;
+    QLabel *label_Aspect_Ratio;
+    QComboBox *comboBox_Aspect_ratio;
     QWidget *tab_7;
+    QFrame *frame_Edge_Mask;
+    QHBoxLayout *horizontalLayout_42;
+    QLabel *label_Edge_Mask;
+    QSlider *horizontalSlider_Edge_Mask;
+    QLabel *label_var_Edge_Mask;
     QWidget *tab_8;
+    QFrame *frame_Edge_Zoom;
+    QHBoxLayout *horizontalLayout_43;
+    QLabel *label_Edge_Zoom;
+    QSlider *horizontalSlider_Zoom;
+    QLabel *label_var_Zoom;
+    QPushButton *pushButton_Zoom_minus;
+    QPushButton *pushButton_Zoom_plus;
     QWidget *tab_9;
+    QFrame *frame_28;
+    QVBoxLayout *verticalLayout_4;
+    QFrame *frame_Edge_H_Zoom;
+    QHBoxLayout *horizontalLayout_44;
+    QLabel *label_Edge_Zoom_H_Zoom;
+    QSlider *horizontalSlider_H_Zoom;
+    QLabel *label_var_H_Zoom;
+    QFrame *frame_Edge_V_Zoom;
+    QHBoxLayout *horizontalLayout_45;
+    QLabel *label_Edge_V_Zoom;
+    QSlider *horizontalSlider_V_Zoom;
+    QLabel *label_var_V_Zoom;
     QWidget *tab_10;
+    QPushButton *pushButton_Image_shift_H_plus;
+    QPushButton *pushButton_Image_shift_H_minus;
+    QFrame *frame_Edge_Image_shift_H;
+    QHBoxLayout *horizontalLayout_60;
+    QLabel *label_Edge_Image_shift_H;
+    QSlider *horizontalSlider_Image_shift_H;
+    QLabel *label_var_Image_shift_H;
+    QPushButton *pushButton_Image_shift_V_plus;
+    QPushButton *pushButton_Image_shift_V_minus;
+    QFrame *frame_Edge_Image_shift_V;
+    QHBoxLayout *horizontalLayout_61;
+    QLabel *label_Edge_Image_shift_V;
+    QSlider *horizontalSlider_Image_shift_V;
+    QLabel *label_var_Image_shift_V;
     QWidget *tab_11;
+    QFrame *frame_H_Keystone;
+    QHBoxLayout *horizontalLayout_62;
+    QLabel *label_H_Keystone;
+    QSlider *horizontalSlider_H_Keystone;
+    QLabel *label_var_H_Keystone;
     QWidget *tab_12;
+    QFrame *frame_V_Keystone;
+    QHBoxLayout *horizontalLayout_63;
+    QLabel *label_V_Keystone;
+    QSlider *horizontalSlider_V_Keystone;
+    QLabel *label_var_V_Keystone;
     QWidget *tab_13;
+    QGroupBox *groupBox;
+    QGridLayout *gridLayout_7;
+    QPushButton *pushButton_Four_Corners_top_left_up;
+    QPushButton *pushButton_Four_Corners_top_left_right;
+    QPushButton *pushButton_Four_Corners_top_left_down;
+    QPushButton *pushButton_Four_Corners_top_left_left;
+    QFrame *frame_Four_Corners_top_left_V;
+    QHBoxLayout *horizontalLayout_65;
+    QLabel *label_Four_Corners_top_left_V;
+    QSlider *horizontalSlider_Four_Corners_top_left_V;
+    QLabel *label_var_Four_Corners_top_left_V;
+    QFrame *frame_Four_Corners_top_left_H;
+    QHBoxLayout *horizontalLayout_64;
+    QLabel *label_Four_Corners_top_left_H;
+    QSlider *horizontalSlider_Four_Corners_top_left_H;
+    QLabel *label_var_Four_Corners_top_left_H;
+    QGroupBox *groupBox_2;
+    QGridLayout *gridLayout_8;
+    QPushButton *pushButton_Four_Corners_top_right_up;
+    QPushButton *pushButton_Four_Corners_top_right_right;
+    QPushButton *pushButton_Four_Corners_top_right_down;
+    QPushButton *pushButton_Four_Corners_top_right_left;
+    QFrame *frame_Four_Corners_top_right_V;
+    QHBoxLayout *horizontalLayout_66;
+    QLabel *label_Four_Corners_top_right_V;
+    QSlider *horizontalSlider_Four_Corners_top_right_V;
+    QLabel *label_var_Four_Corners_top_right_V;
+    QFrame *frame_Four_Corners_top_right_H;
+    QHBoxLayout *horizontalLayout_67;
+    QLabel *label_Four_Corners_top_right_H;
+    QSlider *horizontalSlider_Four_Corners_top_right_H;
+    QLabel *label_var_Four_Corners_top_right_H;
+    QGroupBox *groupBox_3;
+    QGridLayout *gridLayout_9;
+    QPushButton *pushButton_Four_Corners_buttom_left_up;
+    QPushButton *pushButton_Four_Corners_buttom_left_right;
+    QPushButton *pushButton_Four_Corners_buttom_left_down;
+    QPushButton *pushButton_Four_Corners_buttom_left_left;
+    QFrame *frame_Four_Corners_buttom_left_V;
+    QHBoxLayout *horizontalLayout_68;
+    QLabel *label_Four_Corners_buttom_left_V;
+    QSlider *horizontalSlider_Four_Corners_buttom_left_V;
+    QLabel *label_var_Four_Corners_buttom_left_V;
+    QFrame *frame_Four_Corners_buttom_left_H;
+    QHBoxLayout *horizontalLayout_69;
+    QLabel *label_Four_Corners_buttom_left_H;
+    QSlider *horizontalSlider_Four_Corners_buttom_left_H;
+    QLabel *label_var_Four_Corners_buttom_left_H;
+    QGroupBox *groupBox_4;
+    QGridLayout *gridLayout_10;
+    QPushButton *pushButton_Four_Corners_buttom_right_up;
+    QPushButton *pushButton_Four_Corners_buttom_right_right;
+    QPushButton *pushButton_Four_Corners_buttom_right_down;
+    QPushButton *pushButton_Four_Corners_buttom_right_left;
+    QFrame *frame_Four_Corners_buttom_right_V;
+    QHBoxLayout *horizontalLayout_70;
+    QLabel *label_Four_Corners_buttom_right_V;
+    QSlider *horizontalSlider_Four_Corners_buttom_right_V;
+    QLabel *label_var_Four_Corners_buttom_right_V;
+    QFrame *frame_Four_Corners_buttom_right_H;
+    QHBoxLayout *horizontalLayout_71;
+    QLabel *label_Four_Corners_buttom_right_H;
+    QSlider *horizontalSlider_Four_Corners_buttom_right_H;
+    QLabel *label_var_Four_Corners_buttom_right_H;
     QWidget *tab_14;
     QWidget *tab_15;
     QWidget *tab_2;
@@ -230,147 +353,777 @@ public:
         tabWidget_2->setObjectName(QStringLiteral("tabWidget_2"));
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
-        frame_3 = new QFrame(tab_4);
-        frame_3->setObjectName(QStringLiteral("frame_3"));
-        frame_3->setGeometry(QRect(100, 330, 172, 42));
-        frame_3->setFrameShape(QFrame::StyledPanel);
-        frame_3->setFrameShadow(QFrame::Raised);
-        horizontalLayout_3 = new QHBoxLayout(frame_3);
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        label_3 = new QLabel(frame_3);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        horizontalLayout_3->addWidget(label_3);
-
-        horizontalSlider = new QSlider(frame_3);
-        horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
-        horizontalSlider->setOrientation(Qt::Horizontal);
-
-        horizontalLayout_3->addWidget(horizontalSlider);
-
-        frame_2 = new QFrame(tab_4);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setGeometry(QRect(100, 240, 172, 42));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        horizontalLayout_2 = new QHBoxLayout(frame_2);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        label_2 = new QLabel(frame_2);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        horizontalLayout_2->addWidget(label_2);
-
-        comboBox_2 = new QComboBox(frame_2);
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-
-        horizontalLayout_2->addWidget(comboBox_2);
-
-        frame_7 = new QFrame(tab_4);
-        frame_7->setObjectName(QStringLiteral("frame_7"));
-        frame_7->setGeometry(QRect(310, 220, 491, 61));
-        frame_7->setFrameShape(QFrame::StyledPanel);
-        frame_7->setFrameShadow(QFrame::Raised);
-        horizontalLayout_7 = new QHBoxLayout(frame_7);
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        label_7 = new QLabel(frame_7);
-        label_7->setObjectName(QStringLiteral("label_7"));
-
-        horizontalLayout_7->addWidget(label_7);
-
-        comboBox_7 = new QComboBox(frame_7);
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->addItem(QString());
-        comboBox_7->setObjectName(QStringLiteral("comboBox_7"));
-
-        horizontalLayout_7->addWidget(comboBox_7);
-
-        frame = new QFrame(tab_4);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setGeometry(QRect(110, 390, 172, 42));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout = new QHBoxLayout(frame);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        label = new QLabel(frame);
-        label->setObjectName(QStringLiteral("label"));
-
-        horizontalLayout->addWidget(label);
-
-        comboBox = new QComboBox(frame);
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->setObjectName(QStringLiteral("comboBox"));
-
-        horizontalLayout->addWidget(comboBox);
-
         tabWidget_2->addTab(tab_4, QString());
         tab_5 = new QWidget();
         tab_5->setObjectName(QStringLiteral("tab_5"));
+        frame_27 = new QFrame(tab_5);
+        frame_27->setObjectName(QStringLiteral("frame_27"));
+        frame_27->setGeometry(QRect(20, 20, 531, 491));
+        frame_27->setFrameShape(QFrame::Box);
+        frame_27->setFrameShadow(QFrame::Raised);
+        gridLayout_5 = new QGridLayout(frame_27);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        frame_3D_sync_invert = new QFrame(frame_27);
+        frame_3D_sync_invert->setObjectName(QStringLiteral("frame_3D_sync_invert"));
+        frame_3D_sync_invert->setFrameShape(QFrame::Box);
+        frame_3D_sync_invert->setFrameShadow(QFrame::Raised);
+        horizontalLayout_39 = new QHBoxLayout(frame_3D_sync_invert);
+        horizontalLayout_39->setObjectName(QStringLiteral("horizontalLayout_39"));
+        label_3D_sync_invert = new QLabel(frame_3D_sync_invert);
+        label_3D_sync_invert->setObjectName(QStringLiteral("label_3D_sync_invert"));
+
+        horizontalLayout_39->addWidget(label_3D_sync_invert);
+
+        comboBox_3D_sync_invert = new QComboBox(frame_3D_sync_invert);
+        comboBox_3D_sync_invert->addItem(QString());
+        comboBox_3D_sync_invert->addItem(QString());
+        comboBox_3D_sync_invert->setObjectName(QStringLiteral("comboBox_3D_sync_invert"));
+
+        horizontalLayout_39->addWidget(comboBox_3D_sync_invert);
+
+
+        gridLayout_5->addWidget(frame_3D_sync_invert, 3, 0, 1, 1);
+
+        frame_3D_Mode = new QFrame(frame_27);
+        frame_3D_Mode->setObjectName(QStringLiteral("frame_3D_Mode"));
+        frame_3D_Mode->setFrameShape(QFrame::Box);
+        frame_3D_Mode->setFrameShadow(QFrame::Raised);
+        horizontalLayout_36 = new QHBoxLayout(frame_3D_Mode);
+        horizontalLayout_36->setObjectName(QStringLiteral("horizontalLayout_36"));
+        label_3D_Mode = new QLabel(frame_3D_Mode);
+        label_3D_Mode->setObjectName(QStringLiteral("label_3D_Mode"));
+
+        horizontalLayout_36->addWidget(label_3D_Mode);
+
+        comboBox_3D_Mode = new QComboBox(frame_3D_Mode);
+        comboBox_3D_Mode->addItem(QString());
+        comboBox_3D_Mode->addItem(QString());
+        comboBox_3D_Mode->addItem(QString());
+        comboBox_3D_Mode->setObjectName(QStringLiteral("comboBox_3D_Mode"));
+
+        horizontalLayout_36->addWidget(comboBox_3D_Mode);
+
+
+        gridLayout_5->addWidget(frame_3D_Mode, 0, 0, 1, 1);
+
+        frame_3D_2D = new QFrame(frame_27);
+        frame_3D_2D->setObjectName(QStringLiteral("frame_3D_2D"));
+        frame_3D_2D->setFrameShape(QFrame::Box);
+        frame_3D_2D->setFrameShadow(QFrame::Raised);
+        horizontalLayout_37 = new QHBoxLayout(frame_3D_2D);
+        horizontalLayout_37->setObjectName(QStringLiteral("horizontalLayout_37"));
+        label_Internal_3D_2D = new QLabel(frame_3D_2D);
+        label_Internal_3D_2D->setObjectName(QStringLiteral("label_Internal_3D_2D"));
+
+        horizontalLayout_37->addWidget(label_Internal_3D_2D);
+
+        comboBox_3D_2D = new QComboBox(frame_3D_2D);
+        comboBox_3D_2D->addItem(QString());
+        comboBox_3D_2D->addItem(QString());
+        comboBox_3D_2D->addItem(QString());
+        comboBox_3D_2D->setObjectName(QStringLiteral("comboBox_3D_2D"));
+
+        horizontalLayout_37->addWidget(comboBox_3D_2D);
+
+
+        gridLayout_5->addWidget(frame_3D_2D, 1, 0, 1, 1);
+
+        frame_3D_Format = new QFrame(frame_27);
+        frame_3D_Format->setObjectName(QStringLiteral("frame_3D_Format"));
+        frame_3D_Format->setFrameShape(QFrame::Box);
+        frame_3D_Format->setFrameShadow(QFrame::Raised);
+        horizontalLayout_38 = new QHBoxLayout(frame_3D_Format);
+        horizontalLayout_38->setObjectName(QStringLiteral("horizontalLayout_38"));
+        label_3D_Format = new QLabel(frame_3D_Format);
+        label_3D_Format->setObjectName(QStringLiteral("label_3D_Format"));
+
+        horizontalLayout_38->addWidget(label_3D_Format);
+
+        comboBox_3D_Format = new QComboBox(frame_3D_Format);
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->addItem(QString());
+        comboBox_3D_Format->setObjectName(QStringLiteral("comboBox_3D_Format"));
+
+        horizontalLayout_38->addWidget(comboBox_3D_Format);
+
+
+        gridLayout_5->addWidget(frame_3D_Format, 2, 0, 1, 1);
+
+        frame_2D_3D = new QFrame(frame_27);
+        frame_2D_3D->setObjectName(QStringLiteral("frame_2D_3D"));
+        frame_2D_3D->setFrameShape(QFrame::Box);
+        frame_2D_3D->setFrameShadow(QFrame::Raised);
+        horizontalLayout_40 = new QHBoxLayout(frame_2D_3D);
+        horizontalLayout_40->setObjectName(QStringLiteral("horizontalLayout_40"));
+        label_2D_3D = new QLabel(frame_2D_3D);
+        label_2D_3D->setObjectName(QStringLiteral("label_2D_3D"));
+
+        horizontalLayout_40->addWidget(label_2D_3D);
+
+        comboBox_2D_3D = new QComboBox(frame_2D_3D);
+        comboBox_2D_3D->addItem(QString());
+        comboBox_2D_3D->addItem(QString());
+        comboBox_2D_3D->addItem(QString());
+        comboBox_2D_3D->addItem(QString());
+        comboBox_2D_3D->setObjectName(QStringLiteral("comboBox_2D_3D"));
+
+        horizontalLayout_40->addWidget(comboBox_2D_3D);
+
+
+        gridLayout_5->addWidget(frame_2D_3D, 4, 0, 1, 1);
+
         tabWidget_2->addTab(tab_5, QString());
         tab_6 = new QWidget();
         tab_6->setObjectName(QStringLiteral("tab_6"));
+        frame_Aspect_Ratio = new QFrame(tab_6);
+        frame_Aspect_Ratio->setObjectName(QStringLiteral("frame_Aspect_Ratio"));
+        frame_Aspect_Ratio->setGeometry(QRect(20, 20, 509, 89));
+        frame_Aspect_Ratio->setFrameShape(QFrame::Box);
+        frame_Aspect_Ratio->setFrameShadow(QFrame::Raised);
+        horizontalLayout_41 = new QHBoxLayout(frame_Aspect_Ratio);
+        horizontalLayout_41->setObjectName(QStringLiteral("horizontalLayout_41"));
+        label_Aspect_Ratio = new QLabel(frame_Aspect_Ratio);
+        label_Aspect_Ratio->setObjectName(QStringLiteral("label_Aspect_Ratio"));
+
+        horizontalLayout_41->addWidget(label_Aspect_Ratio);
+
+        comboBox_Aspect_ratio = new QComboBox(frame_Aspect_Ratio);
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->addItem(QString());
+        comboBox_Aspect_ratio->setObjectName(QStringLiteral("comboBox_Aspect_ratio"));
+
+        horizontalLayout_41->addWidget(comboBox_Aspect_ratio);
+
         tabWidget_2->addTab(tab_6, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
+        frame_Edge_Mask = new QFrame(tab_7);
+        frame_Edge_Mask->setObjectName(QStringLiteral("frame_Edge_Mask"));
+        frame_Edge_Mask->setGeometry(QRect(20, 20, 399, 68));
+        frame_Edge_Mask->setFrameShape(QFrame::Box);
+        frame_Edge_Mask->setFrameShadow(QFrame::Raised);
+        horizontalLayout_42 = new QHBoxLayout(frame_Edge_Mask);
+        horizontalLayout_42->setObjectName(QStringLiteral("horizontalLayout_42"));
+        label_Edge_Mask = new QLabel(frame_Edge_Mask);
+        label_Edge_Mask->setObjectName(QStringLiteral("label_Edge_Mask"));
+
+        horizontalLayout_42->addWidget(label_Edge_Mask);
+
+        horizontalSlider_Edge_Mask = new QSlider(frame_Edge_Mask);
+        horizontalSlider_Edge_Mask->setObjectName(QStringLiteral("horizontalSlider_Edge_Mask"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(horizontalSlider_Edge_Mask->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Edge_Mask->setSizePolicy(sizePolicy);
+        horizontalSlider_Edge_Mask->setMinimum(0);
+        horizontalSlider_Edge_Mask->setMaximum(10);
+        horizontalSlider_Edge_Mask->setValue(5);
+        horizontalSlider_Edge_Mask->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_42->addWidget(horizontalSlider_Edge_Mask);
+
+        label_var_Edge_Mask = new QLabel(frame_Edge_Mask);
+        label_var_Edge_Mask->setObjectName(QStringLiteral("label_var_Edge_Mask"));
+
+        horizontalLayout_42->addWidget(label_var_Edge_Mask, 0, Qt::AlignHCenter);
+
         tabWidget_2->addTab(tab_7, QString());
         tab_8 = new QWidget();
         tab_8->setObjectName(QStringLiteral("tab_8"));
+        frame_Edge_Zoom = new QFrame(tab_8);
+        frame_Edge_Zoom->setObjectName(QStringLiteral("frame_Edge_Zoom"));
+        frame_Edge_Zoom->setGeometry(QRect(70, 20, 399, 68));
+        frame_Edge_Zoom->setFrameShape(QFrame::Box);
+        frame_Edge_Zoom->setFrameShadow(QFrame::Raised);
+        horizontalLayout_43 = new QHBoxLayout(frame_Edge_Zoom);
+        horizontalLayout_43->setObjectName(QStringLiteral("horizontalLayout_43"));
+        label_Edge_Zoom = new QLabel(frame_Edge_Zoom);
+        label_Edge_Zoom->setObjectName(QStringLiteral("label_Edge_Zoom"));
+
+        horizontalLayout_43->addWidget(label_Edge_Zoom);
+
+        horizontalSlider_Zoom = new QSlider(frame_Edge_Zoom);
+        horizontalSlider_Zoom->setObjectName(QStringLiteral("horizontalSlider_Zoom"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Zoom->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Zoom->setSizePolicy(sizePolicy);
+        horizontalSlider_Zoom->setMinimum(-5);
+        horizontalSlider_Zoom->setMaximum(25);
+        horizontalSlider_Zoom->setValue(10);
+        horizontalSlider_Zoom->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_43->addWidget(horizontalSlider_Zoom);
+
+        label_var_Zoom = new QLabel(frame_Edge_Zoom);
+        label_var_Zoom->setObjectName(QStringLiteral("label_var_Zoom"));
+
+        horizontalLayout_43->addWidget(label_var_Zoom, 0, Qt::AlignHCenter);
+
+        pushButton_Zoom_minus = new QPushButton(tab_8);
+        pushButton_Zoom_minus->setObjectName(QStringLiteral("pushButton_Zoom_minus"));
+        pushButton_Zoom_minus->setGeometry(QRect(10, 40, 41, 31));
+        pushButton_Zoom_plus = new QPushButton(tab_8);
+        pushButton_Zoom_plus->setObjectName(QStringLiteral("pushButton_Zoom_plus"));
+        pushButton_Zoom_plus->setGeometry(QRect(480, 40, 41, 31));
         tabWidget_2->addTab(tab_8, QString());
         tab_9 = new QWidget();
         tab_9->setObjectName(QStringLiteral("tab_9"));
+        frame_28 = new QFrame(tab_9);
+        frame_28->setObjectName(QStringLiteral("frame_28"));
+        frame_28->setGeometry(QRect(20, 20, 571, 221));
+        frame_28->setFrameShape(QFrame::StyledPanel);
+        frame_28->setFrameShadow(QFrame::Raised);
+        verticalLayout_4 = new QVBoxLayout(frame_28);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        frame_Edge_H_Zoom = new QFrame(frame_28);
+        frame_Edge_H_Zoom->setObjectName(QStringLiteral("frame_Edge_H_Zoom"));
+        frame_Edge_H_Zoom->setFrameShape(QFrame::Box);
+        frame_Edge_H_Zoom->setFrameShadow(QFrame::Raised);
+        horizontalLayout_44 = new QHBoxLayout(frame_Edge_H_Zoom);
+        horizontalLayout_44->setObjectName(QStringLiteral("horizontalLayout_44"));
+        label_Edge_Zoom_H_Zoom = new QLabel(frame_Edge_H_Zoom);
+        label_Edge_Zoom_H_Zoom->setObjectName(QStringLiteral("label_Edge_Zoom_H_Zoom"));
+
+        horizontalLayout_44->addWidget(label_Edge_Zoom_H_Zoom);
+
+        horizontalSlider_H_Zoom = new QSlider(frame_Edge_H_Zoom);
+        horizontalSlider_H_Zoom->setObjectName(QStringLiteral("horizontalSlider_H_Zoom"));
+        sizePolicy.setHeightForWidth(horizontalSlider_H_Zoom->sizePolicy().hasHeightForWidth());
+        horizontalSlider_H_Zoom->setSizePolicy(sizePolicy);
+        horizontalSlider_H_Zoom->setMinimum(0);
+        horizontalSlider_H_Zoom->setMaximum(100);
+        horizontalSlider_H_Zoom->setValue(50);
+        horizontalSlider_H_Zoom->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_44->addWidget(horizontalSlider_H_Zoom);
+
+        label_var_H_Zoom = new QLabel(frame_Edge_H_Zoom);
+        label_var_H_Zoom->setObjectName(QStringLiteral("label_var_H_Zoom"));
+
+        horizontalLayout_44->addWidget(label_var_H_Zoom, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_4->addWidget(frame_Edge_H_Zoom);
+
+        frame_Edge_V_Zoom = new QFrame(frame_28);
+        frame_Edge_V_Zoom->setObjectName(QStringLiteral("frame_Edge_V_Zoom"));
+        frame_Edge_V_Zoom->setFrameShape(QFrame::Box);
+        frame_Edge_V_Zoom->setFrameShadow(QFrame::Raised);
+        horizontalLayout_45 = new QHBoxLayout(frame_Edge_V_Zoom);
+        horizontalLayout_45->setObjectName(QStringLiteral("horizontalLayout_45"));
+        label_Edge_V_Zoom = new QLabel(frame_Edge_V_Zoom);
+        label_Edge_V_Zoom->setObjectName(QStringLiteral("label_Edge_V_Zoom"));
+
+        horizontalLayout_45->addWidget(label_Edge_V_Zoom);
+
+        horizontalSlider_V_Zoom = new QSlider(frame_Edge_V_Zoom);
+        horizontalSlider_V_Zoom->setObjectName(QStringLiteral("horizontalSlider_V_Zoom"));
+        sizePolicy.setHeightForWidth(horizontalSlider_V_Zoom->sizePolicy().hasHeightForWidth());
+        horizontalSlider_V_Zoom->setSizePolicy(sizePolicy);
+        horizontalSlider_V_Zoom->setMinimum(0);
+        horizontalSlider_V_Zoom->setMaximum(100);
+        horizontalSlider_V_Zoom->setValue(50);
+        horizontalSlider_V_Zoom->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_45->addWidget(horizontalSlider_V_Zoom);
+
+        label_var_V_Zoom = new QLabel(frame_Edge_V_Zoom);
+        label_var_V_Zoom->setObjectName(QStringLiteral("label_var_V_Zoom"));
+
+        horizontalLayout_45->addWidget(label_var_V_Zoom, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_4->addWidget(frame_Edge_V_Zoom);
+
         tabWidget_2->addTab(tab_9, QString());
         tab_10 = new QWidget();
         tab_10->setObjectName(QStringLiteral("tab_10"));
+        pushButton_Image_shift_H_plus = new QPushButton(tab_10);
+        pushButton_Image_shift_H_plus->setObjectName(QStringLiteral("pushButton_Image_shift_H_plus"));
+        pushButton_Image_shift_H_plus->setGeometry(QRect(500, 40, 41, 31));
+        pushButton_Image_shift_H_minus = new QPushButton(tab_10);
+        pushButton_Image_shift_H_minus->setObjectName(QStringLiteral("pushButton_Image_shift_H_minus"));
+        pushButton_Image_shift_H_minus->setGeometry(QRect(20, 40, 41, 31));
+        frame_Edge_Image_shift_H = new QFrame(tab_10);
+        frame_Edge_Image_shift_H->setObjectName(QStringLiteral("frame_Edge_Image_shift_H"));
+        frame_Edge_Image_shift_H->setGeometry(QRect(80, 20, 399, 68));
+        frame_Edge_Image_shift_H->setFrameShape(QFrame::Box);
+        frame_Edge_Image_shift_H->setFrameShadow(QFrame::Raised);
+        horizontalLayout_60 = new QHBoxLayout(frame_Edge_Image_shift_H);
+        horizontalLayout_60->setObjectName(QStringLiteral("horizontalLayout_60"));
+        label_Edge_Image_shift_H = new QLabel(frame_Edge_Image_shift_H);
+        label_Edge_Image_shift_H->setObjectName(QStringLiteral("label_Edge_Image_shift_H"));
+
+        horizontalLayout_60->addWidget(label_Edge_Image_shift_H);
+
+        horizontalSlider_Image_shift_H = new QSlider(frame_Edge_Image_shift_H);
+        horizontalSlider_Image_shift_H->setObjectName(QStringLiteral("horizontalSlider_Image_shift_H"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_shift_H->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_shift_H->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_shift_H->setMinimum(-100);
+        horizontalSlider_Image_shift_H->setMaximum(100);
+        horizontalSlider_Image_shift_H->setValue(0);
+        horizontalSlider_Image_shift_H->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_60->addWidget(horizontalSlider_Image_shift_H);
+
+        label_var_Image_shift_H = new QLabel(frame_Edge_Image_shift_H);
+        label_var_Image_shift_H->setObjectName(QStringLiteral("label_var_Image_shift_H"));
+
+        horizontalLayout_60->addWidget(label_var_Image_shift_H, 0, Qt::AlignHCenter);
+
+        pushButton_Image_shift_V_plus = new QPushButton(tab_10);
+        pushButton_Image_shift_V_plus->setObjectName(QStringLiteral("pushButton_Image_shift_V_plus"));
+        pushButton_Image_shift_V_plus->setGeometry(QRect(500, 120, 41, 31));
+        pushButton_Image_shift_V_minus = new QPushButton(tab_10);
+        pushButton_Image_shift_V_minus->setObjectName(QStringLiteral("pushButton_Image_shift_V_minus"));
+        pushButton_Image_shift_V_minus->setGeometry(QRect(20, 120, 41, 31));
+        frame_Edge_Image_shift_V = new QFrame(tab_10);
+        frame_Edge_Image_shift_V->setObjectName(QStringLiteral("frame_Edge_Image_shift_V"));
+        frame_Edge_Image_shift_V->setGeometry(QRect(80, 100, 399, 68));
+        frame_Edge_Image_shift_V->setFrameShape(QFrame::Box);
+        frame_Edge_Image_shift_V->setFrameShadow(QFrame::Raised);
+        horizontalLayout_61 = new QHBoxLayout(frame_Edge_Image_shift_V);
+        horizontalLayout_61->setObjectName(QStringLiteral("horizontalLayout_61"));
+        label_Edge_Image_shift_V = new QLabel(frame_Edge_Image_shift_V);
+        label_Edge_Image_shift_V->setObjectName(QStringLiteral("label_Edge_Image_shift_V"));
+
+        horizontalLayout_61->addWidget(label_Edge_Image_shift_V);
+
+        horizontalSlider_Image_shift_V = new QSlider(frame_Edge_Image_shift_V);
+        horizontalSlider_Image_shift_V->setObjectName(QStringLiteral("horizontalSlider_Image_shift_V"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_shift_V->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_shift_V->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_shift_V->setMinimum(-100);
+        horizontalSlider_Image_shift_V->setMaximum(100);
+        horizontalSlider_Image_shift_V->setValue(0);
+        horizontalSlider_Image_shift_V->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_61->addWidget(horizontalSlider_Image_shift_V);
+
+        label_var_Image_shift_V = new QLabel(frame_Edge_Image_shift_V);
+        label_var_Image_shift_V->setObjectName(QStringLiteral("label_var_Image_shift_V"));
+
+        horizontalLayout_61->addWidget(label_var_Image_shift_V, 0, Qt::AlignHCenter);
+
         tabWidget_2->addTab(tab_10, QString());
         tab_11 = new QWidget();
         tab_11->setObjectName(QStringLiteral("tab_11"));
+        frame_H_Keystone = new QFrame(tab_11);
+        frame_H_Keystone->setObjectName(QStringLiteral("frame_H_Keystone"));
+        frame_H_Keystone->setGeometry(QRect(20, 20, 551, 98));
+        frame_H_Keystone->setFrameShape(QFrame::Box);
+        frame_H_Keystone->setFrameShadow(QFrame::Raised);
+        horizontalLayout_62 = new QHBoxLayout(frame_H_Keystone);
+        horizontalLayout_62->setObjectName(QStringLiteral("horizontalLayout_62"));
+        label_H_Keystone = new QLabel(frame_H_Keystone);
+        label_H_Keystone->setObjectName(QStringLiteral("label_H_Keystone"));
+
+        horizontalLayout_62->addWidget(label_H_Keystone);
+
+        horizontalSlider_H_Keystone = new QSlider(frame_H_Keystone);
+        horizontalSlider_H_Keystone->setObjectName(QStringLiteral("horizontalSlider_H_Keystone"));
+        sizePolicy.setHeightForWidth(horizontalSlider_H_Keystone->sizePolicy().hasHeightForWidth());
+        horizontalSlider_H_Keystone->setSizePolicy(sizePolicy);
+        horizontalSlider_H_Keystone->setMinimum(-40);
+        horizontalSlider_H_Keystone->setMaximum(40);
+        horizontalSlider_H_Keystone->setValue(0);
+        horizontalSlider_H_Keystone->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_62->addWidget(horizontalSlider_H_Keystone);
+
+        label_var_H_Keystone = new QLabel(frame_H_Keystone);
+        label_var_H_Keystone->setObjectName(QStringLiteral("label_var_H_Keystone"));
+
+        horizontalLayout_62->addWidget(label_var_H_Keystone, 0, Qt::AlignHCenter);
+
         tabWidget_2->addTab(tab_11, QString());
         tab_12 = new QWidget();
         tab_12->setObjectName(QStringLiteral("tab_12"));
+        frame_V_Keystone = new QFrame(tab_12);
+        frame_V_Keystone->setObjectName(QStringLiteral("frame_V_Keystone"));
+        frame_V_Keystone->setGeometry(QRect(20, 20, 551, 98));
+        frame_V_Keystone->setFrameShape(QFrame::Box);
+        frame_V_Keystone->setFrameShadow(QFrame::Raised);
+        horizontalLayout_63 = new QHBoxLayout(frame_V_Keystone);
+        horizontalLayout_63->setObjectName(QStringLiteral("horizontalLayout_63"));
+        label_V_Keystone = new QLabel(frame_V_Keystone);
+        label_V_Keystone->setObjectName(QStringLiteral("label_V_Keystone"));
+
+        horizontalLayout_63->addWidget(label_V_Keystone);
+
+        horizontalSlider_V_Keystone = new QSlider(frame_V_Keystone);
+        horizontalSlider_V_Keystone->setObjectName(QStringLiteral("horizontalSlider_V_Keystone"));
+        sizePolicy.setHeightForWidth(horizontalSlider_V_Keystone->sizePolicy().hasHeightForWidth());
+        horizontalSlider_V_Keystone->setSizePolicy(sizePolicy);
+        horizontalSlider_V_Keystone->setMinimum(-40);
+        horizontalSlider_V_Keystone->setMaximum(40);
+        horizontalSlider_V_Keystone->setValue(0);
+        horizontalSlider_V_Keystone->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_63->addWidget(horizontalSlider_V_Keystone);
+
+        label_var_V_Keystone = new QLabel(frame_V_Keystone);
+        label_var_V_Keystone->setObjectName(QStringLiteral("label_var_V_Keystone"));
+
+        horizontalLayout_63->addWidget(label_var_V_Keystone, 0, Qt::AlignHCenter);
+
         tabWidget_2->addTab(tab_12, QString());
         tab_13 = new QWidget();
         tab_13->setObjectName(QStringLiteral("tab_13"));
+        groupBox = new QGroupBox(tab_13);
+        groupBox->setObjectName(QStringLiteral("groupBox"));
+        groupBox->setGeometry(QRect(10, 20, 471, 301));
+        gridLayout_7 = new QGridLayout(groupBox);
+        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
+        pushButton_Four_Corners_top_left_up = new QPushButton(groupBox);
+        pushButton_Four_Corners_top_left_up->setObjectName(QStringLiteral("pushButton_Four_Corners_top_left_up"));
+
+        gridLayout_7->addWidget(pushButton_Four_Corners_top_left_up, 2, 1, 1, 1);
+
+        pushButton_Four_Corners_top_left_right = new QPushButton(groupBox);
+        pushButton_Four_Corners_top_left_right->setObjectName(QStringLiteral("pushButton_Four_Corners_top_left_right"));
+
+        gridLayout_7->addWidget(pushButton_Four_Corners_top_left_right, 3, 2, 1, 1);
+
+        pushButton_Four_Corners_top_left_down = new QPushButton(groupBox);
+        pushButton_Four_Corners_top_left_down->setObjectName(QStringLiteral("pushButton_Four_Corners_top_left_down"));
+
+        gridLayout_7->addWidget(pushButton_Four_Corners_top_left_down, 3, 1, 1, 1);
+
+        pushButton_Four_Corners_top_left_left = new QPushButton(groupBox);
+        pushButton_Four_Corners_top_left_left->setObjectName(QStringLiteral("pushButton_Four_Corners_top_left_left"));
+
+        gridLayout_7->addWidget(pushButton_Four_Corners_top_left_left, 3, 0, 1, 1);
+
+        frame_Four_Corners_top_left_V = new QFrame(groupBox);
+        frame_Four_Corners_top_left_V->setObjectName(QStringLiteral("frame_Four_Corners_top_left_V"));
+        frame_Four_Corners_top_left_V->setFrameShape(QFrame::Box);
+        frame_Four_Corners_top_left_V->setFrameShadow(QFrame::Raised);
+        horizontalLayout_65 = new QHBoxLayout(frame_Four_Corners_top_left_V);
+        horizontalLayout_65->setObjectName(QStringLiteral("horizontalLayout_65"));
+        label_Four_Corners_top_left_V = new QLabel(frame_Four_Corners_top_left_V);
+        label_Four_Corners_top_left_V->setObjectName(QStringLiteral("label_Four_Corners_top_left_V"));
+
+        horizontalLayout_65->addWidget(label_Four_Corners_top_left_V);
+
+        horizontalSlider_Four_Corners_top_left_V = new QSlider(frame_Four_Corners_top_left_V);
+        horizontalSlider_Four_Corners_top_left_V->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_top_left_V"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_top_left_V->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_top_left_V->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_top_left_V->setMinimum(0);
+        horizontalSlider_Four_Corners_top_left_V->setMaximum(80);
+        horizontalSlider_Four_Corners_top_left_V->setValue(40);
+        horizontalSlider_Four_Corners_top_left_V->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_65->addWidget(horizontalSlider_Four_Corners_top_left_V);
+
+        label_var_Four_Corners_top_left_V = new QLabel(frame_Four_Corners_top_left_V);
+        label_var_Four_Corners_top_left_V->setObjectName(QStringLiteral("label_var_Four_Corners_top_left_V"));
+
+        horizontalLayout_65->addWidget(label_var_Four_Corners_top_left_V, 0, Qt::AlignHCenter);
+
+
+        gridLayout_7->addWidget(frame_Four_Corners_top_left_V, 1, 0, 1, 3);
+
+        frame_Four_Corners_top_left_H = new QFrame(groupBox);
+        frame_Four_Corners_top_left_H->setObjectName(QStringLiteral("frame_Four_Corners_top_left_H"));
+        frame_Four_Corners_top_left_H->setFrameShape(QFrame::Box);
+        frame_Four_Corners_top_left_H->setFrameShadow(QFrame::Raised);
+        horizontalLayout_64 = new QHBoxLayout(frame_Four_Corners_top_left_H);
+        horizontalLayout_64->setObjectName(QStringLiteral("horizontalLayout_64"));
+        label_Four_Corners_top_left_H = new QLabel(frame_Four_Corners_top_left_H);
+        label_Four_Corners_top_left_H->setObjectName(QStringLiteral("label_Four_Corners_top_left_H"));
+
+        horizontalLayout_64->addWidget(label_Four_Corners_top_left_H);
+
+        horizontalSlider_Four_Corners_top_left_H = new QSlider(frame_Four_Corners_top_left_H);
+        horizontalSlider_Four_Corners_top_left_H->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_top_left_H"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_top_left_H->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_top_left_H->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_top_left_H->setMinimum(0);
+        horizontalSlider_Four_Corners_top_left_H->setMaximum(120);
+        horizontalSlider_Four_Corners_top_left_H->setValue(60);
+        horizontalSlider_Four_Corners_top_left_H->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_64->addWidget(horizontalSlider_Four_Corners_top_left_H);
+
+        label_var_Four_Corners_top_left_H = new QLabel(frame_Four_Corners_top_left_H);
+        label_var_Four_Corners_top_left_H->setObjectName(QStringLiteral("label_var_Four_Corners_top_left_H"));
+
+        horizontalLayout_64->addWidget(label_var_Four_Corners_top_left_H, 0, Qt::AlignHCenter);
+
+
+        gridLayout_7->addWidget(frame_Four_Corners_top_left_H, 0, 0, 1, 3);
+
+        groupBox_2 = new QGroupBox(tab_13);
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        groupBox_2->setGeometry(QRect(510, 20, 471, 301));
+        gridLayout_8 = new QGridLayout(groupBox_2);
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        pushButton_Four_Corners_top_right_up = new QPushButton(groupBox_2);
+        pushButton_Four_Corners_top_right_up->setObjectName(QStringLiteral("pushButton_Four_Corners_top_right_up"));
+
+        gridLayout_8->addWidget(pushButton_Four_Corners_top_right_up, 2, 1, 1, 1);
+
+        pushButton_Four_Corners_top_right_right = new QPushButton(groupBox_2);
+        pushButton_Four_Corners_top_right_right->setObjectName(QStringLiteral("pushButton_Four_Corners_top_right_right"));
+
+        gridLayout_8->addWidget(pushButton_Four_Corners_top_right_right, 3, 2, 1, 1);
+
+        pushButton_Four_Corners_top_right_down = new QPushButton(groupBox_2);
+        pushButton_Four_Corners_top_right_down->setObjectName(QStringLiteral("pushButton_Four_Corners_top_right_down"));
+
+        gridLayout_8->addWidget(pushButton_Four_Corners_top_right_down, 3, 1, 1, 1);
+
+        pushButton_Four_Corners_top_right_left = new QPushButton(groupBox_2);
+        pushButton_Four_Corners_top_right_left->setObjectName(QStringLiteral("pushButton_Four_Corners_top_right_left"));
+
+        gridLayout_8->addWidget(pushButton_Four_Corners_top_right_left, 3, 0, 1, 1);
+
+        frame_Four_Corners_top_right_V = new QFrame(groupBox_2);
+        frame_Four_Corners_top_right_V->setObjectName(QStringLiteral("frame_Four_Corners_top_right_V"));
+        frame_Four_Corners_top_right_V->setFrameShape(QFrame::Box);
+        frame_Four_Corners_top_right_V->setFrameShadow(QFrame::Raised);
+        horizontalLayout_66 = new QHBoxLayout(frame_Four_Corners_top_right_V);
+        horizontalLayout_66->setObjectName(QStringLiteral("horizontalLayout_66"));
+        label_Four_Corners_top_right_V = new QLabel(frame_Four_Corners_top_right_V);
+        label_Four_Corners_top_right_V->setObjectName(QStringLiteral("label_Four_Corners_top_right_V"));
+
+        horizontalLayout_66->addWidget(label_Four_Corners_top_right_V);
+
+        horizontalSlider_Four_Corners_top_right_V = new QSlider(frame_Four_Corners_top_right_V);
+        horizontalSlider_Four_Corners_top_right_V->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_top_right_V"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_top_right_V->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_top_right_V->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_top_right_V->setMinimum(0);
+        horizontalSlider_Four_Corners_top_right_V->setMaximum(80);
+        horizontalSlider_Four_Corners_top_right_V->setValue(40);
+        horizontalSlider_Four_Corners_top_right_V->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_66->addWidget(horizontalSlider_Four_Corners_top_right_V);
+
+        label_var_Four_Corners_top_right_V = new QLabel(frame_Four_Corners_top_right_V);
+        label_var_Four_Corners_top_right_V->setObjectName(QStringLiteral("label_var_Four_Corners_top_right_V"));
+
+        horizontalLayout_66->addWidget(label_var_Four_Corners_top_right_V, 0, Qt::AlignHCenter);
+
+
+        gridLayout_8->addWidget(frame_Four_Corners_top_right_V, 1, 0, 1, 3);
+
+        frame_Four_Corners_top_right_H = new QFrame(groupBox_2);
+        frame_Four_Corners_top_right_H->setObjectName(QStringLiteral("frame_Four_Corners_top_right_H"));
+        frame_Four_Corners_top_right_H->setFrameShape(QFrame::Box);
+        frame_Four_Corners_top_right_H->setFrameShadow(QFrame::Raised);
+        horizontalLayout_67 = new QHBoxLayout(frame_Four_Corners_top_right_H);
+        horizontalLayout_67->setObjectName(QStringLiteral("horizontalLayout_67"));
+        label_Four_Corners_top_right_H = new QLabel(frame_Four_Corners_top_right_H);
+        label_Four_Corners_top_right_H->setObjectName(QStringLiteral("label_Four_Corners_top_right_H"));
+
+        horizontalLayout_67->addWidget(label_Four_Corners_top_right_H);
+
+        horizontalSlider_Four_Corners_top_right_H = new QSlider(frame_Four_Corners_top_right_H);
+        horizontalSlider_Four_Corners_top_right_H->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_top_right_H"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_top_right_H->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_top_right_H->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_top_right_H->setMinimum(0);
+        horizontalSlider_Four_Corners_top_right_H->setMaximum(120);
+        horizontalSlider_Four_Corners_top_right_H->setValue(60);
+        horizontalSlider_Four_Corners_top_right_H->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_67->addWidget(horizontalSlider_Four_Corners_top_right_H);
+
+        label_var_Four_Corners_top_right_H = new QLabel(frame_Four_Corners_top_right_H);
+        label_var_Four_Corners_top_right_H->setObjectName(QStringLiteral("label_var_Four_Corners_top_right_H"));
+
+        horizontalLayout_67->addWidget(label_var_Four_Corners_top_right_H, 0, Qt::AlignHCenter);
+
+
+        gridLayout_8->addWidget(frame_Four_Corners_top_right_H, 0, 0, 1, 3);
+
+        groupBox_3 = new QGroupBox(tab_13);
+        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
+        groupBox_3->setGeometry(QRect(10, 370, 471, 301));
+        gridLayout_9 = new QGridLayout(groupBox_3);
+        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        pushButton_Four_Corners_buttom_left_up = new QPushButton(groupBox_3);
+        pushButton_Four_Corners_buttom_left_up->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_left_up"));
+
+        gridLayout_9->addWidget(pushButton_Four_Corners_buttom_left_up, 2, 1, 1, 1);
+
+        pushButton_Four_Corners_buttom_left_right = new QPushButton(groupBox_3);
+        pushButton_Four_Corners_buttom_left_right->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_left_right"));
+
+        gridLayout_9->addWidget(pushButton_Four_Corners_buttom_left_right, 3, 2, 1, 1);
+
+        pushButton_Four_Corners_buttom_left_down = new QPushButton(groupBox_3);
+        pushButton_Four_Corners_buttom_left_down->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_left_down"));
+
+        gridLayout_9->addWidget(pushButton_Four_Corners_buttom_left_down, 3, 1, 1, 1);
+
+        pushButton_Four_Corners_buttom_left_left = new QPushButton(groupBox_3);
+        pushButton_Four_Corners_buttom_left_left->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_left_left"));
+
+        gridLayout_9->addWidget(pushButton_Four_Corners_buttom_left_left, 3, 0, 1, 1);
+
+        frame_Four_Corners_buttom_left_V = new QFrame(groupBox_3);
+        frame_Four_Corners_buttom_left_V->setObjectName(QStringLiteral("frame_Four_Corners_buttom_left_V"));
+        frame_Four_Corners_buttom_left_V->setFrameShape(QFrame::Box);
+        frame_Four_Corners_buttom_left_V->setFrameShadow(QFrame::Raised);
+        horizontalLayout_68 = new QHBoxLayout(frame_Four_Corners_buttom_left_V);
+        horizontalLayout_68->setObjectName(QStringLiteral("horizontalLayout_68"));
+        label_Four_Corners_buttom_left_V = new QLabel(frame_Four_Corners_buttom_left_V);
+        label_Four_Corners_buttom_left_V->setObjectName(QStringLiteral("label_Four_Corners_buttom_left_V"));
+
+        horizontalLayout_68->addWidget(label_Four_Corners_buttom_left_V);
+
+        horizontalSlider_Four_Corners_buttom_left_V = new QSlider(frame_Four_Corners_buttom_left_V);
+        horizontalSlider_Four_Corners_buttom_left_V->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_buttom_left_V"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_buttom_left_V->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_buttom_left_V->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_buttom_left_V->setMinimum(0);
+        horizontalSlider_Four_Corners_buttom_left_V->setMaximum(80);
+        horizontalSlider_Four_Corners_buttom_left_V->setValue(40);
+        horizontalSlider_Four_Corners_buttom_left_V->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_68->addWidget(horizontalSlider_Four_Corners_buttom_left_V);
+
+        label_var_Four_Corners_buttom_left_V = new QLabel(frame_Four_Corners_buttom_left_V);
+        label_var_Four_Corners_buttom_left_V->setObjectName(QStringLiteral("label_var_Four_Corners_buttom_left_V"));
+
+        horizontalLayout_68->addWidget(label_var_Four_Corners_buttom_left_V, 0, Qt::AlignHCenter);
+
+
+        gridLayout_9->addWidget(frame_Four_Corners_buttom_left_V, 1, 0, 1, 3);
+
+        frame_Four_Corners_buttom_left_H = new QFrame(groupBox_3);
+        frame_Four_Corners_buttom_left_H->setObjectName(QStringLiteral("frame_Four_Corners_buttom_left_H"));
+        frame_Four_Corners_buttom_left_H->setFrameShape(QFrame::Box);
+        frame_Four_Corners_buttom_left_H->setFrameShadow(QFrame::Raised);
+        horizontalLayout_69 = new QHBoxLayout(frame_Four_Corners_buttom_left_H);
+        horizontalLayout_69->setObjectName(QStringLiteral("horizontalLayout_69"));
+        label_Four_Corners_buttom_left_H = new QLabel(frame_Four_Corners_buttom_left_H);
+        label_Four_Corners_buttom_left_H->setObjectName(QStringLiteral("label_Four_Corners_buttom_left_H"));
+
+        horizontalLayout_69->addWidget(label_Four_Corners_buttom_left_H);
+
+        horizontalSlider_Four_Corners_buttom_left_H = new QSlider(frame_Four_Corners_buttom_left_H);
+        horizontalSlider_Four_Corners_buttom_left_H->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_buttom_left_H"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_buttom_left_H->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_buttom_left_H->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_buttom_left_H->setMinimum(0);
+        horizontalSlider_Four_Corners_buttom_left_H->setMaximum(120);
+        horizontalSlider_Four_Corners_buttom_left_H->setValue(60);
+        horizontalSlider_Four_Corners_buttom_left_H->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_69->addWidget(horizontalSlider_Four_Corners_buttom_left_H);
+
+        label_var_Four_Corners_buttom_left_H = new QLabel(frame_Four_Corners_buttom_left_H);
+        label_var_Four_Corners_buttom_left_H->setObjectName(QStringLiteral("label_var_Four_Corners_buttom_left_H"));
+
+        horizontalLayout_69->addWidget(label_var_Four_Corners_buttom_left_H, 0, Qt::AlignHCenter);
+
+
+        gridLayout_9->addWidget(frame_Four_Corners_buttom_left_H, 0, 0, 1, 3);
+
+        groupBox_4 = new QGroupBox(tab_13);
+        groupBox_4->setObjectName(QStringLiteral("groupBox_4"));
+        groupBox_4->setGeometry(QRect(510, 370, 471, 301));
+        gridLayout_10 = new QGridLayout(groupBox_4);
+        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
+        pushButton_Four_Corners_buttom_right_up = new QPushButton(groupBox_4);
+        pushButton_Four_Corners_buttom_right_up->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_right_up"));
+
+        gridLayout_10->addWidget(pushButton_Four_Corners_buttom_right_up, 2, 1, 1, 1);
+
+        pushButton_Four_Corners_buttom_right_right = new QPushButton(groupBox_4);
+        pushButton_Four_Corners_buttom_right_right->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_right_right"));
+
+        gridLayout_10->addWidget(pushButton_Four_Corners_buttom_right_right, 3, 2, 1, 1);
+
+        pushButton_Four_Corners_buttom_right_down = new QPushButton(groupBox_4);
+        pushButton_Four_Corners_buttom_right_down->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_right_down"));
+
+        gridLayout_10->addWidget(pushButton_Four_Corners_buttom_right_down, 3, 1, 1, 1);
+
+        pushButton_Four_Corners_buttom_right_left = new QPushButton(groupBox_4);
+        pushButton_Four_Corners_buttom_right_left->setObjectName(QStringLiteral("pushButton_Four_Corners_buttom_right_left"));
+
+        gridLayout_10->addWidget(pushButton_Four_Corners_buttom_right_left, 3, 0, 1, 1);
+
+        frame_Four_Corners_buttom_right_V = new QFrame(groupBox_4);
+        frame_Four_Corners_buttom_right_V->setObjectName(QStringLiteral("frame_Four_Corners_buttom_right_V"));
+        frame_Four_Corners_buttom_right_V->setFrameShape(QFrame::Box);
+        frame_Four_Corners_buttom_right_V->setFrameShadow(QFrame::Raised);
+        horizontalLayout_70 = new QHBoxLayout(frame_Four_Corners_buttom_right_V);
+        horizontalLayout_70->setObjectName(QStringLiteral("horizontalLayout_70"));
+        label_Four_Corners_buttom_right_V = new QLabel(frame_Four_Corners_buttom_right_V);
+        label_Four_Corners_buttom_right_V->setObjectName(QStringLiteral("label_Four_Corners_buttom_right_V"));
+
+        horizontalLayout_70->addWidget(label_Four_Corners_buttom_right_V);
+
+        horizontalSlider_Four_Corners_buttom_right_V = new QSlider(frame_Four_Corners_buttom_right_V);
+        horizontalSlider_Four_Corners_buttom_right_V->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_buttom_right_V"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_buttom_right_V->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_buttom_right_V->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_buttom_right_V->setMinimum(0);
+        horizontalSlider_Four_Corners_buttom_right_V->setMaximum(80);
+        horizontalSlider_Four_Corners_buttom_right_V->setValue(40);
+        horizontalSlider_Four_Corners_buttom_right_V->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_70->addWidget(horizontalSlider_Four_Corners_buttom_right_V);
+
+        label_var_Four_Corners_buttom_right_V = new QLabel(frame_Four_Corners_buttom_right_V);
+        label_var_Four_Corners_buttom_right_V->setObjectName(QStringLiteral("label_var_Four_Corners_buttom_right_V"));
+
+        horizontalLayout_70->addWidget(label_var_Four_Corners_buttom_right_V, 0, Qt::AlignHCenter);
+
+
+        gridLayout_10->addWidget(frame_Four_Corners_buttom_right_V, 1, 0, 1, 3);
+
+        frame_Four_Corners_buttom_right_H = new QFrame(groupBox_4);
+        frame_Four_Corners_buttom_right_H->setObjectName(QStringLiteral("frame_Four_Corners_buttom_right_H"));
+        frame_Four_Corners_buttom_right_H->setFrameShape(QFrame::Box);
+        frame_Four_Corners_buttom_right_H->setFrameShadow(QFrame::Raised);
+        horizontalLayout_71 = new QHBoxLayout(frame_Four_Corners_buttom_right_H);
+        horizontalLayout_71->setObjectName(QStringLiteral("horizontalLayout_71"));
+        label_Four_Corners_buttom_right_H = new QLabel(frame_Four_Corners_buttom_right_H);
+        label_Four_Corners_buttom_right_H->setObjectName(QStringLiteral("label_Four_Corners_buttom_right_H"));
+
+        horizontalLayout_71->addWidget(label_Four_Corners_buttom_right_H);
+
+        horizontalSlider_Four_Corners_buttom_right_H = new QSlider(frame_Four_Corners_buttom_right_H);
+        horizontalSlider_Four_Corners_buttom_right_H->setObjectName(QStringLiteral("horizontalSlider_Four_Corners_buttom_right_H"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Four_Corners_buttom_right_H->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Four_Corners_buttom_right_H->setSizePolicy(sizePolicy);
+        horizontalSlider_Four_Corners_buttom_right_H->setMinimum(0);
+        horizontalSlider_Four_Corners_buttom_right_H->setMaximum(120);
+        horizontalSlider_Four_Corners_buttom_right_H->setValue(60);
+        horizontalSlider_Four_Corners_buttom_right_H->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_71->addWidget(horizontalSlider_Four_Corners_buttom_right_H);
+
+        label_var_Four_Corners_buttom_right_H = new QLabel(frame_Four_Corners_buttom_right_H);
+        label_var_Four_Corners_buttom_right_H->setObjectName(QStringLiteral("label_var_Four_Corners_buttom_right_H"));
+
+        horizontalLayout_71->addWidget(label_var_Four_Corners_buttom_right_H, 0, Qt::AlignHCenter);
+
+
+        gridLayout_10->addWidget(frame_Four_Corners_buttom_right_H, 0, 0, 1, 3);
+
         tabWidget_2->addTab(tab_13, QString());
         tab_14 = new QWidget();
         tab_14->setObjectName(QStringLiteral("tab_14"));
@@ -404,9 +1157,6 @@ public:
 
         horizontalSlider_Volume = new QSlider(frame_Volume);
         horizontalSlider_Volume->setObjectName(QStringLiteral("horizontalSlider_Volume"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(horizontalSlider_Volume->sizePolicy().hasHeightForWidth());
         horizontalSlider_Volume->setSizePolicy(sizePolicy);
         horizontalSlider_Volume->setMaximum(10);
@@ -1136,8 +1886,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
-        tabWidget_2->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(9);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1146,80 +1896,131 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_3->setText(QApplication::translate("MainWindow", "Brightness", nullptr));
-        label_2->setText(QApplication::translate("MainWindow", "Wall Color", nullptr));
-        comboBox_2->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
-        comboBox_2->setItemText(1, QApplication::translate("MainWindow", "BlackBoard", nullptr));
-        comboBox_2->setItemText(2, QApplication::translate("MainWindow", "Light Yellow", nullptr));
-        comboBox_2->setItemText(3, QApplication::translate("MainWindow", "Light Green", nullptr));
-        comboBox_2->setItemText(4, QApplication::translate("MainWindow", "Light Blue", nullptr));
-        comboBox_2->setItemText(5, QApplication::translate("MainWindow", "Pink", nullptr));
-        comboBox_2->setItemText(6, QApplication::translate("MainWindow", "Gray", nullptr));
-
-        label_7->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
-        comboBox_7->setItemText(0, QApplication::translate("MainWindow", "Presentation", nullptr));
-        comboBox_7->setItemText(1, QApplication::translate("MainWindow", "Bright", nullptr));
-        comboBox_7->setItemText(2, QApplication::translate("MainWindow", "Cinema", nullptr));
-        comboBox_7->setItemText(3, QApplication::translate("MainWindow", "Film", nullptr));
-        comboBox_7->setItemText(4, QApplication::translate("MainWindow", "Vivid ", nullptr));
-        comboBox_7->setItemText(5, QApplication::translate("MainWindow", "Game", nullptr));
-        comboBox_7->setItemText(6, QApplication::translate("MainWindow", "sRGB", nullptr));
-        comboBox_7->setItemText(7, QApplication::translate("MainWindow", "Reference", nullptr));
-        comboBox_7->setItemText(8, QApplication::translate("MainWindow", "DICOM SIM.", nullptr));
-        comboBox_7->setItemText(9, QApplication::translate("MainWindow", "User", nullptr));
-        comboBox_7->setItemText(10, QApplication::translate("MainWindow", "3D", nullptr));
-        comboBox_7->setItemText(11, QApplication::translate("MainWindow", "User (3D)", nullptr));
-        comboBox_7->setItemText(12, QApplication::translate("MainWindow", "ISF Day", nullptr));
-        comboBox_7->setItemText(13, QApplication::translate("MainWindow", "ISF Night", nullptr));
-        comboBox_7->setItemText(14, QApplication::translate("MainWindow", "ISF 3D", nullptr));
-        comboBox_7->setItemText(15, QApplication::translate("MainWindow", "2D High Speed", nullptr));
-        comboBox_7->setItemText(16, QApplication::translate("MainWindow", "Blending", nullptr));
-        comboBox_7->setItemText(17, QApplication::translate("MainWindow", "Sport", nullptr));
-        comboBox_7->setItemText(18, QApplication::translate("MainWindow", "HDR", nullptr));
-
-        label->setText(QApplication::translate("MainWindow", "Display Mode", nullptr));
-        comboBox->setItemText(0, QApplication::translate("MainWindow", "Presentation", nullptr));
-        comboBox->setItemText(1, QApplication::translate("MainWindow", "Bright", nullptr));
-        comboBox->setItemText(2, QApplication::translate("MainWindow", "Cinema", nullptr));
-        comboBox->setItemText(3, QApplication::translate("MainWindow", "Film", nullptr));
-        comboBox->setItemText(4, QApplication::translate("MainWindow", "Vivid ", nullptr));
-        comboBox->setItemText(5, QApplication::translate("MainWindow", "Game", nullptr));
-        comboBox->setItemText(6, QApplication::translate("MainWindow", "sRGB", nullptr));
-        comboBox->setItemText(7, QApplication::translate("MainWindow", "Reference", nullptr));
-        comboBox->setItemText(8, QApplication::translate("MainWindow", "DICOM SIM.", nullptr));
-        comboBox->setItemText(9, QApplication::translate("MainWindow", "User", nullptr));
-        comboBox->setItemText(10, QApplication::translate("MainWindow", "3D", nullptr));
-        comboBox->setItemText(11, QApplication::translate("MainWindow", "User (3D)", nullptr));
-        comboBox->setItemText(12, QApplication::translate("MainWindow", "ISF Day", nullptr));
-        comboBox->setItemText(13, QApplication::translate("MainWindow", "ISF Night", nullptr));
-        comboBox->setItemText(14, QApplication::translate("MainWindow", "ISF 3D", nullptr));
-        comboBox->setItemText(15, QApplication::translate("MainWindow", "2D High Speed", nullptr));
-        comboBox->setItemText(16, QApplication::translate("MainWindow", "Blending", nullptr));
-        comboBox->setItemText(17, QApplication::translate("MainWindow", "Sport", nullptr));
-        comboBox->setItemText(18, QApplication::translate("MainWindow", "HDR", nullptr));
-
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QApplication::translate("MainWindow", "Image Settings", nullptr));
+        label_3D_sync_invert->setText(QApplication::translate("MainWindow", "3D sync invert:\n"
+"", nullptr));
+        comboBox_3D_sync_invert->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_3D_sync_invert->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
+
+        label_3D_Mode->setText(QApplication::translate("MainWindow", "3D Mode:", nullptr));
+        comboBox_3D_Mode->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_3D_Mode->setItemText(1, QApplication::translate("MainWindow", "DLP-Link", nullptr));
+        comboBox_3D_Mode->setItemText(2, QApplication::translate("MainWindow", "IR / VESA", nullptr));
+
+        label_Internal_3D_2D->setText(QApplication::translate("MainWindow", "3D-2D:\n"
+"", nullptr));
+        comboBox_3D_2D->setItemText(0, QApplication::translate("MainWindow", "3D", nullptr));
+        comboBox_3D_2D->setItemText(1, QApplication::translate("MainWindow", "L", nullptr));
+        comboBox_3D_2D->setItemText(2, QApplication::translate("MainWindow", "R", nullptr));
+
+        label_3D_Format->setText(QApplication::translate("MainWindow", "3D Format:\n"
+"", nullptr));
+        comboBox_3D_Format->setItemText(0, QApplication::translate("MainWindow", "Auto", nullptr));
+        comboBox_3D_Format->setItemText(1, QApplication::translate("MainWindow", "SBS", nullptr));
+        comboBox_3D_Format->setItemText(2, QApplication::translate("MainWindow", "Top and Bottom", nullptr));
+        comboBox_3D_Format->setItemText(3, QApplication::translate("MainWindow", "Frame Sequential", nullptr));
+        comboBox_3D_Format->setItemText(4, QApplication::translate("MainWindow", "Frame Packing", nullptr));
+        comboBox_3D_Format->setItemText(5, QApplication::translate("MainWindow", "Off", nullptr));
+
+        label_2D_3D->setText(QApplication::translate("MainWindow", "2D-3D:\n"
+"", nullptr));
+        comboBox_2D_3D->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_2D_3D->setItemText(1, QApplication::translate("MainWindow", "1", nullptr));
+        comboBox_2D_3D->setItemText(2, QApplication::translate("MainWindow", "2", nullptr));
+        comboBox_2D_3D->setItemText(3, QApplication::translate("MainWindow", "3", nullptr));
+
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_5), QApplication::translate("MainWindow", "3D", nullptr));
+        label_Aspect_Ratio->setText(QApplication::translate("MainWindow", "Aspect Ratio:", nullptr));
+        comboBox_Aspect_ratio->setItemText(0, QApplication::translate("MainWindow", "[None]", nullptr));
+        comboBox_Aspect_ratio->setItemText(1, QApplication::translate("MainWindow", "4:3", nullptr));
+        comboBox_Aspect_ratio->setItemText(2, QApplication::translate("MainWindow", "16:9", nullptr));
+        comboBox_Aspect_ratio->setItemText(3, QApplication::translate("MainWindow", "16:10", nullptr));
+        comboBox_Aspect_ratio->setItemText(4, QApplication::translate("MainWindow", "LBX", nullptr));
+        comboBox_Aspect_ratio->setItemText(5, QApplication::translate("MainWindow", "Superwide", nullptr));
+        comboBox_Aspect_ratio->setItemText(6, QApplication::translate("MainWindow", "Native", nullptr));
+        comboBox_Aspect_ratio->setItemText(7, QApplication::translate("MainWindow", "Auto", nullptr));
+        comboBox_Aspect_ratio->setItemText(8, QApplication::translate("MainWindow", "Auto235", nullptr));
+        comboBox_Aspect_ratio->setItemText(9, QApplication::translate("MainWindow", "Auto235_Subtitle", nullptr));
+        comboBox_Aspect_ratio->setItemText(10, QApplication::translate("MainWindow", "Auto 3D", nullptr));
+
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_6), QApplication::translate("MainWindow", "Aspect Ratio", nullptr));
+        label_Edge_Mask->setText(QApplication::translate("MainWindow", "Edge Mask:", nullptr));
+        label_var_Edge_Mask->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_7), QApplication::translate("MainWindow", "Edge Mask", nullptr));
+        label_Edge_Zoom->setText(QApplication::translate("MainWindow", "Zoom:", nullptr));
+        label_var_Zoom->setText(QString());
+        pushButton_Zoom_minus->setText(QApplication::translate("MainWindow", "-", nullptr));
+        pushButton_Zoom_plus->setText(QApplication::translate("MainWindow", "+", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("MainWindow", "Zoom", nullptr));
+        label_Edge_Zoom_H_Zoom->setText(QApplication::translate("MainWindow", "H Zoom:", nullptr));
+        label_var_H_Zoom->setText(QString());
+        label_Edge_V_Zoom->setText(QApplication::translate("MainWindow", "V Zoom:", nullptr));
+        label_var_V_Zoom->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_9), QApplication::translate("MainWindow", "Digital Zoom", nullptr));
+        pushButton_Image_shift_H_plus->setText(QApplication::translate("MainWindow", "H+", nullptr));
+        pushButton_Image_shift_H_minus->setText(QApplication::translate("MainWindow", "H-", nullptr));
+        label_Edge_Image_shift_H->setText(QApplication::translate("MainWindow", "H:", nullptr));
+        label_var_Image_shift_H->setText(QString());
+        pushButton_Image_shift_V_plus->setText(QApplication::translate("MainWindow", "V+", nullptr));
+        pushButton_Image_shift_V_minus->setText(QApplication::translate("MainWindow", "V-", nullptr));
+        label_Edge_Image_shift_V->setText(QApplication::translate("MainWindow", "V:", nullptr));
+        label_var_Image_shift_V->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_10), QApplication::translate("MainWindow", "Image shif", nullptr));
+        label_H_Keystone->setText(QApplication::translate("MainWindow", "H Keystone:", nullptr));
+        label_var_H_Keystone->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_11), QApplication::translate("MainWindow", "H Keystone", nullptr));
+        label_V_Keystone->setText(QApplication::translate("MainWindow", "V Keystone:", nullptr));
+        label_var_V_Keystone->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_12), QApplication::translate("MainWindow", "V Keystone", nullptr));
+        groupBox->setTitle(QApplication::translate("MainWindow", "top-left", nullptr));
+        pushButton_Four_Corners_top_left_up->setText(QApplication::translate("MainWindow", "up + 1", nullptr));
+        pushButton_Four_Corners_top_left_right->setText(QApplication::translate("MainWindow", "right + 1", nullptr));
+        pushButton_Four_Corners_top_left_down->setText(QApplication::translate("MainWindow", "down + 1", nullptr));
+        pushButton_Four_Corners_top_left_left->setText(QApplication::translate("MainWindow", "left + 1", nullptr));
+        label_Four_Corners_top_left_V->setText(QApplication::translate("MainWindow", "V:", nullptr));
+        label_var_Four_Corners_top_left_V->setText(QString());
+        label_Four_Corners_top_left_H->setText(QApplication::translate("MainWindow", "H:", nullptr));
+        label_var_Four_Corners_top_left_H->setText(QString());
+        groupBox_2->setTitle(QApplication::translate("MainWindow", "top-right", nullptr));
+        pushButton_Four_Corners_top_right_up->setText(QApplication::translate("MainWindow", "up + 1", nullptr));
+        pushButton_Four_Corners_top_right_right->setText(QApplication::translate("MainWindow", "right + 1", nullptr));
+        pushButton_Four_Corners_top_right_down->setText(QApplication::translate("MainWindow", "down + 1", nullptr));
+        pushButton_Four_Corners_top_right_left->setText(QApplication::translate("MainWindow", "left + 1", nullptr));
+        label_Four_Corners_top_right_V->setText(QApplication::translate("MainWindow", "V:", nullptr));
+        label_var_Four_Corners_top_right_V->setText(QString());
+        label_Four_Corners_top_right_H->setText(QApplication::translate("MainWindow", "H:", nullptr));
+        label_var_Four_Corners_top_right_H->setText(QString());
+        groupBox_3->setTitle(QApplication::translate("MainWindow", "buttom-left", nullptr));
+        pushButton_Four_Corners_buttom_left_up->setText(QApplication::translate("MainWindow", "up + 1", nullptr));
+        pushButton_Four_Corners_buttom_left_right->setText(QApplication::translate("MainWindow", "right + 1", nullptr));
+        pushButton_Four_Corners_buttom_left_down->setText(QApplication::translate("MainWindow", "down + 1", nullptr));
+        pushButton_Four_Corners_buttom_left_left->setText(QApplication::translate("MainWindow", "left + 1", nullptr));
+        label_Four_Corners_buttom_left_V->setText(QApplication::translate("MainWindow", "V:", nullptr));
+        label_var_Four_Corners_buttom_left_V->setText(QString());
+        label_Four_Corners_buttom_left_H->setText(QApplication::translate("MainWindow", "H:", nullptr));
+        label_var_Four_Corners_buttom_left_H->setText(QString());
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "buttom-right", nullptr));
+        pushButton_Four_Corners_buttom_right_up->setText(QApplication::translate("MainWindow", "up + 1", nullptr));
+        pushButton_Four_Corners_buttom_right_right->setText(QApplication::translate("MainWindow", "right + 1", nullptr));
+        pushButton_Four_Corners_buttom_right_down->setText(QApplication::translate("MainWindow", "down + 1", nullptr));
+        pushButton_Four_Corners_buttom_right_left->setText(QApplication::translate("MainWindow", "left + 1", nullptr));
+        label_Four_Corners_buttom_right_V->setText(QApplication::translate("MainWindow", "V:", nullptr));
+        label_var_Four_Corners_buttom_right_V->setText(QString());
+        label_Four_Corners_buttom_right_H->setText(QApplication::translate("MainWindow", "H:", nullptr));
+        label_var_Four_Corners_buttom_right_H->setText(QString());
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_13), QApplication::translate("MainWindow", "Four Corners", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_14), QApplication::translate("MainWindow", "Geometric Correction", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_15), QApplication::translate("MainWindow", "PIP - PBP", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Display", nullptr));
-        label_Volume->setText(QApplication::translate("MainWindow", "Volume", nullptr));
+        label_Volume->setText(QApplication::translate("MainWindow", "Volume:", nullptr));
         label_var_Volume->setText(QString());
-        label_Treble->setText(QApplication::translate("MainWindow", "Treble", nullptr));
+        label_Treble->setText(QApplication::translate("MainWindow", "Treble:", nullptr));
         label_var_Treble->setText(QString());
-        label_Mic_Volume->setText(QApplication::translate("MainWindow", "Mic Volume", nullptr));
+        label_Mic_Volume->setText(QApplication::translate("MainWindow", "Mic Volume:", nullptr));
         label_var_Mic_Volume->setText(QString());
-        label_Bass->setText(QApplication::translate("MainWindow", "Bass", nullptr));
+        label_Bass->setText(QApplication::translate("MainWindow", "Bass:", nullptr));
         label_var_Bass->setText(QString());
-        label_Audio_Input->setText(QApplication::translate("MainWindow", "Audio Input", nullptr));
+        label_Audio_Input->setText(QApplication::translate("MainWindow", "Audio Input:", nullptr));
         comboBox_Audio_Input->setItemText(0, QApplication::translate("MainWindow", "Default", nullptr));
         comboBox_Audio_Input->setItemText(1, QApplication::translate("MainWindow", "Audio 1(Mini-jack)", nullptr));
         comboBox_Audio_Input->setItemText(2, QApplication::translate("MainWindow", "RCA", nullptr));
@@ -1231,31 +2032,31 @@ public:
         comboBox_Audio_Input->setItemText(8, QApplication::translate("MainWindow", "Audio 5/Displayport", nullptr));
         comboBox_Audio_Input->setItemText(9, QApplication::translate("MainWindow", "Displayport", nullptr));
 
-        label_Internal_speaker->setText(QApplication::translate("MainWindow", "Internal Speaker", nullptr));
-        comboBox_Internal_speaker->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_Internal_speaker->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        label_Internal_speaker->setText(QApplication::translate("MainWindow", "Internal Speaker:", nullptr));
+        comboBox_Internal_speaker->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_Internal_speaker->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
-        label_Audio_Out->setText(QApplication::translate("MainWindow", "Audio Out (Standby)", nullptr));
-        comboBox_Audio_Out->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_Audio_Out->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        label_Audio_Out->setText(QApplication::translate("MainWindow", "Audio Out (Standby):", nullptr));
+        comboBox_Audio_Out->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_Audio_Out->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
-        label_Mute->setText(QApplication::translate("MainWindow", "Mute", nullptr));
-        comboBox_Mute->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_Mute->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        label_Mute->setText(QApplication::translate("MainWindow", "Mute:", nullptr));
+        comboBox_Mute->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_Mute->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
-        label_Audio_Delay->setText(QApplication::translate("MainWindow", "Audio Delay", nullptr));
+        label_Audio_Delay->setText(QApplication::translate("MainWindow", "Audio Delay:", nullptr));
         comboBox_Audio_Delay->setItemText(0, QApplication::translate("MainWindow", "0ms", nullptr));
         comboBox_Audio_Delay->setItemText(1, QApplication::translate("MainWindow", "2ms", nullptr));
         comboBox_Audio_Delay->setItemText(2, QApplication::translate("MainWindow", "4ms", nullptr));
         comboBox_Audio_Delay->setItemText(3, QApplication::translate("MainWindow", "6ms", nullptr));
 
-        label_Mic->setText(QApplication::translate("MainWindow", "Mic", nullptr));
-        comboBox_Mic->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_Mic->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        label_Mic->setText(QApplication::translate("MainWindow", "Mic:", nullptr));
+        comboBox_Mic->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_Mic->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
-        label_SRS->setText(QApplication::translate("MainWindow", "SRS", nullptr));
-        comboBox_SRS->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_SRS->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        label_SRS->setText(QApplication::translate("MainWindow", "SRS:", nullptr));
+        comboBox_SRS->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox_SRS->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Audio", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Setup", nullptr));

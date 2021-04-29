@@ -27,8 +27,79 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Bass->setText("0");
     connect(ui->horizontalSlider_Bass, &QSlider::valueChanged, ui->label_var_Bass,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
-    //end setting Audio page
 
+
+    //Edge Mask
+    ui->label_var_Edge_Mask->setText("0");
+    connect(ui->horizontalSlider_Edge_Mask, &QSlider::valueChanged, ui->label_var_Edge_Mask,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Zoom
+    ui->label_var_Zoom->setText("10");
+    connect(ui->horizontalSlider_Zoom, &QSlider::valueChanged, ui->label_var_Zoom,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Digital Zoom
+    ui->label_var_H_Zoom->setText("50");
+    connect(ui->horizontalSlider_H_Zoom, &QSlider::valueChanged, ui->label_var_H_Zoom,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_V_Zoom->setText("50");
+    connect(ui->horizontalSlider_V_Zoom, &QSlider::valueChanged, ui->label_var_V_Zoom,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Image shift
+    ui->label_var_Image_shift_H->setText("0");
+    connect(ui->horizontalSlider_Image_shift_H, &QSlider::valueChanged, ui->label_var_Image_shift_H,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_shift_V->setText("0");
+    connect(ui->horizontalSlider_Image_shift_V, &QSlider::valueChanged, ui->label_var_Image_shift_V,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //H Keystone
+    ui->label_var_H_Keystone->setText("0");
+    connect(ui->horizontalSlider_H_Keystone, &QSlider::valueChanged, ui->label_var_H_Keystone,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //V Keystone
+    ui->label_var_V_Keystone->setText("0");
+    connect(ui->horizontalSlider_V_Keystone, &QSlider::valueChanged, ui->label_var_V_Keystone,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Four Corners
+    //top-left
+    ui->label_var_Four_Corners_top_left_H->setText("60");
+    connect(ui->horizontalSlider_Four_Corners_top_left_H, &QSlider::valueChanged, ui->label_var_Four_Corners_top_left_H,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Four_Corners_top_left_V->setText("40");
+    connect(ui->horizontalSlider_Four_Corners_top_left_V, &QSlider::valueChanged, ui->label_var_Four_Corners_top_left_V,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //top-right
+    ui->label_var_Four_Corners_top_right_H->setText("60");
+    connect(ui->horizontalSlider_Four_Corners_top_right_H, &QSlider::valueChanged, ui->label_var_Four_Corners_top_right_H,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Four_Corners_top_right_V->setText("40");
+    connect(ui->horizontalSlider_Four_Corners_top_right_V, &QSlider::valueChanged, ui->label_var_Four_Corners_top_right_V,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //buttom_left
+    ui->label_var_Four_Corners_buttom_left_H->setText("60");
+    connect(ui->horizontalSlider_Four_Corners_buttom_left_H, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_left_H,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Four_Corners_buttom_left_V->setText("40");
+    connect(ui->horizontalSlider_Four_Corners_buttom_left_V, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_left_V,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //buttom-right
+    ui->label_var_Four_Corners_buttom_right_H->setText("60");
+    connect(ui->horizontalSlider_Four_Corners_buttom_right_H, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_right_H,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Four_Corners_buttom_right_V->setText("40");
+    connect(ui->horizontalSlider_Four_Corners_buttom_right_V, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_right_V,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 }
 
 
@@ -63,18 +134,17 @@ void MainWindow:: razbor_com(parameter temp)
         ui->WLAN_box->setCurrentIndex(1);
     }
 
-    //Audio page
-
+    //------------------------------Audio page
     //Internal Speaker
     if(temp.getInt_command()==310){
         if(temp.getInt_variable()==0){
             ui->comboBox_Internal_speaker->setCurrentIndex(0);
         }
-
         if(temp.getInt_variable()==1){
-             ui->comboBox_Internal_speaker->setCurrentIndex(1);
+            ui->comboBox_Internal_speaker->setCurrentIndex(1);
         }
 
+        return;
     }
     //Mute
     if(temp.getInt_command()==80){
@@ -83,9 +153,9 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
         if(temp.getInt_variable()==1){
-             ui->comboBox_Mute->setCurrentIndex(1);
+            ui->comboBox_Mute->setCurrentIndex(1);
         }
-
+        return;
     }
     //Mic
     if(temp.getInt_command()==562){
@@ -94,34 +164,395 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
         if(temp.getInt_variable()==1){
-             ui->comboBox_Mic->setCurrentIndex(1);
+            ui->comboBox_Mic->setCurrentIndex(1);
         }
-
+        return;
     }
     //Volume
     if(temp.getInt_command()==81){
-      if(temp.check_include_interval(0,10)){
-           ui->horizontalSlider_Volume->setValue(temp.getInt_variable());
-      }
+        if(temp.check_include_interval(0,10)){
+            ui->horizontalSlider_Volume->setValue(temp.getInt_variable());
+        }
+        return;
     }
     //Mic_Volume
     if(temp.getInt_command()==93){
-      if(temp.check_include_interval(0,10)){
-           ui->horizontalSlider_Mic_Volume->setValue(temp.getInt_variable());
-      }
+        if(temp.check_include_interval(0,10)){
+            ui->horizontalSlider_Mic_Volume->setValue(temp.getInt_variable());
+        }
+        return;
     }
     //Audio Input
     if(temp.getInt_command()==89){
         for(int i=0;i<10;i++){
             if(temp.getInt_variable()==i){
                 ui->comboBox_Audio_Input->setCurrentIndex(i);
-                break;
+                return;
             }
         }
     }
-    //END Audio page
-    /// Просто вношу изменения
+    //Audio Delay
+    //????
+    //Audio Out (Standby)
+    if(temp.getInt_command()==510){
+        if(temp.getInt_variable()==0){
+            ui->comboBox_Audio_Out->setCurrentIndex(0);
+        }
 
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Audio_Out->setCurrentIndex(1);
+        }
+        return;
+    }
+    //SRS
+    if(temp.getInt_command()==94){
+        if(temp.getInt_variable()==0){
+            ui->comboBox_SRS->setCurrentIndex(0);
+        }
+
+        if(temp.getInt_variable()==1){
+            ui->comboBox_SRS->setCurrentIndex(1);
+        }
+        return;
+    }
+    //Treble
+    if(temp.getInt_command()==95){
+        if(temp.check_include_interval(-10,10)){
+            ui->horizontalSlider_Treble->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //Bass
+    if(temp.getInt_command()==96){
+        if(temp.check_include_interval(-10,10)){
+            ui->horizontalSlider_Bass->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //------------------------------END Audio page
+
+    //------------------------------3D page
+    //3D Mode
+    if(temp.getInt_command()==230){
+        for(int i=0;i<4;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_3D_Mode->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+    //3D_2D
+    if(temp.getInt_command()==400){
+        for(int i=0;i<3;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_3D_2D->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+    //3D Format
+    if(temp.getInt_command()==405){
+        for(int i=0;i<9;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_3D_Format->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+    //3D sync invert
+    if(temp.getInt_command()==231){
+        for(int i=0;i<2;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_3D_sync_invert->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+    //2D_3D
+    if(temp.getInt_command()==402){
+        for(int i=0;i<4;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_2D_3D->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+    //------------------------------END 3D page
+
+    //------------------------------Display page
+    //Aspect ratio
+    if(temp.getInt_command()==60){
+        for(int i=1;i<13;i++){
+            if(temp.getInt_variable()==i){
+                ui->comboBox_Aspect_ratio->setCurrentIndex(i);
+                return;
+            }
+        }
+    }
+
+    //Edge Mask
+    if(temp.getInt_command()==61){
+        if(temp.check_include_interval(0,10)){
+            ui->horizontalSlider_Edge_Mask->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //Zoom
+    if(temp.getInt_command()==5){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Zoom_plus_clicked();
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==6){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Zoom_minus_clicked();
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==62){
+        if(temp.check_include_interval(-5,25)){
+            ui->horizontalSlider_Zoom->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //Digital Zoom
+    if(temp.getInt_command()==504){
+        if(temp.check_include_interval(0,100)){
+            ui->horizontalSlider_H_Zoom->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==505){
+        if(temp.check_include_interval(0,100)){
+            ui->horizontalSlider_V_Zoom->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+
+    //Image shift
+    //H
+    if(temp.getInt_command()==540){
+        if(temp.getInt_variable() == 2){
+            emit on_pushButton_Image_shift_H_plus_clicked();
+            return;
+        }
+
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Image_shift_H_minus_clicked();
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==63){
+        if(temp.check_include_interval(-100,100)){
+            ui->horizontalSlider_Image_shift_H->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //V
+    if(temp.getInt_command()==541){
+        if(temp.getInt_variable() == 2){
+            emit on_pushButton_Image_shift_V_plus_clicked();
+            return;
+        }
+
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Image_shift_V_minus_clicked();
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==64){
+        if(temp.check_include_interval(-100,100)){
+            ui->horizontalSlider_Image_shift_V->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //H Keystone
+    if(temp.getInt_command()==65){
+        if(temp.check_include_interval(-40,40)){
+            ui->horizontalSlider_H_Keystone->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //V Keystone
+    if(temp.getInt_command()==66){
+        if(temp.check_include_interval(-40,40)){
+            ui->horizontalSlider_V_Keystone->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+
+
+    //Four Corners
+    //top_lef
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 1){
+            //                if(temp.check_include_interval(0,120)){
+            //                    ui->horizontalSlider_Four_Corners_top_left_H->setValue(temp.getInt_variable());
+            //                }
+            return;
+        }
+
+    }
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 2){
+            //                if(temp.check_include_interval(0,80)){
+            //                    ui->horizontalSlider_Four_Corners_top_left_V->setValue(temp.getInt_variable());
+            //                }
+            return;
+        }
+
+    }
+
+    if(temp.getInt_command()==59){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Four_Corners_top_left_right_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 2){
+            emit on_pushButton_Four_Corners_top_left_left_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 3){
+            emit on_pushButton_Four_Corners_top_left_up_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 4){
+            emit on_pushButton_Four_Corners_top_left_down_clicked();
+            return;
+        }
+
+    }
+    //top_right
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 3){
+            //            if(temp.check_include_interval(0,120)){
+            //                ui->horizontalSlider_Four_Corners_top_right_H->setValue(temp.getInt_variable());
+            //            }
+            return;
+        }
+
+    }
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 4){
+            //            if(temp.check_include_interval(0,80)){
+            //                ui->horizontalSlider_Four_Corners_top_right_V->setValue(temp.getInt_variable());
+            //                      }
+            return;
+        }
+
+
+        if(temp.getInt_command()==59){
+            if(temp.getInt_variable() == 5){
+                emit on_pushButton_Four_Corners_top_right_right_clicked();
+                return;
+            }
+            if(temp.getInt_variable() == 6){
+                emit on_pushButton_Four_Corners_top_right_left_clicked();
+                return;
+            }
+            if(temp.getInt_variable() == 7){
+                emit on_pushButton_Four_Corners_top_right_up_clicked();
+                return;
+            }
+            if(temp.getInt_variable() == 8){
+                emit on_pushButton_Four_Corners_top_right_down_clicked();
+                return;
+            }
+
+        }
+        //buttom_left
+        if(temp.getInt_command()==58){
+            if(temp.getInt_variable() == 5){
+                //                if(temp.check_include_interval(0,120)){
+                //                    ui->horizontalSlider_Four_Corners_buttom_left_H->setValue(temp.getInt_variable());
+                //                }
+                return;
+            }
+
+        }
+        if(temp.getInt_command()==58){
+            if(temp.getInt_variable() == 6){
+                //                if(temp.check_include_interval(0,80)){
+                //                    ui->horizontalSlider_Four_Corners_buttom_left_V->setValue(temp.getInt_variable());
+                //                }
+                return;
+            }
+        }
+
+    }
+
+    if(temp.getInt_command()==59){
+        if(temp.getInt_variable() == 9){
+            emit on_pushButton_Four_Corners_buttom_left_right_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 10){
+            emit on_pushButton_Four_Corners_buttom_left_left_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 11){
+            emit on_pushButton_Four_Corners_buttom_left_up_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 12){
+            emit on_pushButton_Four_Corners_buttom_left_down_clicked();
+            return;
+        }
+
+    }
+    //buttom_right
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 7){
+            //            if(temp.check_include_interval(0,120)){
+            //                ui->horizontalSlider_Four_Corners_buttom_right_H->setValue(temp.getInt_variable());
+            //            }
+            return;
+        }
+
+    }
+    if(temp.getInt_command()==58){
+        if(temp.getInt_variable() == 8){
+            //            if(temp.check_include_interval(0,80)){
+            //                ui->horizontalSlider_Four_Corners_buttom_right_V->setValue(temp.getInt_variable());
+            //            }
+            return;
+        }
+
+    }
+
+    if(temp.getInt_command()==59){
+        if(temp.getInt_variable() == 13){
+            emit on_pushButton_Four_Corners_buttom_right_right_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 14){
+            emit on_pushButton_Four_Corners_buttom_right_left_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 15){
+            emit on_pushButton_Four_Corners_buttom_right_up_clicked();
+            return;
+        }
+        if(temp.getInt_variable() == 16){
+            emit on_pushButton_Four_Corners_buttom_right_down_clicked();
+            return;
+        }
+    }
+    //...
+    //------------------------------END Display page
+    /// Просто вношу изменения
 }
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1)
 {
@@ -1075,3 +1506,91 @@ MainWindow::~MainWindow()
 }
 
 
+
+void MainWindow::on_pushButton_Zoom_minus_clicked(){
+    ui->horizontalSlider_Zoom->setValue( ui->horizontalSlider_Zoom->value() - 1);
+}
+
+void MainWindow::on_pushButton_Zoom_plus_clicked(){
+    ui->horizontalSlider_Zoom->setValue( ui->horizontalSlider_Zoom->value() + 1);
+}
+
+void MainWindow::on_pushButton_Image_shift_H_minus_clicked(){
+    ui->horizontalSlider_Image_shift_H->setValue( ui->horizontalSlider_Image_shift_H->value() - 1);
+}
+
+void MainWindow::on_pushButton_Image_shift_H_plus_clicked(){
+    ui->horizontalSlider_Image_shift_H->setValue( ui->horizontalSlider_Image_shift_H->value() + 1);
+}
+
+void MainWindow::on_pushButton_Image_shift_V_minus_clicked(){
+    ui->horizontalSlider_Image_shift_V->setValue( ui->horizontalSlider_Image_shift_V->value() - 1);
+}
+
+void MainWindow::on_pushButton_Image_shift_V_plus_clicked(){
+    ui->horizontalSlider_Image_shift_V->setValue( ui->horizontalSlider_Image_shift_V->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_left_left_clicked(){
+    ui->horizontalSlider_Four_Corners_top_left_H->setValue( ui->horizontalSlider_Four_Corners_top_left_H->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_left_up_clicked(){
+    ui->horizontalSlider_Four_Corners_top_left_V->setValue( ui->horizontalSlider_Four_Corners_top_left_V->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_left_down_clicked(){
+    ui->horizontalSlider_Four_Corners_top_left_V->setValue( ui->horizontalSlider_Four_Corners_top_left_V->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_left_right_clicked(){
+    ui->horizontalSlider_Four_Corners_top_left_H->setValue( ui->horizontalSlider_Four_Corners_top_left_H->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_right_left_clicked(){
+    ui->horizontalSlider_Four_Corners_top_right_H->setValue( ui->horizontalSlider_Four_Corners_top_right_H->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_right_up_clicked(){
+    ui->horizontalSlider_Four_Corners_top_right_V->setValue( ui->horizontalSlider_Four_Corners_top_right_V->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_right_down_clicked(){
+    ui->horizontalSlider_Four_Corners_top_right_V->setValue( ui->horizontalSlider_Four_Corners_top_right_V->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_top_right_right_clicked(){
+    ui->horizontalSlider_Four_Corners_top_right_H->setValue( ui->horizontalSlider_Four_Corners_top_right_H->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_left_left_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_left_H->setValue( ui->horizontalSlider_Four_Corners_buttom_left_H->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_left_up_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_left_V->setValue( ui->horizontalSlider_Four_Corners_buttom_left_V->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_left_down_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_left_V->setValue( ui->horizontalSlider_Four_Corners_buttom_left_V->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_left_right_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_left_H->setValue( ui->horizontalSlider_Four_Corners_buttom_left_H->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_right_left_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_right_H->setValue( ui->horizontalSlider_Four_Corners_buttom_right_H->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_right_up_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_right_V->setValue( ui->horizontalSlider_Four_Corners_buttom_right_V->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_right_down_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_right_V->setValue( ui->horizontalSlider_Four_Corners_buttom_right_V->value() - 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_buttom_right_right_clicked(){
+    ui->horizontalSlider_Four_Corners_buttom_right_H->setValue( ui->horizontalSlider_Four_Corners_buttom_right_H->value() + 1);
+}
