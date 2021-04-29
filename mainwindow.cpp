@@ -50,6 +50,10 @@ if((temp.getInt_command()==450)&&(temp.getInt_variable()==1))
 }
 
 
+
+
+/// Просто вношу изменения
+
 }
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1)
 {
