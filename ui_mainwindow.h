@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
@@ -34,6 +35,32 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QTabWidget *tabWidget;
+    QWidget *tab_22;
+    QFrame *frame_32;
+    QGridLayout *gridLayout_8;
+    QLabel *label_11;
+    QCheckBox *ON;
+    QCheckBox *OFF;
+    QFrame *frame_33;
+    QGridLayout *gridLayout_9;
+    QLabel *label_27;
+    QCheckBox *ON_2;
+    QCheckBox *OFF_2;
+    QFrame *frame_34;
+    QGridLayout *gridLayout_10;
+    QLabel *label_29;
+    QCheckBox *ON_3;
+    QCheckBox *OFF_3;
+    QFrame *frame_35;
+    QGridLayout *gridLayout_11;
+    QLabel *label_30;
+    QCheckBox *Unfreeze;
+    QCheckBox *Freeze;
+    QFrame *frame_36;
+    QGridLayout *gridLayout_12;
+    QLabel *label_31;
+    QCheckBox *DD;
+    QCheckBox *DDD;
     QWidget *tab;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
@@ -119,6 +146,38 @@ public:
     QLabel *label_SRS;
     QComboBox *comboBox_SRS;
     QWidget *tab_3;
+    QGridLayout *gridLayout_5;
+    QTabWidget *tabWidget_3;
+    QWidget *tab_19;
+    QFrame *frame_27;
+    QHBoxLayout *horizontalLayout_36;
+    QLabel *label_25;
+    QComboBox *Connection_mode_2;
+    QFrame *frame_28;
+    QHBoxLayout *horizontalLayout_37;
+    QLabel *label_26;
+    QComboBox *Connection_mode_3;
+    QFrame *frame_37;
+    QGridLayout *gridLayout_13;
+    QCheckBox *Front;
+    QCheckBox *Rear;
+    QCheckBox *Ceiling_top;
+    QCheckBox *Rear_top;
+    QWidget *tab_20;
+    QGridLayout *gridLayout_7;
+    QFrame *frame_29;
+    QGridLayout *gridLayout_6;
+    QCheckBox *_16_10;
+    QCheckBox *_16_9;
+    QWidget *tab_21;
+    QFrame *frame_30;
+    QHBoxLayout *horizontalLayout_38;
+    QLabel *_;
+    QComboBox *lamp_mode_box;
+    QFrame *frame_31;
+    QHBoxLayout *horizontalLayout_39;
+    QLabel *label_28;
+    QComboBox *Connection_mode_5;
     QWidget *tab_16;
     QGroupBox *WLAN;
     QVBoxLayout *verticalLayout_2;
@@ -129,7 +188,7 @@ public:
     QFrame *frame_12;
     QHBoxLayout *horizontalLayout_12;
     QLabel *label_12;
-    QComboBox *comboBox_11;
+    QComboBox *Network_Status_box;
     QFrame *frame_14;
     QHBoxLayout *horizontalLayout_14;
     QLabel *label_14;
@@ -145,13 +204,13 @@ public:
     QFrame *frame_16;
     QHBoxLayout *horizontalLayout_16;
     QLabel *label_16;
-    QComboBox *comboBox_15;
+    QComboBox *Connection_mode;
     QGroupBox *Lan;
     QVBoxLayout *verticalLayout_3;
     QFrame *frame_13;
     QHBoxLayout *horizontalLayout_13;
     QLabel *label_13;
-    QComboBox *comboBox_12;
+    QComboBox *Network_status_box;
     QFrame *frame_18;
     QHBoxLayout *horizontalLayout_18;
     QLabel *label_18;
@@ -159,7 +218,7 @@ public:
     QFrame *frame_19;
     QHBoxLayout *horizontalLayout_19;
     QLabel *label_19;
-    QComboBox *comboBox_14;
+    QComboBox *DHCP_box;
     QFrame *frame_20;
     QHBoxLayout *horizontalLayout_20;
     QLabel *label_20;
@@ -185,27 +244,27 @@ public:
     QFrame *frame_4;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_4;
-    QComboBox *comboBox_3;
+    QComboBox *Crestron_box;
     QFrame *frame_6;
     QHBoxLayout *horizontalLayout_6;
     QLabel *label_6;
-    QComboBox *comboBox_5;
+    QComboBox *Extron_box;
     QFrame *frame_8;
     QHBoxLayout *horizontalLayout_8;
     QLabel *label_8;
-    QComboBox *comboBox_6;
+    QComboBox *PJLink_box;
     QFrame *frame_5;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_5;
-    QComboBox *comboBox_4;
+    QComboBox *AMX_Device_Discovery_box;
     QFrame *frame_9;
     QHBoxLayout *horizontalLayout_9;
     QLabel *label_9;
-    QComboBox *comboBox_8;
+    QComboBox *Telnet_box;
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_10;
     QLabel *label_10;
-    QComboBox *comboBox_9;
+    QComboBox *HTTP_box;
     QWidget *tab_17;
     QWidget *tab_18;
     QMenuBar *menubar;
@@ -222,6 +281,131 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         tabWidget = new QTabWidget(centralwidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tab_22 = new QWidget();
+        tab_22->setObjectName(QStringLiteral("tab_22"));
+        frame_32 = new QFrame(tab_22);
+        frame_32->setObjectName(QStringLiteral("frame_32"));
+        frame_32->setGeometry(QRect(50, 60, 131, 68));
+        frame_32->setFrameShape(QFrame::StyledPanel);
+        frame_32->setFrameShadow(QFrame::Raised);
+        gridLayout_8 = new QGridLayout(frame_32);
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        label_11 = new QLabel(frame_32);
+        label_11->setObjectName(QStringLiteral("label_11"));
+
+        gridLayout_8->addWidget(label_11, 0, 0, 1, 2);
+
+        ON = new QCheckBox(frame_32);
+        ON->setObjectName(QStringLiteral("ON"));
+        QFont font;
+        font.setPointSize(14);
+        ON->setFont(font);
+
+        gridLayout_8->addWidget(ON, 1, 0, 1, 1);
+
+        OFF = new QCheckBox(frame_32);
+        OFF->setObjectName(QStringLiteral("OFF"));
+        OFF->setFont(font);
+
+        gridLayout_8->addWidget(OFF, 1, 1, 1, 1);
+
+        frame_33 = new QFrame(tab_22);
+        frame_33->setObjectName(QStringLiteral("frame_33"));
+        frame_33->setGeometry(QRect(50, 140, 131, 68));
+        frame_33->setFrameShape(QFrame::StyledPanel);
+        frame_33->setFrameShadow(QFrame::Raised);
+        gridLayout_9 = new QGridLayout(frame_33);
+        gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        label_27 = new QLabel(frame_33);
+        label_27->setObjectName(QStringLiteral("label_27"));
+
+        gridLayout_9->addWidget(label_27, 0, 0, 1, 2);
+
+        ON_2 = new QCheckBox(frame_33);
+        ON_2->setObjectName(QStringLiteral("ON_2"));
+        ON_2->setFont(font);
+
+        gridLayout_9->addWidget(ON_2, 1, 0, 1, 1);
+
+        OFF_2 = new QCheckBox(frame_33);
+        OFF_2->setObjectName(QStringLiteral("OFF_2"));
+        OFF_2->setFont(font);
+
+        gridLayout_9->addWidget(OFF_2, 1, 1, 1, 1);
+
+        frame_34 = new QFrame(tab_22);
+        frame_34->setObjectName(QStringLiteral("frame_34"));
+        frame_34->setGeometry(QRect(50, 210, 131, 68));
+        frame_34->setFrameShape(QFrame::StyledPanel);
+        frame_34->setFrameShadow(QFrame::Raised);
+        gridLayout_10 = new QGridLayout(frame_34);
+        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
+        label_29 = new QLabel(frame_34);
+        label_29->setObjectName(QStringLiteral("label_29"));
+
+        gridLayout_10->addWidget(label_29, 0, 0, 1, 2);
+
+        ON_3 = new QCheckBox(frame_34);
+        ON_3->setObjectName(QStringLiteral("ON_3"));
+        ON_3->setFont(font);
+
+        gridLayout_10->addWidget(ON_3, 1, 0, 1, 1);
+
+        OFF_3 = new QCheckBox(frame_34);
+        OFF_3->setObjectName(QStringLiteral("OFF_3"));
+        OFF_3->setFont(font);
+
+        gridLayout_10->addWidget(OFF_3, 1, 1, 1, 1);
+
+        frame_35 = new QFrame(tab_22);
+        frame_35->setObjectName(QStringLiteral("frame_35"));
+        frame_35->setGeometry(QRect(240, 60, 361, 68));
+        frame_35->setFrameShape(QFrame::StyledPanel);
+        frame_35->setFrameShadow(QFrame::Raised);
+        gridLayout_11 = new QGridLayout(frame_35);
+        gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
+        label_30 = new QLabel(frame_35);
+        label_30->setObjectName(QStringLiteral("label_30"));
+
+        gridLayout_11->addWidget(label_30, 0, 0, 1, 2);
+
+        Unfreeze = new QCheckBox(frame_35);
+        Unfreeze->setObjectName(QStringLiteral("Unfreeze"));
+        Unfreeze->setFont(font);
+
+        gridLayout_11->addWidget(Unfreeze, 1, 0, 1, 1);
+
+        Freeze = new QCheckBox(frame_35);
+        Freeze->setObjectName(QStringLiteral("Freeze"));
+        Freeze->setFont(font);
+
+        gridLayout_11->addWidget(Freeze, 1, 1, 1, 1);
+
+        frame_36 = new QFrame(tab_22);
+        frame_36->setObjectName(QStringLiteral("frame_36"));
+        frame_36->setGeometry(QRect(250, 170, 361, 68));
+        frame_36->setFrameShape(QFrame::StyledPanel);
+        frame_36->setFrameShadow(QFrame::Raised);
+        gridLayout_12 = new QGridLayout(frame_36);
+        gridLayout_12->setObjectName(QStringLiteral("gridLayout_12"));
+        label_31 = new QLabel(frame_36);
+        label_31->setObjectName(QStringLiteral("label_31"));
+
+        gridLayout_12->addWidget(label_31, 0, 0, 1, 2);
+
+        DD = new QCheckBox(frame_36);
+        DD->setObjectName(QStringLiteral("DD"));
+        DD->setFont(font);
+
+        gridLayout_12->addWidget(DD, 1, 0, 1, 1);
+
+        DDD = new QCheckBox(frame_36);
+        DDD->setObjectName(QStringLiteral("DDD"));
+        DDD->setFont(font);
+
+        gridLayout_12->addWidget(DDD, 1, 1, 1, 1);
+
+        tabWidget->addTab(tab_22, QString());
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         gridLayout_2 = new QGridLayout(tab);
@@ -677,6 +861,163 @@ public:
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
+        gridLayout_5 = new QGridLayout(tab_3);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        tabWidget_3 = new QTabWidget(tab_3);
+        tabWidget_3->setObjectName(QStringLiteral("tabWidget_3"));
+        tab_19 = new QWidget();
+        tab_19->setObjectName(QStringLiteral("tab_19"));
+        frame_27 = new QFrame(tab_19);
+        frame_27->setObjectName(QStringLiteral("frame_27"));
+        frame_27->setGeometry(QRect(20, 30, 407, 47));
+        frame_27->setFrameShape(QFrame::StyledPanel);
+        frame_27->setFrameShadow(QFrame::Raised);
+        horizontalLayout_36 = new QHBoxLayout(frame_27);
+        horizontalLayout_36->setObjectName(QStringLiteral("horizontalLayout_36"));
+        label_25 = new QLabel(frame_27);
+        label_25->setObjectName(QStringLiteral("label_25"));
+
+        horizontalLayout_36->addWidget(label_25);
+
+        Connection_mode_2 = new QComboBox(frame_27);
+        Connection_mode_2->addItem(QString());
+        Connection_mode_2->addItem(QString());
+        Connection_mode_2->addItem(QString());
+        Connection_mode_2->setObjectName(QStringLiteral("Connection_mode_2"));
+
+        horizontalLayout_36->addWidget(Connection_mode_2);
+
+        frame_28 = new QFrame(tab_19);
+        frame_28->setObjectName(QStringLiteral("frame_28"));
+        frame_28->setGeometry(QRect(20, 90, 407, 47));
+        frame_28->setFrameShape(QFrame::StyledPanel);
+        frame_28->setFrameShadow(QFrame::Raised);
+        horizontalLayout_37 = new QHBoxLayout(frame_28);
+        horizontalLayout_37->setObjectName(QStringLiteral("horizontalLayout_37"));
+        label_26 = new QLabel(frame_28);
+        label_26->setObjectName(QStringLiteral("label_26"));
+
+        horizontalLayout_37->addWidget(label_26);
+
+        Connection_mode_3 = new QComboBox(frame_28);
+        Connection_mode_3->addItem(QString());
+        Connection_mode_3->addItem(QString());
+        Connection_mode_3->setObjectName(QStringLiteral("Connection_mode_3"));
+
+        horizontalLayout_37->addWidget(Connection_mode_3);
+
+        frame_37 = new QFrame(tab_19);
+        frame_37->setObjectName(QStringLiteral("frame_37"));
+        frame_37->setGeometry(QRect(20, 150, 261, 88));
+        frame_37->setFrameShape(QFrame::StyledPanel);
+        frame_37->setFrameShadow(QFrame::Raised);
+        gridLayout_13 = new QGridLayout(frame_37);
+        gridLayout_13->setObjectName(QStringLiteral("gridLayout_13"));
+        Front = new QCheckBox(frame_37);
+        Front->setObjectName(QStringLiteral("Front"));
+        QFont font1;
+        font1.setPointSize(16);
+        Front->setFont(font1);
+
+        gridLayout_13->addWidget(Front, 0, 0, 1, 1);
+
+        Rear = new QCheckBox(frame_37);
+        Rear->setObjectName(QStringLiteral("Rear"));
+        Rear->setFont(font1);
+
+        gridLayout_13->addWidget(Rear, 0, 1, 1, 1);
+
+        Ceiling_top = new QCheckBox(frame_37);
+        Ceiling_top->setObjectName(QStringLiteral("Ceiling_top"));
+        Ceiling_top->setFont(font1);
+
+        gridLayout_13->addWidget(Ceiling_top, 1, 0, 1, 1);
+
+        Rear_top = new QCheckBox(frame_37);
+        Rear_top->setObjectName(QStringLiteral("Rear_top"));
+        Rear_top->setFont(font1);
+
+        gridLayout_13->addWidget(Rear_top, 1, 1, 1, 1);
+
+        tabWidget_3->addTab(tab_19, QString());
+        tab_20 = new QWidget();
+        tab_20->setObjectName(QStringLiteral("tab_20"));
+        gridLayout_7 = new QGridLayout(tab_20);
+        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
+        frame_29 = new QFrame(tab_20);
+        frame_29->setObjectName(QStringLiteral("frame_29"));
+        frame_29->setFrameShape(QFrame::StyledPanel);
+        frame_29->setFrameShadow(QFrame::Raised);
+        gridLayout_6 = new QGridLayout(frame_29);
+        gridLayout_6->setObjectName(QStringLiteral("gridLayout_6"));
+        _16_10 = new QCheckBox(frame_29);
+        _16_10->setObjectName(QStringLiteral("_16_10"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(_16_10->sizePolicy().hasHeightForWidth());
+        _16_10->setSizePolicy(sizePolicy1);
+
+        gridLayout_6->addWidget(_16_10, 1, 0, 1, 1);
+
+        _16_9 = new QCheckBox(frame_29);
+        _16_9->setObjectName(QStringLiteral("_16_9"));
+        sizePolicy1.setHeightForWidth(_16_9->sizePolicy().hasHeightForWidth());
+        _16_9->setSizePolicy(sizePolicy1);
+
+        gridLayout_6->addWidget(_16_9, 0, 0, 1, 1);
+
+
+        gridLayout_7->addWidget(frame_29, 0, 0, 1, 1);
+
+        tabWidget_3->addTab(tab_20, QString());
+        tab_21 = new QWidget();
+        tab_21->setObjectName(QStringLiteral("tab_21"));
+        frame_30 = new QFrame(tab_21);
+        frame_30->setObjectName(QStringLiteral("frame_30"));
+        frame_30->setGeometry(QRect(30, 40, 407, 47));
+        frame_30->setFrameShape(QFrame::StyledPanel);
+        frame_30->setFrameShadow(QFrame::Raised);
+        horizontalLayout_38 = new QHBoxLayout(frame_30);
+        horizontalLayout_38->setObjectName(QStringLiteral("horizontalLayout_38"));
+        _ = new QLabel(frame_30);
+        _->setObjectName(QStringLiteral("_"));
+
+        horizontalLayout_38->addWidget(_);
+
+        lamp_mode_box = new QComboBox(frame_30);
+        lamp_mode_box->addItem(QString());
+        lamp_mode_box->addItem(QString());
+        lamp_mode_box->addItem(QString());
+        lamp_mode_box->addItem(QString());
+        lamp_mode_box->setObjectName(QStringLiteral("lamp_mode_box"));
+
+        horizontalLayout_38->addWidget(lamp_mode_box);
+
+        frame_31 = new QFrame(tab_21);
+        frame_31->setObjectName(QStringLiteral("frame_31"));
+        frame_31->setGeometry(QRect(20, 130, 407, 47));
+        frame_31->setFrameShape(QFrame::StyledPanel);
+        frame_31->setFrameShadow(QFrame::Raised);
+        horizontalLayout_39 = new QHBoxLayout(frame_31);
+        horizontalLayout_39->setObjectName(QStringLiteral("horizontalLayout_39"));
+        label_28 = new QLabel(frame_31);
+        label_28->setObjectName(QStringLiteral("label_28"));
+
+        horizontalLayout_39->addWidget(label_28);
+
+        Connection_mode_5 = new QComboBox(frame_31);
+        Connection_mode_5->addItem(QString());
+        Connection_mode_5->addItem(QString());
+        Connection_mode_5->addItem(QString());
+        Connection_mode_5->setObjectName(QStringLiteral("Connection_mode_5"));
+
+        horizontalLayout_39->addWidget(Connection_mode_5);
+
+        tabWidget_3->addTab(tab_21, QString());
+
+        gridLayout_5->addWidget(tabWidget_3, 0, 0, 1, 1);
+
         tabWidget->addTab(tab_3, QString());
         tab_16 = new QWidget();
         tab_16->setObjectName(QStringLiteral("tab_16"));
@@ -717,12 +1058,12 @@ public:
 
         horizontalLayout_12->addWidget(label_12);
 
-        comboBox_11 = new QComboBox(frame_12);
-        comboBox_11->addItem(QString());
-        comboBox_11->addItem(QString());
-        comboBox_11->setObjectName(QStringLiteral("comboBox_11"));
+        Network_Status_box = new QComboBox(frame_12);
+        Network_Status_box->addItem(QString());
+        Network_Status_box->addItem(QString());
+        Network_Status_box->setObjectName(QStringLiteral("Network_Status_box"));
 
-        horizontalLayout_12->addWidget(comboBox_11);
+        horizontalLayout_12->addWidget(Network_Status_box);
 
 
         verticalLayout_2->addWidget(frame_12);
@@ -801,12 +1142,12 @@ public:
 
         horizontalLayout_16->addWidget(label_16);
 
-        comboBox_15 = new QComboBox(frame_16);
-        comboBox_15->addItem(QString());
-        comboBox_15->addItem(QString());
-        comboBox_15->setObjectName(QStringLiteral("comboBox_15"));
+        Connection_mode = new QComboBox(frame_16);
+        Connection_mode->addItem(QString());
+        Connection_mode->addItem(QString());
+        Connection_mode->setObjectName(QStringLiteral("Connection_mode"));
 
-        horizontalLayout_16->addWidget(comboBox_15);
+        horizontalLayout_16->addWidget(Connection_mode);
 
 
         verticalLayout_2->addWidget(frame_16);
@@ -827,12 +1168,12 @@ public:
 
         horizontalLayout_13->addWidget(label_13);
 
-        comboBox_12 = new QComboBox(frame_13);
-        comboBox_12->addItem(QString());
-        comboBox_12->addItem(QString());
-        comboBox_12->setObjectName(QStringLiteral("comboBox_12"));
+        Network_status_box = new QComboBox(frame_13);
+        Network_status_box->addItem(QString());
+        Network_status_box->addItem(QString());
+        Network_status_box->setObjectName(QStringLiteral("Network_status_box"));
 
-        horizontalLayout_13->addWidget(comboBox_12);
+        horizontalLayout_13->addWidget(Network_status_box);
 
 
         verticalLayout_3->addWidget(frame_13);
@@ -869,12 +1210,12 @@ public:
 
         horizontalLayout_19->addWidget(label_19);
 
-        comboBox_14 = new QComboBox(frame_19);
-        comboBox_14->addItem(QString());
-        comboBox_14->addItem(QString());
-        comboBox_14->setObjectName(QStringLiteral("comboBox_14"));
+        DHCP_box = new QComboBox(frame_19);
+        DHCP_box->addItem(QString());
+        DHCP_box->addItem(QString());
+        DHCP_box->setObjectName(QStringLiteral("DHCP_box"));
 
-        horizontalLayout_19->addWidget(comboBox_14);
+        horizontalLayout_19->addWidget(DHCP_box);
 
 
         verticalLayout_3->addWidget(frame_19);
@@ -1000,12 +1341,12 @@ public:
 
         horizontalLayout_4->addWidget(label_4);
 
-        comboBox_3 = new QComboBox(frame_4);
-        comboBox_3->addItem(QString());
-        comboBox_3->addItem(QString());
-        comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
+        Crestron_box = new QComboBox(frame_4);
+        Crestron_box->addItem(QString());
+        Crestron_box->addItem(QString());
+        Crestron_box->setObjectName(QStringLiteral("Crestron_box"));
 
-        horizontalLayout_4->addWidget(comboBox_3);
+        horizontalLayout_4->addWidget(Crestron_box);
 
 
         verticalLayout->addWidget(frame_4);
@@ -1021,12 +1362,12 @@ public:
 
         horizontalLayout_6->addWidget(label_6);
 
-        comboBox_5 = new QComboBox(frame_6);
-        comboBox_5->addItem(QString());
-        comboBox_5->addItem(QString());
-        comboBox_5->setObjectName(QStringLiteral("comboBox_5"));
+        Extron_box = new QComboBox(frame_6);
+        Extron_box->addItem(QString());
+        Extron_box->addItem(QString());
+        Extron_box->setObjectName(QStringLiteral("Extron_box"));
 
-        horizontalLayout_6->addWidget(comboBox_5);
+        horizontalLayout_6->addWidget(Extron_box);
 
 
         verticalLayout->addWidget(frame_6);
@@ -1042,12 +1383,12 @@ public:
 
         horizontalLayout_8->addWidget(label_8);
 
-        comboBox_6 = new QComboBox(frame_8);
-        comboBox_6->addItem(QString());
-        comboBox_6->addItem(QString());
-        comboBox_6->setObjectName(QStringLiteral("comboBox_6"));
+        PJLink_box = new QComboBox(frame_8);
+        PJLink_box->addItem(QString());
+        PJLink_box->addItem(QString());
+        PJLink_box->setObjectName(QStringLiteral("PJLink_box"));
 
-        horizontalLayout_8->addWidget(comboBox_6);
+        horizontalLayout_8->addWidget(PJLink_box);
 
 
         verticalLayout->addWidget(frame_8);
@@ -1063,12 +1404,12 @@ public:
 
         horizontalLayout_5->addWidget(label_5);
 
-        comboBox_4 = new QComboBox(frame_5);
-        comboBox_4->addItem(QString());
-        comboBox_4->addItem(QString());
-        comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
+        AMX_Device_Discovery_box = new QComboBox(frame_5);
+        AMX_Device_Discovery_box->addItem(QString());
+        AMX_Device_Discovery_box->addItem(QString());
+        AMX_Device_Discovery_box->setObjectName(QStringLiteral("AMX_Device_Discovery_box"));
 
-        horizontalLayout_5->addWidget(comboBox_4);
+        horizontalLayout_5->addWidget(AMX_Device_Discovery_box);
 
 
         verticalLayout->addWidget(frame_5);
@@ -1084,12 +1425,12 @@ public:
 
         horizontalLayout_9->addWidget(label_9);
 
-        comboBox_8 = new QComboBox(frame_9);
-        comboBox_8->addItem(QString());
-        comboBox_8->addItem(QString());
-        comboBox_8->setObjectName(QStringLiteral("comboBox_8"));
+        Telnet_box = new QComboBox(frame_9);
+        Telnet_box->addItem(QString());
+        Telnet_box->addItem(QString());
+        Telnet_box->setObjectName(QStringLiteral("Telnet_box"));
 
-        horizontalLayout_9->addWidget(comboBox_8);
+        horizontalLayout_9->addWidget(Telnet_box);
 
 
         verticalLayout->addWidget(frame_9);
@@ -1105,12 +1446,12 @@ public:
 
         horizontalLayout_10->addWidget(label_10);
 
-        comboBox_9 = new QComboBox(frame_10);
-        comboBox_9->addItem(QString());
-        comboBox_9->addItem(QString());
-        comboBox_9->setObjectName(QStringLiteral("comboBox_9"));
+        HTTP_box = new QComboBox(frame_10);
+        HTTP_box->addItem(QString());
+        HTTP_box->addItem(QString());
+        HTTP_box->setObjectName(QStringLiteral("HTTP_box"));
 
-        horizontalLayout_10->addWidget(comboBox_9);
+        horizontalLayout_10->addWidget(HTTP_box);
 
 
         verticalLayout->addWidget(frame_10);
@@ -1123,7 +1464,7 @@ public:
         tab_18->setObjectName(QStringLiteral("tab_18"));
         tabWidget->addTab(tab_18, QString());
 
-        gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
+        gridLayout->addWidget(tabWidget, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -1136,8 +1477,9 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(0);
+        tabWidget_3->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1146,6 +1488,22 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_11->setText(QApplication::translate("MainWindow", "Power ", nullptr));
+        ON->setText(QApplication::translate("MainWindow", "On ", nullptr));
+        OFF->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        label_27->setText(QApplication::translate("MainWindow", "AV Mute", nullptr));
+        ON_2->setText(QApplication::translate("MainWindow", "On ", nullptr));
+        OFF_2->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        label_29->setText(QApplication::translate("MainWindow", " Mute", nullptr));
+        ON_3->setText(QApplication::translate("MainWindow", "On ", nullptr));
+        OFF_3->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        label_30->setText(QApplication::translate("MainWindow", "Freeze", nullptr));
+        Unfreeze->setText(QApplication::translate("MainWindow", "Unfreeze", nullptr));
+        Freeze->setText(QApplication::translate("MainWindow", "Freeze", nullptr));
+        label_31->setText(QApplication::translate("MainWindow", "Output 3D state", nullptr));
+        DD->setText(QApplication::translate("MainWindow", "2D", nullptr));
+        DDD->setText(QApplication::translate("MainWindow", "3D", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "Other Items", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "Brightness", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "Wall Color", nullptr));
         comboBox_2->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
@@ -1258,6 +1616,35 @@ public:
         comboBox_SRS->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Audio", nullptr));
+        label_25->setText(QApplication::translate("MainWindow", "Celing Moutn", nullptr));
+        Connection_mode_2->setItemText(0, QApplication::translate("MainWindow", "off", nullptr));
+        Connection_mode_2->setItemText(1, QApplication::translate("MainWindow", "on", nullptr));
+        Connection_mode_2->setItemText(2, QApplication::translate("MainWindow", "Auto", nullptr));
+
+        label_26->setText(QApplication::translate("MainWindow", "Rear Projection", nullptr));
+        Connection_mode_3->setItemText(0, QApplication::translate("MainWindow", "off", nullptr));
+        Connection_mode_3->setItemText(1, QApplication::translate("MainWindow", "on", nullptr));
+
+        Front->setText(QApplication::translate("MainWindow", "Front", nullptr));
+        Rear->setText(QApplication::translate("MainWindow", "Rear", nullptr));
+        Ceiling_top->setText(QApplication::translate("MainWindow", "Ceiling-top", nullptr));
+        Rear_top->setText(QApplication::translate("MainWindow", "Rear-top", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_19), QApplication::translate("MainWindow", "Projection", nullptr));
+        _16_10->setText(QApplication::translate("MainWindow", "16:10", nullptr));
+        _16_9->setText(QApplication::translate("MainWindow", "16:9", nullptr));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_20), QApplication::translate("MainWindow", "Screen Type", nullptr));
+        _->setText(QApplication::translate("MainWindow", "Lamp Mode", nullptr));
+        lamp_mode_box->setItemText(0, QApplication::translate("MainWindow", "Dual", nullptr));
+        lamp_mode_box->setItemText(1, QApplication::translate("MainWindow", "Relay", nullptr));
+        lamp_mode_box->setItemText(2, QApplication::translate("MainWindow", "Lamp 1", nullptr));
+        lamp_mode_box->setItemText(3, QApplication::translate("MainWindow", "Lamp 2", nullptr));
+
+        label_28->setText(QApplication::translate("MainWindow", "Celing Moutn", nullptr));
+        Connection_mode_5->setItemText(0, QApplication::translate("MainWindow", "off", nullptr));
+        Connection_mode_5->setItemText(1, QApplication::translate("MainWindow", "on", nullptr));
+        Connection_mode_5->setItemText(2, QApplication::translate("MainWindow", "Auto", nullptr));
+
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_21), QApplication::translate("MainWindow", "Lamp Settings", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Setup", nullptr));
         WLAN->setTitle(QApplication::translate("MainWindow", "WLAN", nullptr));
         wlan->setText(QApplication::translate("MainWindow", "WLAN", nullptr));
@@ -1265,25 +1652,25 @@ public:
         WLAN_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_12->setText(QApplication::translate("MainWindow", "Network Status", nullptr));
-        comboBox_11->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
-        comboBox_11->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        Network_Status_box->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        Network_Status_box->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
 
         label_14->setText(QApplication::translate("MainWindow", "MAC Address", nullptr));
         label_15->setText(QApplication::translate("MainWindow", "IP Address", nullptr));
         label_17->setText(QApplication::translate("MainWindow", "SSID", nullptr));
         label_16->setText(QApplication::translate("MainWindow", "Connection Mode", nullptr));
-        comboBox_15->setItemText(0, QApplication::translate("MainWindow", "Infrastructure", nullptr));
-        comboBox_15->setItemText(1, QApplication::translate("MainWindow", "Ad-hoc", nullptr));
+        Connection_mode->setItemText(0, QApplication::translate("MainWindow", "Infrastructure", nullptr));
+        Connection_mode->setItemText(1, QApplication::translate("MainWindow", "Ad-hoc", nullptr));
 
         Lan->setTitle(QApplication::translate("MainWindow", "LAN", nullptr));
         label_13->setText(QApplication::translate("MainWindow", "Network Status", nullptr));
-        comboBox_12->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
-        comboBox_12->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        Network_status_box->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        Network_status_box->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
 
         label_18->setText(QApplication::translate("MainWindow", "MAC Address", nullptr));
         label_19->setText(QApplication::translate("MainWindow", "DHCP", nullptr));
-        comboBox_14->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
-        comboBox_14->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        DHCP_box->setItemText(0, QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
+        DHCP_box->setItemText(1, QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", nullptr));
 
         label_20->setText(QApplication::translate("MainWindow", "IP Address", nullptr));
         label_22->setText(QApplication::translate("MainWindow", "Subnet Mask", nullptr));
@@ -1292,28 +1679,28 @@ public:
         label_24->setText(QApplication::translate("MainWindow", "Reset", nullptr));
         Control->setTitle(QApplication::translate("MainWindow", "Control", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Crestron", nullptr));
-        comboBox_3->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_3->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        Crestron_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        Crestron_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_6->setText(QApplication::translate("MainWindow", "Extron", nullptr));
-        comboBox_5->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_5->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        Extron_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        Extron_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_8->setText(QApplication::translate("MainWindow", "PJ Link", nullptr));
-        comboBox_6->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_6->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        PJLink_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        PJLink_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_5->setText(QApplication::translate("MainWindow", "AMX Device Discovery", nullptr));
-        comboBox_4->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_4->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        AMX_Device_Discovery_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        AMX_Device_Discovery_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_9->setText(QApplication::translate("MainWindow", "Telnet", nullptr));
-        comboBox_8->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_8->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        Telnet_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        Telnet_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         label_10->setText(QApplication::translate("MainWindow", "HTTP", nullptr));
-        comboBox_9->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
-        comboBox_9->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
+        HTTP_box->setItemText(0, QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", nullptr));
+        HTTP_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         tabWidget->setTabText(tabWidget->indexOf(tab_16), QApplication::translate("MainWindow", "Network", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_17), QApplication::translate("MainWindow", "Info", nullptr));

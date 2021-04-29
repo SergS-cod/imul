@@ -30,6 +30,7 @@ void  command_s(parameter);
 public slots:
    void serialRecieve();
 
+   void send_to(QByteArray TO);
 
 };
 

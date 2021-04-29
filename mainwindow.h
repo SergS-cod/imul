@@ -44,7 +44,8 @@ public slots:
 
  void razbor_com(parameter);
 
-
+signals:
+ void s_send_to(QByteArray);
 private:
     Ui::MainWindow *ui;
     static MainWindow* mainInstance;

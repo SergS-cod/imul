@@ -21,6 +21,7 @@ qDebug()<<" problema with COM port";           return;
              connect (serialPort,SIGNAL(readyRead()),this,SLOT(serialRecieve()));
 
              connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor_com(parameter)));
+             connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
 
     qDebug()<<"**************************************";
     start();
@@ -51,6 +52,20 @@ void port::serialRecieve()
      for(int i=0;i<B.parameters.count();i++)
     emit command_s(B.parameters[i]);
 
+
+
+
+}
+
+
+void port::send_to(QByteArray TO)
+{
+
+
+    if(serialPort->isOpen()){
+
+            qDebug()<<serialPort->write(TO.data(),TO.size());
+        }
 
 
 
