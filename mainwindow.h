@@ -44,7 +44,7 @@ public slots:
 
  void razbor_com(parameter);
 
-<<<<<<< HEAD
+
 
 private slots:
  void on_pushButton_Zoom_minus_clicked();
@@ -91,10 +91,10 @@ private slots:
 
  void on_pushButton_Four_Corners_buttom_right_right_clicked();
 
-=======
+
 signals:
  void s_send_to(QByteArray);
->>>>>>> 2acb6ed3fa9c4a664eb73fec739d366240d222c3
+
 private:
     Ui::MainWindow *ui;
     static MainWindow* mainInstance;
