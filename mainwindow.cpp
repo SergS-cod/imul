@@ -124,6 +124,377 @@ void MainWindow:: update_state()
 
 void MainWindow:: razbor_com(parameter temp)
 {
+
+
+
+
+    // POWER ON / OFF
+
+    if(temp.getInt_command()==0)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->ON->setCheckState(Qt::Unchecked);
+                ui->OFF->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->ON->setCheckState(Qt::Checked);
+                    ui->OFF->setCheckState(Qt::Unchecked);
+        }
+
+    }
+
+    if(temp.getInt_command()==0)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->ON->setCheckState(Qt::Unchecked);
+                ui->OFF->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->ON->setCheckState(Qt::Checked);
+                    ui->OFF->setCheckState(Qt::Unchecked);
+        }
+
+    }
+
+
+    if(temp.getInt_command()==124)
+    {
+        if(temp.getInt_variable()==1)
+        {
+            if ((ui->ON->isChecked()==Qt::Checked)&&(ui->OFF->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok1");
+                emit s_send_to(To);
+            }
+            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
+            {
+                QByteArray To;
+                To.append("Ok0");
+                emit s_send_to(To);
+            }
+
+        }
+
+    }
+    ////////////////////////////////////////////////////////////////////////
+
+
+    /////////////////////////////////////////////////////////setup screen type 16 9 16 10
+
+    if(temp.getInt_command()==0)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->ON->setCheckState(Qt::Unchecked);
+                ui->OFF->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->ON->setCheckState(Qt::Checked);
+                    ui->OFF->setCheckState(Qt::Unchecked);
+        }
+
+    }
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+    ////////////////////////////////////////////////////////////setup Projection
+
+
+    if(temp.getInt_command()==71)
+    {
+        if(temp.getInt_variable()==1)
+        {
+        ui->Front->setCheckState(Qt::Checked);
+                ui->Rear->setCheckState(Qt::Unchecked);
+                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
+                    ui->Rear_top->setCheckState(Qt::Unchecked);
+
+        }
+
+        if(temp.getInt_variable()==2)
+        {
+        ui->Front->setCheckState(Qt::Unchecked);
+                ui->Rear->setCheckState(Qt::Checked);
+                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
+                    ui->Rear_top->setCheckState(Qt::Unchecked);
+
+        }
+        if(temp.getInt_variable()==3)
+        {
+        ui->Front->setCheckState(Qt::Unchecked);
+                ui->Rear->setCheckState(Qt::Unchecked);
+                  ui->Ceiling_top->setCheckState(Qt::Checked);
+                    ui->Rear_top->setCheckState(Qt::Unchecked);
+
+        }
+
+        if(temp.getInt_variable()==4)
+        {
+        ui->Front->setCheckState(Qt::Unchecked);
+                ui->Rear->setCheckState(Qt::Unchecked);
+                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
+                    ui->Rear_top->setCheckState(Qt::Checked);
+
+        }
+
+    }
+
+
+
+    if(temp.getInt_command()==129)
+    {
+        if(temp.getInt_variable()==1)
+        {
+            if ((ui->Front->isChecked()==Qt::Checked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok0");
+                emit s_send_to(To);
+            }
+            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok1");
+                emit s_send_to(To);
+            }
+            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok2");
+                emit s_send_to(To);
+            }
+            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
+            {
+                QByteArray To;
+                To.append("Ok3");
+                emit s_send_to(To);
+            }
+
+        }
+
+    }
+
+    ///
+
+    ///////////////////////////////////////////////////////// AV Mute
+
+
+
+    if(temp.getInt_command()==2)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->ON_2->setCheckState(Qt::Unchecked);
+                ui->OFF_2->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->ON_2->setCheckState(Qt::Checked);
+                    ui->OFF_2->setCheckState(Qt::Unchecked);
+        }
+
+    }
+    if(temp.getInt_command()==355)
+    {
+        if(temp.getInt_variable()==1)
+        {
+            if ((ui->ON_2->isChecked()==Qt::Checked)&&(ui->OFF_2->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok1");
+                emit s_send_to(To);
+            }
+            if ((ui->ON_2->isChecked()==Qt::Unchecked)&&(ui->OFF_2->isChecked()==Qt::Checked))
+            {
+                QByteArray To;
+                To.append("Ok0");
+                emit s_send_to(To);
+            }
+
+        }
+
+    }
+
+
+
+
+    /// ////////////////////////////////////////////////////////////// Mute
+
+
+
+    if(temp.getInt_command()==3)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->ON_3->setCheckState(Qt::Unchecked);
+                ui->OFF_3->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->ON_3->setCheckState(Qt::Checked);
+                    ui->OFF_3->setCheckState(Qt::Unchecked);
+        }
+
+    }
+    if(temp.getInt_command()==356)
+    {
+        if(temp.getInt_variable()==1)
+        {
+            if ((ui->ON_2->isChecked()==Qt::Checked)&&(ui->OFF_2->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok1");
+                emit s_send_to(To);
+            }
+            if ((ui->ON_2->isChecked()==Qt::Unchecked)&&(ui->OFF_2->isChecked()==Qt::Checked))
+            {
+                QByteArray To;
+                To.append("Ok0");
+                emit s_send_to(To);
+            }
+
+        }
+
+    }
+
+
+
+    ///////////////////////////////////////////////////////////////////////  Freeze
+
+
+
+
+
+
+    if(temp.getInt_command()==4)
+    {
+        if(temp.getInt_variable()==0)
+        {
+        ui->Freeze->setCheckState(Qt::Unchecked);
+                ui->Unfreeze->setCheckState(Qt::Checked);
+        }
+
+        if(temp.getInt_variable()==1)
+        {ui->Freeze->setCheckState(Qt::Checked);
+                    ui->Unfreeze->setCheckState(Qt::Unchecked);
+        }
+
+    }
+
+
+
+
+
+
+
+    /// ////////////////////////////////////////////////////////////////////////// 2D u 3D
+
+
+    if(temp.getInt_command()==130)
+    {
+        if(temp.getInt_variable()==1)
+        {
+            if ((ui->DD->isChecked()==Qt::Checked)&&(ui->DDD->isChecked()==Qt::Unchecked))
+            {
+                QByteArray To;
+                To.append("Ok0");
+                emit s_send_to(To);
+            }
+            if ((ui->DD->isChecked()==Qt::Unchecked)&&(ui->DDD->isChecked()==Qt::Checked))
+            {
+                QByteArray To;
+                To.append("Ok1");
+                emit s_send_to(To);
+            }
+
+        }
+
+    }
+
+
+
+
+    /// //////////////////////////////////////////////
+
+
+
+    // Network page
+    //Control
+    if(temp.getInt_command()==454)
+    {
+        if(temp.getInt_variable()==0)
+        ui->Crestron_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->Crestron_box->setCurrentIndex(1);
+
+    }
+
+    if(temp.getInt_command()==455)
+    {
+        if(temp.getInt_variable()==0)
+        ui->Extron_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->Extron_box->setCurrentIndex(1);
+
+    }
+
+    if(temp.getInt_command()==456)
+    {
+        if(temp.getInt_variable()==0)
+        ui->PJLink_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->PJLink_box->setCurrentIndex(1);
+
+    }
+    if(temp.getInt_command()==457)
+    {
+        if(temp.getInt_variable()==0)
+        ui->AMX_Device_Discovery_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->AMX_Device_Discovery_box->setCurrentIndex(1);
+
+    }
+
+    if(temp.getInt_command()==458)
+    {
+        if(temp.getInt_variable()==0)
+        ui->Telnet_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->Telnet_box->setCurrentIndex(1);
+
+    }
+
+
+    if(temp.getInt_command()==459)
+    {
+        if(temp.getInt_variable()==0)
+        ui->HTTP_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+             ui->HTTP_box->setCurrentIndex(1);
+
+    }
+
+
+
     if((temp.getInt_command()==450)&&(temp.getInt_variable()==0))
     {
         ui->WLAN_box->setCurrentIndex(0);
