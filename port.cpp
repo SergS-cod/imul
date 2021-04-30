@@ -48,8 +48,6 @@ void port::serialRecieve()
      for(int i=0;i<vec_par.count();i++){
          emit command_s(vec_par[i]);
      }
-
-     int a;
 }
 
 

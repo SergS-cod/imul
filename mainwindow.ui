@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
+    <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
        <number>1</number>
@@ -24,250 +24,303 @@
        <attribute name="title">
         <string>Other Items</string>
        </attribute>
-       <widget class="QFrame" name="frame">
+       <widget class="QFrame" name="frame_39">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>151</width>
-          <height>291</height>
+          <width>661</width>
+          <height>311</height>
          </rect>
         </property>
         <property name="frameShape">
-         <enum>QFrame::Box</enum>
+         <enum>QFrame::StyledPanel</enum>
         </property>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
+        <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QFrame" name="frame_32">
+          <widget class="QFrame" name="frame">
            <property name="frameShape">
             <enum>QFrame::Box</enum>
            </property>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <layout class="QGridLayout" name="gridLayout_8">
-            <item row="0" column="0" colspan="2">
-             <widget class="QLabel" name="label_11">
-              <property name="text">
-               <string>Power </string>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QFrame" name="frame_32">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
               </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Power </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="ON">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>On </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="OFF">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Off</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="ON">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
+            <item>
+             <widget class="QFrame" name="frame_38">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
               </property>
-              <property name="text">
-               <string>On </string>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
               </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QLabel" name="label_Power_on_password">
+                 <property name="text">
+                  <string>Power On (Password)</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="ON_Power_on_password">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>On </string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
-            <item row="1" column="1">
-             <widget class="QCheckBox" name="OFF">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
+            <item>
+             <widget class="QFrame" name="frame_33">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
               </property>
-              <property name="text">
-               <string>Off</string>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
               </property>
+              <layout class="QGridLayout" name="gridLayout_9">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_27">
+                 <property name="text">
+                  <string>AV Mute</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="ON_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>On </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="OFF_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Off</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_34">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_10">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="label_29">
+                 <property name="text">
+                  <string> Mute</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QCheckBox" name="ON_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>On </string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="OFF_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Off</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
            </layout>
           </widget>
          </item>
          <item>
-          <widget class="QFrame" name="frame_33">
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
            </property>
-           <layout class="QGridLayout" name="gridLayout_9">
-            <item row="0" column="0" colspan="2">
-             <widget class="QLabel" name="label_27">
-              <property name="text">
-               <string>AV Mute</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="ON_2">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>On </string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QCheckBox" name="OFF_2">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Off</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
          </item>
          <item>
-          <widget class="QFrame" name="frame_34">
+          <widget class="QFrame" name="frame_2">
            <property name="frameShape">
             <enum>QFrame::Box</enum>
            </property>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <layout class="QGridLayout" name="gridLayout_10">
-            <item row="0" column="0" colspan="2">
-             <widget class="QLabel" name="label_29">
-              <property name="text">
-               <string> Mute</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="ON_3">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>On </string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QCheckBox" name="OFF_3">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Off</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QFrame" name="frame_2">
-        <property name="geometry">
-         <rect>
-          <x>190</x>
-          <y>10</y>
-          <width>471</width>
-          <height>291</height>
-         </rect>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::Box</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_8">
-         <item>
-          <widget class="QFrame" name="frame_35">
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
+           <layout class="QVBoxLayout" name="verticalLayout_8">
             <item>
-             <widget class="QLabel" name="label_30">
-              <property name="text">
-               <string>Freeze</string>
+             <widget class="QFrame" name="frame_35">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
               </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_30">
+                 <property name="text">
+                  <string>Freeze</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="Freeze">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Freeze</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="Unfreeze">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Unfreeze</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
             <item>
-             <widget class="QCheckBox" name="Freeze">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
+             <widget class="QFrame" name="frame_36">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
               </property>
-              <property name="text">
-               <string>Freeze</string>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
               </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="Unfreeze">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Unfreeze</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QFrame" name="frame_36">
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_7">
-            <item>
-             <widget class="QLabel" name="label_31">
-              <property name="text">
-               <string>Output 3D state</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="DDD">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>3D</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="DD">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>2D</string>
-              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_31">
+                 <property name="text">
+                  <string>Output 3D state</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="DDD">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>3D</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="DD">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>2D</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </item>
            </layout>
@@ -284,7 +337,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>4</number>
+           <number>11</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -1718,16 +1771,721 @@
              </item>
             </layout>
            </widget>
+           <widget class="QPushButton" name="pushButton_Four_Corners_Reset">
+            <property name="geometry">
+             <rect>
+              <x>740</x>
+              <y>720</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Four Corners Reset</string>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_14">
            <attribute name="title">
             <string>Geometric Correction</string>
            </attribute>
+           <widget class="QFrame" name="frame_40">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>571</width>
+              <height>321</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QFrame" name="frame_Geometric_Correction_H_Arc">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_46">
+                <item>
+                 <widget class="QLabel" name="label_Geometric_Correction_H_Arc">
+                  <property name="text">
+                   <string>H Arc:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Geometric_Correction_H_Arc">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>-10</number>
+                  </property>
+                  <property name="maximum">
+                   <number>10</number>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Geometric_Correction_H_Arc">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Geometric_Correction_V_Arc">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_47">
+                <item>
+                 <widget class="QLabel" name="label_Geometric_Correction_V_Arc">
+                  <property name="text">
+                   <string>V Arc:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Geometric_Correction_V_Arc">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>-10</number>
+                  </property>
+                  <property name="maximum">
+                   <number>10</number>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Geometric_Correction_V_Arc">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Geometric_Correction_H_keystone">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_48">
+                <item>
+                 <widget class="QLabel" name="label_Geometric_Correction_H_keystone">
+                  <property name="text">
+                   <string>H Keystone:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Geometric_Correction_H_keystone">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>-40</number>
+                  </property>
+                  <property name="maximum">
+                   <number>40</number>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Geometric_Correction_H_keystone">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Geometric_Correction_V_keystone">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_49">
+                <item>
+                 <widget class="QLabel" name="label_Geometric_Correction_V_keystone">
+                  <property name="text">
+                   <string>V Keystone:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSlider" name="horizontalSlider_Geometric_Correction_V_keystone">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimum">
+                   <number>-40</number>
+                  </property>
+                  <property name="maximum">
+                   <number>40</number>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_var_Geometric_Correction_V_keystone">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Geometric_Correction_Auto_Keystone">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_50">
+                <item>
+                 <widget class="QLabel" name="label_3D_Mode_2">
+                  <property name="text">
+                   <string>Auto Keystone:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_Geometric_Correction_Auto_Keystone">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>On</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Geometric_Correction_Reset">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>350</y>
+              <width>201</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_15">
            <attribute name="title">
             <string>PIP - PBP</string>
            </attribute>
+           <widget class="QFrame" name="frame_41">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>501</width>
+              <height>281</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <widget class="QFrame" name="frame_PIP_PBP_Screen">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_51">
+                <item>
+                 <widget class="QLabel" name="label_PIP_PBP_Screen">
+                  <property name="text">
+                   <string>Screen:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_PIP_PBP_Screen">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PIP</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PBP</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_PIP_PBP_Location">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_52">
+                <item>
+                 <widget class="QLabel" name="label_PIP_PBP_Location">
+                  <property name="text">
+                   <string>Location:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_PIP_PBP_Location">
+                  <item>
+                   <property name="text">
+                    <string>Top Lef</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Top Right</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Bottom Lef</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Bottom Right</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PBP, Main Lef</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PBP, Main Top</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PBP, Main Right</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PBP, Main Bottom</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_PIP_PBP_Size">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_53">
+                <item>
+                 <widget class="QLabel" name="label_PIP_PBP_Size">
+                  <property name="text">
+                   <string>Size:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_PIP_PBP_Size">
+                  <item>
+                   <property name="text">
+                    <string>Large</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Medium</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Small</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="geometry">
+             <rect>
+              <x>530</x>
+              <y>30</y>
+              <width>431</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="title">
+             <string>Sourse</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <widget class="QFrame" name="frame_PIP_PBP_Sourse_Main">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_54">
+                <item>
+                 <widget class="QLabel" name="label_PIP_PBP_Sourse_Main">
+                  <property name="text">
+                   <string>Main Source:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_PIP_PBP_Sourse_Main">
+                  <item>
+                   <property name="text">
+                    <string>[no signal]</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI1/MHL</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI2/MHL</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DVI-D</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DVI-A</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VGA</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VGA1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VGA2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Component</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>S-Video</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Video</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DisplayPort</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDBaseT</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>BNC</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Wireless</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Flash Drive</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Network Display</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>USB Display</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Multimedia</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3G-SDI</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Smart TV</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_PIP_PBP_Sourse_Sub">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_55">
+                <item>
+                 <widget class="QLabel" name="label_3D_Mode_7">
+                  <property name="text">
+                   <string>Sub Source:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_PIP_PBP_Sourse_Sub">
+                  <item>
+                   <property name="text">
+                    <string>[no signal]</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VGA 1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Compoent</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI 2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDMI 3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VGA 2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>BNC</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>S-video</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Vedio</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DVI-D</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>HDBaseT</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3G-SDI</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Network Display</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Wireless</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Flash Drive</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>USB Display</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DisplayPort</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_PIP_PBP_Swap">
+            <property name="geometry">
+             <rect>
+              <x>770</x>
+              <y>330</y>
+              <width>191</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Swap</string>
+            </property>
+           </widget>
           </widget>
          </widget>
         </item>

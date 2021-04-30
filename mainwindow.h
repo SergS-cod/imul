@@ -92,6 +92,12 @@ private slots:
  void on_pushButton_Four_Corners_buttom_right_right_clicked();
 
 
+ void on_pushButton_Four_Corners_Reset_clicked();
+
+ void on_pushButton_Geometric_Correction_Reset_clicked();
+
+ void on_pushButton_PIP_PBP_Swap_clicked();
+
 signals:
  void s_send_to(QByteArray);
 

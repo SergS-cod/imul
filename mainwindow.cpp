@@ -100,6 +100,29 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Four_Corners_buttom_right_V->setText("40");
     connect(ui->horizontalSlider_Four_Corners_buttom_right_V, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_right_V,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    //Geometric Correction
+    ui->label_var_Geometric_Correction_H_Arc->setText("0");
+    connect(ui->horizontalSlider_Geometric_Correction_H_Arc, &QSlider::valueChanged, ui->label_var_Geometric_Correction_H_Arc,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Geometric_Correction_V_Arc->setText("0");
+    connect(ui->horizontalSlider_Geometric_Correction_V_Arc, &QSlider::valueChanged, ui->label_var_Geometric_Correction_V_Arc,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Geometric_Correction_H_keystone->setText("0");
+    connect(ui->horizontalSlider_Geometric_Correction_H_keystone, &QSlider::valueChanged, ui->label_var_Geometric_Correction_H_keystone,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Geometric_Correction_V_keystone->setText("0");
+    connect(ui->horizontalSlider_Geometric_Correction_V_keystone, &QSlider::valueChanged, ui->label_var_Geometric_Correction_V_keystone,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //***test
+    parameter temp("7E3030303020317E393939390D");
+    razbor_com(temp);
+    //***
 }
 
 
@@ -117,42 +140,26 @@ MainWindow* MainWindow::GetInstance(QWidget *parent)
 void MainWindow:: update_state()
 {
 
-
-
 }
-
 
 void MainWindow:: razbor_com(parameter temp)
 {
     // POWER ON / OFF
-    if(temp.getInt_command()==0)
-    {
-        if(temp.getInt_variable()==0)
-        {
-        ui->ON->setCheckState(Qt::Unchecked);
-                ui->OFF->setCheckState(Qt::Checked);
+    if(temp.getInt_command()==0){
+        if(temp.check_include_interval(1,9999)){
+            ui->ON_Power_on_password->setCheckState(Qt::Checked);
+            return;
         }
-
-        if(temp.getInt_variable()==1)
-        {ui->ON->setCheckState(Qt::Checked);
-                    ui->OFF->setCheckState(Qt::Unchecked);
+        if(temp.getInt_variable()==0){
+            ui->ON->setCheckState(Qt::Unchecked);
+            ui->OFF->setCheckState(Qt::Checked);
+            return;
         }
-
-    }
-
-    if(temp.getInt_command()==0)
-    {
-        if(temp.getInt_variable()==0)
-        {
-        ui->ON->setCheckState(Qt::Unchecked);
-                ui->OFF->setCheckState(Qt::Checked);
+        if(temp.getInt_variable()==1){
+            ui->ON->setCheckState(Qt::Checked);
+            ui->OFF->setCheckState(Qt::Unchecked);
+            return;
         }
-
-        if(temp.getInt_variable()==1)
-        {ui->ON->setCheckState(Qt::Checked);
-                    ui->OFF->setCheckState(Qt::Unchecked);
-        }
-
     }
 
 
@@ -178,23 +185,22 @@ void MainWindow:: razbor_com(parameter temp)
     }
     ////////////////////////////////////////////////////////////////////////
 
-
     /////////////////////////////////////////////////////////setup screen type 16 9 16 10
 
-    if(temp.getInt_command()==0)
-    {
-        if(temp.getInt_variable()==0)
-        {
-        ui->ON->setCheckState(Qt::Unchecked);
-                ui->OFF->setCheckState(Qt::Checked);
-        }
+    //    if(temp.getInt_command()==0)
+    //    {
+    //        if(temp.getInt_variable()==0)
+    //        {
+    //            ui->ON->setCheckState(Qt::Unchecked);
+    //            ui->OFF->setCheckState(Qt::Checked);
+    //        }
 
-        if(temp.getInt_variable()==1)
-        {ui->ON->setCheckState(Qt::Checked);
-                    ui->OFF->setCheckState(Qt::Unchecked);
-        }
+    //        if(temp.getInt_variable()==1)
+    //        {ui->ON->setCheckState(Qt::Checked);
+    //            ui->OFF->setCheckState(Qt::Unchecked);
+    //        }
 
-    }
+    //    }
 
 
 
@@ -208,36 +214,36 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-        ui->Front->setCheckState(Qt::Checked);
-                ui->Rear->setCheckState(Qt::Unchecked);
-                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
-                    ui->Rear_top->setCheckState(Qt::Unchecked);
+            ui->Front->setCheckState(Qt::Checked);
+            ui->Rear->setCheckState(Qt::Unchecked);
+            ui->Ceiling_top->setCheckState(Qt::Unchecked);
+            ui->Rear_top->setCheckState(Qt::Unchecked);
 
         }
 
         if(temp.getInt_variable()==2)
         {
-        ui->Front->setCheckState(Qt::Unchecked);
-                ui->Rear->setCheckState(Qt::Checked);
-                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
-                    ui->Rear_top->setCheckState(Qt::Unchecked);
+            ui->Front->setCheckState(Qt::Unchecked);
+            ui->Rear->setCheckState(Qt::Checked);
+            ui->Ceiling_top->setCheckState(Qt::Unchecked);
+            ui->Rear_top->setCheckState(Qt::Unchecked);
 
         }
         if(temp.getInt_variable()==3)
         {
-        ui->Front->setCheckState(Qt::Unchecked);
-                ui->Rear->setCheckState(Qt::Unchecked);
-                  ui->Ceiling_top->setCheckState(Qt::Checked);
-                    ui->Rear_top->setCheckState(Qt::Unchecked);
+            ui->Front->setCheckState(Qt::Unchecked);
+            ui->Rear->setCheckState(Qt::Unchecked);
+            ui->Ceiling_top->setCheckState(Qt::Checked);
+            ui->Rear_top->setCheckState(Qt::Unchecked);
 
         }
 
         if(temp.getInt_variable()==4)
         {
-        ui->Front->setCheckState(Qt::Unchecked);
-                ui->Rear->setCheckState(Qt::Unchecked);
-                  ui->Ceiling_top->setCheckState(Qt::Unchecked);
-                    ui->Rear_top->setCheckState(Qt::Checked);
+            ui->Front->setCheckState(Qt::Unchecked);
+            ui->Rear->setCheckState(Qt::Unchecked);
+            ui->Ceiling_top->setCheckState(Qt::Unchecked);
+            ui->Rear_top->setCheckState(Qt::Checked);
 
         }
 
@@ -288,13 +294,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-        ui->ON_2->setCheckState(Qt::Unchecked);
-                ui->OFF_2->setCheckState(Qt::Checked);
+            ui->ON_2->setCheckState(Qt::Unchecked);
+            ui->OFF_2->setCheckState(Qt::Checked);
         }
 
         if(temp.getInt_variable()==1)
         {ui->ON_2->setCheckState(Qt::Checked);
-                    ui->OFF_2->setCheckState(Qt::Unchecked);
+            ui->OFF_2->setCheckState(Qt::Unchecked);
         }
 
     }
@@ -330,13 +336,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-        ui->ON_3->setCheckState(Qt::Unchecked);
-                ui->OFF_3->setCheckState(Qt::Checked);
+            ui->ON_3->setCheckState(Qt::Unchecked);
+            ui->OFF_3->setCheckState(Qt::Checked);
         }
 
         if(temp.getInt_variable()==1)
         {ui->ON_3->setCheckState(Qt::Checked);
-                    ui->OFF_3->setCheckState(Qt::Unchecked);
+            ui->OFF_3->setCheckState(Qt::Unchecked);
         }
 
     }
@@ -374,13 +380,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-        ui->Freeze->setCheckState(Qt::Unchecked);
-                ui->Unfreeze->setCheckState(Qt::Checked);
+            ui->Freeze->setCheckState(Qt::Unchecked);
+            ui->Unfreeze->setCheckState(Qt::Checked);
         }
 
         if(temp.getInt_variable()==1)
         {ui->Freeze->setCheckState(Qt::Checked);
-                    ui->Unfreeze->setCheckState(Qt::Unchecked);
+            ui->Unfreeze->setCheckState(Qt::Unchecked);
         }
 
     }
@@ -427,49 +433,49 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==454)
     {
         if(temp.getInt_variable()==0)
-        ui->Crestron_box->setCurrentIndex(0);
+            ui->Crestron_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->Crestron_box->setCurrentIndex(1);
+            ui->Crestron_box->setCurrentIndex(1);
 
     }
 
     if(temp.getInt_command()==455)
     {
         if(temp.getInt_variable()==0)
-        ui->Extron_box->setCurrentIndex(0);
+            ui->Extron_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->Extron_box->setCurrentIndex(1);
+            ui->Extron_box->setCurrentIndex(1);
 
     }
 
     if(temp.getInt_command()==456)
     {
         if(temp.getInt_variable()==0)
-        ui->PJLink_box->setCurrentIndex(0);
+            ui->PJLink_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->PJLink_box->setCurrentIndex(1);
+            ui->PJLink_box->setCurrentIndex(1);
 
     }
     if(temp.getInt_command()==457)
     {
         if(temp.getInt_variable()==0)
-        ui->AMX_Device_Discovery_box->setCurrentIndex(0);
+            ui->AMX_Device_Discovery_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->AMX_Device_Discovery_box->setCurrentIndex(1);
+            ui->AMX_Device_Discovery_box->setCurrentIndex(1);
 
     }
 
     if(temp.getInt_command()==458)
     {
         if(temp.getInt_variable()==0)
-        ui->Telnet_box->setCurrentIndex(0);
+            ui->Telnet_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->Telnet_box->setCurrentIndex(1);
+            ui->Telnet_box->setCurrentIndex(1);
 
     }
 
@@ -477,10 +483,10 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==459)
     {
         if(temp.getInt_variable()==0)
-        ui->HTTP_box->setCurrentIndex(0);
+            ui->HTTP_box->setCurrentIndex(0);
 
         if(temp.getInt_variable()==1)
-             ui->HTTP_box->setCurrentIndex(1);
+            ui->HTTP_box->setCurrentIndex(1);
 
     }
 
@@ -546,11 +552,45 @@ void MainWindow:: razbor_com(parameter temp)
     }
     //Audio Input
     if(temp.getInt_command()==89){
-        for(int i=0;i<10;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_Audio_Input->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_Audio_Input->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Audio_Input->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Audio_Input->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Audio_Input->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Audio_Input->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Audio_Input->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Audio_Input->setCurrentIndex(6);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_Audio_Input->setCurrentIndex(7);
+            return;
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_Audio_Input->setCurrentIndex(8);
+            return;
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_Audio_Input->setCurrentIndex(9);
+            return;
         }
     }
     //Audio Delay
@@ -596,47 +636,90 @@ void MainWindow:: razbor_com(parameter temp)
     //------------------------------3D page
     //3D Mode
     if(temp.getInt_command()==230){
-        for(int i=0;i<4;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_3D_Mode->setCurrentIndex(i);
-                return;
-            }
+
+        if(temp.getInt_variable()==0){
+            ui->comboBox_3D_Mode->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_3D_Mode->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_3D_Mode->setCurrentIndex(2);
+            return;
         }
     }
     //3D_2D
     if(temp.getInt_command()==400){
-        for(int i=0;i<3;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_3D_2D->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_3D_2D->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_3D_2D->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_3D_2D->setCurrentIndex(2);
+            return;
         }
     }
     //3D Format
     if(temp.getInt_command()==405){
-        for(int i=0;i<9;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_3D_Format->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_3D_Format->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_3D_Format->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_3D_Format->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_3D_Format->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_3D_Format->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_3D_Format->setCurrentIndex(5);
+            return;
         }
     }
     //3D sync invert
     if(temp.getInt_command()==231){
-        for(int i=0;i<2;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_3D_sync_invert->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_3D_sync_invert->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_3D_sync_invert->setCurrentIndex(1);
+            return;
         }
     }
     //2D_3D
     if(temp.getInt_command()==402){
-        for(int i=0;i<4;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_2D_3D->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_2D_3D->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_2D_3D->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_2D_3D->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_2D_3D->setCurrentIndex(3);
+            return;
         }
     }
     //------------------------------END 3D page
@@ -644,12 +727,47 @@ void MainWindow:: razbor_com(parameter temp)
     //------------------------------Display page
     //Aspect ratio
     if(temp.getInt_command()==60){
-        for(int i=1;i<13;i++){
-            if(temp.getInt_variable()==i){
-                ui->comboBox_Aspect_ratio->setCurrentIndex(i);
-                return;
-            }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(1);
+            return;
         }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(6);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(7);
+            return;
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(8);
+            return;
+        }
+        if(temp.getInt_variable()==11){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(9);
+            return;
+        }
+        if(temp.getInt_variable()==12){
+            ui->comboBox_Aspect_ratio->setCurrentIndex(10);
+            return;
+        }
+
     }
 
     //Edge Mask
@@ -912,7 +1030,291 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-    //...
+
+    if(temp.getInt_command()==516){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Four_Corners_Reset_clicked();
+            return;
+        }
+    }
+    //Geometric Correction
+    if(temp.getInt_command()==300){
+        if(temp.check_include_interval(-10,10)){
+            ui->horizontalSlider_Geometric_Correction_H_Arc->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==301){
+        if(temp.check_include_interval(-10,10)){
+            ui->horizontalSlider_Geometric_Correction_V_Arc->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==65){
+        if(temp.check_include_interval(-40,140)){
+            ui->horizontalSlider_Geometric_Correction_H_keystone->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==66){
+        if(temp.check_include_interval(-40,140)){
+            ui->horizontalSlider_Geometric_Correction_V_keystone->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==69){
+        if(temp.getInt_variable()==0){
+            ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(0);
+            return;
+        }
+
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(1);
+            return;
+        }
+
+    }
+
+    if(temp.getInt_command()==561){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_Geometric_Correction_Reset_clicked();
+            return;
+        }
+    }
+
+    //PIP_PBP
+    if(temp.getInt_command()==302){
+        if(temp.getInt_variable()==0){
+            ui->comboBox_PIP_PBP_Screen->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_PIP_PBP_Screen->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_PIP_PBP_Screen->setCurrentIndex(2);
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==303){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(6);
+            return;
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_PIP_PBP_Location->setCurrentIndex(7);
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==304){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_PIP_PBP_Size->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_PIP_PBP_Size->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_PIP_PBP_Size->setCurrentIndex(2);
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==12){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(1);
+            return;
+        }
+
+        if(temp.getInt_variable()==15){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(2);
+            return;
+        }
+
+        if(temp.getInt_variable()==16){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(4);
+            return;
+        }
+
+        if(temp.getInt_variable()==2){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(6);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(7);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(9);
+            return;
+        }
+        if(temp.getInt_variable()==14){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(10);
+            return;
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(11);
+            return;
+        }
+        if(temp.getInt_variable()==10){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(12);
+            return;
+        }
+        if(temp.getInt_variable()==20){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(13);
+            return;
+        }
+        if(temp.getInt_variable()==21){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(14);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(15);
+            return;
+        }
+        if(temp.getInt_variable()==11){
+           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(16);
+            return;
+        }
+        if(temp.getInt_variable()==17){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(17);
+            return;
+        }
+        if(temp.getInt_variable()==18){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(18);
+            return;
+        }
+        if(temp.getInt_variable()==19){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(19);
+            return;
+        }
+        if(temp.getInt_variable()==23){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(20);
+            return;
+        }
+        if(temp.getInt_variable()==22){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(21);
+            return;
+        }
+        if(temp.getInt_variable()==24){
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(22);
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==305){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==13){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(6);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(7);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(8);
+            return;
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(9);
+            return;
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(10);
+            return;
+        }
+        if(temp.getInt_variable()==10){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(11);
+            return;
+        }
+        if(temp.getInt_variable()==11){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(12);
+            return;
+        }
+        if(temp.getInt_variable()==12){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(13);
+            return;
+        }
+        if(temp.getInt_variable()==14){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(14);
+            return;
+        }
+        if(temp.getInt_variable()==15){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(15);
+            return;
+        }
+        if(temp.getInt_variable()==16){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(16);
+            return;
+        }
+        if(temp.getInt_variable()==17){
+            ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(17);
+            return;
+        }
+    }
+
+    if(temp.getInt_command()==306){
+        if(temp.getInt_variable() == 1){
+            emit on_pushButton_PIP_PBP_Swap_clicked();
+            return;
+        }
+    }
     //------------------------------END Display page
     /// Просто вношу изменения
 }
@@ -1796,72 +2198,13 @@ void MainWindow::set_all_command()
     setparam(140,82);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
 
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
 
 void MainWindow::on_pushButton_Zoom_minus_clicked(){
     ui->horizontalSlider_Zoom->setValue( ui->horizontalSlider_Zoom->value() - 1);
@@ -1949,4 +2292,45 @@ void MainWindow::on_pushButton_Four_Corners_buttom_right_down_clicked(){
 
 void MainWindow::on_pushButton_Four_Corners_buttom_right_right_clicked(){
     ui->horizontalSlider_Four_Corners_buttom_right_H->setValue( ui->horizontalSlider_Four_Corners_buttom_right_H->value() + 1);
+}
+
+void MainWindow::on_pushButton_Four_Corners_Reset_clicked(){
+    //top-left
+    ui->label_var_Four_Corners_top_left_H->setText("60");
+    ui->horizontalSlider_Four_Corners_top_left_H->setValue(60);
+    ui->label_var_Four_Corners_top_left_V->setText("40");
+    ui->horizontalSlider_Four_Corners_top_left_V->setValue(40);
+    //top-right
+    ui->label_var_Four_Corners_top_right_H->setText("60");
+    ui->horizontalSlider_Four_Corners_top_right_H->setValue(60);
+    ui->label_var_Four_Corners_top_right_V->setText("40");
+    ui->horizontalSlider_Four_Corners_top_right_V->setValue(40);
+
+    //buttom_left
+    ui->label_var_Four_Corners_buttom_left_H->setText("60");
+    ui->horizontalSlider_Four_Corners_buttom_left_H->setValue(60);
+    ui->label_var_Four_Corners_buttom_left_V->setText("40");
+    ui->horizontalSlider_Four_Corners_buttom_left_V->setValue(40);
+
+    //buttom-right
+    ui->label_var_Four_Corners_buttom_right_H->setText("60");
+    ui->horizontalSlider_Four_Corners_buttom_right_H->setValue(60);
+    ui->label_var_Four_Corners_buttom_right_V->setText("40");
+    ui->horizontalSlider_Four_Corners_buttom_right_V->setValue(40);
+}
+void MainWindow::on_pushButton_Geometric_Correction_Reset_clicked()
+{
+    ui->label_var_Geometric_Correction_H_Arc->setText("0");
+    ui->horizontalSlider_Geometric_Correction_H_Arc->setValue(0);
+    ui->label_var_Geometric_Correction_V_Arc->setText("0");
+    ui->horizontalSlider_Geometric_Correction_V_Arc->setValue(0);
+    ui->label_var_Geometric_Correction_H_keystone->setText("0");
+    ui->horizontalSlider_Geometric_Correction_H_keystone->setValue(0);
+    ui->label_var_Geometric_Correction_V_keystone->setText("0");
+    ui->horizontalSlider_Geometric_Correction_V_keystone->setValue(0);
+}
+
+void MainWindow::on_pushButton_PIP_PBP_Swap_clicked()
+{
+
 }
