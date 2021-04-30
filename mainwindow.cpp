@@ -28,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Bass, &QSlider::valueChanged, ui->label_var_Bass,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
-
     //Edge Mask
     ui->label_var_Edge_Mask->setText("0");
     connect(ui->horizontalSlider_Edge_Mask, &QSlider::valueChanged, ui->label_var_Edge_Mask,
@@ -162,7 +161,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     if(temp.getInt_command()==124)
     {
         if(temp.getInt_variable()==1)
@@ -184,7 +182,6 @@ void MainWindow:: razbor_com(parameter temp)
 
     }
     ////////////////////////////////////////////////////////////////////////
-
     /////////////////////////////////////////////////////////setup screen type 16 9 16 10
 
     //    if(temp.getInt_command()==0)
@@ -202,14 +199,8 @@ void MainWindow:: razbor_com(parameter temp)
 
     //    }
 
-
-
-
     //////////////////////////////////////////////////////////////////
-
     ////////////////////////////////////////////////////////////setup Projection
-
-
     if(temp.getInt_command()==71)
     {
         if(temp.getInt_variable()==1)
@@ -248,9 +239,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-
-
-
     if(temp.getInt_command()==129)
     {
         if(temp.getInt_variable()==1)
@@ -279,17 +267,12 @@ void MainWindow:: razbor_com(parameter temp)
                 To.append("Ok3");
                 emit s_send_to(To);
             }
-
         }
-
     }
 
     ///
 
     ///////////////////////////////////////////////////////// AV Mute
-
-
-
     if(temp.getInt_command()==2)
     {
         if(temp.getInt_variable()==0)
@@ -302,7 +285,6 @@ void MainWindow:: razbor_com(parameter temp)
         {ui->ON_2->setCheckState(Qt::Checked);
             ui->OFF_2->setCheckState(Qt::Unchecked);
         }
-
     }
     if(temp.getInt_command()==355)
     {
@@ -324,14 +306,7 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-
-
-
-
-    /// ////////////////////////////////////////////////////////////// Mute
-
-
-
+    ///////////////////////////////////////////////////////////////// Mute
     if(temp.getInt_command()==3)
     {
         if(temp.getInt_variable()==0)
@@ -362,20 +337,10 @@ void MainWindow:: razbor_com(parameter temp)
                 To.append("Ok0");
                 emit s_send_to(To);
             }
-
         }
-
     }
 
-
-
     ///////////////////////////////////////////////////////////////////////  Freeze
-
-
-
-
-
-
     if(temp.getInt_command()==4)
     {
         if(temp.getInt_variable()==0)
@@ -388,18 +353,8 @@ void MainWindow:: razbor_com(parameter temp)
         {ui->Freeze->setCheckState(Qt::Checked);
             ui->Unfreeze->setCheckState(Qt::Unchecked);
         }
-
     }
-
-
-
-
-
-
-
     /// ////////////////////////////////////////////////////////////////////////// 2D u 3D
-
-
     if(temp.getInt_command()==130)
     {
         if(temp.getInt_variable()==1)
@@ -421,13 +376,7 @@ void MainWindow:: razbor_com(parameter temp)
 
     }
 
-
-
-
-    /// //////////////////////////////////////////////
-
-
-
+    /////////////////////////////////////////////////
     // Network page
     //Control
     if(temp.getInt_command()==454)
@@ -814,8 +763,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
         return;
     }
-
-
     //Image shift
     //H
     if(temp.getInt_command()==540){
@@ -836,7 +783,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
         return;
     }
-
     //V
     if(temp.getInt_command()==541){
         if(temp.getInt_variable() == 2){
@@ -849,14 +795,12 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-
     if(temp.getInt_command()==64){
         if(temp.check_include_interval(-100,100)){
             ui->horizontalSlider_Image_shift_V->setValue(temp.getInt_variable());
         }
         return;
     }
-
     //H Keystone
     if(temp.getInt_command()==65){
         if(temp.check_include_interval(-40,40)){
@@ -871,9 +815,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
         return;
     }
-
-
-
     //Four Corners
     //top_lef
     if(temp.getInt_command()==58){
@@ -883,7 +824,6 @@ void MainWindow:: razbor_com(parameter temp)
             //                }
             return;
         }
-
     }
     if(temp.getInt_command()==58){
         if(temp.getInt_variable() == 2){
@@ -892,7 +832,6 @@ void MainWindow:: razbor_com(parameter temp)
             //                }
             return;
         }
-
     }
 
     if(temp.getInt_command()==59){
@@ -922,7 +861,6 @@ void MainWindow:: razbor_com(parameter temp)
             //            }
             return;
         }
-
     }
     if(temp.getInt_command()==58){
         if(temp.getInt_variable() == 4){
@@ -931,8 +869,6 @@ void MainWindow:: razbor_com(parameter temp)
             //                      }
             return;
         }
-
-
         if(temp.getInt_command()==59){
             if(temp.getInt_variable() == 5){
                 emit on_pushButton_Four_Corners_top_right_right_clicked();
@@ -950,7 +886,6 @@ void MainWindow:: razbor_com(parameter temp)
                 emit on_pushButton_Four_Corners_top_right_down_clicked();
                 return;
             }
-
         }
         //buttom_left
         if(temp.getInt_command()==58){
@@ -960,7 +895,6 @@ void MainWindow:: razbor_com(parameter temp)
                 //                }
                 return;
             }
-
         }
         if(temp.getInt_command()==58){
             if(temp.getInt_variable() == 6){
@@ -970,9 +904,7 @@ void MainWindow:: razbor_com(parameter temp)
                 return;
             }
         }
-
     }
-
     if(temp.getInt_command()==59){
         if(temp.getInt_variable() == 9){
             emit on_pushButton_Four_Corners_buttom_left_right_clicked();
@@ -990,7 +922,6 @@ void MainWindow:: razbor_com(parameter temp)
             emit on_pushButton_Four_Corners_buttom_left_down_clicked();
             return;
         }
-
     }
     //buttom_right
     if(temp.getInt_command()==58){
@@ -1000,7 +931,6 @@ void MainWindow:: razbor_com(parameter temp)
             //            }
             return;
         }
-
     }
     if(temp.getInt_command()==58){
         if(temp.getInt_variable() == 8){
@@ -1009,9 +939,7 @@ void MainWindow:: razbor_com(parameter temp)
             //            }
             return;
         }
-
     }
-
     if(temp.getInt_command()==59){
         if(temp.getInt_variable() == 13){
             emit on_pushButton_Four_Corners_buttom_right_right_clicked();
@@ -1030,7 +958,6 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-
     if(temp.getInt_command()==516){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Four_Corners_Reset_clicked();
@@ -1044,28 +971,24 @@ void MainWindow:: razbor_com(parameter temp)
         }
         return;
     }
-
     if(temp.getInt_command()==301){
         if(temp.check_include_interval(-10,10)){
             ui->horizontalSlider_Geometric_Correction_V_Arc->setValue(temp.getInt_variable());
         }
         return;
     }
-
     if(temp.getInt_command()==65){
         if(temp.check_include_interval(-40,140)){
             ui->horizontalSlider_Geometric_Correction_H_keystone->setValue(temp.getInt_variable());
         }
         return;
     }
-
     if(temp.getInt_command()==66){
         if(temp.check_include_interval(-40,140)){
             ui->horizontalSlider_Geometric_Correction_V_keystone->setValue(temp.getInt_variable());
         }
         return;
     }
-
     if(temp.getInt_command()==69){
         if(temp.getInt_variable()==0){
             ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(0);
@@ -1076,16 +999,13 @@ void MainWindow:: razbor_com(parameter temp)
             ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(1);
             return;
         }
-
     }
-
     if(temp.getInt_command()==561){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Geometric_Correction_Reset_clicked();
             return;
         }
     }
-
     //PIP_PBP
     if(temp.getInt_command()==302){
         if(temp.getInt_variable()==0){
@@ -1157,17 +1077,14 @@ void MainWindow:: razbor_com(parameter temp)
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(1);
             return;
         }
-
         if(temp.getInt_variable()==15){
            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(2);
             return;
         }
-
         if(temp.getInt_variable()==16){
            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(4);
             return;
         }
-
         if(temp.getInt_variable()==2){
            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(5);
             return;
@@ -1237,7 +1154,6 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-
     if(temp.getInt_command()==305){
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(1);
@@ -1308,7 +1224,6 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-
     if(temp.getInt_command()==306){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_PIP_PBP_Swap_clicked();
@@ -1318,8 +1233,7 @@ void MainWindow:: razbor_com(parameter temp)
     //------------------------------END Display page
     /// Просто вношу изменения
 }
-void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1)
-{
+void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
     com tmp;
     tmp.CMD = CMD;
     tmp.Val=Val;
@@ -1328,11 +1242,9 @@ void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int passwo
     tmp.password=password;
     tmp.dat=dat;
     command.append(tmp);
-
 }
 
-void MainWindow::set_all_command()
-{
+void MainWindow::set_all_command(){
     setparam(20,1);
     setparam(20,2);
     setparam(20,3);
@@ -1351,7 +1263,6 @@ void MainWindow::set_all_command()
     setparam(20,19);
     setparam(20,20);
     setparam(20,21);
-
 
     setparam(506,0);
     setparam(506,1);
