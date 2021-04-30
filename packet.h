@@ -15,9 +15,9 @@ public:
     QVector<parameter> getParameters() const;
     bool getIsValid() const;
     void Add(parameter tmp);
-        QVector<parameter> parameters;
-private:
 
+private:
+    QVector<parameter> parameters;
     bool isValid;
     int getCountParameters();
 

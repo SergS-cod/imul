@@ -3,7 +3,7 @@
 port::port( )
 {
 
-         serialPort=new QSerialPort();
+       serialPort=new QSerialPort();
        // указали имя к какому порту будем подключаться
        serialPort->setPortName("COM3");
        // указали скорость
@@ -36,25 +36,20 @@ port::~port()
 
 void port::run(){
 
-
-
-
 }
 
 void port::serialRecieve()
 {
-
-
     QByteArray ba;
     ba=serialPort->readAll();
     qDebug()<<ba;
     packet B(ba);
-     for(int i=0;i<B.parameters.count();i++)
-    emit command_s(B.parameters[i]);
+    QVector<parameter> vec_par = B.getParameters();
+     for(int i=0;i<vec_par.count();i++){
+         emit command_s(vec_par[i]);
+     }
 
-
-
-
+     int a;
 }
 
 

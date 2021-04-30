@@ -124,12 +124,7 @@ void MainWindow:: update_state()
 
 void MainWindow:: razbor_com(parameter temp)
 {
-
-
-
-
     // POWER ON / OFF
-
     if(temp.getInt_command()==0)
     {
         if(temp.getInt_variable()==0)
