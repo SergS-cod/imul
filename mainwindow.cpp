@@ -216,8 +216,81 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //CMS
+    //R
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //G
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //B
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //C
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //Y
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //M
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //W
+    ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
+     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
     //***test
-    parameter temp("7E3030333435202D35300D");
+    parameter temp("7E3030333336202D35300D");
     razbor_com(temp);
     //***
 }
@@ -245,17 +318,17 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==0){
         if(temp.check_include_interval(1,9999)){
             ui->ON_Power_on_password->setCheckState(Qt::Checked);
-            return;
+
         }
         if(temp.getInt_variable()==0){
             ui->ON->setCheckState(Qt::Unchecked);
             ui->OFF->setCheckState(Qt::Checked);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->ON->setCheckState(Qt::Checked);
             ui->OFF->setCheckState(Qt::Unchecked);
-            return;
+
         }
     }
 
@@ -559,7 +632,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->comboBox_Internal_speaker->setCurrentIndex(1);
         }
 
-        return;
+
     }
     //Mute
     if(temp.getInt_command()==80){
@@ -570,7 +643,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             ui->comboBox_Mute->setCurrentIndex(1);
         }
-        return;
+
     }
     //Mic
     if(temp.getInt_command()==562){
@@ -581,63 +654,63 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             ui->comboBox_Mic->setCurrentIndex(1);
         }
-        return;
+
     }
     //Volume
     if(temp.getInt_command()==81){
         if(temp.check_include_interval(0,10)){
             ui->horizontalSlider_Volume->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Mic_Volume
     if(temp.getInt_command()==93){
         if(temp.check_include_interval(0,10)){
             ui->horizontalSlider_Mic_Volume->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Audio Input
     if(temp.getInt_command()==89){
         if(temp.getInt_variable()==0){
             ui->comboBox_Audio_Input->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_Audio_Input->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_Audio_Input->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_Audio_Input->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_Audio_Input->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_Audio_Input->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_Audio_Input->setCurrentIndex(6);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_Audio_Input->setCurrentIndex(7);
-            return;
+
         }
         if(temp.getInt_variable()==8){
             ui->comboBox_Audio_Input->setCurrentIndex(8);
-            return;
+
         }
         if(temp.getInt_variable()==9){
             ui->comboBox_Audio_Input->setCurrentIndex(9);
-            return;
+
         }
     }
     //Audio Delay
@@ -651,7 +724,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             ui->comboBox_Audio_Out->setCurrentIndex(1);
         }
-        return;
+
     }
     //SRS
     if(temp.getInt_command()==94){
@@ -662,21 +735,21 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             ui->comboBox_SRS->setCurrentIndex(1);
         }
-        return;
+
     }
     //Treble
     if(temp.getInt_command()==95){
         if(temp.check_include_interval(-10,10)){
             ui->horizontalSlider_Treble->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Bass
     if(temp.getInt_command()==96){
         if(temp.check_include_interval(-10,10)){
             ui->horizontalSlider_Bass->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //------------------------------END Audio page
 
@@ -686,87 +759,87 @@ void MainWindow:: razbor_com(parameter temp)
 
         if(temp.getInt_variable()==0){
             ui->comboBox_3D_Mode->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_3D_Mode->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_3D_Mode->setCurrentIndex(2);
-            return;
+
         }
     }
     //3D_2D
     if(temp.getInt_command()==400){
         if(temp.getInt_variable()==0){
             ui->comboBox_3D_2D->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_3D_2D->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_3D_2D->setCurrentIndex(2);
-            return;
+
         }
     }
     //3D Format
     if(temp.getInt_command()==405){
         if(temp.getInt_variable()==0){
             ui->comboBox_3D_Format->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_3D_Format->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_3D_Format->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_3D_Format->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_3D_Format->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==8){
             ui->comboBox_3D_Format->setCurrentIndex(5);
-            return;
+
         }
     }
     //3D sync invert
     if(temp.getInt_command()==231){
         if(temp.getInt_variable()==0){
             ui->comboBox_3D_sync_invert->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_3D_sync_invert->setCurrentIndex(1);
-            return;
+
         }
     }
     //2D_3D
     if(temp.getInt_command()==402){
         if(temp.getInt_variable()==0){
             ui->comboBox_2D_3D->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_2D_3D->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_2D_3D->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_2D_3D->setCurrentIndex(3);
-            return;
+
         }
     }
     //------------------------------END 3D page
@@ -776,43 +849,43 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==60){
         if(temp.getInt_variable()==1){
             ui->comboBox_Aspect_ratio->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_Aspect_ratio->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_Aspect_ratio->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_Aspect_ratio->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==9){
             ui->comboBox_Aspect_ratio->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_Aspect_ratio->setCurrentIndex(6);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_Aspect_ratio->setCurrentIndex(7);
-            return;
+
         }
         if(temp.getInt_variable()==8){
             ui->comboBox_Aspect_ratio->setCurrentIndex(8);
-            return;
+
         }
         if(temp.getInt_variable()==11){
             ui->comboBox_Aspect_ratio->setCurrentIndex(9);
-            return;
+
         }
         if(temp.getInt_variable()==12){
             ui->comboBox_Aspect_ratio->setCurrentIndex(10);
-            return;
+
         }
 
     }
@@ -822,21 +895,21 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(0,10)){
             ui->horizontalSlider_Edge_Mask->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     //Zoom
     if(temp.getInt_command()==5){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Zoom_plus_clicked();
-            return;
+
         }
     }
 
     if(temp.getInt_command()==6){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Zoom_minus_clicked();
-            return;
+
         }
     }
 
@@ -844,7 +917,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-5,25)){
             ui->horizontalSlider_Zoom->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     //Digital Zoom
@@ -852,26 +925,26 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(0,100)){
             ui->horizontalSlider_H_Zoom->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==505){
         if(temp.check_include_interval(0,100)){
             ui->horizontalSlider_V_Zoom->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Image shift
     //H
     if(temp.getInt_command()==540){
         if(temp.getInt_variable() == 2){
             emit on_pushButton_Image_shift_H_plus_clicked();
-            return;
+
         }
 
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Image_shift_H_minus_clicked();
-            return;
+
         }
     }
 
@@ -879,39 +952,39 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-100,100)){
             ui->horizontalSlider_Image_shift_H->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //V
     if(temp.getInt_command()==541){
         if(temp.getInt_variable() == 2){
             emit on_pushButton_Image_shift_V_plus_clicked();
-            return;
+
         }
 
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Image_shift_V_minus_clicked();
-            return;
+
         }
     }
     if(temp.getInt_command()==64){
         if(temp.check_include_interval(-100,100)){
             ui->horizontalSlider_Image_shift_V->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //H Keystone
     if(temp.getInt_command()==65){
         if(temp.check_include_interval(-40,40)){
             ui->horizontalSlider_H_Keystone->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //V Keystone
     if(temp.getInt_command()==66){
         if(temp.check_include_interval(-40,40)){
             ui->horizontalSlider_V_Keystone->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Four Corners
     //top_lef
@@ -920,7 +993,7 @@ void MainWindow:: razbor_com(parameter temp)
             //                if(temp.check_include_interval(0,120)){
             //                    ui->horizontalSlider_Four_Corners_top_left_H->setValue(temp.getInt_variable());
             //                }
-            return;
+
         }
     }
     if(temp.getInt_command()==58){
@@ -928,26 +1001,26 @@ void MainWindow:: razbor_com(parameter temp)
             //                if(temp.check_include_interval(0,80)){
             //                    ui->horizontalSlider_Four_Corners_top_left_V->setValue(temp.getInt_variable());
             //                }
-            return;
+
         }
     }
 
     if(temp.getInt_command()==59){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Four_Corners_top_left_right_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 2){
             emit on_pushButton_Four_Corners_top_left_left_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 3){
             emit on_pushButton_Four_Corners_top_left_up_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 4){
             emit on_pushButton_Four_Corners_top_left_down_clicked();
-            return;
+
         }
 
     }
@@ -957,7 +1030,7 @@ void MainWindow:: razbor_com(parameter temp)
             //            if(temp.check_include_interval(0,120)){
             //                ui->horizontalSlider_Four_Corners_top_right_H->setValue(temp.getInt_variable());
             //            }
-            return;
+
         }
     }
     if(temp.getInt_command()==58){
@@ -965,24 +1038,24 @@ void MainWindow:: razbor_com(parameter temp)
             //            if(temp.check_include_interval(0,80)){
             //                ui->horizontalSlider_Four_Corners_top_right_V->setValue(temp.getInt_variable());
             //                      }
-            return;
+
         }
         if(temp.getInt_command()==59){
             if(temp.getInt_variable() == 5){
                 emit on_pushButton_Four_Corners_top_right_right_clicked();
-                return;
+
             }
             if(temp.getInt_variable() == 6){
                 emit on_pushButton_Four_Corners_top_right_left_clicked();
-                return;
+
             }
             if(temp.getInt_variable() == 7){
                 emit on_pushButton_Four_Corners_top_right_up_clicked();
-                return;
+
             }
             if(temp.getInt_variable() == 8){
                 emit on_pushButton_Four_Corners_top_right_down_clicked();
-                return;
+
             }
         }
         //buttom_left
@@ -991,7 +1064,7 @@ void MainWindow:: razbor_com(parameter temp)
                 //                if(temp.check_include_interval(0,120)){
                 //                    ui->horizontalSlider_Four_Corners_buttom_left_H->setValue(temp.getInt_variable());
                 //                }
-                return;
+
             }
         }
         if(temp.getInt_command()==58){
@@ -999,26 +1072,26 @@ void MainWindow:: razbor_com(parameter temp)
                 //                if(temp.check_include_interval(0,80)){
                 //                    ui->horizontalSlider_Four_Corners_buttom_left_V->setValue(temp.getInt_variable());
                 //                }
-                return;
+
             }
         }
     }
     if(temp.getInt_command()==59){
         if(temp.getInt_variable() == 9){
             emit on_pushButton_Four_Corners_buttom_left_right_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 10){
             emit on_pushButton_Four_Corners_buttom_left_left_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 11){
             emit on_pushButton_Four_Corners_buttom_left_up_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 12){
             emit on_pushButton_Four_Corners_buttom_left_down_clicked();
-            return;
+
         }
     }
     //buttom_right
@@ -1027,7 +1100,7 @@ void MainWindow:: razbor_com(parameter temp)
             //            if(temp.check_include_interval(0,120)){
             //                ui->horizontalSlider_Four_Corners_buttom_right_H->setValue(temp.getInt_variable());
             //            }
-            return;
+
         }
     }
     if(temp.getInt_command()==58){
@@ -1035,31 +1108,31 @@ void MainWindow:: razbor_com(parameter temp)
             //            if(temp.check_include_interval(0,80)){
             //                ui->horizontalSlider_Four_Corners_buttom_right_V->setValue(temp.getInt_variable());
             //            }
-            return;
+
         }
     }
     if(temp.getInt_command()==59){
         if(temp.getInt_variable() == 13){
             emit on_pushButton_Four_Corners_buttom_right_right_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 14){
             emit on_pushButton_Four_Corners_buttom_right_left_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 15){
             emit on_pushButton_Four_Corners_buttom_right_up_clicked();
-            return;
+
         }
         if(temp.getInt_variable() == 16){
             emit on_pushButton_Four_Corners_buttom_right_down_clicked();
-            return;
+
         }
     }
     if(temp.getInt_command()==516){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Four_Corners_Reset_clicked();
-            return;
+
         }
     }
     //Geometric Correction
@@ -1067,265 +1140,265 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-10,10)){
             ui->horizontalSlider_Geometric_Correction_H_Arc->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     if(temp.getInt_command()==301){
         if(temp.check_include_interval(-10,10)){
             ui->horizontalSlider_Geometric_Correction_V_Arc->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     if(temp.getInt_command()==65){
         if(temp.check_include_interval(-40,140)){
             ui->horizontalSlider_Geometric_Correction_H_keystone->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     if(temp.getInt_command()==66){
         if(temp.check_include_interval(-40,140)){
             ui->horizontalSlider_Geometric_Correction_V_keystone->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     if(temp.getInt_command()==69){
         if(temp.getInt_variable()==0){
             ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(0);
-            return;
+
         }
 
         if(temp.getInt_variable()==1){
             ui->comboBox_Geometric_Correction_Auto_Keystone->setCurrentIndex(1);
-            return;
+
         }
     }
     if(temp.getInt_command()==561){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_Geometric_Correction_Reset_clicked();
-            return;
+
         }
     }
     //PIP_PBP
     if(temp.getInt_command()==302){
         if(temp.getInt_variable()==0){
             ui->comboBox_PIP_PBP_Screen->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Screen->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_PIP_PBP_Screen->setCurrentIndex(2);
-            return;
+
         }
     }
 
     if(temp.getInt_command()==303){
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(6);
-            return;
+
         }
         if(temp.getInt_variable()==8){
             ui->comboBox_PIP_PBP_Location->setCurrentIndex(7);
-            return;
+
         }
     }
 
     if(temp.getInt_command()==304){
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Size->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_PIP_PBP_Size->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_PIP_PBP_Size->setCurrentIndex(2);
-            return;
+
         }
     }
 
     if(temp.getInt_command()==12){
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==15){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==16){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(6);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(7);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(9);
-            return;
+
         }
         if(temp.getInt_variable()==14){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(10);
-            return;
+
         }
         if(temp.getInt_variable()==9){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(11);
-            return;
+
         }
         if(temp.getInt_variable()==10){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(12);
-            return;
+
         }
         if(temp.getInt_variable()==20){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(13);
-            return;
+
         }
         if(temp.getInt_variable()==21){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(14);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(15);
-            return;
+
         }
         if(temp.getInt_variable()==11){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(16);
-            return;
+
         }
         if(temp.getInt_variable()==17){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(17);
-            return;
+
         }
         if(temp.getInt_variable()==18){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(18);
-            return;
+
         }
         if(temp.getInt_variable()==19){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(19);
-            return;
+
         }
         if(temp.getInt_variable()==23){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(20);
-            return;
+
         }
         if(temp.getInt_variable()==22){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(21);
-            return;
+
         }
         if(temp.getInt_variable()==24){
             ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(22);
-            return;
+
         }
     }
     if(temp.getInt_command()==305){
         if(temp.getInt_variable()==1){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==13){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(6);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(7);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(8);
-            return;
+
         }
         if(temp.getInt_variable()==8){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(9);
-            return;
+
         }
         if(temp.getInt_variable()==9){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(10);
-            return;
+
         }
         if(temp.getInt_variable()==10){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(11);
-            return;
+
         }
         if(temp.getInt_variable()==11){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(12);
-            return;
+
         }
         if(temp.getInt_variable()==12){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(13);
-            return;
+
         }
         if(temp.getInt_variable()==14){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(14);
-            return;
+
         }
         if(temp.getInt_variable()==15){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(15);
-            return;
+
         }
         if(temp.getInt_variable()==16){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(16);
-            return;
+
         }
         if(temp.getInt_variable()==17){
             ui->comboBox_PIP_PBP_Sourse_Sub->setCurrentIndex(17);
-            return;
+
         }
     }
     if(temp.getInt_command()==306){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_PIP_PBP_Swap_clicked();
-            return;
+
         }
     }
 
@@ -1334,78 +1407,78 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==20){
         if(temp.getInt_variable()==1){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(1);
-            return;
+
         }
 
         if(temp.getInt_variable()==2){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==11){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==16){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==12){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(6);
-            return;
+
         }
 
         if(temp.getInt_variable()==13){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(8);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(9);
-            return;
+
         }
         if(temp.getInt_variable()==9){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(10);
-            return;
+
         }
 
         if(temp.getInt_variable()==6){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(11);
-            return;
+
         }
         if(temp.getInt_variable()==14){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(12);
-            return;
+
         }
         if(temp.getInt_variable()==15){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(13);
-            return;
+
         }
         if(temp.getInt_variable()==17){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(14);
-            return;
+
         }
         if(temp.getInt_variable()==18){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(15);
-            return;
+
         }
         if(temp.getInt_variable()==19){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(16);
-            return;
+
         }
         if(temp.getInt_variable()==20){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(17);
-            return;
+
         }
         if(temp.getInt_variable()==21){
             ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(18);
-            return;
+
         }
     }
 
@@ -1413,31 +1486,31 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==506){
         if(temp.getInt_variable()==0){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==7){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(3);
-            return;
+
         }
         if(temp.getInt_variable()==4){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(4);
-            return;
+
         }
         if(temp.getInt_variable()==5){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(5);
-            return;
+
         }
         if(temp.getInt_variable()==6){
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(6);
-            return;
+
         }
     }
 
@@ -1446,17 +1519,17 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Brightness->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==46){
         if(temp.getInt_variable()==1){
             emit on_pushButton_Image_Setting_Brightness_minus_clicked();
-            return;
+
         }
         if(temp.getInt_variable()==2){
             emit on_pushButton_Image_Setting_Brightness_plus_clicked();
-            return;
+
         }
     }
 
@@ -1465,17 +1538,17 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Contrast->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==47){
         if(temp.getInt_variable()==1){
             emit on_pushButton_Image_Setting_Contrast_minus_clicked();
-            return;
+
         }
         if(temp.getInt_variable()==2){
             emit on_pushButton_Image_Setting_Contrast_plus_clicked();
-            return;
+
         }
     }
 
@@ -1484,21 +1557,21 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(1,15)){
             ui->horizontalSlider_Image_Setting_Sharpness->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Color
     if(temp.getInt_command()==45){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Tint
     if(temp.getInt_command()==44){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Tint->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     //BriliantColor
@@ -1506,26 +1579,26 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(1,10)){
             ui->horizontalSlider_Image_Setting_Color_Setting_BrilliantColor->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Color Temperature
 
     if(temp.getInt_command()==36){
         if(temp.getInt_variable()==4){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(0);
-            return;
+
         }
         if(temp.getInt_variable()==1){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(1);
-            return;
+
         }
         if(temp.getInt_variable()==2){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(2);
-            return;
+
         }
         if(temp.getInt_variable()==3){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(3);
-            return;
+
         }
 
         //...
@@ -1543,200 +1616,336 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==327){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_R->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==339){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_R->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //G
     if(temp.getInt_command()==334){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==328){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_G->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==340){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_G->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //B
     if(temp.getInt_command()==335){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==329){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_B->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==341){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_B->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //C
     if(temp.getInt_command()==336){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==330){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_C->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==342){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_C->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //Y
     if(temp.getInt_command()==337){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==331){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==343){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //M
     if(temp.getInt_command()==338){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==332){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_M->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==344){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_M->setValue(temp.getInt_variable());
         }
-        return;
+
     }
     //W
     if(temp.getInt_command()==345){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_W->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==346){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_W->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     if(temp.getInt_command()==347){
         if(temp.check_include_interval(-50,50)){
             ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
     //Color Gamut
     if(temp.getInt_command()==211){
         if(temp.getInt_variable()==1){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(0);
-            return;
+
         }
 
         if(temp.getInt_variable()==7){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(1);
-            return;
+
         }
 
         if(temp.getInt_variable()==6){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(2);
-            return;
+
         }
 
         if(temp.getInt_variable()==2){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(3);
-            return;
+
         }
 
         if(temp.getInt_variable()==3){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(4);
-            return;
+
         }
 
         if(temp.getInt_variable()==4){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(5);
-            return;
+
         }
 
         if(temp.getInt_variable()==5){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(6);
-            return;
+
         }
 
         if(temp.getInt_variable()==8){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(7);
-            return;
+
         }
 
         if(temp.getInt_variable()==9){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(8);
-            return;
+
         }
 
         if(temp.getInt_variable()==10){
             ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(9);
-            return;
+
         }
+    }
+
+
+    //CMS
+    //R
+    if(temp.getInt_command()==333){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==327){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==339){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setValue(temp.getInt_variable());
+        }
+
+    }
+    //G
+    if(temp.getInt_command()==334){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==328){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==340){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setValue(temp.getInt_variable());
+        }
+
+    }
+    //B
+    if(temp.getInt_command()==335){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==329){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==341){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setValue(temp.getInt_variable());
+        }
+
+    }
+    //C
+    if(temp.getInt_command()==336){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==330){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==342){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setValue(temp.getInt_variable());
+        }
+
+    }
+    //Y
+    if(temp.getInt_command()==336){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==331){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==343){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setValue(temp.getInt_variable());
+        }
+
+    }
+    //M
+    if(temp.getInt_command()==338){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==332){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==344){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setValue(temp.getInt_variable());
+        }
+
+    }
+    //W
+    if(temp.getInt_command()==345){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==346){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setValue(temp.getInt_variable());
+        }
+
+    }
+    if(temp.getInt_command()==347){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setValue(temp.getInt_variable());
+        }
+
     }
     //------------------------------END Display page
     /// Просто вношу изменения

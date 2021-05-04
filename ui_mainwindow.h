@@ -258,10 +258,132 @@ public:
     QSlider *horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_G;
     QLabel *label_var_Image_Setting_Color_Setting_Color_Matching_Gain_G;
     QWidget *tab_50;
+    QGridLayout *gridLayout_11;
     QFrame *frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult;
     QHBoxLayout *horizontalLayout_190;
     QLabel *label_Image_Setting_Color_Setting_Color_Temperature_2;
     QComboBox *comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult;
+    QGroupBox *groupBox_Image_Setting_Color_Settin_Color_Matching_2;
+    QGridLayout *gridLayout_27;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_Y;
+    QVBoxLayout *verticalLayout_34;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_Y;
+    QHBoxLayout *horizontalLayout_184;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_Y;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_Y;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_Y;
+    QHBoxLayout *horizontalLayout_185;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_Y;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_Y;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_Y;
+    QHBoxLayout *horizontalLayout_186;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_Y;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_Y;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_R;
+    QVBoxLayout *verticalLayout_31;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_R;
+    QHBoxLayout *horizontalLayout_151;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_R;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_R;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_R;
+    QHBoxLayout *horizontalLayout_152;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_R;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_R;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_R;
+    QHBoxLayout *horizontalLayout_153;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_R;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_R;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_M;
+    QVBoxLayout *verticalLayout_33;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_M;
+    QHBoxLayout *horizontalLayout_181;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_M;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_M;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_M;
+    QHBoxLayout *horizontalLayout_182;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_M;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_M;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_M;
+    QHBoxLayout *horizontalLayout_183;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_M;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_M;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_W;
+    QVBoxLayout *verticalLayout_32;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_W;
+    QHBoxLayout *horizontalLayout_178;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_W;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_W;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_W;
+    QHBoxLayout *horizontalLayout_179;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_W;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_W;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_W;
+    QHBoxLayout *horizontalLayout_180;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_W;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_W;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_G;
+    QVBoxLayout *verticalLayout_37;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_G;
+    QHBoxLayout *horizontalLayout_191;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_G;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_G;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_G;
+    QHBoxLayout *horizontalLayout_192;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_G;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_G;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_G;
+    QHBoxLayout *horizontalLayout_193;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_G;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_G;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_C;
+    QVBoxLayout *verticalLayout_35;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_C;
+    QHBoxLayout *horizontalLayout_187;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_C;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_C;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_C;
+    QHBoxLayout *horizontalLayout_188;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_C;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_C;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_C;
+    QHBoxLayout *horizontalLayout_189;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_C;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_C;
+    QGroupBox *groupBox_Image_Setting_Color_Setting_CMS_B;
+    QVBoxLayout *verticalLayout_36;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_x_offset_B;
+    QHBoxLayout *horizontalLayout_154;
+    QLabel *label_Image_Setting_Color_Setting_CMS_x_offset_B;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_x_offset_B;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_y_offset_B;
+    QHBoxLayout *horizontalLayout_155;
+    QLabel *label_Image_Setting_Color_Setting_CMS_y_offset_B;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_y_offset_B;
+    QFrame *frame_Image_Setting_Color_Setting_CMS_Brightness_B;
+    QHBoxLayout *horizontalLayout_156;
+    QLabel *label_Image_Setting_Color_Setting_CMS_Brightness_B;
+    QSlider *horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B;
+    QLabel *label_var_Image_Setting_Color_Setting_CMS_Brightness_B;
     QWidget *tab_5;
     QFrame *frame_27;
     QGridLayout *gridLayout_5;
@@ -1912,9 +2034,10 @@ public:
         tabWidget_4->addTab(tab_49, QString());
         tab_50 = new QWidget();
         tab_50->setObjectName(QStringLiteral("tab_50"));
+        gridLayout_11 = new QGridLayout(tab_50);
+        gridLayout_11->setObjectName(QStringLiteral("gridLayout_11"));
         frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult = new QFrame(tab_50);
         frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult"));
-        frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setGeometry(QRect(10, 10, 475, 44));
         sizePolicy3.setHeightForWidth(frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->sizePolicy().hasHeightForWidth());
         frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setSizePolicy(sizePolicy3);
         frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setFrameShape(QFrame::Box);
@@ -1941,6 +2064,716 @@ public:
         comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setObjectName(QStringLiteral("comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult"));
 
         horizontalLayout_190->addWidget(comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult);
+
+
+        gridLayout_11->addWidget(frame_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult, 0, 0, 1, 1);
+
+        groupBox_Image_Setting_Color_Settin_Color_Matching_2 = new QGroupBox(tab_50);
+        groupBox_Image_Setting_Color_Settin_Color_Matching_2->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Settin_Color_Matching_2"));
+        gridLayout_27 = new QGridLayout(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        gridLayout_27->setObjectName(QStringLiteral("gridLayout_27"));
+        groupBox_Image_Setting_Color_Setting_CMS_Y = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_Y->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_Y"));
+        verticalLayout_34 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_Y);
+        verticalLayout_34->setObjectName(QStringLiteral("verticalLayout_34"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_Y = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_Y);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_Y->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_Y"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_Y->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_Y->setFrameShadow(QFrame::Raised);
+        horizontalLayout_184 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_Y);
+        horizontalLayout_184->setObjectName(QStringLiteral("horizontalLayout_184"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_Y);
+        label_Image_Setting_Color_Setting_CMS_x_offset_Y->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_Y"));
+
+        horizontalLayout_184->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_Y);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_Y);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_184->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_Y);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_Y->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_Y"));
+
+        horizontalLayout_184->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_Y, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_34->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_Y);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_Y = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_Y);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_Y->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_Y"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_Y->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_Y->setFrameShadow(QFrame::Raised);
+        horizontalLayout_185 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_Y);
+        horizontalLayout_185->setObjectName(QStringLiteral("horizontalLayout_185"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_Y);
+        label_Image_Setting_Color_Setting_CMS_y_offset_Y->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_Y"));
+
+        horizontalLayout_185->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_Y);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_Y);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_185->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_Y);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_Y->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_Y"));
+
+        horizontalLayout_185->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_Y, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_34->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_Y);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_Y = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_Y);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_Y->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_Y"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_Y->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_Y->setFrameShadow(QFrame::Raised);
+        horizontalLayout_186 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_Y);
+        horizontalLayout_186->setObjectName(QStringLiteral("horizontalLayout_186"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_Y);
+        label_Image_Setting_Color_Setting_CMS_Brightness_Y->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_Y"));
+
+        horizontalLayout_186->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_Y);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_Y);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_186->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_Y = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_Y);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_Y"));
+
+        horizontalLayout_186->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_Y, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_34->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_Y);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_Y, 2, 1, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_R = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_R->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_R"));
+        verticalLayout_31 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_R);
+        verticalLayout_31->setObjectName(QStringLiteral("verticalLayout_31"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_R = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_R);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_R->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_R"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_R->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_R->setFrameShadow(QFrame::Raised);
+        horizontalLayout_151 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_R);
+        horizontalLayout_151->setObjectName(QStringLiteral("horizontalLayout_151"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_R);
+        label_Image_Setting_Color_Setting_CMS_x_offset_R->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_R"));
+
+        horizontalLayout_151->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_R);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_R);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_151->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_R);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_R"));
+
+        horizontalLayout_151->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_R, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_31->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_R);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_R = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_R);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_R->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_R"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_R->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_R->setFrameShadow(QFrame::Raised);
+        horizontalLayout_152 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_R);
+        horizontalLayout_152->setObjectName(QStringLiteral("horizontalLayout_152"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_R);
+        label_Image_Setting_Color_Setting_CMS_y_offset_R->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_R"));
+
+        horizontalLayout_152->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_R);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_R);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_152->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_R);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_R->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_R"));
+
+        horizontalLayout_152->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_R, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_31->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_R);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_R = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_R);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_R->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_R"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_R->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_R->setFrameShadow(QFrame::Raised);
+        horizontalLayout_153 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_R);
+        horizontalLayout_153->setObjectName(QStringLiteral("horizontalLayout_153"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_R);
+        label_Image_Setting_Color_Setting_CMS_Brightness_R->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_R"));
+
+        horizontalLayout_153->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_R);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_R);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_153->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_R = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_R);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_R"));
+
+        horizontalLayout_153->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_R, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_31->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_R);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_R, 1, 0, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_M = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_M->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_M"));
+        verticalLayout_33 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_M);
+        verticalLayout_33->setObjectName(QStringLiteral("verticalLayout_33"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_M = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_M);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_M->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_M"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_M->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_M->setFrameShadow(QFrame::Raised);
+        horizontalLayout_181 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_M);
+        horizontalLayout_181->setObjectName(QStringLiteral("horizontalLayout_181"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_M);
+        label_Image_Setting_Color_Setting_CMS_x_offset_M->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_M"));
+
+        horizontalLayout_181->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_M);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_M);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_181->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_M);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_M->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_M"));
+
+        horizontalLayout_181->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_M, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_33->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_M);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_M = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_M);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_M->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_M"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_M->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_M->setFrameShadow(QFrame::Raised);
+        horizontalLayout_182 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_M);
+        horizontalLayout_182->setObjectName(QStringLiteral("horizontalLayout_182"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_M);
+        label_Image_Setting_Color_Setting_CMS_y_offset_M->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_M"));
+
+        horizontalLayout_182->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_M);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_M);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_182->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_M);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_M->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_M"));
+
+        horizontalLayout_182->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_M, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_33->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_M);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_M = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_M);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_M->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_M"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_M->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_M->setFrameShadow(QFrame::Raised);
+        horizontalLayout_183 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_M);
+        horizontalLayout_183->setObjectName(QStringLiteral("horizontalLayout_183"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_M);
+        label_Image_Setting_Color_Setting_CMS_Brightness_M->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_M"));
+
+        horizontalLayout_183->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_M);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_M);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_183->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_M = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_M);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_M"));
+
+        horizontalLayout_183->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_M, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_33->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_M);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_M, 2, 2, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_W = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_W->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_W"));
+        verticalLayout_32 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_W);
+        verticalLayout_32->setObjectName(QStringLiteral("verticalLayout_32"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_W = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_W);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_W->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_W"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_W->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_W->setFrameShadow(QFrame::Raised);
+        horizontalLayout_178 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_W);
+        horizontalLayout_178->setObjectName(QStringLiteral("horizontalLayout_178"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_W);
+        label_Image_Setting_Color_Setting_CMS_x_offset_W->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_W"));
+
+        horizontalLayout_178->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_W);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_W);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_178->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_W);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_W->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_W"));
+
+        horizontalLayout_178->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_W, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_32->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_W);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_W = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_W);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_W->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_W"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_W->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_W->setFrameShadow(QFrame::Raised);
+        horizontalLayout_179 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_W);
+        horizontalLayout_179->setObjectName(QStringLiteral("horizontalLayout_179"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_W);
+        label_Image_Setting_Color_Setting_CMS_y_offset_W->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_W"));
+
+        horizontalLayout_179->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_W);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_W);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_179->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_W);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_W->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_W"));
+
+        horizontalLayout_179->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_W, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_32->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_W);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_W = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_W);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_W->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_W"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_W->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_W->setFrameShadow(QFrame::Raised);
+        horizontalLayout_180 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_W);
+        horizontalLayout_180->setObjectName(QStringLiteral("horizontalLayout_180"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_W);
+        label_Image_Setting_Color_Setting_CMS_Brightness_W->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_W"));
+
+        horizontalLayout_180->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_W);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_W);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_180->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_W = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_W);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_W"));
+
+        horizontalLayout_180->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_W, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_32->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_W);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_W, 3, 1, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_G = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_G->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_G"));
+        verticalLayout_37 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_G);
+        verticalLayout_37->setObjectName(QStringLiteral("verticalLayout_37"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_G = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_G);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_G->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_G"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_G->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_G->setFrameShadow(QFrame::Raised);
+        horizontalLayout_191 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_G);
+        horizontalLayout_191->setObjectName(QStringLiteral("horizontalLayout_191"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_G);
+        label_Image_Setting_Color_Setting_CMS_x_offset_G->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_G"));
+
+        horizontalLayout_191->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_G);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_G);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_191->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_G);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_G);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_G->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_G"));
+
+        horizontalLayout_191->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_G, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_37->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_G);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_G = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_G);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_G->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_G"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_G->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_G->setFrameShadow(QFrame::Raised);
+        horizontalLayout_192 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_G);
+        horizontalLayout_192->setObjectName(QStringLiteral("horizontalLayout_192"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_G);
+        label_Image_Setting_Color_Setting_CMS_y_offset_G->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_G"));
+
+        horizontalLayout_192->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_G);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_G);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_192->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_G);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_G->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_G"));
+
+        horizontalLayout_192->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_G, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_37->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_G);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_G = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_G);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_G->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_G"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_G->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_G->setFrameShadow(QFrame::Raised);
+        horizontalLayout_193 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_G);
+        horizontalLayout_193->setObjectName(QStringLiteral("horizontalLayout_193"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_G);
+        label_Image_Setting_Color_Setting_CMS_Brightness_G->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_G"));
+
+        horizontalLayout_193->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_G);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_G);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_193->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_G = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_G);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_G"));
+
+        horizontalLayout_193->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_G, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_37->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_G);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_G, 1, 1, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_C = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_C->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_C"));
+        verticalLayout_35 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_C);
+        verticalLayout_35->setObjectName(QStringLiteral("verticalLayout_35"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_C = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_C);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_C->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_C"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_C->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_C->setFrameShadow(QFrame::Raised);
+        horizontalLayout_187 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_C);
+        horizontalLayout_187->setObjectName(QStringLiteral("horizontalLayout_187"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_C);
+        label_Image_Setting_Color_Setting_CMS_x_offset_C->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_C"));
+
+        horizontalLayout_187->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_C);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_C);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_187->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_C);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_C);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_C->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_C"));
+
+        horizontalLayout_187->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_C, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_35->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_C);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_C = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_C);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_C->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_C"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_C->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_C->setFrameShadow(QFrame::Raised);
+        horizontalLayout_188 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_C);
+        horizontalLayout_188->setObjectName(QStringLiteral("horizontalLayout_188"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_C);
+        label_Image_Setting_Color_Setting_CMS_y_offset_C->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_C"));
+
+        horizontalLayout_188->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_C);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_C);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_188->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_C);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_C->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_C"));
+
+        horizontalLayout_188->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_C, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_35->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_C);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_C = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_C);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_C->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_C"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_C->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_C->setFrameShadow(QFrame::Raised);
+        horizontalLayout_189 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_C);
+        horizontalLayout_189->setObjectName(QStringLiteral("horizontalLayout_189"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_C);
+        label_Image_Setting_Color_Setting_CMS_Brightness_C->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_C"));
+
+        horizontalLayout_189->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_C);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_C);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_189->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_C = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_C);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_C"));
+
+        horizontalLayout_189->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_C, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_35->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_C);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_C, 2, 0, 1, 1);
+
+        groupBox_Image_Setting_Color_Setting_CMS_B = new QGroupBox(groupBox_Image_Setting_Color_Settin_Color_Matching_2);
+        groupBox_Image_Setting_Color_Setting_CMS_B->setObjectName(QStringLiteral("groupBox_Image_Setting_Color_Setting_CMS_B"));
+        verticalLayout_36 = new QVBoxLayout(groupBox_Image_Setting_Color_Setting_CMS_B);
+        verticalLayout_36->setObjectName(QStringLiteral("verticalLayout_36"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_B = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_B);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_B->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_x_offset_B"));
+        frame_Image_Setting_Color_Setting_CMS_x_offset_B->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_x_offset_B->setFrameShadow(QFrame::Raised);
+        horizontalLayout_154 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_x_offset_B);
+        horizontalLayout_154->setObjectName(QStringLiteral("horizontalLayout_154"));
+        label_Image_Setting_Color_Setting_CMS_x_offset_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_B);
+        label_Image_Setting_Color_Setting_CMS_x_offset_B->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_x_offset_B"));
+
+        horizontalLayout_154->addWidget(label_Image_Setting_Color_Setting_CMS_x_offset_B);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B = new QSlider(frame_Image_Setting_Color_Setting_CMS_x_offset_B);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_154->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_B);
+
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_x_offset_B);
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_B->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_x_offset_B"));
+
+        horizontalLayout_154->addWidget(label_var_Image_Setting_Color_Setting_CMS_x_offset_B, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_36->addWidget(frame_Image_Setting_Color_Setting_CMS_x_offset_B);
+
+        frame_Image_Setting_Color_Setting_CMS_y_offset_B = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_B);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_B->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_y_offset_B"));
+        frame_Image_Setting_Color_Setting_CMS_y_offset_B->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_y_offset_B->setFrameShadow(QFrame::Raised);
+        horizontalLayout_155 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_y_offset_B);
+        horizontalLayout_155->setObjectName(QStringLiteral("horizontalLayout_155"));
+        label_Image_Setting_Color_Setting_CMS_y_offset_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_B);
+        label_Image_Setting_Color_Setting_CMS_y_offset_B->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_y_offset_B"));
+
+        horizontalLayout_155->addWidget(label_Image_Setting_Color_Setting_CMS_y_offset_B);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B = new QSlider(frame_Image_Setting_Color_Setting_CMS_y_offset_B);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_155->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B);
+
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_y_offset_B);
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_B->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_y_offset_B"));
+
+        horizontalLayout_155->addWidget(label_var_Image_Setting_Color_Setting_CMS_y_offset_B, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_36->addWidget(frame_Image_Setting_Color_Setting_CMS_y_offset_B);
+
+        frame_Image_Setting_Color_Setting_CMS_Brightness_B = new QFrame(groupBox_Image_Setting_Color_Setting_CMS_B);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_B->setObjectName(QStringLiteral("frame_Image_Setting_Color_Setting_CMS_Brightness_B"));
+        frame_Image_Setting_Color_Setting_CMS_Brightness_B->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Color_Setting_CMS_Brightness_B->setFrameShadow(QFrame::Raised);
+        horizontalLayout_156 = new QHBoxLayout(frame_Image_Setting_Color_Setting_CMS_Brightness_B);
+        horizontalLayout_156->setObjectName(QStringLiteral("horizontalLayout_156"));
+        label_Image_Setting_Color_Setting_CMS_Brightness_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_B);
+        label_Image_Setting_Color_Setting_CMS_Brightness_B->setObjectName(QStringLiteral("label_Image_Setting_Color_Setting_CMS_Brightness_B"));
+
+        horizontalLayout_156->addWidget(label_Image_Setting_Color_Setting_CMS_Brightness_B);
+
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B = new QSlider(frame_Image_Setting_Color_Setting_CMS_Brightness_B);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B"));
+        sizePolicy2.setHeightForWidth(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setSizePolicy(sizePolicy2);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setMinimum(-50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setMaximum(50);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setPageStep(1);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setValue(0);
+        horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_156->addWidget(horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B);
+
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_B = new QLabel(frame_Image_Setting_Color_Setting_CMS_Brightness_B);
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setObjectName(QStringLiteral("label_var_Image_Setting_Color_Setting_CMS_Brightness_B"));
+
+        horizontalLayout_156->addWidget(label_var_Image_Setting_Color_Setting_CMS_Brightness_B, 0, Qt::AlignHCenter);
+
+
+        verticalLayout_36->addWidget(frame_Image_Setting_Color_Setting_CMS_Brightness_B);
+
+
+        gridLayout_27->addWidget(groupBox_Image_Setting_Color_Setting_CMS_B, 1, 2, 1, 1);
+
+
+        gridLayout_11->addWidget(groupBox_Image_Setting_Color_Settin_Color_Matching_2, 1, 0, 1, 1);
 
         tabWidget_4->addTab(tab_50, QString());
 
@@ -4010,7 +4843,7 @@ public:
 
         tabWidget->setCurrentIndex(1);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(2);
+        tabWidget_4->setCurrentIndex(3);
         tabWidget_3->setCurrentIndex(2);
 
 
@@ -4166,6 +4999,56 @@ public:
         comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setItemText(9, QApplication::translate("MainWindow", "Cinema", nullptr));
         comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setItemText(10, QApplication::translate("MainWindow", "Game", nullptr));
 
+        groupBox_Image_Setting_Color_Settin_Color_Matching_2->setTitle(QApplication::translate("MainWindow", "CMS", nullptr));
+        groupBox_Image_Setting_Color_Setting_CMS_Y->setTitle(QApplication::translate("MainWindow", "Y", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_Y->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_Y->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_Y->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_Y->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_Y->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_R->setTitle(QApplication::translate("MainWindow", "R", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_R->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_R->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_R->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_R->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_M->setTitle(QApplication::translate("MainWindow", "M", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_M->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_M->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_M->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_M->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_M->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_W->setTitle(QApplication::translate("MainWindow", "W", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_W->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_W->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_W->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_W->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_W->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_G->setTitle(QApplication::translate("MainWindow", "G", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_G->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_G->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_G->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_G->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_G->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_C->setTitle(QApplication::translate("MainWindow", "C", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_C->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_C->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_C->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_C->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_C->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setText(QString());
+        groupBox_Image_Setting_Color_Setting_CMS_B->setTitle(QApplication::translate("MainWindow", "B", nullptr));
+        label_Image_Setting_Color_Setting_CMS_x_offset_B->setText(QApplication::translate("MainWindow", "x offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_x_offset_B->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_y_offset_B->setText(QApplication::translate("MainWindow", "y offset:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_y_offset_B->setText(QString());
+        label_Image_Setting_Color_Setting_CMS_Brightness_B->setText(QApplication::translate("MainWindow", "Brightness:", nullptr));
+        label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setText(QString());
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_50), QApplication::translate("MainWindow", "Color Setting 2", nullptr));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QApplication::translate("MainWindow", "Image Settings", nullptr));
         label_3D_sync_invert->setText(QApplication::translate("MainWindow", "3D sync invert:\n"
