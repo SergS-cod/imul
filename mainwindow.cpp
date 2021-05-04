@@ -452,6 +452,251 @@ void MainWindow:: razbor_com(parameter temp)
             ui->Unfreeze->setCheckState(Qt::Unchecked);
         }
     }
+
+    /// ////////////////////////////////////////////////////////////////////////// PC MODE
+    if(temp.getInt_command()==549)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->OFF_4->setCheckState(Qt::Checked);
+            ui->ON_4->setCheckState(Qt::Unchecked);
+        }
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->OFF_4->setCheckState(Qt::Unchecked);
+            ui->ON_4->setCheckState(Qt::Checked);
+        }
+
+        }
+
+
+
+    /////////////////////////////////////////////////
+    ///  /// ////////////////////////////////////////////////////////////////////////// SERIAL PORT ECHO
+    if(temp.getInt_command()==556)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->OFF_5->setCheckState(Qt::Checked);
+            ui->ON_5->setCheckState(Qt::Unchecked);
+        }
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->OFF_5->setCheckState(Qt::Unchecked);
+            ui->ON_5->setCheckState(Qt::Checked);
+        }
+
+        }
+
+
+
+    /////////////////////////////////////////////////
+    ///  ///  /// ////////////////////////////////////////////////////////////////////////// SERIAL PORT PATH
+    if(temp.getInt_command()==557)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->OFF_6->setCheckState(Qt::Checked);
+            ui->ON_6->setCheckState(Qt::Unchecked);
+        }
+        if(temp.getInt_variable()==2)
+        {
+
+            ui->OFF_6->setCheckState(Qt::Unchecked);
+            ui->ON_6->setCheckState(Qt::Checked);
+        }
+
+        }
+
+
+
+    /////////////////////////////////////////////////
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// SOURCE LOCK
+    if(temp.getInt_command()==100)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->OFF_7->setCheckState(Qt::Checked);
+            ui->ON_7->setCheckState(Qt::Unchecked);
+        }
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->OFF_7->setCheckState(Qt::Unchecked);
+            ui->ON_7->setCheckState(Qt::Checked);
+        }
+
+        }
+
+
+
+    /////////////////////////////////////////////////
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// GAMMA FILM
+
+    if(temp.getInt_command()==182)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->Cureve_Type->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    if(temp.getInt_command()==206)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->Reset->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    /////////////////////////////////////////////////
+
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// GAMMA VIDEO
+
+    if(temp.getInt_command()==184)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Cureve_Type_1->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    if(temp.getInt_command()==207)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Reset_1->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    /////////////////////////////////////////////////
+
+
+
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// GAMMA GRAPHICS
+
+    if(temp.getInt_command()==186)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Cureve_Type_2->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    if(temp.getInt_command()==208)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Reset_2->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    /////////////////////////////////////////////////
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// GAMMA PC SDANDART
+
+    if(temp.getInt_command()==188)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Cureve_Type_3->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    if(temp.getInt_command()==209)
+    {
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->Reset_3->setCheckState(Qt::Checked);
+
+        }
+
+        }
+
+
+    /////////////////////////////////////////////////
+    /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// IMAGE AI
+    if(temp.getInt_command()==194)
+    {
+        if(temp.getInt_variable()==0)
+        {
+
+            ui->OFF8->setCheckState(Qt::Checked);
+            ui->ON8->setCheckState(Qt::Unchecked);
+        }
+        if(temp.getInt_variable()==1)
+        {
+
+            ui->OFF8->setCheckState(Qt::Unchecked);
+            ui->ON8->setCheckState(Qt::Checked);
+        }
+
+        }
+
+
+
+    //////////////////////////////////
+    /// ////////////////////////////////////////////////////////////////////////// Noise Reduction
+    if(temp.getInt_command()==196){
+        if(temp.check_include_interval(0,10)){
+            ui->horizontalSlider_Noise_Reduction->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+
+    ///
+    ////////////////////////////////////////////////////////////////////////////////////// superwide
+    if(temp.getInt_command()==199)
+    {
+        if(temp.getInt_variable()==0)
+            ui->comboBox_superwide->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+            ui->comboBox_superwide->setCurrentIndex(1);
+
+        if(temp.getInt_variable()==2)
+                    ui->comboBox_superwide->setCurrentIndex(2);
+
+        if(temp.getInt_variable()==3)
+                    ui->comboBox_superwide->setCurrentIndex(3);
+
+    }
+    ///
     /// ////////////////////////////////////////////////////////////////////////// 2D u 3D
     if(temp.getInt_command()==130)
     {
