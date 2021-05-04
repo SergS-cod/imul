@@ -118,8 +118,106 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Geometric_Correction_V_keystone, &QSlider::valueChanged, ui->label_var_Geometric_Correction_V_keystone,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
+    //Brightness
+    ui->label_var_Image_Setting_Brightness->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Brightness, &QSlider::valueChanged, ui->label_var_Image_Setting_Brightness,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Contrast
+    ui->label_var_Image_Setting_Contrast->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Contrast, &QSlider::valueChanged, ui->label_var_Image_Setting_Contrast,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Sharpness
+    ui->label_var_Image_Setting_Sharpness->setText("8");
+    connect(ui->horizontalSlider_Image_Setting_Sharpness, &QSlider::valueChanged, ui->label_var_Image_Setting_Sharpness,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //Color
+    ui->label_var_Image_Setting_Color->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color, &QSlider::valueChanged, ui->label_var_Image_Setting_Color,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //Tint
+    ui->label_var_Image_Setting_Tint->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Tint, &QSlider::valueChanged, ui->label_var_Image_Setting_Tint,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //BrilliantColor
+    ui->label_var_Image_Setting_Color_Setting_BrilliantColor->setText("5");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_BrilliantColor, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_BrilliantColor,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Color Matching
+    //R
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_R->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_R,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //G
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_G->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_G,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //B
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_B->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_B,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //C
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_C->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_C,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //Y
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_Y,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //M
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_M->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_M,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //W
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Red_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Red_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Green_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Green_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
-    parameter temp("7E3030303020317E393939390D");
+    parameter temp("7E3030333435202D35300D");
     razbor_com(temp);
     //***
 }
@@ -1078,15 +1176,15 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
         if(temp.getInt_variable()==15){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(2);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(2);
             return;
         }
         if(temp.getInt_variable()==16){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(4);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(4);
             return;
         }
         if(temp.getInt_variable()==2){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(5);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(5);
             return;
         }
         if(temp.getInt_variable()==3){
@@ -1094,7 +1192,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
         if(temp.getInt_variable()==5){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(7);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(7);
             return;
         }
         if(temp.getInt_variable()==6){
@@ -1110,7 +1208,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
         if(temp.getInt_variable()==10){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(12);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(12);
             return;
         }
         if(temp.getInt_variable()==20){
@@ -1122,11 +1220,11 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
         if(temp.getInt_variable()==4){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(15);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(15);
             return;
         }
         if(temp.getInt_variable()==11){
-           ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(16);
+            ui->comboBox_PIP_PBP_Sourse_Main->setCurrentIndex(16);
             return;
         }
         if(temp.getInt_variable()==17){
@@ -1227,6 +1325,416 @@ void MainWindow:: razbor_com(parameter temp)
     if(temp.getInt_command()==306){
         if(temp.getInt_variable() == 1){
             emit on_pushButton_PIP_PBP_Swap_clicked();
+            return;
+        }
+    }
+
+    //Image_Setting
+    //Display Mode
+    if(temp.getInt_command()==20){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(1);
+            return;
+        }
+
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==11){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==16){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==12){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(6);
+            return;
+        }
+
+        if(temp.getInt_variable()==13){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(8);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(9);
+            return;
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(10);
+            return;
+        }
+
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(11);
+            return;
+        }
+        if(temp.getInt_variable()==14){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(12);
+            return;
+        }
+        if(temp.getInt_variable()==15){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(13);
+            return;
+        }
+        if(temp.getInt_variable()==17){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(14);
+            return;
+        }
+        if(temp.getInt_variable()==18){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(15);
+            return;
+        }
+        if(temp.getInt_variable()==19){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(16);
+            return;
+        }
+        if(temp.getInt_variable()==20){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(17);
+            return;
+        }
+        if(temp.getInt_variable()==21){
+            ui->comboBox_Image_Setting_Display_Mode->setCurrentIndex(18);
+            return;
+        }
+    }
+
+    //Wall Color
+    if(temp.getInt_command()==506){
+        if(temp.getInt_variable()==0){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==7){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(3);
+            return;
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(4);
+            return;
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(5);
+            return;
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(6);
+            return;
+        }
+    }
+
+    //Gain
+    if(temp.getInt_command()==21){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Brightness->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==46){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Image_Setting_Brightness_minus_clicked();
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Image_Setting_Brightness_plus_clicked();
+            return;
+        }
+    }
+
+    //Contrast
+    if(temp.getInt_command()==22){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Contrast->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==47){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Image_Setting_Contrast_minus_clicked();
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Image_Setting_Contrast_plus_clicked();
+            return;
+        }
+    }
+
+    //Sharpness
+    if(temp.getInt_command()==23){
+        if(temp.check_include_interval(1,15)){
+            ui->horizontalSlider_Image_Setting_Sharpness->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //Color
+    if(temp.getInt_command()==45){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //Tint
+    if(temp.getInt_command()==44){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Tint->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //BriliantColor
+    if(temp.getInt_command()==34){
+        if(temp.check_include_interval(1,10)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_BrilliantColor->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //Color Temperature
+
+    if(temp.getInt_command()==36){
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(0);
+            return;
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(1);
+            return;
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(2);
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(3);
+            return;
+        }
+
+        //...
+    }
+
+    if(temp.getInt_command()==33){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Image_Setting_Color_Setting_Color_Temperature_reset_clicked();
+        }
+    }
+
+    //Color Matching
+    //R
+    if(temp.getInt_command()==333){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==327){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_R->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==339){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_R->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //G
+    if(temp.getInt_command()==334){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==328){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_G->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==340){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_G->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //B
+    if(temp.getInt_command()==335){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==329){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_B->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==341){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_B->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //C
+    if(temp.getInt_command()==336){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==330){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_C->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==342){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_C->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //Y
+    if(temp.getInt_command()==337){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==331){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==343){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //M
+    if(temp.getInt_command()==338){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==332){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_M->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==344){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_M->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+    //W
+    if(temp.getInt_command()==345){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_W->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==346){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_W->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    if(temp.getInt_command()==347){
+        if(temp.check_include_interval(-50,50)){
+            ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W->setValue(temp.getInt_variable());
+        }
+        return;
+    }
+
+    //Color Gamut
+    if(temp.getInt_command()==211){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(0);
+            return;
+        }
+
+        if(temp.getInt_variable()==7){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(1);
+            return;
+        }
+
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(2);
+            return;
+        }
+
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(3);
+            return;
+        }
+
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(4);
+            return;
+        }
+
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(5);
+            return;
+        }
+
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(6);
+            return;
+        }
+
+        if(temp.getInt_variable()==8){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(7);
+            return;
+        }
+
+        if(temp.getInt_variable()==9){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(8);
+            return;
+        }
+
+        if(temp.getInt_variable()==10){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->setCurrentIndex(9);
             return;
         }
     }
@@ -2241,7 +2749,77 @@ void MainWindow::on_pushButton_Geometric_Correction_Reset_clicked()
     ui->horizontalSlider_Geometric_Correction_V_keystone->setValue(0);
 }
 
-void MainWindow::on_pushButton_PIP_PBP_Swap_clicked()
-{
+void MainWindow::on_pushButton_PIP_PBP_Swap_clicked(){
+    //
+}
 
+void MainWindow::on_pushButton_Image_Setting_Brightness_minus_clicked(){
+    ui->horizontalSlider_Image_Setting_Brightness->setValue( ui->horizontalSlider_Image_Setting_Brightness->value() - 1);
+}
+
+void MainWindow::on_pushButton_Image_Setting_Brightness_plus_clicked(){
+    ui->horizontalSlider_Image_Setting_Brightness->setValue( ui->horizontalSlider_Image_Setting_Brightness->value() + 1);
+}
+
+void MainWindow::on_pushButton_Image_Setting_Contrast_minus_clicked(){
+    ui->horizontalSlider_Image_Setting_Contrast->setValue( ui->horizontalSlider_Image_Setting_Contrast->value() - 1);
+}
+
+void MainWindow::on_pushButton_Image_Setting_Contrast_plus_clicked(){
+    ui->horizontalSlider_Image_Setting_Contrast->setValue( ui->horizontalSlider_Image_Setting_Contrast->value() + 1);
+}
+
+void MainWindow::on_pushButton_Image_Setting_Color_Setting_Color_Temperature_reset_clicked(){
+    ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(1);
+}
+
+void MainWindow::on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_clicked(){
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_R->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_R->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_R->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_R->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_G->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_G->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_G->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_G->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_B->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_B->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_B->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_B->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_C->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_C->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_C->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_C->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Hue_M->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Hue_M->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Gain_M->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Gain_M->setValue(0);
+
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Red_W->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_W->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Green_W->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_W->setValue(0);
+    ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText("0");
+    ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W->setValue(0);
 }

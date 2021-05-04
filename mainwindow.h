@@ -98,6 +98,18 @@ private slots:
 
  void on_pushButton_PIP_PBP_Swap_clicked();
 
+ void on_pushButton_Image_Setting_Brightness_minus_clicked();
+
+ void on_pushButton_Image_Setting_Brightness_plus_clicked();
+
+ void on_pushButton_Image_Setting_Contrast_minus_clicked();
+
+ void on_pushButton_Image_Setting_Contrast_plus_clicked();
+
+ void on_pushButton_Image_Setting_Color_Setting_Color_Temperature_reset_clicked();
+
+ void on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_clicked();
+
 signals:
  void s_send_to(QByteArray);
 
