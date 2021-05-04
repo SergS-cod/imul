@@ -225,7 +225,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_R->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_R,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_R,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //G
@@ -235,7 +235,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_G->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_G,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_G, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_G,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //B
@@ -245,7 +245,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_B->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_B,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_B, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_B,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //C
@@ -255,7 +255,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_C->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_C,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_C, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_C,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //Y
@@ -265,7 +265,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_Y->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_Y,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_Y,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //M
@@ -275,7 +275,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_M->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_M,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_M,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //W
@@ -285,10 +285,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_W->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_y_offset_W,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum)); ui->label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText("0");
-     ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setText("0");
+    ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_CMS_Brightness_W,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
+    //Noise
+    ui->label_var_Noise_reduction->setText("0");
+    connect(ui->horizontalSlider_Noise_Reduction, &QSlider::valueChanged, ui->label_var_Noise_reduction,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
     parameter temp("7E3030333336202D35300D");
     razbor_com(temp);
@@ -542,7 +546,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->ON_4->setCheckState(Qt::Checked);
         }
 
-        }
+    }
 
 
 
@@ -563,7 +567,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->ON_5->setCheckState(Qt::Checked);
         }
 
-        }
+    }
 
 
 
@@ -584,7 +588,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->ON_6->setCheckState(Qt::Checked);
         }
 
-        }
+    }
 
 
 
@@ -605,7 +609,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->ON_7->setCheckState(Qt::Checked);
         }
 
-        }
+    }
 
 
 
@@ -621,7 +625,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     if(temp.getInt_command()==206)
@@ -633,7 +637,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     /////////////////////////////////////////////////
@@ -649,7 +653,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     if(temp.getInt_command()==207)
@@ -661,7 +665,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     /////////////////////////////////////////////////
@@ -679,7 +683,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     if(temp.getInt_command()==208)
@@ -691,7 +695,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     /////////////////////////////////////////////////
@@ -706,7 +710,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     if(temp.getInt_command()==209)
@@ -718,7 +722,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
 
-        }
+    }
 
 
     /////////////////////////////////////////////////
@@ -738,7 +742,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->ON8->setCheckState(Qt::Checked);
         }
 
-        }
+    }
 
 
 
@@ -763,10 +767,10 @@ void MainWindow:: razbor_com(parameter temp)
             ui->comboBox_superwide->setCurrentIndex(1);
 
         if(temp.getInt_variable()==2)
-                    ui->comboBox_superwide->setCurrentIndex(2);
+            ui->comboBox_superwide->setCurrentIndex(2);
 
         if(temp.getInt_variable()==3)
-                    ui->comboBox_superwide->setCurrentIndex(3);
+            ui->comboBox_superwide->setCurrentIndex(3);
 
     }
     ///
