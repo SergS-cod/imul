@@ -28,7 +28,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tab_Other_Items">
           <property name="currentIndex">
-           <number>3</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tabB_23">
            <attribute name="title">
@@ -768,8 +768,8 @@
               <widget class="QFrame" name="noisReduction">
                <property name="geometry">
                 <rect>
-                 <x>50</x>
-                 <y>30</y>
+                 <x>20</x>
+                 <y>20</y>
                  <width>391</width>
                  <height>64</height>
                 </rect>
@@ -839,8 +839,8 @@
               <widget class="QFrame" name="superwide">
                <property name="geometry">
                 <rect>
-                 <x>10</x>
-                 <y>10</y>
+                 <x>20</x>
+                 <y>20</y>
                  <width>381</width>
                  <height>65</height>
                 </rect>
@@ -901,7 +901,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -917,7 +917,7 @@
                </sizepolicy>
               </property>
               <property name="currentIndex">
-               <number>3</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="tab_47">
                <attribute name="title">
@@ -1130,7 +1130,7 @@
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_57">
                  <item>
-                  <widget class="QLabel" name="label_3D_Mode_4">
+                  <widget class="QLabel" name="label_Image_Setting_Wall_Color">
                    <property name="text">
                     <string>Wall Color:</string>
                    </property>
@@ -1308,7 +1308,7 @@
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_56">
                  <item>
-                  <widget class="QLabel" name="label_3D_Mode_3">
+                  <widget class="QLabel" name="label_Image_Setting_Display_Mode">
                    <property name="text">
                     <string>Display Mode:</string>
                    </property>
@@ -1473,6 +1473,141 @@
                    <property name="text">
                     <string/>
                    </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Gaming_mode">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>10</y>
+                  <width>451</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_72">
+                 <item>
+                  <widget class="QLabel" name="Image_Setting_Gaming_mode">
+                   <property name="text">
+                    <string>Gaming mode:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_Gaming_mode">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>On</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Lens_Iris">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>90</y>
+                  <width>451</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_219">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Lens_Iris">
+                   <property name="text">
+                    <string>Lens Iris</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Lens_Iris">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>12</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>6</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Lens_Iris">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Dynamic_Contrast">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>170</y>
+                  <width>451</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_73">
+                 <item>
+                  <widget class="QLabel" name="Image_Setting_Dynamic_Contrast">
+                   <property name="text">
+                    <string>Dynamic Contrast:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_Dynamic_Contrast">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>On</string>
+                    </property>
+                   </item>
                   </widget>
                  </item>
                 </layout>
@@ -2882,656 +3017,8 @@
                   <property name="title">
                    <string>CMS</string>
                   </property>
-                  <layout class="QGridLayout" name="gridLayout_27">
-                   <item row="2" column="1">
-                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_Y">
-                     <property name="title">
-                      <string>Y</string>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_34">
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_Y">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_184">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_Y">
-                           <property name="text">
-                            <string>x offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_Y">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_Y">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_185">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_Y">
-                           <property name="text">
-                            <string>y offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_Y">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_Y">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_186">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_Y">
-                           <property name="text">
-                            <string>Brightness:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_Y">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_R">
-                     <property name="title">
-                      <string>R</string>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_31">
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_R">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_151">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_R">
-                           <property name="text">
-                            <string>x offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_R">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_R">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_152">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_R">
-                           <property name="text">
-                            <string>y offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_R">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_R">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_153">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_R">
-                           <property name="text">
-                            <string>Brightness:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_R">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_M">
-                     <property name="title">
-                      <string>M</string>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_33">
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_M">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_181">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_M">
-                           <property name="text">
-                            <string>x offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_M">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_M">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_182">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_M">
-                           <property name="text">
-                            <string>y offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_M">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_M">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_183">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_M">
-                           <property name="text">
-                            <string>Brightness:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_M">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_W">
-                     <property name="title">
-                      <string>W</string>
-                     </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_32">
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_W">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_178">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_W">
-                           <property name="text">
-                            <string>x offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_W">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_W">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_179">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_W">
-                           <property name="text">
-                            <string>y offset:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_W">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_W">
-                        <property name="frameShape">
-                         <enum>QFrame::Box</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_180">
-                         <item>
-                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_W">
-                           <property name="text">
-                            <string>Brightness:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="minimum">
-                            <number>-50</number>
-                           </property>
-                           <property name="maximum">
-                            <number>50</number>
-                           </property>
-                           <property name="pageStep">
-                            <number>1</number>
-                           </property>
-                           <property name="value">
-                            <number>0</number>
-                           </property>
-                           <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                           </property>
-                          </widget>
-                         </item>
-                         <item alignment="Qt::AlignHCenter">
-                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_W">
-                           <property name="text">
-                            <string/>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="1" column="1">
+                  <layout class="QGridLayout" name="gridLayout_33">
+                   <item row="0" column="1">
                     <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_G">
                      <property name="title">
                       <string>G</string>
@@ -3693,7 +3180,169 @@
                      </layout>
                     </widget>
                    </item>
-                   <item row="2" column="0">
+                   <item row="0" column="0">
+                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_R">
+                     <property name="title">
+                      <string>R</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_31">
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_R">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_151">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_R">
+                           <property name="text">
+                            <string>x offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_R">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_R">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_R">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_152">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_R">
+                           <property name="text">
+                            <string>y offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_R">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_R">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_R">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_153">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_R">
+                           <property name="text">
+                            <string>Brightness:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_R">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_R">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
                     <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_C">
                      <property name="title">
                       <string>C</string>
@@ -3855,7 +3504,169 @@
                      </layout>
                     </widget>
                    </item>
-                   <item row="1" column="2">
+                   <item row="1" column="1">
+                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_Y">
+                     <property name="title">
+                      <string>Y</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_34">
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_Y">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_184">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_Y">
+                           <property name="text">
+                            <string>x offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_Y">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_Y">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_Y">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_185">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_Y">
+                           <property name="text">
+                            <string>y offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_Y">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_Y">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_Y">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_186">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_Y">
+                           <property name="text">
+                            <string>Brightness:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_Y">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_Y">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
                     <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_B">
                      <property name="title">
                       <string>B</string>
@@ -4017,10 +3828,2735 @@
                      </layout>
                     </widget>
                    </item>
+                   <item row="1" column="2">
+                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_M">
+                     <property name="title">
+                      <string>M</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_33">
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_M">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_181">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_M">
+                           <property name="text">
+                            <string>x offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_M">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_M">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_M">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_182">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_M">
+                           <property name="text">
+                            <string>y offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_M">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_M">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_M">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_183">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_M">
+                           <property name="text">
+                            <string>Brightness:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_M">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_M">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QGroupBox" name="groupBox_Image_Setting_Color_Setting_CMS_W">
+                     <property name="title">
+                      <string>W</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_32">
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_x_offset_W">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_178">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_x_offset_W">
+                           <property name="text">
+                            <string>x offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_x_offset_W">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_x_offset_W">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_y_offset_W">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_179">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_y_offset_W">
+                           <property name="text">
+                            <string>y offset:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_y_offset_W">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_y_offset_W">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_CMS_Brightness_W">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_180">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_CMS_Brightness_W">
+                           <property name="text">
+                            <string>Brightness:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_CMS_Brightness_W">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>-50</number>
+                           </property>
+                           <property name="maximum">
+                            <number>50</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>0</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_CMS_Brightness_W">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="3" column="1">
+                    <widget class="QPushButton" name="pushButton_Image_Setting_Color_Setting_CMS_reset">
+                     <property name="text">
+                      <string>Reset</string>
+                     </property>
+                    </widget>
+                   </item>
                   </layout>
                  </widget>
                 </item>
                </layout>
+              </widget>
+              <widget class="QWidget" name="tab_23">
+               <attribute name="title">
+                <string>Color Setting 3</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_34">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_6">
+                  <property name="title">
+                   <string>Color Matching</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_17">
+                   <item>
+                    <widget class="QFrame" name="frame">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_16">
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_Image_Setting_Color_Setting_Color_Matching_disable">
+                        <property name="text">
+                         <string>Disable</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_Image_Setting_Color_Setting_Color_Matching_enable">
+                        <property name="text">
+                         <string>Enable</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_194">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern">
+                        <property name="text">
+                         <string>Auto Test Pattern</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern">
+                        <item>
+                         <property name="text">
+                          <string>Off</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>On</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_2">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_35">
+                      <item row="0" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_157">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red">
+                           <property name="text">
+                            <string>Red Part of Red:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_199">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red">
+                           <property name="text">
+                            <string>Green Part of Red:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_159">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red">
+                           <property name="text">
+                            <string>Blue Part of Red:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_161">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green">
+                           <property name="text">
+                            <string>Green Part of Green:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_158">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green">
+                           <property name="text">
+                            <string>Red Part of Green:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_195">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green">
+                           <property name="text">
+                            <string>Blue Part of Green:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_160">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue">
+                           <property name="text">
+                            <string>Blue Part of Blue:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_196">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue">
+                           <property name="text">
+                            <string>Red Part of Blue:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_197">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue">
+                           <property name="text">
+                            <string>Green Part of Blue:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_198">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White">
+                           <property name="text">
+                            <string>Red Part of White:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_200">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White">
+                           <property name="text">
+                            <string>Green Part of
+White:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White">
+                        <property name="frameShape">
+                         <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_162">
+                         <item>
+                          <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White">
+                           <property name="text">
+                            <string>Blue Part of White:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimum">
+                            <number>0</number>
+                           </property>
+                           <property name="maximum">
+                            <number>1000</number>
+                           </property>
+                           <property name="pageStep">
+                            <number>1</number>
+                           </property>
+                           <property name="value">
+                            <number>500</number>
+                           </property>
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                          </widget>
+                         </item>
+                         <item alignment="Qt::AlignHCenter">
+                          <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_24">
+               <attribute name="title">
+                <string>Color Setting 4</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_36">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_7">
+                  <property name="title">
+                   <string>RGB Gain/Bias</string>
+                  </property>
+                  <layout class="QFormLayout" name="formLayout">
+                   <item row="7" column="0">
+                    <widget class="QPushButton" name="pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset">
+                     <property name="text">
+                      <string>Reset</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_201">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain">
+                        <property name="text">
+                         <string>Red Gain:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="1" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_202">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain">
+                        <property name="text">
+                         <string>Green Gain:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="2" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_204">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain">
+                        <property name="text">
+                         <string>Blue Gain:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="3" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_205">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias">
+                        <property name="text">
+                         <string>Red Bias:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="5" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_203">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias">
+                        <property name="text">
+                         <string>Blue Bias:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item row="4" column="0" colspan="2">
+                    <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias">
+                     <property name="frameShape">
+                      <enum>QFrame::Box</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_206">
+                      <item>
+                       <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias">
+                        <property name="text">
+                         <string>Green Bias</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimum">
+                         <number>-50</number>
+                        </property>
+                        <property name="maximum">
+                         <number>50</number>
+                        </property>
+                        <property name="pageStep">
+                         <number>1</number>
+                        </property>
+                        <property name="value">
+                         <number>0</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                      </item>
+                      <item alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Hue">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_213">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_Hue">
+                     <property name="text">
+                      <string>Hue</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Hue">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Hue">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Color_Space">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_207">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_Color_Space">
+                     <property name="text">
+                      <string>Color Space:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Color_Setting_Color_Space">
+                     <item>
+                      <property name="text">
+                       <string>Auto</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>RGB</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>YUV</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>RGB(0~255)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>RGB(16~235)</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Rec. 709</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Rec. 601</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_White_level">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_210">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_White_level">
+                     <property name="text">
+                      <string>White Level:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_White_level">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_White_level">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Saturation">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_212">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_Saturation">
+                     <property name="text">
+                      <string>Saturation:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Saturation">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Saturation">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_Black_level">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_211">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_Black_level">
+                     <property name="text">
+                      <string>Black Level:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Color_Setting_Black_level">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Color_Setting_Black_level">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_RGB_Channel_pixelwork">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_208">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_RGB_Channel_pixelwork">
+                     <property name="text">
+                      <string>RGB Channel [w/pixelwork]:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Color_Setting_RGB_Channel_pixelwork">
+                     <item>
+                      <property name="text">
+                       <string>Normal</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Red</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Green</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Blue</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QFrame" name="frame_Image_Setting_Color_Setting_IRE">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_209">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Color_Setting_IRE">
+                     <property name="text">
+                      <string>IRE:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Color_Setting_IRE">
+                     <item>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>7.5</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_25">
+               <attribute name="title">
+                <string>Signal</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QFrame" name="frame_Image_Setting_Signal_Automatic">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_214">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Signal_Automatic">
+                     <property name="text">
+                      <string>Automatic:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Signal_Automatic">
+                     <item>
+                      <property name="text">
+                       <string>Off</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>On</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_Image_Setting_Signal_Frequency">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_215">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Signal_Frequency">
+                     <property name="text">
+                      <string>Frequency:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Signal_Frequency">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Signal_Frequency">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_Image_Setting_Signal_Phase">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_216">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Signal_Phase">
+                     <property name="text">
+                      <string>Phase:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Signal_Phase">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>0</number>
+                     </property>
+                     <property name="maximum">
+                      <number>31</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>16</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Signal_Phase">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_Image_Setting_Signal_H_position">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_217">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Signal_H_position">
+                     <property name="text">
+                      <string>H. Position:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Signal_H_position">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Signal_H_position">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_Image_Setting_Signal_V_position">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_218">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Signal_V_position">
+                     <property name="text">
+                      <string>V. Position:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSlider" name="horizontalSlider_Image_Setting_Signal_V_position">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimum">
+                      <number>-50</number>
+                     </property>
+                     <property name="maximum">
+                      <number>50</number>
+                     </property>
+                     <property name="pageStep">
+                      <number>1</number>
+                     </property>
+                     <property name="value">
+                      <number>0</number>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_var_Image_Setting_Signal_V_position">
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_26">
+               <attribute name="title">
+                <string>Brightness Mode</string>
+               </attribute>
+               <layout class="QFormLayout" name="formLayout_2">
+                <item row="0" column="0" colspan="2">
+                 <widget class="QFrame" name="frame_Image_Setting_Brightness_Mode">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_220">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Brightness_Mode">
+                     <property name="text">
+                      <string>Brightness Mode:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Brightness_Mode">
+                     <item>
+                      <property name="text">
+                       <string>Bright</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Eco</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Dynamic</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Eco+</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Constant Power</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Constant Luminace</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="2">
+                 <widget class="QFrame" name="frame_Image_Setting_Image_Setting_Brightness_Mode_Power">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_222">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Image_Setting_Brightness_Mode_Power">
+                     <property name="text">
+                      <string>Power:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Image_Setting_Brightness_Mode_Power">
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>100%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>95%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>90%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>85%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>80%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>75%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>70%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>65%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>60%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>55%</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>50%</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QFrame" name="frame_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_221">
+                   <item>
+                    <widget class="QLabel" name="label_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack">
+                     <property name="text">
+                      <string>DynamicBlack:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack">
+                     <item>
+                      <property name="text">
+                       <string>DynamicBlack Off</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>DynamicBlack 1</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>DynamicBlack 2</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>DynamicBlack 3</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_27">
+               <attribute name="title">
+                <string>PureEngine</string>
+               </attribute>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>341</width>
+                  <height>191</height>
+                 </rect>
+                </property>
+                <property name="title">
+                 <string>UltraDetail</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <item>
+                  <widget class="QFrame" name="frame_Image_Setting_PureEngine_UltraDetail">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_223">
+                    <item>
+                     <widget class="QLabel" name="label_Image_Setting_PureEngine_UltraDetail">
+                      <property name="text">
+                       <string>UltraDetail:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="comboBox_Image_Setting_PureEngine_UltraDetail">
+                      <item>
+                       <property name="text">
+                        <string>Off</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>On</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HD+</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>User</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_Image_Setting__PureEngineUltraDetai_User">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::Box</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_224">
+                    <item>
+                     <widget class="QLabel" name="label_Image_Setting_PureEngine_UltraDetail_User">
+                      <property name="text">
+                       <string>User:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QComboBox" name="comboBox_Image_Setting_PureEngine_UltraDetail_User">
+                      <item>
+                       <property name="text">
+                        <string>0%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>10%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>20%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>30%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>40%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>50%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>60%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>70%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>80%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>90%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>100%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>110%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>120%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>130%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>140%</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>150%</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_PureEngine_PureColor">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>240</y>
+                  <width>341</width>
+                  <height>44</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_225">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_PureEngine_PureColor">
+                   <property name="text">
+                    <string>PureColor:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_PureEngine_PureColor">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_PureEngine_PureMotion">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>300</y>
+                  <width>341</width>
+                  <height>44</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_226">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_PureEngine_PureMotion">
+                   <property name="text">
+                    <string>PureMotion:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_PureEngine_PureMotion">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_PureEngine_PureMotion_Demo">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>360</y>
+                  <width>341</width>
+                  <height>44</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_227">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Brightness_Mode_6">
+                   <property name="text">
+                    <string>PureMotion Demo:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_PureEngine_PureMotion_Demo">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>H Split</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>V Split</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="tab_28">
+               <attribute name="title">
+                <string>Darbee Settings</string>
+               </attribute>
+               <widget class="QFrame" name="frame_Image_Setting_Darbee_Setting_Mode">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>321</width>
+                  <height>44</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_228">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Darbee_Setting_Mode">
+                   <property name="text">
+                    <string>Mode:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_Darbee_Setting_Mode">
+                   <item>
+                    <property name="text">
+                     <string>Hi-Def</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Gaming</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Full Pop</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Darbee_Setting_Demo_Mode">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>110</y>
+                  <width>321</width>
+                  <height>44</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_229">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_PureEngine_UltraDetail_3">
+                   <property name="text">
+                    <string>Demo Mode:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_Darbee_Setting_Demo_Mode">
+                   <item>
+                    <property name="text">
+                     <string>Off</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Split Screen</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Swipe Screen</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Darbee_Setting_Level">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>60</y>
+                  <width>321</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_230">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Darbee_Setting_Level">
+                   <property name="text">
+                    <string>Level %:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Darbee_Setting_Level">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>0</number>
+                   </property>
+                   <property name="maximum">
+                    <number>120</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Darbee_Setting_Level">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QPushButton" name="pushButton_Image_Setting_Darbee_Setting_reset">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>160</y>
+                  <width>80</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Reset</string>
+                </property>
+               </widget>
               </widget>
              </widget>
             </item>

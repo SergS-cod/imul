@@ -110,6 +110,12 @@ private slots:
 
  void on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_clicked();
 
+ void on_pushButton_Image_Setting_Color_Setting_CMS_reset_clicked();
+
+ void on_pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset_clicked();
+
+ void on_pushButton_Image_Setting_Darbee_Setting_reset_clicked();
+
 signals:
  void s_send_to(QByteArray);
 
