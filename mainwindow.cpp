@@ -2778,6 +2778,86 @@ void MainWindow:: razbor_com(parameter temp)
            emit on_pushButton_Image_Setting_Darbee_Setting_reset_clicked();
         }
     }
+
+    //Remote Control Simulation
+    if(temp.getInt_command()==140){
+        if(temp.getInt_variable()==1){}
+        if(temp.getInt_variable()==2){}
+        if(temp.getInt_variable()==3){}
+        if(temp.getInt_variable()==4){}
+        if(temp.getInt_variable()==5){}
+        if(temp.getInt_variable()==6){}
+        if(temp.getInt_variable()==7){}
+        if(temp.getInt_variable()==8){}
+        if(temp.getInt_variable()==9){}
+        if(temp.getInt_variable()==10){}
+        if(temp.getInt_variable()==11){}
+        if(temp.getInt_variable()==12){}
+        if(temp.getInt_variable()==13){}
+        if(temp.getInt_variable()==14){}
+        if(temp.getInt_variable()==15){}
+        if(temp.getInt_variable()==16){}
+        if(temp.getInt_variable()==17){}
+        if(temp.getInt_variable()==18){}
+        if(temp.getInt_variable()==19){}
+        if(temp.getInt_variable()==20){}
+        if(temp.getInt_variable()==21){}
+        if(temp.getInt_variable()==22){}
+        if(temp.getInt_variable()==23){}
+        if(temp.getInt_variable()==24){}
+        if(temp.getInt_variable()==25){}
+        if(temp.getInt_variable()==26){}
+        if(temp.getInt_variable()==27){}
+        if(temp.getInt_variable()==28){}
+        if(temp.getInt_variable()==30){}
+        if(temp.getInt_variable()==31){}
+        if(temp.getInt_variable()==32){}
+        if(temp.getInt_variable()==33){}
+        if(temp.getInt_variable()==34){}
+        if(temp.getInt_variable()==35){}
+        if(temp.getInt_variable()==36){}
+        if(temp.getInt_variable()==37){}
+        if(temp.getInt_variable()==38){}
+        if(temp.getInt_variable()==39){}
+        if(temp.getInt_variable()==40){}
+        if(temp.getInt_variable()==41){}
+        if(temp.getInt_variable()==42){}
+        if(temp.getInt_variable()==43){}
+        if(temp.getInt_variable()==44){}
+        if(temp.getInt_variable()==45){}
+        if(temp.getInt_variable()==47){}
+        if(temp.getInt_variable()==51){}
+        if(temp.getInt_variable()==52){}
+        if(temp.getInt_variable()==53){}
+        if(temp.getInt_variable()==54){}
+        if(temp.getInt_variable()==55){}
+        if(temp.getInt_variable()==56){}
+        if(temp.getInt_variable()==57){}
+        if(temp.getInt_variable()==58){}
+        if(temp.getInt_variable()==59){}
+        if(temp.getInt_variable()==60){}
+        if(temp.getInt_variable()==61){}
+        if(temp.getInt_variable()==63){}
+        if(temp.getInt_variable()==64){}
+        if(temp.getInt_variable()==65){}
+        if(temp.getInt_variable()==66){}
+        if(temp.getInt_variable()==67){}
+        if(temp.getInt_variable()==68){}
+        if(temp.getInt_variable()==69){}
+        if(temp.getInt_variable()==70){}
+        if(temp.getInt_variable()==71){}
+        if(temp.getInt_variable()==72){}
+        if(temp.getInt_variable()==73){}
+        if(temp.getInt_variable()==74){}
+        if(temp.getInt_variable()==75){}
+        if(temp.getInt_variable()==76){}
+        if(temp.getInt_variable()==77){}
+        if(temp.getInt_variable()==78){}
+        if(temp.getInt_variable()==79){}
+        if(temp.getInt_variable()==80){}
+        if(temp.getInt_variable()==81){}
+        if(temp.getInt_variable()==82){}
+    }
     //------------------------------END Display page
     /// Просто вношу изменения
 }
