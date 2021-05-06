@@ -397,7 +397,24 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Image_Setting_Darbee_Setting_Level, &QSlider::valueChanged, ui->label_var_Image_Setting_Darbee_Setting_Level,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
+    //Lens Settings
+    ui->label_var_Setup_Lamp_Setting_Lens__Memory_Apply_Position->setText("5");
+    connect(ui->horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Apply_Position, &QSlider::valueChanged, ui->label_var_Setup_Lamp_Setting_Lens__Memory_Apply_Position,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position->setText("5");
+    connect(ui->horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position, &QSlider::valueChanged, ui->label_var_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Power Settings
+    ui->label_var_Setup_Power_Setting_Sleep_Timer->setText("485");
+    connect(ui->horizontalSlider_Setup_Power_Setting_Sleep_Timer, &QSlider::valueChanged, ui->label_var_Setup_Power_Setting_Sleep_Timer,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Setup_Power_Setting_Auto_Power_Off->setText("90");
+    connect(ui->horizontalSlider_Setup_Power_Setting_Auto_Power_Off, &QSlider::valueChanged, ui->label_var_Setup_Power_Setting_Auto_Power_Off,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
+
     parameter temp("7E3030333336202D35300D");
     razbor_com(temp);
     //***
@@ -2316,12 +2333,12 @@ void MainWindow:: razbor_com(parameter temp)
     }
 
     if(temp.getInt_command()==411){
-            if(temp.getInt_variable()==0){
-                ui->comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setCurrentIndex(0);
-            }
-            if(temp.getInt_variable()==1){
-                ui->comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setCurrentIndex(1);
-            }
+        if(temp.getInt_variable()==0){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setCurrentIndex(1);
+        }
     }
     if(temp.getInt_command()==412){
         if(temp.check_include_interval(-50,50)){
@@ -2567,7 +2584,7 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
     //Dynamic Contrast
-     //**************
+    //**************
 
     //Brightness Mode
     if(temp.getInt_command()==110){
@@ -2627,7 +2644,7 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-   // Brightness Mode DynamicBlack
+    // Brightness Mode DynamicBlack
     if(temp.getInt_command()==191){
         if(temp.getInt_variable()==0){
             ui->comboBox_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack->setCurrentIndex(0);
@@ -2644,7 +2661,7 @@ void MainWindow:: razbor_com(parameter temp)
     }
 
     //PureEngine
-        //UltraDetail
+    //UltraDetail
     if(temp.getInt_command()==41){
         if(temp.getInt_variable()==0){
             ui->comboBox_Image_Setting_PureEngine_UltraDetail->setCurrentIndex(0);
@@ -2775,7 +2792,7 @@ void MainWindow:: razbor_com(parameter temp)
     //reset
     if(temp.getInt_command()==509){
         if(temp.getInt_variable()==1){
-           emit on_pushButton_Image_Setting_Darbee_Setting_reset_clicked();
+            emit on_pushButton_Image_Setting_Darbee_Setting_reset_clicked();
         }
     }
 
@@ -2858,6 +2875,276 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==81){}
         if(temp.getInt_variable()==82){}
     }
+
+    //Setup
+    //Lamp Settings
+    if(temp.getInt_command()==111){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp_clicked();
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1_clicked();
+        }
+        if(temp.getInt_variable()==3){
+            emit on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==116){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2_clicked();
+        }
+    }
+
+
+    if(temp.getInt_command()==92){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Mode->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Mode->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Mode->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Mode->setCurrentIndex(3);
+        }
+
+    }
+
+    if(temp.getInt_command()==109){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Reminder->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Lamp_Reminder->setCurrentIndex(1);
+        }
+    }
+
+    //Filter Settings
+    if(temp.getInt_command()==320){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Lamp_Setting_Filter_Optional_Filter_Installed->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Filter_Optional_Filter_Installed->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==322){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setCurrentIndex(4);
+        }
+    }
+
+    if(temp.getInt_command()==322){
+        if(temp.getInt_variable()==0){
+            emit on_pushButton_Setup_Lamp_Setting_Filter_reset_clicked();
+        }
+    }
+    //Lens Settings
+    if(temp.getInt_command()==349){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Lens_Function->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Lamp_Setting_Lens_Function->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==84){
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shift->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shift->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shift->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shift->setCurrentIndex(3);
+        }
+    }
+
+    if(temp.getInt_command()==525){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration_clicked();
+        }
+    }
+
+    //Type
+    //....
+    if(temp.getInt_command()==85){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Lens_Function_2->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Lamp_Setting_Lens_Function_2->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==85){
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Lamp_Setting_Zoom->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Lamp_Setting_Zoom->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==85){
+        if(temp.getInt_variable()==5){
+            ui->combobox_Setup_Lamp_Setting_Focus->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Setup_Lamp_Setting_Focus->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==84){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Shift_2->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Lamp_Setting_Shift_2->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==307){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Lamp_Setting_Lens_Zoom_plus_clicked();
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Setup_Lamp_Setting_Lens_Zoom_minus_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==308){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Lamp_Setting_Lens_Focus_plus_clicked();
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==325){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shutter->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Lamp_Setting_Lens_Shutter->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==359){
+        if(temp.check_include_interval(1,10)){
+            ui->horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Apply_Position->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==360){
+        if(temp.check_include_interval(1,10)){
+            ui->horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position->setValue(temp.getInt_variable());
+        }
+    }
+
+    //Anamorphic Lens
+    //...
+
+    //Power Settings
+    if(temp.getInt_command()==105){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Direct_Power_On->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Direct_Power_On->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==113){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Signal_Power_On->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Signal_Power_On->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==106){
+        if(temp.check_include_interval(0,180)){
+            ui->horizontalSlider_Setup_Power_Setting_Auto_Power_Off->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==107){
+        if(temp.check_include_interval(0,990)){
+            ui->horizontalSlider_Setup_Power_Setting_Sleep_Timer->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==507){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Always_On->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Always_On->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==115){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Quick_Resume->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Quick_Resume->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==114){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Power_Mode->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Power_Mode->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==520){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_USB_Power->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_USB_Power->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Power_Setting_USB_Power->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==521){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Setting_Wireless->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Setting_Wireless->setCurrentIndex(1);
+        }
+    }
+
     //------------------------------END Display page
     /// Просто вношу изменения
 }
@@ -4012,5 +4299,45 @@ void MainWindow::on_pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Ga
 }
 
 void MainWindow::on_pushButton_Image_Setting_Darbee_Setting_reset_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Filter_reset_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Zoom_plus_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Zoom_minus_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Focus_plus_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked(){
 
 }

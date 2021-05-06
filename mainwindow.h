@@ -116,6 +116,26 @@ private slots:
 
  void on_pushButton_Image_Setting_Darbee_Setting_reset_clicked();
 
+ void on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Filter_reset_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lens_Zoom_plus_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lens_Zoom_minus_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lens_Focus_plus_clicked();
+
+ void on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked();
+
 signals:
  void s_send_to(QByteArray);
 

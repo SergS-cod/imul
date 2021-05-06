@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>6</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_22">
        <attribute name="title">
@@ -901,7 +901,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>2</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -9263,7 +9263,7 @@ White:</string>
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>2</number>
+           <number>4</number>
           </property>
           <widget class="QWidget" name="tab_19">
            <attribute name="title">
@@ -9470,60 +9470,1059 @@ White:</string>
           </widget>
           <widget class="QWidget" name="tab_21">
            <attribute name="title">
-            <string>Lamp Settings</string>
+            <string> Settings</string>
            </attribute>
-           <widget class="QFrame" name="frame_7">
+           <layout class="QGridLayout" name="gridLayout_37">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>Lamp Setting</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_20">
+               <item>
+                <widget class="QFrame" name="frame_7">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lamp_Mode">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_38">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Lamp_Setting_Lamp_Mode">
+                       <property name="text">
+                        <string>Lamp Mode:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lamp_Mode">
+                       <item>
+                        <property name="text">
+                         <string>Dual</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Relay</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Lamp 1</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Lamp 2</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lamp_Reminder">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_39">
+                     <item>
+                      <widget class="QLabel" name="label_28">
+                       <property name="text">
+                        <string>Lamp Reminder:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lamp_Reminder">
+                       <item>
+                        <property name="text">
+                         <string>Off</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>On</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lamp_reset_lamp">
+                 <property name="text">
+                  <string>Lamp Reset</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1">
+                 <property name="text">
+                  <string>Lamp1 Reset</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2">
+                 <property name="text">
+                  <string>Lamp2 Reset</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12">
+                 <property name="text">
+                  <string>Reset Lamp1 and Lamp2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_9">
+              <property name="title">
+               <string>Filter Settings</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <item>
+                <widget class="QFrame" name="frame_30">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Filter_Filter_Reminder">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_74">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Lamp_Setting_Filter_Filter_Reminder">
+                       <property name="text">
+                        <string>Filter Reminder:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Filter_Filter_Reminder">
+                       <item>
+                        <property name="text">
+                         <string>Off</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>300hr</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>500hr</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>800hr</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>1000hr</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Filter_Optional_Filter_Installed">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_75">
+                     <item>
+                      <widget class="QLabel" name="label_32">
+                       <property name="text">
+                        <string>Optional Filter Installed:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Filter_Optional_Filter_Installed">
+                       <item>
+                        <property name="text">
+                         <string>Off</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>On</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Filter_reset">
+                 <property name="text">
+                  <string>Filter Reminder</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QGroupBox" name="groupBox_11">
+              <property name="title">
+               <string>Lens Settings</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_38">
+               <item row="0" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens_Function">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_76">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens_Function">
+                    <property name="text">
+                     <string>Lens Function:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lens_Function">
+                    <item>
+                     <property name="text">
+                      <string>Lock</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Unlock</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens_Shift">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_77">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens_Shift">
+                    <property name="text">
+                     <string>Lens Shift:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lens_Shift">
+                    <item>
+                     <property name="text">
+                      <string>Up</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Down</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Left</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Right</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration">
+                 <property name="text">
+                  <string>Lens Calibration</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens_Type">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_78">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens_Type">
+                    <property name="text">
+                     <string>Lens Type:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lens_Type">
+                    <item>
+                     <property name="text">
+                      <string>WT1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>WT2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>ST1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>TZ1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>TZ2</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens_Function_2">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_79">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens_Function_2">
+                    <property name="text">
+                     <string>Lens Function:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lens_Function_2">
+                    <item>
+                     <property name="text">
+                      <string>Lock</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Unlock</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Zoom">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_80">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Zoom">
+                    <property name="text">
+                     <string>Zoom:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Zoom">
+                    <item>
+                     <property name="text">
+                      <string>Lock</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Unlock</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Focus">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_81">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Focus">
+                    <property name="text">
+                     <string>Focus:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Focus">
+                    <item>
+                     <property name="text">
+                      <string>Lock</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Unlock</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Shift_2">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_82">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Shift_2">
+                    <property name="text">
+                     <string>Lens Shift:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Shift_2">
+                    <item>
+                     <property name="text">
+                      <string>Lock</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Unlock</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_29">
+           <attribute name="title">
+            <string>Setting 1</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_23">
+            <item>
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="title">
+               <string>Lens Settings</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_39">
+               <item>
+                <widget class="QGroupBox" name="groupBox_Setup_Lamp_Setting_Lens_Zoom">
+                 <property name="title">
+                  <string>Zoom</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lens_Zoom_plus">
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lens_Zoom_minus">
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_Setup_Lamp_Setting_Lens_Focus">
+                 <property name="title">
+                  <string>Focus</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lens_Focus_plus">
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_Setup_Lamp_Setting_Lens_Focus_minus">
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens_Shutter">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_83">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens_Shutter">
+                    <property name="text">
+                     <string>Shutter:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Lamp_Setting_Lens_Shutter">
+                    <item>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_15">
+                 <property name="title">
+                  <string>Lens Memory</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_38">
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens__Memory_Apply_Position">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_84">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens__Memory_Apply_Position">
+                       <property name="text">
+                        <string>Apply Position:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSlider" name="horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Apply_Position">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>10</number>
+                       </property>
+                       <property name="pageStep">
+                        <number>1</number>
+                       </property>
+                       <property name="value">
+                        <number>5</number>
+                       </property>
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="label_var_Setup_Lamp_Setting_Lens__Memory_Apply_Position">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_85">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position">
+                       <property name="text">
+                        <string>Save Current Position:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSlider" name="horizontalSlider_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>10</number>
+                       </property>
+                       <property name="pageStep">
+                        <number>1</number>
+                       </property>
+                       <property name="value">
+                        <number>5</number>
+                       </property>
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="label_var_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_Setup_Lamp_Anamorphic_Lens">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_86">
+               <item>
+                <widget class="QLabel" name="label_Setup_Lamp_Anamorphic_Lens">
+                 <property name="text">
+                  <string>Anamorphic Lens:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="combobox_Setup_Lamp_Anamorphic_Lens">
+                 <item>
+                  <property name="text">
+                   <string>None</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Fixed</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Movable</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_16">
+              <property name="title">
+               <string>Power Settings</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_41">
+               <item>
+                <widget class="QFrame" name="frame_Setup_Power_Setting_Direct_Power_On">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_87">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Power_Setting_Direct_Power_On">
+                    <property name="text">
+                     <string>Direct Power On:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Power_Setting_Direct_Power_On">
+                    <item>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_Setup_Power_Setting_Signal_Power_On">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_88">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Power_Setting_Signal_Power_On">
+                    <property name="text">
+                     <string>Signal Power On:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Setup_Power_Setting_Signal_Power_On">
+                    <item>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_Setup_Power_Setting_Auto_Power_Off">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_89">
+                  <item>
+                   <widget class="QLabel" name="label_Setup_Power_Setting_Auto_Power_Off">
+                    <property name="text">
+                     <string>Auto Power Off (min)</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QSlider" name="horizontalSlider_Setup_Power_Setting_Auto_Power_Off">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimum">
+                     <number>0</number>
+                    </property>
+                    <property name="maximum">
+                     <number>180</number>
+                    </property>
+                    <property name="pageStep">
+                     <number>1</number>
+                    </property>
+                    <property name="value">
+                     <number>90</number>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_var_Setup_Power_Setting_Auto_Power_Off">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_13">
+                 <property name="title">
+                  <string>Sleep Timer (min)</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_40">
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Power_Setting_Sleep_Timer">
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_90">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Power_Setting_Sleep_Timer">
+                       <property name="text">
+                        <string>Sleep Timer (min)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QSlider" name="horizontalSlider_Setup_Power_Setting_Sleep_Timer">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimum">
+                        <number>0</number>
+                       </property>
+                       <property name="maximum">
+                        <number>990</number>
+                       </property>
+                       <property name="pageStep">
+                        <number>1</number>
+                       </property>
+                       <property name="value">
+                        <number>485</number>
+                       </property>
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter">
+                      <widget class="QLabel" name="label_var_Setup_Power_Setting_Sleep_Timer">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_Setup_Power_Setting_Always_On">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_91">
+                     <item>
+                      <widget class="QLabel" name="label_Setup_Power_Setting_Always_On">
+                       <property name="text">
+                        <string>Always On</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="combobox_Setup_Power_Setting_Always_On">
+                       <item>
+                        <property name="text">
+                         <string>No</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Yes</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_30">
+           <attribute name="title">
+            <string>Setting 2</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox_14">
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>20</y>
-              <width>551</width>
-              <height>151</height>
+              <y>30</y>
+              <width>621</width>
+              <height>271</height>
              </rect>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::Box</enum>
+            <property name="title">
+             <string>Power Settings</string>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_11">
+            <layout class="QVBoxLayout" name="verticalLayout_42">
              <item>
-              <widget class="QFrame" name="frame_30">
+              <widget class="QFrame" name="frame_Setup_Power_Setting_Quick_Resume">
                <property name="frameShape">
                 <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_38">
+               <layout class="QHBoxLayout" name="horizontalLayout_92">
                 <item>
-                 <widget class="QLabel" name="_">
+                 <widget class="QLabel" name="label_Setup_Power_Setting_Quick_Resume">
                   <property name="text">
-                   <string>Lamp Mode</string>
+                   <string>Quick Resume:</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QComboBox" name="lamp_mode_box">
+                 <widget class="QComboBox" name="combobox_Setup_Power_Setting_Quick_Resume">
                   <item>
                    <property name="text">
-                    <string>Dual</string>
+                    <string>Off</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Relay</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Lamp 1</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Lamp 2</string>
+                    <string>On</string>
                    </property>
                   </item>
                  </widget>
@@ -9532,36 +10531,102 @@ White:</string>
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="frame_31">
+              <widget class="QFrame" name="frame_Setup_Power_Setting_Power_Mode">
                <property name="frameShape">
                 <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_39">
+               <layout class="QHBoxLayout" name="horizontalLayout_93">
                 <item>
-                 <widget class="QLabel" name="label_28">
+                 <widget class="QLabel" name="label_Setup_Power_Setting_Power_Mode">
                   <property name="text">
-                   <string>Celing Moutn</string>
+                   <string>Power Mode (Standby):</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QComboBox" name="Connection_mode_5">
+                 <widget class="QComboBox" name="combobox_Setup_Power_Setting_Power_Mode">
                   <item>
                    <property name="text">
-                    <string>off</string>
+                    <string>Active</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
-                    <string>on</string>
+                    <string>Eco.</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Setup_Power_Setting_USB_Power">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_95">
+                <item>
+                 <widget class="QLabel" name="label_Setup_Power_Setting_USB_Power">
+                  <property name="text">
+                   <string>USB Power:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combobox_Setup_Power_Setting_USB_Power">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>On</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
                     <string>Auto</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_Setup_Power_Setting_Wireless">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_94">
+                <item>
+                 <widget class="QLabel" name="label_Setup_Power_Setting_Wireless">
+                  <property name="text">
+                   <string>Wireless:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combobox_Setup_Power_Setting_Wireless">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>On</string>
                    </property>
                   </item>
                  </widget>
