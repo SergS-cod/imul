@@ -294,6 +294,17 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Noise_Reduction, &QSlider::valueChanged, ui->label_var_Noise_reduction,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
+    //Color Wheel Index   2x
+    ui->lbbbbbb->setText("0");
+    connect(ui->horizontalSlider_2xxxxx, &QSlider::valueChanged, ui->lbbbbbb,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    //Color Wheel Index   3x
+    ui->lbbbbbbbb->setText("0");
+    connect(ui->horizontalSlider_3xxxxx, &QSlider::valueChanged, ui->lbbbbbbbb,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
 
     //color Matching
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red->setText("500");
@@ -957,7 +968,99 @@ void MainWindow:: razbor_com(parameter temp)
     }
 
     /////////////////////////////////////////////////
+
     // Network page
+
+    // Color Wheel Index
+    if(temp.getInt_command()==547)
+    {
+        if(temp.getInt_variable()==1)
+            ui->Crestron_box->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==2)
+            ui->Crestron_box->setCurrentIndex(1);
+
+    }
+    if(temp.getInt_command()==548)
+    {
+        if(temp.getInt_variable()==0)
+            ui->comboBox5465465465_2->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+            ui->comboBox5465465465_2->setCurrentIndex(1);
+
+
+        if(temp.getInt_variable()==2)
+            ui->comboBox5465465465_2->setCurrentIndex(1);
+
+
+    }
+
+
+    if(temp.getInt_command()==550)
+    {
+        if(temp.getInt_variable()==0)
+            ui->comboBox5465465465_3->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==1)
+            ui->comboBox5465465465_3->setCurrentIndex(1);
+
+
+        if(temp.getInt_variable()==2)
+            ui->comboBox5465465465_3->setCurrentIndex(1);
+
+
+    }
+
+
+
+    if(temp.getInt_command()==553){
+        if(temp.check_include_interval(0,248)){
+            ui->horizontalSlider_2xxxxx->setValue(temp.getInt_variable());
+        }
+
+    }
+
+
+    if(temp.getInt_command()==551){
+        if(temp.check_include_interval(5,3000)){
+            ui->horizontsl_2->setValue(temp.getInt_variable());
+        }
+
+    }
+
+
+
+
+
+    if(temp.getInt_command()==554){
+        if(temp.check_include_interval(0,248)){
+            ui->horizontalSlider_3xxxxx->setValue(temp.getInt_variable());
+        }
+
+    }
+
+    // Point blank
+    if(temp.getInt_command()==312)
+    {
+        if(temp.getInt_variable()==1)
+            ui->comboBox_color->setCurrentIndex(0);
+
+        if(temp.getInt_variable()==2)
+            ui->comboBox_color->setCurrentIndex(1);
+
+    }
+
+    if(temp.getInt_command()==522){
+        if(temp.check_include_interval(0,10)){
+            ui->horizontsl->setValue(temp.getInt_variable());
+        }
+
+    }
+
+
+
+
     //Control
     if(temp.getInt_command()==454)
     {
