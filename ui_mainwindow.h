@@ -1262,6 +1262,11 @@ public:
     QHBoxLayout *horizontalLayout_803;
     QLabel *label_Options_Inout_Sourse;
     QComboBox *combobox_Options_Inout_Sourse;
+    QFrame *frame_Options_Input_Name;
+    QHBoxLayout *horizontalLayout_812;
+    QLabel *label_Options_Input_Name;
+    QComboBox *combobox_Options_Input_Name;
+    QPushButton *pushButton_Option_reset_input_name;
     QFrame *frame_Options_VGA_Out;
     QHBoxLayout *horizontalLayout_804;
     QLabel *label_Options_VGA_Out;
@@ -8130,6 +8135,8 @@ public:
         combobox_Options_Menu_Location->addItem(QString());
         combobox_Options_Menu_Location->addItem(QString());
         combobox_Options_Menu_Location->addItem(QString());
+        combobox_Options_Menu_Location->addItem(QString());
+        combobox_Options_Menu_Location->addItem(QString());
         combobox_Options_Menu_Location->setObjectName(QStringLiteral("combobox_Options_Menu_Location"));
 
         horizontalLayout_801->addWidget(combobox_Options_Menu_Location);
@@ -8258,6 +8265,53 @@ public:
 
 
         verticalLayout_162->addWidget(frame_Options_Inout_Sourse);
+
+        frame_Options_Input_Name = new QFrame(groupBox_59);
+        frame_Options_Input_Name->setObjectName(QStringLiteral("frame_Options_Input_Name"));
+        frame_Options_Input_Name->setFrameShape(QFrame::Box);
+        frame_Options_Input_Name->setFrameShadow(QFrame::Raised);
+        horizontalLayout_812 = new QHBoxLayout(frame_Options_Input_Name);
+        horizontalLayout_812->setObjectName(QStringLiteral("horizontalLayout_812"));
+        label_Options_Input_Name = new QLabel(frame_Options_Input_Name);
+        label_Options_Input_Name->setObjectName(QStringLiteral("label_Options_Input_Name"));
+
+        horizontalLayout_812->addWidget(label_Options_Input_Name);
+
+        combobox_Options_Input_Name = new QComboBox(frame_Options_Input_Name);
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->addItem(QString());
+        combobox_Options_Input_Name->setObjectName(QStringLiteral("combobox_Options_Input_Name"));
+
+        horizontalLayout_812->addWidget(combobox_Options_Input_Name);
+
+
+        verticalLayout_162->addWidget(frame_Options_Input_Name);
+
+        pushButton_Option_reset_input_name = new QPushButton(groupBox_59);
+        pushButton_Option_reset_input_name->setObjectName(QStringLiteral("pushButton_Option_reset_input_name"));
+
+        verticalLayout_162->addWidget(pushButton_Option_reset_input_name);
 
         frame_Options_VGA_Out = new QFrame(groupBox_59);
         frame_Options_VGA_Out->setObjectName(QStringLiteral("frame_Options_VGA_Out"));
@@ -9900,14 +9954,16 @@ public:
 
         groupBox_60->setTitle(QApplication::translate("MainWindow", "Menu Settings", nullptr));
         label_Options_Menu_Location->setText(QApplication::translate("MainWindow", "Menu Location:", nullptr));
-        combobox_Options_Menu_Location->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
-        combobox_Options_Menu_Location->setItemText(1, QApplication::translate("MainWindow", "CC1", nullptr));
-        combobox_Options_Menu_Location->setItemText(2, QApplication::translate("MainWindow", "CC2", nullptr));
+        combobox_Options_Menu_Location->setItemText(0, QApplication::translate("MainWindow", "Top left", nullptr));
+        combobox_Options_Menu_Location->setItemText(1, QApplication::translate("MainWindow", "Top right", nullptr));
+        combobox_Options_Menu_Location->setItemText(2, QApplication::translate("MainWindow", "Center", nullptr));
+        combobox_Options_Menu_Location->setItemText(3, QApplication::translate("MainWindow", "Bottom left", nullptr));
+        combobox_Options_Menu_Location->setItemText(4, QApplication::translate("MainWindow", "Bottom righ", nullptr));
 
         label_Options_Menu_Timer->setText(QApplication::translate("MainWindow", "Menu Timer:", nullptr));
         combobox_Options_Menu_Timer->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
-        combobox_Options_Menu_Timer->setItemText(1, QApplication::translate("MainWindow", "CC1", nullptr));
-        combobox_Options_Menu_Timer->setItemText(2, QApplication::translate("MainWindow", "CC2", nullptr));
+        combobox_Options_Menu_Timer->setItemText(1, QApplication::translate("MainWindow", "5 sec", nullptr));
+        combobox_Options_Menu_Timer->setItemText(2, QApplication::translate("MainWindow", "10 sec", nullptr));
 
         label_Options_Menu_Transparency->setText(QApplication::translate("MainWindow", "Menu Transparency:", nullptr));
         label_var_Options_Menu_Transparency->setText(QString());
@@ -9943,6 +9999,32 @@ public:
         combobox_Options_Inout_Sourse->setItemText(24, QApplication::translate("MainWindow", "3G-SDI", nullptr));
         combobox_Options_Inout_Sourse->setItemText(25, QApplication::translate("MainWindow", "Smart TV", nullptr));
 
+        label_Options_Input_Name->setText(QApplication::translate("MainWindow", "Input Name:", nullptr));
+        combobox_Options_Input_Name->setItemText(0, QApplication::translate("MainWindow", "HDMI", nullptr));
+        combobox_Options_Input_Name->setItemText(1, QApplication::translate("MainWindow", "HDMI1", nullptr));
+        combobox_Options_Input_Name->setItemText(2, QApplication::translate("MainWindow", "HDMI2", nullptr));
+        combobox_Options_Input_Name->setItemText(3, QApplication::translate("MainWindow", "HDMI3", nullptr));
+        combobox_Options_Input_Name->setItemText(4, QApplication::translate("MainWindow", "HDMI/MHL", nullptr));
+        combobox_Options_Input_Name->setItemText(5, QApplication::translate("MainWindow", "HDMI1/MHL", nullptr));
+        combobox_Options_Input_Name->setItemText(6, QApplication::translate("MainWindow", "HDMI2/MHL", nullptr));
+        combobox_Options_Input_Name->setItemText(7, QApplication::translate("MainWindow", "DVI", nullptr));
+        combobox_Options_Input_Name->setItemText(8, QApplication::translate("MainWindow", "VGA", nullptr));
+        combobox_Options_Input_Name->setItemText(9, QApplication::translate("MainWindow", "VGA1", nullptr));
+        combobox_Options_Input_Name->setItemText(10, QApplication::translate("MainWindow", "VGA2", nullptr));
+        combobox_Options_Input_Name->setItemText(11, QApplication::translate("MainWindow", "Compnent", nullptr));
+        combobox_Options_Input_Name->setItemText(12, QApplication::translate("MainWindow", "S-Video", nullptr));
+        combobox_Options_Input_Name->setItemText(13, QApplication::translate("MainWindow", "Video", nullptr));
+        combobox_Options_Input_Name->setItemText(14, QApplication::translate("MainWindow", "DisplayPort", nullptr));
+        combobox_Options_Input_Name->setItemText(15, QApplication::translate("MainWindow", "HDBaseT", nullptr));
+        combobox_Options_Input_Name->setItemText(16, QApplication::translate("MainWindow", "BNC", nullptr));
+        combobox_Options_Input_Name->setItemText(17, QApplication::translate("MainWindow", "Wireless", nullptr));
+        combobox_Options_Input_Name->setItemText(18, QApplication::translate("MainWindow", "Flash Drive", nullptr));
+        combobox_Options_Input_Name->setItemText(19, QApplication::translate("MainWindow", "Network Display", nullptr));
+        combobox_Options_Input_Name->setItemText(20, QApplication::translate("MainWindow", "USB Display", nullptr));
+        combobox_Options_Input_Name->setItemText(21, QApplication::translate("MainWindow", "Multimedia", nullptr));
+        combobox_Options_Input_Name->setItemText(22, QApplication::translate("MainWindow", "3G-SDI", nullptr));
+
+        pushButton_Option_reset_input_name->setText(QApplication::translate("MainWindow", "reset input name", nullptr));
         label_Options_VGA_Out->setText(QApplication::translate("MainWindow", "VGA Out:", nullptr));
         combobox_Options_VGA_Out->setItemText(0, QApplication::translate("MainWindow", "Auto", nullptr));
         combobox_Options_VGA_Out->setItemText(1, QApplication::translate("MainWindow", "VGA1", nullptr));

@@ -3678,6 +3678,87 @@ void MainWindow:: razbor_com(parameter temp)
     }
 
 
+    //Input Name
+
+    if(temp.getInt_command()==519){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Option_reset_input_name_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==518){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Input_Name->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Input_Name->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Input_Name->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Input_Name->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Options_Input_Name->setCurrentIndex(4);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Options_Input_Name->setCurrentIndex(5);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Options_Input_Name->setCurrentIndex(6);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Options_Input_Name->setCurrentIndex(7);
+        }
+        if(temp.getInt_variable()==8){
+            ui->combobox_Options_Input_Name->setCurrentIndex(8);
+        }
+        if(temp.getInt_variable()==9){
+            ui->combobox_Options_Input_Name->setCurrentIndex(9);
+        }
+        if(temp.getInt_variable()==10){
+            ui->combobox_Options_Input_Name->setCurrentIndex(10);
+        }
+        if(temp.getInt_variable()==11){
+            ui->combobox_Options_Input_Name->setCurrentIndex(11);
+        }
+        if(temp.getInt_variable()==12){
+            ui->combobox_Options_Input_Name->setCurrentIndex(12);
+        }
+        if(temp.getInt_variable()==13){
+            ui->combobox_Options_Input_Name->setCurrentIndex(13);
+        }
+        if(temp.getInt_variable()==14){
+            ui->combobox_Options_Input_Name->setCurrentIndex(14);
+        }
+        if(temp.getInt_variable()==15){
+            ui->combobox_Options_Input_Name->setCurrentIndex(15);
+        }
+        if(temp.getInt_variable()==16){
+            ui->combobox_Options_Input_Name->setCurrentIndex(16);
+        }
+        if(temp.getInt_variable()==17){
+            ui->combobox_Options_Input_Name->setCurrentIndex(17);
+        }
+        if(temp.getInt_variable()==18){
+            ui->combobox_Options_Input_Name->setCurrentIndex(18);
+        }
+        if(temp.getInt_variable()==19){
+            ui->combobox_Options_Input_Name->setCurrentIndex(19);
+        }
+        if(temp.getInt_variable()==20){
+            ui->combobox_Options_Input_Name->setCurrentIndex(20);
+        }
+        if(temp.getInt_variable()==21){
+            ui->combobox_Options_Input_Name->setCurrentIndex(21);
+        }
+        if(temp.getInt_variable()==22){
+            ui->combobox_Options_Input_Name->setCurrentIndex(22);
+        }
+
+    }
+    //
     if(temp.getInt_command()==309){
         if(temp.getInt_variable()==1){
             ui->combobox_Options_VGA_Out->setCurrentIndex(0);
@@ -5011,6 +5092,11 @@ void MainWindow::on_pushButton_reset_to_Default_clicked()
 }
 
 void MainWindow::on_pushButton_reset_to_Default_password_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_Option_reset_input_name_clicked()
 {
 
 }

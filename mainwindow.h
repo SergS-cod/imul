@@ -148,6 +148,8 @@ private slots:
 
  void on_pushButton_reset_to_Default_password_clicked();
 
+ void on_pushButton_Option_reset_input_name_clicked();
+
 signals:
  void s_send_to(QByteArray);
 

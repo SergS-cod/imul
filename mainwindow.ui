@@ -12340,6 +12340,151 @@ White:</string>
                 </widget>
                </item>
                <item>
+                <widget class="QFrame" name="frame_Options_Input_Name">
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_812">
+                  <item>
+                   <widget class="QLabel" name="label_Options_Input_Name">
+                    <property name="text">
+                     <string>Input Name:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="combobox_Options_Input_Name">
+                    <item>
+                     <property name="text">
+                      <string>HDMI</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI3</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI/MHL</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI1/MHL</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDMI2/MHL</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DVI</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>VGA</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>VGA1</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>VGA2</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Compnent</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>S-Video</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Video</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>DisplayPort</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>HDBaseT</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>BNC</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Wireless</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Flash Drive</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Network Display</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>USB Display</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Multimedia</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>3G-SDI</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_Option_reset_input_name">
+                 <property name="text">
+                  <string>reset input name</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
                 <widget class="QFrame" name="frame_Options_VGA_Out">
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
