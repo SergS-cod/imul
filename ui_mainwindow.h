@@ -144,8 +144,8 @@ public:
     QLabel *superwide_list;
     QComboBox *comboBox_superwide;
     QWidget *tab_33sdfgsd;
-    QGridLayout *gridLayout_39;
     QFrame *frame_316565;
+    QGridLayout *gridLayout_41;
     QFrame *frame_326546546546;
     QGridLayout *gridLayout_40;
     QLabel *label_color_wgelee;
@@ -164,20 +164,26 @@ public:
     QHBoxLayout *horizontalLayout_7;
     QLabel *contasterfedf;
     QSlider *horizontsl;
+    QLabel *label_constant;
     QLabel *label_2xzczx;
-    QFrame *frametrtrrtrtrtg;
-    QHBoxLayout *horizontalLayout_106;
-    QLabel *labelllll_2;
-    QComboBox *comboBox5465465465_2;
     QFrame *frametrtrrtrtrtg_2;
     QHBoxLayout *horizontalLayout_107;
     QLabel *labelllll_3;
     QComboBox *comboBox5465465465_3;
+    QFrame *frametrtrrtrtrtg;
+    QHBoxLayout *horizontalLayout_106;
+    QLabel *labelllll_2;
+    QComboBox *comboBox5465465465_2;
     QFrame *frame_32i_2;
     QHBoxLayout *horizontalLayout_108;
     QLabel *contasterfedf_2;
     QSlider *horizontsl_2;
+    QLabel *label_2Auto;
     QLabel *label_2xzczx_2;
+    QFrame *frametrtrrtrtrtg_3;
+    QHBoxLayout *horizontalLayout_109;
+    QLabel *labelllll_4;
+    QComboBox *comboBox5465465465_4;
     QWidget *tab;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
@@ -1966,15 +1972,15 @@ public:
         tab_Other_Items->addTab(SUPERWIDE, QString());
         tab_33sdfgsd = new QWidget();
         tab_33sdfgsd->setObjectName(QStringLiteral("tab_33sdfgsd"));
-        gridLayout_39 = new QGridLayout(tab_33sdfgsd);
-        gridLayout_39->setObjectName(QStringLiteral("gridLayout_39"));
         frame_316565 = new QFrame(tab_33sdfgsd);
         frame_316565->setObjectName(QStringLiteral("frame_316565"));
+        frame_316565->setGeometry(QRect(9, 9, 971, 561));
         frame_316565->setFrameShape(QFrame::StyledPanel);
         frame_316565->setFrameShadow(QFrame::Raised);
+        gridLayout_41 = new QGridLayout(frame_316565);
+        gridLayout_41->setObjectName(QStringLiteral("gridLayout_41"));
         frame_326546546546 = new QFrame(frame_316565);
         frame_326546546546->setObjectName(QStringLiteral("frame_326546546546"));
-        frame_326546546546->setGeometry(QRect(20, 30, 271, 84));
         frame_326546546546->setFrameShape(QFrame::StyledPanel);
         frame_326546546546->setFrameShadow(QFrame::Raised);
         gridLayout_40 = new QGridLayout(frame_326546546546);
@@ -2023,9 +2029,11 @@ public:
 
         gridLayout_40->addWidget(lbbbbbbbb, 2, 2, 1, 1);
 
+
+        gridLayout_41->addWidget(frame_326546546546, 0, 0, 1, 1);
+
         frame___dfsg31 = new QFrame(frame_316565);
         frame___dfsg31->setObjectName(QStringLiteral("frame___dfsg31"));
-        frame___dfsg31->setGeometry(QRect(20, 130, 271, 42));
         frame___dfsg31->setFrameShape(QFrame::StyledPanel);
         frame___dfsg31->setFrameShadow(QFrame::Raised);
         horizontalLayout_3 = new QHBoxLayout(frame___dfsg31);
@@ -2042,9 +2050,11 @@ public:
 
         horizontalLayout_3->addWidget(comboBox5465465465);
 
+
+        gridLayout_41->addWidget(frame___dfsg31, 1, 0, 1, 1);
+
         frame_32i = new QFrame(frame_316565);
         frame_32i->setObjectName(QStringLiteral("frame_32i"));
-        frame_32i->setGeometry(QRect(20, 180, 421, 42));
         frame_32i->setFrameShape(QFrame::StyledPanel);
         frame_32i->setFrameShadow(QFrame::Raised);
         horizontalLayout_7 = new QHBoxLayout(frame_32i);
@@ -2060,34 +2070,21 @@ public:
 
         horizontalLayout_7->addWidget(horizontsl);
 
+        label_constant = new QLabel(frame_32i);
+        label_constant->setObjectName(QStringLiteral("label_constant"));
+
+        horizontalLayout_7->addWidget(label_constant);
+
         label_2xzczx = new QLabel(frame_32i);
         label_2xzczx->setObjectName(QStringLiteral("label_2xzczx"));
 
         horizontalLayout_7->addWidget(label_2xzczx);
 
-        frametrtrrtrtrtg = new QFrame(frame_316565);
-        frametrtrrtrtrtg->setObjectName(QStringLiteral("frametrtrrtrtrtg"));
-        frametrtrrtrtrtg->setGeometry(QRect(20, 240, 271, 42));
-        frametrtrrtrtrtg->setFrameShape(QFrame::StyledPanel);
-        frametrtrrtrtrtg->setFrameShadow(QFrame::Raised);
-        horizontalLayout_106 = new QHBoxLayout(frametrtrrtrtrtg);
-        horizontalLayout_106->setObjectName(QStringLiteral("horizontalLayout_106"));
-        labelllll_2 = new QLabel(frametrtrrtrtrtg);
-        labelllll_2->setObjectName(QStringLiteral("labelllll_2"));
 
-        horizontalLayout_106->addWidget(labelllll_2);
-
-        comboBox5465465465_2 = new QComboBox(frametrtrrtrtrtg);
-        comboBox5465465465_2->addItem(QString());
-        comboBox5465465465_2->addItem(QString());
-        comboBox5465465465_2->addItem(QString());
-        comboBox5465465465_2->setObjectName(QStringLiteral("comboBox5465465465_2"));
-
-        horizontalLayout_106->addWidget(comboBox5465465465_2);
+        gridLayout_41->addWidget(frame_32i, 2, 0, 1, 1);
 
         frametrtrrtrtrtg_2 = new QFrame(frame_316565);
         frametrtrrtrtrtg_2->setObjectName(QStringLiteral("frametrtrrtrtrtg_2"));
-        frametrtrrtrtrtg_2->setGeometry(QRect(20, 300, 271, 42));
         frametrtrrtrtrtg_2->setFrameShape(QFrame::StyledPanel);
         frametrtrrtrtrtg_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_107 = new QHBoxLayout(frametrtrrtrtrtg_2);
@@ -2105,9 +2102,33 @@ public:
 
         horizontalLayout_107->addWidget(comboBox5465465465_3);
 
+
+        gridLayout_41->addWidget(frametrtrrtrtrtg_2, 4, 0, 1, 1);
+
+        frametrtrrtrtrtg = new QFrame(frame_316565);
+        frametrtrrtrtrtg->setObjectName(QStringLiteral("frametrtrrtrtrtg"));
+        frametrtrrtrtrtg->setFrameShape(QFrame::StyledPanel);
+        frametrtrrtrtrtg->setFrameShadow(QFrame::Raised);
+        horizontalLayout_106 = new QHBoxLayout(frametrtrrtrtrtg);
+        horizontalLayout_106->setObjectName(QStringLiteral("horizontalLayout_106"));
+        labelllll_2 = new QLabel(frametrtrrtrtrtg);
+        labelllll_2->setObjectName(QStringLiteral("labelllll_2"));
+
+        horizontalLayout_106->addWidget(labelllll_2);
+
+        comboBox5465465465_2 = new QComboBox(frametrtrrtrtrtg);
+        comboBox5465465465_2->addItem(QString());
+        comboBox5465465465_2->addItem(QString());
+        comboBox5465465465_2->addItem(QString());
+        comboBox5465465465_2->setObjectName(QStringLiteral("comboBox5465465465_2"));
+
+        horizontalLayout_106->addWidget(comboBox5465465465_2);
+
+
+        gridLayout_41->addWidget(frametrtrrtrtrtg, 3, 0, 1, 1);
+
         frame_32i_2 = new QFrame(frame_316565);
         frame_32i_2->setObjectName(QStringLiteral("frame_32i_2"));
-        frame_32i_2->setGeometry(QRect(20, 360, 421, 42));
         frame_32i_2->setFrameShape(QFrame::StyledPanel);
         frame_32i_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_108 = new QHBoxLayout(frame_32i_2);
@@ -2123,13 +2144,39 @@ public:
 
         horizontalLayout_108->addWidget(horizontsl_2);
 
+        label_2Auto = new QLabel(frame_32i_2);
+        label_2Auto->setObjectName(QStringLiteral("label_2Auto"));
+
+        horizontalLayout_108->addWidget(label_2Auto);
+
         label_2xzczx_2 = new QLabel(frame_32i_2);
         label_2xzczx_2->setObjectName(QStringLiteral("label_2xzczx_2"));
 
         horizontalLayout_108->addWidget(label_2xzczx_2);
 
 
-        gridLayout_39->addWidget(frame_316565, 0, 0, 1, 1);
+        gridLayout_41->addWidget(frame_32i_2, 5, 0, 1, 1);
+
+        frametrtrrtrtrtg_3 = new QFrame(frame_316565);
+        frametrtrrtrtrtg_3->setObjectName(QStringLiteral("frametrtrrtrtrtg_3"));
+        frametrtrrtrtrtg_3->setFrameShape(QFrame::StyledPanel);
+        frametrtrrtrtrtg_3->setFrameShadow(QFrame::Raised);
+        horizontalLayout_109 = new QHBoxLayout(frametrtrrtrtrtg_3);
+        horizontalLayout_109->setObjectName(QStringLiteral("horizontalLayout_109"));
+        labelllll_4 = new QLabel(frametrtrrtrtrtg_3);
+        labelllll_4->setObjectName(QStringLiteral("labelllll_4"));
+
+        horizontalLayout_109->addWidget(labelllll_4);
+
+        comboBox5465465465_4 = new QComboBox(frametrtrrtrtrtg_3);
+        comboBox5465465465_4->addItem(QString());
+        comboBox5465465465_4->addItem(QString());
+        comboBox5465465465_4->setObjectName(QStringLiteral("comboBox5465465465_4"));
+
+        horizontalLayout_109->addWidget(comboBox5465465465_4);
+
+
+        gridLayout_41->addWidget(frametrtrrtrtrtg_3, 6, 0, 1, 1);
 
         tab_Other_Items->addTab(tab_33sdfgsd, QString());
 
@@ -9187,9 +9234,9 @@ public:
 
         tabWidget->setCurrentIndex(0);
         tab_Other_Items->setCurrentIndex(5);
-        tabWidget_2->setCurrentIndex(6);
+        tabWidget_2->setCurrentIndex(9);
         tabWidget_4->setCurrentIndex(7);
-        tabWidget_3->setCurrentIndex(7);
+        tabWidget_3->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -9268,19 +9315,25 @@ public:
         comboBox5465465465->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
         contasterfedf->setText(QApplication::translate("MainWindow", "Constant Luminance Settings", nullptr));
-        label_2xzczx->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
-        labelllll_2->setText(QApplication::translate("MainWindow", "Overscan", nullptr));
-        comboBox5465465465_2->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
-        comboBox5465465465_2->setItemText(1, QApplication::translate("MainWindow", "Zoom", nullptr));
-        comboBox5465465465_2->setItemText(2, QApplication::translate("MainWindow", "Crop", nullptr));
-
+        label_constant->setText(QString());
+        label_2xzczx->setText(QString());
         labelllll_3->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", nullptr));
         comboBox5465465465_3->setItemText(0, QApplication::translate("MainWindow", "On Failure Only", nullptr));
         comboBox5465465465_3->setItemText(1, QApplication::translate("MainWindow", "At Power-Up", nullptr));
         comboBox5465465465_3->setItemText(2, QApplication::translate("MainWindow", "After X Hours", nullptr));
 
+        labelllll_2->setText(QApplication::translate("MainWindow", "Overscan", nullptr));
+        comboBox5465465465_2->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        comboBox5465465465_2->setItemText(1, QApplication::translate("MainWindow", "Zoom", nullptr));
+        comboBox5465465465_2->setItemText(2, QApplication::translate("MainWindow", "Crop", nullptr));
+
         contasterfedf_2->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", nullptr));
-        label_2xzczx_2->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_2Auto->setText(QString());
+        label_2xzczx_2->setText(QString());
+        labelllll_4->setText(QApplication::translate("MainWindow", "BrilliantColor\342\204\242", nullptr));
+        comboBox5465465465_4->setItemText(0, QApplication::translate("MainWindow", "Normal Look", nullptr));
+        comboBox5465465465_4->setItemText(1, QApplication::translate("MainWindow", "Bright Look", nullptr));
+
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_33sdfgsd), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "Other Items", nullptr));
         label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", nullptr));

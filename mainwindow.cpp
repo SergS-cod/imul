@@ -12,6 +12,20 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+
+
+
+    ui->label_2xzczx->setText("0");
+    connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    ui->label_2Auto->setText("0");
+    connect(ui->horizontsl_2, &QSlider::valueChanged, ui->label_2Auto,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+
     //setting Audio page
     ui->label_var_Volume->setText("5");
     connect(ui->horizontalSlider_Volume, &QSlider::valueChanged, ui->label_var_Volume,

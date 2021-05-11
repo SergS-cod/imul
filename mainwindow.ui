@@ -893,24 +893,24 @@
            <attribute name="title">
             <string>Страница</string>
            </attribute>
-           <layout class="QGridLayout" name="gridLayout_39">
-            <item row="0" column="0">
-             <widget class="QFrame" name="frame_316565">
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
+           <widget class="QFrame" name="frame_316565">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>9</y>
+              <width>971</width>
+              <height>561</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_41">
+             <item row="0" column="0">
               <widget class="QFrame" name="frame_326546546546">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>30</y>
-                 <width>271</width>
-                 <height>84</height>
-                </rect>
-               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -983,15 +983,9 @@
                 </item>
                </layout>
               </widget>
+             </item>
+             <item row="1" column="0">
               <widget class="QFrame" name="frame___dfsg31">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>130</y>
-                 <width>271</width>
-                 <height>42</height>
-                </rect>
-               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -1022,15 +1016,9 @@
                 </item>
                </layout>
               </widget>
+             </item>
+             <item row="2" column="0">
               <widget class="QFrame" name="frame_32i">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>180</y>
-                 <width>421</width>
-                 <height>42</height>
-                </rect>
-               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -1053,67 +1041,24 @@
                  </widget>
                 </item>
                 <item>
+                 <widget class="QLabel" name="label_constant">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
                  <widget class="QLabel" name="label_2xzczx">
                   <property name="text">
-                   <string>TextLabel</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
                </layout>
               </widget>
-              <widget class="QFrame" name="frametrtrrtrtrtg">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>240</y>
-                 <width>271</width>
-                 <height>42</height>
-                </rect>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_106">
-                <item>
-                 <widget class="QLabel" name="labelllll_2">
-                  <property name="text">
-                   <string>Overscan</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="comboBox5465465465_2">
-                  <item>
-                   <property name="text">
-                    <string>Off</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Zoom</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Crop</string>
-                   </property>
-                  </item>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
+             </item>
+             <item row="4" column="0">
               <widget class="QFrame" name="frametrtrrtrtrtg_2">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>300</y>
-                 <width>271</width>
-                 <height>42</height>
-                </rect>
-               </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -1149,15 +1094,47 @@
                 </item>
                </layout>
               </widget>
-              <widget class="QFrame" name="frame_32i_2">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>360</y>
-                 <width>421</width>
-                 <height>42</height>
-                </rect>
+             </item>
+             <item row="3" column="0">
+              <widget class="QFrame" name="frametrtrrtrtrtg">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
                </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_106">
+                <item>
+                 <widget class="QLabel" name="labelllll_2">
+                  <property name="text">
+                   <string>Overscan</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox5465465465_2">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Zoom</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Crop</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QFrame" name="frame_32i_2">
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -1180,17 +1157,57 @@
                  </widget>
                 </item>
                 <item>
+                 <widget class="QLabel" name="label_2Auto">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
                  <widget class="QLabel" name="label_2xzczx_2">
                   <property name="text">
-                   <string>TextLabel</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
                </layout>
               </widget>
-             </widget>
-            </item>
-           </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QFrame" name="frametrtrrtrtrtg_3">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_109">
+                <item>
+                 <widget class="QLabel" name="labelllll_4">
+                  <property name="text">
+                   <string>BrilliantColor™</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox5465465465_4">
+                  <item>
+                   <property name="text">
+                    <string>Normal Look</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Bright Look</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
           </widget>
          </widget>
         </item>
@@ -1204,7 +1221,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>6</number>
+           <number>9</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -9566,7 +9583,7 @@ White:</string>
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>7</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_19">
            <attribute name="title">
