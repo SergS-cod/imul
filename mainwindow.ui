@@ -12033,17 +12033,27 @@ White:</string>
                       <widget class="QComboBox" name="combobox_Options_Menu_Location">
                        <item>
                         <property name="text">
-                         <string>Off</string>
+                         <string>Top left</string>
                         </property>
                        </item>
                        <item>
                         <property name="text">
-                         <string>CC1</string>
+                         <string>Top right</string>
                         </property>
                        </item>
                        <item>
                         <property name="text">
-                         <string>CC2</string>
+                         <string>Center</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Bottom left</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Bottom righ</string>
                         </property>
                        </item>
                       </widget>
@@ -12076,12 +12086,12 @@ White:</string>
                        </item>
                        <item>
                         <property name="text">
-                         <string>CC1</string>
+                         <string>5 sec</string>
                         </property>
                        </item>
                        <item>
                         <property name="text">
-                         <string>CC2</string>
+                         <string>10 sec</string>
                         </property>
                        </item>
                       </widget>
