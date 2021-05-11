@@ -364,6 +364,11 @@ void parameter::build(int CMD, int CMD_value){
     update_isValid();
 }
 
+int parameter::getInt_password() const
+{
+    return int_password;
+}
+
 
 
 

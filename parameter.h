@@ -34,6 +34,7 @@ public:
     void print_parameter_inf();
     void update_isValid();
     void build(int, int);
+    int getInt_password() const;
 
 private:
     QString Name;

@@ -413,9 +413,48 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Setup_Power_Setting_Auto_Power_Off->setText("90");
     connect(ui->horizontalSlider_Setup_Power_Setting_Auto_Power_Off, &QSlider::valueChanged, ui->label_var_Setup_Power_Setting_Auto_Power_Off,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Security
+    ui->label_var_Setup_Security_Timer_Day->setText("0");
+    connect(ui->horizontalSlider_Setup_Security_Timer_Day, &QSlider::valueChanged, ui->label_var_Setup_Security_Timer_Day,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Setup_Security_Timer_Month->setText("0");
+    connect(ui->horizontalSlider_Setup_Security_Timer_Month, &QSlider::valueChanged, ui->label_var_Setup_Security_Timer_Month,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Setup_Security_Timer_Hour->setText("0");
+    connect(ui->horizontalSlider_Setup_Security_Timer_Hour, &QSlider::valueChanged, ui->label_var_Setup_Security_Timer_Hour,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Remote Settings
+    ui->label_var_Setup_Remote_Setting_Remote_code->setText("50");
+    connect(ui->horizontalSlider_Setup_Remote_Setting_Remote_code, &QSlider::valueChanged, ui->label_var_Setup_Remote_Setting_Remote_code,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Setup_Remote_Setting_Remote_user1->setText("10");
+    connect(ui->horizontalSlider_Setup_Remote_Setting_Remote_user1, &QSlider::valueChanged, ui->label_var_Setup_Remote_Setting_Remote_user1,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Setup_Remote_Setting_Remote_user2->setText("10");
+    connect(ui->horizontalSlider_Setup_Remote_Setting_Remote_user2, &QSlider::valueChanged, ui->label_var_Setup_Remote_Setting_Remote_user2,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Setup_Remote_Setting_Remote_user3->setText("10");
+    connect(ui->horizontalSlider_Setup_Remote_Setting_Remote_user3, &QSlider::valueChanged, ui->label_var_Setup_Remote_Setting_Remote_user3,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //Projector ID
+    ui->label_var_Setup_Projector_ID->setText("50");
+    connect(ui->horizontalSlider_Setup_Projector_ID, &QSlider::valueChanged, ui->label_var_Setup_Projector_ID,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    //options
+    ui->label_var_Options_Menu_Transparency->setText("5");
+    connect(ui->horizontalSlider_Options_Menu_Transparency, &QSlider::valueChanged, ui->label_var_Options_Menu_Transparency,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
     //***test
 
-    parameter temp("7E3030333336202D35300D");
+    parameter temp("7E303031313220310D");
     razbor_com(temp);
     //***
 }
@@ -3145,6 +3184,610 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
+    //Security
+    if(temp.getInt_command()==78){
+        if(temp.getInt_variable() == 0 && temp.getInt_password() >=0 && temp.getInt_password() <= 9999){
+            ui->combobox_Setup_Security->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable() == 1 && temp.getInt_password() >=0 && temp.getInt_password() <= 9999){
+            ui->combobox_Setup_Security->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==527){
+        if(temp.check_include_interval(0,9999)){
+            if(ui->combobox_Setup_Security->currentIndex() == 1 ){
+                ui->combobox_Setup_Security->setCurrentIndex(0);
+            }
+
+            if(ui->combobox_Setup_Security->currentIndex() == 0 ){
+                ui->combobox_Setup_Security->setCurrentIndex(1);
+            }
+        }
+    }
+
+    if(temp.getInt_command()==537){
+        if(temp.check_include_interval(0,12)){
+            ui->horizontalSlider_Setup_Security_Timer_Month->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==538){
+        if(temp.check_include_interval(0,30)){
+            ui->horizontalSlider_Setup_Security_Timer_Day->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==539){
+        if(temp.check_include_interval(0,24)){
+            ui->horizontalSlider_Setup_Security_Timer_Hour->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==77){
+        QByteArray mdh = temp.getDate();
+        int M,D,H;
+        M = D = H = 0;
+        M = mdh.left(4).right(1).toInt()*10 +mdh.left(6).right(1).toInt();
+        D = mdh.left(8).right(1).toInt()*10 +mdh.left(10).right(1).toInt();
+        H = mdh.left(12).right(1).toInt()*10 +mdh.left(14).right(1).toInt();
+        ui->horizontalSlider_Setup_Security_Timer_Month->setValue(M);
+        ui->horizontalSlider_Setup_Security_Timer_Day->setValue(D);
+        ui->horizontalSlider_Setup_Security_Timer_Hour->setValue(H);
+
+    }
+    //HDMI Link Settings
+    if(temp.getInt_command()==511){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_HDMI_Link->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_HDMI_Link->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==512){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Inclusive_of_TV->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Inclusive_of_TV->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==513){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_On_Link->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Power_On_Link->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Power_On_Link->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==514){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Power_Off_Link->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Power_Off_Link->setCurrentIndex(1);
+        }
+    }
+
+    //Test Pattern
+    if(temp.getInt_command()==195){
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(4);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(5);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(6);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(7);
+        }
+        if(temp.getInt_variable()==8){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(8);
+        }
+        if(temp.getInt_variable()==9){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(9);
+        }
+        if(temp.getInt_variable()==10){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(10);
+        }
+        if(temp.getInt_variable()==11){
+            ui->combobox_Setup_Test_Pattern->setCurrentIndex(11);
+        }
+    }
+
+    //Remote Settings
+    if(temp.getInt_command()==11){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(4);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(5);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(6);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(7);
+        }
+        if(temp.getInt_variable()==8){
+            ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(8);
+        }
+    }
+    if(temp.getInt_command()==48){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked();
+        }
+        if(temp.getInt_variable()==2){
+            emit on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==350){
+        if(temp.check_include_interval(0,99)){
+            ui->horizontalSlider_Setup_Remote_Setting_Remote_code->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==117){
+        if(temp.check_include_interval(1,20)){
+            ui->horizontalSlider_Setup_Remote_Setting_Remote_user1->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==118){
+        if(temp.check_include_interval(1,20)){
+            ui->horizontalSlider_Setup_Remote_Setting_Remote_user2->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==119){
+        if(temp.check_include_interval(1,20)){
+            ui->horizontalSlider_Setup_Remote_Setting_Remote_user3->setValue(temp.getInt_variable());
+        }
+    }
+    //projector ID
+    if(temp.getInt_command()==79){
+        if(temp.check_include_interval(0,99)){
+            ui->horizontalSlider_Setup_Projector_ID->setValue(temp.getInt_variable());
+        }
+    }
+    //12V
+
+    if(temp.getInt_command()==192){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_12V_Trigger->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_12V_Trigger->setCurrentIndex(1);
+        }
+    }
+
+    //12V_B
+    if(temp.getInt_command()==193){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_12V_Trigger_B->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_12V_Trigger_B->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_12V_Trigger_B->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_12V_Trigger_B->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_12V_Trigger_B->setCurrentIndex(4);
+        }
+    }
+
+    if(temp.getInt_command()==205){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Setup_12V_Trigger_B_4_3->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Setup_12V_Trigger_B_4_3->setCurrentIndex(1);
+        }
+    }
+
+
+    if(temp.getInt_command()==205){
+        if(temp.getInt_variable()==2){
+            ui->combobox_Setup_12V_Trigger_B_16_9->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Setup_12V_Trigger_B_16_9->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==205){
+        if(temp.getInt_variable()==4){
+            ui->combobox_Setup_12V_Trigger_LTB->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Setup_12V_Trigger_LTB->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==205){
+        if(temp.getInt_variable()==6){
+            ui->combobox_Setup_12V_Trigger_Native->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Setup_12V_Trigger_Native->setCurrentIndex(1);
+        }
+    }
+    //HDBaseT_Control_RS232
+    if(temp.getInt_command()==98){
+        if(temp.getInt_variable()==0){
+            ui->combobox_HDBaseT_Control_Enternet->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_HDBaseT_Control_Enternet->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==97){
+        if(temp.getInt_variable()==0){
+            ui->combobox_HDBaseT_Control_RS232->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_HDBaseT_Control_RS232->setCurrentIndex(1);
+        }
+    }
+    //options
+    if(temp.getInt_command()==70){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Language->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Language->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Language->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Options_Language->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Options_Language->setCurrentIndex(4);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Options_Language->setCurrentIndex(5);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Options_Language->setCurrentIndex(6);
+        }
+        if(temp.getInt_variable()==8){
+            ui->combobox_Options_Language->setCurrentIndex(7);
+        }
+        if(temp.getInt_variable()==9){
+            ui->combobox_Options_Language->setCurrentIndex(8);
+        }
+        if(temp.getInt_variable()==10){
+            ui->combobox_Options_Language->setCurrentIndex(9);
+        }
+
+        if(temp.getInt_variable()==11){
+            ui->combobox_Options_Language->setCurrentIndex(10);
+        }
+        if(temp.getInt_variable()==12){
+            ui->combobox_Options_Language->setCurrentIndex(11);
+        }
+        if(temp.getInt_variable()==13){
+            ui->combobox_Options_Language->setCurrentIndex(12);
+        }
+        if(temp.getInt_variable()==14){
+            ui->combobox_Options_Language->setCurrentIndex(13);
+        }
+        if(temp.getInt_variable()==15){
+            ui->combobox_Options_Language->setCurrentIndex(14);
+        }
+        if(temp.getInt_variable()==16){
+            ui->combobox_Options_Language->setCurrentIndex(15);
+        }
+        if(temp.getInt_variable()==17){
+            ui->combobox_Options_Language->setCurrentIndex(16);
+        }
+        if(temp.getInt_variable()==18){
+            ui->combobox_Options_Language->setCurrentIndex(17);
+        }
+        if(temp.getInt_variable()==19){
+            ui->combobox_Options_Language->setCurrentIndex(18);
+        }
+        if(temp.getInt_variable()==20){
+            ui->combobox_Options_Language->setCurrentIndex(19);
+        }
+
+        if(temp.getInt_variable()==21){
+            ui->combobox_Options_Language->setCurrentIndex(20);
+        }
+        if(temp.getInt_variable()==22){
+            ui->combobox_Options_Language->setCurrentIndex(21);
+        }
+        if(temp.getInt_variable()==23){
+            ui->combobox_Options_Language->setCurrentIndex(22);
+        }
+        if(temp.getInt_variable()==24){
+            ui->combobox_Options_Language->setCurrentIndex(23);
+        }
+        if(temp.getInt_variable()==25){
+            ui->combobox_Options_Language->setCurrentIndex(24);
+        }
+        if(temp.getInt_variable()==26){
+            ui->combobox_Options_Language->setCurrentIndex(25);
+        }
+        if(temp.getInt_variable()==27){
+            ui->combobox_Options_Language->setCurrentIndex(26);
+        }
+    }
+
+    if(temp.getInt_command()==88){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Closed_Captioning->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Closed_Captioning->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Closed_Captioning->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==72){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Menu_Location->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Menu_Location->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Menu_Location->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Options_Menu_Location->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Options_Menu_Location->setCurrentIndex(4);
+        }
+    }
+
+    if(temp.getInt_command()==515){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Menu_Timer->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Menu_Timer->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Menu_Timer->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==526){
+        if(temp.check_include_interval(0,9)){
+            ui->horizontalSlider_Options_Menu_Transparency->setValue(temp.getInt_variable());
+        }
+    }
+
+    if(temp.getInt_command()==563){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Auto_Sourse->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Auto_Sourse->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==12){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==15){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(5);
+        }
+        if(temp.getInt_variable()==16){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(7);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(8);
+
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(9);
+        }
+        if(temp.getInt_variable()==5){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(10);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(12);
+        }
+
+        if(temp.getInt_variable()==14){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(13);
+        }
+        if(temp.getInt_variable()==9){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(14);
+        }
+        if(temp.getInt_variable()==10){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(15);
+        }
+        if(temp.getInt_variable()==20){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(16);
+        }
+        if(temp.getInt_variable()==21){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(17);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(18);
+        }
+        if(temp.getInt_variable()==11){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(19);
+        }
+        if(temp.getInt_variable()==17){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(20);
+        }
+        if(temp.getInt_variable()==18){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(21);
+        }
+        if(temp.getInt_variable()==19){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(22);
+        }
+        if(temp.getInt_variable()==23){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(23);
+        }
+        if(temp.getInt_variable()==22){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(24);
+        }
+        if(temp.getInt_variable()==24){
+            ui->combobox_Options_Inout_Sourse->setCurrentIndex(25);
+        }
+    }
+
+
+    if(temp.getInt_command()==309){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_VGA_Out->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_VGA_Out->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_VGA_Out->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==101){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_High_Altitude->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_High_Altitude->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==348){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Display_Mode_Lock->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Display_Mode_Lock->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==103){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Keypad_Lock->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Keypad_Lock->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==102){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Information_Hide->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Information_Hide->setCurrentIndex(1);
+        }
+    }
+
+    if(temp.getInt_command()==82){
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Logo->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Logo->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==2){
+            ui->combobox_Options_Logo->setCurrentIndex(2);
+        }
+    }
+
+    if(temp.getInt_command()==503){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Beep->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Beep->setCurrentIndex(1);
+        }
+    }
+
+
+    if(temp.getInt_command()==104){
+        if(temp.getInt_variable()==0){
+            ui->combobox_Options_Background_Color->setCurrentIndex(0);
+        }
+        if(temp.getInt_variable()==1){
+            ui->combobox_Options_Background_Color->setCurrentIndex(1);
+        }
+        if(temp.getInt_variable()==3){
+            ui->combobox_Options_Background_Color->setCurrentIndex(2);
+        }
+        if(temp.getInt_variable()==4){
+            ui->combobox_Options_Background_Color->setCurrentIndex(3);
+        }
+        if(temp.getInt_variable()==6){
+            ui->combobox_Options_Background_Color->setCurrentIndex(4);
+        }
+        if(temp.getInt_variable()==7){
+            ui->combobox_Options_Background_Color->setCurrentIndex(5);
+        }
+    }
+
+    //reset
+    if(temp.getInt_command()==546){
+        if(temp.getInt_variable()==1){
+            emit on_pushButton_reset_OSD_clicked();
+        }
+    }
+
+    if(temp.getInt_command()==112){
+        //temp.print_parameter_inf();
+        if(temp.getInt_variable()==1 && temp.getInt_password() == -1){
+            emit on_pushButton_reset_to_Default_clicked();
+        }
+
+        if(temp.getInt_variable()==1 && temp.getInt_password()>=0 && temp.getInt_password()<=9999){
+            emit on_pushButton_reset_to_Default_password_clicked();
+        }
+    }
+
+
     //------------------------------END Display page
     /// Просто вношу изменения
 }
@@ -4339,5 +4982,35 @@ void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Focus_plus_clicked(){
 }
 
 void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked(){
+
+}
+
+void MainWindow::on_pushButton_Setup_Security_Change_Password_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked()
+{
+    ui->horizontalSlider_Setup_Remote_Setting_Remote_code->setValue( ui->horizontalSlider_Setup_Remote_Setting_Remote_code->value() - 1);
+}
+
+void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked()
+{
+    ui->horizontalSlider_Setup_Remote_Setting_Remote_code->setValue( ui->horizontalSlider_Setup_Remote_Setting_Remote_code->value() + 1);
+}
+
+void MainWindow::on_pushButton_reset_OSD_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_reset_to_Default_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_reset_to_Default_password_clicked()
+{
 
 }

@@ -136,6 +136,18 @@ private slots:
 
  void on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked();
 
+ void on_pushButton_Setup_Security_Change_Password_clicked();
+
+ void on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked();
+
+ void on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked();
+
+ void on_pushButton_reset_OSD_clicked();
+
+ void on_pushButton_reset_to_Default_clicked();
+
+ void on_pushButton_reset_to_Default_password_clicked();
+
 signals:
  void s_send_to(QByteArray);
 
