@@ -503,6 +503,23 @@ void MainWindow:: update_state()
 
 void MainWindow:: razbor_com(parameter temp)
 {
+
+
+
+
+
+
+    QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
+     "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
+     "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
+     "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
+    QString unusual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #7feb4d, stop: 1 #4cbb17);}"
+     "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
+     "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
+     "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
+
+
+
     // POWER ON / OFF
     if(temp.getInt_command()==0){
         if(temp.check_include_interval(1,9999)){
@@ -637,26 +654,26 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-            ui->ON_2->setCheckState(Qt::Unchecked);
-            ui->OFF_2->setCheckState(Qt::Checked);
+            ui->ON_mute->setChecked(false);
+            ui->OFF_mute->setChecked(true);
         }
 
         if(temp.getInt_variable()==1)
-        {ui->ON_2->setCheckState(Qt::Checked);
-            ui->OFF_2->setCheckState(Qt::Unchecked);
+        {ui->ON_mute->setChecked(true);
+            ui->OFF_mute->setChecked(false);
         }
     }
     if(temp.getInt_command()==355)
     {
         if(temp.getInt_variable()==1)
         {
-            if ((ui->ON_2->isChecked()==Qt::Checked)&&(ui->OFF_2->isChecked()==Qt::Unchecked))
+            if ((ui->ON_mute->isChecked())&&(!ui->OFF_mute->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok1");
                 emit s_send_to(To);
             }
-            if ((ui->ON_2->isChecked()==Qt::Unchecked)&&(ui->OFF_2->isChecked()==Qt::Checked))
+            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok0");
@@ -671,13 +688,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-            ui->ON_3->setCheckState(Qt::Unchecked);
-            ui->OFF_3->setCheckState(Qt::Checked);
+            ui->ON_mute2->setChecked(false);
+            ui->OFF_mute2->setChecked(true);
         }
 
         if(temp.getInt_variable()==1)
-        {ui->ON_3->setCheckState(Qt::Checked);
-            ui->OFF_3->setCheckState(Qt::Unchecked);
+        {ui->ON_mute2->setChecked(true);
+            ui->OFF_mute2->setChecked(false);
         }
 
     }
@@ -685,13 +702,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-            if ((ui->ON_2->isChecked()==Qt::Checked)&&(ui->OFF_2->isChecked()==Qt::Unchecked))
+            if ((ui->ON_mute2->isChecked())&&(!ui->OFF_mute2->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok1");
                 emit s_send_to(To);
             }
-            if ((ui->ON_2->isChecked()==Qt::Unchecked)&&(ui->OFF_2->isChecked()==Qt::Checked))
+            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok0");
@@ -705,13 +722,13 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==0)
         {
-            ui->Freeze->setCheckState(Qt::Unchecked);
-            ui->Unfreeze->setCheckState(Qt::Checked);
+           ui->Freeze_2->setCurrentIndex(0);
+
         }
 
         if(temp.getInt_variable()==1)
-        {ui->Freeze->setCheckState(Qt::Checked);
-            ui->Unfreeze->setCheckState(Qt::Unchecked);
+        {
+            ui->Freeze_2->setCurrentIndex(1);
         }
     }
 
@@ -964,13 +981,16 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-            if ((ui->DD->isChecked()==Qt::Checked)&&(ui->DDD->isChecked()==Qt::Unchecked))
+
+
+
+            if ((ui->DD->isChecked())&&(!ui->DDD->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok0");
                 emit s_send_to(To);
             }
-            if ((ui->DD->isChecked()==Qt::Unchecked)&&(ui->DDD->isChecked()==Qt::Checked))
+            if ((!ui->DD->isChecked())&&(ui->DDD->isChecked()))
             {
                 QByteArray To;
                 To.append("Ok1");
@@ -3987,7 +4007,416 @@ void MainWindow:: razbor_com(parameter temp)
 
 
     //------------------------------END Display page
+
+
+
+
+
     /// Просто вношу изменения
+    ///
+
+    if(temp.getInt_command()==140){
+        //temp.print_parameter_inf();
+        if(temp.getInt_variable()==1)
+        {
+            ui->Power->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==2)
+        {
+            ui->PowerOff->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==3)
+        {
+            ui->pushButton_mouse_up->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==4)
+        {
+            ui->pushButton_mouse_left->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==5)
+        {
+            ui->pushButton_mouse_enter->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==6)
+        {
+            ui->pushButton_right->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==7)
+        {
+            ui->pushButton_down->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==8)
+        {
+            ui->pushButton_left_click->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==9)
+        {
+            ui->pushButton_right_click->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==10)
+        {
+            ui->pushButton_up->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==11)
+        {
+            ui->pushButton_left->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==12)
+        {
+            ui->pushButton_enter->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==13)
+        {
+            ui->pushButton_right_2->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==14)
+        {
+            ui->pushButton_down_2->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==15)
+        {
+            ui->pushButton_plus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==16)
+        {
+            ui->pushButton_minus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==17)
+        {
+            ui->pushButton_minus_Volume->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==18)
+        {
+            ui->pushButton_plus_Volume->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==19)
+        {
+            ui->pushButton_Brightness->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==20)
+        {
+            ui->pushButton_menu->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==21)
+        {
+            ui->pushButton_zoom->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==22)
+        {
+            ui->pushButton_DVI_D->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==23)
+        {
+            ui->pushButton_VGA_1->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==24)
+        {
+            ui->pushButton_AV_mute->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==25)
+        {
+            ui->pushButton_S_Video->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==26)
+        {
+            ui->pushButton_VGA_2->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==27)
+        {
+            ui->pushButton_Video->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==28)
+        {
+            ui->pushButton_Contrast->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==30)
+        {
+            ui->pushButton_Freeze->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==31)
+        {
+            ui->pushButton_Lens_shift->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==32)
+        {
+            ui->pushButton_Zoom_plus->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==33)
+        {
+            ui->pushButton_Zoom_minus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==34)
+        {
+            ui->pushButton_plus_focus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==35)
+        {
+            ui->pushButton_minus_focus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==36)
+        {
+            ui->pushButton_mode->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==37)
+        {
+            ui->pushButton__Aspect_Ration->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==38)
+        {
+            ui->pushButton_12V_trigger_On->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==39)
+        {
+            ui->pushButton_12V_trigger_Off->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==40)
+        {
+            ui->pushButton_info->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==41)
+        {
+            ui->pushButton_Re_sync->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==42)
+        {
+            ui->pushButton_HDIM_1->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==43)
+        {
+            ui->pushButton_HDIM_2->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==44)
+        {
+            ui->pushButton_BNC->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==45)
+        {
+            ui->pushButton_Component->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==47)
+        {
+            ui->pushButton_Source->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==51)
+        {
+            ui->pushButton_one->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==52)
+        {
+            ui->pushButton_two->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==53)
+        {
+            ui->pushButton_three->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==54)
+        {
+            ui->pushButton_foure->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==55)
+        {
+            ui->pushButton_five->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==56)
+        {
+            ui->pushButton_six->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==57)
+        {
+            ui->pushButton_seven->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==58)
+        {
+            ui->pushButton_eight->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==59)
+        {
+            ui->pushButton_nine->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==60)
+        {
+            ui->pushButton_zero->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==61)
+        {
+            ui->pushButton_Gamma->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==63)
+        {
+            ui->pushButton_PIP->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==64)
+        {
+            ui->pushButton_left_H->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==65)
+        {
+            ui->pushButton_right_H->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==66)
+        {
+            ui->pushButton_left_V->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==67)
+        {
+            ui->pushButton_right_V->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==68)
+        {
+            ui->pushButton_H_Keystone_plus->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==69)
+        {
+            ui->pushButton_H_Keystone_minus->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==70)
+        {
+            ui->pushButton_hot_key->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==71)
+        {
+            ui->pushButton_hot_key_2->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==72)
+        {
+            ui->pushButton_hot_key_3->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==73)
+        {
+            ui->pushButton_Pattern->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==74)
+        {
+            ui->pushButton_exit->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==75)
+        {
+            ui->pushButton_HDIM_3->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==76)
+        {
+            ui->pushButton_Display_Port->setStyleSheet(unusual);
+
+        }
+
+        if(temp.getInt_variable()==77)
+        {
+            ui->pushButton_Mute->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==78)
+        {
+            ui->pushButton_3D->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==79)
+        {
+            ui->pushButton_DB->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==80)
+        {
+            ui->pushButton_Sleep_timer->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==81)
+        {
+            ui->pushButton_Home->setStyleSheet(unusual);
+
+        }
+        if(temp.getInt_variable()==82)
+        {
+            ui->pushButton_Return->setStyleSheet(unusual);
+
+        }
+
+
+
+    }
+    ///
+    ///
+    ///
 }
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
     com tmp;

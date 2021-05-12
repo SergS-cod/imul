@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="tab_22">
        <attribute name="title">
@@ -43,450 +43,461 @@
               <property name="frameShadow">
                <enum>QFrame::Raised</enum>
               </property>
-              <layout class="QGridLayout" name="gridLayout_32">
-               <item row="0" column="0">
-                <widget class="QFrame" name="fram">
-                 <property name="frameShape">
-                  <enum>QFrame::Box</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_5">
-                  <item>
-                   <widget class="QFrame" name="fra_32">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_8">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="label_11">
-                       <property name="text">
-                        <string>Power </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_38">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_12">
+              <widget class="QFrame" name="fram">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>421</width>
+                 <height>501</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QFrame" name="fra_32">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_8">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>Power </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="ON">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="OFF">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <property name="autoRepeat">
+                      <bool>false</bool>
+                     </property>
+                     <property name="autoExclusive">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_38">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_12">
+                   <item>
+                    <widget class="QLabel" name="label_Power_on_password">
+                     <property name="text">
+                      <string>Power On (Password)</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QCheckBox" name="ON_Power_on_password">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On </string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_33">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_9">
+                   <item row="1" column="0">
+                    <widget class="QRadioButton" name="ON_mute">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_27">
+                     <property name="text">
+                      <string>AV Mute</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QRadioButton" name="OFF_mute">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_34">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_10">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_29">
+                     <property name="text">
+                      <string> Mute</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QRadioButton" name="ON_mute2">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QRadioButton" name="OFF_mute2">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_45">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_13">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="SERIAL_PORT_PATH">
+                     <property name="text">
+                      <string>Serial Port Path</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="ON_6">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>HDBaseT</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="OFF_6">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>RS232</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="fr_2">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>50</y>
+                 <width>391</width>
+                 <height>461</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QFrame" name="fra_35">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <item>
+                    <widget class="QLabel" name="label_30">
+                     <property name="text">
+                      <string>Freeze</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="Freeze_2">
                      <item>
-                      <widget class="QLabel" name="label_Power_on_password">
-                       <property name="text">
-                        <string>Power On (Password)</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QCheckBox" name="ON_Power_on_password">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_33">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_9">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="label_27">
-                       <property name="text">
-                        <string>AV Mute</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_2">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_2">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_34">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_10">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="label_29">
-                       <property name="text">
-                        <string> Mute</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_3">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_3">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_45">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_13">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="SERIAL_PORT_PATH">
-                       <property name="text">
-                        <string>Serial Port Path</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_6">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>HDBaseT</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_6">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>RS232</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QFrame" name="fr_2">
-                 <property name="frameShape">
-                  <enum>QFrame::Box</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QVBoxLayout" name="verticalLayout_8">
-                  <item>
-                   <widget class="QFrame" name="fra_35">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_6">
-                     <item>
-                      <widget class="QLabel" name="label_30">
-                       <property name="text">
-                        <string>Freeze</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QCheckBox" name="Freeze">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Freeze</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QCheckBox" name="Unfreeze">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Unfreeze</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fr_36">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_7">
-                     <item>
-                      <widget class="QLabel" name="label_31">
-                       <property name="text">
-                        <string>Output 3D state</string>
-                       </property>
-                      </widget>
+                      <property name="text">
+                       <string>Unfreeze</string>
+                      </property>
                      </item>
                      <item>
-                      <widget class="QCheckBox" name="DDD">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>3D</string>
-                       </property>
-                      </widget>
+                      <property name="text">
+                       <string>Freeze</string>
+                      </property>
                      </item>
-                     <item>
-                      <widget class="QCheckBox" name="DD">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>2D</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_43">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_11">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="PC_MODE">
-                       <property name="text">
-                        <string>PC MODE</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_4">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_4">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fr_44">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_12">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="SERIAL_PORT_ECHO">
-                       <property name="text">
-                        <string>Serial Port Echo</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_5">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_5">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QFrame" name="fra_46">
-                    <property name="frameShape">
-                     <enum>QFrame::Box</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Raised</enum>
-                    </property>
-                    <layout class="QGridLayout" name="gridLayout_14">
-                     <item row="0" column="0" colspan="2">
-                      <widget class="QLabel" name="SOURCE_LOCK">
-                       <property name="text">
-                        <string>Source Lock</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QCheckBox" name="ON_7">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>On </string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1">
-                      <widget class="QCheckBox" name="OFF_7">
-                       <property name="font">
-                        <font>
-                         <pointsize>14</pointsize>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Off</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-              </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fr_36">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <widget class="QLabel" name="label_31">
+                     <property name="text">
+                      <string>Output 3D state</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="DDD">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>3D</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QRadioButton" name="DD">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>2D</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_43">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_11">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="PC_MODE">
+                     <property name="text">
+                      <string>PC MODE</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="ON_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="OFF_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fr_44">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_12">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="SERIAL_PORT_ECHO">
+                     <property name="text">
+                      <string>Serial Port Echo</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="ON_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="OFF_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="fra_46">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_14">
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="SOURCE_LOCK">
+                     <property name="text">
+                      <string>Source Lock</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="ON_7">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>On </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="OFF_7">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
              </widget>
             </item>
            </layout>
@@ -912,7 +923,7 @@
              <item row="0" column="0">
               <widget class="QFrame" name="frame_326546546546">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -987,7 +998,7 @@
              <item row="1" column="0">
               <widget class="QFrame" name="frame___dfsg31">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1020,7 +1031,7 @@
              <item row="2" column="0">
               <widget class="QFrame" name="frame_32i">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1060,7 +1071,7 @@
              <item row="4" column="0">
               <widget class="QFrame" name="frametrtrrtrtrtg_2">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1098,7 +1109,7 @@
              <item row="3" column="0">
               <widget class="QFrame" name="frametrtrrtrtrtg">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1136,7 +1147,7 @@
              <item row="5" column="0">
               <widget class="QFrame" name="frame_32i_2">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1176,7 +1187,7 @@
              <item row="6" column="0">
               <widget class="QFrame" name="frametrtrrtrtrtg_3">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::Box</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -1221,7 +1232,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>9</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_4">
            <attribute name="title">
@@ -1237,7 +1248,7 @@
                </sizepolicy>
               </property>
               <property name="currentIndex">
-               <number>7</number>
+               <number>4</number>
               </property>
               <widget class="QWidget" name="tab_47">
                <attribute name="title">
@@ -9583,7 +9594,7 @@ White:</string>
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>0</number>
+           <number>6</number>
           </property>
           <widget class="QWidget" name="tab_19">
            <attribute name="title">
@@ -13825,10 +13836,1157 @@ White:</string>
         <string>Info</string>
        </attribute>
       </widget>
-      <widget class="QWidget" name="tab_18">
+      <widget class="QWidget" name="tab_remote">
        <attribute name="title">
         <string>Remote Control Simulation</string>
        </attribute>
+       <widget class="QFrame" name="frame_remote">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1021</width>
+          <height>1061</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QGroupBox" name="groupBox_power">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>191</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Power</string>
+         </property>
+         <widget class="QPushButton" name="Power">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>80</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Power</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="PowerOff">
+          <property name="geometry">
+           <rect>
+            <x>99</x>
+            <y>30</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Power Off</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_mouce">
+         <property name="geometry">
+          <rect>
+           <x>650</x>
+           <y>10</y>
+           <width>331</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Mouse Control</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_mouse_up">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>30</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Remote Mouse up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_mouse_left">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>60</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Remote Mouse Left</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_right">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>100</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Remote Mouse Right</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_mouse_enter">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>60</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Remote Mouse Enter</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_down">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>100</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Remote Mouse Down</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_right_click">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>140</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mouse Right Click</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_left_click">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>140</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mouse Left Click</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_menu">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>10</y>
+           <width>281</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Menu</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_up">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>20</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_left">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Left</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_right_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>50</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Right</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_enter">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>50</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Enter</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_down_2">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>80</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Down</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_V_Keystone">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>V Keystone </string>
+         </property>
+         <widget class="QPushButton" name="pushButton_plus">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_minus">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_Volume">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Volume</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_minus_Volume">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_plus_Volume">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Brightness">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Brightness</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_menu">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Menu</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_zoom">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Zoom</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_DVI_D">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>DVI-D</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_VGA_1">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VGA-1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_AV_mute">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AV_mute</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_S_Video">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>S-Video</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_VGA_2">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VGA-2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Video">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Video</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Contrast">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Contrast</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Freeze">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Freeze</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Lens_shift">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lens shift</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_zoom">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Zoom</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_plus_zoom">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_minus_zoom">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_focus">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Focus</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_plus_focus">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_minus_focus">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_mode">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton__Aspect_Ration">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Aspect Ration</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_info">
+         <property name="geometry">
+          <rect>
+           <x>870</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>info</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Re_sync">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Re-sync</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_HDIM_1">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HDMI 1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_HDIM_2">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>230</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HDMI 2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_BNC">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>BNC</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Component">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Component</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Source">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>260</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Source</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_one">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>240</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_zero">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>360</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_two">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>240</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_three">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>240</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_foure">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>280</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_five">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>280</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_six">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>280</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_eight">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>320</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>8</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_nine">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>320</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_seven">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>320</y>
+           <width>31</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Gamma">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Gamma</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_PIP">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PIP</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_Lens_H">
+         <property name="geometry">
+          <rect>
+           <x>440</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Lens H</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_left_H">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>left</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_right_H">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>right</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_Lens_V">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>130</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>Lens V</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_left_V">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>left</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_right_V">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>right</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_H_Keystone">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>H Keystone</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_H_Keystone_plus">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_H_Keystone_minus">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_HDIM_3">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>290</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>HDIM 3</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Display_Port">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Display Port</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Mute">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mute</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3D">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>320</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>3D</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_DB">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>DB</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Sleep_timer">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sleep Timer</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Home">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>350</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Home</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Return">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>700</y>
+           <width>121</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Return</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_12V_trigger">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>210</y>
+           <width>91</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>12V trigger</string>
+         </property>
+         <widget class="QPushButton" name="pushButton_12V_trigger_On">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>On</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_12V_trigger_Off">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Off</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_hot_key">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>191</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Hot Key(user1)F1</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_hot_key_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>350</y>
+           <width>191</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Hot Key(user2)F2</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_hot_key_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>410</y>
+           <width>191</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Hot Key(user3)F3</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_Pattern">
+         <property name="geometry">
+          <rect>
+           <x>469</x>
+           <y>700</y>
+           <width>121</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Pattern</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_exit">
+         <property name="geometry">
+          <rect>
+           <x>600</x>
+           <y>700</y>
+           <width>121</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Exit</string>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </widget>
     </item>

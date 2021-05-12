@@ -935,6 +935,8 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/qpushbutton.h \
+		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/QRadioButton \
+		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/qradiobutton.h \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/QSlider \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/QStatusBar \
 		../../../../Qt/Qt5.11.1/5.11.1/mingw53_32/include/QtWidgets/qstatusbar.h \

@@ -23,6 +23,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
@@ -43,7 +44,6 @@ public:
     QWidget *tabB_23;
     QGridLayout *gridLayout_18;
     QFrame *TAB1;
-    QGridLayout *gridLayout_32;
     QFrame *fram;
     QVBoxLayout *verticalLayout_5;
     QFrame *fra_32;
@@ -57,14 +57,14 @@ public:
     QCheckBox *ON_Power_on_password;
     QFrame *fra_33;
     QGridLayout *gridLayout_9;
+    QRadioButton *ON_mute;
     QLabel *label_27;
-    QCheckBox *ON_2;
-    QCheckBox *OFF_2;
+    QRadioButton *OFF_mute;
     QFrame *fra_34;
     QGridLayout *gridLayout_10;
     QLabel *label_29;
-    QCheckBox *ON_3;
-    QCheckBox *OFF_3;
+    QRadioButton *ON_mute2;
+    QRadioButton *OFF_mute2;
     QFrame *fra_45;
     QGridLayout *gridLayout_13;
     QLabel *SERIAL_PORT_PATH;
@@ -75,13 +75,12 @@ public:
     QFrame *fra_35;
     QVBoxLayout *verticalLayout_6;
     QLabel *label_30;
-    QCheckBox *Freeze;
-    QCheckBox *Unfreeze;
+    QComboBox *Freeze_2;
     QFrame *fr_36;
     QVBoxLayout *verticalLayout_7;
     QLabel *label_31;
-    QCheckBox *DDD;
-    QCheckBox *DD;
+    QRadioButton *DDD;
+    QRadioButton *DD;
     QFrame *fra_43;
     QGridLayout *gridLayout_11;
     QLabel *PC_MODE;
@@ -1435,7 +1434,95 @@ public:
     QLabel *label_10;
     QComboBox *HTTP_box;
     QWidget *tab_17;
-    QWidget *tab_18;
+    QWidget *tab_remote;
+    QFrame *frame_remote;
+    QGroupBox *groupBox_power;
+    QPushButton *Power;
+    QPushButton *PowerOff;
+    QGroupBox *groupBox_mouce;
+    QPushButton *pushButton_mouse_up;
+    QPushButton *pushButton_mouse_left;
+    QPushButton *pushButton_right;
+    QPushButton *pushButton_mouse_enter;
+    QPushButton *pushButton_down;
+    QPushButton *pushButton_right_click;
+    QPushButton *pushButton_left_click;
+    QGroupBox *groupBox_menu;
+    QPushButton *pushButton_up;
+    QPushButton *pushButton_left;
+    QPushButton *pushButton_right_2;
+    QPushButton *pushButton_enter;
+    QPushButton *pushButton_down_2;
+    QGroupBox *groupBox_V_Keystone;
+    QPushButton *pushButton_plus;
+    QPushButton *pushButton_minus;
+    QGroupBox *groupBox_Volume;
+    QPushButton *pushButton_minus_Volume;
+    QPushButton *pushButton_plus_Volume;
+    QPushButton *pushButton_Brightness;
+    QPushButton *pushButton_menu;
+    QPushButton *pushButton_zoom;
+    QPushButton *pushButton_DVI_D;
+    QPushButton *pushButton_VGA_1;
+    QPushButton *pushButton_AV_mute;
+    QPushButton *pushButton_S_Video;
+    QPushButton *pushButton_VGA_2;
+    QPushButton *pushButton_Video;
+    QPushButton *pushButton_Contrast;
+    QPushButton *pushButton_Freeze;
+    QPushButton *pushButton_Lens_shift;
+    QGroupBox *groupBox_zoom;
+    QPushButton *pushButton_plus_zoom;
+    QPushButton *pushButton_minus_zoom;
+    QGroupBox *groupBox_focus;
+    QPushButton *pushButton_plus_focus;
+    QPushButton *pushButton_minus_focus;
+    QPushButton *pushButton_mode;
+    QPushButton *pushButton__Aspect_Ration;
+    QPushButton *pushButton_info;
+    QPushButton *pushButton_Re_sync;
+    QPushButton *pushButton_HDIM_1;
+    QPushButton *pushButton_HDIM_2;
+    QPushButton *pushButton_BNC;
+    QPushButton *pushButton_Component;
+    QPushButton *pushButton_Source;
+    QPushButton *pushButton_one;
+    QPushButton *pushButton_zero;
+    QPushButton *pushButton_two;
+    QPushButton *pushButton_three;
+    QPushButton *pushButton_foure;
+    QPushButton *pushButton_five;
+    QPushButton *pushButton_six;
+    QPushButton *pushButton_eight;
+    QPushButton *pushButton_nine;
+    QPushButton *pushButton_seven;
+    QPushButton *pushButton_Gamma;
+    QPushButton *pushButton_PIP;
+    QGroupBox *groupBox_Lens_H;
+    QPushButton *pushButton_left_H;
+    QPushButton *pushButton_right_H;
+    QGroupBox *groupBox_Lens_V;
+    QPushButton *pushButton_left_V;
+    QPushButton *pushButton_right_V;
+    QGroupBox *groupBox_H_Keystone;
+    QPushButton *pushButton_H_Keystone_plus;
+    QPushButton *pushButton_H_Keystone_minus;
+    QPushButton *pushButton_HDIM_3;
+    QPushButton *pushButton_Display_Port;
+    QPushButton *pushButton_Mute;
+    QPushButton *pushButton_3D;
+    QPushButton *pushButton_DB;
+    QPushButton *pushButton_Sleep_timer;
+    QPushButton *pushButton_Home;
+    QPushButton *pushButton_Return;
+    QGroupBox *groupBox_12V_trigger;
+    QPushButton *pushButton_12V_trigger_On;
+    QPushButton *pushButton_12V_trigger_Off;
+    QPushButton *pushButton_hot_key;
+    QPushButton *pushButton_hot_key_2;
+    QPushButton *pushButton_hot_key_3;
+    QPushButton *pushButton_Pattern;
+    QPushButton *pushButton_exit;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -1464,10 +1551,9 @@ public:
         TAB1->setObjectName(QStringLiteral("TAB1"));
         TAB1->setFrameShape(QFrame::StyledPanel);
         TAB1->setFrameShadow(QFrame::Raised);
-        gridLayout_32 = new QGridLayout(TAB1);
-        gridLayout_32->setObjectName(QStringLiteral("gridLayout_32"));
         fram = new QFrame(TAB1);
         fram->setObjectName(QStringLiteral("fram"));
+        fram->setGeometry(QRect(10, 10, 421, 501));
         fram->setFrameShape(QFrame::Box);
         fram->setFrameShadow(QFrame::Raised);
         verticalLayout_5 = new QVBoxLayout(fram);
@@ -1494,6 +1580,9 @@ public:
         OFF = new QCheckBox(fra_32);
         OFF->setObjectName(QStringLiteral("OFF"));
         OFF->setFont(font);
+        OFF->setChecked(false);
+        OFF->setAutoRepeat(false);
+        OFF->setAutoExclusive(false);
 
         gridLayout_8->addWidget(OFF, 1, 1, 1, 1);
 
@@ -1526,22 +1615,22 @@ public:
         fra_33->setFrameShadow(QFrame::Raised);
         gridLayout_9 = new QGridLayout(fra_33);
         gridLayout_9->setObjectName(QStringLiteral("gridLayout_9"));
+        ON_mute = new QRadioButton(fra_33);
+        ON_mute->setObjectName(QStringLiteral("ON_mute"));
+        ON_mute->setFont(font);
+
+        gridLayout_9->addWidget(ON_mute, 1, 0, 1, 1);
+
         label_27 = new QLabel(fra_33);
         label_27->setObjectName(QStringLiteral("label_27"));
 
         gridLayout_9->addWidget(label_27, 0, 0, 1, 2);
 
-        ON_2 = new QCheckBox(fra_33);
-        ON_2->setObjectName(QStringLiteral("ON_2"));
-        ON_2->setFont(font);
+        OFF_mute = new QRadioButton(fra_33);
+        OFF_mute->setObjectName(QStringLiteral("OFF_mute"));
+        OFF_mute->setFont(font);
 
-        gridLayout_9->addWidget(ON_2, 1, 0, 1, 1);
-
-        OFF_2 = new QCheckBox(fra_33);
-        OFF_2->setObjectName(QStringLiteral("OFF_2"));
-        OFF_2->setFont(font);
-
-        gridLayout_9->addWidget(OFF_2, 1, 1, 1, 1);
+        gridLayout_9->addWidget(OFF_mute, 1, 1, 1, 1);
 
 
         verticalLayout_5->addWidget(fra_33);
@@ -1557,17 +1646,17 @@ public:
 
         gridLayout_10->addWidget(label_29, 0, 0, 1, 2);
 
-        ON_3 = new QCheckBox(fra_34);
-        ON_3->setObjectName(QStringLiteral("ON_3"));
-        ON_3->setFont(font);
+        ON_mute2 = new QRadioButton(fra_34);
+        ON_mute2->setObjectName(QStringLiteral("ON_mute2"));
+        ON_mute2->setFont(font);
 
-        gridLayout_10->addWidget(ON_3, 1, 0, 1, 1);
+        gridLayout_10->addWidget(ON_mute2, 1, 0, 1, 1);
 
-        OFF_3 = new QCheckBox(fra_34);
-        OFF_3->setObjectName(QStringLiteral("OFF_3"));
-        OFF_3->setFont(font);
+        OFF_mute2 = new QRadioButton(fra_34);
+        OFF_mute2->setObjectName(QStringLiteral("OFF_mute2"));
+        OFF_mute2->setFont(font);
 
-        gridLayout_10->addWidget(OFF_3, 1, 1, 1, 1);
+        gridLayout_10->addWidget(OFF_mute2, 1, 1, 1, 1);
 
 
         verticalLayout_5->addWidget(fra_34);
@@ -1598,11 +1687,9 @@ public:
 
         verticalLayout_5->addWidget(fra_45);
 
-
-        gridLayout_32->addWidget(fram, 0, 0, 1, 1);
-
         fr_2 = new QFrame(TAB1);
         fr_2->setObjectName(QStringLiteral("fr_2"));
+        fr_2->setGeometry(QRect(460, 50, 391, 461));
         fr_2->setFrameShape(QFrame::Box);
         fr_2->setFrameShadow(QFrame::Raised);
         verticalLayout_8 = new QVBoxLayout(fr_2);
@@ -1618,17 +1705,12 @@ public:
 
         verticalLayout_6->addWidget(label_30);
 
-        Freeze = new QCheckBox(fra_35);
-        Freeze->setObjectName(QStringLiteral("Freeze"));
-        Freeze->setFont(font);
+        Freeze_2 = new QComboBox(fra_35);
+        Freeze_2->addItem(QString());
+        Freeze_2->addItem(QString());
+        Freeze_2->setObjectName(QStringLiteral("Freeze_2"));
 
-        verticalLayout_6->addWidget(Freeze);
-
-        Unfreeze = new QCheckBox(fra_35);
-        Unfreeze->setObjectName(QStringLiteral("Unfreeze"));
-        Unfreeze->setFont(font);
-
-        verticalLayout_6->addWidget(Unfreeze);
+        verticalLayout_6->addWidget(Freeze_2);
 
 
         verticalLayout_8->addWidget(fra_35);
@@ -1644,13 +1726,17 @@ public:
 
         verticalLayout_7->addWidget(label_31);
 
-        DDD = new QCheckBox(fr_36);
+        DDD = new QRadioButton(fr_36);
         DDD->setObjectName(QStringLiteral("DDD"));
-        DDD->setFont(font);
+        QFont font1;
+        font1.setPointSize(14);
+        font1.setBold(false);
+        font1.setWeight(50);
+        DDD->setFont(font1);
 
         verticalLayout_7->addWidget(DDD);
 
-        DD = new QCheckBox(fr_36);
+        DD = new QRadioButton(fr_36);
         DD->setObjectName(QStringLiteral("DD"));
         DD->setFont(font);
 
@@ -1736,9 +1822,6 @@ public:
 
 
         verticalLayout_8->addWidget(fra_46);
-
-
-        gridLayout_32->addWidget(fr_2, 0, 1, 1, 1);
 
 
         gridLayout_18->addWidget(TAB1, 0, 0, 1, 1);
@@ -1981,7 +2064,7 @@ public:
         gridLayout_41->setObjectName(QStringLiteral("gridLayout_41"));
         frame_326546546546 = new QFrame(frame_316565);
         frame_326546546546->setObjectName(QStringLiteral("frame_326546546546"));
-        frame_326546546546->setFrameShape(QFrame::StyledPanel);
+        frame_326546546546->setFrameShape(QFrame::Box);
         frame_326546546546->setFrameShadow(QFrame::Raised);
         gridLayout_40 = new QGridLayout(frame_326546546546);
         gridLayout_40->setObjectName(QStringLiteral("gridLayout_40"));
@@ -2034,7 +2117,7 @@ public:
 
         frame___dfsg31 = new QFrame(frame_316565);
         frame___dfsg31->setObjectName(QStringLiteral("frame___dfsg31"));
-        frame___dfsg31->setFrameShape(QFrame::StyledPanel);
+        frame___dfsg31->setFrameShape(QFrame::Box);
         frame___dfsg31->setFrameShadow(QFrame::Raised);
         horizontalLayout_3 = new QHBoxLayout(frame___dfsg31);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
@@ -2055,7 +2138,7 @@ public:
 
         frame_32i = new QFrame(frame_316565);
         frame_32i->setObjectName(QStringLiteral("frame_32i"));
-        frame_32i->setFrameShape(QFrame::StyledPanel);
+        frame_32i->setFrameShape(QFrame::Box);
         frame_32i->setFrameShadow(QFrame::Raised);
         horizontalLayout_7 = new QHBoxLayout(frame_32i);
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
@@ -2085,7 +2168,7 @@ public:
 
         frametrtrrtrtrtg_2 = new QFrame(frame_316565);
         frametrtrrtrtrtg_2->setObjectName(QStringLiteral("frametrtrrtrtrtg_2"));
-        frametrtrrtrtrtg_2->setFrameShape(QFrame::StyledPanel);
+        frametrtrrtrtrtg_2->setFrameShape(QFrame::Box);
         frametrtrrtrtrtg_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_107 = new QHBoxLayout(frametrtrrtrtrtg_2);
         horizontalLayout_107->setObjectName(QStringLiteral("horizontalLayout_107"));
@@ -2107,7 +2190,7 @@ public:
 
         frametrtrrtrtrtg = new QFrame(frame_316565);
         frametrtrrtrtrtg->setObjectName(QStringLiteral("frametrtrrtrtrtg"));
-        frametrtrrtrtrtg->setFrameShape(QFrame::StyledPanel);
+        frametrtrrtrtrtg->setFrameShape(QFrame::Box);
         frametrtrrtrtrtg->setFrameShadow(QFrame::Raised);
         horizontalLayout_106 = new QHBoxLayout(frametrtrrtrtrtg);
         horizontalLayout_106->setObjectName(QStringLiteral("horizontalLayout_106"));
@@ -2129,7 +2212,7 @@ public:
 
         frame_32i_2 = new QFrame(frame_316565);
         frame_32i_2->setObjectName(QStringLiteral("frame_32i_2"));
-        frame_32i_2->setFrameShape(QFrame::StyledPanel);
+        frame_32i_2->setFrameShape(QFrame::Box);
         frame_32i_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_108 = new QHBoxLayout(frame_32i_2);
         horizontalLayout_108->setObjectName(QStringLiteral("horizontalLayout_108"));
@@ -2159,7 +2242,7 @@ public:
 
         frametrtrrtrtrtg_3 = new QFrame(frame_316565);
         frametrtrrtrtrtg_3->setObjectName(QStringLiteral("frametrtrrtrtrtg_3"));
-        frametrtrrtrtrtg_3->setFrameShape(QFrame::StyledPanel);
+        frametrtrrtrtrtg_3->setFrameShape(QFrame::Box);
         frametrtrrtrtrtg_3->setFrameShadow(QFrame::Raised);
         horizontalLayout_109 = new QHBoxLayout(frametrtrrtrtrtg_3);
         horizontalLayout_109->setObjectName(QStringLiteral("horizontalLayout_109"));
@@ -6863,27 +6946,27 @@ public:
         verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
         Rear = new QCheckBox(frame_37);
         Rear->setObjectName(QStringLiteral("Rear"));
-        QFont font1;
-        font1.setPointSize(16);
-        Rear->setFont(font1);
+        QFont font2;
+        font2.setPointSize(16);
+        Rear->setFont(font2);
 
         verticalLayout_9->addWidget(Rear);
 
         Front = new QCheckBox(frame_37);
         Front->setObjectName(QStringLiteral("Front"));
-        Front->setFont(font1);
+        Front->setFont(font2);
 
         verticalLayout_9->addWidget(Front);
 
         Rear_top = new QCheckBox(frame_37);
         Rear_top->setObjectName(QStringLiteral("Rear_top"));
-        Rear_top->setFont(font1);
+        Rear_top->setFont(font2);
 
         verticalLayout_9->addWidget(Rear_top);
 
         Ceiling_top = new QCheckBox(frame_37);
         Ceiling_top->setObjectName(QStringLiteral("Ceiling_top"));
-        Ceiling_top->setFont(font1);
+        Ceiling_top->setFont(font2);
 
         verticalLayout_9->addWidget(Ceiling_top);
 
@@ -9215,9 +9298,275 @@ public:
         tab_17 = new QWidget();
         tab_17->setObjectName(QStringLiteral("tab_17"));
         tabWidget->addTab(tab_17, QString());
-        tab_18 = new QWidget();
-        tab_18->setObjectName(QStringLiteral("tab_18"));
-        tabWidget->addTab(tab_18, QString());
+        tab_remote = new QWidget();
+        tab_remote->setObjectName(QStringLiteral("tab_remote"));
+        frame_remote = new QFrame(tab_remote);
+        frame_remote->setObjectName(QStringLiteral("frame_remote"));
+        frame_remote->setGeometry(QRect(0, 0, 1021, 1061));
+        frame_remote->setFrameShape(QFrame::StyledPanel);
+        frame_remote->setFrameShadow(QFrame::Raised);
+        groupBox_power = new QGroupBox(frame_remote);
+        groupBox_power->setObjectName(QStringLiteral("groupBox_power"));
+        groupBox_power->setGeometry(QRect(20, 10, 191, 71));
+        Power = new QPushButton(groupBox_power);
+        Power->setObjectName(QStringLiteral("Power"));
+        Power->setGeometry(QRect(10, 30, 80, 31));
+        PowerOff = new QPushButton(groupBox_power);
+        PowerOff->setObjectName(QStringLiteral("PowerOff"));
+        PowerOff->setGeometry(QRect(99, 30, 81, 31));
+        groupBox_mouce = new QGroupBox(frame_remote);
+        groupBox_mouce->setObjectName(QStringLiteral("groupBox_mouce"));
+        groupBox_mouce->setGeometry(QRect(650, 10, 331, 191));
+        pushButton_mouse_up = new QPushButton(groupBox_mouce);
+        pushButton_mouse_up->setObjectName(QStringLiteral("pushButton_mouse_up"));
+        pushButton_mouse_up->setGeometry(QRect(90, 30, 171, 21));
+        pushButton_mouse_left = new QPushButton(groupBox_mouce);
+        pushButton_mouse_left->setObjectName(QStringLiteral("pushButton_mouse_left"));
+        pushButton_mouse_left->setGeometry(QRect(30, 60, 131, 21));
+        pushButton_right = new QPushButton(groupBox_mouce);
+        pushButton_right->setObjectName(QStringLiteral("pushButton_right"));
+        pushButton_right->setGeometry(QRect(30, 100, 131, 21));
+        pushButton_mouse_enter = new QPushButton(groupBox_mouce);
+        pushButton_mouse_enter->setObjectName(QStringLiteral("pushButton_mouse_enter"));
+        pushButton_mouse_enter->setGeometry(QRect(180, 60, 131, 21));
+        pushButton_down = new QPushButton(groupBox_mouce);
+        pushButton_down->setObjectName(QStringLiteral("pushButton_down"));
+        pushButton_down->setGeometry(QRect(180, 100, 131, 21));
+        pushButton_right_click = new QPushButton(groupBox_mouce);
+        pushButton_right_click->setObjectName(QStringLiteral("pushButton_right_click"));
+        pushButton_right_click->setGeometry(QRect(180, 140, 131, 21));
+        pushButton_left_click = new QPushButton(groupBox_mouce);
+        pushButton_left_click->setObjectName(QStringLiteral("pushButton_left_click"));
+        pushButton_left_click->setGeometry(QRect(30, 140, 131, 21));
+        groupBox_menu = new QGroupBox(frame_remote);
+        groupBox_menu->setObjectName(QStringLiteral("groupBox_menu"));
+        groupBox_menu->setGeometry(QRect(260, 10, 281, 111));
+        pushButton_up = new QPushButton(groupBox_menu);
+        pushButton_up->setObjectName(QStringLiteral("pushButton_up"));
+        pushButton_up->setGeometry(QRect(100, 20, 80, 21));
+        pushButton_left = new QPushButton(groupBox_menu);
+        pushButton_left->setObjectName(QStringLiteral("pushButton_left"));
+        pushButton_left->setGeometry(QRect(10, 50, 80, 21));
+        pushButton_right_2 = new QPushButton(groupBox_menu);
+        pushButton_right_2->setObjectName(QStringLiteral("pushButton_right_2"));
+        pushButton_right_2->setGeometry(QRect(190, 50, 80, 21));
+        pushButton_enter = new QPushButton(groupBox_menu);
+        pushButton_enter->setObjectName(QStringLiteral("pushButton_enter"));
+        pushButton_enter->setGeometry(QRect(100, 50, 80, 21));
+        pushButton_down_2 = new QPushButton(groupBox_menu);
+        pushButton_down_2->setObjectName(QStringLiteral("pushButton_down_2"));
+        pushButton_down_2->setGeometry(QRect(100, 80, 80, 21));
+        groupBox_V_Keystone = new QGroupBox(frame_remote);
+        groupBox_V_Keystone->setObjectName(QStringLiteral("groupBox_V_Keystone"));
+        groupBox_V_Keystone->setGeometry(QRect(10, 130, 91, 71));
+        pushButton_plus = new QPushButton(groupBox_V_Keystone);
+        pushButton_plus->setObjectName(QStringLiteral("pushButton_plus"));
+        pushButton_plus->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_minus = new QPushButton(groupBox_V_Keystone);
+        pushButton_minus->setObjectName(QStringLiteral("pushButton_minus"));
+        pushButton_minus->setGeometry(QRect(50, 30, 31, 31));
+        groupBox_Volume = new QGroupBox(frame_remote);
+        groupBox_Volume->setObjectName(QStringLiteral("groupBox_Volume"));
+        groupBox_Volume->setGeometry(QRect(110, 130, 91, 71));
+        pushButton_minus_Volume = new QPushButton(groupBox_Volume);
+        pushButton_minus_Volume->setObjectName(QStringLiteral("pushButton_minus_Volume"));
+        pushButton_minus_Volume->setGeometry(QRect(50, 30, 31, 31));
+        pushButton_plus_Volume = new QPushButton(groupBox_Volume);
+        pushButton_plus_Volume->setObjectName(QStringLiteral("pushButton_plus_Volume"));
+        pushButton_plus_Volume->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_Brightness = new QPushButton(frame_remote);
+        pushButton_Brightness->setObjectName(QStringLiteral("pushButton_Brightness"));
+        pushButton_Brightness->setGeometry(QRect(690, 230, 80, 21));
+        pushButton_menu = new QPushButton(frame_remote);
+        pushButton_menu->setObjectName(QStringLiteral("pushButton_menu"));
+        pushButton_menu->setGeometry(QRect(690, 260, 80, 21));
+        pushButton_zoom = new QPushButton(frame_remote);
+        pushButton_zoom->setObjectName(QStringLiteral("pushButton_zoom"));
+        pushButton_zoom->setGeometry(QRect(780, 230, 80, 21));
+        pushButton_DVI_D = new QPushButton(frame_remote);
+        pushButton_DVI_D->setObjectName(QStringLiteral("pushButton_DVI_D"));
+        pushButton_DVI_D->setGeometry(QRect(780, 260, 80, 21));
+        pushButton_VGA_1 = new QPushButton(frame_remote);
+        pushButton_VGA_1->setObjectName(QStringLiteral("pushButton_VGA_1"));
+        pushButton_VGA_1->setGeometry(QRect(870, 230, 80, 21));
+        pushButton_AV_mute = new QPushButton(frame_remote);
+        pushButton_AV_mute->setObjectName(QStringLiteral("pushButton_AV_mute"));
+        pushButton_AV_mute->setGeometry(QRect(870, 260, 80, 21));
+        pushButton_S_Video = new QPushButton(frame_remote);
+        pushButton_S_Video->setObjectName(QStringLiteral("pushButton_S_Video"));
+        pushButton_S_Video->setGeometry(QRect(690, 320, 80, 21));
+        pushButton_VGA_2 = new QPushButton(frame_remote);
+        pushButton_VGA_2->setObjectName(QStringLiteral("pushButton_VGA_2"));
+        pushButton_VGA_2->setGeometry(QRect(690, 290, 80, 21));
+        pushButton_Video = new QPushButton(frame_remote);
+        pushButton_Video->setObjectName(QStringLiteral("pushButton_Video"));
+        pushButton_Video->setGeometry(QRect(780, 290, 80, 21));
+        pushButton_Contrast = new QPushButton(frame_remote);
+        pushButton_Contrast->setObjectName(QStringLiteral("pushButton_Contrast"));
+        pushButton_Contrast->setGeometry(QRect(780, 320, 80, 21));
+        pushButton_Freeze = new QPushButton(frame_remote);
+        pushButton_Freeze->setObjectName(QStringLiteral("pushButton_Freeze"));
+        pushButton_Freeze->setGeometry(QRect(870, 290, 80, 21));
+        pushButton_Lens_shift = new QPushButton(frame_remote);
+        pushButton_Lens_shift->setObjectName(QStringLiteral("pushButton_Lens_shift"));
+        pushButton_Lens_shift->setGeometry(QRect(870, 320, 80, 21));
+        groupBox_zoom = new QGroupBox(frame_remote);
+        groupBox_zoom->setObjectName(QStringLiteral("groupBox_zoom"));
+        groupBox_zoom->setGeometry(QRect(220, 130, 91, 71));
+        pushButton_plus_zoom = new QPushButton(groupBox_zoom);
+        pushButton_plus_zoom->setObjectName(QStringLiteral("pushButton_plus_zoom"));
+        pushButton_plus_zoom->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_minus_zoom = new QPushButton(groupBox_zoom);
+        pushButton_minus_zoom->setObjectName(QStringLiteral("pushButton_minus_zoom"));
+        pushButton_minus_zoom->setGeometry(QRect(50, 30, 31, 31));
+        groupBox_focus = new QGroupBox(frame_remote);
+        groupBox_focus->setObjectName(QStringLiteral("groupBox_focus"));
+        groupBox_focus->setGeometry(QRect(330, 130, 91, 71));
+        pushButton_plus_focus = new QPushButton(groupBox_focus);
+        pushButton_plus_focus->setObjectName(QStringLiteral("pushButton_plus_focus"));
+        pushButton_plus_focus->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_minus_focus = new QPushButton(groupBox_focus);
+        pushButton_minus_focus->setObjectName(QStringLiteral("pushButton_minus_focus"));
+        pushButton_minus_focus->setGeometry(QRect(50, 30, 31, 31));
+        pushButton_mode = new QPushButton(frame_remote);
+        pushButton_mode->setObjectName(QStringLiteral("pushButton_mode"));
+        pushButton_mode->setGeometry(QRect(690, 350, 80, 21));
+        pushButton__Aspect_Ration = new QPushButton(frame_remote);
+        pushButton__Aspect_Ration->setObjectName(QStringLiteral("pushButton__Aspect_Ration"));
+        pushButton__Aspect_Ration->setGeometry(QRect(780, 350, 80, 21));
+        pushButton_info = new QPushButton(frame_remote);
+        pushButton_info->setObjectName(QStringLiteral("pushButton_info"));
+        pushButton_info->setGeometry(QRect(870, 350, 80, 21));
+        pushButton_Re_sync = new QPushButton(frame_remote);
+        pushButton_Re_sync->setObjectName(QStringLiteral("pushButton_Re_sync"));
+        pushButton_Re_sync->setGeometry(QRect(230, 230, 80, 21));
+        pushButton_HDIM_1 = new QPushButton(frame_remote);
+        pushButton_HDIM_1->setObjectName(QStringLiteral("pushButton_HDIM_1"));
+        pushButton_HDIM_1->setGeometry(QRect(320, 230, 80, 21));
+        pushButton_HDIM_2 = new QPushButton(frame_remote);
+        pushButton_HDIM_2->setObjectName(QStringLiteral("pushButton_HDIM_2"));
+        pushButton_HDIM_2->setGeometry(QRect(410, 230, 80, 21));
+        pushButton_BNC = new QPushButton(frame_remote);
+        pushButton_BNC->setObjectName(QStringLiteral("pushButton_BNC"));
+        pushButton_BNC->setGeometry(QRect(230, 260, 80, 21));
+        pushButton_Component = new QPushButton(frame_remote);
+        pushButton_Component->setObjectName(QStringLiteral("pushButton_Component"));
+        pushButton_Component->setGeometry(QRect(320, 260, 80, 21));
+        pushButton_Source = new QPushButton(frame_remote);
+        pushButton_Source->setObjectName(QStringLiteral("pushButton_Source"));
+        pushButton_Source->setGeometry(QRect(410, 260, 80, 21));
+        pushButton_one = new QPushButton(frame_remote);
+        pushButton_one->setObjectName(QStringLiteral("pushButton_one"));
+        pushButton_one->setGeometry(QRect(540, 240, 31, 31));
+        pushButton_zero = new QPushButton(frame_remote);
+        pushButton_zero->setObjectName(QStringLiteral("pushButton_zero"));
+        pushButton_zero->setGeometry(QRect(580, 360, 31, 31));
+        pushButton_two = new QPushButton(frame_remote);
+        pushButton_two->setObjectName(QStringLiteral("pushButton_two"));
+        pushButton_two->setGeometry(QRect(580, 240, 31, 31));
+        pushButton_three = new QPushButton(frame_remote);
+        pushButton_three->setObjectName(QStringLiteral("pushButton_three"));
+        pushButton_three->setGeometry(QRect(620, 240, 31, 31));
+        pushButton_foure = new QPushButton(frame_remote);
+        pushButton_foure->setObjectName(QStringLiteral("pushButton_foure"));
+        pushButton_foure->setGeometry(QRect(540, 280, 31, 31));
+        pushButton_five = new QPushButton(frame_remote);
+        pushButton_five->setObjectName(QStringLiteral("pushButton_five"));
+        pushButton_five->setGeometry(QRect(580, 280, 31, 31));
+        pushButton_six = new QPushButton(frame_remote);
+        pushButton_six->setObjectName(QStringLiteral("pushButton_six"));
+        pushButton_six->setGeometry(QRect(620, 280, 31, 31));
+        pushButton_eight = new QPushButton(frame_remote);
+        pushButton_eight->setObjectName(QStringLiteral("pushButton_eight"));
+        pushButton_eight->setGeometry(QRect(580, 320, 31, 31));
+        pushButton_nine = new QPushButton(frame_remote);
+        pushButton_nine->setObjectName(QStringLiteral("pushButton_nine"));
+        pushButton_nine->setGeometry(QRect(620, 320, 31, 31));
+        pushButton_seven = new QPushButton(frame_remote);
+        pushButton_seven->setObjectName(QStringLiteral("pushButton_seven"));
+        pushButton_seven->setGeometry(QRect(540, 320, 31, 31));
+        pushButton_Gamma = new QPushButton(frame_remote);
+        pushButton_Gamma->setObjectName(QStringLiteral("pushButton_Gamma"));
+        pushButton_Gamma->setGeometry(QRect(230, 290, 80, 21));
+        pushButton_PIP = new QPushButton(frame_remote);
+        pushButton_PIP->setObjectName(QStringLiteral("pushButton_PIP"));
+        pushButton_PIP->setGeometry(QRect(320, 290, 80, 21));
+        groupBox_Lens_H = new QGroupBox(frame_remote);
+        groupBox_Lens_H->setObjectName(QStringLiteral("groupBox_Lens_H"));
+        groupBox_Lens_H->setGeometry(QRect(440, 130, 91, 71));
+        pushButton_left_H = new QPushButton(groupBox_Lens_H);
+        pushButton_left_H->setObjectName(QStringLiteral("pushButton_left_H"));
+        pushButton_left_H->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_right_H = new QPushButton(groupBox_Lens_H);
+        pushButton_right_H->setObjectName(QStringLiteral("pushButton_right_H"));
+        pushButton_right_H->setGeometry(QRect(50, 30, 31, 31));
+        groupBox_Lens_V = new QGroupBox(frame_remote);
+        groupBox_Lens_V->setObjectName(QStringLiteral("groupBox_Lens_V"));
+        groupBox_Lens_V->setGeometry(QRect(550, 130, 91, 71));
+        pushButton_left_V = new QPushButton(groupBox_Lens_V);
+        pushButton_left_V->setObjectName(QStringLiteral("pushButton_left_V"));
+        pushButton_left_V->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_right_V = new QPushButton(groupBox_Lens_V);
+        pushButton_right_V->setObjectName(QStringLiteral("pushButton_right_V"));
+        pushButton_right_V->setGeometry(QRect(50, 30, 31, 31));
+        groupBox_H_Keystone = new QGroupBox(frame_remote);
+        groupBox_H_Keystone->setObjectName(QStringLiteral("groupBox_H_Keystone"));
+        groupBox_H_Keystone->setGeometry(QRect(10, 210, 91, 71));
+        pushButton_H_Keystone_plus = new QPushButton(groupBox_H_Keystone);
+        pushButton_H_Keystone_plus->setObjectName(QStringLiteral("pushButton_H_Keystone_plus"));
+        pushButton_H_Keystone_plus->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_H_Keystone_minus = new QPushButton(groupBox_H_Keystone);
+        pushButton_H_Keystone_minus->setObjectName(QStringLiteral("pushButton_H_Keystone_minus"));
+        pushButton_H_Keystone_minus->setGeometry(QRect(50, 30, 31, 31));
+        pushButton_HDIM_3 = new QPushButton(frame_remote);
+        pushButton_HDIM_3->setObjectName(QStringLiteral("pushButton_HDIM_3"));
+        pushButton_HDIM_3->setGeometry(QRect(410, 290, 80, 21));
+        pushButton_Display_Port = new QPushButton(frame_remote);
+        pushButton_Display_Port->setObjectName(QStringLiteral("pushButton_Display_Port"));
+        pushButton_Display_Port->setGeometry(QRect(230, 320, 80, 21));
+        pushButton_Mute = new QPushButton(frame_remote);
+        pushButton_Mute->setObjectName(QStringLiteral("pushButton_Mute"));
+        pushButton_Mute->setGeometry(QRect(320, 320, 80, 21));
+        pushButton_3D = new QPushButton(frame_remote);
+        pushButton_3D->setObjectName(QStringLiteral("pushButton_3D"));
+        pushButton_3D->setGeometry(QRect(410, 320, 80, 21));
+        pushButton_DB = new QPushButton(frame_remote);
+        pushButton_DB->setObjectName(QStringLiteral("pushButton_DB"));
+        pushButton_DB->setGeometry(QRect(230, 350, 80, 21));
+        pushButton_Sleep_timer = new QPushButton(frame_remote);
+        pushButton_Sleep_timer->setObjectName(QStringLiteral("pushButton_Sleep_timer"));
+        pushButton_Sleep_timer->setGeometry(QRect(320, 350, 80, 21));
+        pushButton_Home = new QPushButton(frame_remote);
+        pushButton_Home->setObjectName(QStringLiteral("pushButton_Home"));
+        pushButton_Home->setGeometry(QRect(410, 350, 80, 21));
+        pushButton_Return = new QPushButton(frame_remote);
+        pushButton_Return->setObjectName(QStringLiteral("pushButton_Return"));
+        pushButton_Return->setGeometry(QRect(340, 700, 121, 51));
+        groupBox_12V_trigger = new QGroupBox(frame_remote);
+        groupBox_12V_trigger->setObjectName(QStringLiteral("groupBox_12V_trigger"));
+        groupBox_12V_trigger->setGeometry(QRect(110, 210, 91, 71));
+        pushButton_12V_trigger_On = new QPushButton(groupBox_12V_trigger);
+        pushButton_12V_trigger_On->setObjectName(QStringLiteral("pushButton_12V_trigger_On"));
+        pushButton_12V_trigger_On->setGeometry(QRect(10, 30, 31, 31));
+        pushButton_12V_trigger_Off = new QPushButton(groupBox_12V_trigger);
+        pushButton_12V_trigger_Off->setObjectName(QStringLiteral("pushButton_12V_trigger_Off"));
+        pushButton_12V_trigger_Off->setGeometry(QRect(50, 30, 31, 31));
+        pushButton_hot_key = new QPushButton(frame_remote);
+        pushButton_hot_key->setObjectName(QStringLiteral("pushButton_hot_key"));
+        pushButton_hot_key->setGeometry(QRect(10, 290, 191, 51));
+        pushButton_hot_key_2 = new QPushButton(frame_remote);
+        pushButton_hot_key_2->setObjectName(QStringLiteral("pushButton_hot_key_2"));
+        pushButton_hot_key_2->setGeometry(QRect(10, 350, 191, 51));
+        pushButton_hot_key_3 = new QPushButton(frame_remote);
+        pushButton_hot_key_3->setObjectName(QStringLiteral("pushButton_hot_key_3"));
+        pushButton_hot_key_3->setGeometry(QRect(10, 410, 191, 51));
+        pushButton_Pattern = new QPushButton(frame_remote);
+        pushButton_Pattern->setObjectName(QStringLiteral("pushButton_Pattern"));
+        pushButton_Pattern->setGeometry(QRect(469, 700, 121, 51));
+        pushButton_exit = new QPushButton(frame_remote);
+        pushButton_exit->setObjectName(QStringLiteral("pushButton_exit"));
+        pushButton_exit->setGeometry(QRect(600, 700, 121, 51));
+        tabWidget->addTab(tab_remote, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
 
@@ -9232,11 +9581,11 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(6);
         tab_Other_Items->setCurrentIndex(5);
-        tabWidget_2->setCurrentIndex(9);
-        tabWidget_4->setCurrentIndex(7);
-        tabWidget_3->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(0);
+        tabWidget_4->setCurrentIndex(4);
+        tabWidget_3->setCurrentIndex(6);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -9250,18 +9599,19 @@ public:
         OFF->setText(QApplication::translate("MainWindow", "Off", nullptr));
         label_Power_on_password->setText(QApplication::translate("MainWindow", "Power On (Password)", nullptr));
         ON_Power_on_password->setText(QApplication::translate("MainWindow", "On ", nullptr));
+        ON_mute->setText(QApplication::translate("MainWindow", "On", nullptr));
         label_27->setText(QApplication::translate("MainWindow", "AV Mute", nullptr));
-        ON_2->setText(QApplication::translate("MainWindow", "On ", nullptr));
-        OFF_2->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        OFF_mute->setText(QApplication::translate("MainWindow", "Off", nullptr));
         label_29->setText(QApplication::translate("MainWindow", " Mute", nullptr));
-        ON_3->setText(QApplication::translate("MainWindow", "On ", nullptr));
-        OFF_3->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        ON_mute2->setText(QApplication::translate("MainWindow", "On", nullptr));
+        OFF_mute2->setText(QApplication::translate("MainWindow", "Off", nullptr));
         SERIAL_PORT_PATH->setText(QApplication::translate("MainWindow", "Serial Port Path", nullptr));
         ON_6->setText(QApplication::translate("MainWindow", "HDBaseT", nullptr));
         OFF_6->setText(QApplication::translate("MainWindow", "RS232", nullptr));
         label_30->setText(QApplication::translate("MainWindow", "Freeze", nullptr));
-        Freeze->setText(QApplication::translate("MainWindow", "Freeze", nullptr));
-        Unfreeze->setText(QApplication::translate("MainWindow", "Unfreeze", nullptr));
+        Freeze_2->setItemText(0, QApplication::translate("MainWindow", "Unfreeze", nullptr));
+        Freeze_2->setItemText(1, QApplication::translate("MainWindow", "Freeze", nullptr));
+
         label_31->setText(QApplication::translate("MainWindow", "Output 3D state", nullptr));
         DDD->setText(QApplication::translate("MainWindow", "3D", nullptr));
         DD->setText(QApplication::translate("MainWindow", "2D", nullptr));
@@ -10409,7 +10759,94 @@ public:
 
         tabWidget->setTabText(tabWidget->indexOf(tab_16), QApplication::translate("MainWindow", "Network", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_17), QApplication::translate("MainWindow", "Info", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_18), QApplication::translate("MainWindow", "Remote Control Simulation", nullptr));
+        groupBox_power->setTitle(QApplication::translate("MainWindow", "Power", nullptr));
+        Power->setText(QApplication::translate("MainWindow", "Power", nullptr));
+        PowerOff->setText(QApplication::translate("MainWindow", "Power Off", nullptr));
+        groupBox_mouce->setTitle(QApplication::translate("MainWindow", "Mouse Control", nullptr));
+        pushButton_mouse_up->setText(QApplication::translate("MainWindow", "Remote Mouse up", nullptr));
+        pushButton_mouse_left->setText(QApplication::translate("MainWindow", "Remote Mouse Left", nullptr));
+        pushButton_right->setText(QApplication::translate("MainWindow", "Remote Mouse Right", nullptr));
+        pushButton_mouse_enter->setText(QApplication::translate("MainWindow", "Remote Mouse Enter", nullptr));
+        pushButton_down->setText(QApplication::translate("MainWindow", "Remote Mouse Down", nullptr));
+        pushButton_right_click->setText(QApplication::translate("MainWindow", "Mouse Right Click", nullptr));
+        pushButton_left_click->setText(QApplication::translate("MainWindow", "Mouse Left Click", nullptr));
+        groupBox_menu->setTitle(QApplication::translate("MainWindow", "Menu", nullptr));
+        pushButton_up->setText(QApplication::translate("MainWindow", "Up", nullptr));
+        pushButton_left->setText(QApplication::translate("MainWindow", "Left", nullptr));
+        pushButton_right_2->setText(QApplication::translate("MainWindow", "Right", nullptr));
+        pushButton_enter->setText(QApplication::translate("MainWindow", "Enter", nullptr));
+        pushButton_down_2->setText(QApplication::translate("MainWindow", "Down", nullptr));
+        groupBox_V_Keystone->setTitle(QApplication::translate("MainWindow", "V Keystone ", nullptr));
+        pushButton_plus->setText(QApplication::translate("MainWindow", "+", nullptr));
+        pushButton_minus->setText(QApplication::translate("MainWindow", "-", nullptr));
+        groupBox_Volume->setTitle(QApplication::translate("MainWindow", "Volume", nullptr));
+        pushButton_minus_Volume->setText(QApplication::translate("MainWindow", "-", nullptr));
+        pushButton_plus_Volume->setText(QApplication::translate("MainWindow", "+", nullptr));
+        pushButton_Brightness->setText(QApplication::translate("MainWindow", "Brightness", nullptr));
+        pushButton_menu->setText(QApplication::translate("MainWindow", "Menu", nullptr));
+        pushButton_zoom->setText(QApplication::translate("MainWindow", "Zoom", nullptr));
+        pushButton_DVI_D->setText(QApplication::translate("MainWindow", "DVI-D", nullptr));
+        pushButton_VGA_1->setText(QApplication::translate("MainWindow", "VGA-1", nullptr));
+        pushButton_AV_mute->setText(QApplication::translate("MainWindow", "AV_mute", nullptr));
+        pushButton_S_Video->setText(QApplication::translate("MainWindow", "S-Video", nullptr));
+        pushButton_VGA_2->setText(QApplication::translate("MainWindow", "VGA-2", nullptr));
+        pushButton_Video->setText(QApplication::translate("MainWindow", "Video", nullptr));
+        pushButton_Contrast->setText(QApplication::translate("MainWindow", "Contrast", nullptr));
+        pushButton_Freeze->setText(QApplication::translate("MainWindow", "Freeze", nullptr));
+        pushButton_Lens_shift->setText(QApplication::translate("MainWindow", "Lens shift", nullptr));
+        groupBox_zoom->setTitle(QApplication::translate("MainWindow", "Zoom", nullptr));
+        pushButton_plus_zoom->setText(QApplication::translate("MainWindow", "+", nullptr));
+        pushButton_minus_zoom->setText(QApplication::translate("MainWindow", "-", nullptr));
+        groupBox_focus->setTitle(QApplication::translate("MainWindow", "Focus", nullptr));
+        pushButton_plus_focus->setText(QApplication::translate("MainWindow", "+", nullptr));
+        pushButton_minus_focus->setText(QApplication::translate("MainWindow", "-", nullptr));
+        pushButton_mode->setText(QApplication::translate("MainWindow", "Mode", nullptr));
+        pushButton__Aspect_Ration->setText(QApplication::translate("MainWindow", "Aspect Ration", nullptr));
+        pushButton_info->setText(QApplication::translate("MainWindow", "info", nullptr));
+        pushButton_Re_sync->setText(QApplication::translate("MainWindow", "Re-sync", nullptr));
+        pushButton_HDIM_1->setText(QApplication::translate("MainWindow", "HDMI 1", nullptr));
+        pushButton_HDIM_2->setText(QApplication::translate("MainWindow", "HDMI 2", nullptr));
+        pushButton_BNC->setText(QApplication::translate("MainWindow", "BNC", nullptr));
+        pushButton_Component->setText(QApplication::translate("MainWindow", "Component", nullptr));
+        pushButton_Source->setText(QApplication::translate("MainWindow", "Source", nullptr));
+        pushButton_one->setText(QApplication::translate("MainWindow", "1", nullptr));
+        pushButton_zero->setText(QApplication::translate("MainWindow", "0", nullptr));
+        pushButton_two->setText(QApplication::translate("MainWindow", "2", nullptr));
+        pushButton_three->setText(QApplication::translate("MainWindow", "3", nullptr));
+        pushButton_foure->setText(QApplication::translate("MainWindow", "4", nullptr));
+        pushButton_five->setText(QApplication::translate("MainWindow", "5", nullptr));
+        pushButton_six->setText(QApplication::translate("MainWindow", "6", nullptr));
+        pushButton_eight->setText(QApplication::translate("MainWindow", "8", nullptr));
+        pushButton_nine->setText(QApplication::translate("MainWindow", "9", nullptr));
+        pushButton_seven->setText(QApplication::translate("MainWindow", "7", nullptr));
+        pushButton_Gamma->setText(QApplication::translate("MainWindow", "Gamma", nullptr));
+        pushButton_PIP->setText(QApplication::translate("MainWindow", "PIP", nullptr));
+        groupBox_Lens_H->setTitle(QApplication::translate("MainWindow", "Lens H", nullptr));
+        pushButton_left_H->setText(QApplication::translate("MainWindow", "left", nullptr));
+        pushButton_right_H->setText(QApplication::translate("MainWindow", "right", nullptr));
+        groupBox_Lens_V->setTitle(QApplication::translate("MainWindow", "Lens V", nullptr));
+        pushButton_left_V->setText(QApplication::translate("MainWindow", "left", nullptr));
+        pushButton_right_V->setText(QApplication::translate("MainWindow", "right", nullptr));
+        groupBox_H_Keystone->setTitle(QApplication::translate("MainWindow", "H Keystone", nullptr));
+        pushButton_H_Keystone_plus->setText(QApplication::translate("MainWindow", "+", nullptr));
+        pushButton_H_Keystone_minus->setText(QApplication::translate("MainWindow", "-", nullptr));
+        pushButton_HDIM_3->setText(QApplication::translate("MainWindow", "HDIM 3", nullptr));
+        pushButton_Display_Port->setText(QApplication::translate("MainWindow", "Display Port", nullptr));
+        pushButton_Mute->setText(QApplication::translate("MainWindow", "Mute", nullptr));
+        pushButton_3D->setText(QApplication::translate("MainWindow", "3D", nullptr));
+        pushButton_DB->setText(QApplication::translate("MainWindow", "DB", nullptr));
+        pushButton_Sleep_timer->setText(QApplication::translate("MainWindow", "Sleep Timer", nullptr));
+        pushButton_Home->setText(QApplication::translate("MainWindow", "Home", nullptr));
+        pushButton_Return->setText(QApplication::translate("MainWindow", "Return", nullptr));
+        groupBox_12V_trigger->setTitle(QApplication::translate("MainWindow", "12V trigger", nullptr));
+        pushButton_12V_trigger_On->setText(QApplication::translate("MainWindow", "On", nullptr));
+        pushButton_12V_trigger_Off->setText(QApplication::translate("MainWindow", "Off", nullptr));
+        pushButton_hot_key->setText(QApplication::translate("MainWindow", "Hot Key(user1)F1", nullptr));
+        pushButton_hot_key_2->setText(QApplication::translate("MainWindow", "Hot Key(user2)F2", nullptr));
+        pushButton_hot_key_3->setText(QApplication::translate("MainWindow", "Hot Key(user3)F3", nullptr));
+        pushButton_Pattern->setText(QApplication::translate("MainWindow", "Pattern", nullptr));
+        pushButton_exit->setText(QApplication::translate("MainWindow", "Exit", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_remote), QApplication::translate("MainWindow", "Remote Control Simulation", nullptr));
     } // retranslateUi
 
 };
