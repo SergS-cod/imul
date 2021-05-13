@@ -724,7 +724,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==7){
             tmp = ui->horizontalSlider_V_Zoom->value();
             Ok.append(QString::number(tmp));
-            qDebug()<<Ok;
+            //qDebug()<<Ok;
             return;
         }
     }
@@ -1339,6 +1339,24 @@ void MainWindow:: razbor_com(parameter temp)
             }
         }
     }
+
+    //Color Wheel Index
+    if(temp.getInt_command()==559){
+        if(temp.getInt_variable()==2){
+            tmp = ui->horizontalSlider_2xxxxx->value();
+            Ok.append(QString::number(tmp));
+            return;
+        }
+        if(temp.getInt_variable()==3){
+            tmp = ui->horizontalSlider_3xxxxx->value();
+            Ok.append(QString::number(tmp));
+            return;
+        }
+    }
+
+
+
+
     //WRITE-----------------------------------------------------------------------------------------------
     // POWER ON / OFF
     if(temp.getInt_command()==0){
@@ -1358,26 +1376,26 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-    if(temp.getInt_command()==124)
-    {
-        if(temp.getInt_variable()==1)
-        {
-            if ((ui->ON->isChecked()==Qt::Checked)&&(ui->OFF->isChecked()==Qt::Unchecked))
-            {
-                QByteArray To;
-                To.append("Ok1");
-                emit s_send_to(To);
-            }
-            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
-            {
-                QByteArray To;
-                To.append("Ok0");
-                emit s_send_to(To);
-            }
+//    if(temp.getInt_command()==124)
+//    {
+//        if(temp.getInt_variable()==1)
+//        {
+//            if ((ui->ON->isChecked()==Qt::Checked)&&(ui->OFF->isChecked()==Qt::Unchecked))
+//            {
+//                QByteArray To;
+//                To.append("Ok1");
+//                emit s_send_to(To);
+//            }
+//            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
+//            {
+//                QByteArray To;
+//                To.append("Ok0");
+//                emit s_send_to(To);
+//            }
 
-        }
+//        }
 
-    }
+//    }
     ////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////setup screen type 16 9 16 10
 
@@ -1436,36 +1454,36 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-    if(temp.getInt_command()==129)
-    {
-        if(temp.getInt_variable()==1)
-        {
-            if ((ui->Front->isChecked()==Qt::Checked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-            {
-                QByteArray To;
-                To.append("Ok0");
-                emit s_send_to(To);
-            }
-            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-            {
-                QByteArray To;
-                To.append("Ok1");
-                emit s_send_to(To);
-            }
-            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-            {
-                QByteArray To;
-                To.append("Ok2");
-                emit s_send_to(To);
-            }
-            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
-            {
-                QByteArray To;
-                To.append("Ok3");
-                emit s_send_to(To);
-            }
-        }
-    }
+//    if(temp.getInt_command()==129)
+//    {
+//        if(temp.getInt_variable()==1)
+//        {
+//            if ((ui->Front->isChecked()==Qt::Checked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+//            {
+//                QByteArray To;
+//                To.append("Ok0");
+//                emit s_send_to(To);
+//            }
+//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+//            {
+//                QByteArray To;
+//                To.append("Ok1");
+//                emit s_send_to(To);
+//            }
+//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+//            {
+//                QByteArray To;
+//                To.append("Ok2");
+//                emit s_send_to(To);
+//            }
+//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
+//            {
+//                QByteArray To;
+//                To.append("Ok3");
+//                emit s_send_to(To);
+//            }
+//        }
+//    }
 
     ///
 
@@ -1483,26 +1501,26 @@ void MainWindow:: razbor_com(parameter temp)
             ui->OFF_mute->setChecked(false);
         }
     }
-    if(temp.getInt_command()==355)
-    {
-        if(temp.getInt_variable()==1)
-        {
-            if ((ui->ON_mute->isChecked())&&(!ui->OFF_mute->isChecked()))
-            {
-                QByteArray To;
-                To.append("Ok1");
-                emit s_send_to(To);
-            }
-            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
-            {
-                QByteArray To;
-                To.append("Ok0");
-                emit s_send_to(To);
-            }
+//    if(temp.getInt_command()==355)
+//    {
+//        if(temp.getInt_variable()==1)
+//        {
+//            if ((ui->ON_mute->isChecked())&&(!ui->OFF_mute->isChecked()))
+//            {
+//                QByteArray To;
+//                To.append("Ok1");
+//                emit s_send_to(To);
+//            }
+//            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
+//            {
+//                QByteArray To;
+//                To.append("Ok0");
+//                emit s_send_to(To);
+//            }
 
-        }
+//        }
 
-    }
+//    }
     ///////////////////////////////////////////////////////////////// Mute
     if(temp.getInt_command()==3)
     {
@@ -1518,24 +1536,24 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-    if(temp.getInt_command()==356)
-    {
-        if(temp.getInt_variable()==1)
-        {
-            if ((ui->ON_mute2->isChecked())&&(!ui->OFF_mute2->isChecked()))
-            {
-                QByteArray To;
-                To.append("Ok1");
-                emit s_send_to(To);
-            }
-            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
-            {
-                QByteArray To;
-                To.append("Ok0");
-                emit s_send_to(To);
-            }
-        }
-    }
+//    if(temp.getInt_command()==356)
+//    {
+//        if(temp.getInt_variable()==1)
+//        {
+//            if ((ui->ON_mute2->isChecked())&&(!ui->OFF_mute2->isChecked()))
+//            {
+//                QByteArray To;
+//                To.append("Ok1");
+//                emit s_send_to(To);
+//            }
+//            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
+//            {
+//                QByteArray To;
+//                To.append("Ok0");
+//                emit s_send_to(To);
+//            }
+//        }
+//    }
 
     ///////////////////////////////////////////////////////////////////////  Freeze
     if(temp.getInt_command()==4)
@@ -1727,7 +1745,6 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-
             ui->Cureve_Type_3->setCheckState(Qt::Checked);
 
         }
@@ -1739,13 +1756,11 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-
             ui->Reset_3->setCheckState(Qt::Checked);
 
         }
 
     }
-
 
     /////////////////////////////////////////////////
     /// ///  ///  /// ////////////////////////////////////////////////////////////////////////// IMAGE AI
@@ -1765,8 +1780,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-
-
 
     //////////////////////////////////
     /// ////////////////////////////////////////////////////////////////////////// Noise Reduction
@@ -1801,9 +1814,6 @@ void MainWindow:: razbor_com(parameter temp)
     {
         if(temp.getInt_variable()==1)
         {
-
-
-
             if ((ui->DD->isChecked())&&(!ui->DDD->isChecked()))
             {
                 QByteArray To;
@@ -1818,13 +1828,12 @@ void MainWindow:: razbor_com(parameter temp)
             }
 
         }
-
     }
 
     /////////////////////////////////////////////////
 
-    // Network page
 
+    // Network page
     // Color Wheel Index
     if(temp.getInt_command()==547)
     {
@@ -1912,9 +1921,6 @@ void MainWindow:: razbor_com(parameter temp)
 
     }
 
-
-
-
     //Control
     if(temp.getInt_command()==454)
     {
@@ -1976,8 +1982,6 @@ void MainWindow:: razbor_com(parameter temp)
 
     }
 
-
-
     if((temp.getInt_command()==450)&&(temp.getInt_variable()==0))
     {
         ui->WLAN_box->setCurrentIndex(0);
@@ -1988,7 +1992,7 @@ void MainWindow:: razbor_com(parameter temp)
         ui->WLAN_box->setCurrentIndex(1);
     }
 
-    //------------------------------Audio page
+    //------------------------------Audio page-----------------------------------------------------------------------------
     //Internal Speaker
     if(temp.getInt_command()==310){
         if(temp.getInt_variable()==0){
