@@ -96,29 +96,6 @@ public:
     QLabel *SOURCE_LOCK;
     QCheckBox *ON_7;
     QCheckBox *OFF_7;
-    QWidget *GAMMMA;
-    QFrame *Gamma_F;
-    QGridLayout *gridLayout_19;
-    QFrame *FILM_F;
-    QGridLayout *gridLayout_16;
-    QLabel *FILM;
-    QCheckBox *Cureve_Type;
-    QCheckBox *Reset;
-    QFrame *VIDEO;
-    QGridLayout *gridLayout_28;
-    QCheckBox *Cureve_Type_1;
-    QCheckBox *Reset_1;
-    QLabel *FILM_7;
-    QFrame *GRAPHICS;
-    QGridLayout *gridLayout_20;
-    QCheckBox *Cureve_Type_2;
-    QCheckBox *Reset_2;
-    QLabel *FILM_5;
-    QFrame *PC_STANDART;
-    QGridLayout *gridLayout_27;
-    QLabel *FILM_6;
-    QCheckBox *Cureve_Type_3;
-    QCheckBox *Reset_3;
     QWidget *IMAGE_AI;
     QFrame *Image_Ai;
     QGridLayout *gridLayout_29;
@@ -183,6 +160,29 @@ public:
     QHBoxLayout *horizontalLayout_109;
     QLabel *labelllll_4;
     QComboBox *comboBox5465465465_4;
+    QWidget *GAMMMA;
+    QFrame *Gamma_F;
+    QGridLayout *gridLayout_19;
+    QFrame *FILM_F;
+    QGridLayout *gridLayout_16;
+    QLabel *FILM;
+    QCheckBox *Cureve_Type;
+    QCheckBox *Reset;
+    QFrame *VIDEO;
+    QGridLayout *gridLayout_28;
+    QCheckBox *Cureve_Type_1;
+    QCheckBox *Reset_1;
+    QLabel *FILM_7;
+    QFrame *GRAPHICS;
+    QGridLayout *gridLayout_20;
+    QCheckBox *Cureve_Type_2;
+    QCheckBox *Reset_2;
+    QLabel *FILM_5;
+    QFrame *PC_STANDART;
+    QGridLayout *gridLayout_27;
+    QLabel *FILM_6;
+    QCheckBox *Cureve_Type_3;
+    QCheckBox *Reset_3;
     QWidget *tab;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
@@ -1827,120 +1827,6 @@ public:
         gridLayout_18->addWidget(TAB1, 0, 0, 1, 1);
 
         tab_Other_Items->addTab(tabB_23, QString());
-        GAMMMA = new QWidget();
-        GAMMMA->setObjectName(QStringLiteral("GAMMMA"));
-        Gamma_F = new QFrame(GAMMMA);
-        Gamma_F->setObjectName(QStringLiteral("Gamma_F"));
-        Gamma_F->setGeometry(QRect(20, 20, 249, 318));
-        Gamma_F->setFrameShape(QFrame::StyledPanel);
-        Gamma_F->setFrameShadow(QFrame::Raised);
-        gridLayout_19 = new QGridLayout(Gamma_F);
-        gridLayout_19->setObjectName(QStringLiteral("gridLayout_19"));
-        FILM_F = new QFrame(Gamma_F);
-        FILM_F->setObjectName(QStringLiteral("FILM_F"));
-        FILM_F->setFrameShape(QFrame::Box);
-        FILM_F->setFrameShadow(QFrame::Raised);
-        gridLayout_16 = new QGridLayout(FILM_F);
-        gridLayout_16->setObjectName(QStringLiteral("gridLayout_16"));
-        FILM = new QLabel(FILM_F);
-        FILM->setObjectName(QStringLiteral("FILM"));
-
-        gridLayout_16->addWidget(FILM, 0, 0, 1, 2);
-
-        Cureve_Type = new QCheckBox(FILM_F);
-        Cureve_Type->setObjectName(QStringLiteral("Cureve_Type"));
-        Cureve_Type->setFont(font);
-
-        gridLayout_16->addWidget(Cureve_Type, 1, 0, 1, 1);
-
-        Reset = new QCheckBox(FILM_F);
-        Reset->setObjectName(QStringLiteral("Reset"));
-        Reset->setFont(font);
-
-        gridLayout_16->addWidget(Reset, 1, 1, 1, 1);
-
-
-        gridLayout_19->addWidget(FILM_F, 0, 0, 1, 1);
-
-        VIDEO = new QFrame(Gamma_F);
-        VIDEO->setObjectName(QStringLiteral("VIDEO"));
-        VIDEO->setFrameShape(QFrame::Box);
-        VIDEO->setFrameShadow(QFrame::Raised);
-        gridLayout_28 = new QGridLayout(VIDEO);
-        gridLayout_28->setObjectName(QStringLiteral("gridLayout_28"));
-        Cureve_Type_1 = new QCheckBox(VIDEO);
-        Cureve_Type_1->setObjectName(QStringLiteral("Cureve_Type_1"));
-        Cureve_Type_1->setFont(font);
-
-        gridLayout_28->addWidget(Cureve_Type_1, 2, 0, 1, 1);
-
-        Reset_1 = new QCheckBox(VIDEO);
-        Reset_1->setObjectName(QStringLiteral("Reset_1"));
-        Reset_1->setFont(font);
-
-        gridLayout_28->addWidget(Reset_1, 2, 1, 1, 1);
-
-        FILM_7 = new QLabel(VIDEO);
-        FILM_7->setObjectName(QStringLiteral("FILM_7"));
-
-        gridLayout_28->addWidget(FILM_7, 1, 0, 1, 1);
-
-
-        gridLayout_19->addWidget(VIDEO, 1, 0, 1, 1);
-
-        GRAPHICS = new QFrame(Gamma_F);
-        GRAPHICS->setObjectName(QStringLiteral("GRAPHICS"));
-        GRAPHICS->setFrameShape(QFrame::Box);
-        GRAPHICS->setFrameShadow(QFrame::Raised);
-        gridLayout_20 = new QGridLayout(GRAPHICS);
-        gridLayout_20->setObjectName(QStringLiteral("gridLayout_20"));
-        Cureve_Type_2 = new QCheckBox(GRAPHICS);
-        Cureve_Type_2->setObjectName(QStringLiteral("Cureve_Type_2"));
-        Cureve_Type_2->setFont(font);
-
-        gridLayout_20->addWidget(Cureve_Type_2, 2, 0, 1, 1);
-
-        Reset_2 = new QCheckBox(GRAPHICS);
-        Reset_2->setObjectName(QStringLiteral("Reset_2"));
-        Reset_2->setFont(font);
-
-        gridLayout_20->addWidget(Reset_2, 2, 1, 1, 1);
-
-        FILM_5 = new QLabel(GRAPHICS);
-        FILM_5->setObjectName(QStringLiteral("FILM_5"));
-
-        gridLayout_20->addWidget(FILM_5, 1, 0, 1, 1);
-
-
-        gridLayout_19->addWidget(GRAPHICS, 2, 0, 1, 1);
-
-        PC_STANDART = new QFrame(Gamma_F);
-        PC_STANDART->setObjectName(QStringLiteral("PC_STANDART"));
-        PC_STANDART->setFrameShape(QFrame::Box);
-        PC_STANDART->setFrameShadow(QFrame::Raised);
-        gridLayout_27 = new QGridLayout(PC_STANDART);
-        gridLayout_27->setObjectName(QStringLiteral("gridLayout_27"));
-        FILM_6 = new QLabel(PC_STANDART);
-        FILM_6->setObjectName(QStringLiteral("FILM_6"));
-
-        gridLayout_27->addWidget(FILM_6, 0, 0, 1, 2);
-
-        Cureve_Type_3 = new QCheckBox(PC_STANDART);
-        Cureve_Type_3->setObjectName(QStringLiteral("Cureve_Type_3"));
-        Cureve_Type_3->setFont(font);
-
-        gridLayout_27->addWidget(Cureve_Type_3, 1, 0, 1, 1);
-
-        Reset_3 = new QCheckBox(PC_STANDART);
-        Reset_3->setObjectName(QStringLiteral("Reset_3"));
-        Reset_3->setFont(font);
-
-        gridLayout_27->addWidget(Reset_3, 1, 1, 1, 1);
-
-
-        gridLayout_19->addWidget(PC_STANDART, 3, 0, 1, 1);
-
-        tab_Other_Items->addTab(GAMMMA, QString());
         IMAGE_AI = new QWidget();
         IMAGE_AI->setObjectName(QStringLiteral("IMAGE_AI"));
         Image_Ai = new QFrame(IMAGE_AI);
@@ -2262,6 +2148,120 @@ public:
         gridLayout_41->addWidget(frametrtrrtrtrtg_3, 6, 0, 1, 1);
 
         tab_Other_Items->addTab(tab_33sdfgsd, QString());
+        GAMMMA = new QWidget();
+        GAMMMA->setObjectName(QStringLiteral("GAMMMA"));
+        Gamma_F = new QFrame(GAMMMA);
+        Gamma_F->setObjectName(QStringLiteral("Gamma_F"));
+        Gamma_F->setGeometry(QRect(20, 20, 249, 318));
+        Gamma_F->setFrameShape(QFrame::StyledPanel);
+        Gamma_F->setFrameShadow(QFrame::Raised);
+        gridLayout_19 = new QGridLayout(Gamma_F);
+        gridLayout_19->setObjectName(QStringLiteral("gridLayout_19"));
+        FILM_F = new QFrame(Gamma_F);
+        FILM_F->setObjectName(QStringLiteral("FILM_F"));
+        FILM_F->setFrameShape(QFrame::Box);
+        FILM_F->setFrameShadow(QFrame::Raised);
+        gridLayout_16 = new QGridLayout(FILM_F);
+        gridLayout_16->setObjectName(QStringLiteral("gridLayout_16"));
+        FILM = new QLabel(FILM_F);
+        FILM->setObjectName(QStringLiteral("FILM"));
+
+        gridLayout_16->addWidget(FILM, 0, 0, 1, 2);
+
+        Cureve_Type = new QCheckBox(FILM_F);
+        Cureve_Type->setObjectName(QStringLiteral("Cureve_Type"));
+        Cureve_Type->setFont(font);
+
+        gridLayout_16->addWidget(Cureve_Type, 1, 0, 1, 1);
+
+        Reset = new QCheckBox(FILM_F);
+        Reset->setObjectName(QStringLiteral("Reset"));
+        Reset->setFont(font);
+
+        gridLayout_16->addWidget(Reset, 1, 1, 1, 1);
+
+
+        gridLayout_19->addWidget(FILM_F, 0, 0, 1, 1);
+
+        VIDEO = new QFrame(Gamma_F);
+        VIDEO->setObjectName(QStringLiteral("VIDEO"));
+        VIDEO->setFrameShape(QFrame::Box);
+        VIDEO->setFrameShadow(QFrame::Raised);
+        gridLayout_28 = new QGridLayout(VIDEO);
+        gridLayout_28->setObjectName(QStringLiteral("gridLayout_28"));
+        Cureve_Type_1 = new QCheckBox(VIDEO);
+        Cureve_Type_1->setObjectName(QStringLiteral("Cureve_Type_1"));
+        Cureve_Type_1->setFont(font);
+
+        gridLayout_28->addWidget(Cureve_Type_1, 2, 0, 1, 1);
+
+        Reset_1 = new QCheckBox(VIDEO);
+        Reset_1->setObjectName(QStringLiteral("Reset_1"));
+        Reset_1->setFont(font);
+
+        gridLayout_28->addWidget(Reset_1, 2, 1, 1, 1);
+
+        FILM_7 = new QLabel(VIDEO);
+        FILM_7->setObjectName(QStringLiteral("FILM_7"));
+
+        gridLayout_28->addWidget(FILM_7, 1, 0, 1, 1);
+
+
+        gridLayout_19->addWidget(VIDEO, 1, 0, 1, 1);
+
+        GRAPHICS = new QFrame(Gamma_F);
+        GRAPHICS->setObjectName(QStringLiteral("GRAPHICS"));
+        GRAPHICS->setFrameShape(QFrame::Box);
+        GRAPHICS->setFrameShadow(QFrame::Raised);
+        gridLayout_20 = new QGridLayout(GRAPHICS);
+        gridLayout_20->setObjectName(QStringLiteral("gridLayout_20"));
+        Cureve_Type_2 = new QCheckBox(GRAPHICS);
+        Cureve_Type_2->setObjectName(QStringLiteral("Cureve_Type_2"));
+        Cureve_Type_2->setFont(font);
+
+        gridLayout_20->addWidget(Cureve_Type_2, 2, 0, 1, 1);
+
+        Reset_2 = new QCheckBox(GRAPHICS);
+        Reset_2->setObjectName(QStringLiteral("Reset_2"));
+        Reset_2->setFont(font);
+
+        gridLayout_20->addWidget(Reset_2, 2, 1, 1, 1);
+
+        FILM_5 = new QLabel(GRAPHICS);
+        FILM_5->setObjectName(QStringLiteral("FILM_5"));
+
+        gridLayout_20->addWidget(FILM_5, 1, 0, 1, 1);
+
+
+        gridLayout_19->addWidget(GRAPHICS, 2, 0, 1, 1);
+
+        PC_STANDART = new QFrame(Gamma_F);
+        PC_STANDART->setObjectName(QStringLiteral("PC_STANDART"));
+        PC_STANDART->setFrameShape(QFrame::Box);
+        PC_STANDART->setFrameShadow(QFrame::Raised);
+        gridLayout_27 = new QGridLayout(PC_STANDART);
+        gridLayout_27->setObjectName(QStringLiteral("gridLayout_27"));
+        FILM_6 = new QLabel(PC_STANDART);
+        FILM_6->setObjectName(QStringLiteral("FILM_6"));
+
+        gridLayout_27->addWidget(FILM_6, 0, 0, 1, 2);
+
+        Cureve_Type_3 = new QCheckBox(PC_STANDART);
+        Cureve_Type_3->setObjectName(QStringLiteral("Cureve_Type_3"));
+        Cureve_Type_3->setFont(font);
+
+        gridLayout_27->addWidget(Cureve_Type_3, 1, 0, 1, 1);
+
+        Reset_3 = new QCheckBox(PC_STANDART);
+        Reset_3->setObjectName(QStringLiteral("Reset_3"));
+        Reset_3->setFont(font);
+
+        gridLayout_27->addWidget(Reset_3, 1, 1, 1, 1);
+
+
+        gridLayout_19->addWidget(PC_STANDART, 3, 0, 1, 1);
+
+        tab_Other_Items->addTab(GAMMMA, QString());
 
         gridLayout_15->addWidget(tab_Other_Items, 0, 0, 1, 1);
 
@@ -9581,8 +9581,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
-        tab_Other_Items->setCurrentIndex(5);
+        tabWidget->setCurrentIndex(5);
+        tab_Other_Items->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(4);
         tabWidget_3->setCurrentIndex(6);
@@ -9625,19 +9625,6 @@ public:
         ON_7->setText(QApplication::translate("MainWindow", "On ", nullptr));
         OFF_7->setText(QApplication::translate("MainWindow", "Off", nullptr));
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(tabB_23), QApplication::translate("MainWindow", "Tab 1", nullptr));
-        FILM->setText(QApplication::translate("MainWindow", "Film", nullptr));
-        Cureve_Type->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
-        Reset->setText(QApplication::translate("MainWindow", "Reset", nullptr));
-        Cureve_Type_1->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
-        Reset_1->setText(QApplication::translate("MainWindow", "Reset", nullptr));
-        FILM_7->setText(QApplication::translate("MainWindow", "Video", nullptr));
-        Cureve_Type_2->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
-        Reset_2->setText(QApplication::translate("MainWindow", "Reset", nullptr));
-        FILM_5->setText(QApplication::translate("MainWindow", "Graphics", nullptr));
-        FILM_6->setText(QApplication::translate("MainWindow", "PC (Standard)", nullptr));
-        Cureve_Type_3->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
-        Reset_3->setText(QApplication::translate("MainWindow", "Reset", nullptr));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(GAMMMA), QApplication::translate("MainWindow", "Gamma", nullptr));
         IMAG_AI->setText(QApplication::translate("MainWindow", "Image AI", nullptr));
         ON8->setText(QApplication::translate("MainWindow", "ON", nullptr));
         OFF8->setText(QApplication::translate("MainWindow", "Off", nullptr));
@@ -9685,6 +9672,19 @@ public:
         comboBox5465465465_4->setItemText(1, QApplication::translate("MainWindow", "Bright Look", nullptr));
 
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_33sdfgsd), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", nullptr));
+        FILM->setText(QApplication::translate("MainWindow", "Film", nullptr));
+        Cureve_Type->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
+        Reset->setText(QApplication::translate("MainWindow", "Reset", nullptr));
+        Cureve_Type_1->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
+        Reset_1->setText(QApplication::translate("MainWindow", "Reset", nullptr));
+        FILM_7->setText(QApplication::translate("MainWindow", "Video", nullptr));
+        Cureve_Type_2->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
+        Reset_2->setText(QApplication::translate("MainWindow", "Reset", nullptr));
+        FILM_5->setText(QApplication::translate("MainWindow", "Graphics", nullptr));
+        FILM_6->setText(QApplication::translate("MainWindow", "PC (Standard)", nullptr));
+        Cureve_Type_3->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
+        Reset_3->setText(QApplication::translate("MainWindow", "Reset", nullptr));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(GAMMMA), QApplication::translate("MainWindow", "Gamma", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "Other Items", nullptr));
         label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", nullptr));
         label_var_Image_Setting_Contrast->setText(QString());

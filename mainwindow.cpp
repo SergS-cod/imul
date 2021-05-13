@@ -12,19 +12,13 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-
-
-
     ui->label_2xzczx->setText("0");
     connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
-
     ui->label_2Auto->setText("0");
     connect(ui->horizontsl_2, &QSlider::valueChanged, ui->label_2Auto,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
-
-
 
     //setting Audio page
     ui->label_var_Volume->setText("5");
@@ -478,8 +472,7 @@ MainWindow::MainWindow(QWidget *parent)
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
     //***test
-
-    parameter temp("7E303031313220310D");
+    parameter temp("7E303035343320370D");
     razbor_com(temp);
     //***
 }
@@ -512,11 +505,10 @@ void MainWindow:: razbor_com(parameter temp)
                       "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
                       "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
 
-
     QByteArray F,P,Ok,INFO;
     F.append("F");
     P.append("P");
-    Ok.append("Ok");
+    Ok.append("  Ok");
     INFO.append("INFO");
     int tmp;
     //READ
@@ -732,6 +724,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==7){
             tmp = ui->horizontalSlider_V_Zoom->value();
             Ok.append(QString::number(tmp));
+            qDebug()<<Ok;
             return;
         }
     }
@@ -3878,7 +3871,6 @@ void MainWindow:: razbor_com(parameter temp)
 //        if(temp.getInt_variable()==81){}
 //        if(temp.getInt_variable()==82){}
 //    }
-
     //Setup
     //Lamp Settings
     if(temp.getInt_command()==111){
@@ -4198,7 +4190,6 @@ void MainWindow:: razbor_com(parameter temp)
         ui->horizontalSlider_Setup_Security_Timer_Month->setValue(M);
         ui->horizontalSlider_Setup_Security_Timer_Day->setValue(D);
         ui->horizontalSlider_Setup_Security_Timer_Hour->setValue(H);
-
     }
     //HDMI Link Settings
     if(temp.getInt_command()==511){
@@ -4310,6 +4301,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->combobox_Setup_Remote_Setting_IR_Function->setCurrentIndex(8);
         }
     }
+
     if(temp.getInt_command()==48){
         if(temp.getInt_variable()==1){
             emit on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked();
@@ -4342,14 +4334,15 @@ void MainWindow:: razbor_com(parameter temp)
             ui->horizontalSlider_Setup_Remote_Setting_Remote_user3->setValue(temp.getInt_variable());
         }
     }
+
     //projector ID
     if(temp.getInt_command()==79){
         if(temp.check_include_interval(0,99)){
             ui->horizontalSlider_Setup_Projector_ID->setValue(temp.getInt_variable());
         }
     }
-    //12V
 
+    //12V
     if(temp.getInt_command()==192){
         if(temp.getInt_variable()==0){
             ui->combobox_Setup_12V_Trigger->setCurrentIndex(0);
@@ -4387,7 +4380,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     if(temp.getInt_command()==205){
         if(temp.getInt_variable()==2){
             ui->combobox_Setup_12V_Trigger_B_16_9->setCurrentIndex(0);
@@ -4414,6 +4406,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->combobox_Setup_12V_Trigger_Native->setCurrentIndex(1);
         }
     }
+
     //HDBaseT_Control_RS232
     if(temp.getInt_command()==98){
         if(temp.getInt_variable()==0){
@@ -4432,6 +4425,7 @@ void MainWindow:: razbor_com(parameter temp)
             ui->combobox_HDBaseT_Control_RS232->setCurrentIndex(1);
         }
     }
+
     //options
     if(temp.getInt_command()==70){
         if(temp.getInt_variable()==1){
@@ -4464,7 +4458,6 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==10){
             ui->combobox_Options_Language->setCurrentIndex(9);
         }
-
         if(temp.getInt_variable()==11){
             ui->combobox_Options_Language->setCurrentIndex(10);
         }
@@ -4495,7 +4488,6 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==20){
             ui->combobox_Options_Language->setCurrentIndex(19);
         }
-
         if(temp.getInt_variable()==21){
             ui->combobox_Options_Language->setCurrentIndex(20);
         }
@@ -4641,9 +4633,7 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     //Input Name
-
     if(temp.getInt_command()==519){
         if(temp.getInt_variable()==1){
             emit on_pushButton_Option_reset_input_name_clicked();
@@ -4792,7 +4782,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     if(temp.getInt_command()==104){
         if(temp.getInt_variable()==0){
             ui->combobox_Options_Background_Color->setCurrentIndex(0);
@@ -4834,10 +4823,6 @@ void MainWindow:: razbor_com(parameter temp)
 
 
     //------------------------------END Display page
-
-
-
-
 
     /// Просто вношу изменения
     ///
@@ -5237,9 +5222,6 @@ void MainWindow:: razbor_com(parameter temp)
             ui->pushButton_Return->setStyleSheet(unusual);
 
         }
-
-
-
     }
     ///
     ///
@@ -6119,8 +6101,6 @@ void MainWindow::set_all_command(){
     setparam(140,80);
     setparam(140,81);
     setparam(140,82);
-
-
 }
 
 
@@ -6439,37 +6419,30 @@ void MainWindow::on_pushButton_Setup_Lamp_Setting_Lens_Focus_minus_clicked(){
 
 }
 
-void MainWindow::on_pushButton_Setup_Security_Change_Password_clicked()
-{
+void MainWindow::on_pushButton_Setup_Security_Change_Password_clicked(){
 
 }
 
-void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked()
-{
+void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_minus_clicked(){
     ui->horizontalSlider_Setup_Remote_Setting_Remote_code->setValue( ui->horizontalSlider_Setup_Remote_Setting_Remote_code->value() - 1);
 }
 
-void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked()
-{
+void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked(){
     ui->horizontalSlider_Setup_Remote_Setting_Remote_code->setValue( ui->horizontalSlider_Setup_Remote_Setting_Remote_code->value() + 1);
 }
 
-void MainWindow::on_pushButton_reset_OSD_clicked()
-{
+void MainWindow::on_pushButton_reset_OSD_clicked(){
 
 }
 
-void MainWindow::on_pushButton_reset_to_Default_clicked()
-{
+void MainWindow::on_pushButton_reset_to_Default_clicked(){
 
 }
 
-void MainWindow::on_pushButton_reset_to_Default_password_clicked()
-{
+void MainWindow::on_pushButton_reset_to_Default_password_clicked(){
 
 }
 
-void MainWindow::on_pushButton_Option_reset_input_name_clicked()
-{
+void MainWindow::on_pushButton_Option_reset_input_name_clicked(){
 
 }
