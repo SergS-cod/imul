@@ -18,7 +18,7 @@
     <item row="0" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_22">
        <attribute name="title">
@@ -28,7 +28,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tab_Other_Items">
           <property name="currentIndex">
-           <number>5</number>
+           <number>7</number>
           </property>
           <widget class="QWidget" name="tabB_23">
            <attribute name="title">
@@ -1219,6 +1219,1097 @@
              </item>
             </layout>
            </widget>
+          </widget>
+          <widget class="QWidget" name="tab_18">
+           <attribute name="title">
+            <string>Страница</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_32">
+            <item row="0" column="0">
+             <widget class="QFrame" name="Model_name">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QFrame" name="Model_name_fram">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>40</y>
+                 <width>381</width>
+                 <height>44</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_110">
+                <item>
+                 <widget class="QLabel" name="MODELE_NAME_Label">
+                  <property name="text">
+                   <string>Model Name</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="Optoma_box">
+                  <item>
+                   <property name="text">
+                    <string>Optoma SVGA</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Otoma XGA</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Otoma WXGA</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Otoma 180OP</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Optoma WUXGA</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Optoma UHD</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="frame_RS232">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>100</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_RS232">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>121</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>RS232 Version No</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_RS232">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="software_version_frame">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>170</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_software_version_frame">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Software Version</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="edit_software_version">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="lan_fw_frame">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>240</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_lan_fw_frame">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>LAN FW version</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="edit_lan_fw_frame">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_fan_speed">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>310</y>
+                 <width>881</width>
+                 <height>119</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_39">
+                <item row="0" column="0" colspan="3">
+                 <widget class="QLabel" name="label_Fan_speed">
+                  <property name="text">
+                   <string>Fan Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_fan_speed1">
+                  <property name="text">
+                   <string>Fan 1 Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QSlider" name="horizontalSlider_fan_speed1">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLabel" name="laaabel_2_fan_1">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_fan_speed2">
+                  <property name="text">
+                   <string>Fan 2 Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QSlider" name="horizontalSlider_fan_speed2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLabel" name="laaabel_2_fan_2">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_fan_speed3">
+                  <property name="text">
+                   <string>Fan 3 Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QSlider" name="horizontalSlider_fan_speed3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QLabel" name="laaabel_2_fan_3">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_fan_speed4">
+                  <property name="text">
+                   <string>Fan 4 Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QSlider" name="horizontalSlider_fan_speed4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="QLabel" name="laaabel_2_fan_4">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="frame_system_temperature">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>440</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_system_temperature">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>121</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>System Temperature</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_RS232_2">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_current_wat">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>510</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_current_wat">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Current Wat</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_current_wat">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_nformation">
+           <attribute name="title">
+            <string>Information</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_42">
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame_inf">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QGroupBox" name="groupBox_main_source">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>10</y>
+                 <width>411</width>
+                 <height>391</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string>Main Source</string>
+               </property>
+               <widget class="QFrame" name="frame_Resolution">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Resolution">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Resolution</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Resolution">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_Signal_Format">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Signal_Format">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Signal Format</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Signal_Format">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_Pixel_Clock">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>170</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Pixel_Clock">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Pixel Clock</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Pixel_Clock">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_Horz_Refresh">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>240</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Horz_Refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Horz Refresh</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Horz_Refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_Vert_Refresh">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>310</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Vert_Refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Vert Refresh</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Vert_Refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_SUB_source">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>10</y>
+                 <width>401</width>
+                 <height>391</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string>Sub Source</string>
+               </property>
+               <widget class="QFrame" name="frame_Resolution_">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Resolution_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Resolution</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Resolution_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_Pixel_Clock_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>170</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_Pixel_Clock_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string>Pixel Clock</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_Pixel_Clock_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_vert_refresh">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>310</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_vert_refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Vert Refresh</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_vert_refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_signal_format">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_signal_format">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Signal Format</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_signal_format">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QFrame" name="frame_horz_refresh">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>240</y>
+                  <width>381</width>
+                  <height>61</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_horz_refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>20</y>
+                   <width>101</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="text">
+                  <string> Horz Refresh</string>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="lineEdit_horz_refresh">
+                 <property name="geometry">
+                  <rect>
+                   <x>120</x>
+                   <y>20</y>
+                   <width>251</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_main_source">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>580</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_main_source">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Main Source</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_main_source">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_Info_string">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>440</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_Info_string">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Info String</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_Info_string">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_native_resolution">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>510</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_native_resolution">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Native Resolution</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_native_resolution">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_light_source">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>490</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_light_source">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Light Source Mode</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_light_source">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="fram_standby_power_mode">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>560</y>
+                 <width>381</width>
+                 <height>44</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_111">
+                <item>
+                 <widget class="QLabel" name="label_standby_power_mode">
+                  <property name="text">
+                   <string>Standby Power Mode</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="standby_power_mode_box">
+                  <item>
+                   <property name="text">
+                    <string>Active</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Eco.</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="fram_DHCP">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>610</y>
+                 <width>381</width>
+                 <height>44</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_112">
+                <item>
+                 <widget class="QLabel" name="Label_DHCP">
+                  <property name="text">
+                   <string>DHCP</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="box_DHCP">
+                  <item>
+                   <property name="text">
+                    <string>Off</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>On</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="Model_name_fram_4">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>440</y>
+                 <width>381</width>
+                 <height>44</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_113">
+                <item>
+                 <widget class="QLabel" name="MODELE_NAME_Label_4">
+                  <property name="text">
+                   <string>Current Lamp Source</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="Optoma_box_4">
+                  <item>
+                   <property name="text">
+                    <string>Lamp1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Lamp2</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Both</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>

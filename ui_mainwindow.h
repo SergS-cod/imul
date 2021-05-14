@@ -183,6 +183,102 @@ public:
     QLabel *FILM_6;
     QCheckBox *Cureve_Type_3;
     QCheckBox *Reset_3;
+    QWidget *tab_18;
+    QGridLayout *gridLayout_32;
+    QFrame *Model_name;
+    QFrame *Model_name_fram;
+    QHBoxLayout *horizontalLayout_110;
+    QLabel *MODELE_NAME_Label;
+    QComboBox *Optoma_box;
+    QFrame *frame_RS232;
+    QLabel *label_RS232;
+    QLineEdit *lineEdit_RS232;
+    QFrame *software_version_frame;
+    QLabel *label_software_version_frame;
+    QLineEdit *edit_software_version;
+    QFrame *lan_fw_frame;
+    QLabel *label_lan_fw_frame;
+    QLineEdit *edit_lan_fw_frame;
+    QFrame *frame_fan_speed;
+    QGridLayout *gridLayout_39;
+    QLabel *label_Fan_speed;
+    QLabel *label_fan_speed1;
+    QSlider *horizontalSlider_fan_speed1;
+    QLabel *laaabel_2_fan_1;
+    QLabel *label_fan_speed2;
+    QSlider *horizontalSlider_fan_speed2;
+    QLabel *laaabel_2_fan_2;
+    QLabel *label_fan_speed3;
+    QSlider *horizontalSlider_fan_speed3;
+    QLabel *laaabel_2_fan_3;
+    QLabel *label_fan_speed4;
+    QSlider *horizontalSlider_fan_speed4;
+    QLabel *laaabel_2_fan_4;
+    QFrame *frame_system_temperature;
+    QLabel *label_system_temperature;
+    QLineEdit *lineEdit_RS232_2;
+    QFrame *frame_current_wat;
+    QLabel *label_current_wat;
+    QLineEdit *lineEdit_current_wat;
+    QWidget *tab_nformation;
+    QGridLayout *gridLayout_42;
+    QFrame *frame_inf;
+    QGroupBox *groupBox_main_source;
+    QFrame *frame_Resolution;
+    QLabel *label_Resolution;
+    QLineEdit *lineEdit_Resolution;
+    QFrame *frame_Signal_Format;
+    QLabel *label_Signal_Format;
+    QLineEdit *lineEdit_Signal_Format;
+    QFrame *frame_Pixel_Clock;
+    QLabel *label_Pixel_Clock;
+    QLineEdit *lineEdit_Pixel_Clock;
+    QFrame *frame_Horz_Refresh;
+    QLabel *label_Horz_Refresh;
+    QLineEdit *lineEdit_Horz_Refresh;
+    QFrame *frame_Vert_Refresh;
+    QLabel *label_Vert_Refresh;
+    QLineEdit *lineEdit_Vert_Refresh;
+    QGroupBox *groupBox_SUB_source;
+    QFrame *frame_Resolution_;
+    QLabel *label_Resolution_2;
+    QLineEdit *lineEdit_Resolution_2;
+    QFrame *frame_Pixel_Clock_2;
+    QLabel *label_Pixel_Clock_2;
+    QLineEdit *lineEdit_Pixel_Clock_2;
+    QFrame *frame_vert_refresh;
+    QLabel *label_vert_refresh;
+    QLineEdit *lineEdit_vert_refresh;
+    QFrame *frame_signal_format;
+    QLabel *label_signal_format;
+    QLineEdit *lineEdit_signal_format;
+    QFrame *frame_horz_refresh;
+    QLabel *label_horz_refresh;
+    QLineEdit *lineEdit_horz_refresh;
+    QFrame *frame_main_source;
+    QLabel *label_main_source;
+    QLineEdit *lineEdit_main_source;
+    QFrame *frame_Info_string;
+    QLabel *label_Info_string;
+    QLineEdit *lineEdit_Info_string;
+    QFrame *frame_native_resolution;
+    QLabel *label_native_resolution;
+    QLineEdit *lineEdit_native_resolution;
+    QFrame *frame_light_source;
+    QLabel *label_light_source;
+    QLineEdit *lineEdit_light_source;
+    QFrame *fram_standby_power_mode;
+    QHBoxLayout *horizontalLayout_111;
+    QLabel *label_standby_power_mode;
+    QComboBox *standby_power_mode_box;
+    QFrame *fram_DHCP;
+    QHBoxLayout *horizontalLayout_112;
+    QLabel *Label_DHCP;
+    QComboBox *box_DHCP;
+    QFrame *Model_name_fram_4;
+    QHBoxLayout *horizontalLayout_113;
+    QLabel *MODELE_NAME_Label_4;
+    QComboBox *Optoma_box_4;
     QWidget *tab;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
@@ -2315,6 +2411,402 @@ public:
         gridLayout_19->addWidget(PC_STANDART, 3, 0, 1, 1);
 
         tab_Other_Items->addTab(GAMMMA, QString());
+        tab_18 = new QWidget();
+        tab_18->setObjectName(QStringLiteral("tab_18"));
+        gridLayout_32 = new QGridLayout(tab_18);
+        gridLayout_32->setObjectName(QStringLiteral("gridLayout_32"));
+        Model_name = new QFrame(tab_18);
+        Model_name->setObjectName(QStringLiteral("Model_name"));
+        Model_name->setFrameShape(QFrame::StyledPanel);
+        Model_name->setFrameShadow(QFrame::Raised);
+        Model_name_fram = new QFrame(Model_name);
+        Model_name_fram->setObjectName(QStringLiteral("Model_name_fram"));
+        Model_name_fram->setGeometry(QRect(30, 40, 381, 44));
+        Model_name_fram->setFrameShape(QFrame::Box);
+        Model_name_fram->setFrameShadow(QFrame::Raised);
+        horizontalLayout_110 = new QHBoxLayout(Model_name_fram);
+        horizontalLayout_110->setObjectName(QStringLiteral("horizontalLayout_110"));
+        MODELE_NAME_Label = new QLabel(Model_name_fram);
+        MODELE_NAME_Label->setObjectName(QStringLiteral("MODELE_NAME_Label"));
+
+        horizontalLayout_110->addWidget(MODELE_NAME_Label);
+
+        Optoma_box = new QComboBox(Model_name_fram);
+        Optoma_box->addItem(QString());
+        Optoma_box->addItem(QString());
+        Optoma_box->addItem(QString());
+        Optoma_box->addItem(QString());
+        Optoma_box->addItem(QString());
+        Optoma_box->addItem(QString());
+        Optoma_box->setObjectName(QStringLiteral("Optoma_box"));
+
+        horizontalLayout_110->addWidget(Optoma_box);
+
+        frame_RS232 = new QFrame(Model_name);
+        frame_RS232->setObjectName(QStringLiteral("frame_RS232"));
+        frame_RS232->setGeometry(QRect(30, 100, 381, 61));
+        frame_RS232->setFrameShape(QFrame::Box);
+        frame_RS232->setFrameShadow(QFrame::Raised);
+        label_RS232 = new QLabel(frame_RS232);
+        label_RS232->setObjectName(QStringLiteral("label_RS232"));
+        label_RS232->setGeometry(QRect(10, 20, 121, 16));
+        lineEdit_RS232 = new QLineEdit(frame_RS232);
+        lineEdit_RS232->setObjectName(QStringLiteral("lineEdit_RS232"));
+        lineEdit_RS232->setGeometry(QRect(120, 20, 251, 21));
+        software_version_frame = new QFrame(Model_name);
+        software_version_frame->setObjectName(QStringLiteral("software_version_frame"));
+        software_version_frame->setGeometry(QRect(30, 170, 381, 61));
+        software_version_frame->setFrameShape(QFrame::Box);
+        software_version_frame->setFrameShadow(QFrame::Raised);
+        label_software_version_frame = new QLabel(software_version_frame);
+        label_software_version_frame->setObjectName(QStringLiteral("label_software_version_frame"));
+        label_software_version_frame->setGeometry(QRect(10, 20, 101, 16));
+        edit_software_version = new QLineEdit(software_version_frame);
+        edit_software_version->setObjectName(QStringLiteral("edit_software_version"));
+        edit_software_version->setGeometry(QRect(120, 20, 251, 21));
+        lan_fw_frame = new QFrame(Model_name);
+        lan_fw_frame->setObjectName(QStringLiteral("lan_fw_frame"));
+        lan_fw_frame->setGeometry(QRect(30, 240, 381, 61));
+        lan_fw_frame->setFrameShape(QFrame::Box);
+        lan_fw_frame->setFrameShadow(QFrame::Raised);
+        label_lan_fw_frame = new QLabel(lan_fw_frame);
+        label_lan_fw_frame->setObjectName(QStringLiteral("label_lan_fw_frame"));
+        label_lan_fw_frame->setGeometry(QRect(10, 20, 101, 16));
+        edit_lan_fw_frame = new QLineEdit(lan_fw_frame);
+        edit_lan_fw_frame->setObjectName(QStringLiteral("edit_lan_fw_frame"));
+        edit_lan_fw_frame->setGeometry(QRect(120, 20, 251, 21));
+        frame_fan_speed = new QFrame(Model_name);
+        frame_fan_speed->setObjectName(QStringLiteral("frame_fan_speed"));
+        frame_fan_speed->setGeometry(QRect(30, 310, 881, 119));
+        frame_fan_speed->setFrameShape(QFrame::Box);
+        frame_fan_speed->setFrameShadow(QFrame::Raised);
+        gridLayout_39 = new QGridLayout(frame_fan_speed);
+        gridLayout_39->setObjectName(QStringLiteral("gridLayout_39"));
+        label_Fan_speed = new QLabel(frame_fan_speed);
+        label_Fan_speed->setObjectName(QStringLiteral("label_Fan_speed"));
+
+        gridLayout_39->addWidget(label_Fan_speed, 0, 0, 1, 3);
+
+        label_fan_speed1 = new QLabel(frame_fan_speed);
+        label_fan_speed1->setObjectName(QStringLiteral("label_fan_speed1"));
+
+        gridLayout_39->addWidget(label_fan_speed1, 1, 0, 1, 1);
+
+        horizontalSlider_fan_speed1 = new QSlider(frame_fan_speed);
+        horizontalSlider_fan_speed1->setObjectName(QStringLiteral("horizontalSlider_fan_speed1"));
+        horizontalSlider_fan_speed1->setOrientation(Qt::Horizontal);
+
+        gridLayout_39->addWidget(horizontalSlider_fan_speed1, 1, 1, 1, 1);
+
+        laaabel_2_fan_1 = new QLabel(frame_fan_speed);
+        laaabel_2_fan_1->setObjectName(QStringLiteral("laaabel_2_fan_1"));
+
+        gridLayout_39->addWidget(laaabel_2_fan_1, 1, 2, 1, 1);
+
+        label_fan_speed2 = new QLabel(frame_fan_speed);
+        label_fan_speed2->setObjectName(QStringLiteral("label_fan_speed2"));
+
+        gridLayout_39->addWidget(label_fan_speed2, 2, 0, 1, 1);
+
+        horizontalSlider_fan_speed2 = new QSlider(frame_fan_speed);
+        horizontalSlider_fan_speed2->setObjectName(QStringLiteral("horizontalSlider_fan_speed2"));
+        horizontalSlider_fan_speed2->setOrientation(Qt::Horizontal);
+
+        gridLayout_39->addWidget(horizontalSlider_fan_speed2, 2, 1, 1, 1);
+
+        laaabel_2_fan_2 = new QLabel(frame_fan_speed);
+        laaabel_2_fan_2->setObjectName(QStringLiteral("laaabel_2_fan_2"));
+
+        gridLayout_39->addWidget(laaabel_2_fan_2, 2, 2, 1, 1);
+
+        label_fan_speed3 = new QLabel(frame_fan_speed);
+        label_fan_speed3->setObjectName(QStringLiteral("label_fan_speed3"));
+
+        gridLayout_39->addWidget(label_fan_speed3, 3, 0, 1, 1);
+
+        horizontalSlider_fan_speed3 = new QSlider(frame_fan_speed);
+        horizontalSlider_fan_speed3->setObjectName(QStringLiteral("horizontalSlider_fan_speed3"));
+        horizontalSlider_fan_speed3->setOrientation(Qt::Horizontal);
+
+        gridLayout_39->addWidget(horizontalSlider_fan_speed3, 3, 1, 1, 1);
+
+        laaabel_2_fan_3 = new QLabel(frame_fan_speed);
+        laaabel_2_fan_3->setObjectName(QStringLiteral("laaabel_2_fan_3"));
+
+        gridLayout_39->addWidget(laaabel_2_fan_3, 3, 2, 1, 1);
+
+        label_fan_speed4 = new QLabel(frame_fan_speed);
+        label_fan_speed4->setObjectName(QStringLiteral("label_fan_speed4"));
+
+        gridLayout_39->addWidget(label_fan_speed4, 4, 0, 1, 1);
+
+        horizontalSlider_fan_speed4 = new QSlider(frame_fan_speed);
+        horizontalSlider_fan_speed4->setObjectName(QStringLiteral("horizontalSlider_fan_speed4"));
+        horizontalSlider_fan_speed4->setOrientation(Qt::Horizontal);
+
+        gridLayout_39->addWidget(horizontalSlider_fan_speed4, 4, 1, 1, 1);
+
+        laaabel_2_fan_4 = new QLabel(frame_fan_speed);
+        laaabel_2_fan_4->setObjectName(QStringLiteral("laaabel_2_fan_4"));
+
+        gridLayout_39->addWidget(laaabel_2_fan_4, 4, 2, 1, 1);
+
+        frame_system_temperature = new QFrame(Model_name);
+        frame_system_temperature->setObjectName(QStringLiteral("frame_system_temperature"));
+        frame_system_temperature->setGeometry(QRect(30, 440, 381, 61));
+        frame_system_temperature->setFrameShape(QFrame::Box);
+        frame_system_temperature->setFrameShadow(QFrame::Raised);
+        label_system_temperature = new QLabel(frame_system_temperature);
+        label_system_temperature->setObjectName(QStringLiteral("label_system_temperature"));
+        label_system_temperature->setGeometry(QRect(10, 20, 121, 16));
+        lineEdit_RS232_2 = new QLineEdit(frame_system_temperature);
+        lineEdit_RS232_2->setObjectName(QStringLiteral("lineEdit_RS232_2"));
+        lineEdit_RS232_2->setGeometry(QRect(120, 20, 251, 21));
+        frame_current_wat = new QFrame(Model_name);
+        frame_current_wat->setObjectName(QStringLiteral("frame_current_wat"));
+        frame_current_wat->setGeometry(QRect(30, 510, 381, 61));
+        frame_current_wat->setFrameShape(QFrame::Box);
+        frame_current_wat->setFrameShadow(QFrame::Raised);
+        label_current_wat = new QLabel(frame_current_wat);
+        label_current_wat->setObjectName(QStringLiteral("label_current_wat"));
+        label_current_wat->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_current_wat = new QLineEdit(frame_current_wat);
+        lineEdit_current_wat->setObjectName(QStringLiteral("lineEdit_current_wat"));
+        lineEdit_current_wat->setGeometry(QRect(120, 20, 251, 21));
+
+        gridLayout_32->addWidget(Model_name, 0, 0, 1, 1);
+
+        tab_Other_Items->addTab(tab_18, QString());
+        tab_nformation = new QWidget();
+        tab_nformation->setObjectName(QStringLiteral("tab_nformation"));
+        gridLayout_42 = new QGridLayout(tab_nformation);
+        gridLayout_42->setObjectName(QStringLiteral("gridLayout_42"));
+        frame_inf = new QFrame(tab_nformation);
+        frame_inf->setObjectName(QStringLiteral("frame_inf"));
+        frame_inf->setFrameShape(QFrame::StyledPanel);
+        frame_inf->setFrameShadow(QFrame::Raised);
+        groupBox_main_source = new QGroupBox(frame_inf);
+        groupBox_main_source->setObjectName(QStringLiteral("groupBox_main_source"));
+        groupBox_main_source->setGeometry(QRect(40, 10, 411, 391));
+        frame_Resolution = new QFrame(groupBox_main_source);
+        frame_Resolution->setObjectName(QStringLiteral("frame_Resolution"));
+        frame_Resolution->setGeometry(QRect(10, 30, 381, 61));
+        frame_Resolution->setFrameShape(QFrame::Box);
+        frame_Resolution->setFrameShadow(QFrame::Raised);
+        label_Resolution = new QLabel(frame_Resolution);
+        label_Resolution->setObjectName(QStringLiteral("label_Resolution"));
+        label_Resolution->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Resolution = new QLineEdit(frame_Resolution);
+        lineEdit_Resolution->setObjectName(QStringLiteral("lineEdit_Resolution"));
+        lineEdit_Resolution->setGeometry(QRect(120, 20, 251, 21));
+        frame_Signal_Format = new QFrame(groupBox_main_source);
+        frame_Signal_Format->setObjectName(QStringLiteral("frame_Signal_Format"));
+        frame_Signal_Format->setGeometry(QRect(10, 100, 381, 61));
+        frame_Signal_Format->setFrameShape(QFrame::Box);
+        frame_Signal_Format->setFrameShadow(QFrame::Raised);
+        label_Signal_Format = new QLabel(frame_Signal_Format);
+        label_Signal_Format->setObjectName(QStringLiteral("label_Signal_Format"));
+        label_Signal_Format->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Signal_Format = new QLineEdit(frame_Signal_Format);
+        lineEdit_Signal_Format->setObjectName(QStringLiteral("lineEdit_Signal_Format"));
+        lineEdit_Signal_Format->setGeometry(QRect(120, 20, 251, 21));
+        frame_Pixel_Clock = new QFrame(groupBox_main_source);
+        frame_Pixel_Clock->setObjectName(QStringLiteral("frame_Pixel_Clock"));
+        frame_Pixel_Clock->setGeometry(QRect(10, 170, 381, 61));
+        frame_Pixel_Clock->setFrameShape(QFrame::Box);
+        frame_Pixel_Clock->setFrameShadow(QFrame::Raised);
+        label_Pixel_Clock = new QLabel(frame_Pixel_Clock);
+        label_Pixel_Clock->setObjectName(QStringLiteral("label_Pixel_Clock"));
+        label_Pixel_Clock->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Pixel_Clock = new QLineEdit(frame_Pixel_Clock);
+        lineEdit_Pixel_Clock->setObjectName(QStringLiteral("lineEdit_Pixel_Clock"));
+        lineEdit_Pixel_Clock->setGeometry(QRect(120, 20, 251, 21));
+        frame_Horz_Refresh = new QFrame(groupBox_main_source);
+        frame_Horz_Refresh->setObjectName(QStringLiteral("frame_Horz_Refresh"));
+        frame_Horz_Refresh->setGeometry(QRect(10, 240, 381, 61));
+        frame_Horz_Refresh->setFrameShape(QFrame::Box);
+        frame_Horz_Refresh->setFrameShadow(QFrame::Raised);
+        label_Horz_Refresh = new QLabel(frame_Horz_Refresh);
+        label_Horz_Refresh->setObjectName(QStringLiteral("label_Horz_Refresh"));
+        label_Horz_Refresh->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Horz_Refresh = new QLineEdit(frame_Horz_Refresh);
+        lineEdit_Horz_Refresh->setObjectName(QStringLiteral("lineEdit_Horz_Refresh"));
+        lineEdit_Horz_Refresh->setGeometry(QRect(120, 20, 251, 21));
+        frame_Vert_Refresh = new QFrame(groupBox_main_source);
+        frame_Vert_Refresh->setObjectName(QStringLiteral("frame_Vert_Refresh"));
+        frame_Vert_Refresh->setGeometry(QRect(10, 310, 381, 61));
+        frame_Vert_Refresh->setFrameShape(QFrame::Box);
+        frame_Vert_Refresh->setFrameShadow(QFrame::Raised);
+        label_Vert_Refresh = new QLabel(frame_Vert_Refresh);
+        label_Vert_Refresh->setObjectName(QStringLiteral("label_Vert_Refresh"));
+        label_Vert_Refresh->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Vert_Refresh = new QLineEdit(frame_Vert_Refresh);
+        lineEdit_Vert_Refresh->setObjectName(QStringLiteral("lineEdit_Vert_Refresh"));
+        lineEdit_Vert_Refresh->setGeometry(QRect(120, 20, 251, 21));
+        groupBox_SUB_source = new QGroupBox(frame_inf);
+        groupBox_SUB_source->setObjectName(QStringLiteral("groupBox_SUB_source"));
+        groupBox_SUB_source->setGeometry(QRect(530, 10, 401, 391));
+        frame_Resolution_ = new QFrame(groupBox_SUB_source);
+        frame_Resolution_->setObjectName(QStringLiteral("frame_Resolution_"));
+        frame_Resolution_->setGeometry(QRect(10, 30, 381, 61));
+        frame_Resolution_->setFrameShape(QFrame::Box);
+        frame_Resolution_->setFrameShadow(QFrame::Raised);
+        label_Resolution_2 = new QLabel(frame_Resolution_);
+        label_Resolution_2->setObjectName(QStringLiteral("label_Resolution_2"));
+        label_Resolution_2->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Resolution_2 = new QLineEdit(frame_Resolution_);
+        lineEdit_Resolution_2->setObjectName(QStringLiteral("lineEdit_Resolution_2"));
+        lineEdit_Resolution_2->setGeometry(QRect(120, 20, 251, 21));
+        frame_Pixel_Clock_2 = new QFrame(groupBox_SUB_source);
+        frame_Pixel_Clock_2->setObjectName(QStringLiteral("frame_Pixel_Clock_2"));
+        frame_Pixel_Clock_2->setGeometry(QRect(10, 170, 381, 61));
+        frame_Pixel_Clock_2->setFrameShape(QFrame::Box);
+        frame_Pixel_Clock_2->setFrameShadow(QFrame::Raised);
+        label_Pixel_Clock_2 = new QLabel(frame_Pixel_Clock_2);
+        label_Pixel_Clock_2->setObjectName(QStringLiteral("label_Pixel_Clock_2"));
+        label_Pixel_Clock_2->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Pixel_Clock_2 = new QLineEdit(frame_Pixel_Clock_2);
+        lineEdit_Pixel_Clock_2->setObjectName(QStringLiteral("lineEdit_Pixel_Clock_2"));
+        lineEdit_Pixel_Clock_2->setGeometry(QRect(120, 20, 251, 21));
+        frame_vert_refresh = new QFrame(groupBox_SUB_source);
+        frame_vert_refresh->setObjectName(QStringLiteral("frame_vert_refresh"));
+        frame_vert_refresh->setGeometry(QRect(10, 310, 381, 61));
+        frame_vert_refresh->setFrameShape(QFrame::Box);
+        frame_vert_refresh->setFrameShadow(QFrame::Raised);
+        label_vert_refresh = new QLabel(frame_vert_refresh);
+        label_vert_refresh->setObjectName(QStringLiteral("label_vert_refresh"));
+        label_vert_refresh->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_vert_refresh = new QLineEdit(frame_vert_refresh);
+        lineEdit_vert_refresh->setObjectName(QStringLiteral("lineEdit_vert_refresh"));
+        lineEdit_vert_refresh->setGeometry(QRect(120, 20, 251, 21));
+        frame_signal_format = new QFrame(groupBox_SUB_source);
+        frame_signal_format->setObjectName(QStringLiteral("frame_signal_format"));
+        frame_signal_format->setGeometry(QRect(10, 100, 381, 61));
+        frame_signal_format->setFrameShape(QFrame::Box);
+        frame_signal_format->setFrameShadow(QFrame::Raised);
+        label_signal_format = new QLabel(frame_signal_format);
+        label_signal_format->setObjectName(QStringLiteral("label_signal_format"));
+        label_signal_format->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_signal_format = new QLineEdit(frame_signal_format);
+        lineEdit_signal_format->setObjectName(QStringLiteral("lineEdit_signal_format"));
+        lineEdit_signal_format->setGeometry(QRect(120, 20, 251, 21));
+        frame_horz_refresh = new QFrame(groupBox_SUB_source);
+        frame_horz_refresh->setObjectName(QStringLiteral("frame_horz_refresh"));
+        frame_horz_refresh->setGeometry(QRect(10, 240, 381, 61));
+        frame_horz_refresh->setFrameShape(QFrame::Box);
+        frame_horz_refresh->setFrameShadow(QFrame::Raised);
+        label_horz_refresh = new QLabel(frame_horz_refresh);
+        label_horz_refresh->setObjectName(QStringLiteral("label_horz_refresh"));
+        label_horz_refresh->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_horz_refresh = new QLineEdit(frame_horz_refresh);
+        lineEdit_horz_refresh->setObjectName(QStringLiteral("lineEdit_horz_refresh"));
+        lineEdit_horz_refresh->setGeometry(QRect(120, 20, 251, 21));
+        frame_main_source = new QFrame(frame_inf);
+        frame_main_source->setObjectName(QStringLiteral("frame_main_source"));
+        frame_main_source->setGeometry(QRect(40, 580, 381, 61));
+        frame_main_source->setFrameShape(QFrame::Box);
+        frame_main_source->setFrameShadow(QFrame::Raised);
+        label_main_source = new QLabel(frame_main_source);
+        label_main_source->setObjectName(QStringLiteral("label_main_source"));
+        label_main_source->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_main_source = new QLineEdit(frame_main_source);
+        lineEdit_main_source->setObjectName(QStringLiteral("lineEdit_main_source"));
+        lineEdit_main_source->setGeometry(QRect(120, 20, 251, 21));
+        frame_Info_string = new QFrame(frame_inf);
+        frame_Info_string->setObjectName(QStringLiteral("frame_Info_string"));
+        frame_Info_string->setGeometry(QRect(40, 440, 381, 61));
+        frame_Info_string->setFrameShape(QFrame::Box);
+        frame_Info_string->setFrameShadow(QFrame::Raised);
+        label_Info_string = new QLabel(frame_Info_string);
+        label_Info_string->setObjectName(QStringLiteral("label_Info_string"));
+        label_Info_string->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_Info_string = new QLineEdit(frame_Info_string);
+        lineEdit_Info_string->setObjectName(QStringLiteral("lineEdit_Info_string"));
+        lineEdit_Info_string->setGeometry(QRect(120, 20, 251, 21));
+        frame_native_resolution = new QFrame(frame_inf);
+        frame_native_resolution->setObjectName(QStringLiteral("frame_native_resolution"));
+        frame_native_resolution->setGeometry(QRect(40, 510, 381, 61));
+        frame_native_resolution->setFrameShape(QFrame::Box);
+        frame_native_resolution->setFrameShadow(QFrame::Raised);
+        label_native_resolution = new QLabel(frame_native_resolution);
+        label_native_resolution->setObjectName(QStringLiteral("label_native_resolution"));
+        label_native_resolution->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_native_resolution = new QLineEdit(frame_native_resolution);
+        lineEdit_native_resolution->setObjectName(QStringLiteral("lineEdit_native_resolution"));
+        lineEdit_native_resolution->setGeometry(QRect(120, 20, 251, 21));
+        frame_light_source = new QFrame(frame_inf);
+        frame_light_source->setObjectName(QStringLiteral("frame_light_source"));
+        frame_light_source->setGeometry(QRect(530, 490, 381, 61));
+        frame_light_source->setFrameShape(QFrame::Box);
+        frame_light_source->setFrameShadow(QFrame::Raised);
+        label_light_source = new QLabel(frame_light_source);
+        label_light_source->setObjectName(QStringLiteral("label_light_source"));
+        label_light_source->setGeometry(QRect(10, 20, 101, 16));
+        lineEdit_light_source = new QLineEdit(frame_light_source);
+        lineEdit_light_source->setObjectName(QStringLiteral("lineEdit_light_source"));
+        lineEdit_light_source->setGeometry(QRect(120, 20, 251, 21));
+        fram_standby_power_mode = new QFrame(frame_inf);
+        fram_standby_power_mode->setObjectName(QStringLiteral("fram_standby_power_mode"));
+        fram_standby_power_mode->setGeometry(QRect(530, 560, 381, 44));
+        fram_standby_power_mode->setFrameShape(QFrame::Box);
+        fram_standby_power_mode->setFrameShadow(QFrame::Raised);
+        horizontalLayout_111 = new QHBoxLayout(fram_standby_power_mode);
+        horizontalLayout_111->setObjectName(QStringLiteral("horizontalLayout_111"));
+        label_standby_power_mode = new QLabel(fram_standby_power_mode);
+        label_standby_power_mode->setObjectName(QStringLiteral("label_standby_power_mode"));
+
+        horizontalLayout_111->addWidget(label_standby_power_mode);
+
+        standby_power_mode_box = new QComboBox(fram_standby_power_mode);
+        standby_power_mode_box->addItem(QString());
+        standby_power_mode_box->addItem(QString());
+        standby_power_mode_box->setObjectName(QStringLiteral("standby_power_mode_box"));
+
+        horizontalLayout_111->addWidget(standby_power_mode_box);
+
+        fram_DHCP = new QFrame(frame_inf);
+        fram_DHCP->setObjectName(QStringLiteral("fram_DHCP"));
+        fram_DHCP->setGeometry(QRect(530, 610, 381, 44));
+        fram_DHCP->setFrameShape(QFrame::Box);
+        fram_DHCP->setFrameShadow(QFrame::Raised);
+        horizontalLayout_112 = new QHBoxLayout(fram_DHCP);
+        horizontalLayout_112->setObjectName(QStringLiteral("horizontalLayout_112"));
+        Label_DHCP = new QLabel(fram_DHCP);
+        Label_DHCP->setObjectName(QStringLiteral("Label_DHCP"));
+
+        horizontalLayout_112->addWidget(Label_DHCP);
+
+        box_DHCP = new QComboBox(fram_DHCP);
+        box_DHCP->addItem(QString());
+        box_DHCP->addItem(QString());
+        box_DHCP->setObjectName(QStringLiteral("box_DHCP"));
+
+        horizontalLayout_112->addWidget(box_DHCP);
+
+        Model_name_fram_4 = new QFrame(frame_inf);
+        Model_name_fram_4->setObjectName(QStringLiteral("Model_name_fram_4"));
+        Model_name_fram_4->setGeometry(QRect(530, 440, 381, 44));
+        Model_name_fram_4->setFrameShape(QFrame::Box);
+        Model_name_fram_4->setFrameShadow(QFrame::Raised);
+        horizontalLayout_113 = new QHBoxLayout(Model_name_fram_4);
+        horizontalLayout_113->setObjectName(QStringLiteral("horizontalLayout_113"));
+        MODELE_NAME_Label_4 = new QLabel(Model_name_fram_4);
+        MODELE_NAME_Label_4->setObjectName(QStringLiteral("MODELE_NAME_Label_4"));
+
+        horizontalLayout_113->addWidget(MODELE_NAME_Label_4);
+
+        Optoma_box_4 = new QComboBox(Model_name_fram_4);
+        Optoma_box_4->addItem(QString());
+        Optoma_box_4->addItem(QString());
+        Optoma_box_4->addItem(QString());
+        Optoma_box_4->setObjectName(QStringLiteral("Optoma_box_4"));
+
+        horizontalLayout_113->addWidget(Optoma_box_4);
+
+
+        gridLayout_42->addWidget(frame_inf, 0, 0, 1, 1);
+
+        tab_Other_Items->addTab(tab_nformation, QString());
 
         gridLayout_15->addWidget(tab_Other_Items, 0, 0, 1, 1);
 
@@ -9908,8 +10400,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(5);
-        tab_Other_Items->setCurrentIndex(5);
+        tabWidget->setCurrentIndex(0);
+        tab_Other_Items->setCurrentIndex(7);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(7);
@@ -10012,6 +10504,59 @@ public:
         Cureve_Type_3->setText(QApplication::translate("MainWindow", "Cureve Type", nullptr));
         Reset_3->setText(QApplication::translate("MainWindow", "Reset", nullptr));
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(GAMMMA), QApplication::translate("MainWindow", "Gamma", nullptr));
+        MODELE_NAME_Label->setText(QApplication::translate("MainWindow", "Model Name", nullptr));
+        Optoma_box->setItemText(0, QApplication::translate("MainWindow", "Optoma SVGA", nullptr));
+        Optoma_box->setItemText(1, QApplication::translate("MainWindow", "Otoma XGA", nullptr));
+        Optoma_box->setItemText(2, QApplication::translate("MainWindow", "Otoma WXGA", nullptr));
+        Optoma_box->setItemText(3, QApplication::translate("MainWindow", "Otoma 180OP", nullptr));
+        Optoma_box->setItemText(4, QApplication::translate("MainWindow", "Optoma WUXGA", nullptr));
+        Optoma_box->setItemText(5, QApplication::translate("MainWindow", "Optoma UHD", nullptr));
+
+        label_RS232->setText(QApplication::translate("MainWindow", "RS232 Version No", nullptr));
+        label_software_version_frame->setText(QApplication::translate("MainWindow", "Software Version", nullptr));
+        label_lan_fw_frame->setText(QApplication::translate("MainWindow", "LAN FW version", nullptr));
+        label_Fan_speed->setText(QApplication::translate("MainWindow", "Fan Speed", nullptr));
+        label_fan_speed1->setText(QApplication::translate("MainWindow", "Fan 1 Speed", nullptr));
+        laaabel_2_fan_1->setText(QString());
+        label_fan_speed2->setText(QApplication::translate("MainWindow", "Fan 2 Speed", nullptr));
+        laaabel_2_fan_2->setText(QString());
+        label_fan_speed3->setText(QApplication::translate("MainWindow", "Fan 3 Speed", nullptr));
+        laaabel_2_fan_3->setText(QString());
+        label_fan_speed4->setText(QApplication::translate("MainWindow", "Fan 4 Speed", nullptr));
+        laaabel_2_fan_4->setText(QString());
+        label_system_temperature->setText(QApplication::translate("MainWindow", "System Temperature", nullptr));
+        label_current_wat->setText(QApplication::translate("MainWindow", "Current Wat", nullptr));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_18), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", nullptr));
+        groupBox_main_source->setTitle(QApplication::translate("MainWindow", "Main Source", nullptr));
+        label_Resolution->setText(QApplication::translate("MainWindow", "Resolution", nullptr));
+        label_Signal_Format->setText(QApplication::translate("MainWindow", " Signal Format", nullptr));
+        label_Pixel_Clock->setText(QApplication::translate("MainWindow", "Pixel Clock", nullptr));
+        label_Horz_Refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", nullptr));
+        label_Vert_Refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", nullptr));
+        groupBox_SUB_source->setTitle(QApplication::translate("MainWindow", "Sub Source", nullptr));
+        label_Resolution_2->setText(QApplication::translate("MainWindow", "Resolution", nullptr));
+        label_Pixel_Clock_2->setText(QApplication::translate("MainWindow", "Pixel Clock", nullptr));
+        label_vert_refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", nullptr));
+        label_signal_format->setText(QApplication::translate("MainWindow", " Signal Format", nullptr));
+        label_horz_refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", nullptr));
+        label_main_source->setText(QApplication::translate("MainWindow", "Main Source", nullptr));
+        label_Info_string->setText(QApplication::translate("MainWindow", "Info String", nullptr));
+        label_native_resolution->setText(QApplication::translate("MainWindow", "Native Resolution", nullptr));
+        label_light_source->setText(QApplication::translate("MainWindow", "Light Source Mode", nullptr));
+        label_standby_power_mode->setText(QApplication::translate("MainWindow", "Standby Power Mode", nullptr));
+        standby_power_mode_box->setItemText(0, QApplication::translate("MainWindow", "Active", nullptr));
+        standby_power_mode_box->setItemText(1, QApplication::translate("MainWindow", "Eco.", nullptr));
+
+        Label_DHCP->setText(QApplication::translate("MainWindow", "DHCP", nullptr));
+        box_DHCP->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
+        box_DHCP->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
+
+        MODELE_NAME_Label_4->setText(QApplication::translate("MainWindow", "Current Lamp Source", nullptr));
+        Optoma_box_4->setItemText(0, QApplication::translate("MainWindow", "Lamp1", nullptr));
+        Optoma_box_4->setItemText(1, QApplication::translate("MainWindow", "Lamp2", nullptr));
+        Optoma_box_4->setItemText(2, QApplication::translate("MainWindow", "Both", nullptr));
+
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_nformation), QApplication::translate("MainWindow", "Information", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "Other Items", nullptr));
         label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", nullptr));
         label_var_Image_Setting_Contrast->setText(QString());
