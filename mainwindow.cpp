@@ -477,7 +477,6 @@ MainWindow::MainWindow(QWidget *parent)
     //***
 }
 
-
 MainWindow* MainWindow::mainInstance = 0;
 
 MainWindow* MainWindow::GetInstance(QWidget *parent)
@@ -599,7 +598,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     //Brightness
     if(temp.getInt_command()==125){
         if(temp.getInt_variable()==1){
@@ -608,7 +606,6 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
-
     //Contrast
     if(temp.getInt_command()==126){
         if(temp.getInt_variable()==1){
@@ -617,6 +614,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
+
     //Color Temperature
     if(temp.getInt_command()==128){
         if(temp.getInt_variable()==1){
@@ -729,9 +727,7 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     //Image shif H
-
     if(temp.getInt_command()==543){
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Image_shift_H->value();
@@ -744,6 +740,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
+
     //H Keystone
     if(temp.getInt_command()==543){
         if(temp.getInt_variable()==4){
@@ -752,6 +749,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
+
     //V Keystone
     if(temp.getInt_command()==543){
         if(temp.getInt_variable()==3){
@@ -760,6 +758,7 @@ void MainWindow:: razbor_com(parameter temp)
             return;
         }
     }
+
     //Geometric Correction
     if(temp.getInt_command()==543){
         if(temp.getInt_variable()==6){
@@ -871,6 +870,7 @@ void MainWindow:: razbor_com(parameter temp)
                 Ok.append("17");
                 return;
             }
+
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==20){
                 Ok.append("18");
                 return;
@@ -878,6 +878,7 @@ void MainWindow:: razbor_com(parameter temp)
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==21){
                 Ok.append("20");
                 return;
+
             }
 
         }
@@ -1360,42 +1361,45 @@ void MainWindow:: razbor_com(parameter temp)
     //WRITE-----------------------------------------------------------------------------------------------
     // POWER ON / OFF
     if(temp.getInt_command()==0){
-        if(temp.check_include_interval(1,9999)){
-            ui->ON_Power_on_password->setCheckState(Qt::Checked);
 
-        }
         if(temp.getInt_variable()==0){
             ui->ON->setCheckState(Qt::Unchecked);
             ui->OFF->setCheckState(Qt::Checked);
 
         }
         if(temp.getInt_variable()==1){
-            ui->ON->setCheckState(Qt::Checked);
-            ui->OFF->setCheckState(Qt::Unchecked);
+            if(temp.getInt_password()>=0 &&temp.getInt_password()<=9999 ){
+                ui->ON_Power_on_password->setCheckState(Qt::Checked);
 
+            }
+            if(temp.getInt_password() == -1){
+                ui->ON->setCheckState(Qt::Checked);
+                ui->OFF->setCheckState(Qt::Unchecked);
+            }
         }
     }
 
-//    if(temp.getInt_command()==124)
-//    {
-//        if(temp.getInt_variable()==1)
-//        {
-//            if ((ui->ON->isChecked()==Qt::Checked)&&(ui->OFF->isChecked()==Qt::Unchecked))
-//            {
-//                QByteArray To;
-//                To.append("Ok1");
-//                emit s_send_to(To);
-//            }
-//            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
-//            {
-//                QByteArray To;
-//                To.append("Ok0");
-//                emit s_send_to(To);
-//            }
+    //    if(temp.getInt_command()==124)
+    //    {
+    //        if(temp.getInt_variable()==1)
+    //        {
+    //            if ((ui->ON->isChecked()==Qt::Checked)&&(ui->OFF->isChecked()==Qt::Unchecked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok1");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok0");
+    //                emit s_send_to(To);
+    //            }
 
-//        }
+    //        }
 
-//    }
+    //    }
+
     ////////////////////////////////////////////////////////////////////////
     /////////////////////////////////////////////////////////setup screen type 16 9 16 10
 
@@ -1454,36 +1458,36 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-//    if(temp.getInt_command()==129)
-//    {
-//        if(temp.getInt_variable()==1)
-//        {
-//            if ((ui->Front->isChecked()==Qt::Checked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-//            {
-//                QByteArray To;
-//                To.append("Ok0");
-//                emit s_send_to(To);
-//            }
-//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-//            {
-//                QByteArray To;
-//                To.append("Ok1");
-//                emit s_send_to(To);
-//            }
-//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
-//            {
-//                QByteArray To;
-//                To.append("Ok2");
-//                emit s_send_to(To);
-//            }
-//            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
-//            {
-//                QByteArray To;
-//                To.append("Ok3");
-//                emit s_send_to(To);
-//            }
-//        }
-//    }
+    //    if(temp.getInt_command()==129)
+    //    {
+    //        if(temp.getInt_variable()==1)
+    //        {
+    //            if ((ui->Front->isChecked()==Qt::Checked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok0");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok1");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok2");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok3");
+    //                emit s_send_to(To);
+    //            }
+    //        }
+    //    }
 
     ///
 
@@ -1497,30 +1501,32 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
         if(temp.getInt_variable()==1)
-        {ui->ON_mute->setChecked(true);
+        {
+            ui->ON_mute->setChecked(true);
             ui->OFF_mute->setChecked(false);
         }
     }
-//    if(temp.getInt_command()==355)
-//    {
-//        if(temp.getInt_variable()==1)
-//        {
-//            if ((ui->ON_mute->isChecked())&&(!ui->OFF_mute->isChecked()))
-//            {
-//                QByteArray To;
-//                To.append("Ok1");
-//                emit s_send_to(To);
-//            }
-//            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
-//            {
-//                QByteArray To;
-//                To.append("Ok0");
-//                emit s_send_to(To);
-//            }
+    //    if(temp.getInt_command()==355)
+    //    {
+    //        if(temp.getInt_variable()==1)
+    //        {
+    //            if ((ui->ON_mute->isChecked())&&(!ui->OFF_mute->isChecked()))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok1");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok0");
+    //                emit s_send_to(To);
+    //            }
 
-//        }
+    //        }
 
-//    }
+    //    }
+
     ///////////////////////////////////////////////////////////////// Mute
     if(temp.getInt_command()==3)
     {
@@ -1536,24 +1542,24 @@ void MainWindow:: razbor_com(parameter temp)
         }
 
     }
-//    if(temp.getInt_command()==356)
-//    {
-//        if(temp.getInt_variable()==1)
-//        {
-//            if ((ui->ON_mute2->isChecked())&&(!ui->OFF_mute2->isChecked()))
-//            {
-//                QByteArray To;
-//                To.append("Ok1");
-//                emit s_send_to(To);
-//            }
-//            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
-//            {
-//                QByteArray To;
-//                To.append("Ok0");
-//                emit s_send_to(To);
-//            }
-//        }
-//    }
+    //    if(temp.getInt_command()==356)
+    //    {
+    //        if(temp.getInt_variable()==1)
+    //        {
+    //            if ((ui->ON_mute2->isChecked())&&(!ui->OFF_mute2->isChecked()))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok1");
+    //                emit s_send_to(To);
+    //            }
+    //            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
+    //            {
+    //                QByteArray To;
+    //                To.append("Ok0");
+    //                emit s_send_to(To);
+    //            }
+    //        }
+    //    }
 
     ///////////////////////////////////////////////////////////////////////  Freeze
     if(temp.getInt_command()==4)
@@ -3797,84 +3803,84 @@ void MainWindow:: razbor_com(parameter temp)
     }
 
     //Remote Control Simulation
-//    if(temp.getInt_command()==140){
-//        if(temp.getInt_variable()==1){}
-//        if(temp.getInt_variable()==2){}
-//        if(temp.getInt_variable()==3){}
-//        if(temp.getInt_variable()==4){}
-//        if(temp.getInt_variable()==5){}
-//        if(temp.getInt_variable()==6){}
-//        if(temp.getInt_variable()==7){}
-//        if(temp.getInt_variable()==8){}
-//        if(temp.getInt_variable()==9){}
-//        if(temp.getInt_variable()==10){}
-//        if(temp.getInt_variable()==11){}
-//        if(temp.getInt_variable()==12){}
-//        if(temp.getInt_variable()==13){}
-//        if(temp.getInt_variable()==14){}
-//        if(temp.getInt_variable()==15){}
-//        if(temp.getInt_variable()==16){}
-//        if(temp.getInt_variable()==17){}
-//        if(temp.getInt_variable()==18){}
-//        if(temp.getInt_variable()==19){}
-//        if(temp.getInt_variable()==20){}
-//        if(temp.getInt_variable()==21){}
-//        if(temp.getInt_variable()==22){}
-//        if(temp.getInt_variable()==23){}
-//        if(temp.getInt_variable()==24){}
-//        if(temp.getInt_variable()==25){}
-//        if(temp.getInt_variable()==26){}
-//        if(temp.getInt_variable()==27){}
-//        if(temp.getInt_variable()==28){}
-//        if(temp.getInt_variable()==30){}
-//        if(temp.getInt_variable()==31){}
-//        if(temp.getInt_variable()==32){}
-//        if(temp.getInt_variable()==33){}
-//        if(temp.getInt_variable()==34){}
-//        if(temp.getInt_variable()==35){}
-//        if(temp.getInt_variable()==36){}
-//        if(temp.getInt_variable()==37){}
-//        if(temp.getInt_variable()==38){}
-//        if(temp.getInt_variable()==39){}
-//        if(temp.getInt_variable()==40){}
-//        if(temp.getInt_variable()==41){}
-//        if(temp.getInt_variable()==42){}
-//        if(temp.getInt_variable()==43){}
-//        if(temp.getInt_variable()==44){}
-//        if(temp.getInt_variable()==45){}
-//        if(temp.getInt_variable()==47){}
-//        if(temp.getInt_variable()==51){}
-//        if(temp.getInt_variable()==52){}
-//        if(temp.getInt_variable()==53){}
-//        if(temp.getInt_variable()==54){}
-//        if(temp.getInt_variable()==55){}
-//        if(temp.getInt_variable()==56){}
-//        if(temp.getInt_variable()==57){}
-//        if(temp.getInt_variable()==58){}
-//        if(temp.getInt_variable()==59){}
-//        if(temp.getInt_variable()==60){}
-//        if(temp.getInt_variable()==61){}
-//        if(temp.getInt_variable()==63){}
-//        if(temp.getInt_variable()==64){}
-//        if(temp.getInt_variable()==65){}
-//        if(temp.getInt_variable()==66){}
-//        if(temp.getInt_variable()==67){}
-//        if(temp.getInt_variable()==68){}
-//        if(temp.getInt_variable()==69){}
-//        if(temp.getInt_variable()==70){}
-//        if(temp.getInt_variable()==71){}
-//        if(temp.getInt_variable()==72){}
-//        if(temp.getInt_variable()==73){}
-//        if(temp.getInt_variable()==74){}
-//        if(temp.getInt_variable()==75){}
-//        if(temp.getInt_variable()==76){}
-//        if(temp.getInt_variable()==77){}
-//        if(temp.getInt_variable()==78){}
-//        if(temp.getInt_variable()==79){}
-//        if(temp.getInt_variable()==80){}
-//        if(temp.getInt_variable()==81){}
-//        if(temp.getInt_variable()==82){}
-//    }
+    //    if(temp.getInt_command()==140){
+    //        if(temp.getInt_variable()==1){}
+    //        if(temp.getInt_variable()==2){}
+    //        if(temp.getInt_variable()==3){}
+    //        if(temp.getInt_variable()==4){}
+    //        if(temp.getInt_variable()==5){}
+    //        if(temp.getInt_variable()==6){}
+    //        if(temp.getInt_variable()==7){}
+    //        if(temp.getInt_variable()==8){}
+    //        if(temp.getInt_variable()==9){}
+    //        if(temp.getInt_variable()==10){}
+    //        if(temp.getInt_variable()==11){}
+    //        if(temp.getInt_variable()==12){}
+    //        if(temp.getInt_variable()==13){}
+    //        if(temp.getInt_variable()==14){}
+    //        if(temp.getInt_variable()==15){}
+    //        if(temp.getInt_variable()==16){}
+    //        if(temp.getInt_variable()==17){}
+    //        if(temp.getInt_variable()==18){}
+    //        if(temp.getInt_variable()==19){}
+    //        if(temp.getInt_variable()==20){}
+    //        if(temp.getInt_variable()==21){}
+    //        if(temp.getInt_variable()==22){}
+    //        if(temp.getInt_variable()==23){}
+    //        if(temp.getInt_variable()==24){}
+    //        if(temp.getInt_variable()==25){}
+    //        if(temp.getInt_variable()==26){}
+    //        if(temp.getInt_variable()==27){}
+    //        if(temp.getInt_variable()==28){}
+    //        if(temp.getInt_variable()==30){}
+    //        if(temp.getInt_variable()==31){}
+    //        if(temp.getInt_variable()==32){}
+    //        if(temp.getInt_variable()==33){}
+    //        if(temp.getInt_variable()==34){}
+    //        if(temp.getInt_variable()==35){}
+    //        if(temp.getInt_variable()==36){}
+    //        if(temp.getInt_variable()==37){}
+    //        if(temp.getInt_variable()==38){}
+    //        if(temp.getInt_variable()==39){}
+    //        if(temp.getInt_variable()==40){}
+    //        if(temp.getInt_variable()==41){}
+    //        if(temp.getInt_variable()==42){}
+    //        if(temp.getInt_variable()==43){}
+    //        if(temp.getInt_variable()==44){}
+    //        if(temp.getInt_variable()==45){}
+    //        if(temp.getInt_variable()==47){}
+    //        if(temp.getInt_variable()==51){}
+    //        if(temp.getInt_variable()==52){}
+    //        if(temp.getInt_variable()==53){}
+    //        if(temp.getInt_variable()==54){}
+    //        if(temp.getInt_variable()==55){}
+    //        if(temp.getInt_variable()==56){}
+    //        if(temp.getInt_variable()==57){}
+    //        if(temp.getInt_variable()==58){}
+    //        if(temp.getInt_variable()==59){}
+    //        if(temp.getInt_variable()==60){}
+    //        if(temp.getInt_variable()==61){}
+    //        if(temp.getInt_variable()==63){}
+    //        if(temp.getInt_variable()==64){}
+    //        if(temp.getInt_variable()==65){}
+    //        if(temp.getInt_variable()==66){}
+    //        if(temp.getInt_variable()==67){}
+    //        if(temp.getInt_variable()==68){}
+    //        if(temp.getInt_variable()==69){}
+    //        if(temp.getInt_variable()==70){}
+    //        if(temp.getInt_variable()==71){}
+    //        if(temp.getInt_variable()==72){}
+    //        if(temp.getInt_variable()==73){}
+    //        if(temp.getInt_variable()==74){}
+    //        if(temp.getInt_variable()==75){}
+    //        if(temp.getInt_variable()==76){}
+    //        if(temp.getInt_variable()==77){}
+    //        if(temp.getInt_variable()==78){}
+    //        if(temp.getInt_variable()==79){}
+    //        if(temp.getInt_variable()==80){}
+    //        if(temp.getInt_variable()==81){}
+    //        if(temp.getInt_variable()==82){}
+    //    }
     //Setup
     //Lamp Settings
     if(temp.getInt_command()==111){

@@ -9581,8 +9581,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(5);
-        tab_Other_Items->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(6);
+        tab_Other_Items->setCurrentIndex(4);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(4);
         tabWidget_3->setCurrentIndex(6);
