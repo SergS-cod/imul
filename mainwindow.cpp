@@ -3,7 +3,7 @@
 
 
 QList <com> command;
-
+int index_page;
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -107,7 +107,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Four_Corners_buttom_right_V->setText("40");
     connect(ui->horizontalSlider_Four_Corners_buttom_right_V, &QSlider::valueChanged, ui->label_var_Four_Corners_buttom_right_V,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
-
 
     //Geometric Correction
     ui->label_var_Geometric_Correction_H_Arc->setText("0");
@@ -470,9 +469,19 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Options_Menu_Transparency->setText("5");
     connect(ui->horizontalSlider_Options_Menu_Transparency, &QSlider::valueChanged, ui->label_var_Options_Menu_Transparency,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    //INFO
+    ui->label_var_Info_Projector_id->setText("0");
+    connect(ui->horizontalSlider_Info_Projector_id, &QSlider::valueChanged, ui->label_var_Info_Projector_id,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Info_remote_code->setText("0");
+    connect(ui->horizontalSlider_Info_remote_code, &QSlider::valueChanged, ui->label_var_Info_remote_code,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+    ui->label_var_Info_remote_code_Active->setText("0");
+    connect(ui->horizontalSlider_Info_remote_code_Active, &QSlider::valueChanged, ui->label_var_Info_remote_code_Active,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
     //***test
-    parameter temp("7E303035343320370D");
+    parameter temp("7E303033313320310D");
     razbor_com(temp);
     //***
 }
@@ -493,7 +502,7 @@ void MainWindow:: update_state()
 
 }
 
-void MainWindow:: razbor_com(parameter temp)
+QByteArray MainWindow:: razbor_com(parameter temp)
 {
     QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
                     "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
@@ -504,11 +513,12 @@ void MainWindow:: razbor_com(parameter temp)
                       "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
                       "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
 
-    QByteArray F,P,Ok,INFO;
+    QByteArray F,P,Ok,INFO,Check;
     F.append("F");
     P.append("P");
     Ok.append("  Ok");
     INFO.append("INFO");
+
     int tmp;
     //READ
     //Display Mode
@@ -516,83 +526,83 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==0){
                 Ok.append("0");
-                return;
+                return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==2){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==3){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==4){
                 Ok.append("11");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==5){
                 Ok.append("14");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==6){
                 Ok.append("12");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==7){
                 Ok.append("4");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==8){
                 Ok.append("4");
-                return;
+                return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==9){
                 Ok.append("10");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==10){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==11){
                 Ok.append("9");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==12){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==13){
                 Ok.append("15");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==14){
                 Ok.append("16");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==15){
                 Ok.append("17");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==16){
                 Ok.append("18");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==17){
                 Ok.append("19");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==18){
                 Ok.append("20");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Display_Mode->currentIndex()==19){
                 Ok.append("21");
-                return;
+                 return Ok;
             }
 
         }
@@ -603,7 +613,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Image_Setting_Brightness->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
     //Contrast
@@ -611,7 +621,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Image_Setting_Contrast->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -620,43 +630,43 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==0){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==2){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==3){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==4){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==5){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==6){
                 Ok.append("4");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==7){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==8){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->currentIndex()==9){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
         }
     }
@@ -666,47 +676,47 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->comboBox_Aspect_ratio->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==2){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==3){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==4){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==5){
                 Ok.append("9");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==6){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==7){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==8){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==9){
                 Ok.append("11");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Aspect_ratio->currentIndex()==10){
                 Ok.append("12");
-                return;
+                 return Ok;
             }
         }
     }
@@ -716,14 +726,14 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==8){
             tmp = ui->horizontalSlider_H_Zoom->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
 
         if(temp.getInt_variable()==7){
             tmp = ui->horizontalSlider_V_Zoom->value();
             Ok.append(QString::number(tmp));
             //qDebug()<<Ok;
-            return;
+             return Ok;
         }
     }
 
@@ -732,12 +742,12 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Image_shift_H->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==2){
             tmp = ui->horizontalSlider_Image_shift_V->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -746,7 +756,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==4){
             tmp = ui->horizontalSlider_H_Keystone->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -755,7 +765,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==3){
             tmp = ui->horizontalSlider_V_Keystone->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -764,22 +774,22 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==6){
             tmp = ui->horizontalSlider_Geometric_Correction_H_Arc->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==5){
             tmp = ui->horizontalSlider_Geometric_Correction_V_Arc->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==4){
             tmp = ui->horizontalSlider_Geometric_Correction_H_keystone->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==3){
             tmp = ui->horizontalSlider_Geometric_Correction_V_keystone->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -788,96 +798,96 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==0){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==1){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==2){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==3){
                 Ok.append("9");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==4){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==5){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==6){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==7){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==8){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==9){
                 Ok.append("11");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==10){
                 Ok.append("4");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==11){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==12){
                 Ok.append("15");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==13){
                 Ok.append("16");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==14){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==15){
                 Ok.append("10");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==16){
                 Ok.append("12");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==17){
                 Ok.append("13");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==18){
                 Ok.append("14");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==19){
                 Ok.append("17");
-                return;
+                 return Ok;
             }
 
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==20){
                 Ok.append("18");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==21){
                 Ok.append("20");
-                return;
+                 return Ok;
 
             }
 
@@ -888,89 +898,89 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==1){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==2){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==3){
                 Ok.append("11");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==4){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==5){
                 Ok.append("9");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==6){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==7){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==8){
                 Ok.append("4");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==9){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==10){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==11){
                 Ok.append("16");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==12){
                 Ok.append("17");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==13){
                 Ok.append("13");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==14){
                 Ok.append("10");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==15){
                 Ok.append("12");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==16){
                 Ok.append("14");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Sub->currentIndex()==17){
                 Ok.append("15");
-                return;
+                 return Ok;
             }
-
         }
     }
+
     //Mute
     if(temp.getInt_command()==356){
         if(temp.getInt_variable()==1){
             if(ui->comboBox_Mute->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->comboBox_Mute->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
     }
@@ -980,68 +990,74 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->Front->isChecked()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->Rear->isChecked()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->Ceiling_top->isChecked()==1){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->Rear_top->isChecked()==1){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
         }
     }
 
     //Filter Settings   -------------------------????
+    if(temp.getInt_command()==321){
+        if(temp.getInt_variable()==1){
+            Ok.append(ui->lineEdit_setup_filter_setting_filter_usage_hours->text().toInt());
+             return Ok;
+        }
+    }
 
     //Lens Settings
     if(temp.getInt_command()==545){
         if(temp.getInt_variable()==4){
             if(ui->combobox_Setup_Lamp_Setting_Lens_Function_2->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Lamp_Setting_Lens_Function_2->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
 
         if(temp.getInt_variable()==1){
             if(ui->combobox_Setup_Lamp_Setting_Zoom->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Lamp_Setting_Zoom->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
 
         if(temp.getInt_variable()==2){
             if(ui->combobox_Setup_Lamp_Setting_Focus->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Lamp_Setting_Focus->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
 
         if(temp.getInt_variable()==3){
             if(ui->combobox_Setup_Lamp_Setting_Shift_2->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Lamp_Setting_Shift_2->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1051,11 +1067,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==16){
             if(ui->combobox_Setup_Power_Setting_Power_Mode->currentIndex()==0){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Power_Setting_Power_Mode->currentIndex()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1065,17 +1081,17 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Setup_Security_Timer_Month->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==2){
             tmp = ui->horizontalSlider_Setup_Security_Timer_Day->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==3){
             tmp = ui->horizontalSlider_Setup_Security_Timer_Hour->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -1084,22 +1100,22 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->combobox_Setup_Remote_Setting_IR_Function->currentIndex()==4){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Remote_Setting_IR_Function->currentIndex()==5){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
 
         if(temp.getInt_variable()==2){
             if(ui->combobox_Setup_Remote_Setting_IR_Function->currentIndex()==6){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Setup_Remote_Setting_IR_Function->currentIndex()==7){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1109,7 +1125,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             tmp = ui->horizontalSlider_Setup_Projector_ID->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
 
@@ -1118,15 +1134,15 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->combobox_Options_Closed_Captioning->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Closed_Captioning->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Closed_Captioning->currentIndex()==2){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1136,107 +1152,107 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==1){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==2){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==3){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==4){
                 Ok.append("7");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==5){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==6){
                 Ok.append("8");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==7){
                 Ok.append("9");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==8){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==9){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==10){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==11){
                 Ok.append("2");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==12){
                 Ok.append("3");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==13){
                 Ok.append("11");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==14){
                 Ok.append("4");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==15){
                 Ok.append("5");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==16){
                 Ok.append("15");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==17){
                 Ok.append("16");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==18){
                 Ok.append("6");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==19){
                 Ok.append("10");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==20){
                 Ok.append("12");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==21){
                 Ok.append("13");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==22){
                 Ok.append("14");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==23){
                 Ok.append("17");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==24){
                 Ok.append("18");
-                return;
+                 return Ok;
             }
             if(ui->combobox_Options_Inout_Sourse->currentIndex()==25){
                 Ok.append("20");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1248,11 +1264,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->Network_Status_box->currentIndex()==0){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->Network_Status_box->currentIndex()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1261,11 +1277,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->Network_status_box->currentIndex()==0){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->Network_status_box->currentIndex()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1275,11 +1291,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->DHCP_box->currentIndex()==0){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
             if(ui->DHCP_box->currentIndex()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1292,11 +1308,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->ON->isChecked()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->OFF->isChecked()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1305,11 +1321,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->ON_mute->isChecked()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->OFF_mute->isChecked()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1318,11 +1334,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->ON_mute2->isChecked()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->OFF_mute2->isChecked()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1332,11 +1348,11 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1){
             if(ui->DDD->isChecked()==1){
                 Ok.append("1");
-                return;
+                 return Ok;
             }
             if(ui->DD->isChecked()==1){
                 Ok.append("0");
-                return;
+                 return Ok;
             }
         }
     }
@@ -1346,17 +1362,14 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==2){
             tmp = ui->horizontalSlider_2xxxxx->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
         if(temp.getInt_variable()==3){
             tmp = ui->horizontalSlider_3xxxxx->value();
             Ok.append(QString::number(tmp));
-            return;
+             return Ok;
         }
     }
-
-
-
 
     //WRITE-----------------------------------------------------------------------------------------------
     // POWER ON / OFF
@@ -1368,7 +1381,7 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
         if(temp.getInt_variable()==1){
-            if(temp.getInt_password()>=0 &&temp.getInt_password()<=9999 ){
+            if(temp.getInt_password()>=0 && temp.getInt_password()<=9999){
                 ui->ON_Power_on_password->setCheckState(Qt::Checked);
 
             }
@@ -1419,6 +1432,7 @@ void MainWindow:: razbor_com(parameter temp)
     //    }
 
     //////////////////////////////////////////////////////////////////
+    ///
     ////////////////////////////////////////////////////////////setup Projection
     if(temp.getInt_command()==71)
     {
@@ -1793,7 +1807,7 @@ void MainWindow:: razbor_com(parameter temp)
         if(temp.check_include_interval(0,10)){
             ui->horizontalSlider_Noise_Reduction->setValue(temp.getInt_variable());
         }
-        return;
+
     }
 
 
@@ -4831,7 +4845,6 @@ void MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     //------------------------------END Display page
 
     /// Просто вношу изменения
@@ -5233,18 +5246,133 @@ void MainWindow:: razbor_com(parameter temp)
 
         }
     }
-    ///
-    ///
-    ///
+
+
+    //INFO
+    //[Open Info Menu] [Close Info Menu]
+    //write
+    if(temp.getInt_command()==313){
+        if(temp.getInt_variable()==1){
+            qDebug()<<"[Open Info Menu]";
+            ui->tabWidget->setCurrentIndex(5);
+            return P;
+        }
+        if(temp.getInt_variable()==0){
+            qDebug()<<"[Close Info Menu]";
+            ui->tabWidget->setCurrentIndex(0);
+            return P;
+        }
+    }
+
+    //Regulatory
+    //Serial Number
+    //read
+    if(temp.getInt_command()==353){
+        if(temp.getInt_variable()==1){
+            Ok.append(ui->lineEdit_info_serial_number->text());
+            return Ok;
+        }
+    }
+    //Current Input Source
+    //read
+    if(temp.getInt_command()==121){
+        if(temp.getInt_variable()==1){
+            Check.append(ui->combobox_Options_Inout_Sourse->currentText());
+            return Check;
+        }
+    }
+    //Resolution
+    //read
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==4){
+            Ok.append(ui->lineEdit_info_Resolution->text());
+             return Ok;
+        }
+    }
+    //Refresh Rate
+    //read
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==19){
+            Ok.append(ui->lineEdit_info_Refresh_Rate->text());
+             return Ok;
+        }
+    }
+
+    //Network status
+    if(temp.getInt_command()==87){
+        if(temp.getInt_variable()==1){
+            if(ui->combobox_info_Network_status->currentIndex()==0){
+                Ok.append("0");
+                return Ok;
+            }
+            if(ui->combobox_info_Network_status->currentIndex()==1){
+                Ok.append("1");
+                return Ok;
+            }
+        }
+    }
+
+    //IP Address
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==19){
+           // Ok.append(/*nnn_nnn_nnn_nnn*/);
+             return Ok;
+        }
+    }
+
+    //Display
+    if(temp.getInt_command()==123){
+        if(temp.getInt_variable()==1){
+            Check.append(ui->comboBox_Image_Setting_Display_Mode->currentText());
+            return Check;
+        }
+    }
+    //Power Mode
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==16){
+            if(ui->combobox_info_Power_Mode->currentIndex()==0){
+                Ok.append("0");
+                return Ok;
+            }
+            if(ui->combobox_info_Power_Mode->currentIndex()==1){
+                Ok.append("1");
+                return Ok;
+            }
+        }
+    }
+
+    //Filter Usage Hours
+    if(temp.getInt_command()==321){
+        if(temp.getInt_variable()==1){
+             return Ok;
+        }
+    }
+
+    //Lamp Hours
+    if(temp.getInt_command()==108){
+        if(temp.getInt_variable()==1){
+            Ok.append(ui->lineEdit_info_total->text());
+            return Ok;
+        }
+    }
+
+    if(temp.getInt_command()==108){
+        if(temp.getInt_variable()==2){
+            Ok.append(ui->lineEdit_info_lamp_2_hour->text());
+            return Ok;
+        }
+    }
+    //---------------------------
+    return F;
 }
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
     com tmp;
     tmp.CMD = CMD;
-    tmp.Val=Val;
-    tmp.start=start;
-    tmp.end=end;
-    tmp.password=password;
-    tmp.dat=dat;
+    tmp.Val = Val;
+    tmp.start = start;
+    tmp.end = end;
+    tmp.password = password;
+    tmp.dat = dat;
     command.append(tmp);
 }
 
@@ -6455,4 +6583,10 @@ void MainWindow::on_pushButton_reset_to_Default_password_clicked(){
 
 void MainWindow::on_pushButton_Option_reset_input_name_clicked(){
 
+}
+
+void MainWindow::on_tabWidget_tabBarClicked(int index)
+{
+    index_page = index;
+    //qDebug()<<index;
 }

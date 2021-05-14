@@ -1029,6 +1029,8 @@ public:
     QVBoxLayout *verticalLayout_22;
     QFrame *frame_30;
     QVBoxLayout *verticalLayout_21;
+    QLabel *label_setup_filter_setting_filter_usage_hours;
+    QLineEdit *lineEdit_setup_filter_setting_filter_usage_hours;
     QFrame *frame_Setup_Lamp_Setting_Filter_Filter_Reminder;
     QHBoxLayout *horizontalLayout_74;
     QLabel *label_Setup_Lamp_Setting_Filter_Filter_Reminder;
@@ -1434,6 +1436,57 @@ public:
     QLabel *label_10;
     QComboBox *HTTP_box;
     QWidget *tab_17;
+    QLineEdit *lineEdit_info_serial_number;
+    QLabel *label_info_serial_number;
+    QLabel *label_info_Current_Input_Sourse;
+    QLineEdit *lineEdit_info_Current_Input_Sourse;
+    QLineEdit *lineEdit_info_Resolution;
+    QLabel *label_info_Resolution;
+    QLineEdit *lineEdit_info_Refresh_Rate;
+    QLabel *label_info_Refresh_Rate;
+    QFrame *frame_info_Network_status;
+    QHBoxLayout *horizontalLayout_813;
+    QLabel *label_info_Network_status;
+    QComboBox *combobox_info_Network_status;
+    QLineEdit *lineEdit_info_IP_Adress;
+    QLabel *label_info_IP_Adress;
+    QFrame *frame_Info_Projector_id;
+    QHBoxLayout *horizontalLayout_231;
+    QLabel *label_Info_Projector_id;
+    QSlider *horizontalSlider_Info_Projector_id;
+    QLabel *label_var_Info_Projector_id;
+    QFrame *frame_Info_remote_code_Active;
+    QHBoxLayout *horizontalLayout_232;
+    QLabel *label_Info_remote_code_Active;
+    QSlider *horizontalSlider_Info_remote_code_Active;
+    QLabel *label_var_Info_remote_code_Active;
+    QFrame *frame_Info_remote_code;
+    QHBoxLayout *horizontalLayout_233;
+    QLabel *label_Info_remote_code;
+    QSlider *horizontalSlider_Info_remote_code;
+    QLabel *label_var_Info_remote_code;
+    QLineEdit *lineEdit_info_Display_Mode;
+    QLabel *label_info_Display_Mode;
+    QFrame *frame_info_Power_Mode;
+    QHBoxLayout *horizontalLayout_814;
+    QLabel *label_info_Power_Mode;
+    QComboBox *combobox_info_Power_Mode;
+    QGroupBox *groupBox_info_lamp_hour;
+    QVBoxLayout *verticalLayout_46;
+    QLabel *label_info_bright;
+    QLineEdit *lineEdit_info_bright;
+    QLabel *label_info_eco;
+    QLineEdit *lineEdit_info_eco;
+    QLabel *label_info_dinamic;
+    QLineEdit *lineEdit_info_dinamic;
+    QLabel *label_info_eco_plus;
+    QLineEdit *lineEdit_info_eco_plus;
+    QLabel *label_info_total;
+    QLineEdit *lineEdit_info_total;
+    QLabel *label_info_lamp_1_hour;
+    QLineEdit *lineEdit_info_lamp_1_hour;
+    QLabel *label_info_lamp_2_hour;
+    QLineEdit *lineEdit_info_lamp_2_hour;
     QWidget *tab_remote;
     QFrame *frame_remote;
     QGroupBox *groupBox_power;
@@ -2152,7 +2205,7 @@ public:
         GAMMMA->setObjectName(QStringLiteral("GAMMMA"));
         Gamma_F = new QFrame(GAMMMA);
         Gamma_F->setObjectName(QStringLiteral("Gamma_F"));
-        Gamma_F->setGeometry(QRect(20, 20, 249, 318));
+        Gamma_F->setGeometry(QRect(20, 20, 421, 341));
         Gamma_F->setFrameShape(QFrame::StyledPanel);
         Gamma_F->setFrameShadow(QFrame::Raised);
         gridLayout_19 = new QGridLayout(Gamma_F);
@@ -7097,6 +7150,20 @@ public:
         frame_30->setFrameShadow(QFrame::Raised);
         verticalLayout_21 = new QVBoxLayout(frame_30);
         verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
+        label_setup_filter_setting_filter_usage_hours = new QLabel(frame_30);
+        label_setup_filter_setting_filter_usage_hours->setObjectName(QStringLiteral("label_setup_filter_setting_filter_usage_hours"));
+        sizePolicy3.setHeightForWidth(label_setup_filter_setting_filter_usage_hours->sizePolicy().hasHeightForWidth());
+        label_setup_filter_setting_filter_usage_hours->setSizePolicy(sizePolicy3);
+
+        verticalLayout_21->addWidget(label_setup_filter_setting_filter_usage_hours);
+
+        lineEdit_setup_filter_setting_filter_usage_hours = new QLineEdit(frame_30);
+        lineEdit_setup_filter_setting_filter_usage_hours->setObjectName(QStringLiteral("lineEdit_setup_filter_setting_filter_usage_hours"));
+        sizePolicy.setHeightForWidth(lineEdit_setup_filter_setting_filter_usage_hours->sizePolicy().hasHeightForWidth());
+        lineEdit_setup_filter_setting_filter_usage_hours->setSizePolicy(sizePolicy);
+
+        verticalLayout_21->addWidget(lineEdit_setup_filter_setting_filter_usage_hours);
+
         frame_Setup_Lamp_Setting_Filter_Filter_Reminder = new QFrame(frame_30);
         frame_Setup_Lamp_Setting_Filter_Filter_Reminder->setObjectName(QStringLiteral("frame_Setup_Lamp_Setting_Filter_Filter_Reminder"));
         frame_Setup_Lamp_Setting_Filter_Filter_Reminder->setFrameShape(QFrame::Box);
@@ -9297,6 +9364,266 @@ public:
         tabWidget->addTab(tab_16, QString());
         tab_17 = new QWidget();
         tab_17->setObjectName(QStringLiteral("tab_17"));
+        lineEdit_info_serial_number = new QLineEdit(tab_17);
+        lineEdit_info_serial_number->setObjectName(QStringLiteral("lineEdit_info_serial_number"));
+        lineEdit_info_serial_number->setGeometry(QRect(20, 50, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_serial_number->sizePolicy().hasHeightForWidth());
+        lineEdit_info_serial_number->setSizePolicy(sizePolicy);
+        label_info_serial_number = new QLabel(tab_17);
+        label_info_serial_number->setObjectName(QStringLiteral("label_info_serial_number"));
+        label_info_serial_number->setGeometry(QRect(20, 20, 151, 16));
+        label_info_Current_Input_Sourse = new QLabel(tab_17);
+        label_info_Current_Input_Sourse->setObjectName(QStringLiteral("label_info_Current_Input_Sourse"));
+        label_info_Current_Input_Sourse->setGeometry(QRect(20, 100, 151, 16));
+        lineEdit_info_Current_Input_Sourse = new QLineEdit(tab_17);
+        lineEdit_info_Current_Input_Sourse->setObjectName(QStringLiteral("lineEdit_info_Current_Input_Sourse"));
+        lineEdit_info_Current_Input_Sourse->setGeometry(QRect(20, 130, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_Current_Input_Sourse->sizePolicy().hasHeightForWidth());
+        lineEdit_info_Current_Input_Sourse->setSizePolicy(sizePolicy);
+        lineEdit_info_Resolution = new QLineEdit(tab_17);
+        lineEdit_info_Resolution->setObjectName(QStringLiteral("lineEdit_info_Resolution"));
+        lineEdit_info_Resolution->setGeometry(QRect(20, 210, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_Resolution->sizePolicy().hasHeightForWidth());
+        lineEdit_info_Resolution->setSizePolicy(sizePolicy);
+        label_info_Resolution = new QLabel(tab_17);
+        label_info_Resolution->setObjectName(QStringLiteral("label_info_Resolution"));
+        label_info_Resolution->setGeometry(QRect(20, 180, 151, 16));
+        lineEdit_info_Refresh_Rate = new QLineEdit(tab_17);
+        lineEdit_info_Refresh_Rate->setObjectName(QStringLiteral("lineEdit_info_Refresh_Rate"));
+        lineEdit_info_Refresh_Rate->setGeometry(QRect(20, 290, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_Refresh_Rate->sizePolicy().hasHeightForWidth());
+        lineEdit_info_Refresh_Rate->setSizePolicy(sizePolicy);
+        label_info_Refresh_Rate = new QLabel(tab_17);
+        label_info_Refresh_Rate->setObjectName(QStringLiteral("label_info_Refresh_Rate"));
+        label_info_Refresh_Rate->setGeometry(QRect(20, 260, 151, 16));
+        frame_info_Network_status = new QFrame(tab_17);
+        frame_info_Network_status->setObjectName(QStringLiteral("frame_info_Network_status"));
+        frame_info_Network_status->setGeometry(QRect(20, 330, 221, 41));
+        frame_info_Network_status->setFrameShape(QFrame::Box);
+        frame_info_Network_status->setFrameShadow(QFrame::Raised);
+        horizontalLayout_813 = new QHBoxLayout(frame_info_Network_status);
+        horizontalLayout_813->setObjectName(QStringLiteral("horizontalLayout_813"));
+        label_info_Network_status = new QLabel(frame_info_Network_status);
+        label_info_Network_status->setObjectName(QStringLiteral("label_info_Network_status"));
+
+        horizontalLayout_813->addWidget(label_info_Network_status);
+
+        combobox_info_Network_status = new QComboBox(frame_info_Network_status);
+        combobox_info_Network_status->addItem(QString());
+        combobox_info_Network_status->addItem(QString());
+        combobox_info_Network_status->setObjectName(QStringLiteral("combobox_info_Network_status"));
+
+        horizontalLayout_813->addWidget(combobox_info_Network_status);
+
+        lineEdit_info_IP_Adress = new QLineEdit(tab_17);
+        lineEdit_info_IP_Adress->setObjectName(QStringLiteral("lineEdit_info_IP_Adress"));
+        lineEdit_info_IP_Adress->setGeometry(QRect(20, 420, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_IP_Adress->sizePolicy().hasHeightForWidth());
+        lineEdit_info_IP_Adress->setSizePolicy(sizePolicy);
+        label_info_IP_Adress = new QLabel(tab_17);
+        label_info_IP_Adress->setObjectName(QStringLiteral("label_info_IP_Adress"));
+        label_info_IP_Adress->setGeometry(QRect(20, 390, 151, 16));
+        frame_Info_Projector_id = new QFrame(tab_17);
+        frame_Info_Projector_id->setObjectName(QStringLiteral("frame_Info_Projector_id"));
+        frame_Info_Projector_id->setGeometry(QRect(20, 460, 351, 41));
+        frame_Info_Projector_id->setFrameShape(QFrame::Box);
+        frame_Info_Projector_id->setFrameShadow(QFrame::Raised);
+        horizontalLayout_231 = new QHBoxLayout(frame_Info_Projector_id);
+        horizontalLayout_231->setObjectName(QStringLiteral("horizontalLayout_231"));
+        label_Info_Projector_id = new QLabel(frame_Info_Projector_id);
+        label_Info_Projector_id->setObjectName(QStringLiteral("label_Info_Projector_id"));
+
+        horizontalLayout_231->addWidget(label_Info_Projector_id);
+
+        horizontalSlider_Info_Projector_id = new QSlider(frame_Info_Projector_id);
+        horizontalSlider_Info_Projector_id->setObjectName(QStringLiteral("horizontalSlider_Info_Projector_id"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Info_Projector_id->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Info_Projector_id->setSizePolicy(sizePolicy);
+        horizontalSlider_Info_Projector_id->setMinimum(0);
+        horizontalSlider_Info_Projector_id->setMaximum(99);
+        horizontalSlider_Info_Projector_id->setPageStep(1);
+        horizontalSlider_Info_Projector_id->setValue(0);
+        horizontalSlider_Info_Projector_id->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_231->addWidget(horizontalSlider_Info_Projector_id);
+
+        label_var_Info_Projector_id = new QLabel(frame_Info_Projector_id);
+        label_var_Info_Projector_id->setObjectName(QStringLiteral("label_var_Info_Projector_id"));
+
+        horizontalLayout_231->addWidget(label_var_Info_Projector_id, 0, Qt::AlignHCenter);
+
+        frame_Info_remote_code_Active = new QFrame(tab_17);
+        frame_Info_remote_code_Active->setObjectName(QStringLiteral("frame_Info_remote_code_Active"));
+        frame_Info_remote_code_Active->setGeometry(QRect(20, 560, 351, 41));
+        frame_Info_remote_code_Active->setFrameShape(QFrame::Box);
+        frame_Info_remote_code_Active->setFrameShadow(QFrame::Raised);
+        horizontalLayout_232 = new QHBoxLayout(frame_Info_remote_code_Active);
+        horizontalLayout_232->setObjectName(QStringLiteral("horizontalLayout_232"));
+        label_Info_remote_code_Active = new QLabel(frame_Info_remote_code_Active);
+        label_Info_remote_code_Active->setObjectName(QStringLiteral("label_Info_remote_code_Active"));
+
+        horizontalLayout_232->addWidget(label_Info_remote_code_Active);
+
+        horizontalSlider_Info_remote_code_Active = new QSlider(frame_Info_remote_code_Active);
+        horizontalSlider_Info_remote_code_Active->setObjectName(QStringLiteral("horizontalSlider_Info_remote_code_Active"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Info_remote_code_Active->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Info_remote_code_Active->setSizePolicy(sizePolicy);
+        horizontalSlider_Info_remote_code_Active->setMinimum(0);
+        horizontalSlider_Info_remote_code_Active->setMaximum(99);
+        horizontalSlider_Info_remote_code_Active->setPageStep(1);
+        horizontalSlider_Info_remote_code_Active->setValue(0);
+        horizontalSlider_Info_remote_code_Active->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_232->addWidget(horizontalSlider_Info_remote_code_Active);
+
+        label_var_Info_remote_code_Active = new QLabel(frame_Info_remote_code_Active);
+        label_var_Info_remote_code_Active->setObjectName(QStringLiteral("label_var_Info_remote_code_Active"));
+
+        horizontalLayout_232->addWidget(label_var_Info_remote_code_Active, 0, Qt::AlignHCenter);
+
+        frame_Info_remote_code = new QFrame(tab_17);
+        frame_Info_remote_code->setObjectName(QStringLiteral("frame_Info_remote_code"));
+        frame_Info_remote_code->setGeometry(QRect(20, 510, 351, 41));
+        frame_Info_remote_code->setFrameShape(QFrame::Box);
+        frame_Info_remote_code->setFrameShadow(QFrame::Raised);
+        horizontalLayout_233 = new QHBoxLayout(frame_Info_remote_code);
+        horizontalLayout_233->setObjectName(QStringLiteral("horizontalLayout_233"));
+        label_Info_remote_code = new QLabel(frame_Info_remote_code);
+        label_Info_remote_code->setObjectName(QStringLiteral("label_Info_remote_code"));
+
+        horizontalLayout_233->addWidget(label_Info_remote_code);
+
+        horizontalSlider_Info_remote_code = new QSlider(frame_Info_remote_code);
+        horizontalSlider_Info_remote_code->setObjectName(QStringLiteral("horizontalSlider_Info_remote_code"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Info_remote_code->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Info_remote_code->setSizePolicy(sizePolicy);
+        horizontalSlider_Info_remote_code->setMinimum(0);
+        horizontalSlider_Info_remote_code->setMaximum(99);
+        horizontalSlider_Info_remote_code->setPageStep(1);
+        horizontalSlider_Info_remote_code->setValue(0);
+        horizontalSlider_Info_remote_code->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_233->addWidget(horizontalSlider_Info_remote_code);
+
+        label_var_Info_remote_code = new QLabel(frame_Info_remote_code);
+        label_var_Info_remote_code->setObjectName(QStringLiteral("label_var_Info_remote_code"));
+
+        horizontalLayout_233->addWidget(label_var_Info_remote_code, 0, Qt::AlignHCenter);
+
+        lineEdit_info_Display_Mode = new QLineEdit(tab_17);
+        lineEdit_info_Display_Mode->setObjectName(QStringLiteral("lineEdit_info_Display_Mode"));
+        lineEdit_info_Display_Mode->setGeometry(QRect(20, 650, 190, 22));
+        sizePolicy.setHeightForWidth(lineEdit_info_Display_Mode->sizePolicy().hasHeightForWidth());
+        lineEdit_info_Display_Mode->setSizePolicy(sizePolicy);
+        label_info_Display_Mode = new QLabel(tab_17);
+        label_info_Display_Mode->setObjectName(QStringLiteral("label_info_Display_Mode"));
+        label_info_Display_Mode->setGeometry(QRect(20, 620, 151, 16));
+        frame_info_Power_Mode = new QFrame(tab_17);
+        frame_info_Power_Mode->setObjectName(QStringLiteral("frame_info_Power_Mode"));
+        frame_info_Power_Mode->setGeometry(QRect(20, 700, 341, 41));
+        frame_info_Power_Mode->setFrameShape(QFrame::Box);
+        frame_info_Power_Mode->setFrameShadow(QFrame::Raised);
+        horizontalLayout_814 = new QHBoxLayout(frame_info_Power_Mode);
+        horizontalLayout_814->setObjectName(QStringLiteral("horizontalLayout_814"));
+        label_info_Power_Mode = new QLabel(frame_info_Power_Mode);
+        label_info_Power_Mode->setObjectName(QStringLiteral("label_info_Power_Mode"));
+
+        horizontalLayout_814->addWidget(label_info_Power_Mode);
+
+        combobox_info_Power_Mode = new QComboBox(frame_info_Power_Mode);
+        combobox_info_Power_Mode->addItem(QString());
+        combobox_info_Power_Mode->addItem(QString());
+        combobox_info_Power_Mode->setObjectName(QStringLiteral("combobox_info_Power_Mode"));
+
+        horizontalLayout_814->addWidget(combobox_info_Power_Mode);
+
+        groupBox_info_lamp_hour = new QGroupBox(tab_17);
+        groupBox_info_lamp_hour->setObjectName(QStringLiteral("groupBox_info_lamp_hour"));
+        groupBox_info_lamp_hour->setGeometry(QRect(440, 30, 411, 491));
+        verticalLayout_46 = new QVBoxLayout(groupBox_info_lamp_hour);
+        verticalLayout_46->setObjectName(QStringLiteral("verticalLayout_46"));
+        label_info_bright = new QLabel(groupBox_info_lamp_hour);
+        label_info_bright->setObjectName(QStringLiteral("label_info_bright"));
+
+        verticalLayout_46->addWidget(label_info_bright);
+
+        lineEdit_info_bright = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_bright->setObjectName(QStringLiteral("lineEdit_info_bright"));
+        sizePolicy.setHeightForWidth(lineEdit_info_bright->sizePolicy().hasHeightForWidth());
+        lineEdit_info_bright->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_bright);
+
+        label_info_eco = new QLabel(groupBox_info_lamp_hour);
+        label_info_eco->setObjectName(QStringLiteral("label_info_eco"));
+
+        verticalLayout_46->addWidget(label_info_eco);
+
+        lineEdit_info_eco = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_eco->setObjectName(QStringLiteral("lineEdit_info_eco"));
+        sizePolicy.setHeightForWidth(lineEdit_info_eco->sizePolicy().hasHeightForWidth());
+        lineEdit_info_eco->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_eco);
+
+        label_info_dinamic = new QLabel(groupBox_info_lamp_hour);
+        label_info_dinamic->setObjectName(QStringLiteral("label_info_dinamic"));
+
+        verticalLayout_46->addWidget(label_info_dinamic);
+
+        lineEdit_info_dinamic = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_dinamic->setObjectName(QStringLiteral("lineEdit_info_dinamic"));
+
+        verticalLayout_46->addWidget(lineEdit_info_dinamic);
+
+        label_info_eco_plus = new QLabel(groupBox_info_lamp_hour);
+        label_info_eco_plus->setObjectName(QStringLiteral("label_info_eco_plus"));
+
+        verticalLayout_46->addWidget(label_info_eco_plus);
+
+        lineEdit_info_eco_plus = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_eco_plus->setObjectName(QStringLiteral("lineEdit_info_eco_plus"));
+        sizePolicy.setHeightForWidth(lineEdit_info_eco_plus->sizePolicy().hasHeightForWidth());
+        lineEdit_info_eco_plus->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_eco_plus);
+
+        label_info_total = new QLabel(groupBox_info_lamp_hour);
+        label_info_total->setObjectName(QStringLiteral("label_info_total"));
+
+        verticalLayout_46->addWidget(label_info_total);
+
+        lineEdit_info_total = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_total->setObjectName(QStringLiteral("lineEdit_info_total"));
+        sizePolicy.setHeightForWidth(lineEdit_info_total->sizePolicy().hasHeightForWidth());
+        lineEdit_info_total->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_total);
+
+        label_info_lamp_1_hour = new QLabel(groupBox_info_lamp_hour);
+        label_info_lamp_1_hour->setObjectName(QStringLiteral("label_info_lamp_1_hour"));
+
+        verticalLayout_46->addWidget(label_info_lamp_1_hour);
+
+        lineEdit_info_lamp_1_hour = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_lamp_1_hour->setObjectName(QStringLiteral("lineEdit_info_lamp_1_hour"));
+        sizePolicy.setHeightForWidth(lineEdit_info_lamp_1_hour->sizePolicy().hasHeightForWidth());
+        lineEdit_info_lamp_1_hour->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_lamp_1_hour);
+
+        label_info_lamp_2_hour = new QLabel(groupBox_info_lamp_hour);
+        label_info_lamp_2_hour->setObjectName(QStringLiteral("label_info_lamp_2_hour"));
+
+        verticalLayout_46->addWidget(label_info_lamp_2_hour);
+
+        lineEdit_info_lamp_2_hour = new QLineEdit(groupBox_info_lamp_hour);
+        lineEdit_info_lamp_2_hour->setObjectName(QStringLiteral("lineEdit_info_lamp_2_hour"));
+        sizePolicy.setHeightForWidth(lineEdit_info_lamp_2_hour->sizePolicy().hasHeightForWidth());
+        lineEdit_info_lamp_2_hour->setSizePolicy(sizePolicy);
+
+        verticalLayout_46->addWidget(lineEdit_info_lamp_2_hour);
+
         tabWidget->addTab(tab_17, QString());
         tab_remote = new QWidget();
         tab_remote->setObjectName(QStringLiteral("tab_remote"));
@@ -9568,7 +9895,7 @@ public:
         pushButton_exit->setGeometry(QRect(600, 700, 121, 51));
         tabWidget->addTab(tab_remote, QString());
 
-        gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
+        gridLayout->addWidget(tabWidget, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -9581,11 +9908,11 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(6);
-        tab_Other_Items->setCurrentIndex(4);
+        tabWidget->setCurrentIndex(5);
+        tab_Other_Items->setCurrentIndex(5);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(4);
-        tabWidget_3->setCurrentIndex(6);
+        tabWidget_4->setCurrentIndex(0);
+        tabWidget_3->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -10333,6 +10660,7 @@ public:
         pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2->setText(QApplication::translate("MainWindow", "Lamp2 Reset", nullptr));
         pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12->setText(QApplication::translate("MainWindow", "Reset Lamp1 and Lamp2", nullptr));
         groupBox_9->setTitle(QApplication::translate("MainWindow", "Filter Settings", nullptr));
+        label_setup_filter_setting_filter_usage_hours->setText(QApplication::translate("MainWindow", "Filter Usage Hours", nullptr));
         label_Setup_Lamp_Setting_Filter_Filter_Reminder->setText(QApplication::translate("MainWindow", "Filter Reminder:", nullptr));
         combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setItemText(0, QApplication::translate("MainWindow", "Off", nullptr));
         combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->setItemText(1, QApplication::translate("MainWindow", "300hr", nullptr));
@@ -10758,6 +11086,40 @@ public:
         HTTP_box->setItemText(1, QApplication::translate("MainWindow", "\320\222\320\272\320\273", nullptr));
 
         tabWidget->setTabText(tabWidget->indexOf(tab_16), QApplication::translate("MainWindow", "Network", nullptr));
+        label_info_serial_number->setText(QApplication::translate("MainWindow", "Serial Number:", nullptr));
+        label_info_Current_Input_Sourse->setText(QApplication::translate("MainWindow", "Current Input Source:", nullptr));
+        label_info_Resolution->setText(QApplication::translate("MainWindow", "Resolution:", nullptr));
+        label_info_Refresh_Rate->setText(QApplication::translate("MainWindow", "Refresh Rate:", nullptr));
+        label_info_Network_status->setText(QApplication::translate("MainWindow", "Network Status:", nullptr));
+        combobox_info_Network_status->setItemText(0, QApplication::translate("MainWindow", "Disconnected", nullptr));
+        combobox_info_Network_status->setItemText(1, QApplication::translate("MainWindow", "Connected", nullptr));
+
+        lineEdit_info_IP_Adress->setText(QString());
+        label_info_IP_Adress->setText(QApplication::translate("MainWindow", "IP Adress:", nullptr));
+        label_Info_Projector_id->setText(QApplication::translate("MainWindow", "Projector ID:", nullptr));
+        label_var_Info_Projector_id->setText(QString());
+        label_Info_remote_code_Active->setText(QApplication::translate("MainWindow", "Remote Code(Active):", nullptr));
+        label_var_Info_remote_code_Active->setText(QString());
+        label_Info_remote_code->setText(QApplication::translate("MainWindow", "Remote Code:", nullptr));
+        label_var_Info_remote_code->setText(QString());
+        lineEdit_info_Display_Mode->setText(QString());
+        label_info_Display_Mode->setText(QApplication::translate("MainWindow", "Display Mode:", nullptr));
+        label_info_Power_Mode->setText(QApplication::translate("MainWindow", "Power mode(standby)", nullptr));
+        combobox_info_Power_Mode->setItemText(0, QApplication::translate("MainWindow", "Eco.", nullptr));
+        combobox_info_Power_Mode->setItemText(1, QApplication::translate("MainWindow", "Active", nullptr));
+
+        groupBox_info_lamp_hour->setTitle(QApplication::translate("MainWindow", "Lamp Hours", nullptr));
+        label_info_bright->setText(QApplication::translate("MainWindow", "Bright:", nullptr));
+        lineEdit_info_bright->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_info_eco->setText(QApplication::translate("MainWindow", "Eco:", nullptr));
+        lineEdit_info_eco->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_info_dinamic->setText(QApplication::translate("MainWindow", "Dynamic:", nullptr));
+        lineEdit_info_dinamic->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_info_eco_plus->setText(QApplication::translate("MainWindow", "Eco+:", nullptr));
+        lineEdit_info_eco_plus->setText(QApplication::translate("MainWindow", "0", nullptr));
+        label_info_total->setText(QApplication::translate("MainWindow", "Total:", nullptr));
+        label_info_lamp_1_hour->setText(QApplication::translate("MainWindow", "Lamp 1 Hour:", nullptr));
+        label_info_lamp_2_hour->setText(QApplication::translate("MainWindow", "Lamp 2 Hour:", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_17), QApplication::translate("MainWindow", "Info", nullptr));
         groupBox_power->setTitle(QApplication::translate("MainWindow", "Power", nullptr));
         Power->setText(QApplication::translate("MainWindow", "Power", nullptr));

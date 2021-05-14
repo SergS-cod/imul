@@ -42,7 +42,7 @@ public:
 
 public slots:
 
- void razbor_com(parameter);
+ QByteArray razbor_com(parameter);
 
 
 
@@ -149,6 +149,8 @@ private slots:
  void on_pushButton_reset_to_Default_password_clicked();
 
  void on_pushButton_Option_reset_input_name_clicked();
+
+ void on_tabWidget_tabBarClicked(int index);
 
 signals:
  void s_send_to(QByteArray);
