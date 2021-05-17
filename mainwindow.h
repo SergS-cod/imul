@@ -39,10 +39,12 @@ public:
     void setparam(int CMD,int Val,int start,int end,int password,int dat);
     static MainWindow* GetInstance(QWidget* parent = 0);
 
-
+     QByteArray razbor_com(parameter);
 public slots:
 
- QByteArray razbor_com(parameter);
+
+    void razbor(parameter);
+
 
 
 
