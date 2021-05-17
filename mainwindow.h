@@ -8,6 +8,7 @@
 
 #include <QSerialPort>
 #include  <QDebug>
+#include  <port.h>
 
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +41,7 @@ public:
     static MainWindow* GetInstance(QWidget* parent = 0);
 
      QByteArray razbor_com(parameter);
+      void check_auto_send();
 public slots:
 
 

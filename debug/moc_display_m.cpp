@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'display_m.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.11.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../display_m.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'display_m.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#error "This file was generated using the moc from 5.11.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -42,7 +41,7 @@ QT_MOC_LITERAL(0, 0, 9) // "Display_m"
 static const uint qt_meta_data_Display_m[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -63,14 +62,10 @@ void Display_m::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject Display_m::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_Display_m.data,
-    qt_meta_data_Display_m,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+QT_INIT_METAOBJECT const QMetaObject Display_m::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_Display_m.data,
+      qt_meta_data_Display_m,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *Display_m::metaObject() const

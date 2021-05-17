@@ -518,8 +518,8 @@ MainWindow::MainWindow(QWidget *parent)
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
     //***test
-    parameter temp("7E303033313320310D");
-   // razbor_com(temp);
+    parameter temp("7E303031303520310D");
+     razbor_com(temp);
     //***
 }
 
@@ -541,6 +541,9 @@ void MainWindow:: update_state()
 
 QByteArray MainWindow:: razbor_com(parameter temp)
 {
+
+
+    //temp.print_parameter_inf();
     QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
                     "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
                     "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
@@ -550,11 +553,12 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                       "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
                       "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
 
-    QByteArray F,P,Ok,INFO,Check;
+    QByteArray F,P,Ok,INFO,Check,ret;
     F.append("F");
     P.append("P");
     Ok.append("  Ok");
     INFO.append("INFO");
+    ret.append("ret");
 
     int tmp;
     //READ
@@ -1416,21 +1420,146 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     // POWER ON / OFF
     if(temp.getInt_command()==0){
 
+
         if(temp.getInt_variable()==0){
             ui->ON->setCheckState(Qt::Unchecked);
             ui->OFF->setCheckState(Qt::Checked);
-            return P;
+            INFO.clear();
+            if(ui->checkBox_wait_on->isChecked()==1){
+                INFO.append("INFO2");
+                emit s_send_to(INFO);
+                INFO.clear();
+                if(ui->checkBox_how_answer_off->isChecked()==1){
+                    check_auto_send();
+                    emit s_send_to(P);
+                }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    check_auto_send();
+                    emit s_send_to(F);
+                }
+                return ret;
+            }
+
+            if(ui->checkBox_wait_on->isChecked()==0)  {
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     emit s_send_to(P);
+                     INFO.append("INFO2");
+                     emit s_send_to(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    emit s_send_to(F);
+                    INFO.append("INFO2");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                }
+                return ret;
+            }
         }
         if(temp.getInt_variable()==1){
+
             if(temp.getInt_password()>=0 && temp.getInt_password()<=9999){
                 ui->ON_Power_on_password->setCheckState(Qt::Checked);
-                return P;
+                INFO.clear();
+                if(ui->checkBox_wait_on->isChecked()==1){
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    if(ui->checkBox_how_answer_on->isChecked()==1){
+                        check_auto_send();
+                        emit s_send_to(P);
+                        return ret;
+                    }
+                    if(ui->checkBox_how_answer_on==0){
+                        emit s_send_to(F);
+                        return ret;
+                    }
+                }
+
+                if(ui->checkBox_wait_on->isChecked()==0)  {
+                    if(ui->checkBox_how_answer_on->isChecked()==1){
+
+                        emit s_send_to(P);
+                        INFO.clear();
+                        INFO.append("INFO0");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+                        INFO.append("INFO1");
+                        emit s_send_to(INFO);
+                        check_auto_send();
+                        return ret;
+                    }
+                    if(ui->checkBox_how_answer_on->isChecked()==0){
+                        emit s_send_to(F);
+                        INFO.clear();
+                        INFO.append("INFO0");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+                        INFO.append("INFO1");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+
+                        return ret;
+                    }
+
+                }
 
             }
             if(temp.getInt_password() == -1){
                 ui->ON->setCheckState(Qt::Checked);
                 ui->OFF->setCheckState(Qt::Unchecked);
-                return P;
+                INFO.clear();
+                if(ui->checkBox_wait_on->isChecked()==1){
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    if(ui->checkBox_how_answer_on->isChecked()==1){
+                        check_auto_send();
+                        emit s_send_to(P);
+                        return ret;
+                    }
+                    if(ui->checkBox_how_answer_on==0){
+                        emit s_send_to(F);
+                        return ret;
+                    }
+                }
+
+                if(ui->checkBox_wait_on->isChecked()==0)  {
+                    if(ui->checkBox_how_answer_on->isChecked()==1){
+                         qDebug()<<"POWERRRR: ";
+                         qDebug()<<P;
+                        emit s_send_to(P);
+                        INFO.clear();
+                        INFO.append("INFO0");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+                        INFO.append("INFO1");
+                        emit s_send_to(INFO);
+                        check_auto_send();
+                        return ret;
+                    }
+
+                    if(ui->checkBox_how_answer_on->isChecked()==0){
+                        emit s_send_to(F);
+                        INFO.clear();
+                        INFO.append("INFO0");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+                        INFO.append("INFO1");
+                        emit s_send_to(INFO);
+                        INFO.clear();
+
+                        return ret;
+                    }
+
+                }
             }
         }
     }
@@ -4597,24 +4726,179 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
     //Power Settings
     if(temp.getInt_command()==105){
+
         if(temp.getInt_variable()==0){
             ui->combobox_Setup_Power_Setting_Direct_Power_On->setCurrentIndex(0);
-            return P;
+            INFO.clear();
+            if(ui->checkBox_wait_on->isChecked()==1){
+                INFO.append("INFO2");
+                emit s_send_to(INFO);
+                INFO.clear();
+                if(ui->checkBox_how_answer_off->isChecked()==1){
+                    check_auto_send();
+                    emit s_send_to(P);
+                }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    check_auto_send();
+                    emit s_send_to(F);
+                }
+                return ret;
+            }
+
+            if(ui->checkBox_wait_on->isChecked()==0)  {
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     emit s_send_to(P);
+                     INFO.append("INFO2");
+                     emit s_send_to(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    emit s_send_to(F);
+                    INFO.append("INFO2");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                }
+                return ret;
+            }
         }
+
+
         if(temp.getInt_variable()==1){
             ui->combobox_Setup_Power_Setting_Direct_Power_On->setCurrentIndex(1);
-            return P;
+            INFO.clear();
+            if(ui->checkBox_wait_on->isChecked()==1){
+                INFO.append("INFO1");
+                emit s_send_to(INFO);
+                INFO.clear();
+                INFO.append("INFO0");
+                emit s_send_to(INFO);
+                INFO.clear();
+                if(ui->checkBox_how_answer_on->isChecked()==1){
+                    check_auto_send();
+                    emit s_send_to(P);
+                    return ret;
+                }
+                if(ui->checkBox_how_answer_on==0){
+                    emit s_send_to(F);
+                    return ret;
+                }
+            }
+
+            if(ui->checkBox_wait_on->isChecked()==0)  {
+                if(ui->checkBox_how_answer_on->isChecked()==1){
+                    emit s_send_to(P);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    check_auto_send();
+                    return ret;
+                }
+                if(ui->checkBox_how_answer_on->isChecked()==0){
+                    emit s_send_to(F);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+
+                    return ret;
+                }
+
+            }
         }
     }
 
     if(temp.getInt_command()==113){
         if(temp.getInt_variable()==0){
             ui->combobox_Setup_Power_Setting_Signal_Power_On->setCurrentIndex(0);
-            return P;
+            INFO.clear();
+            if(ui->checkBox_wait_on->isChecked()==1){
+                INFO.append("INFO2");
+                emit s_send_to(INFO);
+                INFO.clear();
+                if(ui->checkBox_how_answer_off->isChecked()==1){
+                    check_auto_send();
+                    emit s_send_to(P);
+                }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    check_auto_send();
+                    emit s_send_to(F);
+                }
+                return ret;
+            }
+
+            if(ui->checkBox_wait_on->isChecked()==0)  {
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     emit s_send_to(P);
+                     INFO.append("INFO2");
+                     emit s_send_to(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
+                if(ui->checkBox_how_answer_off->isChecked()==0){
+                    emit s_send_to(F);
+                    INFO.append("INFO2");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                }
+                return ret;
+            }
         }
+
         if(temp.getInt_variable()==1){
             ui->combobox_Setup_Power_Setting_Signal_Power_On->setCurrentIndex(1);
-            return P;
+            INFO.clear();
+            if(ui->checkBox_wait_on->isChecked()==1){
+                INFO.append("INFO1");
+                emit s_send_to(INFO);
+                INFO.clear();
+                INFO.append("INFO0");
+                emit s_send_to(INFO);
+                INFO.clear();
+                if(ui->checkBox_how_answer_on->isChecked()==1){
+                    check_auto_send();
+                    emit s_send_to(P);
+                    return ret;
+                }
+                if(ui->checkBox_how_answer_on==0){
+                    emit s_send_to(F);
+                    return ret;
+                }
+            }
+
+
+            if(ui->checkBox_wait_on->isChecked()==0)  {
+                if(ui->checkBox_how_answer_on->isChecked()==1){
+                    emit s_send_to(P);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    check_auto_send();
+                    return ret;
+                }
+                if(ui->checkBox_how_answer_on->isChecked()==0){
+                    emit s_send_to(F);
+                    INFO.clear();
+                    INFO.append("INFO0");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+                    INFO.append("INFO1");
+                    emit s_send_to(INFO);
+                    INFO.clear();
+
+                    return ret;
+                }
+
+            }
         }
     }
 
@@ -6151,17 +6435,17 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             if(ui->Optoma_box->currentIndex()==0)
-            return Ok.append("1");
+                return Ok.append("1");
             if(ui->Optoma_box->currentIndex()==1)
-            return Ok.append("2");
+                return Ok.append("2");
             if(ui->Optoma_box->currentIndex()==2)
-            return Ok.append("3");
+                return Ok.append("3");
             if(ui->Optoma_box->currentIndex()==3)
-            return Ok.append("4");
+                return Ok.append("4");
             if(ui->Optoma_box->currentIndex()==4)
-            return Ok.append("5");
+                return Ok.append("5");
             if(ui->Optoma_box->currentIndex()==5)
-            return Ok.append("6");
+                return Ok.append("6");
 
         }
 
@@ -6172,8 +6456,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->lineEdit_RS232->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_RS232->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6182,8 +6466,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->edit_software_version->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->edit_software_version->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6193,8 +6477,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->edit_lan_fw_frame->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->edit_lan_fw_frame->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6205,8 +6489,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->laaabel_2_fan_1->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->laaabel_2_fan_1->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6216,8 +6500,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==2)
         {
             QString str;
-         str=ui->laaabel_2_fan_2->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->laaabel_2_fan_2->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6228,8 +6512,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==3)
         {
             QString str;
-         str=ui->laaabel_2_fan_3->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->laaabel_2_fan_3->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6239,8 +6523,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==4)
         {
             QString str;
-         str=ui->laaabel_2_fan_4->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->laaabel_2_fan_4->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6250,8 +6534,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->lineEdit_RS232_2->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_RS232_2->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6261,8 +6545,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->lineEdit_current_wat->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_current_wat->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
     }
@@ -6272,135 +6556,135 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==1)
         {
             QString str;
-         str=ui->lineEdit_Info_string->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_Info_string->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
 
         if(temp.getInt_variable()==2)
         {
             QString str;
-         str=ui->lineEdit_native_resolution->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_native_resolution->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==3)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==4)
         {
             QString str;
-         str=ui->lineEdit_Resolution->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_Resolution->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==5)
         {
             QString str;
-         str=ui->lineEdit_Signal_Format->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_Signal_Format->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==6)
         {
             QString str;
-         str=ui->lineEdit_Pixel_Clock->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_Pixel_Clock->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==7)
         {
             QString str;
-         str=ui->lineEdit_Horz_Refresh->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_Horz_Refresh->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==8)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==9)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==10)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==11)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==12)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==13)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==14)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==15)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==16)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==17)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==18)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==19)
         {
             QString str;
-         str=ui->lineEdit_main_source->text();
-               return Ok.append(str.toLatin1());   //??????????????????????????????????
+            str=ui->lineEdit_main_source->text();
+            return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
 
@@ -6411,12 +6695,146 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
 }
 
+void MainWindow::check_auto_send()
+{
+    QByteArray INFO;
+
+    if(ui->checkBox_pushButton_systeam_auto->isChecked()==1){
+        INFO.append("INFO0");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_2->isChecked()==1){
+        INFO.append("INFO1");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_3->isChecked()==1){
+        INFO.append("INFO2");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_4->isChecked()==1){
+        INFO.append("INFO3");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_5->isChecked()==1){
+        INFO.append("INFO4");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_6->isChecked()==1){
+        INFO.append("INFO5");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_7->isChecked()==1){
+        INFO.append("INFO6");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_8->isChecked()==1){
+        INFO.append("INFO7");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_9->isChecked()==1){
+        INFO.append("INFO8");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_10->isChecked()==1){
+        INFO.append("INFO9");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_11->isChecked()==1){
+        INFO.append("INFO10");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_12->isChecked()==1){
+        INFO.append("INFO11");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_13->isChecked()==1){
+        INFO.append("INFO12");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_14->isChecked()==1){
+        INFO.append("INFO13");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_15->isChecked()==1){
+        INFO.append("INFO14");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_16->isChecked()==1){
+        INFO.append("INFO15");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_17->isChecked()==1){
+        INFO.append("INFO16");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_18->isChecked()==1){
+        INFO.append("INFO17");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_19->isChecked()==1){
+        INFO.append("INFO18");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_20->isChecked()==1){
+        INFO.append("INFO19");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_21->isChecked()==1){
+        INFO.append("INFO20");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_22->isChecked()==1){
+        INFO.append("INFO21");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_23->isChecked()==1){
+        INFO.append("INFO22");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_24->isChecked()==1){
+        INFO.append("INFO23");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+    if(ui->checkBox_pushButton_systeam_auto_25->isChecked()==1){
+        INFO.append("INFO24");
+        emit s_send_to(INFO);
+        INFO.clear();
+    }
+
+}
+
 void MainWindow::razbor(parameter a)
 {
-
-
-    emit s_send_to(razbor_com(a));
-
+    a.print_parameter_inf();
+    QByteArray tmp;
+    tmp = razbor_com(a);
+    if(tmp.data()!="ret"){
+        emit s_send_to(tmp);
+    }
 
 }
 

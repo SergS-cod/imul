@@ -26,7 +26,6 @@ port::port( )
     qDebug()<<"**************************************";
     start();
 
-
 }
 
 port::~port()
@@ -41,8 +40,9 @@ void port::run(){
 void port::serialRecieve()
 {
     QByteArray ba;
+
     ba=serialPort->readAll();
-    qDebug()<<ba;
+    //qDebug()<<ba;
     packet B(ba);
     QVector<parameter> vec_par = B.getParameters();
     for(int i=0;i<vec_par.count();i++){
@@ -54,6 +54,7 @@ void port::serialRecieve()
 void port::send_to(QByteArray TO)
 {
 
+    qDebug()<<"====: "<< TO.data();
 
     if(serialPort->isOpen()){
 
