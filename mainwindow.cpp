@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+////
     port* A=new port;
 
      connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
