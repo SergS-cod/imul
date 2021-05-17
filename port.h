@@ -27,10 +27,12 @@ protected:
 signals:
 void  command_s(parameter);
 
+
 public slots:
    void serialRecieve();
 
    void send_to(QByteArray TO);
+  // void  otvet(QByteArray TO);
 
 };
 

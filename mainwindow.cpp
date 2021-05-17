@@ -12,6 +12,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    port* A=new port;
+
+     connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
+
+
+
     ui->label_2xzczx->setText("0");
     connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
@@ -521,6 +527,8 @@ MainWindow::MainWindow(QWidget *parent)
     parameter temp("7E303033313320310D");
    // razbor_com(temp);
     //***
+
+
 }
 
 MainWindow* MainWindow::mainInstance = 0;

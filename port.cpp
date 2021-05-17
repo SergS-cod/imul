@@ -21,11 +21,11 @@ port::port( )
     connect (serialPort,SIGNAL(readyRead()),this,SLOT(serialRecieve()));
 
     connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
-    connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
+ //   connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
 
     qDebug()<<"**************************************";
     start();
-
+      connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
 
 }
 
@@ -54,7 +54,7 @@ void port::serialRecieve()
 void port::send_to(QByteArray TO)
 {
 
-
+    qDebug()<<"1111111111111111111111111";
     if(serialPort->isOpen()){
 
         qDebug()<<serialPort->write(TO.data(),TO.size());
