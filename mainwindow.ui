@@ -28,7 +28,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tab_Other_Items">
           <property name="currentIndex">
-           <number>8</number>
+           <number>7</number>
           </property>
           <widget class="QWidget" name="tabB_23">
            <attribute name="title">
@@ -2307,13 +2307,130 @@
                 </item>
                </layout>
               </widget>
+              <widget class="QFrame" name="frame_main_source_2">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>650</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_main_source_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>System Temperature</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_main_source_2">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_main_source_3">
+               <property name="geometry">
+                <rect>
+                 <x>530</x>
+                 <y>660</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_main_source_3">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Refresh rate</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_main_source_3">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_main_source_4">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>720</y>
+                 <width>381</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label_main_source_4">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Sub Source</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEdit_main_source_4">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+               </widget>
+              </widget>
              </widget>
             </item>
            </layout>
           </widget>
           <widget class="QWidget" name="tab_system_auto_send">
            <attribute name="title">
-            <string>System Auto Send</string>
+            <string>System Auto Send</string>
            </attribute>
            <widget class="QCheckBox" name="checkBox_wait_on">
             <property name="geometry">
