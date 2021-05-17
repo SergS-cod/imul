@@ -20,7 +20,7 @@ port::port( )
 
     connect (serialPort,SIGNAL(readyRead()),this,SLOT(serialRecieve()));
 
-    connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor_com(parameter)));
+    connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
     connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
 
     qDebug()<<"**************************************";

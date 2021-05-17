@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.11.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.11.1. It"
+#error "This file was generated using the moc from 5.15.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -22,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[58];
-    char stringdata0[2712];
+    char stringdata0[2708];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,65 +35,65 @@ static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 9), // "s_send_to"
 QT_MOC_LITERAL(2, 21, 0), // ""
-QT_MOC_LITERAL(3, 22, 10), // "razbor_com"
-QT_MOC_LITERAL(4, 33, 9), // "parameter"
-QT_MOC_LITERAL(5, 43, 32), // "on_pushButton_Zoom_minus_clicked"
-QT_MOC_LITERAL(6, 76, 31), // "on_pushButton_Zoom_plus_clicked"
-QT_MOC_LITERAL(7, 108, 41), // "on_pushButton_Image_shift_H_m..."
-QT_MOC_LITERAL(8, 150, 40), // "on_pushButton_Image_shift_H_p..."
-QT_MOC_LITERAL(9, 191, 41), // "on_pushButton_Image_shift_V_m..."
-QT_MOC_LITERAL(10, 233, 40), // "on_pushButton_Image_shift_V_p..."
-QT_MOC_LITERAL(11, 274, 48), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(12, 323, 46), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(13, 370, 48), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(14, 419, 49), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(15, 469, 49), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(16, 519, 47), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(17, 567, 49), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(18, 617, 50), // "on_pushButton_Four_Corners_to..."
-QT_MOC_LITERAL(19, 668, 51), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(20, 720, 49), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(21, 770, 51), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(22, 822, 52), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(23, 875, 52), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(24, 928, 50), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(25, 979, 52), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(26, 1032, 53), // "on_pushButton_Four_Corners_bu..."
-QT_MOC_LITERAL(27, 1086, 40), // "on_pushButton_Four_Corners_Re..."
-QT_MOC_LITERAL(28, 1127, 48), // "on_pushButton_Geometric_Corre..."
-QT_MOC_LITERAL(29, 1176, 34), // "on_pushButton_PIP_PBP_Swap_cl..."
-QT_MOC_LITERAL(30, 1211, 52), // "on_pushButton_Image_Setting_B..."
-QT_MOC_LITERAL(31, 1264, 51), // "on_pushButton_Image_Setting_B..."
-QT_MOC_LITERAL(32, 1316, 50), // "on_pushButton_Image_Setting_C..."
-QT_MOC_LITERAL(33, 1367, 49), // "on_pushButton_Image_Setting_C..."
-QT_MOC_LITERAL(34, 1417, 73), // "on_pushButton_Image_Setting_C..."
-QT_MOC_LITERAL(35, 1491, 69), // "on_pushButton_Image_Setting_C..."
-QT_MOC_LITERAL(36, 1561, 59), // "on_pushButton_Image_Setting_C..."
-QT_MOC_LITERAL(37, 1621, 84), // "on_pushbutton_Image_Setting_C..."
-QT_MOC_LITERAL(38, 1706, 56), // "on_pushButton_Image_Setting_D..."
-QT_MOC_LITERAL(39, 1763, 56), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(40, 1820, 57), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(41, 1878, 57), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(42, 1936, 58), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(43, 1995, 53), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(44, 2049, 62), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(45, 2112, 55), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(46, 2168, 56), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(47, 2225, 56), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(48, 2282, 57), // "on_pushButton_Setup_Lamp_Sett..."
-QT_MOC_LITERAL(49, 2340, 52), // "on_pushButton_Setup_Security_..."
-QT_MOC_LITERAL(50, 2393, 60), // "on_pushButton_Setup_Remote_Se..."
-QT_MOC_LITERAL(51, 2454, 59), // "on_pushButton_Setup_Remote_Se..."
-QT_MOC_LITERAL(52, 2514, 31), // "on_pushButton_reset_OSD_clicked"
-QT_MOC_LITERAL(53, 2546, 38), // "on_pushButton_reset_to_Defaul..."
-QT_MOC_LITERAL(54, 2585, 47), // "on_pushButton_reset_to_Defaul..."
-QT_MOC_LITERAL(55, 2633, 45), // "on_pushButton_Option_reset_in..."
-QT_MOC_LITERAL(56, 2679, 26), // "on_tabWidget_tabBarClicked"
-QT_MOC_LITERAL(57, 2706, 5) // "index"
+QT_MOC_LITERAL(3, 22, 6), // "razbor"
+QT_MOC_LITERAL(4, 29, 9), // "parameter"
+QT_MOC_LITERAL(5, 39, 32), // "on_pushButton_Zoom_minus_clicked"
+QT_MOC_LITERAL(6, 72, 31), // "on_pushButton_Zoom_plus_clicked"
+QT_MOC_LITERAL(7, 104, 41), // "on_pushButton_Image_shift_H_m..."
+QT_MOC_LITERAL(8, 146, 40), // "on_pushButton_Image_shift_H_p..."
+QT_MOC_LITERAL(9, 187, 41), // "on_pushButton_Image_shift_V_m..."
+QT_MOC_LITERAL(10, 229, 40), // "on_pushButton_Image_shift_V_p..."
+QT_MOC_LITERAL(11, 270, 48), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(12, 319, 46), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(13, 366, 48), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(14, 415, 49), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(15, 465, 49), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(16, 515, 47), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(17, 563, 49), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(18, 613, 50), // "on_pushButton_Four_Corners_to..."
+QT_MOC_LITERAL(19, 664, 51), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(20, 716, 49), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(21, 766, 51), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(22, 818, 52), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(23, 871, 52), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(24, 924, 50), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(25, 975, 52), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(26, 1028, 53), // "on_pushButton_Four_Corners_bu..."
+QT_MOC_LITERAL(27, 1082, 40), // "on_pushButton_Four_Corners_Re..."
+QT_MOC_LITERAL(28, 1123, 48), // "on_pushButton_Geometric_Corre..."
+QT_MOC_LITERAL(29, 1172, 34), // "on_pushButton_PIP_PBP_Swap_cl..."
+QT_MOC_LITERAL(30, 1207, 52), // "on_pushButton_Image_Setting_B..."
+QT_MOC_LITERAL(31, 1260, 51), // "on_pushButton_Image_Setting_B..."
+QT_MOC_LITERAL(32, 1312, 50), // "on_pushButton_Image_Setting_C..."
+QT_MOC_LITERAL(33, 1363, 49), // "on_pushButton_Image_Setting_C..."
+QT_MOC_LITERAL(34, 1413, 73), // "on_pushButton_Image_Setting_C..."
+QT_MOC_LITERAL(35, 1487, 69), // "on_pushButton_Image_Setting_C..."
+QT_MOC_LITERAL(36, 1557, 59), // "on_pushButton_Image_Setting_C..."
+QT_MOC_LITERAL(37, 1617, 84), // "on_pushbutton_Image_Setting_C..."
+QT_MOC_LITERAL(38, 1702, 56), // "on_pushButton_Image_Setting_D..."
+QT_MOC_LITERAL(39, 1759, 56), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(40, 1816, 57), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(41, 1874, 57), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(42, 1932, 58), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(43, 1991, 53), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(44, 2045, 62), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(45, 2108, 55), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(46, 2164, 56), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(47, 2221, 56), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(48, 2278, 57), // "on_pushButton_Setup_Lamp_Sett..."
+QT_MOC_LITERAL(49, 2336, 52), // "on_pushButton_Setup_Security_..."
+QT_MOC_LITERAL(50, 2389, 60), // "on_pushButton_Setup_Remote_Se..."
+QT_MOC_LITERAL(51, 2450, 59), // "on_pushButton_Setup_Remote_Se..."
+QT_MOC_LITERAL(52, 2510, 31), // "on_pushButton_reset_OSD_clicked"
+QT_MOC_LITERAL(53, 2542, 38), // "on_pushButton_reset_to_Defaul..."
+QT_MOC_LITERAL(54, 2581, 47), // "on_pushButton_reset_to_Defaul..."
+QT_MOC_LITERAL(55, 2629, 45), // "on_pushButton_Option_reset_in..."
+QT_MOC_LITERAL(56, 2675, 26), // "on_tabWidget_tabBarClicked"
+QT_MOC_LITERAL(57, 2702, 5) // "index"
 
     },
-    "MainWindow\0s_send_to\0\0razbor_com\0"
-    "parameter\0on_pushButton_Zoom_minus_clicked\0"
+    "MainWindow\0s_send_to\0\0razbor\0parameter\0"
+    "on_pushButton_Zoom_minus_clicked\0"
     "on_pushButton_Zoom_plus_clicked\0"
     "on_pushButton_Image_shift_H_minus_clicked\0"
     "on_pushButton_Image_shift_H_plus_clicked\0"
@@ -152,7 +153,7 @@ QT_MOC_LITERAL(57, 2706, 5) // "index"
 static const uint qt_meta_data_MainWindow[] = {
 
  // content:
-       7,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
       54,   14, // methods
@@ -224,7 +225,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, QMetaType::QByteArray,    2,
 
  // slots: parameters
-    QMetaType::QByteArray, 0x80000000 | 4,    2,
+    QMetaType::Void, 0x80000000 | 4,    2,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -284,12 +285,11 @@ static const uint qt_meta_data_MainWindow[] = {
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MainWindow *_t = static_cast<MainWindow *>(_o);
+        auto *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->s_send_to((*reinterpret_cast< QByteArray(*)>(_a[1]))); break;
-        case 1: { QByteArray _r = _t->razbor_com((*reinterpret_cast< parameter(*)>(_a[1])));
-            if (_a[0]) *reinterpret_cast< QByteArray*>(_a[0]) = std::move(_r); }  break;
+        case 1: _t->razbor((*reinterpret_cast< parameter(*)>(_a[1]))); break;
         case 2: _t->on_pushButton_Zoom_minus_clicked(); break;
         case 3: _t->on_pushButton_Zoom_plus_clicked(); break;
         case 4: _t->on_pushButton_Image_shift_H_minus_clicked(); break;
@@ -356,10 +356,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, nullptr, nullptr}
-};
+QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
+    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
+    qt_meta_stringdata_MainWindow.data,
+    qt_meta_data_MainWindow,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
 
 const QMetaObject *MainWindow::metaObject() const
@@ -395,7 +399,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void MainWindow::s_send_to(QByteArray _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

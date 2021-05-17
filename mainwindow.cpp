@@ -307,6 +307,42 @@ MainWindow::MainWindow(QWidget *parent)
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
 
+    ui->horizontalSlider_fan_speed1->setMinimum(0);
+    ui->horizontalSlider_fan_speed1->setMaximum(9999);
+    ui->horizontalSlider_fan_speed2->setMinimum(0);
+    ui->horizontalSlider_fan_speed2->setMaximum(9999);
+    ui->horizontalSlider_fan_speed3->setMinimum(0);
+    ui->horizontalSlider_fan_speed3->setMaximum(9999);
+
+
+    //Fan Speed
+    ui->laaabel_2_fan_1->setText("0");
+    connect(ui->horizontalSlider_fan_speed1, &QSlider::valueChanged, ui->laaabel_2_fan_1,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    //Fan Speed
+    ui->laaabel_2_fan_2->setText("0");
+    connect(ui->horizontalSlider_fan_speed2, &QSlider::valueChanged, ui->laaabel_2_fan_2,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    //Fan Speed
+    ui->laaabel_2_fan_3->setText("0");
+    connect(ui->horizontalSlider_fan_speed3, &QSlider::valueChanged, ui->laaabel_2_fan_3,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+    //Fan Speed
+
+    ui->horizontalSlider_fan_speed4->setMinimum(0);
+    ui->horizontalSlider_fan_speed4->setMaximum(9999);
+    ui->laaabel_2_fan_4->setText("0");
+    connect(ui->horizontalSlider_fan_speed4, &QSlider::valueChanged, ui->laaabel_2_fan_4,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+
+
     //Color Wheel Index   3x
     ui->lbbbbbbbb->setText("0");
     connect(ui->horizontalSlider_3xxxxx, &QSlider::valueChanged, ui->lbbbbbbbb,
@@ -358,6 +394,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain->setText("0");
     connect(ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain, &QSlider::valueChanged, ui->label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
@@ -482,7 +519,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //***test
     parameter temp("7E303033313320310D");
-    razbor_com(temp);
+   // razbor_com(temp);
     //***
 }
 
@@ -6105,6 +6142,281 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     }
     //---------------------------
     return F;
+
+
+
+    //Model Name
+    if(temp.getInt_command()==151){
+        if(temp.getInt_variable()==1)
+        {
+            if(ui->Optoma_box->currentIndex()==0)
+            return Ok.append("1");
+            if(ui->Optoma_box->currentIndex()==1)
+            return Ok.append("2");
+            if(ui->Optoma_box->currentIndex()==2)
+            return Ok.append("3");
+            if(ui->Optoma_box->currentIndex()==3)
+            return Ok.append("4");
+            if(ui->Optoma_box->currentIndex()==4)
+            return Ok.append("5");
+            if(ui->Optoma_box->currentIndex()==5)
+            return Ok.append("6");
+
+        }
+
+    }
+
+    //RS232 Version No
+    if(temp.getInt_command()==152){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->lineEdit_RS232->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+    // Software Version
+    if(temp.getInt_command()==122){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->edit_software_version->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    //LAN FW version
+    if(temp.getInt_command()==357){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->edit_lan_fw_frame->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+
+    //Fan Speed1
+    if(temp.getInt_command()==351){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->laaabel_2_fan_1->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    //Fan Speed2
+    if(temp.getInt_command()==351){
+        if(temp.getInt_variable()==2)
+        {
+            QString str;
+         str=ui->laaabel_2_fan_2->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+
+    //Fan Speed3
+    if(temp.getInt_command()==351){
+        if(temp.getInt_variable()==3)
+        {
+            QString str;
+         str=ui->laaabel_2_fan_3->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    //Fan Speed4
+    if(temp.getInt_command()==351){
+        if(temp.getInt_variable()==4)
+        {
+            QString str;
+         str=ui->laaabel_2_fan_4->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    // System Temperature
+    if(temp.getInt_command()==352){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->lineEdit_RS232_2->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    // Current Wat
+    if(temp.getInt_command()==358){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->lineEdit_current_wat->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+    }
+
+    // Info String
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==1)
+        {
+            QString str;
+         str=ui->lineEdit_Info_string->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+
+        if(temp.getInt_variable()==2)
+        {
+            QString str;
+         str=ui->lineEdit_native_resolution->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==3)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==4)
+        {
+            QString str;
+         str=ui->lineEdit_Resolution->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==5)
+        {
+            QString str;
+         str=ui->lineEdit_Signal_Format->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==6)
+        {
+            QString str;
+         str=ui->lineEdit_Pixel_Clock->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==7)
+        {
+            QString str;
+         str=ui->lineEdit_Horz_Refresh->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==8)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==9)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==10)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==11)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==12)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==13)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==14)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==15)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==16)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==17)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==18)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+        if(temp.getInt_variable()==19)
+        {
+            QString str;
+         str=ui->lineEdit_main_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
+
+        }
+
+    }
+
+    // Native Resolution
+
+
+}
+
+void MainWindow::razbor(parameter a)
+{
+
+
+    emit s_send_to(razbor_com(a));
+
+
 }
 
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
