@@ -1373,6 +1373,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         }
     }
 
+
+
     //WRITE-----------------------------------------------------------------------------------------------
     // POWER ON / OFF
     if(temp.getInt_command()==0){
@@ -5988,7 +5990,6 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         }
     }
 
-
     //INFO
     //[Open Info Menu] [Close Info Menu]
     //write
@@ -7331,4 +7332,178 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
 {
     index_page = index;
     //qDebug()<<index;
+}
+
+void MainWindow::on_pushButton_systeam_auto_clicked(){
+    QByteArray INFO;
+    INFO.append("INFO0");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_2_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO1");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_3_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO2");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_4_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO3");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_5_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO4");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_6_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO5");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_7_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO6");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_8_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO7");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_9_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO8");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_10_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO9");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_11_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO10");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_12_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO11");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_13_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO12");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_14_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO13");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_15_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO14");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_16_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO15");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_17_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO16");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_18_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO17");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_19_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO18");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_20_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO19");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_21_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO20");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_22_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO21");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_23_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO22");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_24_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO23");
+    emit s_send_to(INFO);
+}
+
+void MainWindow::on_pushButton_systeam_auto_25_clicked()
+{
+    QByteArray INFO;
+    INFO.append("INFO24");
+    emit s_send_to(INFO);
 }

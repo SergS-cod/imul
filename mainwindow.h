@@ -152,6 +152,56 @@ private slots:
 
  void on_tabWidget_tabBarClicked(int index);
 
+ void on_pushButton_systeam_auto_clicked();
+
+ void on_pushButton_systeam_auto_2_clicked();
+
+ void on_pushButton_systeam_auto_3_clicked();
+
+ void on_pushButton_systeam_auto_4_clicked();
+
+ void on_pushButton_systeam_auto_5_clicked();
+
+ void on_pushButton_systeam_auto_6_clicked();
+
+ void on_pushButton_systeam_auto_7_clicked();
+
+ void on_pushButton_systeam_auto_8_clicked();
+
+ void on_pushButton_systeam_auto_9_clicked();
+
+ void on_pushButton_systeam_auto_10_clicked();
+
+ void on_pushButton_systeam_auto_11_clicked();
+
+ void on_pushButton_systeam_auto_12_clicked();
+
+ void on_pushButton_systeam_auto_13_clicked();
+
+ void on_pushButton_systeam_auto_14_clicked();
+
+ void on_pushButton_systeam_auto_15_clicked();
+
+ void on_pushButton_systeam_auto_16_clicked();
+
+ void on_pushButton_systeam_auto_17_clicked();
+
+ void on_pushButton_systeam_auto_18_clicked();
+
+ void on_pushButton_systeam_auto_19_clicked();
+
+ void on_pushButton_systeam_auto_20_clicked();
+
+ void on_pushButton_systeam_auto_21_clicked();
+
+ void on_pushButton_systeam_auto_22_clicked();
+
+ void on_pushButton_systeam_auto_23_clicked();
+
+ void on_pushButton_systeam_auto_24_clicked();
+
+ void on_pushButton_systeam_auto_25_clicked();
+
 signals:
  void s_send_to(QByteArray);
 
