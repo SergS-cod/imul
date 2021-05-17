@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "display_mode.h"
 #include "parameter.h"
-
+#include "port.h"
 
 #include <QSerialPort>
 #include  <QDebug>
