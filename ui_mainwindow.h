@@ -10668,10 +10668,10 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
-        tab_Other_Items->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(0);
+        tab_Other_Items->setCurrentIndex(8);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(1);
+        tabWidget_4->setCurrentIndex(9);
         tabWidget_3->setCurrentIndex(7);
 
 

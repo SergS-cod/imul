@@ -523,6 +523,34 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Info_remote_code_Active, &QSlider::valueChanged, ui->label_var_Info_remote_code_Active,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
+    //Gamma
+    ui->label_var_Image_Setting_Display_Gamma_Film->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_Film, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_Film,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_Video->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_Video, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_Video,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_Graphics->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_Graphics, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_Graphics,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_Standart->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_Standart, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_Standart,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_1_8->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_1_8, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_1_8,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_2_0->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_2_0, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_2_0,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
+
+    ui->label_var_Image_Setting_Display_Gamma_2_4->setText("0");
+    connect(ui->horizontalSlider_Image_Setting_Display_Gamma_2_4, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_2_4,
+            static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
     parameter temp("7E303031353020340D");
      razbor_com(temp);
@@ -3361,6 +3389,124 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             ui->comboBox_Image_Setting_Wall_Color->setCurrentIndex(6);
             return P;
 
+        }
+    }
+
+    //Gamma
+    if(temp.getInt_command()==35){
+        if(temp.getInt_variable()==1){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(0);
+            return P;
+
+        }
+        if(temp.getInt_variable()==2){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(2);
+            return P;
+
+        }
+        if(temp.getInt_variable()==3){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(2);
+            return P;
+
+        }
+        if(temp.getInt_variable()==4){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(3);
+            return P;
+
+        }
+        if(temp.getInt_variable()==5){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(4);
+            return P;
+
+        }
+        if(temp.getInt_variable()==6){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(5);
+            return P;
+
+        }
+        if(temp.getInt_variable()==12){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(6);
+            return P;
+
+        }
+        if(temp.getInt_variable()==8){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(7);
+            return P;
+
+        }
+        if(temp.getInt_variable()==9){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(8);
+            return P;
+
+        }
+        if(temp.getInt_variable()==10){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(9);
+            return P;
+
+        }
+        if(temp.getInt_variable()==11){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(10);
+            return P;
+
+        }
+        if(temp.getInt_variable()==12){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(11);
+            return P;
+
+        }
+        if(temp.getInt_variable()==13){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(12);
+            return P;
+
+        }
+        if(temp.getInt_variable()==14){
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(13);
+            return P;
+
+        }
+
+    }
+
+    if(temp.getInt_command()==183){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_Film->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==185){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_Video->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==187){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_Graphics->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==189){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_Standart->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==533){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_1_8->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==534){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_2_0->setValue(temp.getInt_variable());
+            return P;
+        }
+    }
+    if(temp.getInt_command()==535){
+        if(temp.check_include_interval(-5,5)){
+            ui->horizontalSlider_Image_Setting_Display_Gamma_2_4->setValue(temp.getInt_variable());
+            return P;
         }
     }
 

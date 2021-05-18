@@ -28,7 +28,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tab_Other_Items">
           <property name="currentIndex">
-           <number>0</number>
+           <number>6</number>
           </property>
           <widget class="QWidget" name="tabB_23">
            <attribute name="title">
@@ -1554,6 +1554,9 @@
                   <width>251</width>
                   <height>21</height>
                  </rect>
+                </property>
+                <property name="text">
+                 <string>48</string>
                 </property>
                </widget>
               </widget>
@@ -3903,6 +3906,504 @@
                <attribute name="title">
                 <string>Gamma</string>
                </attribute>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>451</width>
+                  <height>71</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_114">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma">
+                   <property name="text">
+                    <string>Gamma Mode:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_Image_Setting_Display_Gamma">
+                   <item>
+                    <property name="text">
+                     <string>Film</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Video</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Graphics</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Standard(2.2)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>1.8</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2.0</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2.4</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>2.6</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>3D</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Blackboard</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>DICOM SIM</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Bright</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CRT</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>User</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_Film">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>110</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_234">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_Film">
+                   <property name="text">
+                    <string>Film:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_Film">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_Film">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_Video">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>190</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_235">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_Video">
+                   <property name="text">
+                    <string>Video:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_Video">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_Video">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_1_8">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>430</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_236">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_1_8">
+                   <property name="text">
+                    <string>1.8:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_1_8">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_1_8">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_Graphics">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>270</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_237">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_Graphics">
+                   <property name="text">
+                    <string>Graphics:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_Graphics">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_Graphics">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_Standart">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>350</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_238">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_Standart">
+                   <property name="text">
+                    <string>Standard(2.2):</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_Standart">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_Standart">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_2_0">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>510</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_239">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_2_0">
+                   <property name="text">
+                    <string>2.0:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_2_0">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_2_0">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_Image_Setting_Display_Gamma_2_4">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>590</y>
+                  <width>451</width>
+                  <height>73</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_240">
+                 <item>
+                  <widget class="QLabel" name="label_Image_Setting_Display_Gamma_2_4">
+                   <property name="text">
+                    <string>2.4:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSlider" name="horizontalSlider_Image_Setting_Display_Gamma_2_4">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimum">
+                    <number>-5</number>
+                   </property>
+                   <property name="maximum">
+                    <number>5</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>1</number>
+                   </property>
+                   <property name="value">
+                    <number>0</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_var_Image_Setting_Display_Gamma_2_4">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
               </widget>
               <widget class="QWidget" name="tab_49">
                <attribute name="title">
