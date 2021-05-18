@@ -524,7 +524,7 @@ MainWindow::MainWindow(QWidget *parent)
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
 
     //***test
-    parameter temp("7E303031303520310D");
+    parameter temp("7E303031353020340D");
      razbor_com(temp);
     //***
 
@@ -551,7 +551,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 {
 
 
-    //temp.print_parameter_inf();
+    temp.print_parameter_inf();
     QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
                     "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
                     "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
@@ -6356,7 +6356,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //read
     if(temp.getInt_command()==150){
         if(temp.getInt_variable()==4){
-            Ok.append(ui->lineEdit_info_Resolution->text());
+            Ok.append(ui->lineEdit_info_Resolution->text());  
             return Ok;
         }
     }
