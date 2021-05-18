@@ -406,6 +406,45 @@ public:
     QLabel *Image_Setting_Dynamic_Contrast;
     QComboBox *comboBox_Image_Setting_Dynamic_Contrast;
     QWidget *tab_48;
+    QFrame *frame_Image_Setting_Display_Gamma;
+    QHBoxLayout *horizontalLayout_114;
+    QLabel *label_Image_Setting_Display_Gamma;
+    QComboBox *comboBox_Image_Setting_Display_Gamma;
+    QFrame *frame_Image_Setting_Display_Gamma_Film;
+    QHBoxLayout *horizontalLayout_234;
+    QLabel *label_Image_Setting_Display_Gamma_Film;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_Film;
+    QLabel *label_var_Image_Setting_Display_Gamma_Film;
+    QFrame *frame_Image_Setting_Display_Gamma_Video;
+    QHBoxLayout *horizontalLayout_235;
+    QLabel *label_Image_Setting_Display_Gamma_Video;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_Video;
+    QLabel *label_var_Image_Setting_Display_Gamma_Video;
+    QFrame *frame_Image_Setting_Display_Gamma_1_8;
+    QHBoxLayout *horizontalLayout_236;
+    QLabel *label_Image_Setting_Display_Gamma_1_8;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_1_8;
+    QLabel *label_var_Image_Setting_Display_Gamma_1_8;
+    QFrame *frame_Image_Setting_Display_Gamma_Graphics;
+    QHBoxLayout *horizontalLayout_237;
+    QLabel *label_Image_Setting_Display_Gamma_Graphics;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_Graphics;
+    QLabel *label_var_Image_Setting_Display_Gamma_Graphics;
+    QFrame *frame_Image_Setting_Display_Gamma_Standart;
+    QHBoxLayout *horizontalLayout_238;
+    QLabel *label_Image_Setting_Display_Gamma_Standart;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_Standart;
+    QLabel *label_var_Image_Setting_Display_Gamma_Standart;
+    QFrame *frame_Image_Setting_Display_Gamma_2_0;
+    QHBoxLayout *horizontalLayout_239;
+    QLabel *label_Image_Setting_Display_Gamma_2_0;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_2_0;
+    QLabel *label_var_Image_Setting_Display_Gamma_2_0;
+    QFrame *frame_Image_Setting_Display_Gamma_2_4;
+    QHBoxLayout *horizontalLayout_240;
+    QLabel *label_Image_Setting_Display_Gamma_2_4;
+    QSlider *horizontalSlider_Image_Setting_Display_Gamma_2_4;
+    QLabel *label_var_Image_Setting_Display_Gamma_2_4;
     QWidget *tab_49;
     QGridLayout *gridLayout_24;
     QFrame *frame_Image_Setting_Color_Setting_Color_Temperature;
@@ -3421,6 +3460,240 @@ public:
         tabWidget_4->addTab(tab_47, QString());
         tab_48 = new QWidget();
         tab_48->setObjectName(QStringLiteral("tab_48"));
+        frame_Image_Setting_Display_Gamma = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma"));
+        frame_Image_Setting_Display_Gamma->setGeometry(QRect(20, 20, 451, 71));
+        frame_Image_Setting_Display_Gamma->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma->setFrameShadow(QFrame::Raised);
+        horizontalLayout_114 = new QHBoxLayout(frame_Image_Setting_Display_Gamma);
+        horizontalLayout_114->setObjectName(QStringLiteral("horizontalLayout_114"));
+        label_Image_Setting_Display_Gamma = new QLabel(frame_Image_Setting_Display_Gamma);
+        label_Image_Setting_Display_Gamma->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma"));
+
+        horizontalLayout_114->addWidget(label_Image_Setting_Display_Gamma);
+
+        comboBox_Image_Setting_Display_Gamma = new QComboBox(frame_Image_Setting_Display_Gamma);
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->addItem(QString());
+        comboBox_Image_Setting_Display_Gamma->setObjectName(QStringLiteral("comboBox_Image_Setting_Display_Gamma"));
+
+        horizontalLayout_114->addWidget(comboBox_Image_Setting_Display_Gamma);
+
+        frame_Image_Setting_Display_Gamma_Film = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_Film->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_Film"));
+        frame_Image_Setting_Display_Gamma_Film->setGeometry(QRect(20, 110, 451, 73));
+        frame_Image_Setting_Display_Gamma_Film->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_Film->setFrameShadow(QFrame::Raised);
+        horizontalLayout_234 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_Film);
+        horizontalLayout_234->setObjectName(QStringLiteral("horizontalLayout_234"));
+        label_Image_Setting_Display_Gamma_Film = new QLabel(frame_Image_Setting_Display_Gamma_Film);
+        label_Image_Setting_Display_Gamma_Film->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_Film"));
+
+        horizontalLayout_234->addWidget(label_Image_Setting_Display_Gamma_Film);
+
+        horizontalSlider_Image_Setting_Display_Gamma_Film = new QSlider(frame_Image_Setting_Display_Gamma_Film);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_Film"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_Film->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_Film->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_234->addWidget(horizontalSlider_Image_Setting_Display_Gamma_Film);
+
+        label_var_Image_Setting_Display_Gamma_Film = new QLabel(frame_Image_Setting_Display_Gamma_Film);
+        label_var_Image_Setting_Display_Gamma_Film->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_Film"));
+
+        horizontalLayout_234->addWidget(label_var_Image_Setting_Display_Gamma_Film, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_Video = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_Video->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_Video"));
+        frame_Image_Setting_Display_Gamma_Video->setGeometry(QRect(20, 190, 451, 73));
+        frame_Image_Setting_Display_Gamma_Video->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_Video->setFrameShadow(QFrame::Raised);
+        horizontalLayout_235 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_Video);
+        horizontalLayout_235->setObjectName(QStringLiteral("horizontalLayout_235"));
+        label_Image_Setting_Display_Gamma_Video = new QLabel(frame_Image_Setting_Display_Gamma_Video);
+        label_Image_Setting_Display_Gamma_Video->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_Video"));
+
+        horizontalLayout_235->addWidget(label_Image_Setting_Display_Gamma_Video);
+
+        horizontalSlider_Image_Setting_Display_Gamma_Video = new QSlider(frame_Image_Setting_Display_Gamma_Video);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_Video"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_Video->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_Video->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_235->addWidget(horizontalSlider_Image_Setting_Display_Gamma_Video);
+
+        label_var_Image_Setting_Display_Gamma_Video = new QLabel(frame_Image_Setting_Display_Gamma_Video);
+        label_var_Image_Setting_Display_Gamma_Video->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_Video"));
+
+        horizontalLayout_235->addWidget(label_var_Image_Setting_Display_Gamma_Video, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_1_8 = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_1_8->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_1_8"));
+        frame_Image_Setting_Display_Gamma_1_8->setGeometry(QRect(20, 430, 451, 73));
+        frame_Image_Setting_Display_Gamma_1_8->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_1_8->setFrameShadow(QFrame::Raised);
+        horizontalLayout_236 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_1_8);
+        horizontalLayout_236->setObjectName(QStringLiteral("horizontalLayout_236"));
+        label_Image_Setting_Display_Gamma_1_8 = new QLabel(frame_Image_Setting_Display_Gamma_1_8);
+        label_Image_Setting_Display_Gamma_1_8->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_1_8"));
+
+        horizontalLayout_236->addWidget(label_Image_Setting_Display_Gamma_1_8);
+
+        horizontalSlider_Image_Setting_Display_Gamma_1_8 = new QSlider(frame_Image_Setting_Display_Gamma_1_8);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_1_8"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_1_8->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_1_8->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_236->addWidget(horizontalSlider_Image_Setting_Display_Gamma_1_8);
+
+        label_var_Image_Setting_Display_Gamma_1_8 = new QLabel(frame_Image_Setting_Display_Gamma_1_8);
+        label_var_Image_Setting_Display_Gamma_1_8->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_1_8"));
+
+        horizontalLayout_236->addWidget(label_var_Image_Setting_Display_Gamma_1_8, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_Graphics = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_Graphics->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_Graphics"));
+        frame_Image_Setting_Display_Gamma_Graphics->setGeometry(QRect(20, 270, 451, 73));
+        frame_Image_Setting_Display_Gamma_Graphics->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_Graphics->setFrameShadow(QFrame::Raised);
+        horizontalLayout_237 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_Graphics);
+        horizontalLayout_237->setObjectName(QStringLiteral("horizontalLayout_237"));
+        label_Image_Setting_Display_Gamma_Graphics = new QLabel(frame_Image_Setting_Display_Gamma_Graphics);
+        label_Image_Setting_Display_Gamma_Graphics->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_Graphics"));
+
+        horizontalLayout_237->addWidget(label_Image_Setting_Display_Gamma_Graphics);
+
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics = new QSlider(frame_Image_Setting_Display_Gamma_Graphics);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_Graphics"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_Graphics->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_Graphics->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_237->addWidget(horizontalSlider_Image_Setting_Display_Gamma_Graphics);
+
+        label_var_Image_Setting_Display_Gamma_Graphics = new QLabel(frame_Image_Setting_Display_Gamma_Graphics);
+        label_var_Image_Setting_Display_Gamma_Graphics->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_Graphics"));
+
+        horizontalLayout_237->addWidget(label_var_Image_Setting_Display_Gamma_Graphics, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_Standart = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_Standart->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_Standart"));
+        frame_Image_Setting_Display_Gamma_Standart->setGeometry(QRect(20, 350, 451, 73));
+        frame_Image_Setting_Display_Gamma_Standart->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_Standart->setFrameShadow(QFrame::Raised);
+        horizontalLayout_238 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_Standart);
+        horizontalLayout_238->setObjectName(QStringLiteral("horizontalLayout_238"));
+        label_Image_Setting_Display_Gamma_Standart = new QLabel(frame_Image_Setting_Display_Gamma_Standart);
+        label_Image_Setting_Display_Gamma_Standart->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_Standart"));
+
+        horizontalLayout_238->addWidget(label_Image_Setting_Display_Gamma_Standart);
+
+        horizontalSlider_Image_Setting_Display_Gamma_Standart = new QSlider(frame_Image_Setting_Display_Gamma_Standart);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_Standart"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_Standart->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_Standart->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_238->addWidget(horizontalSlider_Image_Setting_Display_Gamma_Standart);
+
+        label_var_Image_Setting_Display_Gamma_Standart = new QLabel(frame_Image_Setting_Display_Gamma_Standart);
+        label_var_Image_Setting_Display_Gamma_Standart->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_Standart"));
+
+        horizontalLayout_238->addWidget(label_var_Image_Setting_Display_Gamma_Standart, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_2_0 = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_2_0->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_2_0"));
+        frame_Image_Setting_Display_Gamma_2_0->setGeometry(QRect(20, 510, 451, 73));
+        frame_Image_Setting_Display_Gamma_2_0->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_2_0->setFrameShadow(QFrame::Raised);
+        horizontalLayout_239 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_2_0);
+        horizontalLayout_239->setObjectName(QStringLiteral("horizontalLayout_239"));
+        label_Image_Setting_Display_Gamma_2_0 = new QLabel(frame_Image_Setting_Display_Gamma_2_0);
+        label_Image_Setting_Display_Gamma_2_0->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_2_0"));
+
+        horizontalLayout_239->addWidget(label_Image_Setting_Display_Gamma_2_0);
+
+        horizontalSlider_Image_Setting_Display_Gamma_2_0 = new QSlider(frame_Image_Setting_Display_Gamma_2_0);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_2_0"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_2_0->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_2_0->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_239->addWidget(horizontalSlider_Image_Setting_Display_Gamma_2_0);
+
+        label_var_Image_Setting_Display_Gamma_2_0 = new QLabel(frame_Image_Setting_Display_Gamma_2_0);
+        label_var_Image_Setting_Display_Gamma_2_0->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_2_0"));
+
+        horizontalLayout_239->addWidget(label_var_Image_Setting_Display_Gamma_2_0, 0, Qt::AlignHCenter);
+
+        frame_Image_Setting_Display_Gamma_2_4 = new QFrame(tab_48);
+        frame_Image_Setting_Display_Gamma_2_4->setObjectName(QStringLiteral("frame_Image_Setting_Display_Gamma_2_4"));
+        frame_Image_Setting_Display_Gamma_2_4->setGeometry(QRect(20, 590, 451, 73));
+        frame_Image_Setting_Display_Gamma_2_4->setFrameShape(QFrame::Box);
+        frame_Image_Setting_Display_Gamma_2_4->setFrameShadow(QFrame::Raised);
+        horizontalLayout_240 = new QHBoxLayout(frame_Image_Setting_Display_Gamma_2_4);
+        horizontalLayout_240->setObjectName(QStringLiteral("horizontalLayout_240"));
+        label_Image_Setting_Display_Gamma_2_4 = new QLabel(frame_Image_Setting_Display_Gamma_2_4);
+        label_Image_Setting_Display_Gamma_2_4->setObjectName(QStringLiteral("label_Image_Setting_Display_Gamma_2_4"));
+
+        horizontalLayout_240->addWidget(label_Image_Setting_Display_Gamma_2_4);
+
+        horizontalSlider_Image_Setting_Display_Gamma_2_4 = new QSlider(frame_Image_Setting_Display_Gamma_2_4);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setObjectName(QStringLiteral("horizontalSlider_Image_Setting_Display_Gamma_2_4"));
+        sizePolicy.setHeightForWidth(horizontalSlider_Image_Setting_Display_Gamma_2_4->sizePolicy().hasHeightForWidth());
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setSizePolicy(sizePolicy);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setMinimum(-5);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setMaximum(5);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setPageStep(1);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setValue(0);
+        horizontalSlider_Image_Setting_Display_Gamma_2_4->setOrientation(Qt::Horizontal);
+
+        horizontalLayout_240->addWidget(horizontalSlider_Image_Setting_Display_Gamma_2_4);
+
+        label_var_Image_Setting_Display_Gamma_2_4 = new QLabel(frame_Image_Setting_Display_Gamma_2_4);
+        label_var_Image_Setting_Display_Gamma_2_4->setObjectName(QStringLiteral("label_var_Image_Setting_Display_Gamma_2_4"));
+
+        horizontalLayout_240->addWidget(label_var_Image_Setting_Display_Gamma_2_4, 0, Qt::AlignHCenter);
+
         tabWidget_4->addTab(tab_48, QString());
         tab_49 = new QWidget();
         tab_49->setObjectName(QStringLiteral("tab_49"));
@@ -10668,10 +10941,10 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
-        tab_Other_Items->setCurrentIndex(8);
+        tabWidget->setCurrentIndex(1);
+        tab_Other_Items->setCurrentIndex(6);
         tabWidget_2->setCurrentIndex(0);
-        tabWidget_4->setCurrentIndex(9);
+        tabWidget_4->setCurrentIndex(1);
         tabWidget_3->setCurrentIndex(7);
 
 
@@ -10793,6 +11066,7 @@ public:
         label_fan_speed4->setText(QApplication::translate("MainWindow", "Fan 4 Speed", nullptr));
         laaabel_2_fan_4->setText(QString());
         label_system_temperature->setText(QApplication::translate("MainWindow", "System Temperature", nullptr));
+        lineEdit_RS232_2->setText(QApplication::translate("MainWindow", "48", nullptr));
         label_current_wat->setText(QApplication::translate("MainWindow", "Current Wat", nullptr));
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_18), QApplication::translate("MainWindow", "Fan Speed", nullptr));
         groupBox_main_source->setTitle(QApplication::translate("MainWindow", "Main Source", nullptr));
@@ -10948,6 +11222,38 @@ public:
         comboBox_Image_Setting_Dynamic_Contrast->setItemText(1, QApplication::translate("MainWindow", "On", nullptr));
 
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_47), QApplication::translate("MainWindow", "Tab first", nullptr));
+        label_Image_Setting_Display_Gamma->setText(QApplication::translate("MainWindow", "Gamma Mode:", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(0, QApplication::translate("MainWindow", "Film", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(1, QApplication::translate("MainWindow", "Video", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(2, QApplication::translate("MainWindow", "Graphics", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(3, QApplication::translate("MainWindow", "Standard(2.2)\n"
+"", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(4, QApplication::translate("MainWindow", "1.8", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(5, QApplication::translate("MainWindow", "2.0", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(6, QApplication::translate("MainWindow", "2.4", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(7, QApplication::translate("MainWindow", "2.6", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(8, QApplication::translate("MainWindow", "3D", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(9, QApplication::translate("MainWindow", "Blackboard", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(10, QApplication::translate("MainWindow", "DICOM SIM", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(11, QApplication::translate("MainWindow", "Bright", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(12, QApplication::translate("MainWindow", "CRT", nullptr));
+        comboBox_Image_Setting_Display_Gamma->setItemText(13, QApplication::translate("MainWindow", "User", nullptr));
+
+        label_Image_Setting_Display_Gamma_Film->setText(QApplication::translate("MainWindow", "Film:", nullptr));
+        label_var_Image_Setting_Display_Gamma_Film->setText(QString());
+        label_Image_Setting_Display_Gamma_Video->setText(QApplication::translate("MainWindow", "Video:", nullptr));
+        label_var_Image_Setting_Display_Gamma_Video->setText(QString());
+        label_Image_Setting_Display_Gamma_1_8->setText(QApplication::translate("MainWindow", "1.8:", nullptr));
+        label_var_Image_Setting_Display_Gamma_1_8->setText(QString());
+        label_Image_Setting_Display_Gamma_Graphics->setText(QApplication::translate("MainWindow", "Graphics:", nullptr));
+        label_var_Image_Setting_Display_Gamma_Graphics->setText(QString());
+        label_Image_Setting_Display_Gamma_Standart->setText(QApplication::translate("MainWindow", "Standard(2.2)\n"
+":", nullptr));
+        label_var_Image_Setting_Display_Gamma_Standart->setText(QString());
+        label_Image_Setting_Display_Gamma_2_0->setText(QApplication::translate("MainWindow", "2.0:", nullptr));
+        label_var_Image_Setting_Display_Gamma_2_0->setText(QString());
+        label_Image_Setting_Display_Gamma_2_4->setText(QApplication::translate("MainWindow", "2.4:", nullptr));
+        label_var_Image_Setting_Display_Gamma_2_4->setText(QString());
         tabWidget_4->setTabText(tabWidget_4->indexOf(tab_48), QApplication::translate("MainWindow", "Gamma", nullptr));
         label_Image_Setting_Color_Setting_Color_Temperature->setText(QApplication::translate("MainWindow", "Color Temperature:", nullptr));
         pushButton_Image_Setting_Color_Setting_Color_Temperature_reset->setText(QApplication::translate("MainWindow", "Reset", nullptr));
