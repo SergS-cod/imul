@@ -1,7 +1,7 @@
 QT       += core gui
 QT += serialport
 QT += core gui network serialport
-
+QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,14 +17,16 @@ SOURCES += \
     mainwindow.cpp \
     port.cpp  \
     parameter.cpp  \
-packet.cpp
+packet.cpp \
+    tcp_server.cpp
 
 HEADERS += \
     display_m.h \
     mainwindow.h \
     port.h   \
    parameter.h  \
-   packet.h
+   packet.h \
+    tcp_server.h
 
 FORMS += \
     display_m.ui \

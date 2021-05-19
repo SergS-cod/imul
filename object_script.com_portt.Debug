@@ -1,0 +1,11 @@
+debug/display_m.o
+debug/main.o
+debug/mainwindow.o
+debug/port.o
+debug/parameter.o
+debug/packet.o
+debug/tcp_server.o
+debug/moc_display_m.o
+debug/moc_mainwindow.o
+debug/moc_port.o
+debug/moc_tcp_server.o

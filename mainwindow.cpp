@@ -13,10 +13,77 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 ////
     port* A=new port;
+         Tcp_server* B=new Tcp_server;
 
      connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
+     connect (this,SIGNAL(s_send_to_ethert(QByteArray)),B,SLOT(send_to(QByteArray)));
 
 
+
+
+//      QAction* pCheckableAction = file->addAction("&COM port");
+//      QAction* pEthernet = file->addAction("&Ethernet");
+//          pCheckableAction->setCheckable(true);
+//          pEthernet->setCheckable(true);
+//          pEthernet->setChecked(true);
+
+//          if(pCheckableAction->isChecked())
+//            {  pEthernet->setChecked(false);
+//              qDebug()<<"kkkkkkkkkkkkkkk";
+//          }
+
+//          if(pEthernet->isChecked())
+//            {  pCheckableAction->setChecked(false);
+//              qDebug()<<"hhhhhhhhhhhhh";
+//          }
+        //  pCheckableAction->setChecked(true);
+
+      //QMenuBar mnuBar;
+//      menu_bar_ = new QMenuBar(this);
+//        menu_bar_->setNativeMenuBar(false);
+
+//      QMenu*   pmnu   = new QMenu("&Menu");
+////      pmnu->addAction("&About Qt",
+////                          &app,
+////                          SLOT(aboutQt()),
+////                          Qt::CTRL + Qt::Key_Q
+////                         );
+
+//          pmnu->addSeparator();
+
+//          QAction* pCheckableAction = pmnu->addAction("&CheckableItem");
+//          pCheckableAction->setCheckable(true);
+//          pCheckableAction->setChecked(true);
+
+//      //    pmnu->addAction(QPixmap(img4_xpm), "&IconItem");
+
+//          QMenu* pmnuSubMenu = new QMenu("&SubMenu", pmnu);
+//          pmnu->addMenu(pmnuSubMenu);
+//          pmnuSubMenu->addAction("&Test");
+
+//          QAction* pDisabledAction = pmnu->addAction("&DisabledItem");
+//          pDisabledAction->setEnabled(false);
+
+//          pmnu->addSeparator();
+
+//       //   pmnu->addAction("&Exit", &app, SLOT(quit()));
+//       mnuBar.addMenu(pmnu);
+//      mnuBar.show();
+//menu_bar_->show();
+
+ //ui->menuqwer->
+   //  ui->actionwer();
+         ui->actioncom_port->setCheckable(true);
+             ui->actionEhternet->setCheckable(true);
+                 ui->actionEhternet->setChecked(true);
+
+ connect ( ui->actioncom_port,SIGNAL( changed()),this,SLOT(check()));
+connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
+// connect (this,SIGNAL( ui->,this,SLOT(check()));
+
+QByteArray a;
+a.append("wwwww");
+otpravka(a);
 
     ui->label_2xzczx->setText("0");
     connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
@@ -572,7 +639,6 @@ MainWindow* MainWindow::GetInstance(QWidget *parent)
 
 void MainWindow:: update_state()
 {
-
 }
 
 QByteArray MainWindow:: razbor_com(parameter temp)
@@ -1463,31 +1529,31 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             INFO.clear();
             if(ui->checkBox_wait_on->isChecked()==1){
                 INFO.append("INFO2");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 if(ui->checkBox_how_answer_off->isChecked()==1){
                     check_auto_send();
-                    emit s_send_to(P);
+                    otpravka(P);
                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     check_auto_send();
-                    emit s_send_to(F);
+                    otpravka(F);
                 }
                 return ret;
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
                  if(ui->checkBox_how_answer_off->isChecked()==1){
-                     emit s_send_to(P);
+                     otpravka(P);
                      INFO.append("INFO2");
-                     emit s_send_to(INFO);
+                     otpravka(INFO);
                      INFO.clear();
                      check_auto_send();
                  }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     INFO.append("INFO2");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                 }
                 return ret;
@@ -1500,18 +1566,18 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 INFO.clear();
                 if(ui->checkBox_wait_on->isChecked()==1){
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     if(ui->checkBox_how_answer_on->isChecked()==1){
                         check_auto_send();
-                        emit s_send_to(P);
+                        otpravka(P);
                         return ret;
                     }
                     if(ui->checkBox_how_answer_on==0){
-                        emit s_send_to(F);
+                        otpravka(F);
                         return ret;
                     }
                 }
@@ -1519,24 +1585,24 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 if(ui->checkBox_wait_on->isChecked()==0)  {
                     if(ui->checkBox_how_answer_on->isChecked()==1){
 
-                        emit s_send_to(P);
+                        otpravka(P);
                         INFO.clear();
                         INFO.append("INFO0");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
                         INFO.append("INFO1");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         check_auto_send();
                         return ret;
                     }
                     if(ui->checkBox_how_answer_on->isChecked()==0){
-                        emit s_send_to(F);
+                        otpravka(F);
                         INFO.clear();
                         INFO.append("INFO0");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
                         INFO.append("INFO1");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
 
                         return ret;
@@ -1551,18 +1617,18 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 INFO.clear();
                 if(ui->checkBox_wait_on->isChecked()==1){
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     if(ui->checkBox_how_answer_on->isChecked()==1){
                         check_auto_send();
-                        emit s_send_to(P);
+                        otpravka(P);
                         return ret;
                     }
                     if(ui->checkBox_how_answer_on==0){
-                        emit s_send_to(F);
+                        otpravka(F);
                         return ret;
                     }
                 }
@@ -1571,25 +1637,25 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                     if(ui->checkBox_how_answer_on->isChecked()==1){
                          qDebug()<<"POWERRRR: ";
                          qDebug()<<P;
-                        emit s_send_to(P);
+                        otpravka(P);
                         INFO.clear();
                         INFO.append("INFO0");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
                         INFO.append("INFO1");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         check_auto_send();
                         return ret;
                     }
 
                     if(ui->checkBox_how_answer_on->isChecked()==0){
-                        emit s_send_to(F);
+                        otpravka(F);
                         INFO.clear();
                         INFO.append("INFO0");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
                         INFO.append("INFO1");
-                        emit s_send_to(INFO);
+                        otpravka(INFO);
                         INFO.clear();
 
                         return ret;
@@ -1608,13 +1674,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //            {
     //                QByteArray To;
     //                To.append("Ok1");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((ui->ON->isChecked()==Qt::Unchecked)&&(ui->OFF->isChecked()==Qt::Checked))
     //            {
     //                QByteArray To;
     //                To.append("Ok0");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
 
     //        }
@@ -1692,25 +1758,25 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //            {
     //                QByteArray To;
     //                To.append("Ok0");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Checked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
     //            {
     //                QByteArray To;
     //                To.append("Ok1");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Checked)&&(ui->Rear_top->isChecked()==Qt::Unchecked))
     //            {
     //                QByteArray To;
     //                To.append("Ok2");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((ui->Front->isChecked()==Qt::Unchecked)&&(ui->Rear->isChecked()==Qt::Unchecked)&&(ui->Ceiling_top->isChecked()==Qt::Unchecked)&&(ui->Rear_top->isChecked()==Qt::Checked))
     //            {
     //                QByteArray To;
     //                To.append("Ok3");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //        }
     //    }
@@ -1742,13 +1808,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //            {
     //                QByteArray To;
     //                To.append("Ok1");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((!ui->ON_mute->isChecked())&&(ui->OFF_mute->isChecked()))
     //            {
     //                QByteArray To;
     //                To.append("Ok0");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
 
     //        }
@@ -1781,13 +1847,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //            {
     //                QByteArray To;
     //                To.append("Ok1");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((!ui->ON_mute2->isChecked())&&(ui->OFF_mute2->isChecked()))
     //            {
     //                QByteArray To;
     //                To.append("Ok0");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //        }
     //    }
@@ -2088,13 +2154,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //            {
     //                QByteArray To;
     //                To.append("Ok0");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
     //            if ((!ui->DD->isChecked())&&(ui->DDD->isChecked()))
     //            {
     //                QByteArray To;
     //                To.append("Ok1");
-    //                emit s_send_to(To);
+    //                otpravka(To);
     //            }
 
     //        }
@@ -4886,31 +4952,31 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             INFO.clear();
             if(ui->checkBox_wait_on->isChecked()==1){
                 INFO.append("INFO2");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 if(ui->checkBox_how_answer_off->isChecked()==1){
                     check_auto_send();
-                    emit s_send_to(P);
+                    otpravka(P);
                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     check_auto_send();
-                    emit s_send_to(F);
+                    otpravka(F);
                 }
                 return ret;
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
                  if(ui->checkBox_how_answer_off->isChecked()==1){
-                     emit s_send_to(P);
+                     otpravka(P);
                      INFO.append("INFO2");
-                     emit s_send_to(INFO);
+                     otpravka(INFO);
                      INFO.clear();
                      check_auto_send();
                  }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     INFO.append("INFO2");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                 }
                 return ret;
@@ -4923,42 +4989,42 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             INFO.clear();
             if(ui->checkBox_wait_on->isChecked()==1){
                 INFO.append("INFO1");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 INFO.append("INFO0");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 if(ui->checkBox_how_answer_on->isChecked()==1){
                     check_auto_send();
-                    emit s_send_to(P);
+                    otpravka(P);
                     return ret;
                 }
                 if(ui->checkBox_how_answer_on==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     return ret;
                 }
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
                 if(ui->checkBox_how_answer_on->isChecked()==1){
-                    emit s_send_to(P);
+                    otpravka(P);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     check_auto_send();
                     return ret;
                 }
                 if(ui->checkBox_how_answer_on->isChecked()==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
 
                     return ret;
@@ -4974,31 +5040,31 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             INFO.clear();
             if(ui->checkBox_wait_on->isChecked()==1){
                 INFO.append("INFO2");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 if(ui->checkBox_how_answer_off->isChecked()==1){
                     check_auto_send();
-                    emit s_send_to(P);
+                    otpravka(P);
                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     check_auto_send();
-                    emit s_send_to(F);
+                    otpravka(F);
                 }
                 return ret;
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
                  if(ui->checkBox_how_answer_off->isChecked()==1){
-                     emit s_send_to(P);
+                     otpravka(P);
                      INFO.append("INFO2");
-                     emit s_send_to(INFO);
+                     otpravka(INFO);
                      INFO.clear();
                      check_auto_send();
                  }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     INFO.append("INFO2");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                 }
                 return ret;
@@ -5010,18 +5076,18 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             INFO.clear();
             if(ui->checkBox_wait_on->isChecked()==1){
                 INFO.append("INFO1");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 INFO.append("INFO0");
-                emit s_send_to(INFO);
+                otpravka(INFO);
                 INFO.clear();
                 if(ui->checkBox_how_answer_on->isChecked()==1){
                     check_auto_send();
-                    emit s_send_to(P);
+                    otpravka(P);
                     return ret;
                 }
                 if(ui->checkBox_how_answer_on==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     return ret;
                 }
             }
@@ -5029,24 +5095,24 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
                 if(ui->checkBox_how_answer_on->isChecked()==1){
-                    emit s_send_to(P);
+                    otpravka(P);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     check_auto_send();
                     return ret;
                 }
                 if(ui->checkBox_how_answer_on->isChecked()==0){
-                    emit s_send_to(F);
+                    otpravka(F);
                     INFO.clear();
                     INFO.append("INFO0");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
                     INFO.append("INFO1");
-                    emit s_send_to(INFO);
+                    otpravka(INFO);
                     INFO.clear();
 
                     return ret;
@@ -6886,127 +6952,127 @@ void MainWindow::check_auto_send()
 
     if(ui->checkBox_pushButton_systeam_auto->isChecked()==1){
         INFO.append("INFO0");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_2->isChecked()==1){
         INFO.append("INFO1");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_3->isChecked()==1){
         INFO.append("INFO2");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_4->isChecked()==1){
         INFO.append("INFO3");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_5->isChecked()==1){
         INFO.append("INFO4");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_6->isChecked()==1){
         INFO.append("INFO5");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_7->isChecked()==1){
         INFO.append("INFO6");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_8->isChecked()==1){
         INFO.append("INFO7");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_9->isChecked()==1){
         INFO.append("INFO8");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_10->isChecked()==1){
         INFO.append("INFO9");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_11->isChecked()==1){
         INFO.append("INFO10");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_12->isChecked()==1){
         INFO.append("INFO11");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_13->isChecked()==1){
         INFO.append("INFO12");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_14->isChecked()==1){
         INFO.append("INFO13");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_15->isChecked()==1){
         INFO.append("INFO14");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_16->isChecked()==1){
         INFO.append("INFO15");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_17->isChecked()==1){
         INFO.append("INFO16");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_18->isChecked()==1){
         INFO.append("INFO17");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_19->isChecked()==1){
         INFO.append("INFO18");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_20->isChecked()==1){
         INFO.append("INFO19");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_21->isChecked()==1){
         INFO.append("INFO20");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_22->isChecked()==1){
         INFO.append("INFO21");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_23->isChecked()==1){
         INFO.append("INFO22");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_24->isChecked()==1){
         INFO.append("INFO23");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
     if(ui->checkBox_pushButton_systeam_auto_25->isChecked()==1){
         INFO.append("INFO24");
-        emit s_send_to(INFO);
+        otpravka(INFO);
         INFO.clear();
     }
 
@@ -7018,9 +7084,27 @@ void MainWindow::razbor(parameter a)
     QByteArray tmp;
     tmp = razbor_com(a);
     if(tmp.data()!="ret"){
-        emit s_send_to(tmp);
+        otpravka(tmp);
     }
 
+}
+
+void MainWindow::check()
+{
+    if(ui->actioncom_port->isChecked())
+    {
+        ui->actionEhternet->setChecked(false);
+        return;
+    }
+}
+
+void MainWindow::check2()
+{
+    if(ui->actionEhternet->isChecked())
+    {
+        ui->actioncom_port->setChecked(false);
+        return;
+    }
 }
 
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
@@ -8252,173 +8336,187 @@ void MainWindow::on_tabWidget_tabBarClicked(int index)
 void MainWindow::on_pushButton_systeam_auto_clicked(){
     QByteArray INFO;
     INFO.append("INFO0");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_2_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO1");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_3_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO2");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_4_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO3");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_5_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO4");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_6_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO5");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_7_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO6");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_8_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO7");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_9_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO8");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_10_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO9");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_11_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO10");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_12_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO11");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_13_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO12");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_14_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO13");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_15_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO14");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_16_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO15");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_17_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO16");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_18_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO17");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_19_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO18");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_20_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO19");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_21_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO20");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_22_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO21");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_23_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO22");
-    emit s_send_to(INFO);
+    emit
+
+
+    s_send_to(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_24_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO23");
-    emit s_send_to(INFO);
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_25_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO24");
-    emit s_send_to(INFO);
+    otpravka(INFO);
+}
+
+void MainWindow::otpravka(QByteArray TO)
+{
+    if(ui->actioncom_port->isChecked())
+    {
+     emit   s_send_to(TO);
+    }
+     if(ui->actionEhternet->isChecked())
+      { emit  s_send_to_ethert(TO);
+     }
 }

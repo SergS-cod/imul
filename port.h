@@ -6,6 +6,11 @@
 #include "parameter.h"
 #include "packet.h"
 
+
+#include <QTcpServer>
+#include <QTcpSocket>
+
+
 #include "mainwindow.h"
 
 

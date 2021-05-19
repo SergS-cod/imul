@@ -10,7 +10,10 @@
 #include  <QDebug>
 #include  <port.h>
 
+#include "tcp_server.h"
 
+#include <QMenu>
+#include <QMenuBar>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -42,12 +45,16 @@ public:
 
      QByteArray razbor_com(parameter);
       void check_auto_send();
+
+
+       QMenu *file;
 public slots:
 
 
     void razbor(parameter);
+    void check();
 
-
+    void check2();
 
 
 private slots:
@@ -206,8 +213,11 @@ private slots:
 
  void on_pushButton_systeam_auto_25_clicked();
 
+ void otpravka(QByteArray);
+
 signals:
  void s_send_to(QByteArray);
+void s_send_to_ethert(QByteArray);
 
 private:
     Ui::MainWindow *ui;

@@ -18,7 +18,7 @@
     <item row="0" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_22">
        <attribute name="title">
@@ -28,7 +28,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tab_Other_Items">
           <property name="currentIndex">
-           <number>6</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tabB_23">
            <attribute name="title">
@@ -3199,6 +3199,9 @@
            <layout class="QGridLayout" name="gridLayout_23">
             <item row="0" column="0">
              <widget class="QTabWidget" name="tabWidget_4">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                 <horstretch>0</horstretch>
@@ -3206,7 +3209,7 @@
                </sizepolicy>
               </property>
               <property name="currentIndex">
-               <number>1</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="tab_47">
                <attribute name="title">
@@ -3948,7 +3951,7 @@
                    </item>
                    <item>
                     <property name="text">
-                     <string>Standard(2.2)</string>
+                     <string>Standard(2.2)</string>
                     </property>
                    </item>
                    <item>
@@ -4252,7 +4255,7 @@
                  <item>
                   <widget class="QLabel" name="label_Image_Setting_Display_Gamma_Standart">
                    <property name="text">
-                    <string>Standard(2.2):</string>
+                    <string>Standard(2.2):</string>
                    </property>
                   </widget>
                  </item>
@@ -18055,7 +18058,7 @@ White:</string>
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="menubar_mode">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -18064,8 +18067,36 @@ White:</string>
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menumodee">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actioncom_port"/>
+    <addaction name="actionEhternet"/>
+   </widget>
+   <addaction name="menumodee"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCOM_port">
+   <property name="text">
+    <string>COM port</string>
+   </property>
+  </action>
+  <action name="actionEthernet">
+   <property name="text">
+    <string>Ethernet</string>
+   </property>
+  </action>
+  <action name="actioncom_port">
+   <property name="text">
+    <string>COM port</string>
+   </property>
+  </action>
+  <action name="actionEhternet">
+   <property name="text">
+    <string>Ehternet</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
