@@ -113,7 +113,8 @@ void Tcp_server::send_to(QByteArray TO)
 {
     qDebug()<<"SEND";
     // pClientSocket = m_ptcpServer->nextPendingConnection();
-//     QTcpSocket * pClientSocket = m_ptcpServer->nextPendingConnection();
-    // pClientSocket->write(TO);
+     QTcpSocket * pClientSocket = m_ptcpServer->nextPendingConnection();
+     if(pClientSocket!=NULL)
+     pClientSocket->write(TO);
 }
 
