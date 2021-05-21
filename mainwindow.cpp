@@ -12,11 +12,18 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 ////
-    port* A=new port;
-         Tcp_server* B=new Tcp_server;
+    port* A=new port();
+       Tcp_server* B=new Tcp_server();
+
+
+
+
+
 
      connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
-     connect (this,SIGNAL(s_send_to_ethert(QByteArray)),B,SLOT(send_to(QByteArray)));
+     connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),B,SLOT(send_to(QByteArray, QTcpSocket *)));
+
+
 
 
 
@@ -83,7 +90,7 @@ connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
 
 QByteArray a;
 a.append("wwwww");
-otpravka(a);
+//otpravka(a);
 
     ui->label_2xzczx->setText("0");
     connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
@@ -7083,7 +7090,7 @@ void MainWindow::razbor(parameter a)
     a.print_parameter_inf();
     QByteArray tmp;
     tmp = razbor_com(a);
-    if(tmp.data()!="ret"){
+    if(tmp!="ret"){
         otpravka(tmp);
     }
 
@@ -7105,6 +7112,14 @@ void MainWindow::check2()
         ui->actioncom_port->setChecked(false);
         return;
     }
+}
+
+void MainWindow::adres_slot(QTcpSocket * soket)
+{
+    qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
+    //B->pClientSocket=soket;
+    a=soket;
+
 }
 
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
@@ -8512,11 +8527,13 @@ void MainWindow::on_pushButton_systeam_auto_25_clicked()
 
 void MainWindow::otpravka(QByteArray TO)
 {
+
+    qDebug()<<"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"<<TO<<endl;
     if(ui->actioncom_port->isChecked())
     {
      emit   s_send_to(TO);
     }
      if(ui->actionEhternet->isChecked())
-      { emit  s_send_to_ethert(TO);
+      { emit  s_send_to_ethert(TO,a);
      }
 }

@@ -15,12 +15,17 @@ Tcp_server::Tcp_server()
 
         m_ptxt = new QTextEdit;
         m_ptxt->setReadOnly(true);
+     Tcp_server* pClientSocket_1= (Tcp_server*)sender();
+
+     qDebug()<<"_____________________________________________ : "<<pClientSocket_1;
+
+     qDebug()<<"+++++++++++++++++++++++++++++++++++++++++++++ : "<<m_ptcpServer;
 
 
         MainWindow* instance= MainWindow::GetInstance();
 
       connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
-
+        connect (this,SIGNAL (adres(QTcpSocket *)),instance,SLOT(adres_slot(QTcpSocket*)));
         //Layout setup
         //QVBoxLayout* pvbxLayout = new QVBoxLayout;
        // pvbxLayout->addWidget(new QLabel("<H1>Server</H1>"));
@@ -38,12 +43,7 @@ void Tcp_server::sendToClient(QTcpSocket *pSocket, const QString &str)
 {
 
     QByteArray  arrBlock;
-       QDataStream out(&arrBlock, QIODevice::WriteOnly);
-       out.setVersion(QDataStream::Qt_4_2);
-       out << quint16(0) << QTime::currentTime() << str;
 
-       out.device()->seek(0);
-       out << quint16(arrBlock.size() - sizeof(quint16));
 
        pSocket->write(arrBlock);
 }
@@ -53,6 +53,8 @@ void Tcp_server::slotNewConnection()
 
     qDebug()<<"gggggggggggg";
    pClientSocket = m_ptcpServer->nextPendingConnection();
+
+   emit adres(pClientSocket);
 
     connect (pClientSocket, SIGNAL(disconnected()),  pClientSocket, SLOT(deleteLater())) ;
 
@@ -109,12 +111,21 @@ void Tcp_server::slotReadClient()
 
 }
 
-void Tcp_server::send_to(QByteArray TO)
+void Tcp_server::send_to(QByteArray TO, QTcpSocket *AS)
 {
     qDebug()<<"SEND";
     // pClientSocket = m_ptcpServer->nextPendingConnection();
-     QTcpSocket * pClientSocket = m_ptcpServer->nextPendingConnection();
-     if(pClientSocket!=NULL)
-     pClientSocket->write(TO);
+
+   // qDebug()<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<AS;
+    if(AS!=NULL)
+    {
+
+        AS->write(TO);
+
+    }
+//     QTcpSocket * pClientSocket = m_ptcpServer->nextPendingConnection();
+//     qDebug()<<"*************************"<<pClientSocket;
+//     if(pClientSocket!=NULL)
+//     pClientSocket->write(TO);
 }
 

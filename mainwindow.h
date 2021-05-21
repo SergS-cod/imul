@@ -46,7 +46,7 @@ public:
      QByteArray razbor_com(parameter);
       void check_auto_send();
 
-
+       QTcpSocket * a;
        QMenu *file;
 public slots:
 
@@ -55,6 +55,8 @@ public slots:
     void check();
 
     void check2();
+
+    void adres_slot(QTcpSocket *);
 
 
 private slots:
@@ -217,7 +219,7 @@ private slots:
 
 signals:
  void s_send_to(QByteArray);
-void s_send_to_ethert(QByteArray);
+void s_send_to_ethert(QByteArray, QTcpSocket *);
 
 private:
     Ui::MainWindow *ui;

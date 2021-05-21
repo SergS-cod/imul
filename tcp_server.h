@@ -35,10 +35,10 @@ public:
     void slotReadClient ();
 signals :
     void  command_s(parameter);
-
+    void  adres( QTcpSocket * );
 
 public slots:
-    void send_to(QByteArray TO);
+    void send_to(QByteArray TO, QTcpSocket *);
 
 };
 
