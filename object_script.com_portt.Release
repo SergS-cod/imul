@@ -6,8 +6,10 @@ INPUT(
 ./release\parameter.o
 ./release\packet.o
 ./release\tcp_server.o
+./release\conect.o
 ./release\moc_display_m.o
 ./release\moc_mainwindow.o
 ./release\moc_port.o
 ./release\moc_tcp_server.o
+./release\moc_conect.o
 );

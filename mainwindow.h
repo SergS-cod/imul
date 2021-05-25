@@ -9,7 +9,7 @@
 #include <QSerialPort>
 #include  <QDebug>
 #include  <port.h>
-
+#include "conect.h"
 #include "tcp_server.h"
 
 #include <QMenu>
@@ -60,6 +60,7 @@ public slots:
     void check2();
 
     void adres_slot(QTcpSocket *);
+    void zap_recon(int ,QString);
 
 
 private slots:

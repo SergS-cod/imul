@@ -12,12 +12,18 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 ////
-    A=new port(ui->lineEdit_com_port->text());
 
-    g=new Tcp_server(4444);
-
+    Conect *con =new Conect();
 
 
+    connect ( ui->actionSetting,SIGNAL(triggered()),con,SLOT(show()));
+
+    A=new port(con->com_port);
+
+    g=new Tcp_server(con->port);
+
+
+ connect (con,SIGNAL( reconn(int ,QString)),this,SLOT(zap_recon(int ,QString)));
 
 
 
@@ -87,6 +93,11 @@ MainWindow::MainWindow(QWidget *parent)
 
  connect ( ui->actioncom_port,SIGNAL( changed()),this,SLOT(check()));
 connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
+
+
+
+//connect ( ui->menuSetting,SIGNAL( changed()),this,SLOT(check2()));
+
 // connect (this,SIGNAL( ui->,this,SLOT(check()));
 
 QByteArray a;
@@ -7126,6 +7137,28 @@ void MainWindow::adres_slot(QTcpSocket * soket)
     //B->pClientSocket=soket;
 }
 
+void MainWindow::zap_recon(int E, QString R)
+{
+
+
+
+
+    delete A;
+   delete g;
+
+    port* AA=new port( R);
+    Tcp_server* gg=new Tcp_server(E);
+    A=AA;
+    g=gg;
+
+    connect (this,SIGNAL(s_send_to(QByteArray)),AA,SLOT(send_to(QByteArray)));
+    connect (this,SIGNAL(s_send_to_ethert(QByteArray)),gg,SLOT(send_to(QByteArray)));
+
+    connect (gg,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+    connect (AA,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
+
+}
+
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
     com tmp;
     tmp.CMD = CMD;
@@ -8548,20 +8581,6 @@ void MainWindow::otpravka(QByteArray TO)
 void MainWindow::on_connect_button_clicked()
 {
 
-
-     delete A;
-    delete g;
-
-     port* AA=new port(ui->lineEdit_com_port->text());
-     Tcp_server* gg=new Tcp_server(ui->lineEdit_ethernet->text().toInt());
-     A=AA;
-     g=gg;
-
-     connect (this,SIGNAL(s_send_to(QByteArray)),AA,SLOT(send_to(QByteArray)));
-     connect (this,SIGNAL(s_send_to_ethert(QByteArray)),gg,SLOT(send_to(QByteArray)));
-
-     connect (gg,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
-     connect (AA,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
 
 
 

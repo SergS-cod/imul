@@ -3177,48 +3177,6 @@
              <bool>true</bool>
             </property>
            </widget>
-           <widget class="QLineEdit" name="lineEdit_com_port">
-            <property name="geometry">
-             <rect>
-              <x>700</x>
-              <y>160</y>
-              <width>113</width>
-              <height>21</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>COM3</string>
-            </property>
-           </widget>
-           <widget class="QLineEdit" name="lineEdit_ethernet">
-            <property name="geometry">
-             <rect>
-              <x>700</x>
-              <y>200</y>
-              <width>113</width>
-              <height>21</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>4444</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="connect_button">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="geometry">
-             <rect>
-              <x>840</x>
-              <y>200</y>
-              <width>80</width>
-              <height>21</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
           </widget>
          </widget>
         </item>
@@ -18115,6 +18073,7 @@ White:</string>
     </property>
     <addaction name="actioncom_port"/>
     <addaction name="actionEhternet"/>
+    <addaction name="actionSetting"/>
    </widget>
    <addaction name="menumodee"/>
   </widget>
@@ -18137,6 +18096,11 @@ White:</string>
   <action name="actionEhternet">
    <property name="text">
     <string>Ehternet</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Setting</string>
    </property>
   </action>
  </widget>

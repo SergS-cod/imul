@@ -18,7 +18,8 @@ SOURCES += \
     port.cpp  \
     parameter.cpp  \
 packet.cpp \
-    tcp_server.cpp
+    tcp_server.cpp \
+    conect.cpp
 
 HEADERS += \
     display_m.h \
@@ -26,11 +27,13 @@ HEADERS += \
     port.h   \
    parameter.h  \
    packet.h \
-    tcp_server.h
+    tcp_server.h \
+    conect.h
 
 FORMS += \
     display_m.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    conect.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
