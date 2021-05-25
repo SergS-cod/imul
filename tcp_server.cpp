@@ -39,7 +39,7 @@ Tcp_server::Tcp_server(QObject *parent): QObject(parent)
 Tcp_server::Tcp_server(int port)
 
 {
-    qDebug()<<"intttttttttttt";
+    qDebug()<<"Port  "<<port;
     m_ptcpServer = new QTcpServer();
     if (!m_ptcpServer->listen(QHostAddress::Any, port)) {
 
@@ -77,6 +77,9 @@ Tcp_server::Tcp_server(int port)
 Tcp_server::~Tcp_server()
 {
 
+    m_ptcpServer->close();
+    if(pClientSocket!=NULL)
+    pClientSocket->close();
 }
 
 void Tcp_server::sendToClient(QTcpSocket *pSocket, const QString &str)
@@ -103,7 +106,7 @@ void Tcp_server::slotNewConnection()
 
     connect (pClientSocket, SIGNAL(readyRead() ),this, SLOT(slotReadClient())) ;
 
-    sendToClient(pClientSocket, "Server Response: Connected!");
+  //  sendToClient(pClientSocket, "Server Response: Connected!");
 }
 
 void Tcp_server::slotReadClient()

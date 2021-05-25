@@ -3139,7 +3139,7 @@ public:
         lineEdit_ethernet->setGeometry(QRect(700, 200, 113, 21));
         connect_button = new QPushButton(tab_system_auto_send);
         connect_button->setObjectName(QStringLiteral("connect_button"));
-        connect_button->setEnabled(false);
+        connect_button->setEnabled(true);
         connect_button->setGeometry(QRect(840, 200, 80, 21));
         tab_Other_Items->addTab(tab_system_auto_send, QString());
 

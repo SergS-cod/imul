@@ -8549,11 +8549,13 @@ void MainWindow::on_connect_button_clicked()
 {
 
 
-
+     delete A;
+    delete g;
 
      port* AA=new port(ui->lineEdit_com_port->text());
      Tcp_server* gg=new Tcp_server(ui->lineEdit_ethernet->text().toInt());
-
+     A=AA;
+     g=gg;
 
      connect (this,SIGNAL(s_send_to(QByteArray)),AA,SLOT(send_to(QByteArray)));
      connect (this,SIGNAL(s_send_to_ethert(QByteArray)),gg,SLOT(send_to(QByteArray)));

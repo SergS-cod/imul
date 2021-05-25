@@ -60,7 +60,7 @@ port::port(QString port)
 
 port::~port()
 {
-
+serialPort->close();
 }
 
 void port::run(){
