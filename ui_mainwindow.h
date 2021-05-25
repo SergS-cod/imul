@@ -350,6 +350,9 @@ public:
     QLabel *label;
     QCheckBox *checkBox_how_answer_on;
     QCheckBox *checkBox_how_answer_off;
+    QLineEdit *lineEdit_com_port;
+    QLineEdit *lineEdit_ethernet;
+    QPushButton *connect_button;
     QWidget *tab;
     QGridLayout *gridLayout_2;
     QTabWidget *tabWidget_2;
@@ -3128,6 +3131,16 @@ public:
         checkBox_how_answer_off->setObjectName(QStringLiteral("checkBox_how_answer_off"));
         checkBox_how_answer_off->setGeometry(QRect(30, 50, 171, 19));
         checkBox_how_answer_off->setChecked(true);
+        lineEdit_com_port = new QLineEdit(tab_system_auto_send);
+        lineEdit_com_port->setObjectName(QStringLiteral("lineEdit_com_port"));
+        lineEdit_com_port->setGeometry(QRect(700, 160, 113, 21));
+        lineEdit_ethernet = new QLineEdit(tab_system_auto_send);
+        lineEdit_ethernet->setObjectName(QStringLiteral("lineEdit_ethernet"));
+        lineEdit_ethernet->setGeometry(QRect(700, 200, 113, 21));
+        connect_button = new QPushButton(tab_system_auto_send);
+        connect_button->setObjectName(QStringLiteral("connect_button"));
+        connect_button->setEnabled(false);
+        connect_button->setGeometry(QRect(840, 200, 80, 21));
         tab_Other_Items->addTab(tab_system_auto_send, QString());
 
         gridLayout_15->addWidget(tab_Other_Items, 0, 0, 1, 1);
@@ -10964,7 +10977,7 @@ public:
         retranslateUi(MainWindow);
 
         tabWidget->setCurrentIndex(0);
-        tab_Other_Items->setCurrentIndex(0);
+        tab_Other_Items->setCurrentIndex(8);
         tabWidget_2->setCurrentIndex(0);
         tabWidget_4->setCurrentIndex(0);
         tabWidget_3->setCurrentIndex(7);
@@ -11190,6 +11203,9 @@ public:
         label->setText(QApplication::translate("MainWindow", "\320\232\320\260\320\272 \320\276\321\202\320\262\320\265\321\207\320\260\321\202\321\214:", nullptr));
         checkBox_how_answer_on->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", nullptr));
         checkBox_how_answer_off->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\321\213\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", nullptr));
+        lineEdit_com_port->setText(QApplication::translate("MainWindow", "COM3", nullptr));
+        lineEdit_ethernet->setText(QApplication::translate("MainWindow", "4444", nullptr));
+        connect_button->setText(QApplication::translate("MainWindow", "PushButton", nullptr));
         tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_system_auto_send), QApplication::translate("MainWindow", "System Auto Send", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "Other Items", nullptr));
         label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", nullptr));

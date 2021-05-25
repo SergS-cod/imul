@@ -11,7 +11,6 @@
 #include <QTcpSocket>
 
 
-#include "mainwindow.h"
 
 
 #include <QSerialPort>
@@ -24,6 +23,7 @@ class port :  public QThread
 public:
 
      port();
+      port(QString);
      QSerialPort *serialPort;
      ~port();
 protected:

@@ -1,9 +1,47 @@
 #include "tcp_server.h"
 
-Tcp_server::Tcp_server()
+Tcp_server::Tcp_server(QObject *parent): QObject(parent)
+
 {
     m_ptcpServer = new QTcpServer();
     if (!m_ptcpServer->listen(QHostAddress::Any, 2323)) {
+
+  qDebug()<<"error";
+
+
+    m_ptcpServer->close();
+    return;
+    }
+    connect(m_ptcpServer,SIGNAL(newConnection()),this,SLOT(slotNewConnection()) );
+
+        m_ptxt = new QTextEdit;
+        m_ptxt->setReadOnly(true);
+     Tcp_server* pClientSocket_1= (Tcp_server*)sender();
+
+   //  qDebug()<<"_____________________________________________ : "<<pClientSocket_1;
+
+     //qDebug()<<"+++++++++++++++++++++++++++++++++++++++++++++ : "<<m_ptcpServer;
+
+
+        //MainWindow* instance= MainWindow::GetInstance();
+
+//
+//        connect (this,SIGNAL (adres(QTcpSocket* )),instance,SLOT(adres_slot(QTcpSocket*)));
+        //Layout setup
+        //QVBoxLayout* pvbxLayout = new QVBoxLayout;
+       // pvbxLayout->addWidget(new QLabel("<H1>Server</H1>"));
+//        pvbxLayout->addWidget(m_ptxt);
+        //        setLayout(pvbxLayout);
+
+
+
+}
+Tcp_server::Tcp_server(int port)
+
+{
+    qDebug()<<"intttttttttttt";
+    m_ptcpServer = new QTcpServer();
+    if (!m_ptcpServer->listen(QHostAddress::Any, port)) {
 
   qDebug()<<"error";
 
@@ -22,17 +60,19 @@ Tcp_server::Tcp_server()
      qDebug()<<"+++++++++++++++++++++++++++++++++++++++++++++ : "<<m_ptcpServer;
 
 
-        MainWindow* instance= MainWindow::GetInstance();
+        //MainWindow* instance= MainWindow::GetInstance();
 
-      connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
-        connect (this,SIGNAL (adres(QTcpSocket *)),instance,SLOT(adres_slot(QTcpSocket*)));
+//
+//        connect (this,SIGNAL (adres(QTcpSocket* )),instance,SLOT(adres_slot(QTcpSocket*)));
         //Layout setup
         //QVBoxLayout* pvbxLayout = new QVBoxLayout;
        // pvbxLayout->addWidget(new QLabel("<H1>Server</H1>"));
 //        pvbxLayout->addWidget(m_ptxt);
         //        setLayout(pvbxLayout);
-}
 
+
+
+}
 
 Tcp_server::~Tcp_server()
 {
@@ -51,8 +91,11 @@ void Tcp_server::sendToClient(QTcpSocket *pSocket, const QString &str)
 void Tcp_server::slotNewConnection()
 {
 
-    qDebug()<<"gggggggggggg";
+    qDebug()<<"Connected ";
    pClientSocket = m_ptcpServer->nextPendingConnection();
+
+
+
 
    emit adres(pClientSocket);
 
@@ -75,12 +118,12 @@ void Tcp_server::slotReadClient()
     packet B(ba);
     QVector<parameter> vec_par = B.getParameters();
     for(int i=0;i<vec_par.count();i++){
-        emit command_s(vec_par[i]);
+        emit command_s_ether(vec_par[i]);
     }
 
 
 
-      qDebug()<<"aaaaaaaaaaaa";
+      qDebug()<<"Reading";
 
 //    QDataStream in(pClientSocket);
 //   // in.setVersion(QDataStream::Qt 5 3);
@@ -111,21 +154,21 @@ void Tcp_server::slotReadClient()
 
 }
 
-void Tcp_server::send_to(QByteArray TO, QTcpSocket *AS)
+void Tcp_server::send_to(QByteArray TO)
 {
-    qDebug()<<"SEND";
-    // pClientSocket = m_ptcpServer->nextPendingConnection();
 
-   // qDebug()<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<AS;
-    if(AS!=NULL)
+
+
+
+   // pClientSocket = m_ptcpServer->nextPendingConnection();
+
+
+    if(pClientSocket!=NULL)
     {
-
-        AS->write(TO);
+        qDebug()<<"SEND  to socket ";
+        pClientSocket->write(TO);
 
     }
-//     QTcpSocket * pClientSocket = m_ptcpServer->nextPendingConnection();
-//     qDebug()<<"*************************"<<pClientSocket;
-//     if(pClientSocket!=NULL)
-//     pClientSocket->write(TO);
+
 }
 

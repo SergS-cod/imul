@@ -12,20 +12,21 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 ////
-    port* A=new port();
-       Tcp_server* B=new Tcp_server();
+    A=new port(ui->lineEdit_com_port->text());
+
+    g=new Tcp_server(4444);
 
 
 
 
 
 
-     connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
-     connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),B,SLOT(send_to(QByteArray, QTcpSocket *)));
 
+   connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
+   connect (this,SIGNAL(s_send_to_ethert(QByteArray)),g,SLOT(send_to(QByteArray)));
 
-
-
+   connect (g,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+   connect (A,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
 
 
 //      QAction* pCheckableAction = file->addAction("&COM port");
@@ -626,8 +627,8 @@ a.append("wwwww");
     connect(ui->horizontalSlider_Image_Setting_Display_Gamma_2_4, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_2_4,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
-    parameter temp("7E303031353020340D");
-     razbor_com(temp);
+//    parameter temp("7E303031353020340D");
+//     razbor_com(temp);
     //***
 
 
@@ -639,7 +640,7 @@ MainWindow* MainWindow::GetInstance(QWidget *parent)
 {
     if(mainInstance == NULL)
     {
-        mainInstance = new MainWindow(parent);
+       // mainInstance = new MainWindow(parent);
     }
     return mainInstance;
 }
@@ -7116,10 +7117,13 @@ void MainWindow::check2()
 
 void MainWindow::adres_slot(QTcpSocket * soket)
 {
-    qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
-    //B->pClientSocket=soket;
-    a=soket;
+    Tcp_server* obj =(Tcp_server*) sender();
 
+    //qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
+    //B=obj;
+
+ //  connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),obj,SLOT(send_to(QByteArray, QTcpSocket *)));
+    //B->pClientSocket=soket;
 }
 
 void MainWindow::setparam(int CMD, int Val, int start=-1, int end=-1, int password=-1, int dat=-1){
@@ -8505,10 +8509,10 @@ void MainWindow::on_pushButton_systeam_auto_23_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO22");
-    emit
 
 
-    s_send_to(INFO);
+
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_24_clicked()
@@ -8531,9 +8535,32 @@ void MainWindow::otpravka(QByteArray TO)
     qDebug()<<"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"<<TO<<endl;
     if(ui->actioncom_port->isChecked())
     {
+
      emit   s_send_to(TO);
     }
      if(ui->actionEhternet->isChecked())
-      { emit  s_send_to_ethert(TO,a);
+      {
+
+         emit  s_send_to_ethert(TO);
      }
+}
+
+void MainWindow::on_connect_button_clicked()
+{
+
+
+
+
+     port* AA=new port(ui->lineEdit_com_port->text());
+     Tcp_server* gg=new Tcp_server(ui->lineEdit_ethernet->text().toInt());
+
+
+     connect (this,SIGNAL(s_send_to(QByteArray)),AA,SLOT(send_to(QByteArray)));
+     connect (this,SIGNAL(s_send_to_ethert(QByteArray)),gg,SLOT(send_to(QByteArray)));
+
+     connect (gg,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+     connect (AA,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
+
+
+
 }
