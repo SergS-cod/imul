@@ -4,7 +4,9 @@
 #include <QtNetwork>
 #include <QTcpServer>
 #include <QWidget>
+
 #include <QObject>
+
 #include <QtGui>
 #include <QTcpSocket>
 #include <QTextEdit>
@@ -12,14 +14,16 @@
 #include "parameter.h"
 #include "packet.h"
 
-#include "mainwindow.h"
 
-class Tcp_server : public QWidget
+
+class Tcp_server : public QObject
 {
     Q_OBJECT
 public:
-    Tcp_server();
+    explicit Tcp_server(QObject *parent = 0);
+    Tcp_server(int);
    ~Tcp_server();
+
     QTcpServer * m_ptcpServer;
 //     * m_ptxt;
 //    quintlб m_nNextBlockSize;
@@ -27,18 +31,19 @@ public:
     QTextEdit *  m_ptxt;
 
 
-    QTcpSocket * pClientSocket;
+    QTcpSocket * pClientSocket=NULL;
 
     void sendToClient(QTcpSocket* pSocket, const QString& str);
     public slots:
      virtual void slotNewConnection();
     void slotReadClient ();
 signals :
-    void  command_s(parameter);
+    void  command_s_ether(parameter);
     void  adres( QTcpSocket * );
+    void proverka(int);
 
 public slots:
-    void send_to(QByteArray TO, QTcpSocket *);
+    void send_to(QByteArray TO);
 
 };
 

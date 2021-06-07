@@ -11,74 +11,98 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ////
-    port* A=new port();
-    Tcp_server* B=new Tcp_server();
-    connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
-    connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),B,SLOT(send_to(QByteArray, QTcpSocket *)));
-    //      QAction* pCheckableAction = file->addAction("&COM port");
-    //      QAction* pEthernet = file->addAction("&Ethernet");
-    //          pCheckableAction->setCheckable(true);
-    //          pEthernet->setCheckable(true);
-    //          pEthernet->setChecked(true);
+////
 
-    //          if(pCheckableAction->isChecked())
-    //            {  pEthernet->setChecked(false);
-    //              qDebug()<<"kkkkkkkkkkkkkkk";
-    //          }
+    Conect *con =new Conect();
 
-    //          if(pEthernet->isChecked())
-    //            {  pCheckableAction->setChecked(false);
-    //              qDebug()<<"hhhhhhhhhhhhh";
-    //          }
-    //  pCheckableAction->setChecked(true);
 
-    //QMenuBar mnuBar;
-    //      menu_bar_ = new QMenuBar(this);
-    //        menu_bar_->setNativeMenuBar(false);
+    connect ( ui->actionSetting,SIGNAL(triggered()),con,SLOT(show()));
 
-    //      QMenu*   pmnu   = new QMenu("&Menu");
-    ////      pmnu->addAction("&About Qt",
-    ////                          &app,
-    ////                          SLOT(aboutQt()),
-    ////                          Qt::CTRL + Qt::Key_Q
-    ////                         );
+    A=new port(con->com_port);
 
-    //          pmnu->addSeparator();
+    g=new Tcp_server(con->port);
 
-    //          QAction* pCheckableAction = pmnu->addAction("&CheckableItem");
-    //          pCheckableAction->setCheckable(true);
-    //          pCheckableAction->setChecked(true);
 
-    //      //    pmnu->addAction(QPixmap(img4_xpm), "&IconItem");
+ connect (con,SIGNAL( reconn(int ,QString)),this,SLOT(zap_recon(int ,QString)));
 
-    //          QMenu* pmnuSubMenu = new QMenu("&SubMenu", pmnu);
-    //          pmnu->addMenu(pmnuSubMenu);
-    //          pmnuSubMenu->addAction("&Test");
 
-    //          QAction* pDisabledAction = pmnu->addAction("&DisabledItem");
-    //          pDisabledAction->setEnabled(false);
 
-    //          pmnu->addSeparator();
 
-    //       //   pmnu->addAction("&Exit", &app, SLOT(quit()));
-    //       mnuBar.addMenu(pmnu);
-    //      mnuBar.show();
-    //menu_bar_->show();
+   connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
+   connect (this,SIGNAL(s_send_to_ethert(QByteArray)),g,SLOT(send_to(QByteArray)));
 
-    //ui->menuqwer->
-    //  ui->actionwer();
-    ui->actioncom_port->setCheckable(true);
-    ui->actionEhternet->setCheckable(true);
-    ui->actionEhternet->setChecked(true);
+   connect (g,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+   connect (A,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
 
-    connect ( ui->actioncom_port,SIGNAL( changed()),this,SLOT(check()));
-    connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
-    // connect (this,SIGNAL( ui->,this,SLOT(check()));
 
-    QByteArray a;
-    a.append("wwwww");
-    //otpravka(a);
+//      QAction* pCheckableAction = file->addAction("&COM port");
+//      QAction* pEthernet = file->addAction("&Ethernet");
+//          pCheckableAction->setCheckable(true);
+//          pEthernet->setCheckable(true);
+//          pEthernet->setChecked(true);
+
+//          if(pCheckableAction->isChecked())
+//            {  pEthernet->setChecked(false);
+//              qDebug()<<"kkkkkkkkkkkkkkk";
+//          }
+
+//          if(pEthernet->isChecked())
+//            {  pCheckableAction->setChecked(false);
+//              qDebug()<<"hhhhhhhhhhhhh";
+//          }
+        //  pCheckableAction->setChecked(true);
+
+      //QMenuBar mnuBar;
+//      menu_bar_ = new QMenuBar(this);
+//        menu_bar_->setNativeMenuBar(false);
+
+//      QMenu*   pmnu   = new QMenu("&Menu");
+////      pmnu->addAction("&About Qt",
+////                          &app,
+////                          SLOT(aboutQt()),
+////                          Qt::CTRL + Qt::Key_Q
+////                         );
+
+//          pmnu->addSeparator();
+
+//          QAction* pCheckableAction = pmnu->addAction("&CheckableItem");
+//          pCheckableAction->setCheckable(true);
+//          pCheckableAction->setChecked(true);
+
+//      //    pmnu->addAction(QPixmap(img4_xpm), "&IconItem");
+
+//          QMenu* pmnuSubMenu = new QMenu("&SubMenu", pmnu);
+//          pmnu->addMenu(pmnuSubMenu);
+//          pmnuSubMenu->addAction("&Test");
+
+//          QAction* pDisabledAction = pmnu->addAction("&DisabledItem");
+//          pDisabledAction->setEnabled(false);
+
+//          pmnu->addSeparator();
+
+//       //   pmnu->addAction("&Exit", &app, SLOT(quit()));
+//       mnuBar.addMenu(pmnu);
+//      mnuBar.show();
+//menu_bar_->show();
+
+ //ui->menuqwer->
+   //  ui->actionwer();
+         ui->actioncom_port->setCheckable(true);
+             ui->actionEhternet->setCheckable(true);
+                 ui->actionEhternet->setChecked(true);
+
+ connect ( ui->actioncom_port,SIGNAL( changed()),this,SLOT(check()));
+connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
+
+
+
+//connect ( ui->menuSetting,SIGNAL( changed()),this,SLOT(check2()));
+
+// connect (this,SIGNAL( ui->,this,SLOT(check()));
+
+QByteArray a;
+a.append("wwwww");
+//otpravka(a);
 
     ui->label_2xzczx->setText("0");
     connect(ui->horizontsl, &QSlider::valueChanged, ui->label_2xzczx,
@@ -614,8 +638,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->horizontalSlider_Image_Setting_Display_Gamma_2_4, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_2_4,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
-    parameter temp("7E303031353020340D");
-    razbor_com(temp);
+//    parameter temp("7E303031353020340D");
+//     razbor_com(temp);
     //***
 
 
@@ -627,7 +651,7 @@ MainWindow* MainWindow::GetInstance(QWidget *parent)
 {
     if(mainInstance == NULL)
     {
-        mainInstance = new MainWindow(parent);
+       // mainInstance = new MainWindow(parent);
     }
     return mainInstance;
 }
@@ -1538,13 +1562,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
-                if(ui->checkBox_how_answer_off->isChecked()==1){
-                    otpravka(P);
-                    INFO.append("INFO2");
-                    otpravka(INFO);
-                    INFO.clear();
-                    check_auto_send();
-                }
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     otpravka(P);
+                     INFO.append("INFO2");
+                     otpravka(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     otpravka(F);
                     INFO.append("INFO2");
@@ -1630,8 +1654,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
                 if(ui->checkBox_wait_on->isChecked()==0)  {
                     if(ui->checkBox_how_answer_on->isChecked()==1){
-                        qDebug()<<"POWERRRR: ";
-                        qDebug()<<P;
+                         qDebug()<<"POWERRRR: ";
+                         qDebug()<<P;
                         otpravka(P);
                         INFO.clear();
                         INFO.append("INFO0");
@@ -4961,13 +4985,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
-                if(ui->checkBox_how_answer_off->isChecked()==1){
-                    otpravka(P);
-                    INFO.append("INFO2");
-                    otpravka(INFO);
-                    INFO.clear();
-                    check_auto_send();
-                }
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     otpravka(P);
+                     INFO.append("INFO2");
+                     otpravka(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     otpravka(F);
                     INFO.append("INFO2");
@@ -5049,13 +5073,13 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             }
 
             if(ui->checkBox_wait_on->isChecked()==0)  {
-                if(ui->checkBox_how_answer_off->isChecked()==1){
-                    otpravka(P);
-                    INFO.append("INFO2");
-                    otpravka(INFO);
-                    INFO.clear();
-                    check_auto_send();
-                }
+                 if(ui->checkBox_how_answer_off->isChecked()==1){
+                     otpravka(P);
+                     INFO.append("INFO2");
+                     otpravka(INFO);
+                     INFO.clear();
+                     check_auto_send();
+                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
                     otpravka(F);
                     INFO.append("INFO2");
@@ -6563,7 +6587,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     //read
     if(temp.getInt_command()==150){
         if(temp.getInt_variable()==4){
-            Ok.append(ui->lineEdit_info_Resolution->text());
+            Ok.append(ui->lineEdit_info_Resolution->text());  
             return Ok;
         }
     }
@@ -6821,117 +6845,117 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         if(temp.getInt_variable()==8)
         {
             QString str;
-            str=ui->lineEdit_Vert_Refresh->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_Vert_Refresh->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==9)
         {
             QString str;
-            str=ui->lineEdit_main_source_4->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_main_source_4->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==10)
         {
             QString str;
-            str=ui->lineEdit_Resolution_2->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_Resolution_2->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==11)
         {
             QString str;
-            str=ui->lineEdit_signal_format->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_signal_format->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==12)
         {
             QString str;
-            str=ui->lineEdit_Pixel_Clock_2->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_Pixel_Clock_2->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==13)
         {
             QString str;
-            str=ui->lineEdit_horz_refresh->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_horz_refresh->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==14)
         {
             QString str;
-            str=ui->lineEdit_vert_refresh->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_vert_refresh->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==15)
         {
             QString str;
-            str=ui->lineEdit_light_source->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_light_source->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==16)
         {
             //QString str;
-            //str=ui->lineEdit_main_source->text();
+         //str=ui->lineEdit_main_source->text();
 
             if(ui->standby_power_mode_box->currentIndex()==0)
-            {
+         {
 
-                return Ok.append("1");
-            }
+             return Ok.append("1");
+         }
 
-            if(ui->standby_power_mode_box->currentIndex()==1)
-            {
+         if(ui->standby_power_mode_box->currentIndex()==1)
+         {
 
-                return Ok.append("2");
-            }
+             return Ok.append("2");
+         }
 
-            //return Ok.append(str.toLatin1());   //??????????????????????????????????
+               //return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==17)
         {
 
 
-            if(ui->box_DHCP->currentIndex()==0)
-                return Ok.append("0");   //??????????????????????????????????
+         if(ui->box_DHCP->currentIndex()==0)
+               return Ok.append("0");   //??????????????????????????????????
 
-            if(ui->box_DHCP->currentIndex()==1)
-                return Ok.append("1");   //??????????????????????????????????
+         if(ui->box_DHCP->currentIndex()==1)
+               return Ok.append("1");   //??????????????????????????????????
 
 
         }
         if(temp.getInt_variable()==18)
         {
             QString str;
-            str=ui->lineEdit_main_source_2->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_main_source_2->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
         if(temp.getInt_variable()==19)
         {
             QString str;
-            str=ui->lineEdit_main_source_3->text();
-            return Ok.append(str.toLatin1());   //??????????????????????????????????
+         str=ui->lineEdit_main_source_3->text();
+               return Ok.append(str.toLatin1());   //??????????????????????????????????
 
         }
 
 
         if(temp.getInt_variable()==20)
         {
-            //            QString str;
-            //         str=ui->lineEdit_main_source_3->text();
-            if(ui->Optoma_box_4->currentIndex()==0)
-                return Ok.append("1");   //??????????????????????????????????
-            if(ui->Optoma_box_4->currentIndex()==0)
-                return Ok.append("2");
-            if(ui->Optoma_box_4->currentIndex()==0)
-                return Ok.append("3");
+//            QString str;
+//         str=ui->lineEdit_main_source_3->text();
+         if(ui->Optoma_box_4->currentIndex()==0)
+               return Ok.append("1");   //??????????????????????????????????
+         if(ui->Optoma_box_4->currentIndex()==0)
+               return Ok.append("2");
+         if(ui->Optoma_box_4->currentIndex()==0)
+               return Ok.append("3");
         }
 
     }
@@ -7104,9 +7128,34 @@ void MainWindow::check2()
 
 void MainWindow::adres_slot(QTcpSocket * soket)
 {
-    qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
+    Tcp_server* obj =(Tcp_server*) sender();
+
+    //qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
+    //B=obj;
+
+ //  connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),obj,SLOT(send_to(QByteArray, QTcpSocket *)));
     //B->pClientSocket=soket;
-    a=soket;
+}
+
+void MainWindow::zap_recon(int E, QString R)
+{
+
+
+
+
+    delete A;
+   delete g;
+
+    port* AA=new port( R);
+    Tcp_server* gg=new Tcp_server(E);
+    A=AA;
+    g=gg;
+
+    connect (this,SIGNAL(s_send_to(QByteArray)),AA,SLOT(send_to(QByteArray)));
+    connect (this,SIGNAL(s_send_to_ethert(QByteArray)),gg,SLOT(send_to(QByteArray)));
+
+    connect (gg,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+    connect (AA,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
 
 }
 
@@ -8493,10 +8542,10 @@ void MainWindow::on_pushButton_systeam_auto_23_clicked()
 {
     QByteArray INFO;
     INFO.append("INFO22");
-    emit
 
 
-    s_send_to(INFO);
+
+    otpravka(INFO);
 }
 
 void MainWindow::on_pushButton_systeam_auto_24_clicked()
@@ -8519,9 +8568,20 @@ void MainWindow::otpravka(QByteArray TO)
     qDebug()<<"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"<<TO<<endl;
     if(ui->actioncom_port->isChecked())
     {
-        emit   s_send_to(TO);
+
+     emit   s_send_to(TO);
     }
-    if(ui->actionEhternet->isChecked())
-    { emit  s_send_to_ethert(TO,a);
-    }
+     if(ui->actionEhternet->isChecked())
+      {
+
+         emit  s_send_to_ethert(TO);
+     }
+}
+
+void MainWindow::on_connect_button_clicked()
+{
+
+
+
+
 }

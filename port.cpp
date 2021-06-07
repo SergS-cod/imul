@@ -16,22 +16,51 @@ port::port( )
     }
 
 
-    MainWindow* instance= MainWindow::GetInstance();
+    //MainWindow* instance= MainWindow::GetInstance();
 
     connect (serialPort,SIGNAL(readyRead()),this,SLOT(serialRecieve()));
 
-    connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
+  //  connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
  //   connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
 
     qDebug()<<"**************************************";
-    start();
-      connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
+   // start();
+    //  connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
+
+}
+
+port::port(QString port)
+{
+
+    serialPort=new QSerialPort();
+    // указали имя к какому порту будем подключаться
+    serialPort->setPortName(port);
+    // указали скорость
+    serialPort->setBaudRate(QSerialPort::Baud9600);
+
+    // пробуем подключится
+    if (!serialPort->open(QIODevice::ReadWrite)) {
+        // если подключится не получится, то покажем сообщение с ошибкой
+        qDebug()<<" Error with COM port";           return;
+    }
+
+
+    //MainWindow* instance= MainWindow::GetInstance();
+
+    connect (serialPort,SIGNAL(readyRead()),this,SLOT(serialRecieve()));
+
+  //  connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
+ //   connect (instance,SIGNAL(s_send_to(QByteArray)),this,SLOT(send_to(QByteArray)));
+
+    qDebug()<<"**************************************";
+   // start();
+    //  connect (this,SIGNAL (command_s(parameter)),instance,SLOT(razbor(parameter)));
 
 }
 
 port::~port()
 {
-
+serialPort->close();
 }
 
 void port::run(){

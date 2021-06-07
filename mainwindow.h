@@ -9,7 +9,7 @@
 #include <QSerialPort>
 #include  <QDebug>
 #include  <port.h>
-
+#include "conect.h"
 #include "tcp_server.h"
 
 #include <QMenu>
@@ -45,9 +45,12 @@ public:
 
      QByteArray razbor_com(parameter);
       void check_auto_send();
+        port* A;
+        Tcp_server* g;
 
        QTcpSocket * a;
        QMenu *file;
+        //Tcp_server* B;
 public slots:
 
 
@@ -57,6 +60,7 @@ public slots:
     void check2();
 
     void adres_slot(QTcpSocket *);
+    void zap_recon(int ,QString);
 
 
 private slots:
@@ -217,9 +221,12 @@ private slots:
 
  void otpravka(QByteArray);
 
+ void on_connect_button_clicked();
+
 signals:
  void s_send_to(QByteArray);
-void s_send_to_ethert(QByteArray, QTcpSocket *);
+
+void s_send_to_ethert(QByteArray);
 
 private:
     Ui::MainWindow *ui;

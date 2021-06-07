@@ -6,8 +6,10 @@ INPUT(
 ./debug\parameter.o
 ./debug\packet.o
 ./debug\tcp_server.o
+./debug\conect.o
 ./debug\moc_display_m.o
 ./debug\moc_mainwindow.o
 ./debug\moc_port.o
 ./debug\moc_tcp_server.o
+./debug\moc_conect.o
 );
