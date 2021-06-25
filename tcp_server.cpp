@@ -4,7 +4,7 @@ Tcp_server::Tcp_server(QObject *parent): QObject(parent)
 
 {
     m_ptcpServer = new QTcpServer();
-    if (!m_ptcpServer->listen(QHostAddress::Any, 2323)) {
+    if (!m_ptcpServer->listen(QHostAddress::Any, 4444)) {
 
   qDebug()<<"error";
 
@@ -117,8 +117,9 @@ void Tcp_server::slotReadClient()
 
      QTcpSocket* pClientSocket = (QTcpSocket*)sender();
    ba= pClientSocket->readAll();
+   QByteArray data = ba.toHex().toUpper();
     //qDebug()<<ba;
-    packet B(ba);
+    packet B(data);
     QVector<parameter> vec_par = B.getParameters();
     for(int i=0;i<vec_par.count();i++){
         emit command_s_ether(vec_par[i]);

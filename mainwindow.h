@@ -223,6 +223,8 @@ private slots:
 
  void on_connect_button_clicked();
 
+ void on_pushButton_remote_control_simulation_reset_clicked();
+
 signals:
  void s_send_to(QByteArray);
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'conect.ui'
 **
-** Created by: Qt User Interface Compiler version 5.11.1
+** Created by: Qt User Interface Compiler version 5.9.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,8 +10,11 @@
 #define UI_CONECT_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -83,12 +86,12 @@ public:
 
     void retranslateUi(QWidget *Conect)
     {
-        Conect->setWindowTitle(QApplication::translate("Conect", "Form", nullptr));
-        label_2->setText(QApplication::translate("Conect", "               TCP/IP", nullptr));
-        label->setText(QApplication::translate("Conect", "                  COM", nullptr));
-        lineEdit_com->setText(QApplication::translate("Conect", "COM3", nullptr));
-        lineEdit_portt->setText(QApplication::translate("Conect", "8888", nullptr));
-        pushButton->setText(QApplication::translate("Conect", "Connect", nullptr));
+        Conect->setWindowTitle(QApplication::translate("Conect", "Form", Q_NULLPTR));
+        label_2->setText(QApplication::translate("Conect", "               TCP/IP", Q_NULLPTR));
+        label->setText(QApplication::translate("Conect", "                  COM", Q_NULLPTR));
+        lineEdit_com->setText(QApplication::translate("Conect", "COM3", Q_NULLPTR));
+        lineEdit_portt->setText(QApplication::translate("Conect", "8888", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("Conect", "Connect", Q_NULLPTR));
     } // retranslateUi
 
 };

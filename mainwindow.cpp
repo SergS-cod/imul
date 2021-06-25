@@ -5,6 +5,23 @@
 QList <com> command;
 int index_page;
 
+bool reset_color_matching = 0;
+bool reset_color_temperature = 0;
+bool reset_rgb = 0;
+bool reset_four_corners = 0;
+bool reset_lamp = 0;
+bool reset_to_default = 0;
+bool reset_to_default_pass = 0;
+bool reset_OSD = 0;
+bool reset_control = 0;
+QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 1px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
+                "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
+                "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
+                "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
+QString unusual = "QPushButton {border: 1px solid #8f8f91;border-radius: 1px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #7feb4d, stop: 1 #4cbb17);}"
+                  "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
+                  "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
+                  "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -638,10 +655,39 @@ a.append("wwwww");
     connect(ui->horizontalSlider_Image_Setting_Display_Gamma_2_4, &QSlider::valueChanged, ui->label_var_Image_Setting_Display_Gamma_2_4,
             static_cast<void (QLabel::*)(int)>(&QLabel::setNum));
     //***test
-//    parameter temp("7E303031353020340D");
-//     razbor_com(temp);
+    //parameter temp("\x7E\x30\x30\x31\x35\x30\x20\x34\x0D");
+    // razbor_com(temp);
     //***
 
+    ui->tabWidget->removeTab(4);
+    ui->tabWidget->removeTab(3);
+    ui->tabWidget->removeTab(2);
+    ui->tabWidget->removeTab(0);
+
+    ui->tabWidget_2->removeTab(1);
+
+    ui->tabWidget_4->removeTab(17);
+    ui->tabWidget_4->removeTab(16);
+    ui->tabWidget_4->removeTab(15);
+    ui->tabWidget_4->removeTab(14);
+    ui->tabWidget_4->removeTab(13);
+    ui->tabWidget_4->removeTab(12);
+    ui->tabWidget_4->removeTab(11);
+
+
+
+    ui->groupBox_17->setVisible(false);
+    ui->tabB_23->setVisible(false);
+    ui->IMAGE_AI->setVisible(false);
+    ui->tabbb_23->setVisible(false);
+    ui->SUPERWIDE->setVisible(false);
+    ui->tab_33sdfgsd->setVisible(false);
+    ui->GAMMMA->setVisible(false);
+    ui->tab_18->setVisible(false);
+    ui->tab_nformation->setVisible(false);
+    ui->tab_2->setVisible(false);
+    ui->tab_3->setVisible(false);
+    ui->tab_17->setVisible(false);
 
 }
 
@@ -665,14 +711,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
 
     temp.print_parameter_inf();
-    QString usual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #f6f7fa, stop: 1 #dbd8d5);}"
-                    "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
-                    "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
-                    "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
-    QString unusual = "QPushButton {border: 1px solid #8f8f91;border-radius: 4px;background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #7feb4d, stop: 1 #4cbb17);}"
-                      "QPushButton:pressed {background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde, stop: 1 #f6f7fa);}"
-                      "QPushButton:flat { border: none; /* для плоской кнопки границы нет */}"
-                      "QPushButton:default {border-color: navy; /* делаем кнопку по умолчанию выпуклой */}";
+
 
     QByteArray F,P,Ok,INFO,Check,ret;
     F.append("F");
@@ -962,12 +1001,8 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 Ok.append("0");
                 return Ok;
             }
-            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==0){
-                Ok.append("7");
-                return Ok;
-            }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==1){
-                Ok.append("8");
+                Ok.append("7");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==2){
@@ -975,11 +1010,11 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==3){
-                Ok.append("9");
+                Ok.append("8");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==4){
-                Ok.append("1");
+                Ok.append("9");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==5){
@@ -987,7 +1022,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==6){
-                Ok.append("2");
+                Ok.append("1");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==7){
@@ -995,59 +1030,63 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==8){
-                Ok.append("3");
+                Ok.append("2");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==9){
-                Ok.append("11");
+                Ok.append("3");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==10){
-                Ok.append("4");
+                Ok.append("11");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==11){
-                Ok.append("5");
+                Ok.append("4");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==12){
-                Ok.append("15");
+                Ok.append("5");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==13){
-                Ok.append("16");
+                Ok.append("15");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==14){
-                Ok.append("6");
+                Ok.append("16");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==15){
-                Ok.append("10");
+                Ok.append("6");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==16){
-                Ok.append("12");
+                Ok.append("10");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==17){
-                Ok.append("13");
+                Ok.append("12");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==18){
-                Ok.append("14");
+                Ok.append("13");
                 return Ok;
             }
             if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==19){
+                Ok.append("14");
+                return Ok;
+            }
+            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==20){
                 Ok.append("17");
                 return Ok;
             }
 
-            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==20){
+            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==21){
                 Ok.append("18");
                 return Ok;
             }
-            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==21){
+            if(ui->comboBox_PIP_PBP_Sourse_Main->currentIndex()==22){
                 Ok.append("20");
                 return Ok;
 
@@ -1431,6 +1470,12 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 Ok.append("0");
                 return Ok;
             }
+        } else if (temp.getInt_variable()==2) {
+            Ok.append(ui->lineEdit_2->text());
+            return Ok;
+        }else if (temp.getInt_variable()==3) {
+            Ok.append(ui->lineEdit_3->text());
+            return Ok;
         }
     }
 
@@ -1448,14 +1493,14 @@ QByteArray MainWindow:: razbor_com(parameter temp)
     }
 
     //
-    if(temp.getInt_command()==87){
-        if(temp.getInt_variable()==1){
+    if(temp.getInt_command()==150){
+        if(temp.getInt_variable()==17){
             if(ui->DHCP_box->currentIndex()==0){
-                Ok.append("0");
+                Ok.append("1");
                 return Ok;
             }
             if(ui->DHCP_box->currentIndex()==1){
-                Ok.append("1");
+                Ok.append("0");
                 return Ok;
             }
         }
@@ -3485,7 +3530,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
 
         }
         if(temp.getInt_variable()==2){
-            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(2);
+            ui->comboBox_Image_Setting_Display_Gamma->setCurrentIndex(1);
             return P;
 
         }
@@ -4653,6 +4698,19 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         }
     }
 
+    if(temp.getInt_command()==215){
+        if(temp.getInt_variable()==1){
+          emit on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_clicked();
+            return P;
+        }
+    }
+    if(temp.getInt_command()==517){
+        if(temp.getInt_variable()==1){
+          emit on_pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset_clicked();
+            return P;
+        }
+    }
+
     //Remote Control Simulation
     //    if(temp.getInt_command()==140){
     //        if(temp.getInt_variable()==1){}
@@ -5214,6 +5272,17 @@ QByteArray MainWindow:: razbor_com(parameter temp)
         }
     }
 
+    if(temp.getInt_command()==555){
+        if(temp.getInt_variable()==2){
+            Ok.append(ui->lineEdit->text());
+            return Ok;
+        }
+        if(temp.getInt_variable()==1){
+            Ok.append(ui->lineEdit_9->text());
+            return Ok;
+        }
+    }
+
     //Security
     if(temp.getInt_command()==78){
         if(temp.getInt_variable() == 0 && temp.getInt_password() >=0 && temp.getInt_password() <= 9999){
@@ -5305,7 +5374,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             ui->combobox_Setup_Power_On_Link->setCurrentIndex(1);
             return P;
         }
-        if(temp.getInt_variable()==4){
+        if(temp.getInt_variable()==3){
             ui->combobox_Setup_Power_On_Link->setCurrentIndex(2);
             return P;
         }
@@ -6611,6 +6680,10 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 Ok.append("1");
                 return Ok;
             }
+        }
+        if(temp.getInt_variable()==3){
+            Ok.append(ui->lineEdit_8->text());
+            return Ok;
         }
     }
 
@@ -8152,6 +8225,15 @@ void MainWindow::on_pushButton_Four_Corners_Reset_clicked(){
     ui->horizontalSlider_Four_Corners_buttom_right_H->setValue(60);
     ui->label_var_Four_Corners_buttom_right_V->setText("40");
     ui->horizontalSlider_Four_Corners_buttom_right_V->setValue(40);
+    if (1 - reset_four_corners){
+        reset_four_corners = 1;
+        ui->pushButton_Four_Corners_Reset->setStyleSheet(unusual);
+    }
+    else{
+        reset_four_corners = 0;
+        ui->pushButton_Four_Corners_Reset->setStyleSheet(usual);
+    }
+
 }
 void MainWindow::on_pushButton_Geometric_Correction_Reset_clicked()
 {
@@ -8187,6 +8269,15 @@ void MainWindow::on_pushButton_Image_Setting_Contrast_plus_clicked(){
 
 void MainWindow::on_pushButton_Image_Setting_Color_Setting_Color_Temperature_reset_clicked(){
     ui->comboBox_Image_Setting_Color_Setting_Color_Temperature->setCurrentIndex(1);
+    if (1 - reset_color_temperature){
+        reset_color_temperature = 1;
+        ui->pushButton_Image_Setting_Color_Setting_Color_Temperature_reset->setStyleSheet(unusual);
+    }
+    else{
+        reset_color_temperature = 0;
+        ui->pushButton_Image_Setting_Color_Setting_Color_Temperature_reset->setStyleSheet(usual);
+    }
+
 }
 
 void MainWindow::on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_clicked(){
@@ -8238,6 +8329,15 @@ void MainWindow::on_pushButton_Image_Setting_Color_Settin_Color_Matching_reset_c
     ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Green_W->setValue(0);
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText("0");
     ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_Blue_W->setValue(0);
+
+    if (1 - reset_color_matching){
+        reset_color_matching = 1;
+        ui->pushButton_Image_Setting_Color_Settin_Color_Matching_reset->setStyleSheet(unusual);
+    }
+    else{
+        reset_color_matching = 0;
+        ui->pushButton_Image_Setting_Color_Settin_Color_Matching_reset->setStyleSheet(usual);
+    }
 }
 
 void MainWindow::on_pushButton_Image_Setting_Color_Setting_CMS_reset_clicked(){
@@ -8305,6 +8405,15 @@ void MainWindow::on_pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Ga
     ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias->setValue(0);
     ui->label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias->setText("0");
     ui->horizontalSlider_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias->setValue(0);
+    if (1 - reset_rgb){
+        reset_rgb = 1;
+        ui->pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset->setStyleSheet(unusual);
+    }
+    else{
+        reset_rgb = 0;
+        ui->pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset->setStyleSheet(usual);
+    }
+
 }
 
 void MainWindow::on_pushButton_Image_Setting_Darbee_Setting_reset_clicked(){
@@ -8312,7 +8421,14 @@ void MainWindow::on_pushButton_Image_Setting_Darbee_Setting_reset_clicked(){
 }
 
 void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp_clicked(){
-
+    if (1 - reset_lamp){
+        reset_lamp = 1;
+        ui->pushButton_Setup_Lamp_Setting_Lamp_reset_lamp->setStyleSheet(unusual);
+    }
+    else{
+        reset_lamp = 0;
+        ui->pushButton_Setup_Lamp_Setting_Lamp_reset_lamp->setStyleSheet(usual);
+    }
 }
 
 void MainWindow::on_pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1_clicked(){
@@ -8364,15 +8480,38 @@ void MainWindow::on_pushButton_Setup_Remote_Setting_Remote_code_plus_clicked(){
 }
 
 void MainWindow::on_pushButton_reset_OSD_clicked(){
-
+    if (1 - reset_OSD){
+        reset_OSD = 1;
+        ui->pushButton_reset_OSD->setStyleSheet(unusual);
+    }
+    else{
+        reset_OSD = 0;
+        ui->pushButton_reset_OSD->setStyleSheet(usual);
+    }
 }
 
 void MainWindow::on_pushButton_reset_to_Default_clicked(){
 
+    if (1 - reset_to_default){
+        reset_to_default = 1;
+        ui->pushButton_reset_to_Default->setStyleSheet(unusual);
+    }
+    else{
+        reset_to_default = 0;
+        ui->pushButton_reset_to_Default->setStyleSheet(usual);
+    }
 }
 
 void MainWindow::on_pushButton_reset_to_Default_password_clicked(){
 
+    if (1 - reset_to_default_pass){
+        reset_to_default_pass = 1;
+        ui->pushButton_reset_to_Default_password->setStyleSheet(unusual);
+    }
+    else{
+        reset_to_default_pass = 0;
+        ui->pushButton_reset_to_Default_password->setStyleSheet(usual);
+    }
 }
 
 void MainWindow::on_pushButton_Option_reset_input_name_clicked(){
@@ -8583,5 +8722,161 @@ void MainWindow::on_connect_button_clicked()
 
 
 
+
+}
+
+void MainWindow::on_pushButton_remote_control_simulation_reset_clicked(){
+
+            ui->Power->setStyleSheet(usual);
+
+            ui->PowerOff->setStyleSheet(usual);
+
+            ui->pushButton_mouse_up->setStyleSheet(usual);
+
+            ui->pushButton_mouse_left->setStyleSheet(usual);
+
+            ui->pushButton_mouse_enter->setStyleSheet(usual);
+
+            ui->pushButton_right->setStyleSheet(usual);
+
+            ui->pushButton_down->setStyleSheet(usual);
+
+            ui->pushButton_left_click->setStyleSheet(usual);
+
+            ui->pushButton_right_click->setStyleSheet(usual);
+
+            ui->pushButton_up->setStyleSheet(usual);
+
+            ui->pushButton_left->setStyleSheet(usual);
+
+            ui->pushButton_enter->setStyleSheet(usual);
+
+            ui->pushButton_right_2->setStyleSheet(usual);
+
+            ui->pushButton_down_2->setStyleSheet(usual);
+
+            ui->pushButton_plus->setStyleSheet(usual);
+
+            ui->pushButton_minus->setStyleSheet(usual);
+
+            ui->pushButton_minus_Volume->setStyleSheet(usual);
+
+            ui->pushButton_plus_Volume->setStyleSheet(usual);
+
+            ui->pushButton_Brightness->setStyleSheet(usual);
+
+            ui->pushButton_menu->setStyleSheet(usual);
+
+            ui->pushButton_zoom->setStyleSheet(usual);
+
+            ui->pushButton_DVI_D->setStyleSheet(usual);
+
+            ui->pushButton_VGA_1->setStyleSheet(usual);
+
+            ui->pushButton_AV_mute->setStyleSheet(usual);
+
+            ui->pushButton_S_Video->setStyleSheet(usual);
+
+            ui->pushButton_VGA_2->setStyleSheet(usual);
+
+            ui->pushButton_Video->setStyleSheet(usual);
+
+            ui->pushButton_Contrast->setStyleSheet(usual);
+
+            ui->pushButton_Freeze->setStyleSheet(usual);
+
+            ui->pushButton_Lens_shift->setStyleSheet(usual);
+
+            ui->pushButton_Zoom_plus->setStyleSheet(usual);
+
+            ui->pushButton_Zoom_minus->setStyleSheet(usual);
+
+            ui->pushButton_plus_focus->setStyleSheet(usual);
+
+            ui->pushButton_minus_focus->setStyleSheet(usual);
+
+            ui->pushButton_mode->setStyleSheet(usual);
+
+            ui->pushButton__Aspect_Ration->setStyleSheet(usual);
+
+            ui->pushButton_12V_trigger_On->setStyleSheet(usual);
+
+            ui->pushButton_12V_trigger_Off->setStyleSheet(usual);
+
+            ui->pushButton_info->setStyleSheet(usual);
+
+            ui->pushButton_Re_sync->setStyleSheet(usual);
+
+            ui->pushButton_HDIM_1->setStyleSheet(usual);
+
+            ui->pushButton_HDIM_2->setStyleSheet(usual);
+
+            ui->pushButton_BNC->setStyleSheet(usual);
+
+            ui->pushButton_Component->setStyleSheet(usual);
+
+            ui->pushButton_Source->setStyleSheet(usual);
+
+            ui->pushButton_one->setStyleSheet(usual);
+
+            ui->pushButton_two->setStyleSheet(usual);
+
+            ui->pushButton_three->setStyleSheet(usual);
+
+            ui->pushButton_foure->setStyleSheet(usual);
+
+            ui->pushButton_five->setStyleSheet(usual);
+
+            ui->pushButton_six->setStyleSheet(usual);
+
+            ui->pushButton_seven->setStyleSheet(usual);
+
+            ui->pushButton_eight->setStyleSheet(usual);
+
+            ui->pushButton_nine->setStyleSheet(usual);
+
+            ui->pushButton_zero->setStyleSheet(usual);
+
+            ui->pushButton_Gamma->setStyleSheet(usual);
+
+            ui->pushButton_PIP->setStyleSheet(usual);
+
+            ui->pushButton_left_H->setStyleSheet(usual);
+
+            ui->pushButton_right_H->setStyleSheet(usual);
+
+            ui->pushButton_left_V->setStyleSheet(usual);
+
+            ui->pushButton_right_V->setStyleSheet(usual);
+
+            ui->pushButton_H_Keystone_plus->setStyleSheet(usual);
+
+            ui->pushButton_H_Keystone_minus->setStyleSheet(usual);
+
+            ui->pushButton_hot_key->setStyleSheet(usual);
+
+            ui->pushButton_hot_key_2->setStyleSheet(usual);
+
+            ui->pushButton_hot_key_3->setStyleSheet(usual);
+
+            ui->pushButton_Pattern->setStyleSheet(usual);
+
+            ui->pushButton_exit->setStyleSheet(usual);
+
+            ui->pushButton_HDIM_3->setStyleSheet(usual);
+
+            ui->pushButton_Display_Port->setStyleSheet(usual);
+
+            ui->pushButton_Mute->setStyleSheet(usual);
+
+            ui->pushButton_3D->setStyleSheet(usual);
+
+            ui->pushButton_DB->setStyleSheet(usual);
+
+            ui->pushButton_Sleep_timer->setStyleSheet(usual);
+
+            ui->pushButton_Home->setStyleSheet(usual);
+
+            ui->pushButton_Return->setStyleSheet(usual);
 
 }
