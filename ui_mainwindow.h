@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.1
+** Created by: Qt User Interface Compiler version 5.3.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10345,1689 +10345,1689 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        actionCOM_port->setText(QApplication::translate("MainWindow", "COM port", Q_NULLPTR));
-        actionEthernet->setText(QApplication::translate("MainWindow", "Ethernet", Q_NULLPTR));
-        actioncom_port->setText(QApplication::translate("MainWindow", "COM port", Q_NULLPTR));
-        actionEhternet->setText(QApplication::translate("MainWindow", "Ehternet", Q_NULLPTR));
-        actionSetting->setText(QApplication::translate("MainWindow", "Setting", Q_NULLPTR));
-        checkBox_wait_on->setText(QApplication::translate("MainWindow", "\320\226\320\264\320\260\321\202\321\214 \320\272\320\276\320\275\321\206\320\260 \320\262\320\272\320\273\321\216\321\207\320\265\320\275\320\270\321\217", Q_NULLPTR));
-        checkBox_wait_off->setText(QApplication::translate("MainWindow", "\320\226\320\264\320\260\321\202\321\214 \320\272\320\276\320\275\321\206\320\260 \320\262\321\213\320\272\320\273\321\216\321\207\320\275\320\265\320\275\320\270\321\217", Q_NULLPTR));
-        pushButton_systeam_auto->setText(QApplication::translate("MainWindow", "Standby Mode", Q_NULLPTR));
-        pushButton_systeam_auto_2->setText(QApplication::translate("MainWindow", "Warming up", Q_NULLPTR));
-        pushButton_systeam_auto_3->setText(QApplication::translate("MainWindow", "Cooling Down", Q_NULLPTR));
-        pushButton_systeam_auto_4->setText(QApplication::translate("MainWindow", "Out of Range", Q_NULLPTR));
-        pushButton_systeam_auto_5->setText(QApplication::translate("MainWindow", "Lamp Fail ( LED Fail)", Q_NULLPTR));
-        pushButton_systeam_auto_6->setText(QApplication::translate("MainWindow", "Thermal Switch Error", Q_NULLPTR));
-        pushButton_systeam_auto_7->setText(QApplication::translate("MainWindow", "Fan Lock", Q_NULLPTR));
-        pushButton_systeam_auto_8->setText(QApplication::translate("MainWindow", "Over Temperature", Q_NULLPTR));
-        pushButton_systeam_auto_9->setText(QApplication::translate("MainWindow", "Lamp Hours Running Out", Q_NULLPTR));
-        pushButton_systeam_auto_10->setText(QApplication::translate("MainWindow", "Cover Open", Q_NULLPTR));
-        pushButton_systeam_auto_11->setText(QApplication::translate("MainWindow", "Lamp Ignite Fail", Q_NULLPTR));
-        pushButton_systeam_auto_16->setText(QApplication::translate("MainWindow", "FAN 2 Lock", Q_NULLPTR));
-        pushButton_systeam_auto_15->setText(QApplication::translate("MainWindow", "FAN 1 Lock", Q_NULLPTR));
-        pushButton_systeam_auto_14->setText(QApplication::translate("MainWindow", "Over Temperature", Q_NULLPTR));
-        pushButton_systeam_auto_13->setText(QApplication::translate("MainWindow", "Color Wheel Unexpected Stop", Q_NULLPTR));
-        pushButton_systeam_auto_12->setText(QApplication::translate("MainWindow", "Format Board Power On Fail", Q_NULLPTR));
-        pushButton_systeam_auto_17->setText(QApplication::translate("MainWindow", "FAN 3 Lock", Q_NULLPTR));
-        pushButton_systeam_auto_18->setText(QApplication::translate("MainWindow", "FAN 4 Lock", Q_NULLPTR));
-        pushButton_systeam_auto_20->setText(QApplication::translate("MainWindow", "LAN fail then restart", Q_NULLPTR));
-        pushButton_systeam_auto_21->setText(QApplication::translate("MainWindow", "LD lower than 60%", Q_NULLPTR));
-        pushButton_systeam_auto_25->setText(QApplication::translate("MainWindow", "System Ready", Q_NULLPTR));
-        pushButton_systeam_auto_24->setText(QApplication::translate("MainWindow", "High Ambient Temperature", Q_NULLPTR));
-        pushButton_systeam_auto_23->setText(QApplication::translate("MainWindow", "LD NTC (2) Over Temperature", Q_NULLPTR));
-        pushButton_systeam_auto_22->setText(QApplication::translate("MainWindow", "LD NTC (1) Over Temperature", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_2->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_3->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_4->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_5->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_6->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_7->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_10->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_9->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_11->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_13->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_12->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_8->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_17->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_15->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_16->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_14->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_18->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_24->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_25->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_22->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_23->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_20->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_21->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        pushButton_systeam_auto_19->setText(QApplication::translate("MainWindow", "FAN 5 Lock", Q_NULLPTR));
-        checkBox_pushButton_systeam_auto_19->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR));
-        label->setText(QApplication::translate("MainWindow", "\320\232\320\260\320\272 \320\276\321\202\320\262\320\265\321\207\320\260\321\202\321\214:", Q_NULLPTR));
-        checkBox_how_answer_on->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", Q_NULLPTR));
-        checkBox_how_answer_off->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\321\213\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_system_auto_send), QApplication::translate("MainWindow", "System Auto Send", Q_NULLPTR));
-        label_11->setText(QApplication::translate("MainWindow", "Power ", Q_NULLPTR));
-        ON->setText(QApplication::translate("MainWindow", "On ", Q_NULLPTR));
-        OFF->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        label_Power_on_password->setText(QApplication::translate("MainWindow", "Power On (Password)", Q_NULLPTR));
-        ON_Power_on_password->setText(QApplication::translate("MainWindow", "On ", Q_NULLPTR));
-        ON_mute->setText(QApplication::translate("MainWindow", "On", Q_NULLPTR));
-        label_27->setText(QApplication::translate("MainWindow", "AV Mute", Q_NULLPTR));
-        OFF_mute->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        label_29->setText(QApplication::translate("MainWindow", " Mute", Q_NULLPTR));
-        ON_mute2->setText(QApplication::translate("MainWindow", "On", Q_NULLPTR));
-        OFF_mute2->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        SERIAL_PORT_PATH->setText(QApplication::translate("MainWindow", "Serial Port Path", Q_NULLPTR));
-        ON_6->setText(QApplication::translate("MainWindow", "HDBaseT", Q_NULLPTR));
-        OFF_6->setText(QApplication::translate("MainWindow", "RS232", Q_NULLPTR));
-        label_30->setText(QApplication::translate("MainWindow", "Freeze", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        actionCOM_port->setText(QApplication::translate("MainWindow", "COM port", 0));
+        actionEthernet->setText(QApplication::translate("MainWindow", "Ethernet", 0));
+        actioncom_port->setText(QApplication::translate("MainWindow", "COM port", 0));
+        actionEhternet->setText(QApplication::translate("MainWindow", "Ehternet", 0));
+        actionSetting->setText(QApplication::translate("MainWindow", "Setting", 0));
+        checkBox_wait_on->setText(QApplication::translate("MainWindow", "\320\226\320\264\320\260\321\202\321\214 \320\272\320\276\320\275\321\206\320\260 \320\262\320\272\320\273\321\216\321\207\320\265\320\275\320\270\321\217", 0));
+        checkBox_wait_off->setText(QApplication::translate("MainWindow", "\320\226\320\264\320\260\321\202\321\214 \320\272\320\276\320\275\321\206\320\260 \320\262\321\213\320\272\320\273\321\216\321\207\320\275\320\265\320\275\320\270\321\217", 0));
+        pushButton_systeam_auto->setText(QApplication::translate("MainWindow", "Standby Mode", 0));
+        pushButton_systeam_auto_2->setText(QApplication::translate("MainWindow", "Warming up", 0));
+        pushButton_systeam_auto_3->setText(QApplication::translate("MainWindow", "Cooling Down", 0));
+        pushButton_systeam_auto_4->setText(QApplication::translate("MainWindow", "Out of Range", 0));
+        pushButton_systeam_auto_5->setText(QApplication::translate("MainWindow", "Lamp Fail ( LED Fail)", 0));
+        pushButton_systeam_auto_6->setText(QApplication::translate("MainWindow", "Thermal Switch Error", 0));
+        pushButton_systeam_auto_7->setText(QApplication::translate("MainWindow", "Fan Lock", 0));
+        pushButton_systeam_auto_8->setText(QApplication::translate("MainWindow", "Over Temperature", 0));
+        pushButton_systeam_auto_9->setText(QApplication::translate("MainWindow", "Lamp Hours Running Out", 0));
+        pushButton_systeam_auto_10->setText(QApplication::translate("MainWindow", "Cover Open", 0));
+        pushButton_systeam_auto_11->setText(QApplication::translate("MainWindow", "Lamp Ignite Fail", 0));
+        pushButton_systeam_auto_16->setText(QApplication::translate("MainWindow", "FAN 2 Lock", 0));
+        pushButton_systeam_auto_15->setText(QApplication::translate("MainWindow", "FAN 1 Lock", 0));
+        pushButton_systeam_auto_14->setText(QApplication::translate("MainWindow", "Over Temperature", 0));
+        pushButton_systeam_auto_13->setText(QApplication::translate("MainWindow", "Color Wheel Unexpected Stop", 0));
+        pushButton_systeam_auto_12->setText(QApplication::translate("MainWindow", "Format Board Power On Fail", 0));
+        pushButton_systeam_auto_17->setText(QApplication::translate("MainWindow", "FAN 3 Lock", 0));
+        pushButton_systeam_auto_18->setText(QApplication::translate("MainWindow", "FAN 4 Lock", 0));
+        pushButton_systeam_auto_20->setText(QApplication::translate("MainWindow", "LAN fail then restart", 0));
+        pushButton_systeam_auto_21->setText(QApplication::translate("MainWindow", "LD lower than 60%", 0));
+        pushButton_systeam_auto_25->setText(QApplication::translate("MainWindow", "System Ready", 0));
+        pushButton_systeam_auto_24->setText(QApplication::translate("MainWindow", "High Ambient Temperature", 0));
+        pushButton_systeam_auto_23->setText(QApplication::translate("MainWindow", "LD NTC (2) Over Temperature", 0));
+        pushButton_systeam_auto_22->setText(QApplication::translate("MainWindow", "LD NTC (1) Over Temperature", 0));
+        checkBox_pushButton_systeam_auto->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_2->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_3->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_4->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_5->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_6->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_7->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_10->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_9->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_11->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_13->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_12->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_8->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_17->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_15->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_16->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_14->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_18->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_24->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_25->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_22->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_23->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_20->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        checkBox_pushButton_systeam_auto_21->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        pushButton_systeam_auto_19->setText(QApplication::translate("MainWindow", "FAN 5 Lock", 0));
+        checkBox_pushButton_systeam_auto_19->setText(QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0));
+        label->setText(QApplication::translate("MainWindow", "\320\232\320\260\320\272 \320\276\321\202\320\262\320\265\321\207\320\260\321\202\321\214:", 0));
+        checkBox_how_answer_on->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", 0));
+        checkBox_how_answer_off->setText(QApplication::translate("MainWindow", "\320\235\320\260 \320\262\321\213\320\272\320\273\321\216\321\207\320\265\320\275\320\270\320\265", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_system_auto_send), QApplication::translate("MainWindow", "System Auto Send", 0));
+        label_11->setText(QApplication::translate("MainWindow", "Power ", 0));
+        ON->setText(QApplication::translate("MainWindow", "On ", 0));
+        OFF->setText(QApplication::translate("MainWindow", "Off", 0));
+        label_Power_on_password->setText(QApplication::translate("MainWindow", "Power On (Password)", 0));
+        ON_Power_on_password->setText(QApplication::translate("MainWindow", "On ", 0));
+        ON_mute->setText(QApplication::translate("MainWindow", "On", 0));
+        label_27->setText(QApplication::translate("MainWindow", "AV Mute", 0));
+        OFF_mute->setText(QApplication::translate("MainWindow", "Off", 0));
+        label_29->setText(QApplication::translate("MainWindow", " Mute", 0));
+        ON_mute2->setText(QApplication::translate("MainWindow", "On", 0));
+        OFF_mute2->setText(QApplication::translate("MainWindow", "Off", 0));
+        SERIAL_PORT_PATH->setText(QApplication::translate("MainWindow", "Serial Port Path", 0));
+        ON_6->setText(QApplication::translate("MainWindow", "HDBaseT", 0));
+        OFF_6->setText(QApplication::translate("MainWindow", "RS232", 0));
+        label_30->setText(QApplication::translate("MainWindow", "Freeze", 0));
         Freeze_2->clear();
         Freeze_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Unfreeze", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Freeze", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Unfreeze", 0)
+         << QApplication::translate("MainWindow", "Freeze", 0)
         );
-        label_31->setText(QApplication::translate("MainWindow", "Output 3D state", Q_NULLPTR));
-        DDD->setText(QApplication::translate("MainWindow", "3D", Q_NULLPTR));
-        DD->setText(QApplication::translate("MainWindow", "2D", Q_NULLPTR));
-        PC_MODE->setText(QApplication::translate("MainWindow", "PC MODE", Q_NULLPTR));
-        ON_4->setText(QApplication::translate("MainWindow", "On ", Q_NULLPTR));
-        OFF_4->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        SERIAL_PORT_ECHO->setText(QApplication::translate("MainWindow", "Serial Port Echo", Q_NULLPTR));
-        ON_5->setText(QApplication::translate("MainWindow", "On ", Q_NULLPTR));
-        OFF_5->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        SOURCE_LOCK->setText(QApplication::translate("MainWindow", "Source Lock", Q_NULLPTR));
-        ON_7->setText(QApplication::translate("MainWindow", "On ", Q_NULLPTR));
-        OFF_7->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tabB_23), QApplication::translate("MainWindow", "Power", Q_NULLPTR));
-        IMAG_AI->setText(QApplication::translate("MainWindow", "Image AI", Q_NULLPTR));
-        ON8->setText(QApplication::translate("MainWindow", "ON", Q_NULLPTR));
-        OFF8->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(IMAGE_AI), QApplication::translate("MainWindow", "Image AI", Q_NULLPTR));
-        label_Noise_reduction->setText(QApplication::translate("MainWindow", "Noise Reduction", Q_NULLPTR));
+        label_31->setText(QApplication::translate("MainWindow", "Output 3D state", 0));
+        DDD->setText(QApplication::translate("MainWindow", "3D", 0));
+        DD->setText(QApplication::translate("MainWindow", "2D", 0));
+        PC_MODE->setText(QApplication::translate("MainWindow", "PC MODE", 0));
+        ON_4->setText(QApplication::translate("MainWindow", "On ", 0));
+        OFF_4->setText(QApplication::translate("MainWindow", "Off", 0));
+        SERIAL_PORT_ECHO->setText(QApplication::translate("MainWindow", "Serial Port Echo", 0));
+        ON_5->setText(QApplication::translate("MainWindow", "On ", 0));
+        OFF_5->setText(QApplication::translate("MainWindow", "Off", 0));
+        SOURCE_LOCK->setText(QApplication::translate("MainWindow", "Source Lock", 0));
+        ON_7->setText(QApplication::translate("MainWindow", "On ", 0));
+        OFF_7->setText(QApplication::translate("MainWindow", "Off", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tabB_23), QApplication::translate("MainWindow", "Power", 0));
+        IMAG_AI->setText(QApplication::translate("MainWindow", "Image AI", 0));
+        ON8->setText(QApplication::translate("MainWindow", "ON", 0));
+        OFF8->setText(QApplication::translate("MainWindow", "Off", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(IMAGE_AI), QApplication::translate("MainWindow", "Image AI", 0));
+        label_Noise_reduction->setText(QApplication::translate("MainWindow", "Noise Reduction", 0));
         label_var_Noise_reduction->setText(QString());
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tabbb_23), QApplication::translate("MainWindow", "Noise Reduction", Q_NULLPTR));
-        superwide_list->setText(QApplication::translate("MainWindow", "Super Wide", Q_NULLPTR));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tabbb_23), QApplication::translate("MainWindow", "Noise Reduction", 0));
+        superwide_list->setText(QApplication::translate("MainWindow", "Super Wide", 0));
         comboBox_superwide->clear();
         comboBox_superwide->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On (16:9)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On (2:35:1)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On (16:9)", 0)
+         << QApplication::translate("MainWindow", "On (2:35:1)", 0)
+         << QApplication::translate("MainWindow", "Auto", 0)
         );
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(SUPERWIDE), QApplication::translate("MainWindow", "Super Wide", Q_NULLPTR));
-        label_color_wgelee->setText(QApplication::translate("MainWindow", "Color Wheel Index", Q_NULLPTR));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(SUPERWIDE), QApplication::translate("MainWindow", "Super Wide", 0));
+        label_color_wgelee->setText(QApplication::translate("MainWindow", "Color Wheel Index", 0));
         comboBox_color->clear();
         comboBox_color->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "2x", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3x", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "2x", 0)
+         << QApplication::translate("MainWindow", "3x", 0)
         );
-        label_2xxxxxx->setText(QApplication::translate("MainWindow", "2x", Q_NULLPTR));
-        label_3xxxxx->setText(QApplication::translate("MainWindow", "3x", Q_NULLPTR));
+        label_2xxxxxx->setText(QApplication::translate("MainWindow", "2x", 0));
+        label_3xxxxx->setText(QApplication::translate("MainWindow", "3x", 0));
         lbbbbbb->setText(QString());
         lbbbbbbbb->setText(QString());
-        labeldfgdfg->setText(QApplication::translate("MainWindow", "Point Blank /Interactive", Q_NULLPTR));
+        labeldfgdfg->setText(QApplication::translate("MainWindow", "Point Blank /Interactive", 0));
         comboBox5465465465->clear();
         comboBox5465465465->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        contasterfedf->setText(QApplication::translate("MainWindow", "Constant Luminance Settings", Q_NULLPTR));
+        contasterfedf->setText(QApplication::translate("MainWindow", "Constant Luminance Settings", 0));
         label_constant->setText(QString());
         label_2xzczx->setText(QString());
-        labelllll_3->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", Q_NULLPTR));
+        labelllll_3->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", 0));
         comboBox5465465465_3->clear();
         comboBox5465465465_3->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "On Failure Only", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "At Power-Up", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "After X Hours", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "On Failure Only", 0)
+         << QApplication::translate("MainWindow", "At Power-Up", 0)
+         << QApplication::translate("MainWindow", "After X Hours", 0)
         );
-        labelllll_2->setText(QApplication::translate("MainWindow", "Overscan", Q_NULLPTR));
+        labelllll_2->setText(QApplication::translate("MainWindow", "Overscan", 0));
         comboBox5465465465_2->clear();
         comboBox5465465465_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Zoom", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Crop", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "Zoom", 0)
+         << QApplication::translate("MainWindow", "Crop", 0)
         );
-        contasterfedf_2->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", Q_NULLPTR));
+        contasterfedf_2->setText(QApplication::translate("MainWindow", "Auto Switch (Lamp)", 0));
         label_2Auto->setText(QString());
         label_2xzczx_2->setText(QString());
-        labelllll_4->setText(QApplication::translate("MainWindow", "BrilliantColor\342\204\242", Q_NULLPTR));
+        labelllll_4->setText(QApplication::translate("MainWindow", "BrilliantColor\342\204\242", 0));
         comboBox5465465465_4->clear();
         comboBox5465465465_4->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Normal Look", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bright Look", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Normal Look", 0)
+         << QApplication::translate("MainWindow", "Bright Look", 0)
         );
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_33sdfgsd), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", Q_NULLPTR));
-        FILM->setText(QApplication::translate("MainWindow", "Film", Q_NULLPTR));
-        Cureve_Type->setText(QApplication::translate("MainWindow", "Cureve Type", Q_NULLPTR));
-        Reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        Cureve_Type_1->setText(QApplication::translate("MainWindow", "Cureve Type", Q_NULLPTR));
-        Reset_1->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        FILM_7->setText(QApplication::translate("MainWindow", "Video", Q_NULLPTR));
-        Cureve_Type_2->setText(QApplication::translate("MainWindow", "Cureve Type", Q_NULLPTR));
-        Reset_2->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        FILM_5->setText(QApplication::translate("MainWindow", "Graphics", Q_NULLPTR));
-        FILM_6->setText(QApplication::translate("MainWindow", "PC (Standard)", Q_NULLPTR));
-        Cureve_Type_3->setText(QApplication::translate("MainWindow", "Cureve Type", Q_NULLPTR));
-        Reset_3->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(GAMMMA), QApplication::translate("MainWindow", "Gamma", Q_NULLPTR));
-        MODELE_NAME_Label->setText(QApplication::translate("MainWindow", "Model Name", Q_NULLPTR));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_33sdfgsd), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", 0));
+        FILM->setText(QApplication::translate("MainWindow", "Film", 0));
+        Cureve_Type->setText(QApplication::translate("MainWindow", "Cureve Type", 0));
+        Reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        Cureve_Type_1->setText(QApplication::translate("MainWindow", "Cureve Type", 0));
+        Reset_1->setText(QApplication::translate("MainWindow", "Reset", 0));
+        FILM_7->setText(QApplication::translate("MainWindow", "Video", 0));
+        Cureve_Type_2->setText(QApplication::translate("MainWindow", "Cureve Type", 0));
+        Reset_2->setText(QApplication::translate("MainWindow", "Reset", 0));
+        FILM_5->setText(QApplication::translate("MainWindow", "Graphics", 0));
+        FILM_6->setText(QApplication::translate("MainWindow", "PC (Standard)", 0));
+        Cureve_Type_3->setText(QApplication::translate("MainWindow", "Cureve Type", 0));
+        Reset_3->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(GAMMMA), QApplication::translate("MainWindow", "Gamma", 0));
+        MODELE_NAME_Label->setText(QApplication::translate("MainWindow", "Model Name", 0));
         Optoma_box->clear();
         Optoma_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Optoma SVGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Otoma XGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Otoma WXGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Otoma 180OP", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Optoma WUXGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Optoma UHD", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Optoma SVGA", 0)
+         << QApplication::translate("MainWindow", "Otoma XGA", 0)
+         << QApplication::translate("MainWindow", "Otoma WXGA", 0)
+         << QApplication::translate("MainWindow", "Otoma 180OP", 0)
+         << QApplication::translate("MainWindow", "Optoma WUXGA", 0)
+         << QApplication::translate("MainWindow", "Optoma UHD", 0)
         );
-        label_RS232->setText(QApplication::translate("MainWindow", "RS232 Version No", Q_NULLPTR));
-        label_software_version_frame->setText(QApplication::translate("MainWindow", "Software Version", Q_NULLPTR));
-        label_lan_fw_frame->setText(QApplication::translate("MainWindow", "LAN FW version", Q_NULLPTR));
-        label_Fan_speed->setText(QApplication::translate("MainWindow", "Fan Speed", Q_NULLPTR));
-        label_fan_speed1->setText(QApplication::translate("MainWindow", "Fan 1 Speed", Q_NULLPTR));
+        label_RS232->setText(QApplication::translate("MainWindow", "RS232 Version No", 0));
+        label_software_version_frame->setText(QApplication::translate("MainWindow", "Software Version", 0));
+        label_lan_fw_frame->setText(QApplication::translate("MainWindow", "LAN FW version", 0));
+        label_Fan_speed->setText(QApplication::translate("MainWindow", "Fan Speed", 0));
+        label_fan_speed1->setText(QApplication::translate("MainWindow", "Fan 1 Speed", 0));
         laaabel_2_fan_1->setText(QString());
-        label_fan_speed2->setText(QApplication::translate("MainWindow", "Fan 2 Speed", Q_NULLPTR));
+        label_fan_speed2->setText(QApplication::translate("MainWindow", "Fan 2 Speed", 0));
         laaabel_2_fan_2->setText(QString());
-        label_fan_speed3->setText(QApplication::translate("MainWindow", "Fan 3 Speed", Q_NULLPTR));
+        label_fan_speed3->setText(QApplication::translate("MainWindow", "Fan 3 Speed", 0));
         laaabel_2_fan_3->setText(QString());
-        label_fan_speed4->setText(QApplication::translate("MainWindow", "Fan 4 Speed", Q_NULLPTR));
+        label_fan_speed4->setText(QApplication::translate("MainWindow", "Fan 4 Speed", 0));
         laaabel_2_fan_4->setText(QString());
-        label_system_temperature->setText(QApplication::translate("MainWindow", "System Temperature", Q_NULLPTR));
-        lineEdit_RS232_2->setText(QApplication::translate("MainWindow", "48", Q_NULLPTR));
-        label_current_wat->setText(QApplication::translate("MainWindow", "Current Wat", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_18), QApplication::translate("MainWindow", "Fan Speed", Q_NULLPTR));
-        groupBox_main_source->setTitle(QApplication::translate("MainWindow", "Main Source", Q_NULLPTR));
-        label_Resolution->setText(QApplication::translate("MainWindow", "Resolution", Q_NULLPTR));
-        lineEdit_Resolution->setText(QApplication::translate("MainWindow", "1920x1080", Q_NULLPTR));
-        label_Signal_Format->setText(QApplication::translate("MainWindow", " Signal Format", Q_NULLPTR));
-        label_Pixel_Clock->setText(QApplication::translate("MainWindow", "Pixel Clock", Q_NULLPTR));
-        label_Horz_Refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", Q_NULLPTR));
-        label_Vert_Refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", Q_NULLPTR));
-        groupBox_SUB_source->setTitle(QApplication::translate("MainWindow", "Sub Source", Q_NULLPTR));
-        label_Resolution_2->setText(QApplication::translate("MainWindow", "Resolution", Q_NULLPTR));
-        lineEdit_Resolution_2->setText(QApplication::translate("MainWindow", "1920x1080", Q_NULLPTR));
-        label_Pixel_Clock_2->setText(QApplication::translate("MainWindow", "Pixel Clock", Q_NULLPTR));
-        label_vert_refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", Q_NULLPTR));
-        label_signal_format->setText(QApplication::translate("MainWindow", " Signal Format", Q_NULLPTR));
-        lineEdit_signal_format->setText(QApplication::translate("MainWindow", "HDMI", Q_NULLPTR));
-        label_horz_refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", Q_NULLPTR));
-        label_main_source->setText(QApplication::translate("MainWindow", "Main Source", Q_NULLPTR));
-        lineEdit_main_source->setText(QApplication::translate("MainWindow", "HDMI", Q_NULLPTR));
-        label_Info_string->setText(QApplication::translate("MainWindow", "Info String", Q_NULLPTR));
-        label_native_resolution->setText(QApplication::translate("MainWindow", "Native Resolution", Q_NULLPTR));
-        lineEdit_native_resolution->setText(QApplication::translate("MainWindow", "1920x1080", Q_NULLPTR));
-        label_light_source->setText(QApplication::translate("MainWindow", "Light Source Mode", Q_NULLPTR));
-        label_standby_power_mode->setText(QApplication::translate("MainWindow", "Standby Power Mode", Q_NULLPTR));
+        label_system_temperature->setText(QApplication::translate("MainWindow", "System Temperature", 0));
+        lineEdit_RS232_2->setText(QApplication::translate("MainWindow", "48", 0));
+        label_current_wat->setText(QApplication::translate("MainWindow", "Current Wat", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_18), QApplication::translate("MainWindow", "Fan Speed", 0));
+        groupBox_main_source->setTitle(QApplication::translate("MainWindow", "Main Source", 0));
+        label_Resolution->setText(QApplication::translate("MainWindow", "Resolution", 0));
+        lineEdit_Resolution->setText(QApplication::translate("MainWindow", "1920x1080", 0));
+        label_Signal_Format->setText(QApplication::translate("MainWindow", " Signal Format", 0));
+        label_Pixel_Clock->setText(QApplication::translate("MainWindow", "Pixel Clock", 0));
+        label_Horz_Refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", 0));
+        label_Vert_Refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", 0));
+        groupBox_SUB_source->setTitle(QApplication::translate("MainWindow", "Sub Source", 0));
+        label_Resolution_2->setText(QApplication::translate("MainWindow", "Resolution", 0));
+        lineEdit_Resolution_2->setText(QApplication::translate("MainWindow", "1920x1080", 0));
+        label_Pixel_Clock_2->setText(QApplication::translate("MainWindow", "Pixel Clock", 0));
+        label_vert_refresh->setText(QApplication::translate("MainWindow", " Vert Refresh", 0));
+        label_signal_format->setText(QApplication::translate("MainWindow", " Signal Format", 0));
+        lineEdit_signal_format->setText(QApplication::translate("MainWindow", "HDMI", 0));
+        label_horz_refresh->setText(QApplication::translate("MainWindow", " Horz Refresh", 0));
+        label_main_source->setText(QApplication::translate("MainWindow", "Main Source", 0));
+        lineEdit_main_source->setText(QApplication::translate("MainWindow", "HDMI", 0));
+        label_Info_string->setText(QApplication::translate("MainWindow", "Info String", 0));
+        label_native_resolution->setText(QApplication::translate("MainWindow", "Native Resolution", 0));
+        lineEdit_native_resolution->setText(QApplication::translate("MainWindow", "1920x1080", 0));
+        label_light_source->setText(QApplication::translate("MainWindow", "Light Source Mode", 0));
+        label_standby_power_mode->setText(QApplication::translate("MainWindow", "Standby Power Mode", 0));
         standby_power_mode_box->clear();
         standby_power_mode_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Active", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Eco.", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Active", 0)
+         << QApplication::translate("MainWindow", "Eco.", 0)
         );
-        Label_DHCP->setText(QApplication::translate("MainWindow", "DHCP", Q_NULLPTR));
+        Label_DHCP->setText(QApplication::translate("MainWindow", "DHCP", 0));
         box_DHCP->clear();
         box_DHCP->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        MODELE_NAME_Label_4->setText(QApplication::translate("MainWindow", "Current Lamp Source", Q_NULLPTR));
+        MODELE_NAME_Label_4->setText(QApplication::translate("MainWindow", "Current Lamp Source", 0));
         Optoma_box_4->clear();
         Optoma_box_4->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lamp1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Lamp2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Both", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lamp1", 0)
+         << QApplication::translate("MainWindow", "Lamp2", 0)
+         << QApplication::translate("MainWindow", "Both", 0)
         );
-        label_main_source_2->setText(QApplication::translate("MainWindow", "System Temperature", Q_NULLPTR));
-        lineEdit_main_source_2->setText(QApplication::translate("MainWindow", "48", Q_NULLPTR));
-        label_main_source_3->setText(QApplication::translate("MainWindow", "Refresh rate", Q_NULLPTR));
-        lineEdit_main_source_3->setText(QApplication::translate("MainWindow", "60Hz", Q_NULLPTR));
-        label_main_source_4->setText(QApplication::translate("MainWindow", "Sub Source", Q_NULLPTR));
-        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_nformation), QApplication::translate("MainWindow", "Information", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "\320\220\320\222\320\242\320\236\320\236\320\242\320\222\320\225\320\242\320\253", Q_NULLPTR));
-        label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", Q_NULLPTR));
+        label_main_source_2->setText(QApplication::translate("MainWindow", "System Temperature", 0));
+        lineEdit_main_source_2->setText(QApplication::translate("MainWindow", "48", 0));
+        label_main_source_3->setText(QApplication::translate("MainWindow", "Refresh rate", 0));
+        lineEdit_main_source_3->setText(QApplication::translate("MainWindow", "60Hz", 0));
+        label_main_source_4->setText(QApplication::translate("MainWindow", "Sub Source", 0));
+        tab_Other_Items->setTabText(tab_Other_Items->indexOf(tab_nformation), QApplication::translate("MainWindow", "Information", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_22), QApplication::translate("MainWindow", "\320\220\320\222\320\242\320\236\320\236\320\242\320\222\320\225\320\242\320\253", 0));
+        label_Image_Setting_Contrast->setText(QApplication::translate("MainWindow", "Contrast:", 0));
         label_var_Image_Setting_Contrast->setText(QString());
-        pushButton_Image_Setting_Contrast_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        pushButton_Image_Setting_Contrast_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        label_Image_Setting_Brightness->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        pushButton_Image_Setting_Contrast_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        pushButton_Image_Setting_Contrast_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        label_Image_Setting_Brightness->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Brightness->setText(QString());
-        pushButton_Image_Setting_Brightness_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        pushButton_Image_Setting_Brightness_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        label_Image_Setting_Tint->setText(QApplication::translate("MainWindow", "Tint:", Q_NULLPTR));
+        pushButton_Image_Setting_Brightness_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        pushButton_Image_Setting_Brightness_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        label_Image_Setting_Tint->setText(QApplication::translate("MainWindow", "Tint:", 0));
         label_var_Image_Setting_Tint->setText(QString());
-        label_Image_Setting_Color->setText(QApplication::translate("MainWindow", "Color:", Q_NULLPTR));
+        label_Image_Setting_Color->setText(QApplication::translate("MainWindow", "Color:", 0));
         label_var_Image_Setting_Color->setText(QString());
-        label_Image_Setting_Display_Mode->setText(QApplication::translate("MainWindow", "Display Mode:", Q_NULLPTR));
+        label_Image_Setting_Display_Mode->setText(QApplication::translate("MainWindow", "Display Mode:", 0));
         comboBox_Image_Setting_Display_Mode->clear();
         comboBox_Image_Setting_Display_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "[None] ", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Presentation", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bright", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Cinema", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Film", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Vivid", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Game", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "sRGB", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Reference", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DICOM SIM.", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "User", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "User (3D)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "ISF Day", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "ISF Night", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "ISF 3D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2D High Speed", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Blending", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Sport", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "[None] ", 0)
+         << QApplication::translate("MainWindow", "Presentation", 0)
+         << QApplication::translate("MainWindow", "Bright", 0)
+         << QApplication::translate("MainWindow", "Cinema", 0)
+         << QApplication::translate("MainWindow", "Film", 0)
+         << QApplication::translate("MainWindow", "Vivid", 0)
+         << QApplication::translate("MainWindow", "Game", 0)
+         << QApplication::translate("MainWindow", "sRGB", 0)
+         << QApplication::translate("MainWindow", "Reference", 0)
+         << QApplication::translate("MainWindow", "DICOM SIM.", 0)
+         << QApplication::translate("MainWindow", "User", 0)
+         << QApplication::translate("MainWindow", "3D", 0)
+         << QApplication::translate("MainWindow", "User (3D)", 0)
+         << QApplication::translate("MainWindow", "ISF Day", 0)
+         << QApplication::translate("MainWindow", "ISF Night", 0)
+         << QApplication::translate("MainWindow", "ISF 3D", 0)
+         << QApplication::translate("MainWindow", "2D High Speed", 0)
+         << QApplication::translate("MainWindow", "Blending", 0)
+         << QApplication::translate("MainWindow", "Sport", 0)
+         << QApplication::translate("MainWindow", "HDR", 0)
         );
-        label_Image_Setting_Sharpness->setText(QApplication::translate("MainWindow", "Sharpness:", Q_NULLPTR));
+        label_Image_Setting_Sharpness->setText(QApplication::translate("MainWindow", "Sharpness:", 0));
         label_var_Image_Setting_Sharpness->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Temperature->setText(QApplication::translate("MainWindow", "Color Temperature:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Temperature->setText(QApplication::translate("MainWindow", "Color Temperature:", 0));
         comboBox_Image_Setting_Color_Setting_Color_Temperature->clear();
         comboBox_Image_Setting_Color_Setting_Color_Temperature->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Warm", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Standard", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Cool", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Cold", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D55", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D65", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D75", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D83", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D93", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Native (Bright)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Reset", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Warm", 0)
+         << QApplication::translate("MainWindow", "Standard", 0)
+         << QApplication::translate("MainWindow", "Cool", 0)
+         << QApplication::translate("MainWindow", "Cold", 0)
+         << QApplication::translate("MainWindow", "D55", 0)
+         << QApplication::translate("MainWindow", "D65", 0)
+         << QApplication::translate("MainWindow", "D75", 0)
+         << QApplication::translate("MainWindow", "D83", 0)
+         << QApplication::translate("MainWindow", "D93", 0)
+         << QApplication::translate("MainWindow", "Native (Bright)", 0)
+         << QApplication::translate("MainWindow", "Reset", 0)
         );
-        label_Aspect_Ratio->setText(QApplication::translate("MainWindow", "Aspect Ratio:", Q_NULLPTR));
+        label_Aspect_Ratio->setText(QApplication::translate("MainWindow", "Aspect Ratio:", 0));
         comboBox_Aspect_ratio->clear();
         comboBox_Aspect_ratio->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "[None]", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "4:3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "16:9", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "16:10", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "LBX", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Superwide", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Native", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto235", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto235_Subtitle", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto 3D", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "[None]", 0)
+         << QApplication::translate("MainWindow", "4:3", 0)
+         << QApplication::translate("MainWindow", "16:9", 0)
+         << QApplication::translate("MainWindow", "16:10", 0)
+         << QApplication::translate("MainWindow", "LBX", 0)
+         << QApplication::translate("MainWindow", "Superwide", 0)
+         << QApplication::translate("MainWindow", "Native", 0)
+         << QApplication::translate("MainWindow", "Auto", 0)
+         << QApplication::translate("MainWindow", "Auto235", 0)
+         << QApplication::translate("MainWindow", "Auto235_Subtitle", 0)
+         << QApplication::translate("MainWindow", "Auto 3D", 0)
         );
-        groupBox_5->setTitle(QApplication::translate("MainWindow", "Sourse", Q_NULLPTR));
-        label_PIP_PBP_Sourse_Main->setText(QApplication::translate("MainWindow", "Main Source:", Q_NULLPTR));
+        groupBox_5->setTitle(QApplication::translate("MainWindow", "Sourse", 0));
+        label_PIP_PBP_Sourse_Main->setText(QApplication::translate("MainWindow", "Main Source:", 0));
         comboBox_PIP_PBP_Sourse_Main->clear();
         comboBox_PIP_PBP_Sourse_Main->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "[no signal]", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI-D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI-A", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Component", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "S-Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DisplayPort", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDBaseT", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "BNC", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Wireless", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Flash Drive", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Network Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "USB Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Multimedia", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3G-SDI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Smart TV", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "[no signal]", 0)
+         << QApplication::translate("MainWindow", "HDMI1/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI2", 0)
+         << QApplication::translate("MainWindow", "HDMI2/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI3", 0)
+         << QApplication::translate("MainWindow", "DVI-D", 0)
+         << QApplication::translate("MainWindow", "DVI-A", 0)
+         << QApplication::translate("MainWindow", "VGA", 0)
+         << QApplication::translate("MainWindow", "VGA1", 0)
+         << QApplication::translate("MainWindow", "VGA2", 0)
+         << QApplication::translate("MainWindow", "Component", 0)
+         << QApplication::translate("MainWindow", "S-Video", 0)
+         << QApplication::translate("MainWindow", "Video", 0)
+         << QApplication::translate("MainWindow", "DisplayPort", 0)
+         << QApplication::translate("MainWindow", "HDBaseT", 0)
+         << QApplication::translate("MainWindow", "BNC", 0)
+         << QApplication::translate("MainWindow", "Wireless", 0)
+         << QApplication::translate("MainWindow", "Flash Drive", 0)
+         << QApplication::translate("MainWindow", "Network Display", 0)
+         << QApplication::translate("MainWindow", "USB Display", 0)
+         << QApplication::translate("MainWindow", "Multimedia", 0)
+         << QApplication::translate("MainWindow", "3G-SDI", 0)
+         << QApplication::translate("MainWindow", "Smart TV", 0)
         );
-        label_3D_Mode_7->setText(QApplication::translate("MainWindow", "Sub Source:", Q_NULLPTR));
+        label_3D_Mode_7->setText(QApplication::translate("MainWindow", "Sub Source:", 0));
         comboBox_PIP_PBP_Sourse_Sub->clear();
         comboBox_PIP_PBP_Sourse_Sub->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "[no signal]", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA 1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Compoent", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI 2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI 3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA 2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "BNC", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "S-video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Vedio", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI-D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDBaseT", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3G-SDI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Network Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Wireless", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Flash Drive", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "USB Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DisplayPort", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "[no signal]", 0)
+         << QApplication::translate("MainWindow", "HDMI1", 0)
+         << QApplication::translate("MainWindow", "VGA 1", 0)
+         << QApplication::translate("MainWindow", "Compoent", 0)
+         << QApplication::translate("MainWindow", "HDMI 2", 0)
+         << QApplication::translate("MainWindow", "HDMI 3", 0)
+         << QApplication::translate("MainWindow", "VGA 2", 0)
+         << QApplication::translate("MainWindow", "BNC", 0)
+         << QApplication::translate("MainWindow", "S-video", 0)
+         << QApplication::translate("MainWindow", "Vedio", 0)
+         << QApplication::translate("MainWindow", "DVI-D", 0)
+         << QApplication::translate("MainWindow", "HDBaseT", 0)
+         << QApplication::translate("MainWindow", "3G-SDI", 0)
+         << QApplication::translate("MainWindow", "Network Display", 0)
+         << QApplication::translate("MainWindow", "Wireless", 0)
+         << QApplication::translate("MainWindow", "Flash Drive", 0)
+         << QApplication::translate("MainWindow", "USB Display", 0)
+         << QApplication::translate("MainWindow", "DisplayPort", 0)
         );
-        label_Image_Setting_Brightness_Mode->setText(QApplication::translate("MainWindow", "Brightness Mode:", Q_NULLPTR));
+        label_Image_Setting_Brightness_Mode->setText(QApplication::translate("MainWindow", "Brightness Mode:", 0));
         comboBox_Image_Setting_Brightness_Mode->clear();
         comboBox_Image_Setting_Brightness_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Bright", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Eco", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Dynamic", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Eco+", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Constant Power", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Constant Luminace", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Bright", 0)
+         << QApplication::translate("MainWindow", "Eco", 0)
+         << QApplication::translate("MainWindow", "Dynamic", 0)
+         << QApplication::translate("MainWindow", "Eco+", 0)
+         << QApplication::translate("MainWindow", "Constant Power", 0)
+         << QApplication::translate("MainWindow", "Constant Luminace", 0)
         );
-        label_Edge_Mask->setText(QApplication::translate("MainWindow", "Edge Mask:", Q_NULLPTR));
+        label_Edge_Mask->setText(QApplication::translate("MainWindow", "Edge Mask:", 0));
         label_var_Edge_Mask->setText(QString());
-        pushButton_Image_shift_H_plus->setText(QApplication::translate("MainWindow", "H+", Q_NULLPTR));
-        pushButton_Image_shift_V_plus->setText(QApplication::translate("MainWindow", "V+", Q_NULLPTR));
-        pushButton_Image_shift_H_minus->setText(QApplication::translate("MainWindow", "H-", Q_NULLPTR));
-        pushButton_Image_shift_V_minus->setText(QApplication::translate("MainWindow", "V-", Q_NULLPTR));
-        label_Edge_Image_shift_V->setText(QApplication::translate("MainWindow", "V:", Q_NULLPTR));
+        pushButton_Image_shift_H_plus->setText(QApplication::translate("MainWindow", "H+", 0));
+        pushButton_Image_shift_V_plus->setText(QApplication::translate("MainWindow", "V+", 0));
+        pushButton_Image_shift_H_minus->setText(QApplication::translate("MainWindow", "H-", 0));
+        pushButton_Image_shift_V_minus->setText(QApplication::translate("MainWindow", "V-", 0));
+        label_Edge_Image_shift_V->setText(QApplication::translate("MainWindow", "V:", 0));
         label_var_Image_shift_V->setText(QString());
-        label_Edge_Image_shift_H->setText(QApplication::translate("MainWindow", "H:", Q_NULLPTR));
+        label_Edge_Image_shift_H->setText(QApplication::translate("MainWindow", "H:", 0));
         label_var_Image_shift_H->setText(QString());
-        pushButton_Zoom_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_Zoom_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        label_Edge_Zoom->setText(QApplication::translate("MainWindow", "Zoom:", Q_NULLPTR));
+        pushButton_Zoom_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_Zoom_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        label_Edge_Zoom->setText(QApplication::translate("MainWindow", "Zoom:", 0));
         label_var_Zoom->setText(QString());
-        pushButton_Image_Setting_Color_Setting_Color_Temperature_reset->setText(QApplication::translate("MainWindow", "Reset Color Temperatute", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_47), QApplication::translate("MainWindow", "\320\236\321\201\320\275\320\276\320\262\320\275\321\213\320\265", Q_NULLPTR));
-        label_Image_Setting_Display_Gamma->setText(QApplication::translate("MainWindow", "Gamma Mode:", Q_NULLPTR));
+        pushButton_Image_Setting_Color_Setting_Color_Temperature_reset->setText(QApplication::translate("MainWindow", "Reset Color Temperatute", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_47), QApplication::translate("MainWindow", "\320\236\321\201\320\275\320\276\320\262\320\275\321\213\320\265", 0));
+        label_Image_Setting_Display_Gamma->setText(QApplication::translate("MainWindow", "Gamma Mode:", 0));
         comboBox_Image_Setting_Display_Gamma->clear();
         comboBox_Image_Setting_Display_Gamma->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Film", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Graphics", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Standard(2.2)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1.8", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2.0", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2.4", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2.6", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Blackboard", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DICOM SIM", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bright", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "CRT", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "User", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Film", 0)
+         << QApplication::translate("MainWindow", "Video", 0)
+         << QApplication::translate("MainWindow", "Graphics", 0)
+         << QApplication::translate("MainWindow", "Standard(2.2)", 0)
+         << QApplication::translate("MainWindow", "1.8", 0)
+         << QApplication::translate("MainWindow", "2.0", 0)
+         << QApplication::translate("MainWindow", "2.4", 0)
+         << QApplication::translate("MainWindow", "2.6", 0)
+         << QApplication::translate("MainWindow", "3D", 0)
+         << QApplication::translate("MainWindow", "Blackboard", 0)
+         << QApplication::translate("MainWindow", "DICOM SIM", 0)
+         << QApplication::translate("MainWindow", "Bright", 0)
+         << QApplication::translate("MainWindow", "CRT", 0)
+         << QApplication::translate("MainWindow", "User", 0)
         );
-        label_Image_Setting_Wall_Color->setText(QApplication::translate("MainWindow", "Wall Color:", Q_NULLPTR));
+        label_Image_Setting_Wall_Color->setText(QApplication::translate("MainWindow", "Wall Color:", 0));
         comboBox_Image_Setting_Wall_Color->clear();
         comboBox_Image_Setting_Wall_Color->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "BlackBoard", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Light Yellow", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Light Green", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Light Blue", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Pink", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Gray", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "BlackBoard", 0)
+         << QApplication::translate("MainWindow", "Light Yellow", 0)
+         << QApplication::translate("MainWindow", "Light Green", 0)
+         << QApplication::translate("MainWindow", "Light Blue", 0)
+         << QApplication::translate("MainWindow", "Pink", 0)
+         << QApplication::translate("MainWindow", "Gray", 0)
         );
-        label_Image_Setting_Color_Setting_BrilliantColor->setText(QApplication::translate("MainWindow", "BrilliantColor:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_BrilliantColor->setText(QApplication::translate("MainWindow", "BrilliantColor:", 0));
         label_var_Image_Setting_Color_Setting_BrilliantColor->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Space->setText(QApplication::translate("MainWindow", "Color Space:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Space->setText(QApplication::translate("MainWindow", "Color Space:", 0));
         comboBox_Image_Setting_Color_Setting_Color_Space->clear();
         comboBox_Image_Setting_Color_Setting_Color_Space->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "RGB", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "YUV", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "RGB(0~255)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "RGB(16~235)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Rec. 709", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Rec. 601", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Auto", 0)
+         << QApplication::translate("MainWindow", "RGB", 0)
+         << QApplication::translate("MainWindow", "YUV", 0)
+         << QApplication::translate("MainWindow", "RGB(0~255)", 0)
+         << QApplication::translate("MainWindow", "RGB(16~235)", 0)
+         << QApplication::translate("MainWindow", "Rec. 709", 0)
+         << QApplication::translate("MainWindow", "Rec. 601", 0)
         );
-        Rear->setText(QApplication::translate("MainWindow", "Rear", Q_NULLPTR));
-        Front->setText(QApplication::translate("MainWindow", "Front", Q_NULLPTR));
-        Rear_top->setText(QApplication::translate("MainWindow", "Rear-top", Q_NULLPTR));
-        Ceiling_top->setText(QApplication::translate("MainWindow", "Ceiling-top", Q_NULLPTR));
-        groupBox_Setup_HDMI_Link->setTitle(QApplication::translate("MainWindow", "HDMI Link Settings", Q_NULLPTR));
-        label__Setup_HDMI_Link->setText(QApplication::translate("MainWindow", "HDMI Link:", Q_NULLPTR));
+        Rear->setText(QApplication::translate("MainWindow", "Rear", 0));
+        Front->setText(QApplication::translate("MainWindow", "Front", 0));
+        Rear_top->setText(QApplication::translate("MainWindow", "Rear-top", 0));
+        Ceiling_top->setText(QApplication::translate("MainWindow", "Ceiling-top", 0));
+        groupBox_Setup_HDMI_Link->setTitle(QApplication::translate("MainWindow", "HDMI Link Settings", 0));
+        label__Setup_HDMI_Link->setText(QApplication::translate("MainWindow", "HDMI Link:", 0));
         combobox_Setup_HDMI_Link->clear();
         combobox_Setup_HDMI_Link->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Setup_Inclusive_of_TV->setText(QApplication::translate("MainWindow", "Inclusive of TV:", Q_NULLPTR));
+        label_Setup_Inclusive_of_TV->setText(QApplication::translate("MainWindow", "Inclusive of TV:", 0));
         combobox_Setup_Inclusive_of_TV->clear();
         combobox_Setup_Inclusive_of_TV->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        label_Setup_Power_On_Link->setText(QApplication::translate("MainWindow", "Power On Link:", Q_NULLPTR));
+        label_Setup_Power_On_Link->setText(QApplication::translate("MainWindow", "Power On Link:", 0));
         combobox_Setup_Power_On_Link->clear();
         combobox_Setup_Power_On_Link->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Mutual", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PJ --> Device", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Device --> PJ", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Mutual", 0)
+         << QApplication::translate("MainWindow", "PJ --> Device", 0)
+         << QApplication::translate("MainWindow", "Device --> PJ", 0)
         );
-        label_Setup_Power_Off_Link->setText(QApplication::translate("MainWindow", "Power Off Link:", Q_NULLPTR));
+        label_Setup_Power_Off_Link->setText(QApplication::translate("MainWindow", "Power Off Link:", 0));
         combobox_Setup_Power_Off_Link->clear();
         combobox_Setup_Power_Off_Link->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Image_Setting_Signal_V_position->setText(QApplication::translate("MainWindow", "V. Position:", Q_NULLPTR));
+        label_Image_Setting_Signal_V_position->setText(QApplication::translate("MainWindow", "V. Position:", 0));
         label_var_Image_Setting_Signal_V_position->setText(QString());
-        label_Image_Setting_Signal_Frequency->setText(QApplication::translate("MainWindow", "Frequency:", Q_NULLPTR));
+        label_Image_Setting_Signal_Frequency->setText(QApplication::translate("MainWindow", "Frequency:", 0));
         label_var_Image_Setting_Signal_Frequency->setText(QString());
-        label_Image_Setting_Signal_H_position->setText(QApplication::translate("MainWindow", "H. Position:", Q_NULLPTR));
+        label_Image_Setting_Signal_H_position->setText(QApplication::translate("MainWindow", "H. Position:", 0));
         label_var_Image_Setting_Signal_H_position->setText(QString());
-        label_Image_Setting_Signal_Automatic->setText(QApplication::translate("MainWindow", "Automatic:", Q_NULLPTR));
+        label_Image_Setting_Signal_Automatic->setText(QApplication::translate("MainWindow", "Automatic:", 0));
         comboBox_Image_Setting_Signal_Automatic->clear();
         comboBox_Image_Setting_Signal_Automatic->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Image_Setting_Signal_Phase->setText(QApplication::translate("MainWindow", "Phase:", Q_NULLPTR));
+        label_Image_Setting_Signal_Phase->setText(QApplication::translate("MainWindow", "Phase:", 0));
         label_var_Image_Setting_Signal_Phase->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "\320\236\321\201\320\275\320\276\320\262\320\275\321\213\320\265 (\320\277\321\200\320\276\320\264\320\276\320\273\320\266\320\265\320\275\320\270\320\265)", Q_NULLPTR));
-        groupBox_Image_Setting_Color_Settin_Color_Matching->setTitle(QApplication::translate("MainWindow", "Color Matching", Q_NULLPTR));
-        groupBox_Image_Setting_Color_Setting_Color_Matching_R->setTitle(QApplication::translate("MainWindow", "R", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_8), QApplication::translate("MainWindow", "\320\236\321\201\320\275\320\276\320\262\320\275\321\213\320\265 (\320\277\321\200\320\276\320\264\320\276\320\273\320\266\320\265\320\275\320\270\320\265)", 0));
+        groupBox_Image_Setting_Color_Settin_Color_Matching->setTitle(QApplication::translate("MainWindow", "Color Matching", 0));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_R->setTitle(QApplication::translate("MainWindow", "R", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_R->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_R->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_R->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_R->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_R->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_R->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_R->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_W->setTitle(QApplication::translate("MainWindow", "W", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Red_W->setText(QApplication::translate("MainWindow", "Red:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_W->setTitle(QApplication::translate("MainWindow", "W", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Red_W->setText(QApplication::translate("MainWindow", "Red:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Red_W->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Green_W->setText(QApplication::translate("MainWindow", "Green:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Green_W->setText(QApplication::translate("MainWindow", "Green:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Green_W->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText(QApplication::translate("MainWindow", "Blue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText(QApplication::translate("MainWindow", "Blue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Blue_W->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_M->setTitle(QApplication::translate("MainWindow", "M", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_M->setTitle(QApplication::translate("MainWindow", "M", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_M->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_M->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_M->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_M->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_M->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_M->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_M->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_Y->setTitle(QApplication::translate("MainWindow", "Y", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_Y->setTitle(QApplication::translate("MainWindow", "Y", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_Y->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_Y->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_Y->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_C->setTitle(QApplication::translate("MainWindow", "C", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_C->setTitle(QApplication::translate("MainWindow", "C", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_C->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_C->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_C->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_C->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_C->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_C->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_C->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_B->setTitle(QApplication::translate("MainWindow", "B", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_B->setTitle(QApplication::translate("MainWindow", "B", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_B->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_B->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_B->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_B->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_B->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_B->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_B->setText(QString());
-        groupBox_Image_Setting_Color_Setting_Color_Matching_G->setTitle(QApplication::translate("MainWindow", "G", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_Color_Matching_G->setTitle(QApplication::translate("MainWindow", "G", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Saturation_G->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Hue_G->setText(QApplication::translate("MainWindow", "Hue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Hue_G->setText(QApplication::translate("MainWindow", "Hue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Hue_G->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Gain_G->setText(QApplication::translate("MainWindow", "Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Gain_G->setText(QApplication::translate("MainWindow", "Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Gain_G->setText(QString());
-        pushButton_Image_Setting_Color_Settin_Color_Matching_reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_49), QApplication::translate("MainWindow", "\320\241\320\276\320\263\320\273\320\260\321\201\320\276\320\262\320\260\320\275\320\270\320\265 \321\206\320\262\320\265\321\202\320\260", Q_NULLPTR));
-        groupBox_7->setTitle(QApplication::translate("MainWindow", "RGB Gain/Bias", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain->setText(QApplication::translate("MainWindow", "Red Gain:", Q_NULLPTR));
+        pushButton_Image_Setting_Color_Settin_Color_Matching_reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_49), QApplication::translate("MainWindow", "\320\241\320\276\320\263\320\273\320\260\321\201\320\276\320\262\320\260\320\275\320\270\320\265 \321\206\320\262\320\265\321\202\320\260", 0));
+        groupBox_7->setTitle(QApplication::translate("MainWindow", "RGB Gain/Bias", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain->setText(QApplication::translate("MainWindow", "Red Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Gain->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain->setText(QApplication::translate("MainWindow", "Green Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain->setText(QApplication::translate("MainWindow", "Green Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Gain->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain->setText(QApplication::translate("MainWindow", "Blue Gain:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain->setText(QApplication::translate("MainWindow", "Blue Gain:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Gain->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias->setText(QApplication::translate("MainWindow", "Red Bias:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias->setText(QApplication::translate("MainWindow", "Red Bias:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Red_Bias->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias->setText(QApplication::translate("MainWindow", "Green Bias", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias->setText(QApplication::translate("MainWindow", "Green Bias", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Green_Bias->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias->setText(QApplication::translate("MainWindow", "Blue Bias:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias->setText(QApplication::translate("MainWindow", "Blue Bias:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_Blue_Bias->setText(QString());
-        pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_7), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 \321\206\320\262\320\265\321\202\320\260 RGB", Q_NULLPTR));
+        pushbutton_Image_Setting_Color_Setting_Color_Matching_RGB_Gain_Bias_reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_7), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 \321\206\320\262\320\265\321\202\320\260 RGB", 0));
         label_3D_sync_invert->setText(QApplication::translate("MainWindow", "3D sync invert:\n"
-"", Q_NULLPTR));
+"", 0));
         comboBox_3D_sync_invert->clear();
         comboBox_3D_sync_invert->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_3D_Mode->setText(QApplication::translate("MainWindow", "3D Mode:", Q_NULLPTR));
+        label_3D_Mode->setText(QApplication::translate("MainWindow", "3D Mode:", 0));
         comboBox_3D_Mode->clear();
         comboBox_3D_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DLP-Link", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "IR / VESA", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "DLP-Link", 0)
+         << QApplication::translate("MainWindow", "IR / VESA", 0)
         );
         label_Internal_3D_2D->setText(QApplication::translate("MainWindow", "3D-2D:\n"
-"", Q_NULLPTR));
+"", 0));
         comboBox_3D_2D->clear();
         comboBox_3D_2D->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "3D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "L", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "R", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "3D", 0)
+         << QApplication::translate("MainWindow", "L", 0)
+         << QApplication::translate("MainWindow", "R", 0)
         );
         label_3D_Format->setText(QApplication::translate("MainWindow", "3D Format:\n"
-"", Q_NULLPTR));
+"", 0));
         comboBox_3D_Format->clear();
         comboBox_3D_Format->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "SBS", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Top and Bottom", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Frame Sequential", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Frame Packing", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Auto", 0)
+         << QApplication::translate("MainWindow", "SBS", 0)
+         << QApplication::translate("MainWindow", "Top and Bottom", 0)
+         << QApplication::translate("MainWindow", "Frame Sequential", 0)
+         << QApplication::translate("MainWindow", "Frame Packing", 0)
+         << QApplication::translate("MainWindow", "Off", 0)
         );
         label_2D_3D->setText(QApplication::translate("MainWindow", "2D-3D:\n"
-"", Q_NULLPTR));
+"", 0));
         comboBox_2D_3D->clear();
         comboBox_2D_3D->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "1", 0)
+         << QApplication::translate("MainWindow", "2", 0)
+         << QApplication::translate("MainWindow", "3", 0)
         );
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 3D", Q_NULLPTR));
-        groupBox_3->setTitle(QApplication::translate("MainWindow", "buttom-left", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_left_up->setText(QApplication::translate("MainWindow", "up + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_left_right->setText(QApplication::translate("MainWindow", "right + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_left_down->setText(QApplication::translate("MainWindow", "down + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_left_left->setText(QApplication::translate("MainWindow", "left + 1", Q_NULLPTR));
-        label_Four_Corners_buttom_left_V->setText(QApplication::translate("MainWindow", "V:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_10), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 3D", 0));
+        groupBox_3->setTitle(QApplication::translate("MainWindow", "buttom-left", 0));
+        pushButton_Four_Corners_buttom_left_up->setText(QApplication::translate("MainWindow", "up + 1", 0));
+        pushButton_Four_Corners_buttom_left_right->setText(QApplication::translate("MainWindow", "right + 1", 0));
+        pushButton_Four_Corners_buttom_left_down->setText(QApplication::translate("MainWindow", "down + 1", 0));
+        pushButton_Four_Corners_buttom_left_left->setText(QApplication::translate("MainWindow", "left + 1", 0));
+        label_Four_Corners_buttom_left_V->setText(QApplication::translate("MainWindow", "V:", 0));
         label_var_Four_Corners_buttom_left_V->setText(QString());
-        label_Four_Corners_buttom_left_H->setText(QApplication::translate("MainWindow", "H:", Q_NULLPTR));
+        label_Four_Corners_buttom_left_H->setText(QApplication::translate("MainWindow", "H:", 0));
         label_var_Four_Corners_buttom_left_H->setText(QString());
-        groupBox->setTitle(QApplication::translate("MainWindow", "top-left", Q_NULLPTR));
-        pushButton_Four_Corners_top_left_up->setText(QApplication::translate("MainWindow", "up + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_left_right->setText(QApplication::translate("MainWindow", "right + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_left_down->setText(QApplication::translate("MainWindow", "down + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_left_left->setText(QApplication::translate("MainWindow", "left + 1", Q_NULLPTR));
-        label_Four_Corners_top_left_V->setText(QApplication::translate("MainWindow", "V:", Q_NULLPTR));
+        groupBox->setTitle(QApplication::translate("MainWindow", "top-left", 0));
+        pushButton_Four_Corners_top_left_up->setText(QApplication::translate("MainWindow", "up + 1", 0));
+        pushButton_Four_Corners_top_left_right->setText(QApplication::translate("MainWindow", "right + 1", 0));
+        pushButton_Four_Corners_top_left_down->setText(QApplication::translate("MainWindow", "down + 1", 0));
+        pushButton_Four_Corners_top_left_left->setText(QApplication::translate("MainWindow", "left + 1", 0));
+        label_Four_Corners_top_left_V->setText(QApplication::translate("MainWindow", "V:", 0));
         label_var_Four_Corners_top_left_V->setText(QString());
-        label_Four_Corners_top_left_H->setText(QApplication::translate("MainWindow", "H:", Q_NULLPTR));
+        label_Four_Corners_top_left_H->setText(QApplication::translate("MainWindow", "H:", 0));
         label_var_Four_Corners_top_left_H->setText(QString());
-        groupBox_2->setTitle(QApplication::translate("MainWindow", "top-right", Q_NULLPTR));
-        pushButton_Four_Corners_top_right_right->setText(QApplication::translate("MainWindow", "right + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_right_down->setText(QApplication::translate("MainWindow", "down + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_right_up->setText(QApplication::translate("MainWindow", "up + 1", Q_NULLPTR));
-        pushButton_Four_Corners_top_right_left->setText(QApplication::translate("MainWindow", "left + 1", Q_NULLPTR));
-        label_Four_Corners_top_right_V->setText(QApplication::translate("MainWindow", "V:", Q_NULLPTR));
+        groupBox_2->setTitle(QApplication::translate("MainWindow", "top-right", 0));
+        pushButton_Four_Corners_top_right_right->setText(QApplication::translate("MainWindow", "right + 1", 0));
+        pushButton_Four_Corners_top_right_down->setText(QApplication::translate("MainWindow", "down + 1", 0));
+        pushButton_Four_Corners_top_right_up->setText(QApplication::translate("MainWindow", "up + 1", 0));
+        pushButton_Four_Corners_top_right_left->setText(QApplication::translate("MainWindow", "left + 1", 0));
+        label_Four_Corners_top_right_V->setText(QApplication::translate("MainWindow", "V:", 0));
         label_var_Four_Corners_top_right_V->setText(QString());
-        label_Four_Corners_top_right_H->setText(QApplication::translate("MainWindow", "H:", Q_NULLPTR));
+        label_Four_Corners_top_right_H->setText(QApplication::translate("MainWindow", "H:", 0));
         label_var_Four_Corners_top_right_H->setText(QString());
-        groupBox_4->setTitle(QApplication::translate("MainWindow", "buttom-right", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_right_up->setText(QApplication::translate("MainWindow", "up + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_right_right->setText(QApplication::translate("MainWindow", "right + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_right_down->setText(QApplication::translate("MainWindow", "down + 1", Q_NULLPTR));
-        pushButton_Four_Corners_buttom_right_left->setText(QApplication::translate("MainWindow", "left + 1", Q_NULLPTR));
-        label_Four_Corners_buttom_right_V->setText(QApplication::translate("MainWindow", "V:", Q_NULLPTR));
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "buttom-right", 0));
+        pushButton_Four_Corners_buttom_right_up->setText(QApplication::translate("MainWindow", "up + 1", 0));
+        pushButton_Four_Corners_buttom_right_right->setText(QApplication::translate("MainWindow", "right + 1", 0));
+        pushButton_Four_Corners_buttom_right_down->setText(QApplication::translate("MainWindow", "down + 1", 0));
+        pushButton_Four_Corners_buttom_right_left->setText(QApplication::translate("MainWindow", "left + 1", 0));
+        label_Four_Corners_buttom_right_V->setText(QApplication::translate("MainWindow", "V:", 0));
         label_var_Four_Corners_buttom_right_V->setText(QString());
-        label_Four_Corners_buttom_right_H->setText(QApplication::translate("MainWindow", "H:", Q_NULLPTR));
+        label_Four_Corners_buttom_right_H->setText(QApplication::translate("MainWindow", "H:", 0));
         label_var_Four_Corners_buttom_right_H->setText(QString());
-        pushButton_Four_Corners_Reset->setText(QApplication::translate("MainWindow", "Four Corners Reset", Q_NULLPTR));
-        label_Geometric_Correction_H_Arc->setText(QApplication::translate("MainWindow", "H Arc:", Q_NULLPTR));
+        pushButton_Four_Corners_Reset->setText(QApplication::translate("MainWindow", "Four Corners Reset", 0));
+        label_Geometric_Correction_H_Arc->setText(QApplication::translate("MainWindow", "H Arc:", 0));
         label_var_Geometric_Correction_H_Arc->setText(QString());
-        label_Geometric_Correction_V_Arc->setText(QApplication::translate("MainWindow", "V Arc:", Q_NULLPTR));
+        label_Geometric_Correction_V_Arc->setText(QApplication::translate("MainWindow", "V Arc:", 0));
         label_var_Geometric_Correction_V_Arc->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_5), QApplication::translate("MainWindow", "\320\232\320\276\321\200\321\200\320\265\320\272\321\206\320\270\321\217 \320\263\320\265\320\276\320\274\320\265\321\202\321\200\320\270\320\270", Q_NULLPTR));
-        label_Setup_Power_Setting_Direct_Power_On->setText(QApplication::translate("MainWindow", "Direct Power On:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_5), QApplication::translate("MainWindow", "\320\232\320\276\321\200\321\200\320\265\320\272\321\206\320\270\321\217 \320\263\320\265\320\276\320\274\320\265\321\202\321\200\320\270\320\270", 0));
+        label_Setup_Power_Setting_Direct_Power_On->setText(QApplication::translate("MainWindow", "Direct Power On:", 0));
         combobox_Setup_Power_Setting_Direct_Power_On->clear();
         combobox_Setup_Power_Setting_Direct_Power_On->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Setup_Power_Setting_Auto_Power_Off->setText(QApplication::translate("MainWindow", "Auto Power Off (min)", Q_NULLPTR));
+        label_Setup_Power_Setting_Auto_Power_Off->setText(QApplication::translate("MainWindow", "Auto Power Off (min)", 0));
         label_var_Setup_Power_Setting_Auto_Power_Off->setText(QString());
-        label_Setup_Power_Setting_Signal_Power_On->setText(QApplication::translate("MainWindow", "Signal Power On:", Q_NULLPTR));
+        label_Setup_Power_Setting_Signal_Power_On->setText(QApplication::translate("MainWindow", "Signal Power On:", 0));
         combobox_Setup_Power_Setting_Signal_Power_On->clear();
         combobox_Setup_Power_Setting_Signal_Power_On->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Setup_Power_Setting_Sleep_Timer->setText(QApplication::translate("MainWindow", "Sleep Timer (min)", Q_NULLPTR));
+        label_Setup_Power_Setting_Sleep_Timer->setText(QApplication::translate("MainWindow", "Sleep Timer (min)", 0));
         label_var_Setup_Power_Setting_Sleep_Timer->setText(QString());
-        label_Setup_Power_Setting_Quick_Resume->setText(QApplication::translate("MainWindow", "Quick Resume:", Q_NULLPTR));
+        label_Setup_Power_Setting_Quick_Resume->setText(QApplication::translate("MainWindow", "Quick Resume:", 0));
         combobox_Setup_Power_Setting_Quick_Resume->clear();
         combobox_Setup_Power_Setting_Quick_Resume->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Setup_Power_Setting_Power_Mode->setText(QApplication::translate("MainWindow", "Power Mode (Standby):", Q_NULLPTR));
+        label_Setup_Power_Setting_Power_Mode->setText(QApplication::translate("MainWindow", "Power Mode (Standby):", 0));
         combobox_Setup_Power_Setting_Power_Mode->clear();
         combobox_Setup_Power_Setting_Power_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Active", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Eco.", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Active", 0)
+         << QApplication::translate("MainWindow", "Eco.", 0)
         );
-        label_Volume->setText(QApplication::translate("MainWindow", "Volume", Q_NULLPTR));
+        label_Volume->setText(QApplication::translate("MainWindow", "Volume", 0));
         label_var_Volume->setText(QString());
-        label_Mute->setText(QApplication::translate("MainWindow", "Mute", Q_NULLPTR));
+        label_Mute->setText(QApplication::translate("MainWindow", "Mute", 0));
         comboBox_Mute->clear();
         comboBox_Mute->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_Audio_Input->setText(QApplication::translate("MainWindow", "Audio Input", Q_NULLPTR));
+        label_Audio_Input->setText(QApplication::translate("MainWindow", "Audio Input", 0));
         comboBox_Audio_Input->clear();
         comboBox_Audio_Input->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Default", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Audio 1(Mini-jack)", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "RCA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Audio 2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Audio 3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Audio 4", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI 1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI 2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Audio 5/Displayport", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Displayport", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Default", 0)
+         << QApplication::translate("MainWindow", "Audio 1(Mini-jack)", 0)
+         << QApplication::translate("MainWindow", "RCA", 0)
+         << QApplication::translate("MainWindow", "Audio 2", 0)
+         << QApplication::translate("MainWindow", "Audio 3", 0)
+         << QApplication::translate("MainWindow", "Audio 4", 0)
+         << QApplication::translate("MainWindow", "HDMI 1", 0)
+         << QApplication::translate("MainWindow", "HDMI 2", 0)
+         << QApplication::translate("MainWindow", "Audio 5/Displayport", 0)
+         << QApplication::translate("MainWindow", "Displayport", 0)
         );
-        label_Internal_speaker->setText(QApplication::translate("MainWindow", "Internal Speaker", Q_NULLPTR));
+        label_Internal_speaker->setText(QApplication::translate("MainWindow", "Internal Speaker", 0));
         comboBox_Internal_speaker->clear();
         comboBox_Internal_speaker->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_28->setText(QApplication::translate("MainWindow", "Lamp Reminder:", Q_NULLPTR));
+        label_28->setText(QApplication::translate("MainWindow", "Lamp Reminder:", 0));
         combobox_Setup_Lamp_Setting_Lamp_Reminder->clear();
         combobox_Setup_Lamp_Setting_Lamp_Reminder->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp->setText(QApplication::translate("MainWindow", "Lamp Reset", Q_NULLPTR));
-        groupBox_Setup_Security_->setTitle(QApplication::translate("MainWindow", "Security Timer", Q_NULLPTR));
-        label_Setup_Security->setText(QApplication::translate("MainWindow", "Security:", Q_NULLPTR));
+        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp->setText(QApplication::translate("MainWindow", "Lamp Reset", 0));
+        groupBox_Setup_Security_->setTitle(QApplication::translate("MainWindow", "Security Timer", 0));
+        label_Setup_Security->setText(QApplication::translate("MainWindow", "Security:", 0));
         combobox_Setup_Security->clear();
         combobox_Setup_Security->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        groupBox_Setup_Security_Timer->setTitle(QApplication::translate("MainWindow", "Security Timer", Q_NULLPTR));
-        label_Setup_Security_Timer_Month->setText(QApplication::translate("MainWindow", "Month:", Q_NULLPTR));
+        groupBox_Setup_Security_Timer->setTitle(QApplication::translate("MainWindow", "Security Timer", 0));
+        label_Setup_Security_Timer_Month->setText(QApplication::translate("MainWindow", "Month:", 0));
         label_var_Setup_Security_Timer_Month->setText(QString());
-        label_Setup_Security_Timer_Day->setText(QApplication::translate("MainWindow", "Day:", Q_NULLPTR));
+        label_Setup_Security_Timer_Day->setText(QApplication::translate("MainWindow", "Day:", 0));
         label_var_Setup_Security_Timer_Day->setText(QString());
-        label_Setup_Security_Timer_Hour->setText(QApplication::translate("MainWindow", "Hour:", Q_NULLPTR));
+        label_Setup_Security_Timer_Hour->setText(QApplication::translate("MainWindow", "Hour:", 0));
         label_var_Setup_Security_Timer_Hour->setText(QString());
-        pushButton_Setup_Security_Change_Password->setText(QApplication::translate("MainWindow", "Change Password", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_6), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\276\321\200\320\260", Q_NULLPTR));
-        groupBox_Setup_Remote_Setting->setTitle(QApplication::translate("MainWindow", "Remote Settings", Q_NULLPTR));
-        label_Setup_Remote_Setting_IR_Function->setText(QApplication::translate("MainWindow", "IR Function:", Q_NULLPTR));
+        pushButton_Setup_Security_Change_Password->setText(QApplication::translate("MainWindow", "Change Password", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_6), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\276\321\200\320\260", 0));
+        groupBox_Setup_Remote_Setting->setTitle(QApplication::translate("MainWindow", "Remote Settings", 0));
+        label_Setup_Remote_Setting_IR_Function->setText(QApplication::translate("MainWindow", "IR Function:", 0));
         combobox_Setup_Remote_Setting_IR_Function->clear();
         combobox_Setup_Remote_Setting_IR_Function->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off All", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On All", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Front", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Top", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Front Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Front On", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Top On", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Back", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off All", 0)
+         << QApplication::translate("MainWindow", "On All", 0)
+         << QApplication::translate("MainWindow", "Front", 0)
+         << QApplication::translate("MainWindow", "Top", 0)
+         << QApplication::translate("MainWindow", "Front Off", 0)
+         << QApplication::translate("MainWindow", "Front On", 0)
+         << QApplication::translate("MainWindow", "Top On", 0)
+         << QApplication::translate("MainWindow", "Back", 0)
         );
-        pushButton_Setup_Remote_Setting_Remote_code_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        label_Setup_Remote_Setting_Remote_code->setText(QApplication::translate("MainWindow", "Remote Code:", Q_NULLPTR));
+        pushButton_Setup_Remote_Setting_Remote_code_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        label_Setup_Remote_Setting_Remote_code->setText(QApplication::translate("MainWindow", "Remote Code:", 0));
         label_var_Setup_Remote_Setting_Remote_code->setText(QString());
-        pushButton_Setup_Remote_Setting_Remote_code_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        label_Setup_Remote_Setting_Remote_user1->setText(QApplication::translate("MainWindow", "User1 (F1):", Q_NULLPTR));
+        pushButton_Setup_Remote_Setting_Remote_code_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        label_Setup_Remote_Setting_Remote_user1->setText(QApplication::translate("MainWindow", "User1 (F1):", 0));
         label_var_Setup_Remote_Setting_Remote_user1->setText(QString());
-        label_Setup_Remote_Setting_Remote_user2->setText(QApplication::translate("MainWindow", "User2 (F2):", Q_NULLPTR));
+        label_Setup_Remote_Setting_Remote_user2->setText(QApplication::translate("MainWindow", "User2 (F2):", 0));
         label_var_Setup_Remote_Setting_Remote_user2->setText(QString());
-        label_Setup_Remote_Setting_Remote_user3->setText(QApplication::translate("MainWindow", "User3 (F3):", Q_NULLPTR));
+        label_Setup_Remote_Setting_Remote_user3->setText(QApplication::translate("MainWindow", "User3 (F3):", 0));
         label_var_Setup_Remote_Setting_Remote_user3->setText(QString());
-        label_Options_Menu_Timer->setText(QApplication::translate("MainWindow", "Menu Timer:", Q_NULLPTR));
+        label_Options_Menu_Timer->setText(QApplication::translate("MainWindow", "Menu Timer:", 0));
         combobox_Options_Menu_Timer->clear();
         combobox_Options_Menu_Timer->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "5 sec", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "10 sec", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "5 sec", 0)
+         << QApplication::translate("MainWindow", "10 sec", 0)
         );
-        label_Options_Menu_Location->setText(QApplication::translate("MainWindow", "Menu Location:", Q_NULLPTR));
+        label_Options_Menu_Location->setText(QApplication::translate("MainWindow", "Menu Location:", 0));
         combobox_Options_Menu_Location->clear();
         combobox_Options_Menu_Location->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Top left", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Top right", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Center", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bottom left", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bottom righ", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Top left", 0)
+         << QApplication::translate("MainWindow", "Top right", 0)
+         << QApplication::translate("MainWindow", "Center", 0)
+         << QApplication::translate("MainWindow", "Bottom left", 0)
+         << QApplication::translate("MainWindow", "Bottom righ", 0)
         );
-        label_Options_High_Altitude->setText(QApplication::translate("MainWindow", "High Altitude:", Q_NULLPTR));
+        label_Options_High_Altitude->setText(QApplication::translate("MainWindow", "High Altitude:", 0));
         combobox_Options_High_Altitude->clear();
         combobox_Options_High_Altitude->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Options_Keypad_Lock->setText(QApplication::translate("MainWindow", "Keypad Lock:", Q_NULLPTR));
+        label_Options_Keypad_Lock->setText(QApplication::translate("MainWindow", "Keypad Lock:", 0));
         combobox_Options_Keypad_Lock->clear();
         combobox_Options_Keypad_Lock->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Options_Logo->setText(QApplication::translate("MainWindow", "Logo:", Q_NULLPTR));
+        label_Options_Logo->setText(QApplication::translate("MainWindow", "Logo:", 0));
         combobox_Options_Logo->clear();
         combobox_Options_Logo->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Default", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Neutral", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "User", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Default", 0)
+         << QApplication::translate("MainWindow", "Neutral", 0)
+         << QApplication::translate("MainWindow", "User", 0)
         );
-        label_Options_Language->setText(QApplication::translate("MainWindow", "Language:", Q_NULLPTR));
+        label_Options_Language->setText(QApplication::translate("MainWindow", "Language:", 0));
         combobox_Options_Language->clear();
         combobox_Options_Language->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "English", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Deutsch", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Fran\303\247ais", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Italiano", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Espa\303\261ol", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Portugu\303\252s", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Polski", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Nederlands", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Svenska", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Norsk/Dansk", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Suomi", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\316\265\316\273\316\273\316\267\316\275\316\271\316\272\316\254", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\347\271\201\351\253\224\344\270\255\346\226\207", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\347\260\241\344\275\223\344\270\255\346\226\207", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\346\227\245\346\234\254\350\252\236", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\355\225\234\352\265\255\354\226\264", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\240\321\203\321\201\321\201\320\272\320\270\320\271", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Magyar", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\304\214e\305\241tina", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "...", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "...", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "T\303\274rk\303\247e", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "...", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "...", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bahasa Indonesia", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Rom\303\242n\304\203", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Slovakian", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "English", 0)
+         << QApplication::translate("MainWindow", "Deutsch", 0)
+         << QApplication::translate("MainWindow", "Fran\303\247ais", 0)
+         << QApplication::translate("MainWindow", "Italiano", 0)
+         << QApplication::translate("MainWindow", "Espa\303\261ol", 0)
+         << QApplication::translate("MainWindow", "Portugu\303\252s", 0)
+         << QApplication::translate("MainWindow", "Polski", 0)
+         << QApplication::translate("MainWindow", "Nederlands", 0)
+         << QApplication::translate("MainWindow", "Svenska", 0)
+         << QApplication::translate("MainWindow", "Norsk/Dansk", 0)
+         << QApplication::translate("MainWindow", "Suomi", 0)
+         << QApplication::translate("MainWindow", "\316\265\316\273\316\273\316\267\316\275\316\271\316\272\316\254", 0)
+         << QApplication::translate("MainWindow", "\347\271\201\351\253\224\344\270\255\346\226\207", 0)
+         << QApplication::translate("MainWindow", "\347\260\241\344\275\223\344\270\255\346\226\207", 0)
+         << QApplication::translate("MainWindow", "\346\227\245\346\234\254\350\252\236", 0)
+         << QApplication::translate("MainWindow", "\355\225\234\352\265\255\354\226\264", 0)
+         << QApplication::translate("MainWindow", "\320\240\321\203\321\201\321\201\320\272\320\270\320\271", 0)
+         << QApplication::translate("MainWindow", "Magyar", 0)
+         << QApplication::translate("MainWindow", "\304\214e\305\241tina", 0)
+         << QApplication::translate("MainWindow", "...", 0)
+         << QApplication::translate("MainWindow", "...", 0)
+         << QApplication::translate("MainWindow", "T\303\274rk\303\247e", 0)
+         << QApplication::translate("MainWindow", "...", 0)
+         << QApplication::translate("MainWindow", "...", 0)
+         << QApplication::translate("MainWindow", "Bahasa Indonesia", 0)
+         << QApplication::translate("MainWindow", "Rom\303\242n\304\203", 0)
+         << QApplication::translate("MainWindow", "Slovakian", 0)
         );
-        label_Options_Background_Color->setText(QApplication::translate("MainWindow", "Background Color:", Q_NULLPTR));
+        label_Options_Background_Color->setText(QApplication::translate("MainWindow", "Background Color:", 0));
         combobox_Options_Background_Color->clear();
         combobox_Options_Background_Color->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "None", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Blue", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Red", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Green", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Gray", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Logo", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "None", 0)
+         << QApplication::translate("MainWindow", "Blue", 0)
+         << QApplication::translate("MainWindow", "Red", 0)
+         << QApplication::translate("MainWindow", "Green", 0)
+         << QApplication::translate("MainWindow", "Gray", 0)
+         << QApplication::translate("MainWindow", "Logo", 0)
         );
-        label_Options_Display_Mode_Lock->setText(QApplication::translate("MainWindow", "Display Mode Lock:", Q_NULLPTR));
+        label_Options_Display_Mode_Lock->setText(QApplication::translate("MainWindow", "Display Mode Lock:", 0));
         combobox_Options_Display_Mode_Lock->clear();
         combobox_Options_Display_Mode_Lock->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        pushButton_reset_to_Default->setText(QApplication::translate("MainWindow", "Reset to Default", Q_NULLPTR));
-        pushButton_reset_OSD->setText(QApplication::translate("MainWindow", "Reset OSD", Q_NULLPTR));
-        label_Options_Beep->setText(QApplication::translate("MainWindow", "Beep:", Q_NULLPTR));
+        pushButton_reset_to_Default->setText(QApplication::translate("MainWindow", "Reset to Default", 0));
+        pushButton_reset_OSD->setText(QApplication::translate("MainWindow", "Reset OSD", 0));
+        label_Options_Beep->setText(QApplication::translate("MainWindow", "Beep:", 0));
         combobox_Options_Beep->clear();
         combobox_Options_Beep->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Options_Information_Hide->setText(QApplication::translate("MainWindow", "Information Hide:", Q_NULLPTR));
+        label_Options_Information_Hide->setText(QApplication::translate("MainWindow", "Information Hide:", 0));
         combobox_Options_Information_Hide->clear();
         combobox_Options_Information_Hide->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Setup_Projector_ID->setText(QApplication::translate("MainWindow", "Projector ID:", Q_NULLPTR));
+        label_Setup_Projector_ID->setText(QApplication::translate("MainWindow", "Projector ID:", 0));
         label_var_Setup_Projector_ID->setText(QString());
-        label_Setup_Test_Pattern->setText(QApplication::translate("MainWindow", "Test Pattern:", Q_NULLPTR));
+        label_Setup_Test_Pattern->setText(QApplication::translate("MainWindow", "Test Pattern:", 0));
         combobox_Setup_Test_Pattern->clear();
         combobox_Setup_Test_Pattern->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Green Grid", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Magenta Grid", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "White Grid", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "White", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Red", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Green", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Blue", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yellow", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Magenta", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Cyan", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Black ", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Green Grid", 0)
+         << QApplication::translate("MainWindow", "Magenta Grid", 0)
+         << QApplication::translate("MainWindow", "White Grid", 0)
+         << QApplication::translate("MainWindow", "White", 0)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "Red", 0)
+         << QApplication::translate("MainWindow", "Green", 0)
+         << QApplication::translate("MainWindow", "Blue", 0)
+         << QApplication::translate("MainWindow", "Yellow", 0)
+         << QApplication::translate("MainWindow", "Magenta", 0)
+         << QApplication::translate("MainWindow", "Cyan", 0)
+         << QApplication::translate("MainWindow", "Black ", 0)
         );
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_13), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\276\321\200\320\260 (\320\277\321\200\320\276\320\264\320\276\320\273\320\266\320\265\320\275\320\270\320\265)", Q_NULLPTR));
-        Control->setTitle(QApplication::translate("MainWindow", "Control", Q_NULLPTR));
-        label_4->setText(QApplication::translate("MainWindow", "Crestron", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_13), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 \320\277\321\200\320\276\320\265\320\272\321\202\320\276\321\200\320\260 (\320\277\321\200\320\276\320\264\320\276\320\273\320\266\320\265\320\275\320\270\320\265)", 0));
+        Control->setTitle(QApplication::translate("MainWindow", "Control", 0));
+        label_4->setText(QApplication::translate("MainWindow", "Crestron", 0));
         Crestron_box->clear();
         Crestron_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_6->setText(QApplication::translate("MainWindow", "Extron", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "Extron", 0));
         Extron_box->clear();
         Extron_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_8->setText(QApplication::translate("MainWindow", "PJ Link", Q_NULLPTR));
+        label_8->setText(QApplication::translate("MainWindow", "PJ Link", 0));
         PJLink_box->clear();
         PJLink_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_5->setText(QApplication::translate("MainWindow", "AMX Device Discovery", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MainWindow", "AMX Device Discovery", 0));
         AMX_Device_Discovery_box->clear();
         AMX_Device_Discovery_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_9->setText(QApplication::translate("MainWindow", "Telnet", Q_NULLPTR));
+        label_9->setText(QApplication::translate("MainWindow", "Telnet", 0));
         Telnet_box->clear();
         Telnet_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_10->setText(QApplication::translate("MainWindow", "HTTP", Q_NULLPTR));
+        label_10->setText(QApplication::translate("MainWindow", "HTTP", 0));
         HTTP_box->clear();
         HTTP_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        WLAN->setTitle(QApplication::translate("MainWindow", "WLAN", Q_NULLPTR));
-        wlan->setText(QApplication::translate("MainWindow", "WLAN", Q_NULLPTR));
+        WLAN->setTitle(QApplication::translate("MainWindow", "WLAN", 0));
+        wlan->setText(QApplication::translate("MainWindow", "WLAN", 0));
         WLAN_box->clear();
         WLAN_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_12->setText(QApplication::translate("MainWindow", "Network Status", Q_NULLPTR));
+        label_12->setText(QApplication::translate("MainWindow", "Network Status", 0));
         Network_Status_box->clear();
         Network_Status_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
+         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
         );
-        label_14->setText(QApplication::translate("MainWindow", "MAC Address", Q_NULLPTR));
-        label_15->setText(QApplication::translate("MainWindow", "IP Address", Q_NULLPTR));
-        label_17->setText(QApplication::translate("MainWindow", "SSID", Q_NULLPTR));
-        label_16->setText(QApplication::translate("MainWindow", "Connection Mode", Q_NULLPTR));
+        label_14->setText(QApplication::translate("MainWindow", "MAC Address", 0));
+        label_15->setText(QApplication::translate("MainWindow", "IP Address", 0));
+        label_17->setText(QApplication::translate("MainWindow", "SSID", 0));
+        label_16->setText(QApplication::translate("MainWindow", "Connection Mode", 0));
         Connection_mode->clear();
         Connection_mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Infrastructure", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Ad-hoc", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Infrastructure", 0)
+         << QApplication::translate("MainWindow", "Ad-hoc", 0)
         );
-        Lan->setTitle(QApplication::translate("MainWindow", "LAN", Q_NULLPTR));
-        label_13->setText(QApplication::translate("MainWindow", "Network Status", Q_NULLPTR));
+        Lan->setTitle(QApplication::translate("MainWindow", "LAN", 0));
+        label_13->setText(QApplication::translate("MainWindow", "Network Status", 0));
         Network_status_box->clear();
         Network_status_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
+         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
         );
-        label_18->setText(QApplication::translate("MainWindow", "MAC Address", Q_NULLPTR));
-        label_19->setText(QApplication::translate("MainWindow", "DHCP", Q_NULLPTR));
+        label_18->setText(QApplication::translate("MainWindow", "MAC Address", 0));
+        label_19->setText(QApplication::translate("MainWindow", "DHCP", 0));
         DHCP_box->clear();
         DHCP_box->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
+         << QApplication::translate("MainWindow", "\320\235\320\265 \320\277\320\276\320\264\320\272\320\273\321\216\321\207\320\265\320\275\320\276", 0)
         );
-        label_20->setText(QApplication::translate("MainWindow", "IP Address", Q_NULLPTR));
-        label_22->setText(QApplication::translate("MainWindow", "Subnet Mask", Q_NULLPTR));
-        label_21->setText(QApplication::translate("MainWindow", "Gateway", Q_NULLPTR));
-        label_23->setText(QApplication::translate("MainWindow", "DNS", Q_NULLPTR));
-        label_24->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_33), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 \321\201\320\265\321\202\320\270", Q_NULLPTR));
-        pushButton_Mute->setText(QApplication::translate("MainWindow", "Mute", Q_NULLPTR));
-        pushButton_S_Video->setText(QApplication::translate("MainWindow", "S-Video", Q_NULLPTR));
-        pushButton_hot_key_3->setText(QApplication::translate("MainWindow", "Hot Key(user3)F3", Q_NULLPTR));
-        pushButton_menu->setText(QApplication::translate("MainWindow", "Menu", Q_NULLPTR));
-        pushButton_hot_key_2->setText(QApplication::translate("MainWindow", "Hot Key(user2)F2", Q_NULLPTR));
-        pushButton_Re_sync->setText(QApplication::translate("MainWindow", "Re-sync", Q_NULLPTR));
-        pushButton_HDIM_3->setText(QApplication::translate("MainWindow", "HDIM 3", Q_NULLPTR));
-        groupBox_power->setTitle(QApplication::translate("MainWindow", "Power", Q_NULLPTR));
-        Power->setText(QApplication::translate("MainWindow", "Power", Q_NULLPTR));
-        PowerOff->setText(QApplication::translate("MainWindow", "Power Off", Q_NULLPTR));
-        groupBox_V_Keystone->setTitle(QApplication::translate("MainWindow", "V Keystone ", Q_NULLPTR));
-        pushButton_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        pushButton_Freeze->setText(QApplication::translate("MainWindow", "Freeze", Q_NULLPTR));
-        pushButton_Source->setText(QApplication::translate("MainWindow", "Source", Q_NULLPTR));
-        pushButton_Display_Port->setText(QApplication::translate("MainWindow", "Display Port", Q_NULLPTR));
-        pushButton_DVI_D->setText(QApplication::translate("MainWindow", "DVI-D", Q_NULLPTR));
-        pushButton_Brightness->setText(QApplication::translate("MainWindow", "Brightness", Q_NULLPTR));
-        pushButton_Video->setText(QApplication::translate("MainWindow", "Video", Q_NULLPTR));
-        pushButton_hot_key->setText(QApplication::translate("MainWindow", "Hot Key(user1)F1", Q_NULLPTR));
-        pushButton_VGA_2->setText(QApplication::translate("MainWindow", "VGA-2", Q_NULLPTR));
-        pushButton_HDIM_2->setText(QApplication::translate("MainWindow", "HDMI 2", Q_NULLPTR));
-        pushButton_AV_mute->setText(QApplication::translate("MainWindow", "AV_mute", Q_NULLPTR));
-        pushButton_HDIM_1->setText(QApplication::translate("MainWindow", "HDMI 1", Q_NULLPTR));
-        groupBox_Volume->setTitle(QApplication::translate("MainWindow", "Volume", Q_NULLPTR));
-        pushButton_minus_Volume->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        pushButton_plus_Volume->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_VGA_1->setText(QApplication::translate("MainWindow", "VGA-1", Q_NULLPTR));
-        groupBox_mouce->setTitle(QApplication::translate("MainWindow", "Mouse Control", Q_NULLPTR));
-        pushButton_mouse_up->setText(QApplication::translate("MainWindow", "Remote Mouse up", Q_NULLPTR));
-        pushButton_mouse_left->setText(QApplication::translate("MainWindow", "Remote Mouse Left", Q_NULLPTR));
-        pushButton_right->setText(QApplication::translate("MainWindow", "Remote Mouse Right", Q_NULLPTR));
-        pushButton_mouse_enter->setText(QApplication::translate("MainWindow", "Remote Mouse Enter", Q_NULLPTR));
-        pushButton_down->setText(QApplication::translate("MainWindow", "Remote Mouse Down", Q_NULLPTR));
-        pushButton_right_click->setText(QApplication::translate("MainWindow", "Mouse Right Click", Q_NULLPTR));
-        pushButton_left_click->setText(QApplication::translate("MainWindow", "Mouse Left Click", Q_NULLPTR));
-        groupBox_menu->setTitle(QApplication::translate("MainWindow", "Menu", Q_NULLPTR));
-        pushButton_up->setText(QApplication::translate("MainWindow", "Up", Q_NULLPTR));
-        pushButton_left->setText(QApplication::translate("MainWindow", "Left", Q_NULLPTR));
-        pushButton_right_2->setText(QApplication::translate("MainWindow", "Right", Q_NULLPTR));
-        pushButton_enter->setText(QApplication::translate("MainWindow", "Enter", Q_NULLPTR));
-        pushButton_down_2->setText(QApplication::translate("MainWindow", "Down", Q_NULLPTR));
-        pushButton_3D->setText(QApplication::translate("MainWindow", "3D", Q_NULLPTR));
-        pushButton__Aspect_Ration->setText(QApplication::translate("MainWindow", "Aspect Ration", Q_NULLPTR));
-        groupBox_17->setTitle(QApplication::translate("MainWindow", "GroupBox", Q_NULLPTR));
-        pushButton_zero->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        pushButton_five->setText(QApplication::translate("MainWindow", "5", Q_NULLPTR));
-        pushButton_seven->setText(QApplication::translate("MainWindow", "7", Q_NULLPTR));
-        pushButton_two->setText(QApplication::translate("MainWindow", "2", Q_NULLPTR));
-        pushButton_foure->setText(QApplication::translate("MainWindow", "4", Q_NULLPTR));
-        pushButton_eight->setText(QApplication::translate("MainWindow", "8", Q_NULLPTR));
-        pushButton_one->setText(QApplication::translate("MainWindow", "1", Q_NULLPTR));
-        pushButton_three->setText(QApplication::translate("MainWindow", "3", Q_NULLPTR));
-        pushButton_six->setText(QApplication::translate("MainWindow", "6", Q_NULLPTR));
-        pushButton_nine->setText(QApplication::translate("MainWindow", "9", Q_NULLPTR));
-        pushButton_mode->setText(QApplication::translate("MainWindow", "Mode", Q_NULLPTR));
-        pushButton_info->setText(QApplication::translate("MainWindow", "info", Q_NULLPTR));
-        pushButton_Lens_shift->setText(QApplication::translate("MainWindow", "Lens shift", Q_NULLPTR));
-        pushButton_Contrast->setText(QApplication::translate("MainWindow", "Contrast", Q_NULLPTR));
-        pushButton_zoom->setText(QApplication::translate("MainWindow", "Zoom", Q_NULLPTR));
-        groupBox_Lens_V->setTitle(QApplication::translate("MainWindow", "Lens V", Q_NULLPTR));
-        pushButton_left_V->setText(QApplication::translate("MainWindow", "left", Q_NULLPTR));
-        pushButton_right_V->setText(QApplication::translate("MainWindow", "right", Q_NULLPTR));
-        groupBox_zoom->setTitle(QApplication::translate("MainWindow", "Zoom", Q_NULLPTR));
-        pushButton_plus_zoom->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_minus_zoom->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        groupBox_focus->setTitle(QApplication::translate("MainWindow", "Focus", Q_NULLPTR));
-        pushButton_plus_focus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_minus_focus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        groupBox_Lens_H->setTitle(QApplication::translate("MainWindow", "Lens H", Q_NULLPTR));
-        pushButton_left_H->setText(QApplication::translate("MainWindow", "left", Q_NULLPTR));
-        pushButton_right_H->setText(QApplication::translate("MainWindow", "right", Q_NULLPTR));
-        groupBox_H_Keystone->setTitle(QApplication::translate("MainWindow", "H Keystone", Q_NULLPTR));
-        pushButton_H_Keystone_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_H_Keystone_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        groupBox_12V_trigger->setTitle(QApplication::translate("MainWindow", "12V trigger", Q_NULLPTR));
-        pushButton_12V_trigger_On->setText(QApplication::translate("MainWindow", "On", Q_NULLPTR));
-        pushButton_12V_trigger_Off->setText(QApplication::translate("MainWindow", "Off", Q_NULLPTR));
-        pushButton_PIP->setText(QApplication::translate("MainWindow", "PIP", Q_NULLPTR));
-        pushButton_Gamma->setText(QApplication::translate("MainWindow", "Gamma", Q_NULLPTR));
-        pushButton_Component->setText(QApplication::translate("MainWindow", "Component", Q_NULLPTR));
-        pushButton_BNC->setText(QApplication::translate("MainWindow", "BNC", Q_NULLPTR));
-        pushButton_DB->setText(QApplication::translate("MainWindow", "DB", Q_NULLPTR));
-        pushButton_Sleep_timer->setText(QApplication::translate("MainWindow", "Sleep Timer", Q_NULLPTR));
-        pushButton_Home->setText(QApplication::translate("MainWindow", "Home", Q_NULLPTR));
-        pushButton_remote_control_simulation_reset->setText(QApplication::translate("MainWindow", "Reset control ", Q_NULLPTR));
-        pushButton_Return->setText(QApplication::translate("MainWindow", "Return", Q_NULLPTR));
-        pushButton_Pattern->setText(QApplication::translate("MainWindow", "Pattern", Q_NULLPTR));
-        pushButton_exit->setText(QApplication::translate("MainWindow", "Exit", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_34), QApplication::translate("MainWindow", "Remote Control simulation", Q_NULLPTR));
-        label_info_IP_Adress->setText(QApplication::translate("MainWindow", "IP Adress:", Q_NULLPTR));
-        label_info_Resolution->setText(QApplication::translate("MainWindow", "Resolution:", Q_NULLPTR));
-        groupBox_info_lamp_hour->setTitle(QApplication::translate("MainWindow", "Lamp Hours", Q_NULLPTR));
-        label_info_bright->setText(QApplication::translate("MainWindow", "Bright:", Q_NULLPTR));
-        lineEdit_info_bright->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        label_info_eco->setText(QApplication::translate("MainWindow", "Eco:", Q_NULLPTR));
-        lineEdit_info_eco->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        label_info_dinamic->setText(QApplication::translate("MainWindow", "Dynamic:", Q_NULLPTR));
-        lineEdit_info_dinamic->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        label_info_eco_plus->setText(QApplication::translate("MainWindow", "Eco+:", Q_NULLPTR));
-        lineEdit_info_eco_plus->setText(QApplication::translate("MainWindow", "0", Q_NULLPTR));
-        label_info_total->setText(QApplication::translate("MainWindow", "Total:", Q_NULLPTR));
-        lineEdit_info_total->setText(QApplication::translate("MainWindow", "5", Q_NULLPTR));
-        label_info_lamp_1_hour->setText(QApplication::translate("MainWindow", "Lamp 1 Hour:", Q_NULLPTR));
-        lineEdit_info_lamp_1_hour->setText(QApplication::translate("MainWindow", "3", Q_NULLPTR));
-        label_info_lamp_2_hour->setText(QApplication::translate("MainWindow", "Lamp 2 Hour:", Q_NULLPTR));
-        lineEdit_info_lamp_2_hour->setText(QApplication::translate("MainWindow", "2", Q_NULLPTR));
-        lineEdit_info_Refresh_Rate->setText(QApplication::translate("MainWindow", "60Hz", Q_NULLPTR));
-        label_info_serial_number->setText(QApplication::translate("MainWindow", "Serial Number:", Q_NULLPTR));
+        label_20->setText(QApplication::translate("MainWindow", "IP Address", 0));
+        label_22->setText(QApplication::translate("MainWindow", "Subnet Mask", 0));
+        label_21->setText(QApplication::translate("MainWindow", "Gateway", 0));
+        label_23->setText(QApplication::translate("MainWindow", "DNS", 0));
+        label_24->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_33), QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260 \321\201\320\265\321\202\320\270", 0));
+        pushButton_Mute->setText(QApplication::translate("MainWindow", "Mute", 0));
+        pushButton_S_Video->setText(QApplication::translate("MainWindow", "S-Video", 0));
+        pushButton_hot_key_3->setText(QApplication::translate("MainWindow", "Hot Key(user3)F3", 0));
+        pushButton_menu->setText(QApplication::translate("MainWindow", "Menu", 0));
+        pushButton_hot_key_2->setText(QApplication::translate("MainWindow", "Hot Key(user2)F2", 0));
+        pushButton_Re_sync->setText(QApplication::translate("MainWindow", "Re-sync", 0));
+        pushButton_HDIM_3->setText(QApplication::translate("MainWindow", "HDIM 3", 0));
+        groupBox_power->setTitle(QApplication::translate("MainWindow", "Power", 0));
+        Power->setText(QApplication::translate("MainWindow", "Power", 0));
+        PowerOff->setText(QApplication::translate("MainWindow", "Power Off", 0));
+        groupBox_V_Keystone->setTitle(QApplication::translate("MainWindow", "V Keystone ", 0));
+        pushButton_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        pushButton_Freeze->setText(QApplication::translate("MainWindow", "Freeze", 0));
+        pushButton_Source->setText(QApplication::translate("MainWindow", "Source", 0));
+        pushButton_Display_Port->setText(QApplication::translate("MainWindow", "Display Port", 0));
+        pushButton_DVI_D->setText(QApplication::translate("MainWindow", "DVI-D", 0));
+        pushButton_Brightness->setText(QApplication::translate("MainWindow", "Brightness", 0));
+        pushButton_Video->setText(QApplication::translate("MainWindow", "Video", 0));
+        pushButton_hot_key->setText(QApplication::translate("MainWindow", "Hot Key(user1)F1", 0));
+        pushButton_VGA_2->setText(QApplication::translate("MainWindow", "VGA-2", 0));
+        pushButton_HDIM_2->setText(QApplication::translate("MainWindow", "HDMI 2", 0));
+        pushButton_AV_mute->setText(QApplication::translate("MainWindow", "AV_mute", 0));
+        pushButton_HDIM_1->setText(QApplication::translate("MainWindow", "HDMI 1", 0));
+        groupBox_Volume->setTitle(QApplication::translate("MainWindow", "Volume", 0));
+        pushButton_minus_Volume->setText(QApplication::translate("MainWindow", "-", 0));
+        pushButton_plus_Volume->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_VGA_1->setText(QApplication::translate("MainWindow", "VGA-1", 0));
+        groupBox_mouce->setTitle(QApplication::translate("MainWindow", "Mouse Control", 0));
+        pushButton_mouse_up->setText(QApplication::translate("MainWindow", "Remote Mouse up", 0));
+        pushButton_mouse_left->setText(QApplication::translate("MainWindow", "Remote Mouse Left", 0));
+        pushButton_right->setText(QApplication::translate("MainWindow", "Remote Mouse Right", 0));
+        pushButton_mouse_enter->setText(QApplication::translate("MainWindow", "Remote Mouse Enter", 0));
+        pushButton_down->setText(QApplication::translate("MainWindow", "Remote Mouse Down", 0));
+        pushButton_right_click->setText(QApplication::translate("MainWindow", "Mouse Right Click", 0));
+        pushButton_left_click->setText(QApplication::translate("MainWindow", "Mouse Left Click", 0));
+        groupBox_menu->setTitle(QApplication::translate("MainWindow", "Menu", 0));
+        pushButton_up->setText(QApplication::translate("MainWindow", "Up", 0));
+        pushButton_left->setText(QApplication::translate("MainWindow", "Left", 0));
+        pushButton_right_2->setText(QApplication::translate("MainWindow", "Right", 0));
+        pushButton_enter->setText(QApplication::translate("MainWindow", "Enter", 0));
+        pushButton_down_2->setText(QApplication::translate("MainWindow", "Down", 0));
+        pushButton_3D->setText(QApplication::translate("MainWindow", "3D", 0));
+        pushButton__Aspect_Ration->setText(QApplication::translate("MainWindow", "Aspect Ration", 0));
+        groupBox_17->setTitle(QApplication::translate("MainWindow", "GroupBox", 0));
+        pushButton_zero->setText(QApplication::translate("MainWindow", "0", 0));
+        pushButton_five->setText(QApplication::translate("MainWindow", "5", 0));
+        pushButton_seven->setText(QApplication::translate("MainWindow", "7", 0));
+        pushButton_two->setText(QApplication::translate("MainWindow", "2", 0));
+        pushButton_foure->setText(QApplication::translate("MainWindow", "4", 0));
+        pushButton_eight->setText(QApplication::translate("MainWindow", "8", 0));
+        pushButton_one->setText(QApplication::translate("MainWindow", "1", 0));
+        pushButton_three->setText(QApplication::translate("MainWindow", "3", 0));
+        pushButton_six->setText(QApplication::translate("MainWindow", "6", 0));
+        pushButton_nine->setText(QApplication::translate("MainWindow", "9", 0));
+        pushButton_mode->setText(QApplication::translate("MainWindow", "Mode", 0));
+        pushButton_info->setText(QApplication::translate("MainWindow", "info", 0));
+        pushButton_Lens_shift->setText(QApplication::translate("MainWindow", "Lens shift", 0));
+        pushButton_Contrast->setText(QApplication::translate("MainWindow", "Contrast", 0));
+        pushButton_zoom->setText(QApplication::translate("MainWindow", "Zoom", 0));
+        groupBox_Lens_V->setTitle(QApplication::translate("MainWindow", "Lens V", 0));
+        pushButton_left_V->setText(QApplication::translate("MainWindow", "left", 0));
+        pushButton_right_V->setText(QApplication::translate("MainWindow", "right", 0));
+        groupBox_zoom->setTitle(QApplication::translate("MainWindow", "Zoom", 0));
+        pushButton_plus_zoom->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_minus_zoom->setText(QApplication::translate("MainWindow", "-", 0));
+        groupBox_focus->setTitle(QApplication::translate("MainWindow", "Focus", 0));
+        pushButton_plus_focus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_minus_focus->setText(QApplication::translate("MainWindow", "-", 0));
+        groupBox_Lens_H->setTitle(QApplication::translate("MainWindow", "Lens H", 0));
+        pushButton_left_H->setText(QApplication::translate("MainWindow", "left", 0));
+        pushButton_right_H->setText(QApplication::translate("MainWindow", "right", 0));
+        groupBox_H_Keystone->setTitle(QApplication::translate("MainWindow", "H Keystone", 0));
+        pushButton_H_Keystone_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_H_Keystone_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        groupBox_12V_trigger->setTitle(QApplication::translate("MainWindow", "12V trigger", 0));
+        pushButton_12V_trigger_On->setText(QApplication::translate("MainWindow", "On", 0));
+        pushButton_12V_trigger_Off->setText(QApplication::translate("MainWindow", "Off", 0));
+        pushButton_PIP->setText(QApplication::translate("MainWindow", "PIP", 0));
+        pushButton_Gamma->setText(QApplication::translate("MainWindow", "Gamma", 0));
+        pushButton_Component->setText(QApplication::translate("MainWindow", "Component", 0));
+        pushButton_BNC->setText(QApplication::translate("MainWindow", "BNC", 0));
+        pushButton_DB->setText(QApplication::translate("MainWindow", "DB", 0));
+        pushButton_Sleep_timer->setText(QApplication::translate("MainWindow", "Sleep Timer", 0));
+        pushButton_Home->setText(QApplication::translate("MainWindow", "Home", 0));
+        pushButton_remote_control_simulation_reset->setText(QApplication::translate("MainWindow", "Reset control ", 0));
+        pushButton_Return->setText(QApplication::translate("MainWindow", "Return", 0));
+        pushButton_Pattern->setText(QApplication::translate("MainWindow", "Pattern", 0));
+        pushButton_exit->setText(QApplication::translate("MainWindow", "Exit", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_34), QApplication::translate("MainWindow", "Remote Control simulation", 0));
+        label_info_IP_Adress->setText(QApplication::translate("MainWindow", "IP Adress:", 0));
+        label_info_Resolution->setText(QApplication::translate("MainWindow", "Resolution:", 0));
+        groupBox_info_lamp_hour->setTitle(QApplication::translate("MainWindow", "Lamp Hours", 0));
+        label_info_bright->setText(QApplication::translate("MainWindow", "Bright:", 0));
+        lineEdit_info_bright->setText(QApplication::translate("MainWindow", "0", 0));
+        label_info_eco->setText(QApplication::translate("MainWindow", "Eco:", 0));
+        lineEdit_info_eco->setText(QApplication::translate("MainWindow", "0", 0));
+        label_info_dinamic->setText(QApplication::translate("MainWindow", "Dynamic:", 0));
+        lineEdit_info_dinamic->setText(QApplication::translate("MainWindow", "0", 0));
+        label_info_eco_plus->setText(QApplication::translate("MainWindow", "Eco+:", 0));
+        lineEdit_info_eco_plus->setText(QApplication::translate("MainWindow", "0", 0));
+        label_info_total->setText(QApplication::translate("MainWindow", "Total:", 0));
+        lineEdit_info_total->setText(QApplication::translate("MainWindow", "5", 0));
+        label_info_lamp_1_hour->setText(QApplication::translate("MainWindow", "Lamp 1 Hour:", 0));
+        lineEdit_info_lamp_1_hour->setText(QApplication::translate("MainWindow", "3", 0));
+        label_info_lamp_2_hour->setText(QApplication::translate("MainWindow", "Lamp 2 Hour:", 0));
+        lineEdit_info_lamp_2_hour->setText(QApplication::translate("MainWindow", "2", 0));
+        lineEdit_info_Refresh_Rate->setText(QApplication::translate("MainWindow", "60Hz", 0));
+        label_info_serial_number->setText(QApplication::translate("MainWindow", "Serial Number:", 0));
         lineEdit_info_IP_Adress->setText(QString());
-        lineEdit_info_Resolution->setText(QApplication::translate("MainWindow", "1920x1080", Q_NULLPTR));
-        label_info_Network_status->setText(QApplication::translate("MainWindow", "Network Status:", Q_NULLPTR));
+        lineEdit_info_Resolution->setText(QApplication::translate("MainWindow", "1920x1080", 0));
+        label_info_Network_status->setText(QApplication::translate("MainWindow", "Network Status:", 0));
         combobox_info_Network_status->clear();
         combobox_info_Network_status->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Disconnected", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Connected", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Disconnected", 0)
+         << QApplication::translate("MainWindow", "Connected", 0)
         );
-        label_info_Power_Mode->setText(QApplication::translate("MainWindow", "Power mode(standby)", Q_NULLPTR));
+        label_info_Power_Mode->setText(QApplication::translate("MainWindow", "Power mode(standby)", 0));
         combobox_info_Power_Mode->clear();
         combobox_info_Power_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Eco.", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Active", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Eco.", 0)
+         << QApplication::translate("MainWindow", "Active", 0)
         );
-        label_Info_Projector_id->setText(QApplication::translate("MainWindow", "Projector ID:", Q_NULLPTR));
+        label_Info_Projector_id->setText(QApplication::translate("MainWindow", "Projector ID:", 0));
         label_var_Info_Projector_id->setText(QString());
-        label_info_Current_Input_Sourse->setText(QApplication::translate("MainWindow", "Current Input Source:", Q_NULLPTR));
-        label_info_Refresh_Rate->setText(QApplication::translate("MainWindow", "Refresh Rate:", Q_NULLPTR));
-        label_info_Display_Mode->setText(QApplication::translate("MainWindow", "Display Mode:", Q_NULLPTR));
+        label_info_Current_Input_Sourse->setText(QApplication::translate("MainWindow", "Current Input Source:", 0));
+        label_info_Refresh_Rate->setText(QApplication::translate("MainWindow", "Refresh Rate:", 0));
+        label_info_Display_Mode->setText(QApplication::translate("MainWindow", "Display Mode:", 0));
         lineEdit_info_Display_Mode->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_16), QApplication::translate("MainWindow", "\320\237\321\200\320\276\321\201\320\274\320\276\321\202\321\200 \320\264\320\260\320\275\320\275\321\213\321\205", Q_NULLPTR));
-        label_Image_Setting_Display_Gamma_Film->setText(QApplication::translate("MainWindow", "Film:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_16), QApplication::translate("MainWindow", "\320\237\321\200\320\276\321\201\320\274\320\276\321\202\321\200 \320\264\320\260\320\275\320\275\321\213\321\205", 0));
+        label_Image_Setting_Display_Gamma_Film->setText(QApplication::translate("MainWindow", "Film:", 0));
         label_var_Image_Setting_Display_Gamma_Film->setText(QString());
-        label_Image_Setting_Display_Gamma_Video->setText(QApplication::translate("MainWindow", "Video:", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_Video->setText(QApplication::translate("MainWindow", "Video:", 0));
         label_var_Image_Setting_Display_Gamma_Video->setText(QString());
-        label_Image_Setting_Display_Gamma_1_8->setText(QApplication::translate("MainWindow", "1.8:", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_1_8->setText(QApplication::translate("MainWindow", "1.8:", 0));
         label_var_Image_Setting_Display_Gamma_1_8->setText(QString());
-        label_Image_Setting_Display_Gamma_Graphics->setText(QApplication::translate("MainWindow", "Graphics:", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_Graphics->setText(QApplication::translate("MainWindow", "Graphics:", 0));
         label_var_Image_Setting_Display_Gamma_Graphics->setText(QString());
-        label_Image_Setting_Display_Gamma_Standart->setText(QApplication::translate("MainWindow", "Standard(2.2):", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_Standart->setText(QApplication::translate("MainWindow", "Standard(2.2):", 0));
         label_var_Image_Setting_Display_Gamma_Standart->setText(QString());
-        label_Image_Setting_Display_Gamma_2_0->setText(QApplication::translate("MainWindow", "2.0:", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_2_0->setText(QApplication::translate("MainWindow", "2.0:", 0));
         label_var_Image_Setting_Display_Gamma_2_0->setText(QString());
-        label_Image_Setting_Display_Gamma_2_4->setText(QApplication::translate("MainWindow", "2.4:", Q_NULLPTR));
+        label_Image_Setting_Display_Gamma_2_4->setText(QApplication::translate("MainWindow", "2.4:", 0));
         label_var_Image_Setting_Display_Gamma_2_4->setText(QString());
-        Image_Setting_Dynamic_Contrast->setText(QApplication::translate("MainWindow", "Dynamic Contrast:", Q_NULLPTR));
+        Image_Setting_Dynamic_Contrast->setText(QApplication::translate("MainWindow", "Dynamic Contrast:", 0));
         comboBox_Image_Setting_Dynamic_Contrast->clear();
         comboBox_Image_Setting_Dynamic_Contrast->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        Image_Setting_Gaming_mode->setText(QApplication::translate("MainWindow", "Gaming mode:", Q_NULLPTR));
+        Image_Setting_Gaming_mode->setText(QApplication::translate("MainWindow", "Gaming mode:", 0));
         comboBox_Image_Setting_Gaming_mode->clear();
         comboBox_Image_Setting_Gaming_mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Image_Setting_Lens_Iris->setText(QApplication::translate("MainWindow", "Lens Iris", Q_NULLPTR));
+        label_Image_Setting_Lens_Iris->setText(QApplication::translate("MainWindow", "Lens Iris", 0));
         label_var_Image_Setting_Lens_Iris->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_48), QApplication::translate("MainWindow", "Gamma", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Temperature_2->setText(QApplication::translate("MainWindow", "Color Gamut:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_48), QApplication::translate("MainWindow", "Gamma", 0));
+        label_Image_Setting_Color_Setting_Color_Temperature_2->setText(QApplication::translate("MainWindow", "Color Gamut:", 0));
         comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->clear();
         comboBox_Image_Setting_Color_Setting_Color_Temperature_2_Golot_Gamult->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Native", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "REC2020", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "ADOBE", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DLP-C", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDTV", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "EBU", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "SMPTE-C", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "D83", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Presentation", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Cinema", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Game", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Native", 0)
+         << QApplication::translate("MainWindow", "REC2020", 0)
+         << QApplication::translate("MainWindow", "ADOBE", 0)
+         << QApplication::translate("MainWindow", "DLP-C", 0)
+         << QApplication::translate("MainWindow", "HDTV", 0)
+         << QApplication::translate("MainWindow", "EBU", 0)
+         << QApplication::translate("MainWindow", "SMPTE-C", 0)
+         << QApplication::translate("MainWindow", "D83", 0)
+         << QApplication::translate("MainWindow", "Presentation", 0)
+         << QApplication::translate("MainWindow", "Cinema", 0)
+         << QApplication::translate("MainWindow", "Game", 0)
         );
-        groupBox_Image_Setting_Color_Settin_Color_Matching_2->setTitle(QApplication::translate("MainWindow", "CMS", Q_NULLPTR));
-        groupBox_Image_Setting_Color_Setting_CMS_G->setTitle(QApplication::translate("MainWindow", "G", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_G->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Settin_Color_Matching_2->setTitle(QApplication::translate("MainWindow", "CMS", 0));
+        groupBox_Image_Setting_Color_Setting_CMS_G->setTitle(QApplication::translate("MainWindow", "G", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_G->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_G->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_G->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_G->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_G->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_G->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_G->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_G->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_R->setTitle(QApplication::translate("MainWindow", "R", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_R->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_R->setTitle(QApplication::translate("MainWindow", "R", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_R->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_R->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_R->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_R->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_R->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_R->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_R->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_R->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_C->setTitle(QApplication::translate("MainWindow", "C", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_C->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_C->setTitle(QApplication::translate("MainWindow", "C", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_C->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_C->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_C->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_C->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_C->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_C->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_C->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_C->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_Y->setTitle(QApplication::translate("MainWindow", "Y", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_Y->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_Y->setTitle(QApplication::translate("MainWindow", "Y", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_Y->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_Y->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_Y->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_Y->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_Y->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_Y->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_Y->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_Y->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_B->setTitle(QApplication::translate("MainWindow", "B", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_B->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_B->setTitle(QApplication::translate("MainWindow", "B", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_B->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_B->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_B->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_B->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_B->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_B->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_B->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_B->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_M->setTitle(QApplication::translate("MainWindow", "M", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_M->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_M->setTitle(QApplication::translate("MainWindow", "M", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_M->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_M->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_M->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_M->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_M->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_M->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_M->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_M->setText(QString());
-        groupBox_Image_Setting_Color_Setting_CMS_W->setTitle(QApplication::translate("MainWindow", "W", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_CMS_x_offset_W->setText(QApplication::translate("MainWindow", "x offset:", Q_NULLPTR));
+        groupBox_Image_Setting_Color_Setting_CMS_W->setTitle(QApplication::translate("MainWindow", "W", 0));
+        label_Image_Setting_Color_Setting_CMS_x_offset_W->setText(QApplication::translate("MainWindow", "x offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_x_offset_W->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_y_offset_W->setText(QApplication::translate("MainWindow", "y offset:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_y_offset_W->setText(QApplication::translate("MainWindow", "y offset:", 0));
         label_var_Image_Setting_Color_Setting_CMS_y_offset_W->setText(QString());
-        label_Image_Setting_Color_Setting_CMS_Brightness_W->setText(QApplication::translate("MainWindow", "Brightness:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_CMS_Brightness_W->setText(QApplication::translate("MainWindow", "Brightness:", 0));
         label_var_Image_Setting_Color_Setting_CMS_Brightness_W->setText(QString());
-        pushButton_Image_Setting_Color_Setting_CMS_reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_50), QApplication::translate("MainWindow", "Color Setting 2", Q_NULLPTR));
-        groupBox_6->setTitle(QApplication::translate("MainWindow", "Color Matching", Q_NULLPTR));
-        checkBox_Image_Setting_Color_Setting_Color_Matching_disable->setText(QApplication::translate("MainWindow", "Disable", Q_NULLPTR));
-        checkBox_Image_Setting_Color_Setting_Color_Matching_enable->setText(QApplication::translate("MainWindow", "Enable", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setText(QApplication::translate("MainWindow", "Auto Test Pattern", Q_NULLPTR));
+        pushButton_Image_Setting_Color_Setting_CMS_reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_50), QApplication::translate("MainWindow", "Color Setting 2", 0));
+        groupBox_6->setTitle(QApplication::translate("MainWindow", "Color Matching", 0));
+        checkBox_Image_Setting_Color_Setting_Color_Matching_disable->setText(QApplication::translate("MainWindow", "Disable", 0));
+        checkBox_Image_Setting_Color_Setting_Color_Matching_enable->setText(QApplication::translate("MainWindow", "Enable", 0));
+        label_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->setText(QApplication::translate("MainWindow", "Auto Test Pattern", 0));
         comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->clear();
         comboBox_Image_Setting_Color_Setting_Color_Matching_Auto_Test_Pattern->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red->setText(QApplication::translate("MainWindow", "Red Part of Red:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red->setText(QApplication::translate("MainWindow", "Red Part of Red:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Red->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red->setText(QApplication::translate("MainWindow", "Green Part of Red:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red->setText(QApplication::translate("MainWindow", "Green Part of Red:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Red->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red->setText(QApplication::translate("MainWindow", "Blue Part of Red:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red->setText(QApplication::translate("MainWindow", "Blue Part of Red:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Red->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green->setText(QApplication::translate("MainWindow", "Green Part of Green:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green->setText(QApplication::translate("MainWindow", "Green Part of Green:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Green->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green->setText(QApplication::translate("MainWindow", "Red Part of Green:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green->setText(QApplication::translate("MainWindow", "Red Part of Green:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Green->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green->setText(QApplication::translate("MainWindow", "Blue Part of Green:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green->setText(QApplication::translate("MainWindow", "Blue Part of Green:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Green->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue->setText(QApplication::translate("MainWindow", "Blue Part of Blue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue->setText(QApplication::translate("MainWindow", "Blue Part of Blue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_Blue->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue->setText(QApplication::translate("MainWindow", "Red Part of Blue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue->setText(QApplication::translate("MainWindow", "Red Part of Blue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_Blue->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue->setText(QApplication::translate("MainWindow", "Green Part of Blue:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue->setText(QApplication::translate("MainWindow", "Green Part of Blue:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_Blue->setText(QString());
-        label_Image_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White->setText(QApplication::translate("MainWindow", "Red Part of White:", Q_NULLPTR));
+        label_Image_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White->setText(QApplication::translate("MainWindow", "Red Part of White:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Red_Part_of_White->setText(QString());
         label_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White->setText(QApplication::translate("MainWindow", "Green Part of\n"
-"White:", Q_NULLPTR));
+"White:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Green_Part_of_White->setText(QString());
-        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White->setText(QApplication::translate("MainWindow", "Blue Part of White:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White->setText(QApplication::translate("MainWindow", "Blue Part of White:", 0));
         label_var_Image_Setting_Color_Setting_Color_Matching_Blue_Part_of_White->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_23), QApplication::translate("MainWindow", "Color Setting 3", Q_NULLPTR));
-        label_Image_Setting_Color_Setting_Saturation->setText(QApplication::translate("MainWindow", "Saturation:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_23), QApplication::translate("MainWindow", "Color Setting 3", 0));
+        label_Image_Setting_Color_Setting_Saturation->setText(QApplication::translate("MainWindow", "Saturation:", 0));
         label_var_Image_Setting_Color_Setting_Saturation->setText(QString());
-        label_Image_Setting_Color_Setting_White_level->setText(QApplication::translate("MainWindow", "White Level:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_White_level->setText(QApplication::translate("MainWindow", "White Level:", 0));
         label_var_Image_Setting_Color_Setting_White_level->setText(QString());
-        label_Image_Setting_Color_Setting_IRE->setText(QApplication::translate("MainWindow", "IRE:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_IRE->setText(QApplication::translate("MainWindow", "IRE:", 0));
         comboBox_Image_Setting_Color_Setting_IRE->clear();
         comboBox_Image_Setting_Color_Setting_IRE->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "0", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "7.5", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "0", 0)
+         << QApplication::translate("MainWindow", "7.5", 0)
         );
-        label_Image_Setting_Color_Setting_RGB_Channel_pixelwork->setText(QApplication::translate("MainWindow", "RGB Channel [w/pixelwork]:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_RGB_Channel_pixelwork->setText(QApplication::translate("MainWindow", "RGB Channel [w/pixelwork]:", 0));
         comboBox_Image_Setting_Color_Setting_RGB_Channel_pixelwork->clear();
         comboBox_Image_Setting_Color_Setting_RGB_Channel_pixelwork->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Normal", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Red", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Green", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Blue", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Normal", 0)
+         << QApplication::translate("MainWindow", "Red", 0)
+         << QApplication::translate("MainWindow", "Green", 0)
+         << QApplication::translate("MainWindow", "Blue", 0)
         );
-        label_Image_Setting_Color_Setting_Black_level->setText(QApplication::translate("MainWindow", "Black Level:", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Black_level->setText(QApplication::translate("MainWindow", "Black Level:", 0));
         label_var_Image_Setting_Color_Setting_Black_level->setText(QString());
-        label_Image_Setting_Color_Setting_Hue->setText(QApplication::translate("MainWindow", "Hue", Q_NULLPTR));
+        label_Image_Setting_Color_Setting_Hue->setText(QApplication::translate("MainWindow", "Hue", 0));
         label_var_Image_Setting_Color_Setting_Hue->setText(QString());
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_24), QApplication::translate("MainWindow", "Color Setting 4", Q_NULLPTR));
-        label_Image_Setting_Image_Setting_Brightness_Mode_Power->setText(QApplication::translate("MainWindow", "Power:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_24), QApplication::translate("MainWindow", "Color Setting 4", 0));
+        label_Image_Setting_Image_Setting_Brightness_Mode_Power->setText(QApplication::translate("MainWindow", "Power:", 0));
         comboBox_Image_Setting_Image_Setting_Brightness_Mode_Power->clear();
         comboBox_Image_Setting_Image_Setting_Brightness_Mode_Power->insertItems(0, QStringList()
          << QString()
-         << QApplication::translate("MainWindow", "100%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "95%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "90%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "85%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "80%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "75%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "70%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "65%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "60%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "55%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "50%", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "100%", 0)
+         << QApplication::translate("MainWindow", "95%", 0)
+         << QApplication::translate("MainWindow", "90%", 0)
+         << QApplication::translate("MainWindow", "85%", 0)
+         << QApplication::translate("MainWindow", "80%", 0)
+         << QApplication::translate("MainWindow", "75%", 0)
+         << QApplication::translate("MainWindow", "70%", 0)
+         << QApplication::translate("MainWindow", "65%", 0)
+         << QApplication::translate("MainWindow", "60%", 0)
+         << QApplication::translate("MainWindow", "55%", 0)
+         << QApplication::translate("MainWindow", "50%", 0)
         );
-        label_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack->setText(QApplication::translate("MainWindow", "DynamicBlack:", Q_NULLPTR));
+        label_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack->setText(QApplication::translate("MainWindow", "DynamicBlack:", 0));
         comboBox_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack->clear();
         comboBox_Image_Setting_Image_Setting_Brightness_Mode_DynamicBlack->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "DynamicBlack Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DynamicBlack 1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DynamicBlack 2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DynamicBlack 3", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DynamicBlack Off", 0)
+         << QApplication::translate("MainWindow", "DynamicBlack 1", 0)
+         << QApplication::translate("MainWindow", "DynamicBlack 2", 0)
+         << QApplication::translate("MainWindow", "DynamicBlack 3", 0)
         );
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_26), QApplication::translate("MainWindow", "Brightness Mode", Q_NULLPTR));
-        groupBox_8->setTitle(QApplication::translate("MainWindow", "UltraDetail", Q_NULLPTR));
-        label_Image_Setting_PureEngine_UltraDetail->setText(QApplication::translate("MainWindow", "UltraDetail:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_26), QApplication::translate("MainWindow", "Brightness Mode", 0));
+        groupBox_8->setTitle(QApplication::translate("MainWindow", "UltraDetail", 0));
+        label_Image_Setting_PureEngine_UltraDetail->setText(QApplication::translate("MainWindow", "UltraDetail:", 0));
         comboBox_Image_Setting_PureEngine_UltraDetail->clear();
         comboBox_Image_Setting_PureEngine_UltraDetail->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HD+", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "User", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
+         << QApplication::translate("MainWindow", "HD+", 0)
+         << QApplication::translate("MainWindow", "User", 0)
+         << QApplication::translate("MainWindow", "1", 0)
+         << QApplication::translate("MainWindow", "2", 0)
+         << QApplication::translate("MainWindow", "3", 0)
         );
-        label_Image_Setting_PureEngine_UltraDetail_User->setText(QApplication::translate("MainWindow", "User:", Q_NULLPTR));
+        label_Image_Setting_PureEngine_UltraDetail_User->setText(QApplication::translate("MainWindow", "User:", 0));
         comboBox_Image_Setting_PureEngine_UltraDetail_User->clear();
         comboBox_Image_Setting_PureEngine_UltraDetail_User->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "0%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "10%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "20%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "30%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "40%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "50%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "60%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "70%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "80%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "90%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "100%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "110%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "120%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "130%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "140%", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "150%", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "0%", 0)
+         << QApplication::translate("MainWindow", "10%", 0)
+         << QApplication::translate("MainWindow", "20%", 0)
+         << QApplication::translate("MainWindow", "30%", 0)
+         << QApplication::translate("MainWindow", "40%", 0)
+         << QApplication::translate("MainWindow", "50%", 0)
+         << QApplication::translate("MainWindow", "60%", 0)
+         << QApplication::translate("MainWindow", "70%", 0)
+         << QApplication::translate("MainWindow", "80%", 0)
+         << QApplication::translate("MainWindow", "90%", 0)
+         << QApplication::translate("MainWindow", "100%", 0)
+         << QApplication::translate("MainWindow", "110%", 0)
+         << QApplication::translate("MainWindow", "120%", 0)
+         << QApplication::translate("MainWindow", "130%", 0)
+         << QApplication::translate("MainWindow", "140%", 0)
+         << QApplication::translate("MainWindow", "150%", 0)
         );
-        label_Image_Setting_PureEngine_PureColor->setText(QApplication::translate("MainWindow", "PureColor:", Q_NULLPTR));
+        label_Image_Setting_PureEngine_PureColor->setText(QApplication::translate("MainWindow", "PureColor:", 0));
         comboBox_Image_Setting_PureEngine_PureColor->clear();
         comboBox_Image_Setting_PureEngine_PureColor->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "4", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "5", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "1", 0)
+         << QApplication::translate("MainWindow", "2", 0)
+         << QApplication::translate("MainWindow", "3", 0)
+         << QApplication::translate("MainWindow", "4", 0)
+         << QApplication::translate("MainWindow", "5", 0)
         );
-        label_Image_Setting_PureEngine_PureMotion->setText(QApplication::translate("MainWindow", "PureMotion:", Q_NULLPTR));
+        label_Image_Setting_PureEngine_PureMotion->setText(QApplication::translate("MainWindow", "PureMotion:", 0));
         comboBox_Image_Setting_PureEngine_PureMotion->clear();
         comboBox_Image_Setting_PureEngine_PureMotion->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "1", 0)
+         << QApplication::translate("MainWindow", "2", 0)
+         << QApplication::translate("MainWindow", "3", 0)
         );
-        label_Image_Setting_Brightness_Mode_6->setText(QApplication::translate("MainWindow", "PureMotion Demo:", Q_NULLPTR));
+        label_Image_Setting_Brightness_Mode_6->setText(QApplication::translate("MainWindow", "PureMotion Demo:", 0));
         comboBox_Image_Setting_PureEngine_PureMotion_Demo->clear();
         comboBox_Image_Setting_PureEngine_PureMotion_Demo->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "H Split", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "V Split", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "H Split", 0)
+         << QApplication::translate("MainWindow", "V Split", 0)
         );
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_27), QApplication::translate("MainWindow", "PureEngine", Q_NULLPTR));
-        label_Image_Setting_Darbee_Setting_Mode->setText(QApplication::translate("MainWindow", "Mode:", Q_NULLPTR));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_27), QApplication::translate("MainWindow", "PureEngine", 0));
+        label_Image_Setting_Darbee_Setting_Mode->setText(QApplication::translate("MainWindow", "Mode:", 0));
         comboBox_Image_Setting_Darbee_Setting_Mode->clear();
         comboBox_Image_Setting_Darbee_Setting_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Hi-Def", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Gaming", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Full Pop", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Hi-Def", 0)
+         << QApplication::translate("MainWindow", "Gaming", 0)
+         << QApplication::translate("MainWindow", "Full Pop", 0)
+         << QApplication::translate("MainWindow", "Off", 0)
         );
-        label_Image_Setting_PureEngine_UltraDetail_3->setText(QApplication::translate("MainWindow", "Demo Mode:", Q_NULLPTR));
+        label_Image_Setting_PureEngine_UltraDetail_3->setText(QApplication::translate("MainWindow", "Demo Mode:", 0));
         comboBox_Image_Setting_Darbee_Setting_Demo_Mode->clear();
         comboBox_Image_Setting_Darbee_Setting_Demo_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Split Screen", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Swipe Screen", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "Split Screen", 0)
+         << QApplication::translate("MainWindow", "Swipe Screen", 0)
         );
-        label_Image_Setting_Darbee_Setting_Level->setText(QApplication::translate("MainWindow", "Level %:", Q_NULLPTR));
+        label_Image_Setting_Darbee_Setting_Level->setText(QApplication::translate("MainWindow", "Level %:", 0));
         label_var_Image_Setting_Darbee_Setting_Level->setText(QString());
-        pushButton_Image_Setting_Darbee_Setting_reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_28), QApplication::translate("MainWindow", "Darbee Settings", Q_NULLPTR));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QApplication::translate("MainWindow", "\320\235\320\220\320\241\320\242\320\240\320\236\320\231\320\232\320\230 \320\237\320\240\320\236\320\225\320\232\320\242\320\236\320\240\320\220", Q_NULLPTR));
-        label_Geometric_Correction_H_keystone->setText(QApplication::translate("MainWindow", "H Keystone:", Q_NULLPTR));
+        pushButton_Image_Setting_Darbee_Setting_reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        tabWidget_4->setTabText(tabWidget_4->indexOf(tab_28), QApplication::translate("MainWindow", "Darbee Settings", 0));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_4), QApplication::translate("MainWindow", "\320\235\320\220\320\241\320\242\320\240\320\236\320\231\320\232\320\230 \320\237\320\240\320\236\320\225\320\232\320\242\320\236\320\240\320\220", 0));
+        label_Geometric_Correction_H_keystone->setText(QApplication::translate("MainWindow", "H Keystone:", 0));
         label_var_Geometric_Correction_H_keystone->setText(QString());
-        label_Geometric_Correction_V_keystone->setText(QApplication::translate("MainWindow", "V Keystone:", Q_NULLPTR));
+        label_Geometric_Correction_V_keystone->setText(QApplication::translate("MainWindow", "V Keystone:", 0));
         label_var_Geometric_Correction_V_keystone->setText(QString());
-        label_3D_Mode_2->setText(QApplication::translate("MainWindow", "Auto Keystone:", Q_NULLPTR));
+        label_3D_Mode_2->setText(QApplication::translate("MainWindow", "Auto Keystone:", 0));
         comboBox_Geometric_Correction_Auto_Keystone->clear();
         comboBox_Geometric_Correction_Auto_Keystone->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        pushButton_Geometric_Correction_Reset->setText(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        label_Edge_Zoom_H_Zoom->setText(QApplication::translate("MainWindow", "H Zoom:", Q_NULLPTR));
+        pushButton_Geometric_Correction_Reset->setText(QApplication::translate("MainWindow", "Reset", 0));
+        label_Edge_Zoom_H_Zoom->setText(QApplication::translate("MainWindow", "H Zoom:", 0));
         label_var_H_Zoom->setText(QString());
-        label_Edge_V_Zoom->setText(QApplication::translate("MainWindow", "V Zoom:", Q_NULLPTR));
+        label_Edge_V_Zoom->setText(QApplication::translate("MainWindow", "V Zoom:", 0));
         label_var_V_Zoom->setText(QString());
-        label_H_Keystone->setText(QApplication::translate("MainWindow", "H Keystone:", Q_NULLPTR));
+        label_H_Keystone->setText(QApplication::translate("MainWindow", "H Keystone:", 0));
         label_var_H_Keystone->setText(QString());
-        label_V_Keystone->setText(QApplication::translate("MainWindow", "V Keystone:", Q_NULLPTR));
+        label_V_Keystone->setText(QApplication::translate("MainWindow", "V Keystone:", 0));
         label_var_V_Keystone->setText(QString());
-        pushButton_PIP_PBP_Swap->setText(QApplication::translate("MainWindow", "Swap", Q_NULLPTR));
-        label_PIP_PBP_Screen->setText(QApplication::translate("MainWindow", "Screen:", Q_NULLPTR));
+        pushButton_PIP_PBP_Swap->setText(QApplication::translate("MainWindow", "Swap", 0));
+        label_PIP_PBP_Screen->setText(QApplication::translate("MainWindow", "Screen:", 0));
         comboBox_PIP_PBP_Screen->clear();
         comboBox_PIP_PBP_Screen->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PIP", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PBP", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "PIP", 0)
+         << QApplication::translate("MainWindow", "PBP", 0)
         );
-        label_PIP_PBP_Location->setText(QApplication::translate("MainWindow", "Location:", Q_NULLPTR));
+        label_PIP_PBP_Location->setText(QApplication::translate("MainWindow", "Location:", 0));
         comboBox_PIP_PBP_Location->clear();
         comboBox_PIP_PBP_Location->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Top Lef", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Top Right", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bottom Lef", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Bottom Right", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PBP, Main Lef", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PBP, Main Top", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PBP, Main Right", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "PBP, Main Bottom", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Top Lef", 0)
+         << QApplication::translate("MainWindow", "Top Right", 0)
+         << QApplication::translate("MainWindow", "Bottom Lef", 0)
+         << QApplication::translate("MainWindow", "Bottom Right", 0)
+         << QApplication::translate("MainWindow", "PBP, Main Lef", 0)
+         << QApplication::translate("MainWindow", "PBP, Main Top", 0)
+         << QApplication::translate("MainWindow", "PBP, Main Right", 0)
+         << QApplication::translate("MainWindow", "PBP, Main Bottom", 0)
         );
-        label_PIP_PBP_Size->setText(QApplication::translate("MainWindow", "Size:", Q_NULLPTR));
+        label_PIP_PBP_Size->setText(QApplication::translate("MainWindow", "Size:", 0));
         comboBox_PIP_PBP_Size->clear();
         comboBox_PIP_PBP_Size->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Large", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Medium", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Small", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Large", 0)
+         << QApplication::translate("MainWindow", "Medium", 0)
+         << QApplication::translate("MainWindow", "Small", 0)
         );
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_14), QApplication::translate("MainWindow", "Geometric Correction", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "\320\235\320\220\320\241\320\242\320\240\320\236\320\231\320\232\320\230 \320\237\320\240\320\236\320\225\320\232\320\242\320\236\320\240\320\220", Q_NULLPTR));
-        label_Treble->setText(QApplication::translate("MainWindow", "Treble", Q_NULLPTR));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_14), QApplication::translate("MainWindow", "Geometric Correction", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "\320\235\320\220\320\241\320\242\320\240\320\236\320\231\320\232\320\230 \320\237\320\240\320\236\320\225\320\232\320\242\320\236\320\240\320\220", 0));
+        label_Treble->setText(QApplication::translate("MainWindow", "Treble", 0));
         label_var_Treble->setText(QString());
-        label_Bass->setText(QApplication::translate("MainWindow", "Bass", Q_NULLPTR));
+        label_Bass->setText(QApplication::translate("MainWindow", "Bass", 0));
         label_var_Bass->setText(QString());
-        label_Mic_Volume->setText(QApplication::translate("MainWindow", "Mic Volume", Q_NULLPTR));
+        label_Mic_Volume->setText(QApplication::translate("MainWindow", "Mic Volume", 0));
         label_var_Mic_Volume->setText(QString());
-        label_Audio_Delay->setText(QApplication::translate("MainWindow", "Audio Delay", Q_NULLPTR));
+        label_Audio_Delay->setText(QApplication::translate("MainWindow", "Audio Delay", 0));
         comboBox_Audio_Delay->clear();
         comboBox_Audio_Delay->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "0ms", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "2ms", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "4ms", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "6ms", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "0ms", 0)
+         << QApplication::translate("MainWindow", "2ms", 0)
+         << QApplication::translate("MainWindow", "4ms", 0)
+         << QApplication::translate("MainWindow", "6ms", 0)
         );
-        label_Mic->setText(QApplication::translate("MainWindow", "Mic", Q_NULLPTR));
+        label_Mic->setText(QApplication::translate("MainWindow", "Mic", 0));
         comboBox_Mic->clear();
         comboBox_Mic->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_Audio_Out->setText(QApplication::translate("MainWindow", "Audio Out (Standby)", Q_NULLPTR));
+        label_Audio_Out->setText(QApplication::translate("MainWindow", "Audio Out (Standby)", 0));
         comboBox_Audio_Out->clear();
         comboBox_Audio_Out->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        label_SRS->setText(QApplication::translate("MainWindow", "SRS", Q_NULLPTR));
+        label_SRS->setText(QApplication::translate("MainWindow", "SRS", 0));
         comboBox_SRS->clear();
         comboBox_SRS->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "\320\222\321\213\320\272\320\273", 0)
+         << QApplication::translate("MainWindow", "\320\222\320\272\320\273", 0)
         );
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Audio", Q_NULLPTR));
-        label_25->setText(QApplication::translate("MainWindow", "Celing Moutn", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Audio", 0));
+        label_25->setText(QApplication::translate("MainWindow", "Celing Moutn", 0));
         Connection_mode_2->clear();
         Connection_mode_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "on", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "off", 0)
+         << QApplication::translate("MainWindow", "on", 0)
+         << QApplication::translate("MainWindow", "Auto", 0)
         );
-        label_26->setText(QApplication::translate("MainWindow", "Rear Projection", Q_NULLPTR));
+        label_26->setText(QApplication::translate("MainWindow", "Rear Projection", 0));
         Connection_mode_3->clear();
         Connection_mode_3->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "on", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "off", 0)
+         << QApplication::translate("MainWindow", "on", 0)
         );
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_19), QApplication::translate("MainWindow", "Projection", Q_NULLPTR));
-        _16_10->setText(QApplication::translate("MainWindow", "16:10", Q_NULLPTR));
-        _16_9->setText(QApplication::translate("MainWindow", "16:9", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_20), QApplication::translate("MainWindow", "Screen Type", Q_NULLPTR));
-        groupBox_10->setTitle(QApplication::translate("MainWindow", "Lamp Setting", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Lamp_Mode->setText(QApplication::translate("MainWindow", "Lamp Mode:", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_19), QApplication::translate("MainWindow", "Projection", 0));
+        _16_10->setText(QApplication::translate("MainWindow", "16:10", 0));
+        _16_9->setText(QApplication::translate("MainWindow", "16:9", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_20), QApplication::translate("MainWindow", "Screen Type", 0));
+        groupBox_10->setTitle(QApplication::translate("MainWindow", "Lamp Setting", 0));
+        label_Setup_Lamp_Setting_Lamp_Mode->setText(QApplication::translate("MainWindow", "Lamp Mode:", 0));
         combobox_Setup_Lamp_Setting_Lamp_Mode->clear();
         combobox_Setup_Lamp_Setting_Lamp_Mode->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Dual", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Relay", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Lamp 1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Lamp 2", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Dual", 0)
+         << QApplication::translate("MainWindow", "Relay", 0)
+         << QApplication::translate("MainWindow", "Lamp 1", 0)
+         << QApplication::translate("MainWindow", "Lamp 2", 0)
         );
-        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1->setText(QApplication::translate("MainWindow", "Lamp1 Reset", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2->setText(QApplication::translate("MainWindow", "Lamp2 Reset", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12->setText(QApplication::translate("MainWindow", "Reset Lamp1 and Lamp2", Q_NULLPTR));
-        groupBox_9->setTitle(QApplication::translate("MainWindow", "Filter Settings", Q_NULLPTR));
-        label_setup_filter_setting_filter_usage_hours->setText(QApplication::translate("MainWindow", "Filter Usage Hours", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Filter_Filter_Reminder->setText(QApplication::translate("MainWindow", "Filter Reminder:", Q_NULLPTR));
+        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp1->setText(QApplication::translate("MainWindow", "Lamp1 Reset", 0));
+        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp2->setText(QApplication::translate("MainWindow", "Lamp2 Reset", 0));
+        pushButton_Setup_Lamp_Setting_Lamp_reset_lamp12->setText(QApplication::translate("MainWindow", "Reset Lamp1 and Lamp2", 0));
+        groupBox_9->setTitle(QApplication::translate("MainWindow", "Filter Settings", 0));
+        label_setup_filter_setting_filter_usage_hours->setText(QApplication::translate("MainWindow", "Filter Usage Hours", 0));
+        label_Setup_Lamp_Setting_Filter_Filter_Reminder->setText(QApplication::translate("MainWindow", "Filter Reminder:", 0));
         combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->clear();
         combobox_Setup_Lamp_Setting_Filter_Filter_Reminder->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "300hr", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "500hr", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "800hr", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "1000hr", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "300hr", 0)
+         << QApplication::translate("MainWindow", "500hr", 0)
+         << QApplication::translate("MainWindow", "800hr", 0)
+         << QApplication::translate("MainWindow", "1000hr", 0)
         );
-        label_32->setText(QApplication::translate("MainWindow", "Optional Filter Installed:", Q_NULLPTR));
+        label_32->setText(QApplication::translate("MainWindow", "Optional Filter Installed:", 0));
         combobox_Setup_Lamp_Setting_Filter_Optional_Filter_Installed->clear();
         combobox_Setup_Lamp_Setting_Filter_Optional_Filter_Installed->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        pushButton_Setup_Lamp_Setting_Filter_reset->setText(QApplication::translate("MainWindow", "Filter Reminder", Q_NULLPTR));
-        groupBox_11->setTitle(QApplication::translate("MainWindow", "Lens Settings", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Lens_Function->setText(QApplication::translate("MainWindow", "Lens Function:", Q_NULLPTR));
+        pushButton_Setup_Lamp_Setting_Filter_reset->setText(QApplication::translate("MainWindow", "Filter Reminder", 0));
+        groupBox_11->setTitle(QApplication::translate("MainWindow", "Lens Settings", 0));
+        label_Setup_Lamp_Setting_Lens_Function->setText(QApplication::translate("MainWindow", "Lens Function:", 0));
         combobox_Setup_Lamp_Setting_Lens_Function->clear();
         combobox_Setup_Lamp_Setting_Lens_Function->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lock", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Unlock", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lock", 0)
+         << QApplication::translate("MainWindow", "Unlock", 0)
         );
-        label_Setup_Lamp_Setting_Lens_Shift->setText(QApplication::translate("MainWindow", "Lens Shift:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Lens_Shift->setText(QApplication::translate("MainWindow", "Lens Shift:", 0));
         combobox_Setup_Lamp_Setting_Lens_Shift->clear();
         combobox_Setup_Lamp_Setting_Lens_Shift->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Up", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Down", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Left", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Right", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Up", 0)
+         << QApplication::translate("MainWindow", "Down", 0)
+         << QApplication::translate("MainWindow", "Left", 0)
+         << QApplication::translate("MainWindow", "Right", 0)
         );
-        pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration->setText(QApplication::translate("MainWindow", "Lens Calibration", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Lens_Type->setText(QApplication::translate("MainWindow", "Lens Type:", Q_NULLPTR));
+        pushButton_Setup_Lamp_Setting_Lens_Lens_Calibration->setText(QApplication::translate("MainWindow", "Lens Calibration", 0));
+        label_Setup_Lamp_Setting_Lens_Type->setText(QApplication::translate("MainWindow", "Lens Type:", 0));
         combobox_Setup_Lamp_Setting_Lens_Type->clear();
         combobox_Setup_Lamp_Setting_Lens_Type->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "WT1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "WT2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "ST1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "TZ1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "TZ2", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "WT1", 0)
+         << QApplication::translate("MainWindow", "WT2", 0)
+         << QApplication::translate("MainWindow", "ST1", 0)
+         << QApplication::translate("MainWindow", "TZ1", 0)
+         << QApplication::translate("MainWindow", "TZ2", 0)
         );
-        label_Setup_Lamp_Setting_Lens_Function_2->setText(QApplication::translate("MainWindow", "Lens Function:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Lens_Function_2->setText(QApplication::translate("MainWindow", "Lens Function:", 0));
         combobox_Setup_Lamp_Setting_Lens_Function_2->clear();
         combobox_Setup_Lamp_Setting_Lens_Function_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lock", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Unlock", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lock", 0)
+         << QApplication::translate("MainWindow", "Unlock", 0)
         );
-        label_Setup_Lamp_Setting_Zoom->setText(QApplication::translate("MainWindow", "Zoom:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Zoom->setText(QApplication::translate("MainWindow", "Zoom:", 0));
         combobox_Setup_Lamp_Setting_Zoom->clear();
         combobox_Setup_Lamp_Setting_Zoom->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lock", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Unlock", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lock", 0)
+         << QApplication::translate("MainWindow", "Unlock", 0)
         );
-        label_Setup_Lamp_Setting_Focus->setText(QApplication::translate("MainWindow", "Focus:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Focus->setText(QApplication::translate("MainWindow", "Focus:", 0));
         combobox_Setup_Lamp_Setting_Focus->clear();
         combobox_Setup_Lamp_Setting_Focus->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lock", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Unlock", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lock", 0)
+         << QApplication::translate("MainWindow", "Unlock", 0)
         );
-        label_Setup_Lamp_Setting_Shift_2->setText(QApplication::translate("MainWindow", "Lens Shift:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Shift_2->setText(QApplication::translate("MainWindow", "Lens Shift:", 0));
         combobox_Setup_Lamp_Setting_Shift_2->clear();
         combobox_Setup_Lamp_Setting_Shift_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Lock", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Unlock", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Lock", 0)
+         << QApplication::translate("MainWindow", "Unlock", 0)
         );
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_21), QApplication::translate("MainWindow", " Settings", Q_NULLPTR));
-        groupBox_12->setTitle(QApplication::translate("MainWindow", "Lens Settings", Q_NULLPTR));
-        groupBox_Setup_Lamp_Setting_Lens_Zoom->setTitle(QApplication::translate("MainWindow", "Zoom", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lens_Zoom_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lens_Zoom_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        groupBox_Setup_Lamp_Setting_Lens_Focus->setTitle(QApplication::translate("MainWindow", "Focus", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lens_Focus_plus->setText(QApplication::translate("MainWindow", "+", Q_NULLPTR));
-        pushButton_Setup_Lamp_Setting_Lens_Focus_minus->setText(QApplication::translate("MainWindow", "-", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Lens_Shutter->setText(QApplication::translate("MainWindow", "Shutter:", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_21), QApplication::translate("MainWindow", " Settings", 0));
+        groupBox_12->setTitle(QApplication::translate("MainWindow", "Lens Settings", 0));
+        groupBox_Setup_Lamp_Setting_Lens_Zoom->setTitle(QApplication::translate("MainWindow", "Zoom", 0));
+        pushButton_Setup_Lamp_Setting_Lens_Zoom_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_Setup_Lamp_Setting_Lens_Zoom_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        groupBox_Setup_Lamp_Setting_Lens_Focus->setTitle(QApplication::translate("MainWindow", "Focus", 0));
+        pushButton_Setup_Lamp_Setting_Lens_Focus_plus->setText(QApplication::translate("MainWindow", "+", 0));
+        pushButton_Setup_Lamp_Setting_Lens_Focus_minus->setText(QApplication::translate("MainWindow", "-", 0));
+        label_Setup_Lamp_Setting_Lens_Shutter->setText(QApplication::translate("MainWindow", "Shutter:", 0));
         combobox_Setup_Lamp_Setting_Lens_Shutter->clear();
         combobox_Setup_Lamp_Setting_Lens_Shutter->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        groupBox_15->setTitle(QApplication::translate("MainWindow", "Lens Memory", Q_NULLPTR));
-        label_Setup_Lamp_Setting_Lens__Memory_Apply_Position->setText(QApplication::translate("MainWindow", "Apply Position:", Q_NULLPTR));
+        groupBox_15->setTitle(QApplication::translate("MainWindow", "Lens Memory", 0));
+        label_Setup_Lamp_Setting_Lens__Memory_Apply_Position->setText(QApplication::translate("MainWindow", "Apply Position:", 0));
         label_var_Setup_Lamp_Setting_Lens__Memory_Apply_Position->setText(QString());
-        label_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position->setText(QApplication::translate("MainWindow", "Save Current Position:", Q_NULLPTR));
+        label_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position->setText(QApplication::translate("MainWindow", "Save Current Position:", 0));
         label_var_Setup_Lamp_Setting_Lens__Memory_Save_Current_Position->setText(QString());
-        label_Setup_Lamp_Anamorphic_Lens->setText(QApplication::translate("MainWindow", "Anamorphic Lens:", Q_NULLPTR));
+        label_Setup_Lamp_Anamorphic_Lens->setText(QApplication::translate("MainWindow", "Anamorphic Lens:", 0));
         combobox_Setup_Lamp_Anamorphic_Lens->clear();
         combobox_Setup_Lamp_Anamorphic_Lens->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "None", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Fixed", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Movable", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "None", 0)
+         << QApplication::translate("MainWindow", "Fixed", 0)
+         << QApplication::translate("MainWindow", "Movable", 0)
         );
-        groupBox_16->setTitle(QApplication::translate("MainWindow", "Power Settings", Q_NULLPTR));
-        groupBox_13->setTitle(QApplication::translate("MainWindow", "Sleep Timer (min)", Q_NULLPTR));
-        label_Setup_Power_Setting_Always_On->setText(QApplication::translate("MainWindow", "Always On", Q_NULLPTR));
+        groupBox_16->setTitle(QApplication::translate("MainWindow", "Power Settings", 0));
+        groupBox_13->setTitle(QApplication::translate("MainWindow", "Sleep Timer (min)", 0));
+        label_Setup_Power_Setting_Always_On->setText(QApplication::translate("MainWindow", "Always On", 0));
         combobox_Setup_Power_Setting_Always_On->clear();
         combobox_Setup_Power_Setting_Always_On->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_29), QApplication::translate("MainWindow", "Setting 1", Q_NULLPTR));
-        groupBox_14->setTitle(QApplication::translate("MainWindow", "Power Settings", Q_NULLPTR));
-        label_Setup_Power_Setting_USB_Power->setText(QApplication::translate("MainWindow", "USB Power:", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_29), QApplication::translate("MainWindow", "Setting 1", 0));
+        groupBox_14->setTitle(QApplication::translate("MainWindow", "Power Settings", 0));
+        label_Setup_Power_Setting_USB_Power->setText(QApplication::translate("MainWindow", "USB Power:", 0));
         combobox_Setup_Power_Setting_USB_Power->clear();
         combobox_Setup_Power_Setting_USB_Power->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
+         << QApplication::translate("MainWindow", "Auto", 0)
         );
-        label_Setup_Power_Setting_Wireless->setText(QApplication::translate("MainWindow", "Wireless:", Q_NULLPTR));
+        label_Setup_Power_Setting_Wireless->setText(QApplication::translate("MainWindow", "Wireless:", 0));
         combobox_Setup_Power_Setting_Wireless->clear();
         combobox_Setup_Power_Setting_Wireless->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_30), QApplication::translate("MainWindow", "Setting 2", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_31), QApplication::translate("MainWindow", "Security", Q_NULLPTR));
-        label_Setup_12V_Trigger->setText(QApplication::translate("MainWindow", "12V Trigger:", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_30), QApplication::translate("MainWindow", "Setting 2", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_31), QApplication::translate("MainWindow", "Security", 0));
+        label_Setup_12V_Trigger->setText(QApplication::translate("MainWindow", "12V Trigger:", 0));
         combobox_Setup_12V_Trigger->clear();
         combobox_Setup_12V_Trigger->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        groupBox_57->setTitle(QApplication::translate("MainWindow", "12V Trigger B", Q_NULLPTR));
-        label_Setup_12V_Trigger_B->setText(QApplication::translate("MainWindow", "12V Trigger B:", Q_NULLPTR));
+        groupBox_57->setTitle(QApplication::translate("MainWindow", "12V Trigger B", 0));
+        label_Setup_12V_Trigger_B->setText(QApplication::translate("MainWindow", "12V Trigger B:", 0));
         combobox_Setup_12V_Trigger_B->clear();
         combobox_Setup_12V_Trigger_B->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto3D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto235", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Auto235_Subtitle", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
+         << QApplication::translate("MainWindow", "Auto3D", 0)
+         << QApplication::translate("MainWindow", "Auto235", 0)
+         << QApplication::translate("MainWindow", "Auto235_Subtitle", 0)
         );
-        groupBox_58->setTitle(QApplication::translate("MainWindow", "On, triggered format", Q_NULLPTR));
-        label_Setup_12V_Trigger_B_4_3->setText(QApplication::translate("MainWindow", "4:3", Q_NULLPTR));
+        groupBox_58->setTitle(QApplication::translate("MainWindow", "On, triggered format", 0));
+        label_Setup_12V_Trigger_B_4_3->setText(QApplication::translate("MainWindow", "4:3", 0));
         combobox_Setup_12V_Trigger_B_4_3->clear();
         combobox_Setup_12V_Trigger_B_4_3->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        label_Setup_12V_Trigger_B_16_9->setText(QApplication::translate("MainWindow", "16:9", Q_NULLPTR));
+        label_Setup_12V_Trigger_B_16_9->setText(QApplication::translate("MainWindow", "16:9", 0));
         combobox_Setup_12V_Trigger_B_16_9->clear();
         combobox_Setup_12V_Trigger_B_16_9->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        label_Setup_12V_Trigger_LTB->setText(QApplication::translate("MainWindow", "LTB", Q_NULLPTR));
+        label_Setup_12V_Trigger_LTB->setText(QApplication::translate("MainWindow", "LTB", 0));
         combobox_Setup_12V_Trigger_LTB->clear();
         combobox_Setup_12V_Trigger_LTB->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        label_Setup_12V_Trigger_Native->setText(QApplication::translate("MainWindow", "Native", Q_NULLPTR));
+        label_Setup_12V_Trigger_Native->setText(QApplication::translate("MainWindow", "Native", 0));
         combobox_Setup_12V_Trigger_Native->clear();
         combobox_Setup_12V_Trigger_Native->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "No", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Yes", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "No", 0)
+         << QApplication::translate("MainWindow", "Yes", 0)
         );
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_32), QApplication::translate("MainWindow", "Remote Settings", Q_NULLPTR));
-        groupBox_59->setTitle(QApplication::translate("MainWindow", "Options", Q_NULLPTR));
-        label_Options_Closed_Captioning->setText(QApplication::translate("MainWindow", "Closed Captioning:", Q_NULLPTR));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_32), QApplication::translate("MainWindow", "Remote Settings", 0));
+        groupBox_59->setTitle(QApplication::translate("MainWindow", "Options", 0));
+        label_Options_Closed_Captioning->setText(QApplication::translate("MainWindow", "Closed Captioning:", 0));
         combobox_Options_Closed_Captioning->clear();
         combobox_Options_Closed_Captioning->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "CC1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "CC2", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "CC1", 0)
+         << QApplication::translate("MainWindow", "CC2", 0)
         );
-        groupBox_60->setTitle(QApplication::translate("MainWindow", "Menu Settings", Q_NULLPTR));
-        label_Options_Menu_Transparency->setText(QApplication::translate("MainWindow", "Menu Transparency:", Q_NULLPTR));
+        groupBox_60->setTitle(QApplication::translate("MainWindow", "Menu Settings", 0));
+        label_Options_Menu_Transparency->setText(QApplication::translate("MainWindow", "Menu Transparency:", 0));
         label_var_Options_Menu_Transparency->setText(QString());
-        label_Options_Auto_Sourse->setText(QApplication::translate("MainWindow", "Auto Source:", Q_NULLPTR));
+        label_Options_Auto_Sourse->setText(QApplication::translate("MainWindow", "Auto Source:", 0));
         combobox_Options_Auto_Sourse->clear();
         combobox_Options_Auto_Sourse->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_Options_Inout_Sourse->setText(QApplication::translate("MainWindow", "Input Source:", Q_NULLPTR));
+        label_Options_Inout_Sourse->setText(QApplication::translate("MainWindow", "Input Source:", 0));
         combobox_Options_Inout_Sourse->clear();
         combobox_Options_Inout_Sourse->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "[no signal] ", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI-D", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI-A", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Component", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "S-Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DisplayPort", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDBaseT", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "BNC", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Wireless", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Flash Drive", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Network Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "USB Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Multimedia", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3G-SDI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Smart TV", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "[no signal] ", 0)
+         << QApplication::translate("MainWindow", "HDMI", 0)
+         << QApplication::translate("MainWindow", "HDMI1", 0)
+         << QApplication::translate("MainWindow", "HDMI/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI1/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI2", 0)
+         << QApplication::translate("MainWindow", "HDMI2/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI3", 0)
+         << QApplication::translate("MainWindow", "DVI-D", 0)
+         << QApplication::translate("MainWindow", "DVI-A", 0)
+         << QApplication::translate("MainWindow", "VGA", 0)
+         << QApplication::translate("MainWindow", "VGA1", 0)
+         << QApplication::translate("MainWindow", "VGA2", 0)
+         << QApplication::translate("MainWindow", "Component", 0)
+         << QApplication::translate("MainWindow", "S-Video", 0)
+         << QApplication::translate("MainWindow", "Video", 0)
+         << QApplication::translate("MainWindow", "DisplayPort", 0)
+         << QApplication::translate("MainWindow", "HDBaseT", 0)
+         << QApplication::translate("MainWindow", "BNC", 0)
+         << QApplication::translate("MainWindow", "Wireless", 0)
+         << QApplication::translate("MainWindow", "Flash Drive", 0)
+         << QApplication::translate("MainWindow", "Network Display", 0)
+         << QApplication::translate("MainWindow", "USB Display", 0)
+         << QApplication::translate("MainWindow", "Multimedia", 0)
+         << QApplication::translate("MainWindow", "3G-SDI", 0)
+         << QApplication::translate("MainWindow", "Smart TV", 0)
         );
-        label_Options_Input_Name->setText(QApplication::translate("MainWindow", "Input Name:", Q_NULLPTR));
+        label_Options_Input_Name->setText(QApplication::translate("MainWindow", "Input Name:", 0));
         combobox_Options_Input_Name->clear();
         combobox_Options_Input_Name->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "HDMI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI3", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI1/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDMI2/MHL", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DVI", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA2", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Compnent", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "S-Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Video", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "DisplayPort", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "HDBaseT", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "BNC", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Wireless", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Flash Drive", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Network Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "USB Display", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "Multimedia", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "3G-SDI", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "HDMI", 0)
+         << QApplication::translate("MainWindow", "HDMI1", 0)
+         << QApplication::translate("MainWindow", "HDMI2", 0)
+         << QApplication::translate("MainWindow", "HDMI3", 0)
+         << QApplication::translate("MainWindow", "HDMI/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI1/MHL", 0)
+         << QApplication::translate("MainWindow", "HDMI2/MHL", 0)
+         << QApplication::translate("MainWindow", "DVI", 0)
+         << QApplication::translate("MainWindow", "VGA", 0)
+         << QApplication::translate("MainWindow", "VGA1", 0)
+         << QApplication::translate("MainWindow", "VGA2", 0)
+         << QApplication::translate("MainWindow", "Compnent", 0)
+         << QApplication::translate("MainWindow", "S-Video", 0)
+         << QApplication::translate("MainWindow", "Video", 0)
+         << QApplication::translate("MainWindow", "DisplayPort", 0)
+         << QApplication::translate("MainWindow", "HDBaseT", 0)
+         << QApplication::translate("MainWindow", "BNC", 0)
+         << QApplication::translate("MainWindow", "Wireless", 0)
+         << QApplication::translate("MainWindow", "Flash Drive", 0)
+         << QApplication::translate("MainWindow", "Network Display", 0)
+         << QApplication::translate("MainWindow", "USB Display", 0)
+         << QApplication::translate("MainWindow", "Multimedia", 0)
+         << QApplication::translate("MainWindow", "3G-SDI", 0)
         );
-        pushButton_Option_reset_input_name->setText(QApplication::translate("MainWindow", "reset input name", Q_NULLPTR));
-        label_Options_VGA_Out->setText(QApplication::translate("MainWindow", "VGA Out:", Q_NULLPTR));
+        pushButton_Option_reset_input_name->setText(QApplication::translate("MainWindow", "reset input name", 0));
+        label_Options_VGA_Out->setText(QApplication::translate("MainWindow", "VGA Out:", 0));
         combobox_Options_VGA_Out->clear();
         combobox_Options_VGA_Out->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Auto", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA1", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "VGA2", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Auto", 0)
+         << QApplication::translate("MainWindow", "VGA1", 0)
+         << QApplication::translate("MainWindow", "VGA2", 0)
         );
-        groupBox_61->setTitle(QApplication::translate("MainWindow", "Options", Q_NULLPTR));
-        groupBox_HDBaseT_Control->setTitle(QApplication::translate("MainWindow", "HDBaseT Control", Q_NULLPTR));
-        label_HDBaseT_Control_Enternet->setText(QApplication::translate("MainWindow", "Ethernet:", Q_NULLPTR));
+        groupBox_61->setTitle(QApplication::translate("MainWindow", "Options", 0));
+        groupBox_HDBaseT_Control->setTitle(QApplication::translate("MainWindow", "HDBaseT Control", 0));
+        label_HDBaseT_Control_Enternet->setText(QApplication::translate("MainWindow", "Ethernet:", 0));
         combobox_HDBaseT_Control_Enternet->clear();
         combobox_HDBaseT_Control_Enternet->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        label_HDBaseT_Control_RS232->setText(QApplication::translate("MainWindow", "RS232:", Q_NULLPTR));
+        label_HDBaseT_Control_RS232->setText(QApplication::translate("MainWindow", "RS232:", 0));
         combobox_HDBaseT_Control_RS232->clear();
         combobox_HDBaseT_Control_RS232->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "Off", Q_NULLPTR)
-         << QApplication::translate("MainWindow", "On", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Off", 0)
+         << QApplication::translate("MainWindow", "On", 0)
         );
-        groupBox_62->setTitle(QApplication::translate("MainWindow", "Reset", Q_NULLPTR));
-        pushButton_reset_to_Default_password->setText(QApplication::translate("MainWindow", "Reset to Default with password", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_139), QApplication::translate("MainWindow", "Options", Q_NULLPTR));
-        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_9), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Setup", Q_NULLPTR));
-        label_Info_remote_code_Active->setText(QApplication::translate("MainWindow", "Remote Code(Active):", Q_NULLPTR));
+        groupBox_62->setTitle(QApplication::translate("MainWindow", "Reset", 0));
+        pushButton_reset_to_Default_password->setText(QApplication::translate("MainWindow", "Reset to Default with password", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_139), QApplication::translate("MainWindow", "Options", 0));
+        tabWidget_3->setTabText(tabWidget_3->indexOf(tab_9), QApplication::translate("MainWindow", "\320\241\321\202\321\200\320\260\320\275\320\270\321\206\320\260", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Setup", 0));
+        label_Info_remote_code_Active->setText(QApplication::translate("MainWindow", "Remote Code(Active):", 0));
         label_var_Info_remote_code_Active->setText(QString());
-        label_Info_remote_code->setText(QApplication::translate("MainWindow", "Remote Code:", Q_NULLPTR));
+        label_Info_remote_code->setText(QApplication::translate("MainWindow", "Remote Code:", 0));
         label_var_Info_remote_code->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_17), QApplication::translate("MainWindow", "Info", Q_NULLPTR));
-        menumodee->setTitle(QApplication::translate("MainWindow", "Mode", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_17), QApplication::translate("MainWindow", "Info", 0));
+        menumodee->setTitle(QApplication::translate("MainWindow", "Mode", 0));
     } // retranslateUi
 
 };

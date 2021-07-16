@@ -41,8 +41,10 @@ Tcp_server::Tcp_server(int port)
 {
     qDebug()<<"Port  "<<port;
     m_ptcpServer = new QTcpServer();
-    if (!m_ptcpServer->listen(QHostAddress::Any, port)) {
-    portt=port;
+       portt=port;
+    if (!m_ptcpServer->listen(QHostAddress::Any, port))
+    {
+
   qDebug()<<"error";
 
 
@@ -117,8 +119,12 @@ void Tcp_server::slotReadClient()
 
      QTcpSocket* pClientSocket = (QTcpSocket*)sender();
    ba= pClientSocket->readAll();
+   qDebug()<<"DDDDDDDDDDD"<<portt;
+
    if(portt==4352)
    {
+
+       qDebug()<<"DDDDDDDDDDD";
        emit command_s_ether_PJ(ba);
        return;
    }

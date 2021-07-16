@@ -7198,6 +7198,10 @@ void MainWindow::razbor_PJ(QByteArray a)
 
         }
     }
+    else
+    {
+        qDebug()<<"GOVNO";
+    }
 
 //    QByteArray tmp;
 //    tmp = razbor_com(a);
@@ -7230,11 +7234,6 @@ void MainWindow::adres_slot(QTcpSocket * soket)
 {
     Tcp_server* obj =(Tcp_server*) sender();
 
-    //qDebug()<<"^^^^^^^^^^^^^^^^^^^"<<soket;
-    //B=obj;
-
- //  connect (this,SIGNAL(s_send_to_ethert(QByteArray, QTcpSocket *)),obj,SLOT(send_to(QByteArray, QTcpSocket *)));
-    //B->pClientSocket=soket;
 }
 
 void MainWindow::zap_recon(int E, QString R)
