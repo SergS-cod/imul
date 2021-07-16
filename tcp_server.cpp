@@ -42,7 +42,7 @@ Tcp_server::Tcp_server(int port)
     qDebug()<<"Port  "<<port;
     m_ptcpServer = new QTcpServer();
     if (!m_ptcpServer->listen(QHostAddress::Any, port)) {
-
+    portt=port;
   qDebug()<<"error";
 
 
@@ -117,7 +117,14 @@ void Tcp_server::slotReadClient()
 
      QTcpSocket* pClientSocket = (QTcpSocket*)sender();
    ba= pClientSocket->readAll();
+   if(portt==4352)
+   {
+       emit command_s_ether_PJ(ba);
+       return;
+   }
+
    QByteArray data = ba.toHex().toUpper();
+   this->send_to(ba);
     //qDebug()<<ba;
     packet B(data);
     QVector<parameter> vec_par = B.getParameters();
@@ -173,6 +180,13 @@ void Tcp_server::send_to(QByteArray TO)
         pClientSocket->write(TO);
 
     }
+
+}
+
+void Tcp_server::Answer_tcp()
+{
+
+
 
 }
 

@@ -73,11 +73,22 @@ void port::serialRecieve()
 
     ba=serialPort->readAll();
     //qDebug()<<ba;
+
+
+
+    this->send_to(ba);
+
+
     packet B(ba);
     QVector<parameter> vec_par = B.getParameters();
     for(int i=0;i<vec_par.count();i++){
         emit command_s(vec_par[i]);
     }
+}
+
+void port::Answer_port()
+{
+
 }
 
 

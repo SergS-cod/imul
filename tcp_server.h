@@ -23,7 +23,7 @@ public:
     explicit Tcp_server(QObject *parent = 0);
     Tcp_server(int);
    ~Tcp_server();
-
+  int portt;
     QTcpServer * m_ptcpServer;
 //     * m_ptxt;
 //    quintlб m_nNextBlockSize;
@@ -39,11 +39,14 @@ public:
     void slotReadClient ();
 signals :
     void  command_s_ether(parameter);
+    void  command_s_ether_PJ(QByteArray);
+
     void  adres( QTcpSocket * );
     void proverka(int);
 
 public slots:
     void send_to(QByteArray TO);
+    void Answer_tcp();
 
 };
 

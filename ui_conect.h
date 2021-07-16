@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'conect.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.1
+** Created by: Qt User Interface Compiler version 5.3.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -31,6 +32,7 @@ public:
     QLineEdit *lineEdit_com;
     QLineEdit *lineEdit_portt;
     QPushButton *pushButton;
+    QCheckBox *checkBox;
 
     void setupUi(QWidget *Conect)
     {
@@ -78,6 +80,11 @@ public:
 
         gridLayout->addWidget(pushButton, 2, 1, 1, 1);
 
+        checkBox = new QCheckBox(Conect);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+
+        gridLayout->addWidget(checkBox, 2, 0, 1, 1);
+
 
         retranslateUi(Conect);
 
@@ -86,12 +93,13 @@ public:
 
     void retranslateUi(QWidget *Conect)
     {
-        Conect->setWindowTitle(QApplication::translate("Conect", "Form", Q_NULLPTR));
-        label_2->setText(QApplication::translate("Conect", "               TCP/IP", Q_NULLPTR));
-        label->setText(QApplication::translate("Conect", "                  COM", Q_NULLPTR));
-        lineEdit_com->setText(QApplication::translate("Conect", "COM3", Q_NULLPTR));
-        lineEdit_portt->setText(QApplication::translate("Conect", "8888", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("Conect", "Connect", Q_NULLPTR));
+        Conect->setWindowTitle(QApplication::translate("Conect", "Form", 0));
+        label_2->setText(QApplication::translate("Conect", "               TCP/IP", 0));
+        label->setText(QApplication::translate("Conect", "                  COM", 0));
+        lineEdit_com->setText(QApplication::translate("Conect", "COM3", 0));
+        lineEdit_portt->setText(QApplication::translate("Conect", "8888", 0));
+        pushButton->setText(QApplication::translate("Conect", "Connect", 0));
+        checkBox->setText(QApplication::translate("Conect", "\320\222\320\232\320\233 /  \320\222\320\253\320\232\320\233 \320\236\320\242\320\222\320\225\320\242 ", 0));
     } // retranslateUi
 
 };

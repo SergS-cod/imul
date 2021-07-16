@@ -42,19 +42,29 @@ public:
 
     void setparam(int CMD,int Val,int start,int end,int password,int dat);
     static MainWindow* GetInstance(QWidget* parent = 0);
+    int sta=0;
+    bool status = false;
+    void power_on ();
+    void power_off();
 
      QByteArray razbor_com(parameter);
       void check_auto_send();
         port* A;
         Tcp_server* g;
 
+        Tcp_server* PJ;
+
        QTcpSocket * a;
        QMenu *file;
         //Tcp_server* B;
 public slots:
 
+    void change_state(int);
 
     void razbor(parameter);
+
+    void razbor_PJ(QByteArray);
+
     void check();
 
     void check2();
@@ -220,6 +230,8 @@ private slots:
  void on_pushButton_systeam_auto_25_clicked();
 
  void otpravka(QByteArray);
+ void otpravka_PJ(QByteArray TO);
+
 
  void on_connect_button_clicked();
 
@@ -227,6 +239,7 @@ private slots:
 
 signals:
  void s_send_to(QByteArray);
+ void  s_send_to_PJ(QByteArray);
 
 void s_send_to_ethert(QByteArray);
 

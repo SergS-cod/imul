@@ -35,9 +35,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect ( ui->actionSetting,SIGNAL(triggered()),con,SLOT(show()));
 
-    A=new port(con->com_port);
+    A = new port(con->com_port);
 
-    g=new Tcp_server(con->port);
+    g = new Tcp_server(con->port);
+
+    PJ = new Tcp_server(4352);
+
 
 
  connect (con,SIGNAL( reconn(int ,QString)),this,SLOT(zap_recon(int ,QString)));
@@ -47,63 +50,13 @@ MainWindow::MainWindow(QWidget *parent)
 
    connect (this,SIGNAL(s_send_to(QByteArray)),A,SLOT(send_to(QByteArray)));
    connect (this,SIGNAL(s_send_to_ethert(QByteArray)),g,SLOT(send_to(QByteArray)));
-
+   connect (this,SIGNAL(s_send_to_PJ(QByteArray)),PJ,SLOT(send_to(QByteArray)));
    connect (g,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
    connect (A,SIGNAL (command_s(parameter)),this,SLOT(razbor(parameter)));
 
+   connect (PJ,SIGNAL (command_s_ether(parameter)),this,SLOT(razbor(parameter)));
+   connect (PJ,SIGNAL (command_s_ether_PJ(QByteArray)),this,SLOT(razbor_PJ(QByteArray)));
 
-//      QAction* pCheckableAction = file->addAction("&COM port");
-//      QAction* pEthernet = file->addAction("&Ethernet");
-//          pCheckableAction->setCheckable(true);
-//          pEthernet->setCheckable(true);
-//          pEthernet->setChecked(true);
-
-//          if(pCheckableAction->isChecked())
-//            {  pEthernet->setChecked(false);
-//              qDebug()<<"kkkkkkkkkkkkkkk";
-//          }
-
-//          if(pEthernet->isChecked())
-//            {  pCheckableAction->setChecked(false);
-//              qDebug()<<"hhhhhhhhhhhhh";
-//          }
-        //  pCheckableAction->setChecked(true);
-
-      //QMenuBar mnuBar;
-//      menu_bar_ = new QMenuBar(this);
-//        menu_bar_->setNativeMenuBar(false);
-
-//      QMenu*   pmnu   = new QMenu("&Menu");
-////      pmnu->addAction("&About Qt",
-////                          &app,
-////                          SLOT(aboutQt()),
-////                          Qt::CTRL + Qt::Key_Q
-////                         );
-
-//          pmnu->addSeparator();
-
-//          QAction* pCheckableAction = pmnu->addAction("&CheckableItem");
-//          pCheckableAction->setCheckable(true);
-//          pCheckableAction->setChecked(true);
-
-//      //    pmnu->addAction(QPixmap(img4_xpm), "&IconItem");
-
-//          QMenu* pmnuSubMenu = new QMenu("&SubMenu", pmnu);
-//          pmnu->addMenu(pmnuSubMenu);
-//          pmnuSubMenu->addAction("&Test");
-
-//          QAction* pDisabledAction = pmnu->addAction("&DisabledItem");
-//          pDisabledAction->setEnabled(false);
-
-//          pmnu->addSeparator();
-
-//       //   pmnu->addAction("&Exit", &app, SLOT(quit()));
-//       mnuBar.addMenu(pmnu);
-//      mnuBar.show();
-//menu_bar_->show();
-
- //ui->menuqwer->
-   //  ui->actionwer();
          ui->actioncom_port->setCheckable(true);
              ui->actionEhternet->setCheckable(true);
                  ui->actionEhternet->setChecked(true);
@@ -113,9 +66,6 @@ connect ( ui->actionEhternet,SIGNAL( changed()),this,SLOT(check2()));
 
 
 
-//connect ( ui->menuSetting,SIGNAL( changed()),this,SLOT(check2()));
-
-// connect (this,SIGNAL( ui->,this,SLOT(check()));
 
 QByteArray a;
 a.append("wwwww");
@@ -702,8 +652,25 @@ MainWindow* MainWindow::GetInstance(QWidget *parent)
     return mainInstance;
 }
 
+void MainWindow::power_on()
+{
+
+    QTimer* ptimer =new QTimer (this);
+    ptimer->setInterval (5000);
+    ptimer->start();
+    connect (ptimer,SIGNAL(timeout()),SLOT (change_state()));
+}
+void MainWindow::power_off()
+{
+
+    QTimer* ptimer =new QTimer (this);
+    ptimer->setInterval (5000);
+    ptimer->start();
+    connect (ptimer,SIGNAL(timeout()),SLOT (change_state()));
+}
 void MainWindow:: update_state()
 {
+
 }
 
 QByteArray MainWindow:: razbor_com(parameter temp)
@@ -1597,6 +1564,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
                 INFO.clear();
                 if(ui->checkBox_how_answer_off->isChecked()==1){
                     check_auto_send();
+                    power_on();
                     otpravka(P);
                 }
                 if(ui->checkBox_how_answer_off->isChecked()==0){
@@ -1609,6 +1577,7 @@ QByteArray MainWindow:: razbor_com(parameter temp)
             if(ui->checkBox_wait_on->isChecked()==0)  {
                  if(ui->checkBox_how_answer_off->isChecked()==1){
                      otpravka(P);
+                     power_on();
                      INFO.append("INFO2");
                      otpravka(INFO);
                      INFO.clear();
@@ -7170,6 +7139,14 @@ void MainWindow::check_auto_send()
 
 }
 
+void MainWindow::change_state(int a)
+{
+    if(status==true)
+        status=false;
+    else
+        status=true;
+}
+
 void MainWindow::razbor(parameter a)
 {
     a.print_parameter_inf();
@@ -7178,6 +7155,56 @@ void MainWindow::razbor(parameter a)
     if(tmp!="ret"){
         otpravka(tmp);
     }
+
+}
+
+void MainWindow::razbor_PJ(QByteArray a)
+{
+
+    QString str = a.data();
+
+    QString get = "%1POWR ?{0D}";
+    if(get==str)
+    {
+        if(sta==0)
+        {
+          sta++;
+          QString otp ="%1POWR=0{0D}"  ;
+          QByteArray TO;
+          TO.append(otp);
+          otpravka_PJ(TO);
+          return;
+
+        }
+
+        if((sta!=0)&&(status==false))
+        {
+
+          QString otp ="%1POWR=3{0D}"  ;
+          QByteArray TO;
+          TO.append(otp);
+          otpravka_PJ(TO);
+          return;
+
+        }
+        if((sta!=0)&&(status==true))
+        {
+
+          QString otp ="%1POWR=1{0D}"  ;
+          QByteArray TO;
+          TO.append(otp);
+          otpravka_PJ(TO);
+          return;
+
+        }
+    }
+
+//    QByteArray tmp;
+//    tmp = razbor_com(a);
+
+//    if(tmp!="ret"){
+//        otpravka(tmp);
+//    }
 
 }
 
@@ -8715,6 +8742,13 @@ void MainWindow::otpravka(QByteArray TO)
 
          emit  s_send_to_ethert(TO);
      }
+}
+
+void MainWindow::otpravka_PJ(QByteArray TO)
+{
+
+    emit   s_send_to_PJ(TO);
+
 }
 
 void MainWindow::on_connect_button_clicked()

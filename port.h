@@ -35,7 +35,7 @@ void  command_s(parameter);
 
 public slots:
    void serialRecieve();
-
+void Answer_port();
    void send_to(QByteArray TO);
   // void  otvet(QByteArray TO);
 
